@@ -346,7 +346,7 @@
 
         <div class="stats">
             <div class="stat-card">
-                <div class="stat-number">3,526</div>
+                <div class="stat-number" id="totalNews">-</div>
                 <div class="stat-label">商機資訊</div>
             </div>
             <div class="stat-card">
@@ -363,7 +363,7 @@
             <div class="region-card asia">
                 <div class="region-title">
                     亞洲地區
-                    <span class="region-count">1,200+ 筆</span>
+                    <span class="region-count" id="asiaCount">-</span>
                 </div>
                 <p>包含越南、中國大陸、新加坡、緬甸、日本、韓國、香港、馬來西亞、印度、泰國、菲律賓、印尼等國家的商機資訊</p>
                 <a href="asia.html" class="region-link">查看亞洲地區商機 →</a>
@@ -372,7 +372,7 @@
             <div class="region-card europe">
                 <div class="region-title">
                     歐洲地區
-                    <span class="region-count">1,400+ 筆</span>
+                    <span class="region-count" id="europeCount">-</span>
                 </div>
                 <p>包含德國、法國、英國、波蘭、義大利、瑞士、匈牙利、丹麥、荷蘭、捷克等國家的商機資訊</p>
                 <a href="europe.html" class="region-link">查看歐洲地區商機 →</a>
@@ -381,7 +381,7 @@
             <div class="region-card america">
                 <div class="region-title">
                     美洲地區
-                    <span class="region-count">400+ 筆</span>
+                    <span class="region-count" id="americaCount">-</span>
                 </div>
                 <p>包含美國、加拿大、墨西哥、智利、阿根廷、巴西、秘魯等國家的商機資訊</p>
                 <a href="america.html" class="region-link">查看美洲地區商機 →</a>
@@ -390,7 +390,7 @@
             <div class="region-card africa">
                 <div class="region-title">
                     非洲地區
-                    <span class="region-count">150+ 筆</span>
+                    <span class="region-count" id="africaCount">-</span>
                 </div>
                 <p>包含奈及利亞、南非、肯亞、埃及、摩洛哥等國家的商機資訊</p>
                 <a href="africa.html" class="region-link">查看非洲地區商機 →</a>
@@ -399,7 +399,7 @@
             <div class="region-card oceania">
                 <div class="region-title">
                     大洋洲地區
-                    <span class="region-count">100+ 筆</span>
+                    <span class="region-count" id="oceaniaCount">-</span>
                 </div>
                 <p>包含澳大利亞、紐西蘭、帛琉、馬紹爾群島等國家的商機資訊</p>
                 <a href="oceania.html" class="region-link">查看大洋洲地區商機 →</a>
@@ -408,7 +408,7 @@
             <div class="region-card middle-east">
                 <div class="region-title">
                     中東地區
-                    <span class="region-count">60+ 筆</span>
+                    <span class="region-count" id="middleEastCount">-</span>
                 </div>
                 <p>包含以色列、沙烏地阿拉伯、阿拉伯聯合大公國、約旦等國家的商機資訊</p>
                 <a href="middle-east.html" class="region-link">查看中東地區商機 →</a>
@@ -420,5 +420,44 @@
             <p>Built by <a href="https://github.com/lcslin">lcslin</a></p>
         </div>
     </div>
+
+    <script>
+        // 當頁面載入時獲取各地區商機數量
+        document.addEventListener('DOMContentLoaded', async function() {
+            try {
+                // 獲取各地區商機資訊 - 修改為使用 news_ 開頭的檔案
+                const asiaResponse = await fetch('./data/news_亞洲地區.json');
+                const europeResponse = await fetch('./data/news_歐洲地區.json');
+                const americaResponse = await fetch('./data/news_美洲地區.json');
+                const africaResponse = await fetch('./data/news_非洲地區.json');
+                const oceaniaResponse = await fetch('./data/news_大洋洲地區.json');
+                const middleEastResponse = await fetch('./data/news_中東地區.json');
+                
+                // 解析 JSON 資料
+                const asiaData = await asiaResponse.json();
+                const europeData = await europeResponse.json();
+                const americaData = await americaResponse.json();
+                const africaData = await africaResponse.json();
+                const oceaniaData = await oceaniaResponse.json();
+                const middleEastData = await middleEastResponse.json();
+                
+                // 更新各地區商機數量
+                document.getElementById('asiaCount').textContent = asiaData.length + ' 筆';
+                document.getElementById('europeCount').textContent = europeData.length + ' 筆';
+                document.getElementById('americaCount').textContent = americaData.length + ' 筆';
+                document.getElementById('africaCount').textContent = africaData.length + ' 筆';
+                document.getElementById('oceaniaCount').textContent = oceaniaData.length + ' 筆';
+                document.getElementById('middleEastCount').textContent = middleEastData.length + ' 筆';
+                
+                // 更新總商機數量
+                const totalNews = asiaData.length + europeData.length + americaData.length + 
+                                 africaData.length + oceaniaData.length + middleEastData.length;
+                document.getElementById('totalNews').textContent = totalNews;
+                
+            } catch (error) {
+                console.error('載入商機資料時發生錯誤:', error);
+            }
+        });
+    </script>
 </body>
 </html>
