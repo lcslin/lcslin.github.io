@@ -5,384 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>非洲地區商機資訊 | 經濟部國際貿易署</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #2c3e50;
-            background: #f8f9fa;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        .breadcrumb {
-            margin-bottom: 40px;
-            font-size: 0.9rem;
-            color: #6c757d;
-        }
-
-        .breadcrumb a {
-            color: #495057;
-            text-decoration: none;
-        }
-
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-
-        .header {
-            margin-bottom: 60px;
-        }
-
-        .header h1 {
-            font-size: 2.2rem;
-            font-weight: 300;
-            color: #1a1a1a;
-            margin-bottom: 8px;
-        }
-
-        .header p {
-            font-size: 1.1rem;
-            color: #6c757d;
-            font-weight: 300;
-        }
-
-        .filters {
-            background: white;
-            padding: 24px;
-            border-radius: 8px;
-            margin-bottom: 40px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-
-        .filters h3 {
-            font-size: 1.1rem;
-            font-weight: 400;
-            color: #1a1a1a;
-            margin-bottom: 16px;
-        }
-
-        .filter-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .filter-btn {
-            padding: 6px 12px;
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 4px;
-            font-size: 0.85rem;
-            color: #495057;
-            text-decoration: none;
-            transition: all 0.2s ease;
-        }
-
-        .filter-btn:hover,
-        .filter-btn.active {
-            background: #868e96;
-            color: white;
-            border-color: #868e96;
-        }
-
-        .stats-bar {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 16px;
-            margin-bottom: 40px;
-        }
-
-        .stat-item {
-            background: white;
-            padding: 20px;
-            text-align: center;
-            border-radius: 6px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-
-        .stat-number {
-            font-size: 1.8rem;
-            font-weight: 300;
-            color: #868e96;
-            margin-bottom: 4px;
-        }
-
-        .stat-label {
-            font-size: 0.8rem;
-            color: #6c757d;
-        }
-
-        .news-list {
-            display: grid;
-            gap: 16px;
-        }
-
-        .news-item {
-            background: white;
-            padding: 24px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            border-left: 3px solid #868e96;
-        }
-
-        .news-item:hover {
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-        }
-
-        .news-title {
-            font-size: 1.2rem;
-            font-weight: 400;
-            color: #1a1a1a;
-            margin-bottom: 12px;
-            line-height: 1.4;
-        }
-
-        .news-meta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 16px;
-            font-size: 0.85rem;
-            color: #6c757d;
-        }
-
-        .news-country {
-            font-weight: 500;
-            color: #495057;
-        }
-
-        .news-content {
-            color: #495057;
-            line-height: 1.6;
-            font-size: 0.95rem;
-        }
-
-        .news-content p {
-            margin-bottom: 12px;
-        }
-
-        .news-content a {
-            color: #868e96;
-            text-decoration: none;
-        }
-
-        .news-content a:hover {
-            text-decoration: underline;
-        }
-
-        .load-more {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        .load-more-btn {
-            padding: 12px 24px;
-            background: #868e96;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            font-size: 0.9rem;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-
-        .load-more-btn:hover {
-            background: #adb5bd;
-        }
-
-        .footer {
-            text-align: center;
-            margin-top: 80px;
-            padding-top: 40px;
-            border-top: 1px solid #e9ecef;
-            color: #6c757d;
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 20px 16px;
-            }
-            
-            .news-meta {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 4px;
-            }
-
-            .filter-buttons {
-                justify-content: center;
-            }
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #2c3e50; background: #f8f9fa; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        .breadcrumb { margin-bottom: 40px; font-size: 0.9rem; color: #6c757d; }
+        .breadcrumb a { color: #495057; text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .header { margin-bottom: 60px; }
+        .header h1 { font-size: 2.2rem; font-weight: 300; color: #1a1a1a; margin-bottom: 8px; }
+        .header p { font-size: 1.1rem; color: #6c757d; font-weight: 300; }
+        .stats-bar { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px; margin-bottom: 40px; }
+        .stat-item { background: white; padding: 20px; text-align: center; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .stat-number { font-size: 1.8rem; font-weight: 300; color: #868e96; margin-bottom: 4px; }
+        .stat-label { font-size: 0.8rem; color: #6c757d; }
+        .news-list { display: grid; gap: 16px; }
+        .news-item { background: white; padding: 24px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 3px solid #868e96; }
+        .news-item:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .news-title { font-size: 1.2rem; font-weight: 400; color: #1a1a1a; margin-bottom: 12px; line-height: 1.4; }
+        .news-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; font-size: 0.85rem; color: #6c757d; }
+        .news-country { font-weight: 500; color: #495057; }
+        .news-content { color: #495057; line-height: 1.6; font-size: 0.95rem; }
+        .load-more { text-align: center; margin-top: 40px; }
+        .load-more-btn { padding: 12px 24px; background: #868e96; color: white; border: none; border-radius: 6px; font-size: 0.9rem; cursor: pointer; transition: all 0.2s ease; }
+        .load-more-btn:hover { background: #adb5bd; }
+        .footer { text-align: center; margin-top: 80px; padding-top: 40px; border-top: 1px solid #e9ecef; color: #6c757d; font-size: 0.9rem; }
+        @media (max-width: 768px) { .container { padding: 20px 16px; } .news-meta { flex-direction: column; align-items: flex-start; gap: 4px; } }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="breadcrumb">
-            <a href="index.html">首頁</a> / 非洲地區
-        </div>
-
-        <div class="header">
-            <h1>非洲地區商機資訊</h1>
-            <p>涵蓋東非、西非、南非、北非等主要非洲國家的商機動態</p>
-        </div>
-
-        <div class="filters">
-            <h3>依國家篩選</h3>
-            <div class="filter-buttons">
-                <a href="?country=all" class="filter-btn active">全部</a>
-                <a href="?country=nigeria" class="filter-btn">奈及利亞 (73)</a>
-                <a href="?country=southafrica" class="filter-btn">南非 (55)</a>
-                <a href="?country=swaziland" class="filter-btn">史瓦帝尼 (5)</a>
-                <a href="?country=egypt" class="filter-btn">埃及 (2)</a>
-                <a href="?country=kenya" class="filter-btn">肯亞 (2)</a>
-                <a href="?country=chad" class="filter-btn">查德 (1)</a>
-                <a href="?country=ghana" class="filter-btn">迦納 (1)</a>
-                <a href="?country=cotedivoire" class="filter-btn">象牙海岸 (1)</a>
-                <a href="?country=mozambique" class="filter-btn">莫三比克 (1)</a>
-                <a href="?country=morocco" class="filter-btn">摩洛哥 (1)</a>
-                <a href="?country=mauritius" class="filter-btn">模里西斯 (1)</a>
-                <a href="?country=ethiopia" class="filter-btn">衣索比亞 (1)</a>
-                <a href="?country=zambia" class="filter-btn">尚比亞 (1)</a>
-                <a href="?country=tanzania" class="filter-btn">坦尚尼亞 (1)</a>
-                <a href="?country=lesotho" class="filter-btn">賴索托 (1)</a>
-            </div>
-        </div>
-
+        <div class="breadcrumb"><a href="index.html">首頁</a> / 非洲地區</div>
+        <div class="header"><h1>非洲地區商機資訊</h1><p>涵蓋東非、西非、南非、北非等主要非洲國家的商機動態</p></div>
         <div class="stats-bar">
-            <div class="stat-item">
-                <div class="stat-number">150+</div>
-                <div class="stat-label">非洲商機</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">15+</div>
-                <div class="stat-label">國家地區</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">5+</div>
-                <div class="stat-label">駐外單位</div>
-            </div>
+            <div class="stat-item"><div class="stat-number" id="totalNews">-</div><div class="stat-label">非洲商機</div></div>
+            <div class="stat-item"><div class="stat-number">15+</div><div class="stat-label">國家地區</div></div>
+            <div class="stat-item"><div class="stat-number">5+</div><div class="stat-label">駐外單位</div></div>
         </div>
-
-        <div class="news-list" id="newsList">
-            <!-- 新聞項目將通過 JavaScript 動態加載 -->
-        </div>
-
-        <div class="load-more">
-            <button class="load-more-btn" onclick="loadMoreNews()">載入更多</button>
-        </div>
-
-        <div class="footer">
-            <p>資料來源：經濟部國際貿易署 API</p>
-            <p>Built by <a href="https://github.com/lcslin">lcslin</a></p>
-        </div>
+        <div class="news-list" id="newsList"></div>
+        <div class="load-more" id="loadMoreSection"><button class="load-more-btn" onclick="loadMoreNews()">載入更多</button></div>
+        <div class="footer"><p>資料來源：經濟部國際貿易署</p><p>Built by <a href="https://github.com/lcslin">lcslin</a></p></div>
     </div>
-
     <script>
-        let currentPage = 0;
-        let allAfricaNews = [];
-
-        async function fetchAfricaNews() {
+        let currentPage = 0, allNews = [], itemsPerPage = 5;
+        async function fetchNews() {
             try {
-                const response = await fetch('https://www.trade.gov.tw/API/Api/Get/pages?nodeid=45&timeRestrict=true');
+                const response = await fetch('./data/africa.json');
                 const data = await response.json();
-                
-                allAfricaNews = data
-                    .filter(item => item.PageSummary && item.PageSummary.includes('非洲地區'))
-                    .map(item => ({
-                        title: item.PageTitle,
-                        content: item.PageContent,
-                        department: item.department,
-                        contributor: item.contributor,
-                        summary: item.PageSummary
-                    }));
-                
+                allNews = data;
+                document.getElementById('totalNews').textContent = data.length;
                 displayNews();
             } catch (error) {
-                console.error('Error fetching news:', error);
-                showSampleData();
+                console.error('Error:', error);
+                document.getElementById('newsList').innerHTML = '<div style="text-align: center; padding: 40px; color: #6c757d;">載入資料時發生錯誤，請稍後再試。</div>';
             }
         }
-
-        function showSampleData() {
-            allAfricaNews = [
-                {
-                    title: "南非綠色氫能計畫啟動，尋求國際投資夥伴",
-                    content: "南非政府宣布大規模綠色氫能發展計畫，計畫投資數十億美元發展氫能產業...",
-                    department: "駐南非代表處經濟組",
-                    contributor: "林組長南非",
-                    summary: "非洲地區,南非"
-                },
-                {
-                    title: "奈及利亞數位經濟轉型，金融科技蓬勃發展",
-                    content: "奈及利亞政府推動數位經濟政策，金融科技產業快速成長，吸引大量投資...",
-                    department: "駐奈及利亞代表處經濟組",
-                    contributor: "張組長西非",
-                    summary: "非洲地區,奈及利亞"
-                },
-                {
-                    title: "肯亞農業科技創新，提升農業生產力",
-                    content: "肯亞政府支持農業科技創新，透過數位技術提升農業生產效率...",
-                    department: "駐肯亞代表處經濟組",
-                    contributor: "王組長東非",
-                    summary: "非洲地區,肯亞"
-                }
-            ];
-            displayNews();
-        }
-
         function displayNews() {
-            const itemsPerPage = 10;
             const startIndex = currentPage * itemsPerPage;
             const endIndex = startIndex + itemsPerPage;
-            const newsToShow = allAfricaNews.slice(startIndex, endIndex);
-
+            const newsToShow = allNews.slice(startIndex, endIndex);
             const newsList = document.getElementById('newsList');
-            
             newsToShow.forEach(news => {
                 const newsItem = document.createElement('div');
                 newsItem.className = 'news-item';
-                
                 const country = news.summary.split(',')[1] || '未分類';
-                
-                newsItem.innerHTML = `
-                    <div class="news-title">${news.title}</div>
-                    <div class="news-meta">
-                        <div class="news-country">${country}</div>
-                        <div>${news.department} | ${news.contributor}</div>
-                    </div>
-                    <div class="news-content">
-                        <p>${news.content.replace(/<[^>]*>/g, '').substring(0, 200)}...</p>
-                    </div>
-                `;
-                
+                newsItem.innerHTML = `<div class="news-title">${news.title}</div><div class="news-meta"><div class="news-country">${country}</div><div>${news.department} | ${news.contributor}</div></div><div class="news-content"><p>${news.content}</p></div>`;
                 newsList.appendChild(newsItem);
             });
-
             currentPage++;
-            
-            if (endIndex >= allAfricaNews.length) {
-                document.querySelector('.load-more').style.display = 'none';
-            }
+            if (endIndex >= allNews.length) document.getElementById('loadMoreSection').style.display = 'none';
         }
-
-        function loadMoreNews() {
-            displayNews();
-        }
-
-        document.addEventListener('DOMContentLoaded', function() {
-            fetchAfricaNews();
-        });
+        function loadMoreNews() { displayNews(); }
+        document.addEventListener('DOMContentLoaded', fetchNews);
     </script>
 </body>
 </html>
