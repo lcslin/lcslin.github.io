@@ -74,7 +74,7 @@
         .stat-number {
             font-size: 1.8rem;
             font-weight: 300;
-            color: #495057;
+            color: #2c3e50;
             margin-bottom: 4px;
         }
 
@@ -122,6 +122,12 @@
             color: #495057;
         }
 
+        .news-date {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-bottom: 10px;
+        }
+
         .news-content {
             color: #495057;
             line-height: 1.6;
@@ -133,7 +139,7 @@
         }
 
         .news-content a {
-            color: #495057;
+            color: #2c3e50;
             text-decoration: none;
         }
 
@@ -191,7 +197,7 @@
 
         <div class="header">
             <h1>歐洲地區商機資訊</h1>
-            <p>涵蓋西歐、東歐、北歐、南歐等主要歐洲國家的商機動態</p>
+            <p>涵蓋西歐、東歐、北歐等主要歐洲國家的商機動態</p>
         </div>
 
         <div class="stats-bar">
@@ -200,7 +206,7 @@
                 <div class="stat-label">歐洲商機</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number">35+</div>
+                <div class="stat-number">25+</div>
                 <div class="stat-label">國家地區</div>
             </div>
             <div class="stat-item">
@@ -230,7 +236,8 @@
 
         async function fetchEuropeNews() {
             try {
-                const response = await fetch('./data/europe.json');
+                // 修改為讀取 news_歐洲地區.json 檔案
+                const response = await fetch('./data/news_歐洲地區.json');
                 const data = await response.json();
                 
                 allEuropeNews = data;
@@ -254,16 +261,24 @@
                 const newsItem = document.createElement('div');
                 newsItem.className = 'news-item';
                 
-                const country = news.summary.split(',')[1] || '未分類';
+                // 從 PageSummary 中提取國家/地區信息
+                const country = news.PageSummary ? news.PageSummary.split(',')[1] || '未分類' : '未分類';
+                
+                // 格式化日期
+                const publishDate = news.PagePublishTime ? formatDate(news.PagePublishTime) : '';
+                
+                // 處理 PageContent 以移除 HTML 標籤
+                const content = news.PageContent ? stripHtml(news.PageContent) : '';
                 
                 newsItem.innerHTML = `
-                    <div class="news-title">${news.title}</div>
+                    <div class="news-title">${news.PageTitle || ''}</div>
                     <div class="news-meta">
                         <div class="news-country">${country}</div>
-                        <div>${news.department} | ${news.contributor}</div>
+                        <div>${news.department || ''} | ${news.contributor || ''}</div>
                     </div>
+                    <div class="news-date">${publishDate}</div>
                     <div class="news-content">
-                        <p>${news.content}</p>
+                        <p>${content}</p>
                     </div>
                 `;
                 
@@ -272,15 +287,37 @@
 
             currentPage++;
             
+            // 如果沒有更多新聞，隱藏載入更多按鈕
             if (endIndex >= allEuropeNews.length) {
                 document.getElementById('loadMoreSection').style.display = 'none';
             }
+        }
+
+        // 格式化日期函數
+        function formatDate(dateString) {
+            if (!dateString || dateString.length < 8) return '';
+            
+            // 假設格式為 YYYYMMDDHHMMSS
+            const year = dateString.substring(0, 4);
+            const month = dateString.substring(4, 6);
+            const day = dateString.substring(6, 8);
+            
+            return `${year}年${month}月${day}日`;
+        }
+        
+        // 移除 HTML 標籤的函數
+        function stripHtml(html) {
+            if (!html) return '';
+            const temp = document.createElement('div');
+            temp.innerHTML = html;
+            return temp.textContent || temp.innerText || '';
         }
 
         function loadMoreNews() {
             displayNews();
         }
 
+        // 頁面載入時獲取新聞
         document.addEventListener('DOMContentLoaded', function() {
             fetchEuropeNews();
         });
