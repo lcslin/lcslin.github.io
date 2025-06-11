@@ -149,6 +149,108 @@
             text-decoration: underline;
         }
 
+        /* GTC Paris 2025 科技新知樣式 */
+        .tech-news-section {
+            margin-bottom: 60px;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .tech-news-header {
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .tech-news-header h2 {
+            font-size: 1.8rem;
+            font-weight: 300;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .tech-news-header::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, #2c3e50, #6c757d);
+            margin: 10px auto;
+            border-radius: 2px;
+        }
+
+        .tech-news-date {
+            font-size: 0.9rem;
+            color: #6c757d;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .tech-news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .tech-news-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 24px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border-top: 4px solid #e9ecef;
+        }
+
+        .tech-news-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .tech-news-card.nvidia { border-top-color: #76b900; }
+        .tech-news-card.asus { border-top-color: #0072CE; }
+
+        .tech-news-card-title {
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: #1a1a1a;
+            margin-bottom: 16px;
+        }
+
+        .tech-news-item {
+            margin-bottom: 20px;
+        }
+
+        .tech-news-item h4 {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+
+        .tech-news-item p {
+            font-size: 0.95rem;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+
+        .tech-news-footer {
+            text-align: center;
+            margin-top: 24px;
+            font-size: 0.85rem;
+            color: #6c757d;
+        }
+
+        .tech-news-footer a {
+            color: #495057;
+            text-decoration: none;
+        }
+
+        .tech-news-footer a:hover {
+            text-decoration: underline;
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 20px 16px;
@@ -158,8 +260,13 @@
                 font-size: 2rem;
             }
             
-            .regions-grid {
+            .regions-grid,
+            .tech-news-grid {
                 grid-template-columns: 1fr;
+            }
+            
+            .tech-news-section {
+                padding: 20px;
             }
         }
     </style>
@@ -169,6 +276,72 @@
         <div class="header">
             <h1>全球商機資訊</h1>
             <p>經濟部國際貿易署</p>
+        </div>
+
+        <!-- GTC Paris 2025 科技新知 -->
+        <div class="tech-news-section">
+            <div class="tech-news-header">
+                <h2>GTC Paris 2025 科技新知</h2>
+            </div>
+            <div class="tech-news-date">
+                更新日期：2025年6月11日
+            </div>
+            
+            <div class="tech-news-grid">
+                <!-- NVIDIA 新聞 -->
+                <div class="tech-news-card nvidia">
+                    <div class="tech-news-card-title">NVIDIA 最新動態</div>
+                    
+                    <div class="tech-news-item">
+                        <h4>Blackwell Ultra 系列推出</h4>
+                        <p>NVIDIA 宣布 Blackwell Ultra 系列將於 2025 年底推出，大幅提升 AI 運算效能。這一系列專為大型語言模型和生成式 AI 優化，效能較前一代提升超過 40%。</p>
+                    </div>
+                    
+                    <div class="tech-news-item">
+                        <h4>Rubin 系統計劃</h4>
+                        <p>NVIDIA 宣布下一代 Rubin Ultra 系統計劃，預計 2026 年推出初版，完整版將於 2027 年下半年推出。Rubin Ultra 將包含驚人的 576 個 GPU，預計將顯著提高 AI 運算能力和效率。</p>
+                    </div>
+                    
+                    <div class="tech-news-item">
+                        <h4>GROOT N1 開源計劃</h4>
+                        <p>NVIDIA 宣布 GROOT N1 開源，這是其革命性的機器人作業系統。這一舉措旨在建立統一的機器人開發平台，加速實體 AI 的發展。</p>
+                    </div>
+                    
+                    <div class="tech-news-item">
+                        <h4>擴展 AI Factory 願景</h4>
+                        <p>推出全新基礎設施解決方案，支持可擴展、主動式 AI。這些解決方案增加了標記生成能力，提高 AI 系統的效率和性能。</p>
+                    </div>
+                </div>
+                
+                <!-- 華碩新聞 -->
+                <div class="tech-news-card asus">
+                    <div class="tech-news-card-title">華碩新產品發表</div>
+                    
+                    <div class="tech-news-item">
+                        <h4>NVIDIA GB300 NVL72 系統</h4>
+                        <p>華碩展示其最新的 NVIDIA GB300 NVL72 AI Factory 解決方案，與 Nebius 合作推動 NVIDIA Blackwell 加速基礎架構發展。</p>
+                    </div>
+                    
+                    <div class="tech-news-item">
+                        <h4>ASUS Ascent GX10</h4>
+                        <p>華碩推出突破性的小型 AI 超級計算機 ASUS Ascent GX10，由 NVIDIA GB10 Grace Blackwell Superchip 驅動，提供 1,000 AI TOPS 的卓越性能。這款設備配備 NVIDIA Blackwell GPU、20 核心 Arm CPU 和 128GB 記憶體。</p>
+                    </div>
+                    
+                    <div class="tech-news-item">
+                        <h4>ASUS Pro WS 3000W Platinum</h4>
+                        <p>華碩發表專業工作站 ASUS Pro WS 3000W Platinum，針對 AI 和數據科學工作負載優化，支持最新的 NVIDIA RTX 專業 GPU。</p>
+                    </div>
+                    
+                    <div class="tech-news-item">
+                        <h4>AI 基礎設施解決方案</h4>
+                        <p>華碩展示其 AI Factory 基礎設施解決方案，基於 NVIDIA RTX PRO 服務器，同時展示 NVIDIA Grace Blackwell Ultra 系統。全新的 ASUS AI POD with NVIDIA GB300 NVL72 為大規模 AI 部署而設計。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tech-news-footer">
+                資料來源：GTC Paris 2025 大會報導 | 更多詳情請訪問 <a href="https://www.nvidia.com/gtc/" target="_blank">NVIDIA GTC</a> 和 <a href="https://www.asus.com/" target="_blank">ASUS</a> 官方網站
+            </div>
         </div>
 
         <div class="stats">
