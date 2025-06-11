@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歐洲地區商機資訊 | 經濟部國際貿易署</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .breadcrumb {
+            margin-bottom: 40px;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        .breadcrumb a {
+            color: #495057;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .header {
+            margin-bottom: 60px;
+        }
+
+        .header h1 {
+            font-size: 2.2rem;
+            font-weight: 300;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            color: #6c757d;
+            font-weight: 300;
+        }
+
+        .filters {
+            background: white;
+            padding: 24px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .filters h3 {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #1a1a1a;
+            margin-bottom: 16px;
+        }
+
+        .filter-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .filter-btn {
+            padding: 6px 12px;
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            color: #495057;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: #495057;
+            color: white;
+            border-color: #495057;
+        }
+
+        .stats-bar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .stat-item {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .stat-number {
+            font-size: 1.8rem;
+            font-weight: 300;
+            color: #495057;
+            margin-bottom: 4px;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: #6c757d;
+        }
+
+        .news-list {
+            display: grid;
+            gap: 16px;
+        }
+
+        .news-item {
+            background: white;
+            padding: 24px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-left: 3px solid #495057;
+        }
+
+        .news-item:hover {
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .news-title {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        .news-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            font-size: 0.85rem;
+            color: #6c757d;
+        }
+
+        .news-country {
+            font-weight: 500;
+            color: #495057;
+        }
+
+        .news-content {
+            color: #495057;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .news-content p {
+            margin-bottom: 12px;
+        }
+
+        .news-content a {
+            color: #495057;
+            text-decoration: none;
+        }
+
+        .news-content a:hover {
+            text-decoration: underline;
+        }
+
+        .load-more {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .load-more-btn {
+            padding: 12px 24px;
+            background: #495057;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .load-more-btn:hover {
+            background: #6c757d;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 1px solid #e9ecef;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 16px;
+            }
+            
+            .news-meta {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+            }
+
+            .filter-buttons {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">首頁</a> / 歐洲地區
+        </div>
+
+        <div class="header">
+            <h1>歐洲地區商機資訊</h1>
+            <p>涵蓋西歐、東歐、北歐、南歐等主要歐洲國家的商機動態</p>
+        </div>
+
+        <div class="filters">
+            <h3>依國家篩選</h3>
+            <div class="filter-buttons">
+                <a href="?country=all" class="filter-btn active">全部</a>
+                <a href="?country=germany" class="filter-btn">德國 (180)</a>
+                <a href="?country=france" class="filter-btn">法國 (166)</a>
+                <a href="?country=poland" class="filter-btn">波蘭 (156)</a>
+                <a href="?country=uk" class="filter-btn">英國 (145)</a>
+                <a href="?country=italy" class="filter-btn">義大利 (110)</a>
+                <a href="?country=switzerland" class="filter-btn">瑞士 (81)</a>
+                <a href="?country=hungary" class="filter-btn">匈牙利 (71)</a>
+                <a href="?country=denmark" class="filter-btn">丹麥 (60)</a>
+                <a href="?country=turkey" class="filter-btn">土耳其 (48)</a>
+                <a href="?country=netherlands" class="filter-btn">荷蘭 (46)</a>
+                <a href="?country=eu" class="filter-btn">歐盟 (45)</a>
+                <a href="?country=czech" class="filter-btn">捷克 (42)</a>
+                <a href="?country=lithuania" class="filter-btn">立陶宛 (41)</a>
+                <a href="?country=sweden" class="filter-btn">瑞典 (38)</a>
+                <a href="?country=russia" class="filter-btn">俄羅斯 (37)</a>
+            </div>
+        </div>
+
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div class="stat-number">1,400+</div>
+                <div class="stat-label">歐洲商機</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">35+</div>
+                <div class="stat-label">國家地區</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">20+</div>
+                <div class="stat-label">駐外單位</div>
+            </div>
+        </div>
+
+        <div class="news-list" id="newsList">
+            <!-- 新聞項目將通過 JavaScript 動態加載 -->
+        </div>
+
+        <div class="load-more">
+            <button class="load-more-btn" onclick="loadMoreNews()">載入更多</button>
+        </div>
+
+        <div class="footer">
+            <p>資料來源：經濟部國際貿易署 API</p>
+            <p>Built by <a href="https://github.com/lcslin">lcslin</a></p>
+        </div>
+    </div>
+
+    <script>
+        let currentPage = 0;
+        let allEuropeNews = [];
+
+        async function fetchEuropeNews() {
+            try {
+                const response = await fetch('https://www.trade.gov.tw/API/Api/Get/pages?nodeid=45&timeRestrict=true');
+                const data = await response.json();
+                
+                allEuropeNews = data
+                    .filter(item => item.PageSummary && item.PageSummary.includes('歐洲地區'))
+                    .map(item => ({
+                        title: item.PageTitle,
+                        content: item.PageContent,
+                        department: item.department,
+                        contributor: item.contributor,
+                        summary: item.PageSummary
+                    }));
+                
+                displayNews();
+            } catch (error) {
+                console.error('Error fetching news:', error);
+                showSampleData();
+            }
+        }
+
+        function showSampleData() {
+            allEuropeNews = [
+                {
+                    title: "德國綠色轉型政策加速推動再生能源發展",
+                    content: "德國政府宣布新的綠色轉型計畫，將大幅增加對再生能源的投資...",
+                    department: "駐德國代表處經濟組",
+                    contributor: "張組長德明",
+                    summary: "歐洲地區,德國"
+                },
+                {
+                    title: "法國數位化轉型計畫推動企業創新",
+                    content: "法國政府推出新的數位化轉型支援計畫，協助中小企業進行數位升級...",
+                    department: "駐法國代表處經濟組",
+                    contributor: "劉組長法華",
+                    summary: "歐洲地區,法國"
+                },
+                {
+                    title: "英國脫歐後貿易政策新方向",
+                    content: "英國政府發布脫歐後新的貿易戰略，重點拓展與亞太地區的經貿關係...",
+                    department: "駐英國代表處經濟組",
+                    contributor: "吳組長若蘭",
+                    summary: "歐洲地區,英國"
+                }
+            ];
+            displayNews();
+        }
+
+        function displayNews() {
+            const itemsPerPage = 10;
+            const startIndex = currentPage * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const newsToShow = allEuropeNews.slice(startIndex, endIndex);
+
+            const newsList = document.getElementById('newsList');
+            
+            newsToShow.forEach(news => {
+                const newsItem = document.createElement('div');
+                newsItem.className = 'news-item';
+                
+                const country = news.summary.split(',')[1] || '未分類';
+                
+                newsItem.innerHTML = `
+                    <div class="news-title">${news.title}</div>
+                    <div class="news-meta">
+                        <div class="news-country">${country}</div>
+                        <div>${news.department} | ${news.contributor}</div>
+                    </div>
+                    <div class="news-content">
+                        <p>${news.content.replace(/<[^>]*>/g, '').substring(0, 200)}...</p>
+                    </div>
+                `;
+                
+                newsList.appendChild(newsItem);
+            });
+
+            currentPage++;
+            
+            if (endIndex >= allEuropeNews.length) {
+                document.querySelector('.load-more').style.display = 'none';
+            }
+        }
+
+        function loadMoreNews() {
+            displayNews();
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            fetchEuropeNews();
+        });
+    </script>
+</body>
+</html>
