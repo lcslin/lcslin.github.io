@@ -5,80 +5,322 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>美洲地區商機資訊 | 經濟部國際貿易署</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #2c3e50; background: #f8f9fa; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
-        .breadcrumb { margin-bottom: 40px; font-size: 0.9rem; color: #6c757d; }
-        .breadcrumb a { color: #495057; text-decoration: none; }
-        .breadcrumb a:hover { text-decoration: underline; }
-        .header { margin-bottom: 60px; }
-        .header h1 { font-size: 2.2rem; font-weight: 300; color: #1a1a1a; margin-bottom: 8px; }
-        .header p { font-size: 1.1rem; color: #6c757d; font-weight: 300; }
-        .stats-bar { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px; margin-bottom: 40px; }
-        .stat-item { background: white; padding: 20px; text-align: center; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
-        .stat-number { font-size: 1.8rem; font-weight: 300; color: #6c757d; margin-bottom: 4px; }
-        .stat-label { font-size: 0.8rem; color: #6c757d; }
-        .news-list { display: grid; gap: 16px; }
-        .news-item { background: white; padding: 24px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 3px solid #6c757d; }
-        .news-item:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
-        .news-title { font-size: 1.2rem; font-weight: 400; color: #1a1a1a; margin-bottom: 12px; line-height: 1.4; }
-        .news-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; font-size: 0.85rem; color: #6c757d; }
-        .news-country { font-weight: 500; color: #495057; }
-        .news-content { color: #495057; line-height: 1.6; font-size: 0.95rem; }
-        .load-more { text-align: center; margin-top: 40px; }
-        .load-more-btn { padding: 12px 24px; background: #6c757d; color: white; border: none; border-radius: 6px; font-size: 0.9rem; cursor: pointer; transition: all 0.2s ease; }
-        .load-more-btn:hover { background: #868e96; }
-        .footer { text-align: center; margin-top: 80px; padding-top: 40px; border-top: 1px solid #e9ecef; color: #6c757d; font-size: 0.9rem; }
-        @media (max-width: 768px) { .container { padding: 20px 16px; } .news-meta { flex-direction: column; align-items: flex-start; gap: 4px; } }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .breadcrumb {
+            margin-bottom: 40px;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        .breadcrumb a {
+            color: #495057;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .header {
+            margin-bottom: 60px;
+        }
+
+        .header h1 {
+            font-size: 2.2rem;
+            font-weight: 300;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            color: #6c757d;
+            font-weight: 300;
+        }
+
+        .stats-bar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .stat-item {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .stat-number {
+            font-size: 1.8rem;
+            font-weight: 300;
+            color: #2c3e50;
+            margin-bottom: 4px;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: #6c757d;
+        }
+
+        .news-list {
+            display: grid;
+            gap: 16px;
+        }
+
+        .news-item {
+            background: white;
+            padding: 24px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-left: 3px solid #6c757d;
+        }
+
+        .news-item:hover {
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .news-title {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        .news-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            font-size: 0.85rem;
+            color: #6c757d;
+        }
+
+        .news-country {
+            font-weight: 500;
+            color: #495057;
+        }
+
+        .news-date {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-bottom: 10px;
+        }
+
+        .news-content {
+            color: #495057;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .news-content p {
+            margin-bottom: 12px;
+        }
+
+        .news-content a {
+            color: #2c3e50;
+            text-decoration: none;
+        }
+
+        .news-content a:hover {
+            text-decoration: underline;
+        }
+
+        .load-more {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .load-more-btn {
+            padding: 12px 24px;
+            background: #6c757d;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .load-more-btn:hover {
+            background: #868e96;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 1px solid #e9ecef;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 16px;
+            }
+            
+            .news-meta {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="breadcrumb"><a href="index.html">首頁</a> / 美洲地區</div>
+        <div class="breadcrumb">
+            <a href="index.html">首頁</a> / 美洲地區
+        </div>
+
         <div class="header">
             <h1>美洲地區商機資訊</h1>
-            <p>涵蓋北美洲、中美洲、南美洲等主要美洲國家的商機動態</p>
+            <p>涵蓋北美、中美和南美主要國家的商機動態</p>
         </div>
+
         <div class="stats-bar">
-            <div class="stat-item"><div class="stat-number" id="totalNews">-</div><div class="stat-label">美洲商機</div></div>
-            <div class="stat-item"><div class="stat-number">25+</div><div class="stat-label">國家地區</div></div>
-            <div class="stat-item"><div class="stat-number">15+</div><div class="stat-label">駐外單位</div></div>
+            <div class="stat-item">
+                <div class="stat-number" id="totalNews">-</div>
+                <div class="stat-label">美洲商機</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">國家地區</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">10+</div>
+                <div class="stat-label">駐外單位</div>
+            </div>
         </div>
-        <div class="news-list" id="newsList"></div>
-        <div class="load-more" id="loadMoreSection"><button class="load-more-btn" onclick="loadMoreNews()">載入更多</button></div>
-        <div class="footer"><p>資料來源：經濟部國際貿易署</p><p>Built by <a href="https://github.com/lcslin">lcslin</a></p></div>
+
+        <div class="news-list" id="newsList">
+            <!-- 新聞項目將通過 JavaScript 動態加載 -->
+        </div>
+
+        <div class="load-more" id="loadMoreSection">
+            <button class="load-more-btn" onclick="loadMoreNews()">載入更多</button>
+        </div>
+
+        <div class="footer">
+            <p>資料來源：經濟部國際貿易署</p>
+            <p>Built by <a href="https://github.com/lcslin">lcslin</a></p>
+        </div>
     </div>
+
     <script>
-        let currentPage = 0, allNews = [], itemsPerPage = 5;
-        async function fetchNews() {
+        let currentPage = 0;
+        let allAmericaNews = [];
+        const itemsPerPage = 5;
+
+        async function fetchAmericaNews() {
             try {
-                const response = await fetch('./data/america.json');
+                // 修改為讀取 news_美洲地區.json 檔案
+                const response = await fetch('./data/news_美洲地區.json');
                 const data = await response.json();
-                allNews = data;
+                
+                allAmericaNews = data;
                 document.getElementById('totalNews').textContent = data.length;
+                
                 displayNews();
             } catch (error) {
-                console.error('Error:', error);
+                console.error('Error loading news data:', error);
                 document.getElementById('newsList').innerHTML = '<div style="text-align: center; padding: 40px; color: #6c757d;">載入資料時發生錯誤，請稍後再試。</div>';
             }
         }
+
         function displayNews() {
             const startIndex = currentPage * itemsPerPage;
             const endIndex = startIndex + itemsPerPage;
-            const newsToShow = allNews.slice(startIndex, endIndex);
+            const newsToShow = allAmericaNews.slice(startIndex, endIndex);
+
             const newsList = document.getElementById('newsList');
+            
             newsToShow.forEach(news => {
                 const newsItem = document.createElement('div');
                 newsItem.className = 'news-item';
-                const country = news.summary.split(',')[1] || '未分類';
-                newsItem.innerHTML = `<div class="news-title">${news.title}</div><div class="news-meta"><div class="news-country">${country}</div><div>${news.department} | ${news.contributor}</div></div><div class="news-content"><p>${news.content}</p></div>`;
+                
+                // 從 PageSummary 中提取國家/地區信息
+                const country = news.PageSummary ? news.PageSummary.split(',')[1] || '未分類' : '未分類';
+                
+                // 格式化日期
+                const publishDate = news.PagePublishTime ? formatDate(news.PagePublishTime) : '';
+                
+                // 處理 PageContent 以移除 HTML 標籤
+                const content = news.PageContent ? stripHtml(news.PageContent) : '';
+                
+                newsItem.innerHTML = `
+                    <div class="news-title">${news.PageTitle || ''}</div>
+                    <div class="news-meta">
+                        <div class="news-country">${country}</div>
+                        <div>${news.department || ''} | ${news.contributor || ''}</div>
+                    </div>
+                    <div class="news-date">${publishDate}</div>
+                    <div class="news-content">
+                        <p>${content}</p>
+                    </div>
+                `;
+                
                 newsList.appendChild(newsItem);
             });
+
             currentPage++;
-            if (endIndex >= allNews.length) document.getElementById('loadMoreSection').style.display = 'none';
+            
+            // 如果沒有更多新聞，隱藏載入更多按鈕
+            if (endIndex >= allAmericaNews.length) {
+                document.getElementById('loadMoreSection').style.display = 'none';
+            }
         }
-        function loadMoreNews() { displayNews(); }
-        document.addEventListener('DOMContentLoaded', fetchNews);
+
+        // 格式化日期函數
+        function formatDate(dateString) {
+            if (!dateString || dateString.length < 8) return '';
+            
+            // 假設格式為 YYYYMMDDHHMMSS
+            const year = dateString.substring(0, 4);
+            const month = dateString.substring(4, 6);
+            const day = dateString.substring(6, 8);
+            
+            return `${year}年${month}月${day}日`;
+        }
+        
+        // 移除 HTML 標籤的函數
+        function stripHtml(html) {
+            if (!html) return '';
+            const temp = document.createElement('div');
+            temp.innerHTML = html;
+            return temp.textContent || temp.innerText || '';
+        }
+
+        function loadMoreNews() {
+            displayNews();
+        }
+
+        // 頁面載入時獲取新聞
+        document.addEventListener('DOMContentLoaded', function() {
+            fetchAmericaNews();
+        });
     </script>
 </body>
 </html>
