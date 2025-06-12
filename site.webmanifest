@@ -1,0 +1,50 @@
+{
+    "name": "全球商情資訊平台",
+    "short_name": "商情資訊",
+    "description": "提供全球七大地區商情資訊，涵蓋120+國家的即時貿易動態、市場分析與投資機會",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "theme_color": "#2c3e50",
+    "background_color": "#f8f9fa",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "start_url": "/",
+    "scope": "/",
+    "lang": "zh-TW",
+    "categories": ["business", "news", "productivity"],
+    "shortcuts": [
+        {
+            "name": "亞洲商情",
+            "short_name": "亞洲",
+            "description": "查看亞洲地區商情資訊",
+            "url": "/asia.html",
+            "icons": [{ "src": "/asia-icon-96x96.png", "sizes": "96x96" }]
+        },
+        {
+            "name": "歐洲商情",
+            "short_name": "歐洲",
+            "description": "查看歐洲地區商情資訊",
+            "url": "/europe.html",
+            "icons": [{ "src": "/europe-icon-96x96.png", "sizes": "96x96" }]
+        },
+        {
+            "name": "美洲商情",
+            "short_name": "美洲",
+            "description": "查看美洲地區商情資訊",
+            "url": "/america.html",
+            "icons": [{ "src": "/america-icon-96x96.png", "sizes": "96x96" }]
+        }
+    ]
+}
