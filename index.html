@@ -279,7 +279,7 @@
             text-decoration: underline;
         }
 
-        /* GTC Paris 2025 科技新知樣式 */
+        /* Update@GTC Paris 樣式 */
         .tech-news-section {
             margin-bottom: 60px;
             padding: 30px;
@@ -339,7 +339,7 @@
         }
 
         .tech-news-card.nvidia { border-top-color: #76b900; }
-        .tech-news-card.asus { border-top-color: #0072CE; }
+        .tech-news-card.apple { border-top-color: #007AFF; }
 
         .tech-news-card-title {
             font-size: 1.3rem;
@@ -379,6 +379,26 @@
 
         .tech-news-footer a:hover {
             text-decoration: underline;
+        }
+
+        .analysis-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #2c3e50, #495057);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(44, 62, 80, 0.2);
+        }
+
+        .analysis-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(44, 62, 80, 0.3);
+            background: linear-gradient(135deg, #1a1a1a, #2c3e50);
         }
 
         @media (max-width: 768px) {
@@ -434,69 +454,65 @@
             <p>即時國際貿易動態與市場分析平台</p>
         </header>
 
-        <!-- GTC Paris 2025 科技新知 -->
+        <!-- Update@GTC Paris -->
         <section class="tech-news-section" aria-labelledby="tech-news-title">
             <div class="tech-news-header">
-                <h2 id="tech-news-title">GTC Paris 2025 科技新知</h2>
+                <h2 id="tech-news-title">Update@GTC Paris</h2>
             </div>
             <div class="tech-news-date">
-                <time datetime="2025-06-11">更新日期：2025年6月11日</time>
+                <time datetime="2025-06-13">更新日期：2025年6月13日</time>
             </div>
             
             <div class="tech-news-grid">
-                <!-- NVIDIA 新聞 -->
+                <!-- NVIDIA & GTC Paris 2025 -->
                 <article class="tech-news-card nvidia">
-                    <header class="tech-news-card-title">NVIDIA 最新動態</header>
+                    <header class="tech-news-card-title">🚀 GTC Paris 2025 重點</header>
                     
                     <div class="tech-news-item">
-                        <h4>Blackwell Ultra 系列推出</h4>
-                        <p>NVIDIA 宣布 Blackwell Ultra 系列將於 2025 年底推出，大幅提升 AI 運算效能。這一系列專為大型語言模型和生成式 AI 優化，效能較前一代提升超過 40%。</p>
+                        <h4>Grace Blackwell NVL72 系統</h4>
+                        <p>NVIDIA 在巴黎展示最新的 Grace Blackwell NVL72 AI 系統，專為大規模 AI 工作負載設計，能夠支援複雜的機器學習模型訓練與推理。</p>
                     </div>
                     
                     <div class="tech-news-item">
-                        <h4>Rubin 系統計劃</h4>
-                        <p>NVIDIA 宣布下一代 Rubin Ultra 系統計劃，預計 2026 年推出初版，完整版將於 2027 年下半年推出。Rubin Ultra 將包含驚人的 576 個 GPU，預計將顯著提高 AI 運算能力和效率。</p>
+                        <h4>歐洲 AI 基礎設施戰略</h4>
+                        <p>Jensen Huang 強調 NVIDIA 對歐洲市場的重視，提出協助歐洲國家建立 AI 基礎設施和"AI 工廠"的願景，這不僅是技術輸出，更是地緣政治層面的戰略布局。</p>
                     </div>
                     
                     <div class="tech-news-item">
-                        <h4>GROOT N1 開源計劃</h4>
-                        <p>NVIDIA 宣布 GROOT N1 開源，這是其革命性的機器人作業系統。這一舉措旨在建立統一的機器人開發平台，加速實體 AI 的發展。</p>
-                    </div>
-                    
-                    <div class="tech-news-item">
-                        <h4>擴展 AI Factory 願景</h4>
-                        <p>推出全新基礎設施解決方案，支持可擴展、主動式 AI。這些解決方案增加了標記生成能力，提高 AI 系統的效率和性能。</p>
+                        <h4>量子運算合作</h4>
+                        <p>NVIDIA 宣布了新的量子運算合作項目，顯示其在下一代運算技術上的前瞻布局，預計將加速量子-經典混合運算的發展。</p>
                     </div>
                 </article>
                 
-                <!-- 華碩新聞 -->
-                <article class="tech-news-card asus">
-                    <header class="tech-news-card-title">華碩新產品發表</header>
+                <!-- Apple WWDC 2025 -->
+                <article class="tech-news-card apple">
+                    <header class="tech-news-card-title">🍎 Apple WWDC 2025 重點</header>
                     
                     <div class="tech-news-item">
-                        <h4>NVIDIA GB300 NVL72 系統</h4>
-                        <p>華碩展示其最新的 NVIDIA GB300 NVL72 AI Factory 解決方案，與 Nebius 合作推動 NVIDIA Blackwell 加速基礎架構發展。</p>
+                        <h4>Liquid Glass 設計語言</h4>
+                        <p>Apple 推出革命性的"Liquid Glass"設計語言，這是自 iOS 7 扁平化設計以來最重要的視覺革新，為所有 Apple 設備提供統一的視覺體驗。</p>
                     </div>
                     
                     <div class="tech-news-item">
-                        <h4>ASUS Ascent GX10</h4>
-                        <p>華碩推出突破性的小型 AI 超級計算機 ASUS Ascent GX10，由 NVIDIA GB10 Grace Blackwell Superchip 驅動，提供 1,000 AI TOPS 的卓越性能。這款設備配備 NVIDIA Blackwell GPU、20 核心 Arm CPU 和 128GB 記憶體。</p>
+                        <h4>iOS 26 重大更新</h4>
+                        <p>iOS 26 強調跨設備的無縫協作，進一步強化了 Apple 生態系統的黏著度，不僅僅是版本更新，更是 Apple 軟體策略的重要轉折點。</p>
                     </div>
                     
                     <div class="tech-news-item">
-                        <h4>ASUS Pro WS 3000W Platinum</h4>
-                        <p>華碩發表專業工作站 ASUS Pro WS 3000W Platinum，針對 AI 和數據科學工作負載優化，支持最新的 NVIDIA RTX 專業 GPU。</p>
-                    </div>
-                    
-                    <div class="tech-news-item">
-                        <h4>AI 基礎設施解決方案</h4>
-                        <p>華碩展示其 AI Factory 基礎設施解決方案，基於 NVIDIA RTX PRO 服務器，同時展示 NVIDIA Grace Blackwell Ultra 系統。全新的 ASUS AI POD with NVIDIA GB300 NVL72 為大規模 AI 部署而設計。</p>
+                        <h4>Apple Intelligence 重新品牌化</h4>
+                        <p>Apple Intelligence 和 Siri 獲得重大重新品牌化，AI 功能將更深度整合到整個作業系統中，顯示 Apple 在 AI 競賽中的策略重新定位。</p>
                     </div>
                 </article>
             </div>
             
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="gtc-paris-wwdc-2025-analysis.html" class="analysis-link">
+                    📖 閱讀完整深度分析報告 →
+                </a>
+            </div>
+            
             <footer class="tech-news-footer">
-                資料來源：GTC Paris 2025 大會報導 | 更多詳情請訪問 <a href="https://www.nvidia.com/gtc/" target="_blank" rel="noopener noreferrer">NVIDIA GTC</a> 和 <a href="https://www.asus.com/" target="_blank" rel="noopener noreferrer">ASUS</a> 官方網站
+                資料來源：GTC Paris 2025 大會報導、Apple WWDC 2025 發布內容、Stratechery by Ben Thompson 分析
             </footer>
         </section>
 
