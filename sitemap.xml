@@ -7,9 +7,17 @@
     <!-- 首頁 -->
     <url>
         <loc>https://lcslin.github.io/</loc>
-        <lastmod>2025-06-12</lastmod>
+        <lastmod>2025-06-13</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
+    </url>
+
+    <!-- GTC Paris 2025與Apple WWDC 2025深度分析 -->
+    <url>
+        <loc>https://lcslin.github.io/gtc-paris-wwdc-2025-analysis.html</loc>
+        <lastmod>2025-06-13</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
     </url>
 
     <!-- 亞洲地區商情 -->
