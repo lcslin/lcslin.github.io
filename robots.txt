@@ -1,27 +1,39 @@
+# robots.txt for lcslin.github.io
+# 全球商情資訊平台 - 優化版 robots.txt
+
+# 通用爬蟲設定 - 允許所有內容
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://lcslin.github.io/sitemap.xml
-
-# 允許搜尋引擎爬取所有內容
+# 明確允許重要內容類型
 Allow: /*.html
 Allow: /*.css
 Allow: /*.js
+Allow: /*.json
+Allow: /*.xml
 Allow: /data/
+Allow: /assets/
+Allow: /images/
+Allow: /css/
+Allow: /js/
 
-# 防止爬取可能敏感的檔案
+# 阻擋不需要的內容
 Disallow: /*.log
-Disallow: /.*
 Disallow: /tmp/
 Disallow: /cache/
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /node_modules/
+Disallow: /.DS_Store
+Disallow: /Thumbs.db
 
-# 搜尋引擎友好設定
+# 設定合理的爬取延遲（1秒）
 Crawl-delay: 1
 
-# 針對特定搜尋引擎的設定
+# 主要搜尋引擎特別設定
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
 User-agent: Bingbot
 Allow: /
@@ -34,3 +46,10 @@ Allow: /
 
 User-agent: Baiduspider
 Allow: /
+
+# Sitemap 位置
+Sitemap: https://lcslin.github.io/sitemap.xml
+
+# 如果有其他 sitemap 可以添加
+# Sitemap: https://lcslin.github.io/sitemap-news.xml
+# Sitemap: https://lcslin.github.io/sitemap-images.xml
