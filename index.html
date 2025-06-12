@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>全球商機資訊 | 經濟部國際貿易署</title>
+    <title>全球商情資訊</title>
     <style>
         * {
             margin: 0;
@@ -274,8 +274,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>全球商機資訊</h1>
-            <p>經濟部國際貿易署</p>
+            <h1>全球商情資訊</h1>
         </div>
 
         <!-- GTC Paris 2025 科技新知 -->
@@ -347,7 +346,7 @@
         <div class="stats">
             <div class="stat-card">
                 <div class="stat-number" id="totalNews">-</div>
-                <div class="stat-label">商機資訊</div>
+                <div class="stat-label">商情資訊</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number">7</div>
@@ -365,8 +364,8 @@
                     亞洲地區
                     <span class="region-count" id="asiaCount">-</span>
                 </div>
-                <p>包含越南、中國大陸、新加坡、緬甸、日本、韓國、香港、馬來西亞、印度、泰國、菲律賓、印尼等國家的商機資訊</p>
-                <a href="asia.html" class="region-link">查看亞洲地區商機 →</a>
+                <p>包含越南、中國大陸、新加坡、緬甸、日本、韓國、香港、馬來西亞、印度、泰國、菲律賓、印尼等國家的商情資訊</p>
+                <a href="asia.html" class="region-link">查看亞洲地區商情 →</a>
             </div>
 
             <div class="region-card europe">
@@ -374,8 +373,8 @@
                     歐洲地區
                     <span class="region-count" id="europeCount">-</span>
                 </div>
-                <p>包含德國、法國、英國、波蘭、義大利、瑞士、匈牙利、丹麥、荷蘭、捷克等國家的商機資訊</p>
-                <a href="europe.html" class="region-link">查看歐洲地區商機 →</a>
+                <p>包含德國、法國、英國、波蘭、義大利、瑞士、匈牙利、丹麥、荷蘭、捷克等國家的商情資訊</p>
+                <a href="europe.html" class="region-link">查看歐洲地區商情 →</a>
             </div>
 
             <div class="region-card america">
@@ -383,8 +382,8 @@
                     美洲地區
                     <span class="region-count" id="americaCount">-</span>
                 </div>
-                <p>包含美國、加拿大、墨西哥、智利、阿根廷、巴西、秘魯等國家的商機資訊</p>
-                <a href="america.html" class="region-link">查看美洲地區商機 →</a>
+                <p>包含美國、加拿大、墨西哥、智利、阿根廷、巴西、秘魯等國家的商情資訊</p>
+                <a href="america.html" class="region-link">查看美洲地區商情 →</a>
             </div>
 
             <div class="region-card africa">
@@ -392,8 +391,8 @@
                     非洲地區
                     <span class="region-count" id="africaCount">-</span>
                 </div>
-                <p>包含奈及利亞、南非、肯亞、埃及、摩洛哥等國家的商機資訊</p>
-                <a href="africa.html" class="region-link">查看非洲地區商機 →</a>
+                <p>包含奈及利亞、南非、肯亞、埃及、摩洛哥等國家的商情資訊</p>
+                <a href="africa.html" class="region-link">查看非洲地區商情 →</a>
             </div>
 
             <div class="region-card oceania">
@@ -401,8 +400,8 @@
                     大洋洲地區
                     <span class="region-count" id="oceaniaCount">-</span>
                 </div>
-                <p>包含澳大利亞、紐西蘭、帛琉、馬紹爾群島等國家的商機資訊</p>
-                <a href="oceania.html" class="region-link">查看大洋洲地區商機 →</a>
+                <p>包含澳大利亞、紐西蘭、帛琉、馬紹爾群島等國家的商情資訊</p>
+                <a href="oceania.html" class="region-link">查看大洋洲地區商情 →</a>
             </div>
 
             <div class="region-card middle-east">
@@ -410,22 +409,21 @@
                     中東地區
                     <span class="region-count" id="middleEastCount">-</span>
                 </div>
-                <p>包含以色列、沙烏地阿拉伯、阿拉伯聯合大公國、約旦等國家的商機資訊</p>
-                <a href="middle-east.html" class="region-link">查看中東地區商機 →</a>
+                <p>包含以色列、沙烏地阿拉伯、阿拉伯聯合大公國、約旦等國家的商情資訊</p>
+                <a href="middle-east.html" class="region-link">查看中東地區商情 →</a>
             </div>
         </div>
 
         <div class="footer">
-            <p>資料來源：經濟部國際貿易署 API</p>
             <p>Built by <a href="https://github.com/lcslin">lcslin</a></p>
         </div>
     </div>
 
     <script>
-        // 當頁面載入時獲取各地區商機數量
+        // 當頁面載入時獲取各地區商情數量
         document.addEventListener('DOMContentLoaded', async function() {
             try {
-                // 獲取各地區商機資訊 - 修改為使用 news_ 開頭的檔案
+                // 獲取各地區商情資訊 - 修改為使用 news_ 開頭的檔案
                 const asiaResponse = await fetch('./data/news_亞洲地區.json');
                 const europeResponse = await fetch('./data/news_歐洲地區.json');
                 const americaResponse = await fetch('./data/news_美洲地區.json');
@@ -441,7 +439,7 @@
                 const oceaniaData = await oceaniaResponse.json();
                 const middleEastData = await middleEastResponse.json();
                 
-                // 更新各地區商機數量
+                // 更新各地區商情數量
                 document.getElementById('asiaCount').textContent = asiaData.length + ' 筆';
                 document.getElementById('europeCount').textContent = europeData.length + ' 筆';
                 document.getElementById('americaCount').textContent = americaData.length + ' 筆';
@@ -449,13 +447,13 @@
                 document.getElementById('oceaniaCount').textContent = oceaniaData.length + ' 筆';
                 document.getElementById('middleEastCount').textContent = middleEastData.length + ' 筆';
                 
-                // 更新總商機數量
+                // 更新總商情數量
                 const totalNews = asiaData.length + europeData.length + americaData.length + 
                                  africaData.length + oceaniaData.length + middleEastData.length;
                 document.getElementById('totalNews').textContent = totalNews;
                 
             } catch (error) {
-                console.error('載入商機資料時發生錯誤:', error);
+                console.error('載入商情資料時發生錯誤:', error);
             }
         });
     </script>
