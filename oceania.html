@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>大洋洲地區商機資訊 | 經濟部國際貿易署</title>
+    <title>大洋洲地區商情資訊</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #2c3e50; background: #f8f9fa; }
@@ -35,21 +35,21 @@
 <body>
     <div class="container">
         <div class="breadcrumb"><a href="index.html">首頁</a> / 大洋洲地區</div>
-        <div class="header"><h1>大洋洲地區商機資訊</h1><p>涵蓋澳洲、紐西蘭、太平洋島國等大洋洲國家的商機動態</p></div>
+        <div class="header"><h1>大洋洲地區商情資訊</h1><p>涵蓋澳洲、紐西蘭、太平洋島國等大洋洲國家的商情動態</p></div>
         <div class="stats-bar">
-            <div class="stat-item"><div class="stat-number" id="totalNews">-</div><div class="stat-label">大洋洲商機</div></div>
+            <div class="stat-item"><div class="stat-number" id="totalNews">-</div><div class="stat-label">大洋洲商情</div></div>
             <div class="stat-item"><div class="stat-number">5+</div><div class="stat-label">國家地區</div></div>
             <div class="stat-item"><div class="stat-number">3+</div><div class="stat-label">駐外單位</div></div>
         </div>
         <div class="news-list" id="newsList"></div>
         <div class="load-more" id="loadMoreSection"><button class="load-more-btn" onclick="loadMoreNews()">載入更多</button></div>
-        <div class="footer"><p>資料來源：經濟部國際貿易署</p><p>Built by <a href="https://github.com/lcslin">lcslin</a></p></div>
+        <div class="footer"><p>Built by <a href="https://github.com/lcslin">lcslin</a></p></div>
     </div>
     <script>
         let currentPage = 0, allNews = [], itemsPerPage = 5;
         async function fetchNews() {
             try {
-                const response = await fetch('./data/oceania.json');
+                const response = await fetch('./data/news_大洋洲地區.json');
                 const data = await response.json();
                 allNews = data;
                 document.getElementById('totalNews').textContent = data.length;
@@ -67,12 +67,27 @@
             newsToShow.forEach(news => {
                 const newsItem = document.createElement('div');
                 newsItem.className = 'news-item';
-                const country = news.summary.split(',')[1] || '未分類';
-                newsItem.innerHTML = `<div class="news-title">${news.title}</div><div class="news-meta"><div class="news-country">${country}</div><div>${news.department} | ${news.contributor}</div></div><div class="news-content"><p>${news.content}</p></div>`;
+                const country = news.PageSummary ? news.PageSummary.split(',')[1] || '未分類' : '未分類';
+                const publishDate = news.PagePublishTime ? formatDate(news.PagePublishTime) : '';
+                const content = news.PageContent ? stripHtml(news.PageContent) : '';
+                newsItem.innerHTML = `<div class="news-title">${news.PageTitle || ''}</div><div class="news-meta"><div class="news-country">${country}</div><div>${news.department || ''} | ${news.contributor || ''}</div></div><div class="news-date">${publishDate}</div><div class="news-content"><p>${content}</p></div>`;
                 newsList.appendChild(newsItem);
             });
             currentPage++;
             if (endIndex >= allNews.length) document.getElementById('loadMoreSection').style.display = 'none';
+        }
+        function formatDate(dateString) {
+            if (!dateString || dateString.length < 8) return '';
+            const year = dateString.substring(0, 4);
+            const month = dateString.substring(4, 6);
+            const day = dateString.substring(6, 8);
+            return `${year}年${month}月${day}日`;
+        }
+        function stripHtml(html) {
+            if (!html) return '';
+            const temp = document.createElement('div');
+            temp.innerHTML = html;
+            return temp.textContent || temp.innerText || '';
         }
         function loadMoreNews() { displayNews(); }
         document.addEventListener('DOMContentLoaded', fetchNews);
