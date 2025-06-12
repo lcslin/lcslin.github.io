@@ -1,0 +1,36 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://lcslin.github.io/sitemap.xml
+
+# 允許搜尋引擎爬取所有內容
+Allow: /*.html
+Allow: /*.css
+Allow: /*.js
+Allow: /data/
+
+# 防止爬取可能敏感的檔案
+Disallow: /*.log
+Disallow: /.*
+Disallow: /tmp/
+Disallow: /cache/
+
+# 搜尋引擎友好設定
+Crawl-delay: 1
+
+# 針對特定搜尋引擎的設定
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
