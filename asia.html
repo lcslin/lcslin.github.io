@@ -3,7 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>亞洲地區商情資訊</title>
+    <title>亞洲地區商情資訊 - 東亞東南亞南亞即時貿易動態 | 全球商情資訊平台</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="提供亞洲地區包括越南、中國大陸、新加坡、緬甸、日本、韓國、香港、馬來西亞、印度、泰國、菲律賓、印尼等20+國家的商情資訊、市場分析與投資機會。">
+    <meta name="keywords" content="亞洲商情,東亞商情,東南亞商情,南亞商情,越南商情,中國大陸商情,新加坡商情,日本商情,韓國商情,香港商情,印度商情,泰國商情,菲律賓商情,印尼商情,馬來西亞商情">
+    <meta name="author" content="lcslin">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lcslin.github.io/asia.html">
+    <meta property="og:title" content="亞洲地區商情資訊 - 東亞東南亞南亞即時貿易動態">
+    <meta property="og:description" content="提供亞洲地區包括越南、中國大陸、新加坡、緬甸、日本、韓國、香港等20+國家的商情資訊、市場分析與投資機會。">
+    <meta property="og:image" content="https://lcslin.github.io/assets/asia-og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://lcslin.github.io/asia.html">
+    <meta property="twitter:title" content="亞洲地區商情資訊 - 東亞東南亞南亞即時貿易動態">
+    <meta property="twitter:description" content="提供亞洲地區包括越南、中國大陸、新加坡、緬甸、日本、韓國、香港等20+國家的商情資訊、市場分析與投資機會。">
+    <meta property="twitter:image" content="https://lcslin.github.io/assets/asia-twitter-image.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://lcslin.github.io/asia.html">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "亞洲地區商情資訊",
+        "url": "https://lcslin.github.io/asia.html",
+        "description": "提供亞洲地區包括越南、中國大陸、新加坡、緬炘、日本、韓國、香港等20+國家的商情資訊",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "全球商情資訊平台",
+            "url": "https://lcslin.github.io/"
+        },
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "首頁",
+                    "item": "https://lcslin.github.io/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "亞洲地區",
+                    "item": "https://lcslin.github.io/asia.html"
+                }
+            ]
+        }
+    }
+    </script>
+
     <style>
         * {
             margin: 0;
@@ -200,16 +257,16 @@
 </head>
 <body>
     <div class="container">
-        <div class="breadcrumb">
+        <nav class="breadcrumb">
             <a href="index.html">首頁</a> / 亞洲地區
-        </div>
+        </nav>
 
-        <div class="header">
+        <header class="header">
             <h1>亞洲地區商情資訊</h1>
             <p>涵蓋東亞、東南亞、南亞等主要亞洲國家的商情動態</p>
-        </div>
+        </header>
 
-        <div class="stats-bar">
+        <section class="stats-bar">
             <div class="stat-item">
                 <div class="stat-number" id="totalNews">-</div>
                 <div class="stat-label">亞洲商情</div>
@@ -222,19 +279,19 @@
                 <div class="stat-number">15+</div>
                 <div class="stat-label">駐外單位</div>
             </div>
-        </div>
+        </section>
 
-        <div class="news-list" id="newsList">
+        <main class="news-list" id="newsList">
             <!-- 新聞項目將通過 JavaScript 動態加載 -->
-        </div>
+        </main>
 
-        <div class="load-more" id="loadMoreSection">
-            <button class="load-more-btn" onclick="loadMoreNews()">載入更多</button>
-        </div>
+        <section class="load-more" id="loadMoreSection">
+            <button class="load-more-btn" onclick="loadMoreNews()" aria-label="載入更多亞洲地區商情資訊">載入更多</button>
+        </section>
 
-        <div class="footer">
-            <p>Built by <a href="https://github.com/lcslin">lcslin</a></p>
-        </div>
+        <footer class="footer">
+            <p>Built by <a href="https://github.com/lcslin" rel="noopener noreferrer" target="_blank">lcslin</a></p>
+        </footer>
     </div>
 
     <script>
@@ -266,7 +323,7 @@
             const newsList = document.getElementById('newsList');
             
             newsToShow.forEach(news => {
-                const newsItem = document.createElement('div');
+                const newsItem = document.createElement('article');
                 newsItem.className = 'news-item';
                 
                 // 從 PageSummary 中提取國家/地區信息
@@ -279,12 +336,12 @@
                 const content = news.PageContent ? stripHtml(news.PageContent) : '';
                 
                 newsItem.innerHTML = `
-                    <div class="news-title">${news.PageTitle || ''}</div>
+                    <h2 class="news-title">${news.PageTitle || ''}</h2>
                     <div class="news-meta">
                         <div class="news-country">${country}</div>
                         <div>${news.department || ''} | ${news.contributor || ''}</div>
                     </div>
-                    <div class="news-date">${publishDate}</div>
+                    <time class="news-date" datetime="${news.PagePublishTime || ''}">${publishDate}</time>
                     <div class="news-content">
                         <p>${content}</p>
                     </div>
