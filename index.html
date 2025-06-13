@@ -340,6 +340,7 @@
 
         .tech-news-card.nvidia { border-top-color: #76b900; }
         .tech-news-card.apple { border-top-color: #007AFF; }
+        .tech-news-card.anthropic { border-top-color: #F4A261; }
 
         .tech-news-card-title {
             font-size: 1.3rem;
@@ -401,6 +402,130 @@
             background: linear-gradient(135deg, #1a1a1a, #2c3e50);
         }
 
+        /* AI Research 專屬樣式 */
+        .ai-research-section {
+            margin-bottom: 60px;
+            padding: 30px;
+            background: linear-gradient(135deg, #f8f9fa, #ffffff);
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border: 1px solid #e9ecef;
+        }
+
+        .ai-research-header {
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .ai-research-header h2 {
+            font-size: 1.8rem;
+            font-weight: 300;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .ai-research-header::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, #F4A261, #E76F51);
+            margin: 10px auto;
+            border-radius: 2px;
+        }
+
+        .ai-article-card {
+            background: white;
+            border-radius: 8px;
+            padding: 32px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border-left: 4px solid #F4A261;
+        }
+
+        .ai-article-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(244, 162, 97, 0.15);
+        }
+
+        .ai-article-title {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .ai-article-summary {
+            font-size: 1rem;
+            color: #495057;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        .ai-article-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        .ai-article-highlights {
+            margin-bottom: 24px;
+        }
+
+        .ai-article-highlights h4 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #2c3e50;
+            margin-bottom: 12px;
+        }
+
+        .ai-article-highlights ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .ai-article-highlights li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+            color: #495057;
+        }
+
+        .ai-article-highlights li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #F4A261;
+            font-weight: bold;
+        }
+
+        .ai-article-link {
+            display: inline-block;
+            padding: 14px 28px;
+            background: linear-gradient(135deg, #F4A261, #E76F51);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(244, 162, 97, 0.2);
+        }
+
+        .ai-article-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(244, 162, 97, 0.3);
+            background: linear-gradient(135deg, #E76F51, #D62828);
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 20px 16px;
@@ -415,8 +540,15 @@
                 grid-template-columns: 1fr;
             }
             
-            .tech-news-section {
+            .tech-news-section,
+            .ai-research-section {
                 padding: 20px;
+            }
+
+            .ai-article-meta {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
             }
         }
 
@@ -453,6 +585,46 @@
             <h1>全球商情資訊</h1>
             <p>即時國際貿易動態與市場分析平台</p>
         </header>
+
+        <!-- AI Research Section -->
+        <section class="ai-research-section" aria-labelledby="ai-research-title">
+            <div class="ai-research-header">
+                <h2 id="ai-research-title">🤖 AI 研究洞察</h2>
+            </div>
+            
+            <article class="ai-article-card">
+                <header>
+                    <h3 class="ai-article-title">
+                        🧠 Claude "Think Tool" 完整分析
+                    </h3>
+                    <div class="ai-article-meta">
+                        <span>📅 2025年6月13日</span>
+                        <span>🏷️ AI工具 · 技術分析</span>
+                    </div>
+                </header>
+                
+                <p class="ai-article-summary">
+                    Anthropic 推出了革命性的 "Think Tool" 功能，讓 Claude AI 能在執行複雜任務時進行結構化思考。這個看似簡單的創新在航空客服場景中實現了 54% 的性能提升，展現了 AI 系統設計的新思路。
+                </p>
+                
+                <div class="ai-article-highlights">
+                    <h4>核心亮點</h4>
+                    <ul>
+                        <li>透過 JSON 指令實現 AI "筆記本" 功能</li>
+                        <li>航空客服場景性能提升 54%</li>
+                        <li>展示了簡潔性優於複雜性的設計哲學</li>
+                        <li>為 AI 代理系統提供了新的可靠性解決方案</li>
+                        <li>包含完整的技術實現和最佳實踐指南</li>
+                    </ul>
+                </div>
+                
+                <div style="text-align: center;">
+                    <a href="claude-think-tool-summary.html" class="ai-article-link">
+                        📖 閱讀完整中文翻譯與技術分析 →
+                    </a>
+                </div>
+            </article>
+        </section>
 
         <!-- Update@GTC Paris -->
         <section class="tech-news-section" aria-labelledby="tech-news-title">
