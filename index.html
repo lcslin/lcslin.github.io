@@ -16,6 +16,11 @@
     <meta property="og:title" content="全球商情資訊 - 即時國際貿易動態與市場分析">
     <meta property="og:description" content="提供全球七大地區商情資訊，涵蓋120+國家的即時貿易動態、市場分析與投資機會。專業的國際經貿資訊平台。">
     
+    <!-- 載入宋體字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <style>
         * {
             margin: 0;
@@ -24,10 +29,11 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segui UI', Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
-            color: #2c3e50;
-            background: #f8f9fa;
+            color: #e5e5e5;
+            background: linear-gradient(135deg, #2c2c2c 0%, #3a3a3a 100%);
+            min-height: 100vh;
         }
 
         .container {
@@ -39,29 +45,36 @@
         .header {
             text-align: center;
             margin-bottom: 60px;
+            padding: 40px 0;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
         }
 
         .header h1 {
-            font-size: 2.5rem;
-            font-weight: 300;
-            color: #1a1a1a;
-            margin-bottom: 8px;
+            font-family: 'Noto Serif TC', serif;
+            font-size: 3rem;
+            font-weight: 600;
+            color: #f8f9fa;
+            margin-bottom: 16px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
 
         .header p {
-            font-size: 1.1rem;
-            color: #6c757d;
+            font-size: 1.2rem;
+            color: #adb5bd;
             font-weight: 300;
+            letter-spacing: 0.5px;
         }
 
         /* 重大科技新聞區段樣式 */
         .tech-news-section {
             margin-bottom: 60px;
-            padding: 30px;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-            border-left: 4px solid #e74c3c;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .tech-news-header {
@@ -70,205 +83,229 @@
         }
 
         .tech-news-header h2 {
-            font-size: 2rem;
-            font-weight: 300;
-            color: #1a1a1a;
+            font-family: 'Noto Serif TC', serif;
+            font-size: 2.2rem;
+            font-weight: 500;
+            color: #f8f9fa;
             margin-bottom: 10px;
         }
 
         .tech-news-date {
-            font-size: 0.95rem;
+            font-size: 1rem;
             color: #6c757d;
             text-align: center;
             margin-bottom: 30px;
         }
 
         .breaking-news {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 30px;
-            border-radius: 10px;
+            background: linear-gradient(135deg, #4a4a4a 0%, #5a5a5a 100%);
+            color: #f8f9fa;
+            padding: 40px;
+            border-radius: 12px;
             margin-bottom: 30px;
             text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .breaking-news h3 {
-            font-size: 1.5rem;
-            font-weight: 400;
-            margin-bottom: 15px;
+            font-family: 'Noto Serif TC', serif;
+            font-size: 1.8rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+            color: #ffffff;
         }
 
         .breaking-news p {
             font-size: 1.1rem;
-            line-height: 1.7;
-            margin-bottom: 20px;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            color: #e5e5e5;
         }
 
         .breaking-news-link {
             display: inline-block;
-            padding: 12px 30px;
-            background: rgba(255,255,255,0.2);
-            color: white;
+            padding: 15px 35px;
+            background: rgba(255,255,255,0.1);
+            color: #ffffff;
             text-decoration: none;
-            border-radius: 25px;
+            border-radius: 30px;
             font-weight: 500;
-            border: 2px solid rgba(255,255,255,0.3);
+            border: 2px solid rgba(255,255,255,0.2);
             transition: all 0.3s ease;
         }
 
         .breaking-news-link:hover {
-            background: rgba(255,255,255,0.3);
-            border-color: rgba(255,255,255,0.5);
+            background: rgba(255,255,255,0.2);
+            border-color: rgba(255,255,255,0.4);
+            transform: translateY(-2px);
         }
 
         .analysis-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 25px;
-            margin-top: 30px;
+            margin-top: 40px;
         }
 
         .analysis-card {
-            background: #f8f9fa;
-            border-radius: 10px;
-            padding: 25px;
-            border-top: 4px solid #3498db;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
         }
 
         .analysis-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.2);
         }
 
         .analysis-card h4 {
-            font-size: 1.2rem;
+            font-family: 'Noto Serif TC', serif;
+            font-size: 1.3rem;
             font-weight: 500;
-            color: #2c3e50;
+            color: #ffffff;
             margin-bottom: 15px;
         }
 
         .analysis-card p {
-            font-size: 0.95rem;
-            color: #495057;
-            line-height: 1.6;
+            font-size: 1rem;
+            color: #d1d5db;
+            line-height: 1.7;
             margin-bottom: 15px;
         }
 
         .expert-quote {
-            background: white;
-            border-left: 4px solid #f39c12;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 4px solid #6c757d;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
             font-style: italic;
-            color: #495057;
+            color: #d1d5db;
         }
 
         .quote-author {
             text-align: right;
-            margin-top: 10px;
+            margin-top: 15px;
             font-weight: 600;
             font-style: normal;
-            color: #2c3e50;
+            color: #f8f9fa;
         }
 
         .stats {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+            gap: 25px;
             margin-bottom: 60px;
         }
 
         .stat-card {
-            background: white;
-            padding: 30px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 35px 25px;
             text-align: center;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.08);
         }
 
         .stat-number {
-            font-size: 2.5rem;
-            font-weight: 300;
-            color: #2c3e50;
-            margin-bottom: 8px;
+            font-family: 'Noto Serif TC', serif;
+            font-size: 2.8rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 10px;
         }
 
         .stat-label {
-            font-size: 0.9rem;
-            color: #6c757d;
+            font-size: 1rem;
+            color: #adb5bd;
             font-weight: 400;
         }
 
         .regions-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 24px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
         }
 
         .region-card {
-            background: white;
-            border-radius: 8px;
-            padding: 24px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            border-left: 4px solid #e9ecef;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
         }
 
         .region-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.2);
         }
 
-        .region-card.asia { border-left-color: #2c3e50; }
-        .region-card.europe { border-left-color: #495057; }
-        .region-card.america { border-left-color: #6c757d; }
-        .region-card.africa { border-left-color: #868e96; }
-        .region-card.oceania { border-left-color: #adb5bd; }
-        .region-card.middle-east { border-left-color: #ced4da; }
+        .region-card.asia { border-left: 4px solid #9ca3af; }
+        .region-card.europe { border-left: 4px solid #6b7280; }
+        .region-card.america { border-left: 4px solid #4b5563; }
+        .region-card.africa { border-left: 4px solid #374151; }
+        .region-card.oceania { border-left: 4px solid #1f2937; }
+        .region-card.middle-east { border-left: 4px solid #111827; }
 
         .region-title {
-            font-size: 1.3rem;
-            font-weight: 400;
-            color: #1a1a1a;
-            margin-bottom: 16px;
+            font-family: 'Noto Serif TC', serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #ffffff;
+            margin-bottom: 18px;
+        }
+
+        .region-card p {
+            color: #d1d5db;
+            line-height: 1.7;
+            margin-bottom: 20px;
         }
 
         .region-link {
             display: inline-block;
             margin-top: 16px;
-            padding: 8px 16px;
-            background: #f8f9fa;
-            color: #495057;
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
             text-decoration: none;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            font-weight: 400;
-            transition: all 0.2s ease;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         .region-link:hover {
-            background: #2c3e50;
-            color: white;
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateX(5px);
         }
 
         .footer {
             text-align: center;
             margin-top: 80px;
-            padding-top: 40px;
-            border-top: 1px solid #e9ecef;
+            padding: 30px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
             color: #6c757d;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
         }
 
         .footer a {
-            color: #495057;
+            color: #adb5bd;
             text-decoration: none;
+            transition: color 0.3s ease;
         }
 
         .footer a:hover {
-            text-decoration: underline;
+            color: #ffffff;
         }
 
         @media (max-width: 768px) {
@@ -277,7 +314,7 @@
             }
             
             .header h1 {
-                font-size: 2rem;
+                font-size: 2.2rem;
             }
             
             .analysis-grid {
@@ -285,11 +322,15 @@
             }
             
             .breaking-news {
-                padding: 20px;
+                padding: 25px;
             }
             
             .breaking-news h3 {
-                font-size: 1.3rem;
+                font-size: 1.5rem;
+            }
+            
+            .tech-news-section {
+                padding: 25px;
             }
         }
     </style>
@@ -304,31 +345,31 @@
         <!-- 重大科技新聞區段 -->
         <section class="tech-news-section">
             <div class="tech-news-header">
-                <h2>🚨 重大科技新聞</h2>
+                <h2>重大科技新聞</h2>
             </div>
             <div class="tech-news-date">
                 更新日期：2025年6月14日
             </div>
             
             <div class="breaking-news">
-                <h3>🤝 AMD與OpenAI達成戰略合作</h3>
+                <h3>AMD與OpenAI達成戰略合作</h3>
                 <p>Lisa Su與Sam Altman同台宣布MI400系列芯片合作，OpenAI將成為AMD下一代AI芯片的早期設計夥伴，這標誌著AI硬體市場競爭格局的重大轉變。</p>
-                <a href="amd-openai-partnership-report.html" class="breaking-news-link">閱讀完整分析報告 →</a>
+                <a href="amd-openai-partnership-report.html" class="breaking-news-link">閱讀完整分析報告</a>
             </div>
 
             <div class="analysis-grid">
                 <div class="analysis-card">
-                    <h4>💡 技術突破</h4>
+                    <h4>技術突破</h4>
                     <p>AMD MI400系列芯片將整合到Helios伺服器系統中，每套系統配備72顆芯片，直接對標NVIDIA NVL72系統，預計2026年正式商用。</p>
                 </div>
                 
                 <div class="analysis-card">
-                    <h4>🎯 戰略意義</h4>
+                    <h4>戰略意義</h4>
                     <p>OpenAI實現硬體供應鏈多元化，降低對NVIDIA依賴；AMD獲得重要客戶認證，進軍AI市場的關鍵突破。</p>
                 </div>
                 
                 <div class="analysis-card">
-                    <h4>📊 市場反應</h4>
+                    <h4>市場反應</h4>
                     <p>AMD股價發布會後下跌2%，但分析師認為這是長期戰略價值的重要布局，JP Morgan預測AMD AI業務將有60%增長。</p>
                 </div>
             </div>
@@ -374,7 +415,7 @@
                     亞洲地區 (150+ 筆)
                 </header>
                 <p>包含越南、中國大陸、新加坡、緬甸、日本、韓國、香港、馬來西亞、印度、泰國、菲律賓、印尼等國家的商情資訊</p>
-                <a href="asia.html" class="region-link">查看亞洲地區商情 →</a>
+                <a href="asia.html" class="region-link">查看亞洲地區商情</a>
             </article>
 
             <article class="region-card europe">
@@ -382,7 +423,7 @@
                     歐洲地區 (120+ 筆)
                 </header>
                 <p>包含德國、法國、英國、波蘭、義大利、瑞士、匈牙利、丹麥、荷蘭、捷克等國家的商情資訊</p>
-                <a href="europe.html" class="region-link">查看歐洲地區商情 →</a>
+                <a href="europe.html" class="region-link">查看歐洲地區商情</a>
             </article>
 
             <article class="region-card america">
@@ -390,7 +431,7 @@
                     美洲地區 (100+ 筆)
                 </header>
                 <p>包含美國、加拿大、墨西哥、智利、阿根廷、巴西、秘魯等國家的商情資訊</p>
-                <a href="america.html" class="region-link">查看美洲地區商情 →</a>
+                <a href="america.html" class="region-link">查看美洲地區商情</a>
             </article>
 
             <article class="region-card africa">
@@ -398,7 +439,7 @@
                     非洲地區 (80+ 筆)
                 </header>
                 <p>包含奈及利亞、南非、肯亞、埃及、摩洛哥等國家的商情資訊</p>
-                <a href="africa.html" class="region-link">查看非洲地區商情 →</a>
+                <a href="africa.html" class="region-link">查看非洲地區商情</a>
             </article>
 
             <article class="region-card oceania">
@@ -406,7 +447,7 @@
                     大洋洲地區 (30+ 筆)
                 </header>
                 <p>包含澳大利亞、紐西蘭、帛琉、馬紹爾群島等國家的商情資訊</p>
-                <a href="oceania.html" class="region-link">查看大洋洲地區商情 →</a>
+                <a href="oceania.html" class="region-link">查看大洋洲地區商情</a>
             </article>
 
             <article class="region-card middle-east">
@@ -414,7 +455,7 @@
                     中東地區 (40+ 筆)
                 </header>
                 <p>包含以色列、沙烏地阿拉伯、阿拉伯聯合大公國、約旦等國家的商情資訊</p>
-                <a href="middle-east.html" class="region-link">查看中東地區商情 →</a>
+                <a href="middle-east.html" class="region-link">查看中東地區商情</a>
             </article>
         </nav>
 
