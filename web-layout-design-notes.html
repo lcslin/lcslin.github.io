@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=6">
+    <title>現代網頁佈局設計筆記 | lcslin</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="現代網頁設計中關於佈局、CSS技巧和字型選用的關鍵要素，包含Flexbox vs Grid、響應式設計、字型設計和性能優化。">
+    <meta name="keywords" content="網頁佈局,CSS,Flexbox,Grid,響應式設計,字型設計,前端開發,網頁設計">
+    <meta name="author" content="lcslin">
+    
+    <!-- 預連接和優化 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- 載入 Noto Serif TC 字體 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* 重置和基礎樣式 */
+        *, :before, :after {
+            box-sizing: border-box;
+            color: inherit;
+            outline: none;
+        }
+        
+        html {
+            font-size: 10px;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Serif TC', serif;
+            line-height: 1.7;
+            color: #333;
+            background-color: #f8f8f8;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #0066cc;
+            transition: color 0.3s;
+        }
+        
+        a:hover {
+            color: #004499;
+            text-decoration: underline;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            margin: 2rem 0 1rem;
+            line-height: 1.4;
+            font-weight: 600;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 1rem;
+            margin-top: 0;
+        }
+        
+        h2 {
+            font-size: 2.4rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+        
+        h3 {
+            font-size: 2rem;
+        }
+        
+        h4 {
+            font-size: 1.8rem;
+        }
+        
+        p, ul, ol, blockquote {
+            margin: 0 0 1.5rem;
+            font-size: 1.6rem;
+        }
+        
+        ul, ol {
+            padding-left: 2.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        blockquote {
+            border-left: 4px solid #ddd;
+            padding: 0 2rem;
+            margin: 2rem 0;
+            color: #666;
+            font-style: italic;
+        }
+        
+        blockquote p {
+            margin-bottom: 0;
+        }
+        
+        code {
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            background-color: #f5f5f5;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-size: 1.4rem;
+            color: #d63384;
+        }
+        
+        pre {
+            background-color: #f5f5f5;
+            padding: 1.5rem;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin: 0 0 2rem;
+        }
+        
+        pre code {
+            padding: 0;
+            background-color: transparent;
+            color: #333;
+        }
+        
+        /* 容器和佈局 */
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        /* 導航 */
+        .navigation {
+            margin-bottom: 3rem;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            font-size: 1.6rem;
+        }
+        
+        .back-link:before {
+            content: '←';
+            margin-right: 0.5rem;
+        }
+        
+        /* 內容樣式 */
+        .note-content {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 4px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        /* 表格樣式 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            font-size: 1.5rem;
+        }
+        
+        th, td {
+            padding: 1rem;
+            border: 1px solid #eee;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f5f5f5;
+            font-weight: 600;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        /* 頁腳 */
+        .footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 2rem 0;
+            border-top: 1px solid #eee;
+            color: #666;
+            font-size: 1.4rem;
+        }
+        
+        /* 響應式設計 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+            }
+            
+            .note-content {
+                padding: 25px;
+            }
+            
+            h1 {
+                font-size: 2.4rem;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            h3 {
+                font-size: 1.8rem;
+            }
+            
+            p, ul, ol, blockquote, li {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <a href="index.html" class="back-link">返回首頁</a>
+        </div>
+        
+        <article class="note-content">
+            <h1>現代網頁佈局設計筆記</h1>
+            
+            <blockquote>
+                <p>本筆記記錄現代網頁設計中關於佈局、CSS技巧和字型選用的關鍵要素。</p>
+            </blockquote>
+            
+            <h2 id="目錄">目錄</h2>
+            <ol>
+                <li><a href="#佈局基礎">佈局基礎</a></li>
+                <li><a href="#flexbox-vs-grid">Flexbox vs Grid</a></li>
+                <li><a href="#響應式設計">響應式設計</a></li>
+                <li><a href="#字型設計">字型設計</a></li>
+                <li><a href="#性能優化">性能優化</a></li>
+                <li><a href="#設計案例分析">設計案例分析</a></li>
+            </ol>
+            
+            <h2 id="佈局基礎">佈局基礎</h2>
+            
+            <h3>容器概念</h3>
+            
+            <p>現代網頁佈局的核心是「容器」概念，通常由以下結構組成：</p>
+            
+            <pre><code>.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}</code></pre>
+            
+            <p>這種容器模式提供以下優勢：</p>
+            <ul>
+                <li>內容居中對齊</li>
+                <li>兩側邊距自動調整</li>
+                <li>限制最大寬度，確保在大螢幕上有合理的閱讀體驗</li>
+                <li>內部填充防止內容與螢幕邊緣直接接觸</li>
+            </ul>
+            
+            <h3>區塊佈局</h3>
+            
+            <p>將頁面分成有意義的區塊，每個區塊專注於特定內容：</p>
+            
+            <pre><code>&lt;header class="header"&gt;
+    &lt;!-- 網站標題、導航等 --&gt;
+&lt;/header&gt;
+
+&lt;section class="main-content"&gt;
+    &lt;!-- 主要內容 --&gt;
+&lt;/section&gt;
+
+&lt;aside class="sidebar"&gt;
+    &lt;!-- 側邊欄內容 --&gt;
+&lt;/aside&gt;
+
+&lt;footer class="footer"&gt;
+    &lt;!-- 頁腳信息 --&gt;
+&lt;/footer&gt;</code></pre>
+            
+            <h2 id="flexbox-vs-grid">Flexbox vs Grid</h2>
+            
+            <h3>Flexbox (彈性盒子)</h3>
+            
+            <p>Flexbox 是一維佈局系統，特別適合處理一行或一列的項目排列：</p>
+            
+            <pre><code>.flex-container {
+    display: flex;
+    justify-content: space-between; /* 水平分布 */
+    align-items: center; /* 垂直居中 */
+    flex-wrap: wrap; /* 允許換行 */
+}
+
+.flex-item {
+    flex: 1; /* 均等分配空間 */
+}</code></pre>
+            
+            <p><strong>適用場景</strong>：</p>
+            <ul>
+                <li>導航菜單</li>
+                <li>卡片列表</li>
+                <li>垂直或水平居中</li>
+                <li>不規則大小的元素佈局</li>
+            </ul>
+            
+            <h3>CSS Grid</h3>
+            
+            <p>Grid 是二維佈局系統，非常適合整體頁面結構佈局：</p>
+            
+            <pre><code>.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 三等分列 */
+    grid-gap: 20px; /* 網格間距 */
+}
+
+.grid-item {
+    grid-column: span 2; /* 佔據兩列 */
+}</code></pre>
+            
+            <p><strong>適用場景</strong>：</p>
+            <ul>
+                <li>整體頁面結構</li>
+                <li>圖片畫廊</li>
+                <li>複雜的儀表板佈局</li>
+                <li>需要精確控制行列的佈局</li>
+            </ul>
+            
+            <h3>最佳實踐：組合使用</h3>
+            
+            <p>現代網頁設計中，通常結合使用 Grid 和 Flexbox：</p>
+            <ul>
+                <li>Grid 用於定義主要頁面結構</li>
+                <li>Flexbox 用於處理內部元素的排列</li>
+            </ul>
+            
+            <pre><code>.page {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "sidebar content"
+        "footer footer";
+    grid-template-columns: 300px 1fr;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}</code></pre>
+            
+            <h2 id="響應式設計">響應式設計</h2>
+            
+            <h3>媒體查詢基礎</h3>
+            
+            <p>使用媒體查詢根據螢幕尺寸調整佈局：</p>
+            
+            <pre><code>/* 基本樣式（適用於所有尺寸） */
+.container {
+    padding: 20px;
+}
+
+/* 平板電腦 */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+}
+
+/* 手機 */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+}</code></pre>
+            
+            <h3>常用斷點</h3>
+            
+            <p>現代響應式設計常用的斷點：</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>裝置類型</th>
+                        <th>斷點</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>大螢幕顯示器</td>
+                        <td>1200px+</td>
+                    </tr>
+                    <tr>
+                        <td>桌面電腦</td>
+                        <td>992px - 1199px</td>
+                    </tr>
+                    <tr>
+                        <td>平板電腦</td>
+                        <td>768px - 991px</td>
+                    </tr>
+                    <tr>
+                        <td>大型手機</td>
+                        <td>576px - 767px</td>
+                    </tr>
+                    <tr>
+                        <td>小型手機</td>
+                        <td>&lt; 576px</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>流動單位</h3>
+            
+            <p>使用相對單位而非固定像素：</p>
+            
+            <pre><code>body {
+    font-size: 16px; /* 基準字型大小 */
+}
+
+h1 {
+    font-size: 2rem; /* 32px */
+}
+
+.container {
+    width: 90%; /* 相對於父元素寬度 */
+    max-width: 1200px; /* 最大寬度上限 */
+}
+
+.padding-element {
+    padding: 5%; /* 相對於父元素寬度的填充 */
+}</code></pre>
+            
+            <h2 id="字型設計">字型設計</h2>
+            
+            <h3>網頁字型的選擇</h3>
+            
+            <h4>中文字型選擇考量</h4>
+            
+            <p><strong>1. 可讀性優先</strong>：</p>
+            <ul>
+                <li>襯線字體（如 Noto Serif TC）適合長篇閱讀內容</li>
+                <li>無襯線字體（如 Noto Sans TC）適合介面元素和標題</li>
+            </ul>
+            
+            <p><strong>2. 常用中文網頁字型組合</strong>：</p>
+            
+            <pre><code>/* 正文優先 */
+body {
+    font-family: 'Noto Serif TC', serif;
+}
+
+/* 介面優先 */
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* 混合使用 */
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+h1, h2, h3, blockquote {
+    font-family: 'Noto Serif TC', serif;
+}</code></pre>
+            
+            <p><strong>3. 加載優化</strong>：</p>
+            
+            <pre><code>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+&lt;link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700&display=swap" rel="stylesheet"&gt;</code></pre>
+            
+            <h3>字型權重與變體</h3>
+            
+            <p>合理使用字型權重創造視覺層次：</p>
+            
+            <pre><code>h1 {
+    font-weight: 700; /* 粗體 */
+}
+
+h2 {
+    font-weight: 500; /* 中等粗細 */
+}
+
+p {
+    font-weight: 400; /* 標準粗細 */
+}
+
+.light-text {
+    font-weight: 300; /* 細體 */
+}</code></pre>
+            
+            <h3>字型大小與行高</h3>
+            
+            <p>良好的排版需要合適的字型大小和行高比例：</p>
+            
+            <pre><code>body {
+    font-size: 16px;
+    line-height: 1.6; /* 行高是字型大小的1.6倍 */
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 1.2; /* 標題通常需要更緊湊的行高 */
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.8; /* 段落文字需要更寬鬆的行高 */
+}</code></pre>
+            
+            <h2 id="性能優化">性能優化</h2>
+            
+            <h3>字型加載優化</h3>
+            
+            <p>使用字型預加載和適當的字重選擇：</p>
+            
+            <pre><code>&lt;!-- 預連接字型服務器 --&gt;
+&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+
+&lt;!-- 只加載需要的字重 --&gt;
+&lt;link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700&display=swap" rel="stylesheet"&gt;</code></pre>
+            
+            <h3>CSS 優化技巧</h3>
+            
+            <p><strong>1. 選擇器效率</strong>：</p>
+            
+            <pre><code>/* 低效 */
+.header ul li a { ... }
+
+/* 高效 */
+.nav-link { ... }</code></pre>
+            
+            <p><strong>2. 避免過度使用 `!important`</strong></p>
+            
+            <p><strong>3. CSS 變數提升可維護性</strong>：</p>
+            
+            <pre><code>:root {
+    --primary-color: #3a3a3a;
+    --secondary-color: #f5f5f5;
+    --font-body: 'Noto Sans TC', sans-serif;
+    --font-heading: 'Noto Serif TC', serif;
+}
+
+.header {
+    background-color: var(--primary-color);
+    font-family: var(--font-heading);
+}</code></pre>
+            
+            <h2 id="設計案例分析">設計案例分析</h2>
+            
+            <h3>現代媒體網站佈局特點</h3>
+            
+            <p>分析一個典型的現代媒體網站，可以發現以下特點：</p>
+            
+            <p><strong>1. 清晰的視覺層次</strong>：</p>
+            <ul>
+                <li>使用字型大小、權重和顏色創造內容層次</li>
+                <li>標題使用襯線字體，正文使用無襯線字體形成對比</li>
+            </ul>
+            
+            <p><strong>2. 卡片式設計</strong>：</p>
+            <ul>
+                <li>內容被封裝在卡片中，具有微妙的陰影和邊框</li>
+                <li>卡片懸停效果提升交互性</li>
+            </ul>
+            
+            <p><strong>3. 適當的留白</strong>：</p>
+            <ul>
+                <li>元素之間有充分的間距</li>
+                <li>內容分區清晰，減少視覺疲勞</li>
+            </ul>
+            
+            <p><strong>4. 漸進式加載</strong>：</p>
+            <ul>
+                <li>重要資源優先加載</li>
+                <li>使用預連接和預加載提升性能</li>
+            </ul>
+            
+            <p><strong>5. 微妙的動畫</strong>：</p>
+            <ul>
+                <li>使用簡單的過渡效果增強用戶體驗</li>
+                <li>避免過度使用動畫造成干擾</li>
+            </ul>
+            
+            <h3>設計技巧實例</h3>
+            
+            <pre><code>/* 卡片懸停效果 */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* 漸變背景 */
+.header {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* 精細排版 */
+.article-title {
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5em;
+}
+
+.article-meta {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-bottom: 2em;
+}</code></pre>
+        </article>
+        
+        <footer class="footer">
+            <p>筆記作者：lcslin | 最後更新：2025年6月15日</p>
+            <p><a href="index.html">返回首頁</a></p>
+        </footer>
+    </div>
+</body>
+</html>
