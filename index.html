@@ -2,7 +2,7 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=6">
     <title>全球商情資訊 - 即時國際貿易動態與市場分析 | 經貿資訊平台</title>
     
     <!-- Enhanced SEO Meta Tags -->
@@ -16,453 +16,605 @@
     <meta property="og:title" content="全球商情資訊 - 即時國際貿易動態與市場分析">
     <meta property="og:description" content="提供全球七大地區商情資訊，涵蓋120+國家的即時貿易動態、市場分析與投資機會。專業的國際經貿資訊平台。">
     
-    <!-- 載入宋體字體 -->
+    <!-- 預連接和優化 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- 載入 Noto Serif TC 字體 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
-        * {
+        /* 重置和基礎樣式 */
+        *, :before, :after {
+            box-sizing: border-box;
+            color: inherit;
+            outline: none;
+        }
+        
+        html {
+            font-size: 10px;
+        }
+        
+        body {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-family: 'Noto Serif TC', serif;
             line-height: 1.6;
-            color: #e5e5e5;
-            background: linear-gradient(135deg, #2c2c2c 0%, #3a3a3a 100%);
-            min-height: 100vh;
+            color: #333;
+            background-color: #f8f8f8;
+        }
+        
+        img {
+            vertical-align: middle;
+            width: 100%;
+            height: auto;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #222;
+            transition: color 0.3s;
+        }
+        
+        a:hover {
+            color: #000;
+        }
+        
+        h1, h2, h3, h4, h5, h6, p {
+            margin: 0;
+            line-height: 1.5;
+        }
+        
+        button {
+            box-shadow: none;
+            cursor: pointer;
+            background: none;
+            border: 0;
+            border-radius: 0;
+            outline: none;
+            margin: 0;
+            padding: 0;
+            font-family: inherit;
         }
 
+        /* 容器和佈局 */
         .container {
+            width: 100%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 0 20px;
         }
-
+        
+        /* 頁頭設計 */
         .header {
-            text-align: center;
-            margin-bottom: 60px;
-            padding: 40px 0;
-            background: rgba(255, 255, 255, 0.02);
-            border-radius: 16px;
-            backdrop-filter: blur(10px);
+            background-color: #fff;
+            border-bottom: 1px solid #000;
+            position: relative;
+            z-index: 3;
         }
-
-        .header h1 {
-            font-family: 'Noto Serif TC', serif;
+        
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 60px;
+            padding: 12px 20px;
+        }
+        
+        .site-title {
             font-size: 3rem;
             font-weight: 600;
-            color: #f8f9fa;
-            margin-bottom: 16px;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            letter-spacing: 0.05em;
         }
-
-        .header p {
-            font-size: 1.2rem;
-            color: #adb5bd;
-            font-weight: 300;
-            letter-spacing: 0.5px;
+        
+        .site-description {
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #555;
+            margin-top: 5px;
         }
-
-        /* 重大科技新聞區段樣式 */
-        .tech-news-section {
+        
+        /* 導航設計 */
+        nav {
+            background-color: #fff;
+            border-bottom: 1px solid #000;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .nav-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+            padding: 0 20px;
+            list-style: none;
+        }
+        
+        .nav-item {
+            padding: 15px 20px;
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
+        
+        .nav-item a {
+            position: relative;
+        }
+        
+        .nav-item a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #000;
+            transition: width 0.3s;
+        }
+        
+        .nav-item a:hover:after {
+            width: 100%;
+        }
+        
+        /* 主要內容區塊 */
+        .main-content {
+            padding: 60px 0;
+        }
+        
+        /* 新聞區塊 */
+        .news-section {
             margin-bottom: 60px;
             padding: 40px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 16px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
         }
-
-        .tech-news-header {
+        
+        .section-header {
             text-align: center;
             margin-bottom: 40px;
+            position: relative;
         }
-
-        .tech-news-header h2 {
-            font-family: 'Noto Serif TC', serif;
-            font-size: 2.2rem;
-            font-weight: 500;
-            color: #f8f9fa;
-            margin-bottom: 10px;
+        
+        .section-header:after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: #333;
+            margin: 15px auto 0;
         }
-
-        .tech-news-date {
-            font-size: 1rem;
-            color: #6c757d;
-            text-align: center;
-            margin-bottom: 30px;
+        
+        .section-title {
+            font-size: 2.4rem;
+            font-weight: 600;
         }
-
-        .breaking-news {
-            background: linear-gradient(135deg, #4a4a4a 0%, #5a5a5a 100%);
-            color: #f8f9fa;
+        
+        .update-date {
+            font-size: 1.4rem;
+            color: #666;
+            margin-top: 10px;
+        }
+        
+        /* 特色新聞 */
+        .featured-news {
+            background-color: #f9f9f9;
             padding: 40px;
-            border-radius: 12px;
+            border: 1px solid #eee;
+            border-radius: 4px;
             margin-bottom: 30px;
             text-align: center;
-            border: 1px solid rgba(255, 255, 255, 0.1);
         }
-
-        .breaking-news h3 {
-            font-family: 'Noto Serif TC', serif;
-            font-size: 1.8rem;
-            font-weight: 500;
+        
+        .featured-news-title {
+            font-size: 2.2rem;
+            font-weight: 600;
             margin-bottom: 20px;
-            color: #ffffff;
         }
-
-        .breaking-news p {
-            font-size: 1.1rem;
+        
+        .featured-news-content {
+            font-size: 1.6rem;
             line-height: 1.8;
             margin-bottom: 25px;
-            color: #e5e5e5;
         }
-
-        .breaking-news-link {
+        
+        .featured-news-link {
             display: inline-block;
-            padding: 15px 35px;
-            background: rgba(255,255,255,0.1);
-            color: #ffffff;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: 500;
-            border: 2px solid rgba(255,255,255,0.2);
-            transition: all 0.3s ease;
+            padding: 12px 25px;
+            background-color: #333;
+            color: #fff;
+            font-size: 1.5rem;
+            border-radius: 4px;
+            transition: all 0.3s;
         }
-
-        .breaking-news-link:hover {
-            background: rgba(255,255,255,0.2);
-            border-color: rgba(255,255,255,0.4);
+        
+        .featured-news-link:hover {
+            background-color: #000;
+            color: #fff;
             transform: translateY(-2px);
         }
-
-        .analysis-grid {
+        
+        /* 新聞網格 */
+        .news-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
             gap: 25px;
-            margin-top: 40px;
         }
-
-        .analysis-card {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 12px;
-            padding: 30px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .analysis-card:hover {
-            transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(255, 255, 255, 0.2);
-        }
-
-        .analysis-card h4 {
-            font-family: 'Noto Serif TC', serif;
-            font-size: 1.3rem;
-            font-weight: 500;
-            color: #ffffff;
-            margin-bottom: 15px;
-        }
-
-        .analysis-card p {
-            font-size: 1rem;
-            color: #d1d5db;
-            line-height: 1.7;
-            margin-bottom: 15px;
-        }
-
-        .expert-quote {
-            background: rgba(255, 255, 255, 0.03);
-            border-left: 4px solid #6c757d;
+        
+        .news-card {
+            background-color: #fff;
+            border: 1px solid #eee;
+            border-radius: 4px;
             padding: 25px;
-            margin: 25px 0;
-            border-radius: 0 8px 8px 0;
-            font-style: italic;
-            color: #d1d5db;
+            transition: all 0.3s;
         }
-
+        
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            border-color: #ddd;
+        }
+        
+        .news-card-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .news-card-content {
+            font-size: 1.5rem;
+            line-height: 1.7;
+            color: #444;
+        }
+        
+        /* 引用區塊 */
+        .quote {
+            background-color: #f9f9f9;
+            border-left: 4px solid #333;
+            padding: 25px;
+            margin: 30px 0;
+            font-style: italic;
+            font-size: 1.6rem;
+        }
+        
         .quote-author {
             text-align: right;
             margin-top: 15px;
-            font-weight: 600;
             font-style: normal;
-            color: #f8f9fa;
+            font-weight: 600;
+            font-size: 1.5rem;
         }
-
-        .stats {
+        
+        /* 統計數字區塊 */
+        .stats-section {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 25px;
             margin-bottom: 60px;
         }
-
+        
         .stat-card {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 35px 25px;
+            background-color: #fff;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            padding: 30px 20px;
             text-align: center;
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
+            transition: all 0.3s;
         }
-
+        
         .stat-card:hover {
             transform: translateY(-3px);
-            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
         }
-
+        
         .stat-number {
-            font-family: 'Noto Serif TC', serif;
-            font-size: 2.8rem;
-            font-weight: 600;
-            color: #ffffff;
+            font-size: 3rem;
+            font-weight: 700;
             margin-bottom: 10px;
+            color: #222;
         }
-
+        
         .stat-label {
-            font-size: 1rem;
-            color: #adb5bd;
-            font-weight: 400;
+            font-size: 1.5rem;
+            color: #555;
         }
-
-        .regions-grid {
+        
+        /* 地區區塊 */
+        .regions-section {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
+            gap: 25px;
         }
-
+        
         .region-card {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 12px;
+            background-color: #fff;
+            border: 1px solid #eee;
+            border-radius: 4px;
             padding: 30px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
+            transition: all 0.3s;
         }
-
+        
         .region-card:hover {
             transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            border-color: #ddd;
         }
-
-        .region-card.asia { border-left: 4px solid #9ca3af; }
-        .region-card.europe { border-left: 4px solid #6b7280; }
-        .region-card.america { border-left: 4px solid #4b5563; }
-        .region-card.africa { border-left: 4px solid #374151; }
-        .region-card.oceania { border-left: 4px solid #1f2937; }
-        .region-card.middle-east { border-left: 4px solid #111827; }
-
+        
+        .region-card.asia { border-left: 4px solid #4a4a4a; }
+        .region-card.europe { border-left: 4px solid #5a5a5a; }
+        .region-card.america { border-left: 4px solid #6a6a6a; }
+        .region-card.africa { border-left: 4px solid #7a7a7a; }
+        .region-card.oceania { border-left: 4px solid #8a8a8a; }
+        .region-card.middle-east { border-left: 4px solid #9a9a9a; }
+        
         .region-title {
-            font-family: 'Noto Serif TC', serif;
-            font-size: 1.5rem;
-            font-weight: 500;
-            color: #ffffff;
-            margin-bottom: 18px;
+            font-size: 1.9rem;
+            font-weight: 600;
+            margin-bottom: 15px;
         }
-
-        .region-card p {
-            color: #d1d5db;
+        
+        .region-content {
+            font-size: 1.5rem;
             line-height: 1.7;
+            color: #444;
             margin-bottom: 20px;
         }
-
+        
         .region-link {
             display: inline-block;
-            margin-top: 16px;
-            padding: 12px 24px;
-            background: rgba(255, 255, 255, 0.1);
-            color: #ffffff;
-            text-decoration: none;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 10px 20px;
+            background-color: #f5f5f5;
+            color: #333;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1.4rem;
+            transition: all 0.3s;
         }
-
+        
         .region-link:hover {
-            background: rgba(255, 255, 255, 0.2);
+            background-color: #333;
+            color: #fff;
+            border-color: #333;
             transform: translateX(5px);
         }
-
+        
+        /* 頁腳 */
         .footer {
             text-align: center;
             margin-top: 80px;
             padding: 30px 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: #6c757d;
-            font-size: 0.95rem;
+            border-top: 1px solid #eee;
+            color: #666;
+            font-size: 1.4rem;
         }
-
+        
         .footer a {
-            color: #adb5bd;
+            color: #444;
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: color 0.3s;
         }
-
+        
         .footer a:hover {
-            color: #ffffff;
+            color: #000;
         }
-
+        
+        /* 響應式設計 */
         @media (max-width: 768px) {
-            .container {
-                padding: 20px 16px;
+            .site-title {
+                font-size: 2.4rem;
             }
             
-            .header h1 {
-                font-size: 2.2rem;
+            .site-description {
+                font-size: 1.4rem;
             }
             
-            .analysis-grid {
-                grid-template-columns: 1fr;
+            .nav-list {
+                flex-wrap: wrap;
+                justify-content: center;
             }
             
-            .breaking-news {
-                padding: 25px;
-            }
-            
-            .breaking-news h3 {
+            .nav-item {
+                padding: 10px 15px;
                 font-size: 1.5rem;
             }
             
-            .tech-news-section {
-                padding: 25px;
+            .main-content {
+                padding: 40px 0;
+            }
+            
+            .news-section {
+                padding: 30px 20px;
+            }
+            
+            .featured-news {
+                padding: 30px 20px;
+            }
+            
+            .featured-news-title {
+                font-size: 2rem;
+            }
+            
+            .featured-news-content {
+                font-size: 1.5rem;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .site-title {
+                font-size: 2.2rem;
+            }
+            
+            .site-description {
+                font-size: 1.3rem;
+            }
+            
+            .featured-news-title {
+                font-size: 1.8rem;
+            }
+            
+            .news-grid, .regions-section {
+                grid-template-columns: 1fr;
+            }
+            
+            .stat-number {
+                font-size: 2.5rem;
+            }
+            
+            .stat-label {
+                font-size: 1.3rem;
+            }
+            
+            .region-title {
+                font-size: 1.7rem;
+            }
+            
+            .region-content {
+                font-size: 1.4rem;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <h1>全球商情資訊</h1>
-            <p>即時國際貿易動態與市場分析平台</p>
-        </header>
+    <header class="header">
+        <div class="container">
+            <div class="site-branding">
+                <h1 class="site-title">全球商情資訊</h1>
+                <p class="site-description">即時國際貿易動態與市場分析平台</p>
+            </div>
+        </div>
+    </header>
 
-        <!-- 重大科技新聞區段 -->
-        <section class="tech-news-section">
-            <div class="tech-news-header">
-                <h2>重大科技新聞</h2>
-            </div>
-            <div class="tech-news-date">
-                更新日期：2025年6月14日
-            </div>
-            
-            <div class="breaking-news">
-                <h3>AMD與OpenAI達成戰略合作</h3>
-                <p>Lisa Su與Sam Altman同台宣布MI400系列芯片合作，OpenAI將成為AMD下一代AI芯片的早期設計夥伴，這標誌著AI硬體市場競爭格局的重大轉變。</p>
-                <a href="amd-openai-partnership-report.html" class="breaking-news-link">閱讀完整分析報告</a>
-            </div>
+    <nav>
+        <div class="container">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#">首頁</a></li>
+                <li class="nav-item"><a href="#">亞洲商情</a></li>
+                <li class="nav-item"><a href="#">歐洲商情</a></li>
+                <li class="nav-item"><a href="#">美洲商情</a></li>
+                <li class="nav-item"><a href="#">非洲商情</a></li>
+                <li class="nav-item"><a href="#">大洋洲商情</a></li>
+                <li class="nav-item"><a href="#">中東商情</a></li>
+            </ul>
+        </div>
+    </nav>
 
-            <div class="analysis-grid">
-                <div class="analysis-card">
-                    <h4>技術突破</h4>
-                    <p>AMD MI400系列芯片將整合到Helios伺服器系統中，每套系統配備72顆芯片，直接對標NVIDIA NVL72系統，預計2026年正式商用。</p>
+    <main class="main-content">
+        <div class="container">
+            <!-- 重大科技新聞區段 -->
+            <section class="news-section">
+                <div class="section-header">
+                    <h2 class="section-title">重大科技新聞</h2>
+                    <p class="update-date">更新日期：2025年6月15日</p>
                 </div>
                 
-                <div class="analysis-card">
-                    <h4>戰略意義</h4>
-                    <p>OpenAI實現硬體供應鏈多元化，降低對NVIDIA依賴；AMD獲得重要客戶認證，進軍AI市場的關鍵突破。</p>
+                <article class="featured-news">
+                    <h3 class="featured-news-title">AMD與OpenAI達成戰略合作</h3>
+                    <p class="featured-news-content">Lisa Su與Sam Altman同台宣布MI400系列芯片合作，OpenAI將成為AMD下一代AI芯片的早期設計夥伴，這標誌著AI硬體市場競爭格局的重大轉變。</p>
+                    <a href="amd-openai-partnership-report.html" class="featured-news-link">閱讀完整分析報告</a>
+                </article>
+
+                <div class="news-grid">
+                    <div class="news-card">
+                        <h4 class="news-card-title">技術突破</h4>
+                        <p class="news-card-content">AMD MI400系列芯片將整合到Helios伺服器系統中，每套系統配備72顆芯片，直接對標NVIDIA NVL72系統，預計2026年正式商用。</p>
+                    </div>
+                    
+                    <div class="news-card">
+                        <h4 class="news-card-title">戰略意義</h4>
+                        <p class="news-card-content">OpenAI實現硬體供應鏈多元化，降低對NVIDIA依賴；AMD獲得重要客戶認證，進軍AI市場的關鍵突破。</p>
+                    </div>
+                    
+                    <div class="news-card">
+                        <h4 class="news-card-title">市場反應</h4>
+                        <p class="news-card-content">AMD股價發布會後下跌2%，但分析師認為這是長期戰略價值的重要布局，JP Morgan預測AMD AI業務將有60%增長。</p>
+                    </div>
                 </div>
-                
-                <div class="analysis-card">
-                    <h4>市場反應</h4>
-                    <p>AMD股價發布會後下跌2%，但分析師認為這是長期戰略價值的重要布局，JP Morgan預測AMD AI業務將有60%增長。</p>
+
+                <blockquote class="quote">
+                    「這些芯片公布的消息不太可能立即改變AMD的競爭地位。」
+                    <div class="quote-author">— Kinngai Chan, Summit Insights分析師</div>
+                </blockquote>
+
+                <blockquote class="quote">
+                    「未來的AI不會由任何一家公司獨自建造。我們對與AMD的合作感到極度興奮。」
+                    <div class="quote-author">— Sam Altman, OpenAI CEO</div>
+                </blockquote>
+
+                <blockquote class="quote">
+                    「我們正進入AI的下一個階段，由開放標準、共享創新和AMD在廣泛硬體軟體合作夥伴生態系統中不斷擴大的領導地位所推動。」
+                    <div class="quote-author">— Lisa Su, AMD CEO</div>
+                </blockquote>
+            </section>
+
+            <section class="stats-section">
+                <div class="stat-card">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">商情資訊</div>
                 </div>
-            </div>
+                <div class="stat-card">
+                    <div class="stat-number">7</div>
+                    <div class="stat-label">主要地區</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">120+</div>
+                    <div class="stat-label">國家/地區</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">$5B</div>
+                    <div class="stat-label">AMD AI營收</div>
+                </div>
+            </section>
 
-            <div class="expert-quote">
-                「這些芯片公布的消息不太可能立即改變AMD的競爭地位。」
-                <div class="quote-author">— Kinngai Chan, Summit Insights分析師</div>
-            </div>
+            <section class="regions-section">
+                <article class="region-card asia">
+                    <h3 class="region-title">亞洲地區 (150+ 筆)</h3>
+                    <p class="region-content">包含越南、中國大陸、新加坡、緬甸、日本、韓國、香港、馬來西亞、印度、泰國、菲律賓、印尼等國家的商情資訊</p>
+                    <a href="asia.html" class="region-link">查看亞洲地區商情</a>
+                </article>
 
-            <div class="expert-quote">
-                「未來的AI不會由任何一家公司獨自建造。我們對與AMD的合作感到極度興奮。」
-                <div class="quote-author">— Sam Altman, OpenAI CEO</div>
-            </div>
+                <article class="region-card europe">
+                    <h3 class="region-title">歐洲地區 (120+ 筆)</h3>
+                    <p class="region-content">包含德國、法國、英國、波蘭、義大利、瑞士、匈牙利、丹麥、荷蘭、捷克等國家的商情資訊</p>
+                    <a href="europe.html" class="region-link">查看歐洲地區商情</a>
+                </article>
 
-            <div class="expert-quote">
-                「我們正進入AI的下一個階段，由開放標準、共享創新和AMD在廣泛硬體軟體合作夥伴生態系統中不斷擴大的領導地位所推動。」
-                <div class="quote-author">— Lisa Su, AMD CEO</div>
-            </div>
-        </section>
+                <article class="region-card america">
+                    <h3 class="region-title">美洲地區 (100+ 筆)</h3>
+                    <p class="region-content">包含美國、加拿大、墨西哥、智利、阿根廷、巴西、秘魯等國家的商情資訊</p>
+                    <a href="america.html" class="region-link">查看美洲地區商情</a>
+                </article>
 
-        <section class="stats">
-            <div class="stat-card">
-                <div class="stat-number">500+</div>
-                <div class="stat-label">商情資訊</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">7</div>
-                <div class="stat-label">主要地區</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">120+</div>
-                <div class="stat-label">國家/地區</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">$5B</div>
-                <div class="stat-label">AMD AI營收</div>
-            </div>
-        </section>
+                <article class="region-card africa">
+                    <h3 class="region-title">非洲地區 (80+ 筆)</h3>
+                    <p class="region-content">包含奈及利亞、南非、肯亞、埃及、摩洛哥等國家的商情資訊</p>
+                    <a href="africa.html" class="region-link">查看非洲地區商情</a>
+                </article>
 
-        <nav class="regions-grid">
-            <article class="region-card asia">
-                <header class="region-title">
-                    亞洲地區 (150+ 筆)
-                </header>
-                <p>包含越南、中國大陸、新加坡、緬甸、日本、韓國、香港、馬來西亞、印度、泰國、菲律賓、印尼等國家的商情資訊</p>
-                <a href="asia.html" class="region-link">查看亞洲地區商情</a>
-            </article>
+                <article class="region-card oceania">
+                    <h3 class="region-title">大洋洲地區 (30+ 筆)</h3>
+                    <p class="region-content">包含澳大利亞、紐西蘭、帛琉、馬紹爾群島等國家的商情資訊</p>
+                    <a href="oceania.html" class="region-link">查看大洋洲地區商情</a>
+                </article>
 
-            <article class="region-card europe">
-                <header class="region-title">
-                    歐洲地區 (120+ 筆)
-                </header>
-                <p>包含德國、法國、英國、波蘭、義大利、瑞士、匈牙利、丹麥、荷蘭、捷克等國家的商情資訊</p>
-                <a href="europe.html" class="region-link">查看歐洲地區商情</a>
-            </article>
+                <article class="region-card middle-east">
+                    <h3 class="region-title">中東地區 (40+ 筆)</h3>
+                    <p class="region-content">包含以色列、沙烏地阿拉伯、阿拉伯聯合大公國、約旦等國家的商情資訊</p>
+                    <a href="middle-east.html" class="region-link">查看中東地區商情</a>
+                </article>
+            </section>
+        </div>
+    </main>
 
-            <article class="region-card america">
-                <header class="region-title">
-                    美洲地區 (100+ 筆)
-                </header>
-                <p>包含美國、加拿大、墨西哥、智利、阿根廷、巴西、秘魯等國家的商情資訊</p>
-                <a href="america.html" class="region-link">查看美洲地區商情</a>
-            </article>
-
-            <article class="region-card africa">
-                <header class="region-title">
-                    非洲地區 (80+ 筆)
-                </header>
-                <p>包含奈及利亞、南非、肯亞、埃及、摩洛哥等國家的商情資訊</p>
-                <a href="africa.html" class="region-link">查看非洲地區商情</a>
-            </article>
-
-            <article class="region-card oceania">
-                <header class="region-title">
-                    大洋洲地區 (30+ 筆)
-                </header>
-                <p>包含澳大利亞、紐西蘭、帛琉、馬紹爾群島等國家的商情資訊</p>
-                <a href="oceania.html" class="region-link">查看大洋洲地區商情</a>
-            </article>
-
-            <article class="region-card middle-east">
-                <header class="region-title">
-                    中東地區 (40+ 筆)
-                </header>
-                <p>包含以色列、沙烏地阿拉伯、阿拉伯聯合大公國、約旦等國家的商情資訊</p>
-                <a href="middle-east.html" class="region-link">查看中東地區商情</a>
-            </article>
-        </nav>
-
-        <footer class="footer">
+    <footer class="footer">
+        <div class="container">
             <p>Built by <a href="https://github.com/lcslin" target="_blank">lcslin</a> | 
+            <a href="web-layout-design-notes.html">網頁佈局設計筆記</a> | 
             資料來源：Reuters, CNBC, Summit Insights, AMD, OpenAI官方發布</p>
-        </footer>
-    </div>
+        </div>
+    </footer>
 </body>
 </html>
