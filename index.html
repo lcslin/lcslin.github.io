@@ -156,6 +156,14 @@
             width: 100%;
         }
         
+        .nav-item.active a {
+            font-weight: 600;
+        }
+        
+        .nav-item.active a:after {
+            width: 100%;
+        }
+        
         /* 主要內容區塊 */
         .main-content {
             padding: 60px 0;
@@ -491,7 +499,7 @@
     <nav>
         <div class="container">
             <ul class="nav-list">
-                <li class="nav-item"><a href="index.html">首頁</a></li>
+                <li class="nav-item active"><a href="index.html">首頁</a></li>
                 <li class="nav-item"><a href="asia.html">亞洲商情</a></li>
                 <li class="nav-item"><a href="europe.html">歐洲商情</a></li>
                 <li class="nav-item"><a href="america.html">美洲商情</a></li>
@@ -612,8 +620,6 @@
     <footer class="footer">
         <div class="container">
             <p>Built by <a href="https://github.com/lcslin" target="_blank">lcslin</a> | 
-            <a href="web-layout-design-notes.html">網頁佈局設計筆記</a> | 
-            <a href="web-tracking-and-monetization-analysis.html">網路追蹤技術分析</a> | 
             資料來源：Reuters, CNBC, Summit Insights, AMD, OpenAI官方發布</p>
         </div>
     </footer>
