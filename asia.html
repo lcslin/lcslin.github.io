@@ -2,7 +2,7 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=6">
     <title>亞洲地區商情資訊 - 東亞東南亞南亞即時貿易動態 | 全球商情資訊平台</title>
     
     <!-- SEO Meta Tags -->
@@ -16,180 +16,243 @@
     <meta property="og:url" content="https://lcslin.github.io/asia.html">
     <meta property="og:title" content="亞洲地區商情資訊 - 東亞東南亞南亞即時貿易動態">
     <meta property="og:description" content="提供亞洲地區包括越南、中國大陸、新加坡、緬甸、日本、韓國、香港等20+國家的商情資訊、市場分析與投資機會。">
-    <meta property="og:image" content="https://lcslin.github.io/assets/asia-og-image.jpg">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://lcslin.github.io/asia.html">
-    <meta property="twitter:title" content="亞洲地區商情資訊 - 東亞東南亞南亞即時貿易動態">
-    <meta property="twitter:description" content="提供亞洲地區包括越南、中國大陸、新加坡、緬甸、日本、韓國、香港等20+國家的商情資訊、市場分析與投資機會。">
-    <meta property="twitter:image" content="https://lcslin.github.io/assets/asia-twitter-image.jpg">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://lcslin.github.io/asia.html">
     
-    <!-- 載入宋體字體 -->
+    <!-- 載入字體 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "亞洲地區商情資訊",
-        "url": "https://lcslin.github.io/asia.html",
-        "description": "提供亞洲地區包括越南、中國大陸、新加坡、緬炘、日本、韓國、香港等20+國家的商情資訊",
-        "isPartOf": {
-            "@type": "WebSite",
-            "name": "全球商情資訊平台",
-            "url": "https://lcslin.github.io/"
-        },
-        "breadcrumb": {
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-                {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "首頁",
-                    "item": "https://lcslin.github.io/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "亞洲地區",
-                    "item": "https://lcslin.github.io/asia.html"
-                }
-            ]
-        }
-    }
-    </script>
-
     <style>
-        * {
+        /* 重置和基礎樣式 */
+        *, :before, :after {
+            box-sizing: border-box;
+            color: inherit;
+            outline: none;
+        }
+        
+        html {
+            font-size: 10px;
+        }
+        
+        body {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-family: 'Noto Serif TC', serif;
             line-height: 1.6;
-            color: #e5e5e5;
-            background: linear-gradient(135deg, #2c2c2c 0%, #3a3a3a 100%);
-            min-height: 100vh;
+            color: #333;
+            background-color: #f8f8f8;
+        }
+        
+        img {
+            vertical-align: middle;
+            width: 100%;
+            height: auto;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #222;
+            transition: color 0.3s;
+        }
+        
+        a:hover {
+            color: #000;
+        }
+        
+        h1, h2, h3, h4, h5, h6, p {
+            margin: 0;
+            line-height: 1.5;
+        }
+        
+        button {
+            box-shadow: none;
+            cursor: pointer;
+            background: none;
+            border: 0;
+            border-radius: 0;
+            outline: none;
+            margin: 0;
+            padding: 0;
+            font-family: inherit;
         }
 
+        /* 容器和佈局 */
         .container {
+            width: 100%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 0 20px;
         }
-
-        .breadcrumb {
-            margin-bottom: 40px;
-            font-size: 0.9rem;
-            color: #adb5bd;
-            background: rgba(255, 255, 255, 0.05);
-            padding: 12px 20px;
-            border-radius: 8px;
-            backdrop-filter: blur(10px);
-        }
-
-        .breadcrumb a {
-            color: #f8f9fa;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .breadcrumb a:hover {
-            color: #ffffff;
-        }
-
+        
+        /* 頁頭設計 */
         .header {
-            margin-bottom: 60px;
+            background-color: #fff;
+            border-bottom: 1px solid #000;
+            position: relative;
+            z-index: 3;
+        }
+        
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 60px;
+            padding: 12px 20px;
+        }
+        
+        .site-title {
+            font-size: 3rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+        
+        .site-description {
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #555;
+            margin-top: 5px;
+        }
+        
+        /* 導航設計 */
+        nav {
+            background-color: #fff;
+            border-bottom: 1px solid #000;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .nav-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+            padding: 0 20px;
+            list-style: none;
+        }
+        
+        .nav-item {
+            padding: 15px 20px;
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
+        
+        .nav-item a {
+            position: relative;
+        }
+        
+        .nav-item a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #000;
+            transition: width 0.3s;
+        }
+        
+        .nav-item a:hover:after {
+            width: 100%;
+        }
+        
+        .nav-item.active a {
+            font-weight: 600;
+        }
+        
+        .nav-item.active a:after {
+            width: 100%;
+        }
+
+        /* 主要內容區塊 */
+        .main-content {
+            padding: 60px 0;
+        }
+        
+        /* 頁面標題 */
+        .page-header {
+            margin-bottom: 40px;
             text-align: center;
             padding: 40px 0;
-            background: rgba(255, 255, 255, 0.02);
-            border-radius: 16px;
-            backdrop-filter: blur(10px);
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
         }
-
-        .header h1 {
-            font-family: 'Noto Serif TC', serif;
+        
+        .page-title {
             font-size: 2.5rem;
             font-weight: 600;
-            color: #f8f9fa;
+            color: #333;
             margin-bottom: 16px;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
-
-        .header p {
-            font-size: 1.2rem;
-            color: #adb5bd;
+        
+        .page-subtitle {
+            font-size: 1.6rem;
+            color: #555;
             font-weight: 300;
-            letter-spacing: 0.5px;
         }
 
-        .stats-bar {
+        /* 統計數字區塊 */
+        .stats-section {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+            gap: 25px;
             margin-bottom: 40px;
         }
-
-        .stat-item {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 25px 20px;
+        
+        .stat-card {
+            background-color: #fff;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            padding: 30px 20px;
             text-align: center;
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
+            transition: all 0.3s;
         }
-
-        .stat-item:hover {
+        
+        .stat-card:hover {
             transform: translateY(-3px);
-            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
         }
-
+        
         .stat-number {
-            font-family: 'Noto Serif TC', serif;
-            font-size: 2.2rem;
-            font-weight: 600;
-            color: #ffffff;
-            margin-bottom: 8px;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #222;
         }
-
+        
         .stat-label {
-            font-size: 0.9rem;
-            color: #adb5bd;
+            font-size: 1.4rem;
+            color: #555;
         }
 
+        /* 新聞列表 */
         .news-list {
             display: grid;
             gap: 25px;
         }
 
         .news-item {
-            background: rgba(255, 255, 255, 0.05);
+            background-color: #fff;
             padding: 30px;
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
+            border-radius: 4px;
+            border: 1px solid #eee;
+            border-left: 4px solid #4a4a4a;
+            transition: all 0.3s;
         }
 
         .news-item:hover {
             transform: translateY(-3px);
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            border-color: #4a4a4a;
         }
 
         .news-title {
-            font-family: 'Noto Serif TC', serif;
-            font-size: 1.4rem;
-            font-weight: 500;
-            color: #ffffff;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #222;
             margin-bottom: 15px;
             line-height: 1.4;
         }
@@ -199,29 +262,28 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 20px;
-            font-size: 0.9rem;
-            color: #6c757d;
+            font-size: 1.3rem;
         }
 
         .news-country {
             font-weight: 500;
-            color: #adb5bd;
-            background: rgba(255, 255, 255, 0.1);
+            color: #555;
+            background-color: #f5f5f5;
             padding: 6px 12px;
             border-radius: 20px;
-            font-size: 0.85rem;
+            font-size: 1.2rem;
         }
 
         .news-date {
-            font-size: 0.9rem;
-            color: #6c757d;
+            font-size: 1.3rem;
+            color: #666;
             margin-bottom: 15px;
         }
 
         .news-content {
-            color: #d1d5db;
+            color: #444;
             line-height: 1.7;
-            font-size: 1rem;
+            font-size: 1.5rem;
         }
 
         .news-content p {
@@ -229,17 +291,18 @@
         }
 
         .news-content a {
-            color: #f8f9fa;
+            color: #222;
             text-decoration: none;
-            border-bottom: 1px solid rgba(248, 249, 250, 0.3);
-            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(34, 34, 34, 0.3);
+            transition: all 0.3s;
         }
 
         .news-content a:hover {
-            border-bottom-color: #ffffff;
-            color: #ffffff;
+            border-bottom-color: #000;
+            color: #000;
         }
 
+        /* 載入更多按鈕 */
         .load-more {
             text-align: center;
             margin-top: 50px;
@@ -247,48 +310,71 @@
 
         .load-more-btn {
             padding: 15px 30px;
-            background: rgba(255, 255, 255, 0.1);
-            color: #ffffff;
-            border: 2px solid rgba(255, 255, 255, 0.2);
-            border-radius: 30px;
-            font-size: 0.95rem;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.5rem;
             font-weight: 500;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 0.3s;
         }
 
         .load-more-btn:hover {
-            background: rgba(255, 255, 255, 0.2);
-            border-color: rgba(255, 255, 255, 0.4);
+            background-color: #000;
             transform: translateY(-2px);
         }
 
+        /* 頁腳 */
         .footer {
             text-align: center;
             margin-top: 80px;
             padding: 30px 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: #6c757d;
-            font-size: 0.95rem;
+            border-top: 1px solid #eee;
+            color: #666;
+            font-size: 1.4rem;
         }
-
+        
         .footer a {
-            color: #adb5bd;
+            color: #444;
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: color 0.3s;
         }
-
+        
         .footer a:hover {
-            color: #ffffff;
+            color: #000;
         }
 
+        /* 響應式設計 */
         @media (max-width: 768px) {
-            .container {
-                padding: 20px 16px;
+            .site-title {
+                font-size: 2.4rem;
             }
             
-            .header h1 {
-                font-size: 2rem;
+            .site-description {
+                font-size: 1.4rem;
+            }
+            
+            .nav-list {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .nav-item {
+                padding: 10px 15px;
+                font-size: 1.5rem;
+            }
+            
+            .main-content {
+                padding: 40px 0;
+            }
+            
+            .page-title {
+                font-size: 2.2rem;
+            }
+            
+            .page-subtitle {
+                font-size: 1.4rem;
             }
             
             .news-meta {
@@ -297,59 +383,103 @@
                 gap: 8px;
             }
             
-            .stats-bar {
+            .stats-section {
                 grid-template-columns: 1fr;
             }
         }
+        
+        @media (max-width: 480px) {
+            .site-title {
+                font-size: 2.2rem;
+            }
+            
+            .site-description {
+                font-size: 1.3rem;
+            }
+            
+            .page-title {
+                font-size: 2rem;
+            }
+            
+            .stat-number {
+                font-size: 2rem;
+            }
+            
+            .stat-label {
+                font-size: 1.3rem;
+            }
+            
+            .news-title {
+                font-size: 1.6rem;
+            }
+            
+            .news-content {
+                font-size: 1.4rem;
+            }
+        }
     </style>
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P6B7JDV2LF"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-P6B7JDV2LF');
-    </script>
 </head>
 <body>
-    <div class="container">
-        <nav class="breadcrumb">
-            <a href="index.html">首頁</a> / 亞洲地區
-        </nav>
-
-        <header class="header">
-            <h1>亞洲地區商情資訊</h1>
-            <p>涵蓋東亞、東南亞、南亞等主要亞洲國家的商情動態</p>
-        </header>
-
-        <section class="stats-bar">
-            <div class="stat-item">
-                <div class="stat-number" id="totalNews">-</div>
-                <div class="stat-label">亞洲商情</div>
+    <header class="header">
+        <div class="container">
+            <div class="site-branding">
+                <h1 class="site-title">全球商情資訊</h1>
+                <p class="site-description">即時國際貿易動態與市場分析平台</p>
             </div>
-            <div class="stat-item">
-                <div class="stat-number">20+</div>
-                <div class="stat-label">國家地區</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">15+</div>
-                <div class="stat-label">駐外單位</div>
-            </div>
-        </section>
+        </div>
+    </header>
 
-        <main class="news-list" id="newsList">
-            <!-- 新聞項目將通過 JavaScript 動態加載 -->
-        </main>
+    <nav>
+        <div class="container">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">首頁</a></li>
+                <li class="nav-item active"><a href="asia.html">亞洲商情</a></li>
+                <li class="nav-item"><a href="europe.html">歐洲商情</a></li>
+                <li class="nav-item"><a href="america.html">美洲商情</a></li>
+                <li class="nav-item"><a href="africa.html">非洲商情</a></li>
+                <li class="nav-item"><a href="oceania.html">大洋洲商情</a></li>
+                <li class="nav-item"><a href="middle-east.html">中東商情</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <section class="load-more" id="loadMoreSection">
-            <button class="load-more-btn" onclick="loadMoreNews()" aria-label="載入更多亞洲地區商情資訊">載入更多</button>
-        </section>
+    <main class="main-content">
+        <div class="container">
+            <header class="page-header">
+                <h1 class="page-title">亞洲地區商情資訊</h1>
+                <p class="page-subtitle">涵蓋東亞、東南亞、南亞等主要亞洲國家的商情動態</p>
+            </header>
 
-        <footer class="footer">
-            <p>Built by <a href="https://github.com/lcslin" rel="noopener noreferrer" target="_blank">lcslin</a></p>
-        </footer>
-    </div>
+            <section class="stats-section">
+                <div class="stat-card">
+                    <div class="stat-number" id="totalNews">-</div>
+                    <div class="stat-label">亞洲商情</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label">國家地區</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">駐外單位</div>
+                </div>
+            </section>
+
+            <section class="news-list" id="newsList">
+                <!-- 新聞項目將通過 JavaScript 動態加載 -->
+            </section>
+
+            <section class="load-more" id="loadMoreSection">
+                <button class="load-more-btn" onclick="loadMoreNews()" aria-label="載入更多亞洲地區商情資訊">載入更多</button>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Built by <a href="https://github.com/lcslin" target="_blank">lcslin</a></p>
+        </div>
+    </footer>
 
     <script>
         let currentPage = 0;
@@ -368,7 +498,7 @@
                 displayNews();
             } catch (error) {
                 console.error('Error loading news data:', error);
-                document.getElementById('newsList').innerHTML = '<div style="text-align: center; padding: 40px; color: #6c757d;">載入資料時發生錯誤，請稍後再試。</div>';
+                document.getElementById('newsList').innerHTML = '<div style="text-align: center; padding: 40px; color: #666;">載入資料時發生錯誤，請稍後再試。</div>';
             }
         }
 
