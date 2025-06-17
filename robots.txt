@@ -1,24 +1,38 @@
 # robots.txt for lcslin.github.io
-# 全球商情資訊平台 - 優化版 robots.txt
+# 商情資訊專業分析平台 - SEO 優化版 robots.txt
+# 更新日期：2025-06-17
 
-# 通用爬蟲設定 - 允許所有內容
+# 通用爬蟲設定 - 允許所有重要內容
 User-agent: *
 Allow: /
 
-# 明確允許重要內容類型
+# 明確允許重要的商情資訊內容
 Allow: /*.html
 Allow: /*.css
 Allow: /*.js
 Allow: /*.json
 Allow: /*.xml
+Allow: /*.md
 Allow: /data/
 Allow: /assets/
 Allow: /images/
 Allow: /css/
 Allow: /js/
 
-# 阻擋不需要的內容
+# 特別允許商情資訊相關頁面
+Allow: /asia.html
+Allow: /europe.html
+Allow: /america.html
+Allow: /africa.html
+Allow: /oceania.html
+Allow: /middle-east.html
+Allow: /amd-openai-partnership-report.html
+Allow: /gtc-paris-wwdc-2025-analysis.html
+Allow: /web-tracking-and-monetization-analysis.html
+
+# 阻擋不需要的內容和敏感資料
 Disallow: /*.log
+Disallow: /*.tmp
 Disallow: /tmp/
 Disallow: /cache/
 Disallow: /.git/
@@ -26,30 +40,113 @@ Disallow: /.github/
 Disallow: /node_modules/
 Disallow: /.DS_Store
 Disallow: /Thumbs.db
+Disallow: /_drafts/
+Disallow: /private/
+Disallow: /backup/
+Disallow: /test/
 
-# 設定合理的爬取延遲（1秒）
+# 避免重複內容索引
+Disallow: /index-optimized.html
+
+# 設定合理的爬取延遲
 Crawl-delay: 1
 
-# 主要搜尋引擎特別設定
+# Google 搜尋引擎優化設定
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 0
+# 特別允許 Google 索引所有商情資訊頁面
+Allow: /asia.html
+Allow: /europe.html
+Allow: /america.html
+Allow: /africa.html
+Allow: /oceania.html
+Allow: /middle-east.html
 
+# Google 圖片爬蟲設定
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /assets/
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.png
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.webp
+
+# Google 新聞爬蟲設定（如果你的商情資訊要被新聞搜尋收錄）
+User-agent: Googlebot-News
+Allow: /
+Allow: /amd-openai-partnership-report.html
+Allow: /gtc-paris-wwdc-2025-analysis.html
+
+# Bing 搜尋引擎設定
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
+# Yahoo 搜尋引擎設定
 User-agent: Slurp
 Allow: /
+Crawl-delay: 1
 
+# DuckDuckGo 搜尋引擎設定
 User-agent: DuckDuckBot
 Allow: /
+Crawl-delay: 1
 
+# 百度搜尋引擎設定（中文市場）
 User-agent: Baiduspider
 Allow: /
+Crawl-delay: 2
 
-# Sitemap 位置
+# 360 搜尋引擎設定（中文市場）
+User-agent: 360Spider
+Allow: /
+Crawl-delay: 2
+
+# 搜狗搜尋引擎設定（中文市場）
+User-agent: Sogou
+Allow: /
+Crawl-delay: 2
+
+# 阻擋惡意爬蟲和無關爬蟲
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# 社群媒體爬蟲設定
+User-agent: facebookexternalhit
+Allow: /
+Allow: /*.html
+Allow: /images/
+
+User-agent: Twitterbot
+Allow: /
+Allow: /*.html
+Allow: /images/
+
+User-agent: LinkedInBot
+Allow: /
+Allow: /*.html
+
+# Sitemap 位置聲明
 Sitemap: https://lcslin.github.io/sitemap.xml
 
-# 如果有其他 sitemap 可以添加
+# 如果未來有專門的商情資訊 sitemap 可以添加
+# Sitemap: https://lcslin.github.io/sitemap-business-info.xml
 # Sitemap: https://lcslin.github.io/sitemap-news.xml
 # Sitemap: https://lcslin.github.io/sitemap-images.xml
+
+# 商情資訊平台說明
+# 本網站提供專業的全球商情資訊分析服務
+# 涵蓋亞洲、歐洲、美洲、非洲、大洋洲、中東等地區
+# 由技術專家 lcslin 提供專業的商情分析與市場洞察
