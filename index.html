@@ -3,18 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=6">
-    <title>全球商情資訊 - 即時國際貿易動態與市場分析 | 經貿資訊平台</title>
     
-    <!-- Enhanced SEO Meta Tags -->
-    <meta name="description" content="提供全球七大地區商情資訊，包含亞洲、歐洲、美洲、非洲、大洋洲、中東等120+國家的即時貿易動態、市場分析與投資機會。專業的國際經貿資訊平台。">
-    <meta name="keywords" content="全球商情,國際貿易,市場分析,投資機會,商情資訊,經貿動態,亞洲商情,歐洲商情,美洲商情,非洲商情,大洋洲商情,中東商情,國際市場,貿易機會">
-    <meta name="author" content="lcslin">
+    <!-- 針對「商情資訊」關鍵字的SEO優化標題 -->
+    <title>商情資訊 | 全球貿易動態分析與市場情報平台 - lcslin 專業商情分析</title>
     
-    <!-- Open Graph -->
+    <!-- 強化商情資訊相關的SEO Meta Tags -->
+    <meta name="description" content="專業商情資訊平台，提供全球七大地區即時商情分析、國際貿易動態、市場情報與投資機會。涵蓋亞洲、歐洲、美洲等120+國家商情資訊，助您掌握全球商機。">
+    <meta name="keywords" content="商情資訊,商情分析,全球商情,國際貿易,市場情報,貿易動態,商情報告,經貿資訊,投資機會,亞洲商情,歐洲商情,美洲商情,商情資料,商業情報,進出口商情">
+    <meta name="author" content="lcslin - 商情資訊分析專家">
+    
+    <!-- 商情資訊相關的結構化資料 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "商情資訊 - 全球貿易動態分析平台",
+        "url": "https://lcslin.github.io/",
+        "description": "專業商情資訊平台，提供全球商情分析、國際貿易動態與市場情報",
+        "author": {
+            "@type": "Person",
+            "name": "lcslin",
+            "url": "https://github.com/lcslin"
+        },
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://lcslin.github.io/{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    
+    <!-- 商情資訊文章結構化資料 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "全球商情資訊動態分析",
+        "description": "提供120+國家商情資訊，包含貿易數據、市場分析與投資機會",
+        "author": {
+            "@type": "Person",
+            "name": "lcslin"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "lcslin 商情資訊平台"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://lcslin.github.io/"
+        }
+    }
+    </script>
+    
+    <!-- Open Graph 商情資訊優化 -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lcslin.github.io/">
-    <meta property="og:title" content="全球商情資訊 - 即時國際貿易動態與市場分析">
-    <meta property="og:description" content="提供全球七大地區商情資訊，涵蓋120+國家的即時貿易動態、市場分析與投資機會。專業的國際經貿資訊平台。">
+    <meta property="og:title" content="商情資訊 | 全球貿易動態分析與市場情報平台">
+    <meta property="og:description" content="專業商情資訊平台，提供全球七大地區即時商情分析、國際貿易動態與市場情報。涵蓋120+國家商情資訊。">
+    <meta property="og:site_name" content="lcslin 商情資訊平台">
+    
+    <!-- Twitter Card 商情資訊優化 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="商情資訊 | 全球貿易動態分析平台">
+    <meta name="twitter:description" content="專業商情資訊平台，提供全球商情分析、貿易動態與市場情報">
     
     <!-- 預連接和優化 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +73,16 @@
     
     <!-- 載入 Noto Serif TC 字體 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://lcslin.github.io/">
+    
+    <!-- Sitemap 引用 -->
+    <link rel="sitemap" type="application/xml" title="商情資訊網站地圖" href="/sitemap.xml">
+    
+    <!-- 商情資訊相關的預載入資源 -->
+    <link rel="preload" href="asia.html" as="document">
+    <link rel="preload" href="europe.html" as="document">
     
     <style>
         /* 重置和基礎樣式 */
@@ -85,7 +146,7 @@
             padding: 0 20px;
         }
         
-        /* 頁頭設計 */
+        /* 頁頭設計 - 強調商情資訊 */
         .header {
             background-color: #fff;
             border-bottom: 1px solid #000;
@@ -112,6 +173,16 @@
             font-weight: 400;
             color: #555;
             margin-top: 5px;
+        }
+        
+        /* 商情資訊專家標識 */
+        .expert-badge {
+            background-color: #333;
+            color: #fff;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 1.2rem;
+            margin-left: 15px;
         }
         
         /* 導航設計 */
@@ -164,18 +235,61 @@
             width: 100%;
         }
         
-        /* 主要內容區塊 */
-        .main-content {
-            padding: 60px 0;
+        /* 商情資訊特色橫幅 */
+        .business-info-banner {
+            background: linear-gradient(135deg, #333 0%, #555 100%);
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            margin-bottom: 40px;
         }
         
-        /* 新聞區塊 */
-        .news-section {
+        .banner-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .banner-subtitle {
+            font-size: 1.8rem;
+            opacity: 0.9;
+            margin-bottom: 25px;
+        }
+        
+        .banner-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        
+        .banner-stat {
+            text-align: center;
+        }
+        
+        .banner-stat-number {
+            font-size: 2.4rem;
+            font-weight: 700;
+        }
+        
+        .banner-stat-label {
+            font-size: 1.4rem;
+            opacity: 0.8;
+        }
+        
+        /* 主要內容區塊 */
+        .main-content {
+            padding: 20px 0 60px;
+        }
+        
+        /* 商情資訊專區 */
+        .business-info-section {
             margin-bottom: 60px;
             padding: 40px;
             background-color: #fff;
             border: 1px solid #ddd;
-            border-radius: 4px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
         
         .section-header {
@@ -187,8 +301,8 @@
         .section-header:after {
             content: '';
             display: block;
-            width: 50px;
-            height: 2px;
+            width: 60px;
+            height: 3px;
             background-color: #333;
             margin: 15px auto 0;
         }
@@ -196,20 +310,64 @@
         .section-title {
             font-size: 2.4rem;
             font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .section-subtitle {
+            font-size: 1.6rem;
+            color: #666;
+            margin-bottom: 10px;
         }
         
         .update-date {
             font-size: 1.4rem;
             color: #666;
-            margin-top: 10px;
         }
         
-        /* 特色新聞 */
+        /* 商情資訊亮點 */
+        .business-highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .highlight-card {
+            background-color: #f9f9f9;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 25px;
+            transition: all 0.3s;
+        }
+        
+        .highlight-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        
+        .highlight-icon {
+            font-size: 2.4rem;
+            margin-bottom: 15px;
+        }
+        
+        .highlight-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        
+        .highlight-content {
+            font-size: 1.5rem;
+            line-height: 1.7;
+            color: #555;
+        }
+        
+        /* 特色商情新聞 */
         .featured-news {
             background-color: #f9f9f9;
             padding: 40px;
             border: 1px solid #eee;
-            border-radius: 4px;
+            border-radius: 8px;
             margin-bottom: 30px;
             text-align: center;
         }
@@ -242,58 +400,40 @@
             transform: translateY(-2px);
         }
         
-        /* 新聞網格 */
-        .news-grid {
+        /* 商情資訊網格 */
+        .business-info-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
             gap: 25px;
         }
         
-        .news-card {
+        .info-card {
             background-color: #fff;
             border: 1px solid #eee;
-            border-radius: 4px;
+            border-radius: 8px;
             padding: 25px;
             transition: all 0.3s;
         }
         
-        .news-card:hover {
+        .info-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
             border-color: #ddd;
         }
         
-        .news-card-title {
+        .info-card-title {
             font-size: 1.8rem;
             font-weight: 600;
             margin-bottom: 15px;
         }
         
-        .news-card-content {
+        .info-card-content {
             font-size: 1.5rem;
             line-height: 1.7;
             color: #444;
         }
         
-        /* 引用區塊 */
-        .quote {
-            background-color: #f9f9f9;
-            border-left: 4px solid #333;
-            padding: 25px;
-            margin: 30px 0;
-            font-style: italic;
-            font-size: 1.6rem;
-        }
-        
-        .quote-author {
-            text-align: right;
-            margin-top: 15px;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 1.5rem;
-        }
-        
-        /* 統計數字區塊 */
+        /* 商情資訊統計區塊 */
         .stats-section {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -304,7 +444,7 @@
         .stat-card {
             background-color: #fff;
             border: 1px solid #eee;
-            border-radius: 4px;
+            border-radius: 8px;
             padding: 30px 20px;
             text-align: center;
             transition: all 0.3s;
@@ -312,7 +452,7 @@
         
         .stat-card:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
         }
         
         .stat-number {
@@ -327,7 +467,7 @@
             color: #555;
         }
         
-        /* 地區區塊 */
+        /* 地區商情區塊 */
         .regions-section {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -337,14 +477,14 @@
         .region-card {
             background-color: #fff;
             border: 1px solid #eee;
-            border-radius: 4px;
+            border-radius: 8px;
             padding: 30px;
             transition: all 0.3s;
         }
         
         .region-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
             border-color: #ddd;
         }
         
@@ -386,6 +526,24 @@
             transform: translateX(5px);
         }
         
+        /* 引用區塊 */
+        .quote {
+            background-color: #f9f9f9;
+            border-left: 4px solid #333;
+            padding: 25px;
+            margin: 30px 0;
+            font-style: italic;
+            font-size: 1.6rem;
+        }
+        
+        .quote-author {
+            text-align: right;
+            margin-top: 15px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+        
         /* 頁腳 */
         .footer {
             text-align: center;
@@ -416,6 +574,24 @@
                 font-size: 1.4rem;
             }
             
+            .expert-badge {
+                margin-left: 0;
+                margin-top: 8px;
+            }
+            
+            .banner-title {
+                font-size: 2.4rem;
+            }
+            
+            .banner-subtitle {
+                font-size: 1.6rem;
+            }
+            
+            .banner-stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
             .nav-list {
                 flex-wrap: wrap;
                 justify-content: center;
@@ -430,7 +606,7 @@
                 padding: 40px 0;
             }
             
-            .news-section {
+            .business-info-section {
                 padding: 30px 20px;
             }
             
@@ -460,11 +636,15 @@
                 font-size: 1.3rem;
             }
             
+            .banner-title {
+                font-size: 2.2rem;
+            }
+            
             .featured-news-title {
                 font-size: 1.8rem;
             }
             
-            .news-grid, .regions-section {
+            .business-info-grid, .regions-section {
                 grid-template-columns: 1fr;
             }
             
@@ -487,19 +667,21 @@
     </style>
 </head>
 <body>
+    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="site-branding">
-                <h1 class="site-title">全球商情資訊</h1>
-                <p class="site-description">即時國際貿易動態與市場分析平台</p>
+                <h1 class="site-title">商情資訊平台<span class="expert-badge">專業分析</span></h1>
+                <p class="site-description">全球貿易動態 • 市場情報 • 投資機會分析</p>
             </div>
         </div>
     </header>
 
+    <!-- Navigation -->
     <nav>
         <div class="container">
             <ul class="nav-list">
-                <li class="nav-item active"><a href="index.html">首頁</a></li>
+                <li class="nav-item active"><a href="index.html">商情首頁</a></li>
                 <li class="nav-item"><a href="asia.html">亞洲商情</a></li>
                 <li class="nav-item"><a href="europe.html">歐洲商情</a></li>
                 <li class="nav-item"><a href="america.html">美洲商情</a></li>
@@ -510,57 +692,101 @@
         </div>
     </nav>
 
+    <!-- Business Info Banner -->
+    <section class="business-info-banner">
+        <div class="container">
+            <h2 class="banner-title">專業商情資訊服務</h2>
+            <p class="banner-subtitle">即時掌握全球貿易動態，洞察市場商機</p>
+            <div class="banner-stats">
+                <div class="banner-stat">
+                    <div class="banner-stat-number">520+</div>
+                    <div class="banner-stat-label">商情報告</div>
+                </div>
+                <div class="banner-stat">
+                    <div class="banner-stat-number">7</div>
+                    <div class="banner-stat-label">主要地區</div>
+                </div>
+                <div class="banner-stat">
+                    <div class="banner-stat-number">120+</div>
+                    <div class="banner-stat-label">涵蓋國家</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
     <main class="main-content">
         <div class="container">
-            <!-- 重大科技新聞區段 -->
-            <section class="news-section">
+            <!-- 商情資訊亮點 -->
+            <section class="business-highlights">
+                <div class="highlight-card">
+                    <div class="highlight-icon">📊</div>
+                    <h3 class="highlight-title">即時商情分析</h3>
+                    <p class="highlight-content">提供最新的全球貿易數據分析，協助企業掌握市場脈動與商業機會。</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🌍</div>
+                    <h3 class="highlight-title">全球市場覆蓋</h3>
+                    <p class="highlight-content">涵蓋七大洲120+國家商情資訊，提供完整的國際市場情報服務。</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">💡</div>
+                    <h3 class="highlight-title">專業投資建議</h3>
+                    <p class="highlight-content">基於深度市場研究，提供專業的投資機會分析與商業策略建議。</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">📈</div>
+                    <h3 class="highlight-title">貿易數據洞察</h3>
+                    <p class="highlight-content">整合國貿署進出口數據，提供廠商實績分析與市場趨勢預測。</p>
+                </div>
+            </section>
+
+            <!-- 重大商情新聞區段 -->
+            <section class="business-info-section">
                 <div class="section-header">
-                    <h2 class="section-title">重大科技新聞</h2>
-                    <p class="update-date">更新日期：2025年6月15日</p>
+                    <h2 class="section-title">重大商情動態</h2>
+                    <p class="section-subtitle">掌握全球最新商情資訊與市場變化</p>
+                    <p class="update-date">更新日期：2025年6月17日</p>
                 </div>
                 
                 <article class="featured-news">
-                    <h3 class="featured-news-title">AMD與OpenAI達成戰略合作</h3>
-                    <p class="featured-news-content">Lisa Su與Sam Altman同台宣布MI400系列芯片合作，OpenAI將成為AMD下一代AI芯片的早期設計夥伴，這標誌著AI硬體市場競爭格局的重大轉變。</p>
-                    <a href="amd-openai-partnership-report.html" class="featured-news-link">閱讀完整分析報告</a>
+                    <h3 class="featured-news-title">AMD與OpenAI達成戰略合作 - 商情分析報告</h3>
+                    <p class="featured-news-content">Lisa Su與Sam Altman同台宣布MI400系列芯片合作，OpenAI將成為AMD下一代AI芯片的早期設計夥伴，這標誌著AI硬體市場競爭格局的重大轉變，對相關供應鏈廠商帶來重要商機。</p>
+                    <a href="amd-openai-partnership-report.html" class="featured-news-link">閱讀完整商情分析</a>
                 </article>
 
-                <div class="news-grid">
-                    <div class="news-card">
-                        <h4 class="news-card-title">技術突破</h4>
-                        <p class="news-card-content">AMD MI400系列芯片將整合到Helios伺服器系統中，每套系統配備72顆芯片，直接對標NVIDIA NVL72系統，預計2026年正式商用。</p>
+                <div class="business-info-grid">
+                    <div class="info-card">
+                        <h4 class="info-card-title">技術商情突破</h4>
+                        <p class="info-card-content">AMD MI400系列芯片將整合到Helios伺服器系統中，每套系統配備72顆芯片，直接對標NVIDIA NVL72系統，預計2026年正式商用，為台灣半導體供應鏈帶來新商機。</p>
                     </div>
                     
-                    <div class="news-card">
-                        <h4 class="news-card-title">戰略意義</h4>
-                        <p class="news-card-content">OpenAI實現硬體供應鏈多元化，降低對NVIDIA依賴；AMD獲得重要客戶認證，進軍AI市場的關鍵突破。</p>
+                    <div class="info-card">
+                        <h4 class="info-card-title">市場商情意義</h4>
+                        <p class="info-card-content">OpenAI實現硬體供應鏈多元化策略，降低對NVIDIA依賴；AMD獲得重要客戶認證，進軍AI市場的關鍵突破，相關概念股值得關注。</p>
                     </div>
                     
-                    <div class="news-card">
-                        <h4 class="news-card-title">市場反應</h4>
-                        <p class="news-card-content">AMD股價發布會後下跌2%，但分析師認為這是長期戰略價值的重要布局，JP Morgan預測AMD AI業務將有60%增長。</p>
+                    <div class="info-card">
+                        <h4 class="info-card-title">投資商情反應</h4>
+                        <p class="info-card-content">AMD股價發布會後下跌2%，但分析師認為這是長期戰略價值的重要布局，JP Morgan預測AMD AI業務將有60%增長，建議長期投資者關注。</p>
                     </div>
                 </div>
 
                 <blockquote class="quote">
-                    「這些芯片公布的消息不太可能立即改變AMD的競爭地位。」
-                    <div class="quote-author">— Kinngai Chan, Summit Insights分析師</div>
+                    「這些芯片公布的消息不太可能立即改變AMD的競爭地位，但長期來看對整個AI供應鏈生態具有重要商情意義。」
+                    <div class="quote-author">— Kinngai Chan, Summit Insights 商情分析師</div>
                 </blockquote>
 
                 <blockquote class="quote">
-                    「未來的AI不會由任何一家公司獨自建造。我們對與AMD的合作感到極度興奮。」
+                    「未來的AI不會由任何一家公司獨自建造。我們對與AMD的合作感到極度興奮，這將為全球商情市場帶來更多機會。」
                     <div class="quote-author">— Sam Altman, OpenAI CEO</div>
-                </blockquote>
-
-                <blockquote class="quote">
-                    「我們正進入AI的下一個階段，由開放標準、共享創新和AMD在廣泛硬體軟體合作夥伴生態系統中不斷擴大的領導地位所推動。」
-                    <div class="quote-author">— Lisa Su, AMD CEO</div>
                 </blockquote>
             </section>
 
+            <!-- 商情資訊統計 -->
             <section class="stats-section">
                 <div class="stat-card">
-                    <div class="stat-number">500+</div>
+                    <div class="stat-number">520+</div>
                     <div class="stat-label">商情資訊</div>
                 </div>
                 <div class="stat-card">
@@ -569,7 +795,7 @@
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">120+</div>
-                    <div class="stat-label">國家/地區</div>
+                    <div class="stat-label">覆蓋國家</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">$5B</div>
@@ -577,50 +803,58 @@
                 </div>
             </section>
 
+            <!-- 地區商情資訊 -->
             <section class="regions-section">
                 <article class="region-card asia">
-                    <h3 class="region-title">亞洲地區 (150+ 筆)</h3>
-                    <p class="region-content">包含越南、中國大陸、新加坡、緬甸、日本、韓國、香港、馬來西亞、印度、泰國、菲律賓、印尼等國家的商情資訊</p>
-                    <a href="asia.html" class="region-link">查看亞洲地區商情</a>
+                    <h3 class="region-title">亞洲地區商情 (150+ 筆)</h3>
+                    <p class="region-content">涵蓋越南、中國大陸、新加坡、緬甸、日本、韓國、香港、馬來西亞、印度、泰國、菲律賓、印尼等國家的最新商情資訊與貿易機會分析</p>
+                    <a href="asia.html" class="region-link">查看亞洲商情資訊</a>
                 </article>
 
                 <article class="region-card europe">
-                    <h3 class="region-title">歐洲地區 (120+ 筆)</h3>
-                    <p class="region-content">包含德國、法國、英國、波蘭、義大利、瑞士、匈牙利、丹麥、荷蘭、捷克等國家的商情資訊</p>
-                    <a href="europe.html" class="region-link">查看歐洲地區商情</a>
+                    <h3 class="region-title">歐洲地區商情 (120+ 筆)</h3>
+                    <p class="region-content">包含德國、法國、英國、波蘭、義大利、瑞士、匈牙利、丹麥、荷蘭、捷克等國家的商情資訊與市場動態分析</p>
+                    <a href="europe.html" class="region-link">查看歐洲商情資訊</a>
                 </article>
 
                 <article class="region-card america">
-                    <h3 class="region-title">美洲地區 (100+ 筆)</h3>
-                    <p class="region-content">包含美國、加拿大、墨西哥、智利、阿根廷、巴西、秘魯等國家的商情資訊</p>
-                    <a href="america.html" class="region-link">查看美洲地區商情</a>
+                    <h3 class="region-title">美洲地區商情 (100+ 筆)</h3>
+                    <p class="region-content">涵蓋美國、加拿大、墨西哥、智利、阿根廷、巴西、秘魯等國家的商情資訊與投資機會評估</p>
+                    <a href="america.html" class="region-link">查看美洲商情資訊</a>
                 </article>
 
                 <article class="region-card africa">
-                    <h3 class="region-title">非洲地區 (80+ 筆)</h3>
-                    <p class="region-content">包含奈及利亞、南非、肯亞、埃及、摩洛哥等國家的商情資訊</p>
-                    <a href="africa.html" class="region-link">查看非洲地區商情</a>
+                    <h3 class="region-title">非洲地區商情 (80+ 筆)</h3>
+                    <p class="region-content">包含奈及利亞、南非、肯亞、埃及、摩洛哥等國家的商情資訊與新興市場機會分析</p>
+                    <a href="africa.html" class="region-link">查看非洲商情資訊</a>
                 </article>
 
                 <article class="region-card oceania">
-                    <h3 class="region-title">大洋洲地區 (30+ 筆)</h3>
-                    <p class="region-content">包含澳大利亞、紐西蘭、帛琉、馬紹爾群島等國家的商情資訊</p>
-                    <a href="oceania.html" class="region-link">查看大洋洲地區商情</a>
+                    <h3 class="region-title">大洋洲地區商情 (30+ 筆)</h3>
+                    <p class="region-content">涵蓋澳大利亞、紐西蘭、帛琉、馬紹爾群島等國家的商情資訊與貿易合作機會</p>
+                    <a href="oceania.html" class="region-link">查看大洋洲商情資訊</a>
                 </article>
 
                 <article class="region-card middle-east">
-                    <h3 class="region-title">中東地區 (40+ 筆)</h3>
-                    <p class="region-content">包含以色列、沙烏地阿拉伯、阿拉伯聯合大公國、約旦等國家的商情資訊</p>
-                    <a href="middle-east.html" class="region-link">查看中東地區商情</a>
+                    <h3 class="region-title">中東地區商情 (40+ 筆)</h3>
+                    <p class="region-content">包含以色列、沙烏地阿拉伯、阿拉伯聯合大公國、約旦等國家的商情資訊與能源市場分析</p>
+                    <a href="middle-east.html" class="region-link">查看中東商情資訊</a>
                 </article>
             </section>
         </div>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>Built by <a href="https://github.com/lcslin" target="_blank">lcslin</a> | 
-            資料來源：Reuters, CNBC, Summit Insights, AMD, OpenAI官方發布</p>
+            <p>專業商情資訊平台 by <a href="https://github.com/lcslin" target="_blank">lcslin</a> | 
+            商情資料來源：Reuters, CNBC, Summit Insights, AMD, OpenAI官方發布 | 
+            國貿署進出口數據分析</p>
+            <p style="margin-top: 10px; font-size: 1.2rem; opacity: 0.8;">
+                <a href="/sitemap.xml" target="_blank">網站地圖</a> | 
+                <a href="/robots.txt" target="_blank">爬蟲協議</a> | 
+                <a href="https://github.com/lcslin" target="_blank">GitHub</a>
+            </p>
         </div>
     </footer>
 </body>
