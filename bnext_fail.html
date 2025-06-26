@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bnext AI 回答載入器</title>
+    <style>
+        body {
+            font-family: 'Microsoft JhengHei', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 300;
+        }
+        
+        .header p {
+            margin: 10px 0 0 0;
+            opacity: 0.9;
+            font-size: 16px;
+        }
+        
+        .controls {
+            padding: 30px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .form-group input[type="text"] {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+        }
+        
+        .form-group input[type="text"]:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .checkbox-group input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            accent-color: #3498db;
+        }
+        
+        .checkbox-group label {
+            margin: 0;
+            font-weight: 500;
+            color: #2c3e50;
+            cursor: pointer;
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(52, 152, 219, 0.3);
+        }
+        
+        .btn-secondary {
+            background: #95a5a6;
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background: #7f8c8d;
+            transform: translateY(-2px);
+        }
+        
+        .iframe-container {
+            padding: 30px;
+            min-height: 600px;
+            display: none;
+        }
+        
+        .iframe-container.active {
+            display: block;
+        }
+        
+        .iframe-wrapper {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        }
+        
+        .iframe-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 40px;
+            color: #7f8c8d;
+        }
+        
+        .loading.active {
+            display: block;
+        }
+        
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .url-display {
+            margin-top: 20px;
+            padding: 16px;
+            background: #ecf0f1;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .url-display strong {
+            color: #2c3e50;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        
+        .url-display code {
+            background: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 13px;
+            word-break: break-all;
+            display: block;
+            border: 1px solid #bdc3c7;
+        }
+        
+        .examples {
+            margin-top: 20px;
+            padding: 20px;
+            background: #fff3cd;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        
+        .examples h4 {
+            margin: 0 0 12px 0;
+            color: #856404;
+        }
+        
+        .examples ul {
+            margin: 0;
+            padding-left: 20px;
+            color: #856404;
+        }
+        
+        .examples li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>bnext AI 回答載入器</h1>
+            <p>動態載入 bnext AI 回答內容的工具</p>
+        </div>
+        
+        <div class="controls">
+            <div class="form-group">
+                <label for="question">問題內容 (將自動進行 URL 編碼)</label>
+                <input type="text" id="question" placeholder="例如：寫一篇馬斯克來參觀未來商務展的新聞" />
+            </div>
+            
+            <div class="checkbox-group">
+                <input type="checkbox" id="enableIframe" />
+                <label for="enableIframe">啟用 iframe 載入</label>
+            </div>
+            
+            <div class="button-group">
+                <button class="btn btn-primary" onclick="generateUrl()">生成 URL</button>
+                <button class="btn btn-secondary" onclick="loadIframe()">載入內容</button>
+                <button class="btn btn-secondary" onclick="clearAll()">清除</button>
+            </div>
+            
+            <div class="url-display" id="urlDisplay" style="display: none;">
+                <strong>生成的 URL：</strong>
+                <code id="generatedUrl"></code>
+            </div>
+            
+            <div class="examples">
+                <h4>範例問題：</h4>
+                <ul>
+                    <li>寫一篇馬斯克來參觀未來商務展的新聞</li>
+                    <li>分析台灣 AI 產業發展趨勢</li>
+                    <li>如何利用生成式 AI 提升企業競爭力</li>
+                    <li>AWS 雲端架構最佳實踐指南</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>正在載入 AI 回答內容...</p>
+        </div>
+        
+        <div class="iframe-container" id="iframeContainer">
+            <div class="iframe-wrapper">
+                <iframe id="contentIframe" src=""></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 從 URL 參數獲取問題
+        function getUrlParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+        
+        // 初始化頁面
+        function initializePage() {
+            const question = getUrlParameter('t');
+            if (question) {
+                document.getElementById('question').value = decodeURIComponent(question);
+                document.getElementById('enableIframe').checked = true;
+                generateUrl();
+                setTimeout(loadIframe, 500);
+            }
+        }
+        
+        // 生成 URL
+        function generateUrl() {
+            const question = document.getElementById('question').value.trim();
+            if (!question) {
+                alert('請輸入問題內容');
+                return;
+            }
+            
+            const encodedQuestion = encodeURIComponent(question);
+            const baseUrl = 'https://ai-fc.bnext.com.tw/answer';
+            const pkey = '3b34dae3-00702680';
+            const utmParams = 'utm_content=question-702680&utm_source=aigc-widget&utm_medium=onsite&utm_campaign=fc.bnext.com.tw&utm_content=question-1';
+            
+            const fullUrl = `${baseUrl}?t=${encodedQuestion}&pkey=${pkey}&${utmParams}`;
+            
+            document.getElementById('generatedUrl').textContent = fullUrl;
+            document.getElementById('urlDisplay').style.display = 'block';
+            
+            return fullUrl;
+        }
+        
+        // 載入 iframe
+        function loadIframe() {
+            const enableIframe = document.getElementById('enableIframe').checked;
+            
+            if (!enableIframe) {
+                alert('請先勾選「啟用 iframe 載入」選項');
+                return;
+            }
+            
+            const url = generateUrl();
+            if (!url) return;
+            
+            // 顯示載入狀態
+            document.getElementById('loading').classList.add('active');
+            document.getElementById('iframeContainer').classList.remove('active');
+            
+            // 設定 iframe
+            const iframe = document.getElementById('contentIframe');
+            iframe.src = url;
+            
+            // 模擬載入完成（實際應該監聽 iframe 的 load 事件）
+            setTimeout(() => {
+                document.getElementById('loading').classList.remove('active');
+                document.getElementById('iframeContainer').classList.add('active');
+            }, 2000);
+            
+            // 監聽 iframe 載入完成
+            iframe.onload = function() {
+                document.getElementById('loading').classList.remove('active');
+                document.getElementById('iframeContainer').classList.add('active');
+            };
+        }
+        
+        // 清除所有內容
+        function clearAll() {
+            document.getElementById('question').value = '';
+            document.getElementById('enableIframe').checked = false;
+            document.getElementById('urlDisplay').style.display = 'none';
+            document.getElementById('loading').classList.remove('active');
+            document.getElementById('iframeContainer').classList.remove('active');
+            document.getElementById('contentIframe').src = '';
+        }
+        
+        // 頁面載入完成後初始化
+        document.addEventListener('DOMContentLoaded', initializePage);
+        
+        // Enter 鍵快捷操作
+        document.getElementById('question').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                generateUrl();
+            }
+        });
+    </script>
+</body>
+</html>
