@@ -3,34 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BNext AI Taiwan 商務展問答</title>
+    <title>數位時代 AI 問答介面</title>
     <style>
-        body {
+        * {
             margin: 0;
-            padding: 20px;
-            font-family: 'Microsoft JhengHei', Arial, sans-serif;
-            background-color: #f5f5f5;
+            padding: 0;
+            box-sizing: border-box;
         }
         
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            overflow: hidden;
+        body {
+            font-family: 'Microsoft JhengHei', Arial, sans-serif;
+            background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+            color: #00ff88;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
         
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: rgba(0, 255, 136, 0.1);
             padding: 20px;
-            text-align: center;
+            border-bottom: 2px solid #00ff88;
+            box-shadow: 0 2px 10px rgba(0, 255, 136, 0.3);
         }
         
-        .input-section {
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            color: #00ff88;
+            text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+        }
+        
+        .controls {
+            background: rgba(0, 255, 136, 0.05);
             padding: 20px;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid #333;
         }
         
         .input-group {
@@ -41,111 +49,168 @@
             display: block;
             margin-bottom: 5px;
             font-weight: bold;
-            color: #333;
+            color: #00ff88;
         }
         
         input[type="text"] {
             width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 14px;
-            box-sizing: border-box;
+            padding: 12px;
+            background: #2a2a2a;
+            border: 2px solid #00ff88;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            transition: all 0.3s ease;
         }
         
-        button {
-            background: #667eea;
-            color: white;
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #00ff66;
+            box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+        }
+        
+        .button {
+            background: linear-gradient(45deg, #00ff88, #00cc66);
+            color: #000;
             border: none;
-            padding: 10px 20px;
-            border-radius: 4px;
+            padding: 12px 24px;
+            border-radius: 5px;
             cursor: pointer;
-            font-size: 14px;
-            transition: background 0.3s;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin-right: 10px;
         }
         
-        button:hover {
-            background: #5a6fd8;
+        .button:hover {
+            background: linear-gradient(45deg, #00cc66, #00aa44);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 255, 136, 0.4);
+        }
+        
+        .url-display {
+            margin-top: 15px;
+            padding: 10px;
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 5px;
+            word-break: break-all;
+            font-family: monospace;
+            font-size: 14px;
+            color: #888;
         }
         
         .iframe-container {
-            position: relative;
-            width: 100%;
-            height: 800px;
-            border: none;
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
         }
         
         iframe {
             width: 100%;
-            height: 100%;
-            border: none;
+            height: 600px;
+            border: 2px solid #00ff88;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 0 4px 20px rgba(0, 255, 136, 0.3);
         }
         
-        .current-url {
-            padding: 10px 20px;
-            background: #f8f9fa;
-            font-size: 12px;
-            color: #666;
-            word-break: break-all;
+        .info {
+            margin-top: 15px;
+            padding: 10px;
+            background: rgba(0, 255, 136, 0.1);
+            border-radius: 5px;
+            font-size: 14px;
+            color: #ccc;
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                padding: 15px;
+            }
+            
+            .title {
+                font-size: 20px;
+            }
+            
+            .controls {
+                padding: 15px;
+            }
+            
+            iframe {
+                height: 500px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>BNext AI Taiwan 商務展問答工具</h1>
-            <p>自訂問題參數並預覽結果</p>
+    <div class="header">
+        <h1 class="title">數位時代 AI 問答介面</h1>
+    </div>
+    
+    <div class="controls">
+        <div class="input-group">
+            <label for="questionInput">問題內容：</label>
+            <input type="text" id="questionInput" 
+                   value="AI TAIWAN 未來商務展今年以什麼為主軸？" 
+                   placeholder="輸入您的問題...">
         </div>
         
-        <div class="input-section">
-            <div class="input-group">
-                <label for="questionText">問題內容 (t 參數):</label>
-                <input type="text" id="questionText" 
-                       value="AI TAIWAN 未來商務展今年以什麼為主軸？" 
-                       placeholder="輸入您的問題">
-            </div>
-            
-            <button onclick="updateIframe()">更新預覽</button>
-        </div>
+        <button class="button" onclick="updateIframe()">更新問答</button>
+        <button class="button" onclick="copyUrl()">複製連結</button>
         
-        <div class="current-url" id="currentUrl">
+        <div class="url-display" id="urlDisplay">
             目前 URL: https://ai-fc.bnext.com.tw/answer?t=AI%20TAIWAN%20%E6%9C%AA%E4%BE%86%E5%95%86%E5%8B%99%E5%B1%95%E4%BB%8A%E5%B9%B4%E4%BB%A5%E4%BB%80%E9%BA%BC%E7%82%BA%E4%B8%BB%E8%BB%B8%EF%BC%9F&pkey=3b34dae3-00303300
         </div>
+    </div>
+    
+    <div class="iframe-container">
+        <iframe id="contentFrame" 
+                src="https://ai-fc.bnext.com.tw/answer?t=AI%20TAIWAN%20%E6%9C%AA%E4%BE%86%E5%95%86%E5%8B%99%E5%B1%95%E4%BB%8A%E5%B9%B4%E4%BB%A5%E4%BB%80%E9%BA%BC%E7%82%BA%E4%B8%BB%E8%BB%B8%EF%BC%9F&pkey=3b34dae3-00303300"
+                title="數位時代 AI 問答">
+        </iframe>
         
-        <div class="iframe-container">
-            <iframe id="bnextFrame" 
-                    src="https://ai-fc.bnext.com.tw/answer?t=AI%20TAIWAN%20%E6%9C%AA%E4%BE%86%E5%95%86%E5%8B%99%E5%B1%95%E4%BB%8A%E5%B9%B4%E4%BB%A5%E4%BB%80%E9%BA%BC%E7%82%BA%E4%B8%BB%E8%BB%B8%EF%BC%9F&pkey=3b34dae3-00303300">
-            </iframe>
+        <div class="info">
+            技術說明：此介面使用 iframe 嵌入數位時代 AI 問答系統，已移除 UTM 追蹤參數以確保乾淨的 URL 結構。
         </div>
     </div>
 
     <script>
         function updateIframe() {
-            const questionText = document.getElementById('questionText').value;
-            const encodedQuestion = encodeURIComponent(questionText);
-            
-            // 建構新的 URL (移除 UTM 參數)
+            const question = document.getElementById('questionInput').value;
+            const encodedQuestion = encodeURIComponent(question);
             const baseUrl = 'https://ai-fc.bnext.com.tw/answer';
-            const newUrl = `${baseUrl}?t=${encodedQuestion}&pkey=3b34dae3-00303300`;
+            const pkey = '3b34dae3-00303300';
             
-            // 更新 iframe
-            document.getElementById('bnextFrame').src = newUrl;
+            const newUrl = `${baseUrl}?t=${encodedQuestion}&pkey=${pkey}`;
             
-            // 更新顯示的 URL
-            document.getElementById('currentUrl').textContent = `目前 URL: ${newUrl}`;
+            document.getElementById('contentFrame').src = newUrl;
+            document.getElementById('urlDisplay').textContent = `目前 URL: ${newUrl}`;
         }
         
-        // 允許 Enter 鍵觸發更新
-        document.getElementById('questionText').addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                updateIframe();
-            }
-        });
+        function copyUrl() {
+            const url = document.getElementById('contentFrame').src;
+            navigator.clipboard.writeText(url).then(() => {
+                alert('URL 已複製到剪貼板');
+            }).catch(err => {
+                console.error('複製失敗:', err);
+                // 備用方案
+                const textArea = document.createElement('textarea');
+                textArea.value = url;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                alert('URL 已複製到剪貼板');
+            });
+        }
         
-        // 頁面載入時初始化
-        window.onload = function() {
-            updateIframe();
-        };
+        // 初始化時更新 URL 顯示
+        document.addEventListener('DOMContentLoaded', function() {
+            const iframe = document.getElementById('contentFrame');
+            document.getElementById('urlDisplay').textContent = `目前 URL: ${iframe.src}`;
+        });
     </script>
 </body>
 </html>
