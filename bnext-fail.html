@@ -116,43 +116,26 @@
             height: calc(100vh - 250px);
             min-height: 600px;
             position: relative;
-            background: #000;
+            /* 設定 iframe 容器背景為白色 */
+            background: #ffffff;
+            padding: 2px;
         }
         
         #contentFrame {
             width: 100%;
             height: 100%;
             border: none;
-            background: #000;
-            /* 為 iframe 添加綠色濾鏡效果 */
-            filter: sepia(100%) hue-rotate(90deg) saturate(150%) brightness(1.1) contrast(1.1);
-            /* 添加綠色調 */
-            mix-blend-mode: screen;
-            /* 過渡效果 */
-            transition: filter 0.3s ease;
+            /* 設定 iframe 背景為白色 */
+            background: #ffffff !important;
+            border-radius: 3px;
         }
         
-        /* 滑鼠懸停時增強綠色效果 */
-        #contentFrame:hover {
-            filter: sepia(100%) hue-rotate(90deg) saturate(200%) brightness(1.2) contrast(1.2);
-        }
-        
-        /* 為 iframe 容器添加綠色背景光暈 */
-        .iframe-container::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: radial-gradient(circle, rgba(0, 255, 136, 0.1) 0%, transparent 70%);
-            pointer-events: none;
-            z-index: 1;
-        }
-        
-        #contentFrame {
-            position: relative;
-            z-index: 2;
+        /* 為整個 iframe 區域添加白色背景 */
+        .iframe-wrapper {
+            width: 100%;
+            height: 100%;
+            background: #ffffff;
+            border-radius: 3px;
         }
         
         .loading {
@@ -184,7 +167,7 @@
         }
         
         /* 控制按鈕區域 */
-        .filter-controls {
+        .background-controls {
             padding: 10px 20px;
             background: rgba(0, 0, 0, 0.3);
             border-top: 1px solid #333;
@@ -194,7 +177,7 @@
             justify-content: center;
         }
         
-        .filter-btn {
+        .bg-btn {
             padding: 5px 15px;
             background: rgba(0, 255, 136, 0.2);
             border: 1px solid #00ff88;
@@ -205,11 +188,11 @@
             transition: all 0.3s ease;
         }
         
-        .filter-btn:hover {
+        .bg-btn:hover {
             background: rgba(0, 255, 136, 0.4);
         }
         
-        .filter-btn.active {
+        .bg-btn.active {
             background: #00ff88;
             color: #000;
         }
@@ -223,7 +206,7 @@
                 min-width: 100%;
             }
             
-            .filter-controls {
+            .background-controls {
                 flex-wrap: wrap;
             }
         }
@@ -247,19 +230,21 @@
             </div>
         </div>
         
-        <div class="filter-controls">
-            <span style="color: #00ff88; font-size: 12px;">濾鏡效果:</span>
-            <button class="filter-btn active" data-filter="green">綠色增強</button>
-            <button class="filter-btn" data-filter="normal">原始色調</button>
-            <button class="filter-btn" data-filter="matrix">矩陣綠</button>
+        <div class="background-controls">
+            <span style="color: #00ff88; font-size: 12px;">背景色:</span>
+            <button class="bg-btn active" data-bg="white">白色背景</button>
+            <button class="bg-btn" data-bg="black">黑色背景</button>
+            <button class="bg-btn" data-bg="green">綠色背景</button>
         </div>
         
-        <div class="iframe-container">
+        <div class="iframe-container" id="iframeContainer">
             <div class="loading" id="loading">載入中...</div>
-            <iframe id="contentFrame" 
-                    src="https://ai-fc.bnext.com.tw/answer?t=AI%20TAIWAN%20%E6%9C%AA%E4%BE%86%E5%95%86%E5%8B%99%E5%B1%95%E4%BB%8A%E5%B9%B4%E4%BB%A5%E4%BB%80%E9%BA%BC%E7%82%BA%E4%B8%BB%E8%BB%B8%EF%BC%9F&pkey=3b34dae3-00303300"
-                    style="display: none;">
-            </iframe>
+            <div class="iframe-wrapper">
+                <iframe id="contentFrame" 
+                        src="https://ai-fc.bnext.com.tw/answer?t=AI%20TAIWAN%20%E6%9C%AA%E4%BE%86%E5%95%86%E5%8B%99%E5%B1%95%E4%BB%8A%E5%B9%B4%E4%BB%A5%E4%BB%80%E9%BA%BC%E7%82%BA%E4%B8%BB%E8%BB%B8%EF%BC%9F&pkey=3b34dae3-00303300"
+                        style="display: none;">
+                </iframe>
+            </div>
         </div>
     </div>
 
@@ -269,16 +254,17 @@
         const contentFrame = document.getElementById('contentFrame');
         const currentUrl = document.getElementById('currentUrl');
         const loading = document.getElementById('loading');
-        const filterBtns = document.querySelectorAll('.filter-btn');
+        const bgBtns = document.querySelectorAll('.bg-btn');
+        const iframeContainer = document.getElementById('iframeContainer');
         
         const baseUrl = 'https://ai-fc.bnext.com.tw/answer';
         const pkey = '3b34dae3-00303300';
         
-        // 濾鏡效果設定
-        const filters = {
-            green: 'sepia(100%) hue-rotate(90deg) saturate(150%) brightness(1.1) contrast(1.1)',
-            normal: 'none',
-            matrix: 'sepia(100%) hue-rotate(120deg) saturate(300%) brightness(0.9) contrast(1.5)'
+        // 背景色設定
+        const backgrounds = {
+            white: '#ffffff',
+            black: '#000000',
+            green: '#001a0d'
         };
         
         function updateIframe() {
@@ -302,29 +288,56 @@
             contentFrame.src = newUrl;
         }
         
-        // 濾鏡切換功能
-        function applyFilter(filterType) {
-            contentFrame.style.filter = filters[filterType];
+        // 背景色切換功能
+        function changeBackground(bgType) {
+            const bgColor = backgrounds[bgType];
+            
+            // 設定 iframe 容器和包裝器的背景色
+            iframeContainer.style.background = bgColor;
+            document.querySelector('.iframe-wrapper').style.background = bgColor;
+            
+            // 嘗試通過 CSS 變數來影響 iframe 內容
+            document.documentElement.style.setProperty('--iframe-bg', bgColor);
             
             // 更新按鈕狀態
-            filterBtns.forEach(btn => btn.classList.remove('active'));
-            document.querySelector(`[data-filter="${filterType}"]`).classList.add('active');
+            bgBtns.forEach(btn => btn.classList.remove('active'));
+            document.querySelector(`[data-bg="${bgType}"]`).classList.add('active');
         }
         
         // iframe 載入完成事件
         contentFrame.addEventListener('load', function() {
             loading.style.display = 'none';
             contentFrame.style.display = 'block';
+            
+            // 嘗試在 iframe 載入後注入樣式
+            try {
+                const iframeDoc = contentFrame.contentDocument || contentFrame.contentWindow.document;
+                if (iframeDoc) {
+                    const style = iframeDoc.createElement('style');
+                    style.textContent = `
+                        body { 
+                            background-color: ${backgrounds.white} !important; 
+                        }
+                        * { 
+                            background-color: ${backgrounds.white} !important; 
+                        }
+                    `;
+                    iframeDoc.head.appendChild(style);
+                }
+            } catch (e) {
+                // 跨域限制，無法直接修改 iframe 內容
+                console.log('無法直接修改 iframe 內容（跨域限制）');
+            }
         });
         
         // 按鈕點擊事件
         loadBtn.addEventListener('click', updateIframe);
         
-        // 濾鏡按鈕事件
-        filterBtns.forEach(btn => {
+        // 背景色按鈕事件
+        bgBtns.forEach(btn => {
             btn.addEventListener('click', () => {
-                const filterType = btn.getAttribute('data-filter');
-                applyFilter(filterType);
+                const bgType = btn.getAttribute('data-bg');
+                changeBackground(bgType);
             });
         });
         
@@ -337,6 +350,9 @@
         
         // 初始載入
         window.addEventListener('load', function() {
+            // 設定初始白色背景
+            changeBackground('white');
+            
             setTimeout(() => {
                 loading.style.display = 'none';
                 contentFrame.style.display = 'block';
