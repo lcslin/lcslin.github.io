@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BNEXT AI 問答展示</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a1a1a 0%, #0d1117 100%);
+            color: #00ff88;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+            border: 2px solid #00ff88;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.2);
+        }
+        
+        .header {
+            background: linear-gradient(90deg, #000000, #1a4d3a);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #00ff88;
+        }
+        
+        .header h1 {
+            color: #00ff88;
+            font-size: 24px;
+            margin-bottom: 15px;
+            text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+        }
+        
+        .input-container {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .input-container label {
+            color: #00ff88;
+            font-weight: bold;
+        }
+        
+        #textInput {
+            flex: 1;
+            min-width: 300px;
+            padding: 10px 15px;
+            border: 2px solid #00ff88;
+            border-radius: 8px;
+            background: rgba(0, 0, 0, 0.7);
+            color: #00ff88;
+            font-size: 14px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+        
+        #textInput:focus {
+            box-shadow: 0 0 15px rgba(0, 255, 136, 0.4);
+            border-color: #00ffaa;
+        }
+        
+        #textInput::placeholder {
+            color: #666;
+        }
+        
+        #loadBtn {
+            padding: 10px 20px;
+            background: linear-gradient(45deg, #00ff88, #00cc6a);
+            border: none;
+            border-radius: 8px;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+        
+        #loadBtn:hover {
+            background: linear-gradient(45deg, #00cc6a, #00aa55);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3);
+        }
+        
+        .info-section {
+            padding: 15px 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-bottom: 1px solid #333;
+        }
+        
+        .current-url {
+            color: #00ff88;
+            font-size: 12px;
+            word-break: break-all;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 8px;
+            border-radius: 5px;
+            border-left: 3px solid #00ff88;
+        }
+        
+        .iframe-container {
+            height: calc(100vh - 250px);
+            min-height: 600px;
+            position: relative;
+            background: #000;
+        }
+        
+        #contentFrame {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: #000;
+        }
+        
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #00ff88;
+            font-size: 18px;
+            text-align: center;
+        }
+        
+        .loading::after {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #333;
+            border-top: 2px solid #00ff88;
+            border-radius: 50%;
+            margin-left: 10px;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        @media (max-width: 768px) {
+            .input-container {
+                flex-direction: column;
+            }
+            
+            #textInput {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>BNEXT AI 問答展示系統</h1>
+            <div class="input-container">
+                <label for="textInput">問題內容:</label>
+                <input type="text" id="textInput" placeholder="輸入您的問題..." 
+                       value="AI TAIWAN 未來商務展今年以什麼為主軸？">
+                <button id="loadBtn">載入內容</button>
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <div class="current-url" id="currentUrl">
+                目前連結: https://ai-fc.bnext.com.tw/answer?t=AI%20TAIWAN%20%E6%9C%AA%E4%BE%86%E5%95%86%E5%8B%99%E5%B1%95%E4%BB%8A%E5%B9%B4%E4%BB%A5%E4%BB%80%E9%BA%BC%E7%82%BA%E4%B8%BB%E8%BB%B8%EF%BC%9F&pkey=3b34dae3-00303300
+            </div>
+        </div>
+        
+        <div class="iframe-container">
+            <div class="loading" id="loading">載入中...</div>
+            <iframe id="contentFrame" 
+                    src="https://ai-fc.bnext.com.tw/answer?t=AI%20TAIWAN%20%E6%9C%AA%E4%BE%86%E5%95%86%E5%8B%99%E5%B1%95%E4%BB%8A%E5%B9%B4%E4%BB%A5%E4%BB%80%E9%BA%BC%E7%82%BA%E4%B8%BB%E8%BB%B8%EF%BC%9F&pkey=3b34dae3-00303300"
+                    style="display: none;">
+            </iframe>
+        </div>
+    </div>
+
+    <script>
+        const textInput = document.getElementById('textInput');
+        const loadBtn = document.getElementById('loadBtn');
+        const contentFrame = document.getElementById('contentFrame');
+        const currentUrl = document.getElementById('currentUrl');
+        const loading = document.getElementById('loading');
+        
+        const baseUrl = 'https://ai-fc.bnext.com.tw/answer';
+        const pkey = '3b34dae3-00303300';
+        
+        function updateIframe() {
+            const text = textInput.value.trim();
+            if (!text) {
+                alert('請輸入問題內容');
+                return;
+            }
+            
+            const encodedText = encodeURIComponent(text);
+            const newUrl = `${baseUrl}?t=${encodedText}&pkey=${pkey}`;
+            
+            // 顯示載入狀態
+            loading.style.display = 'block';
+            contentFrame.style.display = 'none';
+            
+            // 更新 URL 顯示
+            currentUrl.textContent = `目前連結: ${newUrl}`;
+            
+            // 載入新內容
+            contentFrame.src = newUrl;
+        }
+        
+        // iframe 載入完成事件
+        contentFrame.addEventListener('load', function() {
+            loading.style.display = 'none';
+            contentFrame.style.display = 'block';
+        });
+        
+        // 按鈕點擊事件
+        loadBtn.addEventListener('click', updateIframe);
+        
+        // 輸入框 Enter 鍵事件
+        textInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                updateIframe();
+            }
+        });
+        
+        // 初始載入
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                loading.style.display = 'none';
+                contentFrame.style.display = 'block';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
