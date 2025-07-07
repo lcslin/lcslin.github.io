@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Microsoft 365 Agents Toolkit 深度分析：優勢與限制</title>
+    <title>Microsoft 365 Agents Toolkit 深度分析：完整技術評估</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -36,18 +36,18 @@
             border: 1px solid rgba(148, 163, 184, 0.1);
         }
 
-        .warning-header {
-            background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(185, 28, 28, 0.1));
-            border: 1px solid rgba(239, 68, 68, 0.3);
+        .update-notice {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(21, 128, 61, 0.1));
+            border: 1px solid rgba(34, 197, 94, 0.3);
             border-radius: 12px;
             padding: 1.5rem;
             margin-bottom: 2rem;
             text-align: center;
         }
 
-        .warning-icon {
-            font-size: 3rem;
-            color: #ef4444;
+        .update-icon {
+            font-size: 2rem;
+            color: #22c55e;
             margin-bottom: 1rem;
         }
 
@@ -105,13 +105,13 @@
             border-color: rgba(59, 130, 246, 0.3);
         }
 
-        .critical-card {
-            background: rgba(239, 68, 68, 0.05);
-            border: 1px solid rgba(239, 68, 68, 0.2);
+        .highlight-card {
+            background: rgba(34, 197, 94, 0.05);
+            border: 1px solid rgba(34, 197, 94, 0.2);
         }
 
-        .critical-card:hover {
-            border-color: rgba(239, 68, 68, 0.4);
+        .highlight-card:hover {
+            border-color: rgba(34, 197, 94, 0.4);
         }
 
         .card h2 {
@@ -153,19 +153,6 @@
             margin-bottom: 0.5rem;
         }
 
-        .critical-analysis {
-            background: rgba(239, 68, 68, 0.1);
-            border: 1px solid rgba(239, 68, 68, 0.2);
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin: 1rem 0;
-        }
-
-        .critical-analysis h4 {
-            color: #fca5a5;
-            margin-bottom: 0.5rem;
-        }
-
         .feature-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -186,14 +173,14 @@
             transform: translateY(-2px);
         }
 
-        .limitation-card {
-            background: rgba(239, 68, 68, 0.03);
-            border: 1px solid rgba(239, 68, 68, 0.2);
+        .new-feature-card {
+            background: rgba(34, 197, 94, 0.03);
+            border: 1px solid rgba(34, 197, 94, 0.2);
         }
 
-        .limitation-card:hover {
-            background: rgba(239, 68, 68, 0.05);
-            border-color: rgba(239, 68, 68, 0.3);
+        .new-feature-card:hover {
+            background: rgba(34, 197, 94, 0.05);
+            border-color: rgba(34, 197, 94, 0.3);
         }
 
         .feature-icon {
@@ -202,9 +189,9 @@
             margin-bottom: 0.75rem;
         }
 
-        .warning-feature-icon {
+        .new-feature-icon {
             font-size: 1.5rem;
-            color: #ef4444;
+            color: #22c55e;
             margin-bottom: 0.75rem;
         }
 
@@ -261,7 +248,6 @@
         .score.high { background: #065f46; color: #34d399; }
         .score.medium { background: #92400e; color: #fbbf24; }
         .score.low { background: #7f1d1d; color: #f87171; }
-        .score.critical { background: #7f1d1d; color: #fca5a5; }
 
         .pro {
             color: #34d399;
@@ -273,8 +259,8 @@
             font-weight: 600;
         }
 
-        .critical {
-            color: #fca5a5;
+        .new-info {
+            color: #22c55e;
             font-weight: 600;
         }
 
@@ -308,17 +294,28 @@
             color: #e2e8f0;
         }
 
-        .reality-check {
-            background: linear-gradient(135deg, rgba(217, 119, 6, 0.1), rgba(146, 64, 14, 0.1));
-            border: 1px solid rgba(217, 119, 6, 0.3);
-            border-radius: 16px;
-            padding: 2rem;
-            margin: 2rem 0;
+        .new-highlight {
+            background: rgba(34, 197, 94, 0.1);
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid #22c55e;
+            margin: 1rem 0;
         }
 
-        .reality-check h3 {
-            color: #fbbf24;
-            margin-bottom: 1rem;
+        .new-highlight h4 {
+            color: #22c55e;
+            margin-bottom: 0.5rem;
+        }
+
+        .architecture-diagram {
+            background: rgba(15, 23, 42, 0.8);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid rgba(148, 163, 184, 0.1);
+            font-family: 'Cascadia Code', 'Fira Code', monospace;
+            font-size: 0.9rem;
+            color: #e2e8f0;
+            margin: 1.5rem 0;
         }
 
         @media (max-width: 768px) {
@@ -348,10 +345,10 @@
 </head>
 <body>
     <div class="container">
-        <div class="warning-header">
-            <i class="fas fa-exclamation-triangle warning-icon"></i>
-            <h2>Microsoft 365 Agents Toolkit 客觀分析</h2>
-            <p>重新評估平台鎖定風險與實際應用限制</p>
+        <div class="update-notice">
+            <i class="fas fa-sync-alt update-icon"></i>
+            <h2>深度調研後的完整技術評估</h2>
+            <p>基於 Microsoft Learn 文檔、GitHub Repository 和實際測試的綜合分析</p>
         </div>
 
         <header>
@@ -359,114 +356,188 @@
                 <i class="fas fa-microscope header-icon"></i>
                 <div>
                     <h1>Microsoft 365 Agents Toolkit</h1>
-                    <p class="subtitle">深度分析：優勢與關鍵限制</p>
+                    <p class="subtitle">完整技術評估：Web 能力、Azure 整合與應用範疇</p>
                     <div class="meta-info">
                         <div class="meta-item">
                             <i class="fas fa-calendar"></i>
-                            <span>2025年7月7日</span>
+                            <span>2025年7月7日更新</span>
                         </div>
                         <div class="meta-item">
-                            <i class="fas fa-balance-scale"></i>
-                            <span>客觀技術評估</span>
+                            <i class="fas fa-search"></i>
+                            <span>深度調研</span>
                         </div>
                         <div class="meta-item">
-                            <i class="fas fa-exclamation-triangle"></i>
-                            <span>風險評估</span>
+                            <i class="fas fa-globe"></i>
+                            <span>Web 能力確認</span>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
 
-        <div class="card critical-card">
-            <h2><i class="fas fa-exclamation-triangle" style="color: #ef4444;"></i>重大限制與風險警告</h2>
-            <p><strong>重要提醒：</strong>Microsoft 365 Agents Toolkit 是專門為 Teams 和 Outlook 設計的工具，在評估時必須考量其嚴重的平台限制。</p>
+        <div class="card highlight-card">
+            <h2><i class="fas fa-globe" style="color: #22c55e;"></i>重要發現：Web 使用能力確認</h2>
+            <p><strong>Microsoft 365 Agents Toolkit 確實支援 Web 使用！</strong></p>
+            
+            <div class="new-highlight">
+                <h4>Microsoft 365 Agents Playground</h4>
+                <p>這是一個關鍵的 Web 組件，提供完整的本地 Web 測試環境：</p>
+                <ul>
+                    <li>npm 包含 CLI 命令 <code>teamsapptester</code></li>
+                    <li>執行 <code>teamsapptester start</code> 開啟本地 Web 應用</li>
+                    <li>模擬 Teams 或 WebChat 客戶端和 Bot Framework 服務</li>
+                    <li>支援多頻道：msteams、directline、webchat、emulator</li>
+                    <li>不需要雲端資源，使用 mock 資料模擬</li>
+                </ul>
+            </div>
+
+            <div class="feature-grid">
+                <div class="feature-card new-feature-card">
+                    <i class="fas fa-desktop new-feature-icon"></i>
+                    <div class="feature-title">跨平台執行檔</div>
+                    <div class="feature-description">提供 Windows (19.7MB) 和 Linux (22.9MB) 版本的獨立執行檔</div>
+                </div>
+                <div class="feature-card new-feature-card">
+                    <i class="fas fa-code new-feature-icon"></i>
+                    <div class="feature-title">開源可客製化</div>
+                    <div class="feature-description">完整源代碼提供，開發者可自行編譯和修改</div>
+                </div>
+                <div class="feature-card new-feature-card">
+                    <i class="fas fa-network-wired new-feature-icon"></i>
+                    <div class="feature-title">多頻道模擬</div>
+                    <div class="feature-description">支援 Teams、WebChat、DirectLine 等多種通訊頻道模擬</div>
+                </div>
+                <div class="feature-card new-feature-card">
+                    <i class="fas fa-shield-alt new-feature-icon"></i>
+                    <div class="feature-title">免雲端測試</div>
+                    <div class="feature-description">本地測試環境，無需 Microsoft 365 開發者帳戶或雲端資源</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2><i class="fas fa-sitemap"></i>Azure Functions + JavaScript 前端整合架構</h2>
+            <p>Microsoft 365 Agents Toolkit 與 Azure Functions 和 JavaScript 前端框架的整合，旨在建立完整的企業級全端解決方案。</p>
+            
+            <div class="architecture-diagram">
+Teams/Outlook 介面 → JavaScript 前端 → Azure Functions 後端 → AI 處理 → 回傳結果
+            ↓                    ↓                  ↓                ↓
+         用戶互動        React/Vue.js 介面    無伺服器運算      智能分析處理
+            </div>
+
+            <h3><i class="fas fa-cogs"></i>整合的核心目的</h3>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-layer-group feature-icon"></i>
+                    <div class="feature-title">全端解決方案</div>
+                    <div class="feature-description">前端 UI + 後端邏輯 + Teams/Outlook 整合的完整開發體驗</div>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-server feature-icon"></i>
+                    <div class="feature-title">無伺服器架構</div>
+                    <div class="feature-description">按需付費、自動擴展、簡化部署的成本效益方案</div>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-tools feature-icon"></i>
+                    <div class="feature-title">自動化基礎設施</div>
+                    <div class="feature-description">Bicep 模板自動建立 Azure 資源，無需手動配置</div>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-lock feature-icon"></i>
+                    <div class="feature-title">企業級安全性</div>
+                    <div class="feature-description">Azure AD 整合、Application Insights 監控自動配置</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2><i class="fas fa-list-ul"></i>實際應用範疇</h2>
+            <p>基於調研發現，Microsoft 365 Agents Toolkit 的主要應用場景包括：</p>
             
             <div class="feature-grid">
-                <div class="feature-card limitation-card">
-                    <i class="fas fa-lock warning-feature-icon"></i>
-                    <div class="feature-title">平台鎖定風險</div>
-                    <div class="feature-description">完全依賴 Microsoft 365 生態系統，技能和投資難以轉移到其他平台</div>
+                <div class="feature-card">
+                    <i class="fas fa-users feature-icon"></i>
+                    <div class="feature-title">Teams 會議助手</div>
+                    <div class="feature-description">自動生成會議摘要、提取行動項目、會議紀錄整理</div>
                 </div>
-                <div class="feature-card limitation-card">
-                    <i class="fas fa-ban warning-feature-icon"></i>
-                    <div class="feature-title">創新空間受限</div>
-                    <div class="feature-description">僅能在 Teams/Outlook 框架內運作，無法開發跨平台或獨立 AI 應用</div>
+                <div class="feature-card">
+                    <i class="fas fa-envelope feature-icon"></i>
+                    <div class="feature-title">Outlook 郵件處理</div>
+                    <div class="feature-description">智能郵件分類、自動回覆、重要郵件提醒</div>
                 </div>
-                <div class="feature-card limitation-card">
-                    <i class="fas fa-users-slash warning-feature-icon"></i>
-                    <div class="feature-title">多代理能力薄弱</div>
-                    <div class="feature-description">缺乏複雜的代理間協作機制，無法構建大規模分散式系統</div>
+                <div class="feature-card">
+                    <i class="fas fa-folder feature-icon"></i>
+                    <div class="feature-title">SharePoint 文檔管理</div>
+                    <div class="feature-description">文件自動分類、內容摘要生成、版本控制助手</div>
                 </div>
-                <div class="feature-card limitation-card">
-                    <i class="fas fa-road warning-feature-icon"></i>
-                    <div class="feature-title">技能轉移性差</div>
-                    <div class="feature-description">專用技能難以應用於其他 AI 平台，職涯發展受限</div>
+                <div class="feature-card">
+                    <i class="fas fa-workflow feature-icon"></i>
+                    <div class="feature-title">企業工作流程</div>
+                    <div class="feature-description">審批流程自動化、表單處理、部門協作工具</div>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset feature-icon"></i>
+                    <div class="feature-title">客戶服務支援</div>
+                    <div class="feature-description">Teams 客服機器人、常見問題回答、工單分類</div>
                 </div>
             </div>
         </div>
 
         <div class="card">
             <h2><i class="fas fa-balance-scale"></i>修正後的框架比較分析</h2>
-            <p>基於 Microsoft 365 Agents Toolkit 的實際應用範圍，重新評估各平台的真實優劣勢：</p>
+            <p>基於新發現的 Web 能力和 Azure 整合，重新評估各平台的技術價值：</p>
             
             <div class="comparison-table">
                 <table>
                     <thead>
                         <tr>
                             <th>框架/平台</th>
-                            <th>應用範圍</th>
-                            <th>平台鎖定風險</th>
-                            <th>創新潛力</th>
-                            <th>技能轉移性</th>
-                            <th>職涯發展價值</th>
+                            <th>Web 支援</th>
+                            <th>企業整合</th>
+                            <th>開發便利性</th>
+                            <th>部署複雜度</th>
                             <th>適用場景</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td><strong>Microsoft 365 Agents Toolkit</strong></td>
-                            <td><span class="score critical">極限</span></td>
-                            <td><span class="score critical">極高</span></td>
-                            <td><span class="score low">很低</span></td>
-                            <td><span class="score critical">極差</span></td>
-                            <td><span class="score low">有限</span></td>
-                            <td>Teams/Outlook 內部工具</td>
+                            <td><span class="score medium">本地 Web</span></td>
+                            <td><span class="score high">極高</span></td>
+                            <td><span class="score high">優秀</span></td>
+                            <td><span class="score low">簡單</span></td>
+                            <td>企業 Office 365 整合</td>
                         </tr>
                         <tr>
                             <td><strong>OpenAI Agents SDK</strong></td>
-                            <td><span class="score high">廣泛</span></td>
+                            <td><span class="score high">完整支援</span></td>
                             <td><span class="score medium">中等</span></td>
-                            <td><span class="score high">極高</span></td>
-                            <td><span class="score high">優秀</span></td>
-                            <td><span class="score high">極高</span></td>
-                            <td>通用 AI 應用、創新產品</td>
+                            <td><span class="score medium">中等</span></td>
+                            <td><span class="score medium">中等</span></td>
+                            <td>通用 AI 應用開發</td>
                         </tr>
                         <tr>
                             <td><strong>LangGraph</strong></td>
-                            <td><span class="score high">廣泛</span></td>
-                            <td><span class="score low">低</span></td>
-                            <td><span class="score high">極高</span></td>
-                            <td><span class="score high">優秀</span></td>
-                            <td><span class="score high">極高</span></td>
-                            <td>複雜工作流程、圖狀結構</td>
+                            <td><span class="score high">完整支援</span></td>
+                            <td><span class="score medium">中等</span></td>
+                            <td><span class="score low">複雜</span></td>
+                            <td><span class="score medium">中等</span></td>
+                            <td>複雜工作流程設計</td>
                         </tr>
                         <tr>
                             <td><strong>AutoGen</strong></td>
-                            <td><span class="score high">廣泛</span></td>
-                            <td><span class="score low">低</span></td>
-                            <td><span class="score high">高</span></td>
-                            <td><span class="score high">優秀</span></td>
-                            <td><span class="score high">高</span></td>
+                            <td><span class="score high">完整支援</span></td>
+                            <td><span class="score medium">中等</span></td>
+                            <td><span class="score medium">中等</span></td>
+                            <td><span class="score medium">中等</span></td>
                             <td>對話式多代理系統</td>
                         </tr>
                         <tr>
                             <td><strong>CrewAI</strong></td>
-                            <td><span class="score medium">中等</span></td>
-                            <td><span class="score low">低</span></td>
-                            <td><span class="score medium">中等</span></td>
-                            <td><span class="score medium">中等</span></td>
-                            <td><span class="score medium">中等</span></td>
+                            <td><span class="score medium">基礎支援</span></td>
+                            <td><span class="score low">基礎</span></td>
+                            <td><span class="score high">簡單</span></td>
+                            <td><span class="score low">簡單</span></td>
                             <td>角色導向團隊協作</td>
                         </tr>
                     </tbody>
@@ -475,110 +546,89 @@
         </div>
 
         <div class="card">
-            <h2><i class="fas fa-microscope"></i>實際應用場景分析</h2>
+            <h2><i class="fas fa-microscope"></i>優勢與限制重新評估</h2>
             
-            <div class="critical-analysis">
-                <h4><i class="fas fa-check-circle"></i>適合的應用場景</h4>
-                <ul>
-                    <li><strong>Teams 會議助手：</strong>會議紀錄、行動項目提取</li>
-                    <li><strong>Outlook 郵件處理：</strong>郵件分類、自動回覆</li>
-                    <li><strong>簡單的文檔協作：</strong>基於 SharePoint 的檔案管理</li>
-                    <li><strong>企業內部流程自動化：</strong>表單處理、審批流程</li>
-                </ul>
-            </div>
-
-            <div class="critical-analysis">
-                <h4><i class="fas fa-times-circle"></i>不適合的應用場景</h4>
-                <ul>
-                    <li><strong>複雜 AI 應用開發：</strong>需要高度客製化的智能系統</li>
-                    <li><strong>跨平台解決方案：</strong>整合多個不同的服務和 API</li>
-                    <li><strong>創新技術研究：</strong>前沿 AI 技術的探索和實驗</li>
-                    <li><strong>獨立 AI 產品開發：</strong>面向市場的商業 AI 產品</li>
-                    <li><strong>大規模多代理系統：</strong>複雜的分散式代理協作</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="reality-check">
-            <h3><i class="fas fa-reality-check"></i>現實評估與職涯建議</h3>
+            <h3><i class="fas fa-thumbs-up"></i>實際優勢</h3>
+            <p><span class="pro">新發現的優勢：</span></p>
+            <ul>
+                <li><span class="new-info">提供完整的本地 Web 測試環境</span></li>
+                <li><span class="new-info">支援多頻道模擬測試（Teams、WebChat、DirectLine）</span></li>
+                <li><span class="new-info">跨平台執行檔，支援 Windows 和 Linux</span></li>
+                <li>與 Microsoft 365 生態系統深度整合</li>
+                <li>Azure Functions + JavaScript 前端的完整解決方案</li>
+                <li>自動化基礎設施配置和部署</li>
+                <li>企業級安全性和合規性內建</li>
+            </ul>
             
-            <div class="highlight">
-                <h4>對於技術架構師的建議：</h4>
-                <p>Microsoft 365 Agents Toolkit 更適合作為<strong>補充技能</strong>而非核心技術棧。應該：</p>
-                <ul>
-                    <li>將其視為企業內部工具開發的選項之一</li>
-                    <li>避免過度依賴，保持技術多樣性</li>
-                    <li>重點投資在更具轉移性的通用 AI 技術</li>
-                </ul>
-            </div>
-
-            <div class="highlight">
-                <h4>真實的學習價值：</h4>
-                <p>Microsoft 365 Agents Toolkit 的學習價值<strong>相對有限</strong>，因為：</p>
-                <ul>
-                    <li>技能專用性強，難以應用於其他平台</li>
-                    <li>創新空間受限，不利於技術深度發展</li>
-                    <li>市場需求相對較小，職涯機會有限</li>
-                </ul>
-            </div>
-
-            <div class="highlight">
-                <h4>修正後的優先順序：</h4>
-                <ol>
-                    <li><strong>高優先級：</strong>OpenAI Agents SDK、LangGraph - 通用性強，創新潛力大</li>
-                    <li><strong>中優先級：</strong>AutoGen、CrewAI - 特定領域專精</li>
-                    <li><strong>低優先級：</strong>Microsoft 365 Agents Toolkit - 特定企業需求</li>
-                </ol>
-            </div>
+            <h3><i class="fas fa-exclamation-triangle"></i>核心限制</h3>
+            <p><span class="con">仍然存在的限制：</span></p>
+            <ul>
+                <li>最終部署仍限於 Microsoft 365 生態系統</li>
+                <li>技能轉移性相對有限</li>
+                <li>創新空間受限於平台框架</li>
+                <li>對非 Microsoft 技術棧的整合有限</li>
+            </ul>
         </div>
 
         <div class="recommendation">
-            <h3><i class="fas fa-lightbulb"></i>重新修正的戰略建議</h3>
+            <h3><i class="fas fa-lightbulb"></i>更新後的戰略建議</h3>
             
             <div class="highlight">
-                <h4>對於 AI 時代職涯規劃：</h4>
-                <p>避免過度專注於平台特定工具，應該：</p>
+                <h4>適合採用的場景：</h4>
                 <ul>
-                    <li>優先學習通用性強的 AI 框架</li>
-                    <li>培養跨平台的技術能力</li>
-                    <li>建立可轉移的核心技能</li>
-                    <li>保持對新興技術的敏感度</li>
+                    <li>企業已深度使用 Microsoft 365 環境</li>
+                    <li>需要快速開發 Teams/Outlook 整合應用</li>
+                    <li>優先考慮開發效率和企業合規性</li>
+                    <li>團隊熟悉 JavaScript/TypeScript 和 Azure 服務</li>
                 </ul>
             </div>
 
             <div class="highlight">
-                <h4>企業導入建議：</h4>
-                <p>如果企業已深度使用 Microsoft 365：</p>
+                <h4>技能發展建議：</h4>
+                <ol>
+                    <li><strong>核心技能：</strong>JavaScript/TypeScript、Azure Functions、React</li>
+                    <li><strong>平台特定：</strong>Microsoft 365 Agents Toolkit、Teams SDK</li>
+                    <li><strong>通用 AI：</strong>OpenAI API、LangChain（保持技術多樣性）</li>
+                    <li><strong>雲端平台：</strong>Azure AI Services、AWS Lambda（避免單一依賴）</li>
+                </ol>
+            </div>
+
+            <div class="highlight">
+                <h4>平衡策略：</h4>
+                <p>建議採用<strong>混合技術策略</strong>：</p>
                 <ul>
-                    <li>可考慮用於簡單的內部工具開發</li>
-                    <li>但不應作為主要的 AI 策略</li>
-                    <li>同時投資其他更具潛力的 AI 技術</li>
-                    <li>避免技術單一化風險</li>
+                    <li>使用 Microsoft 365 Agents Toolkit 處理企業內部整合</li>
+                    <li>同時學習 OpenAI SDK 等通用框架保持技術廣度</li>
+                    <li>重點培養可轉移的核心 AI 開發技能</li>
                 </ul>
             </div>
         </div>
 
         <div class="card">
-            <h2><i class="fas fa-graduation-cap"></i>建議的技能發展路徑</h2>
+            <h2><i class="fas fa-download"></i>開發資源與下載</h2>
+            <p>基於 GitHub Repository 調研，提供完整的開發資源資訊：</p>
             
-            <div class="highlight">
-                <h4>核心技能優先順序：</h4>
-                <ol>
-                    <li><strong>Python + AI 框架：</strong>OpenAI SDK、LangChain、LangGraph</li>
-                    <li><strong>雲端平台：</strong>AWS/Azure 的 AI 服務（避免單一平台依賴）</li>
-                    <li><strong>多代理系統：</strong>AutoGen、CrewAI 等通用框架</li>
-                    <li><strong>補充技能：</strong>Microsoft 365 Agents Toolkit（僅在特定需求時）</li>
-                </ol>
-            </div>
-
-            <div class="highlight">
-                <h4>關鍵認證建議：</h4>
-                <ul>
-                    <li><strong>AWS Certified Machine Learning - Specialty</strong>（優先）</li>
-                    <li><strong>Azure AI Engineer Associate</strong>（重要）</li>
-                    <li><strong>Google Cloud Professional ML Engineer</strong>（建議）</li>
-                    <li><strong>Microsoft 365 Teams Administrator</strong>（補充）</li>
-                </ul>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-code feature-icon"></i>
+                    <div class="feature-title">Visual Studio Code 擴展</div>
+                    <div class="feature-description">從 VS Code Marketplace 安裝 Microsoft 365 Agents Toolkit</div>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-terminal feature-icon"></i>
+                    <div class="feature-title">CLI 工具</div>
+                    <div class="feature-description">npm 安裝 CLI 工具，支援命令列開發和部署</div>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-desktop feature-icon"></i>
+                    <div class="feature-title">獨立執行檔</div>
+                    <div class="feature-description">Windows/Linux 版本的 Agents Playground 獨立應用</div>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-code-branch feature-icon"></i>
+                    <div class="feature-title">開源專案</div>
+                    <div class="feature-description">完整源代碼，支援自定義開發和貢獻</div>
+                </div>
             </div>
         </div>
     </div>
