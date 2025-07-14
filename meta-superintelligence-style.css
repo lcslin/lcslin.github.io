@@ -1,0 +1,247 @@
+/* Meta 超智能分析 - 樣式表 */
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --success-color: #27ae60;
+    --warning-color: #f39c12;
+    --light-bg: #f8f9fa;
+    --dark-text: #2c3e50;
+    --light-text: #7f8c8d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', 'Microsoft JhengHei', '微軟正黑體', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-text);
+    background-color: var(--light-bg);
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    border-bottom: 4px solid var(--secondary-color);
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 1.8em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-left: 4px solid var(--secondary-color);
+    padding-left: 15px;
+}
+
+h3 {
+    color: var(--primary-color);
+    font-size: 1.4em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.meta-info {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border-left: 5px solid var(--secondary-color);
+}
+
+.meta-info p {
+    margin-bottom: 5px;
+    color: var(--light-text);
+}
+
+.meta-info strong {
+    color: var(--primary-color);
+}
+
+.meta-info a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.meta-info a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.content p {
+    margin-bottom: 15px;
+}
+
+.highlight {
+    background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid var(--warning-color);
+    margin: 25px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.highlight strong {
+    color: var(--primary-color);
+    font-size: 1.1em;
+}
+
+.tech-term {
+    color: var(--accent-color);
+    font-weight: bold;
+    background-color: rgba(231, 76, 60, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.english-term {
+    color: var(--success-color);
+    font-style: italic;
+    font-weight: 500;
+    background-color: rgba(39, 174, 96, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+    list-style-type: none;
+    position: relative;
+}
+
+li:before {
+    content: "▸";
+    color: var(--secondary-color);
+    font-weight: bold;
+    position: absolute;
+    left: -15px;
+}
+
+.highlight ul li:before {
+    color: var(--warning-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 20px 0;
+}
+
+.image-caption {
+    text-align: center;
+    font-style: italic;
+    color: var(--light-text);
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    h3 {
+        font-size: 1.2em;
+    }
+}
+
+/* 打印樣式 */
+@media print {
+    body {
+        background-color: white;
+        padding: 0;
+    }
+    
+    .container {
+        box-shadow: none;
+        padding: 20px;
+    }
+    
+    .highlight {
+        background: #f8f9fa;
+        border: 1px solid #dee2e6;
+    }
+    
+    .tech-term, .english-term {
+        background-color: transparent;
+        color: black;
+        font-weight: bold;
+    }
+}
+
+/* 動畫效果 */
+.container {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.highlight {
+    transition: transform 0.3s ease;
+}
+
+.highlight:hover {
+    transform: translateY(-2px);
+}
+
+/* 選擇文本樣式 */
+::selection {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+::-moz-selection {
+    background-color: var(--secondary-color);
+    color: white;
+}
