@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>本日新聞網路分析</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft JhengHei', sans-serif;
+            background: #0a0a0a;
+            min-height: 100vh;
+            padding: 20px;
+            color: #e5e5e5;
+        }
+        
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            background: #1a1a1a;
+            border: 1px solid #333;
+            padding: 30px;
+            box-shadow: 0 0 40px rgba(0,0,0,0.8);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 10px;
+            font-size: 2rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #888;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        button {
+            padding: 10px 20px;
+            background: #2a2a2a;
+            color: #ccc;
+            border: 1px solid #444;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        button:hover {
+            background: #333;
+            color: #fff;
+            border-color: #666;
+        }
+        
+        button.active {
+            background: #444;
+            color: #fff;
+            border-color: #888;
+        }
+        
+        #graph-container {
+            width: 100%;
+            height: 700px;
+            border: 1px solid #333;
+            background: #0f0f0f;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        svg {
+            width: 100%;
+            height: 100%;
+            background: #0f0f0f;
+        }
+        
+        .node circle {
+            stroke: #000;
+            stroke-width: 2px;
+            cursor: pointer;
+            transition: all 0.3s;
+            opacity: 0.9;
+        }
+        
+        .node circle:hover {
+            stroke-width: 3px;
+            stroke: #fff;
+            opacity: 1;
+        }
+        
+        .node.selected circle {
+            stroke: #ffd700;
+            stroke-width: 3px;
+            opacity: 1;
+        }
+        
+        .node text {
+            font-size: 11px;
+            pointer-events: none;
+            text-anchor: middle;
+            fill: #ccc;
+            font-weight: 400;
+            text-shadow: 0 0 3px #000, 0 0 5px #000;
+        }
+        
+        .link {
+            stroke: #444;
+            stroke-opacity: 0.4;
+            cursor: pointer;
+            stroke-linecap: square;
+        }
+        
+        .link:hover {
+            stroke-opacity: 0.7;
+            stroke-width: 4;
+            stroke: #666;
+        }
+        
+        .link.highlighted {
+            stroke-opacity: 0.8;
+            stroke: #888;
+            stroke-width: 4;
+        }
+        
+        .link.selected {
+            stroke: #ffd700;
+            stroke-opacity: 1;
+            stroke-width: 4;
+        }
+        
+        /* 隱藏的點擊區域 */
+        .link-hitbox {
+            stroke: transparent;
+            stroke-width: 15;
+            cursor: pointer;
+            pointer-events: stroke;
+        }
+        
+        .tooltip {
+            position: absolute;
+            padding: 12px;
+            background: #000;
+            color: #e5e5e5;
+            border: 1px solid #333;
+            font-size: 13px;
+            pointer-events: none;
+            display: none;
+            max-width: 300px;
+            z-index: 1000;
+        }
+        
+        /* 新聞面板樣式 */
+        .news-panel {
+            position: fixed;
+            right: -450px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 430px;
+            max-height: 85vh;
+            background: #1a1a1a;
+            border: 1px solid #333;
+            box-shadow: -10px 0 30px rgba(0,0,0,0.9);
+            transition: right 0.3s ease;
+            z-index: 1001;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .news-panel.active {
+            right: 20px;
+        }
+        
+        .news-panel-header {
+            padding: 20px;
+            background: #0f0f0f;
+            color: #e5e5e5;
+            border-bottom: 1px solid #333;
+            position: relative;
+        }
+        
+        .news-panel-title {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+        
+        .news-panel-subtitle {
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .close-panel {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            background: #2a2a2a;
+            border: 1px solid #444;
+            color: #888;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .close-panel:hover {
+            background: #333;
+            color: #fff;
+            border-color: #666;
+        }
+        
+        .news-panel-content {
+            padding: 20px;
+            overflow-y: auto;
+            flex: 1;
+            background: #151515;
+        }
+        
+        /* 關聯實體區塊 */
+        .entity-section {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #2a2a2a;
+        }
+        
+        .entity-section:last-child {
+            border-bottom: none;
+        }
+        
+        .entity-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .entity-icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            font-weight: bold;
+            font-size: 18px;
+            border: 1px solid #333;
+        }
+        
+        .entity-info {
+            flex: 1;
+        }
+        
+        .entity-name {
+            font-size: 16px;
+            font-weight: 400;
+            color: #fff;
+            letter-spacing: 0.5px;
+        }
+        
+        .entity-type {
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .news-item {
+            padding: 12px;
+            margin-bottom: 10px;
+            background: #0f0f0f;
+            border: 1px solid #2a2a2a;
+            border-left: 3px solid #444;
+            transition: all 0.2s;
+        }
+        
+        .news-item:hover {
+            background: #1a1a1a;
+            border-left-color: #666;
+            transform: translateX(5px);
+        }
+        
+        .news-item-title {
+            font-size: 13px;
+            color: #ccc;
+            margin-bottom: 5px;
+            line-height: 1.5;
+        }
+        
+        .news-item-source {
+            font-size: 11px;
+            color: #666;
+        }
+        
+        .no-news {
+            text-align: center;
+            color: #555;
+            padding: 20px;
+        }
+        
+        /* 關聯說明 */
+        .relation-info {
+            background: #0f0f0f;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #2a2a2a;
+            border-left: 4px solid #444;
+        }
+        
+        .relation-info-title {
+            font-size: 14px;
+            font-weight: 400;
+            color: #fff;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .relation-info-content {
+            font-size: 13px;
+            color: #888;
+            line-height: 1.6;
+        }
+        
+        .relation-info-content strong {
+            color: #ccc;
+        }
+        
+        .common-news {
+            background: #1a0f0f;
+            border-left-color: #8b0000;
+        }
+        
+        .legend {
+            margin-top: 20px;
+            padding: 20px;
+            background: #0f0f0f;
+            border: 1px solid #2a2a2a;
+        }
+        
+        .legend h3 {
+            margin-bottom: 15px;
+            color: #ccc;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .legend-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #888;
+        }
+        
+        .legend-color {
+            width: 24px;
+            height: 24px;
+            border: 1px solid #333;
+            opacity: 0.9;
+        }
+        
+        .stats {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0,0,0,0.8);
+            padding: 10px;
+            border: 1px solid #333;
+            font-size: 12px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* 滾動條樣式 */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #0f0f0f;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border: 1px solid #444;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>本日新聞網路分析</h1>
+        <div class="subtitle">基於52則新聞的實體關係分析 - 點擊節點或連線查看詳情</div>
+        
+        <div class="controls">
+            <button onclick="filterNodes('all')" class="active">全部顯示</button>
+            <button onclick="filterNodes('country')">國家/地區</button>
+            <button onclick="filterNodes('company')">公司企業</button>
+            <button onclick="filterNodes('person')">關鍵人物</button>
+            <button onclick="filterNodes('tech')">技術/產業</button>
+            <button onclick="resetGraph()">重置佈局</button>
+        </div>
+        
+        <div id="graph-container">
+            <div class="stats">
+                節點: <span id="node-count">0</span> | 
+                連結: <span id="link-count">0</span>
+            </div>
+        </div>
+        
+        <div class="tooltip"></div>
+        
+        <!-- 新聞面板 -->
+        <div class="news-panel" id="newsPanel">
+            <div class="news-panel-header">
+                <div class="news-panel-title" id="newsPanelTitle">相關新聞</div>
+                <div class="news-panel-subtitle" id="newsPanelSubtitle">點擊查看詳情</div>
+                <button class="close-panel" onclick="closeNewsPanel()">×</button>
+            </div>
+            <div class="news-panel-content" id="newsPanelContent">
+                <div class="no-news">請點擊節點或連線查看相關新聞</div>
+            </div>
+        </div>
+        
+        <div class="legend">
+            <h3>圖例說明</h3>
+            <div class="legend-items">
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #dc2626;"></div>
+                    <span>國家/地區</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #0891b2;"></div>
+                    <span>公司企業</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #7c3aed;"></div>
+                    <span>關鍵人物</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #0284c7;"></div>
+                    <span>技術/產業</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #ea580c;"></div>
+                    <span>組織機構</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #059669;"></div>
+                    <span>金融/市場</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 新聞資料庫
+        const newsDatabase = {
+            "美國": [
+                { title: "美、歐製造業報喜 8月同返擴張", source: "工商財經要聞" },
+                { title: "鮑爾Fed告別秀 全球盯降息訊號", source: "工商財經要聞" },
+                { title: "市場關注鮑爾演說 美股道瓊跌逾150點、史指連5日收黑", source: "聯合財經新聞" },
+                { title: "北京回擊美 限制中企買H20", source: "工商全球財經" },
+                { title: "美關稅衝擊 電力景氣黃紅燈", source: "中時財經新聞" }
+            ],
+            "中國": [
+                { title: "北京回擊美 限制中企買H20", source: "工商全球財經" },
+                { title: "中國業務不確定升高 輝達Q3財測恐差強人意", source: "工商財經要聞" },
+                { title: "人民幣全球占比 7月續居第六", source: "工商全球財經" },
+                { title: "陸航企傳分配500架空巴大單", source: "工商全球財經" },
+                { title: "DeepSeek V3.1升級版上線 具更高的思考效率", source: "工商全球財經" }
+            ],
+            "台灣": [
+                { title: "跌破30.5價位成最弱亞幣 台幣爆量貶近2角", source: "工商財經要聞" },
+                { title: "外資調節收斂、內資反手買超 台股回神收復月線", source: "工商財經要聞" },
+                { title: "郭智輝一句話 新台幣貶破30.5元", source: "中時財經新聞" },
+                { title: "地方統籌分配款增4165億 卓揆：須舉債4000億因應", source: "聯合要聞" },
+                { title: "Google推智慧眼鏡 台灣團隊協作", source: "聯合科技產業" }
+            ],
+            "日本": [
+                { title: "日本製造業無力 連二月萎縮", source: "工商全球財經" }
+            ],
+            "歐洲": [
+                { title: "美、歐製造業報喜 8月同返擴張", source: "工商財經要聞" },
+                { title: "歐美8月綜合PMI 同步攀高", source: "聯合財經新聞" }
+            ],
+            "印度": [
+                { title: "印度智慧手機 H1出口年增3成", source: "工商產業科技" }
+            ],
+            "川普": [
+                { title: "李在明下周見川普 加碼送4.6兆投資大禮", source: "聯合財經新聞" },
+                { title: "不甩川普 庫克：沒有辭職打算", source: "工商全球財經" },
+                { title: "川普政府想入股台積電 童子賢：放開政府干預的手", source: "工商財經要聞" },
+                { title: "川普批綠能大騙局 台鏈失恃", source: "工商財經要聞" }
+            ],
+            "鮑爾": [
+                { title: "鮑爾Fed告別秀 全球盯降息訊號", source: "工商財經要聞" },
+                { title: "市場關注鮑爾演說 美股道瓊跌逾150點、史指連5日收黑", source: "聯合財經新聞" }
+            ],
+            "卓揆": [
+                { title: "地方統籌分配款增4165億 卓揆：須舉債4000億因應", source: "聯合要聞" },
+                { title: "卓揆：3類民眾 明年免繳綜所稅", source: "聯合要聞" }
+            ],
+            "庫克": [
+                { title: "不甩川普 庫克：沒有辭職打算", source: "工商全球財經" }
+            ],
+            "李在明": [
+                { title: "李在明下周見川普 加碼送4.6兆投資大禮", source: "聯合財經新聞" }
+            ],
+            "郭智輝": [
+                { title: "郭智輝一句話 新台幣貶破30.5元", source: "中時財經新聞" }
+            ],
+            "童子賢": [
+                { title: "川普政府想入股台積電 童子賢：放開政府干預的手", source: "工商財經要聞" }
+            ],
+            "台積電": [
+                { title: "谷歌AI產品接連出擊 台積先進製程助拳", source: "工商財經要聞" },
+                { title: "川普政府想入股台積電 童子賢：放開政府干預的手", source: "工商財經要聞" }
+            ],
+            "Google": [
+                { title: "谷歌AI產品接連出擊 台積先進製程助拳", source: "工商財經要聞" },
+                { title: "谷歌新品齊發 台鏈雀躍", source: "工商財經要聞" },
+                { title: "Google推智慧眼鏡 台灣團隊協作", source: "聯合科技產業" }
+            ],
+            "Meta": [
+                { title: "Meta 重金挖角計畫喊卡", source: "工商全球財經" },
+                { title: "涉詐廣告未依時限下架 數發部第3度開罰Meta", source: "聯合要聞" },
+                { title: "Meta凍結招聘AI人才", source: "聯合財經新聞" }
+            ],
+            "輝達": [
+                { title: "三星HBM4 傳通過輝達驗證 年底有望量產", source: "工商財經要聞" },
+                { title: "中國業務不確定升高 輝達Q3財測恐差強人意", source: "工商財經要聞" }
+            ],
+            "OpenAI": [
+                { title: "OpenAI 7月營收 飛越10億美元", source: "工商全球財經" }
+            ],
+            "三星": [
+                { title: "三星HBM4 傳通過輝達驗證 年底有望量產", source: "工商財經要聞" }
+            ],
+            "Anthropic": [
+                { title: "AI人才爭奪戰 Anthropic占上風", source: "工商全球財經" }
+            ],
+            "國巨": [
+                { title: "國巨收購芝浦規模將破千億日圓", source: "工商產業科技" },
+                { title: "國巨併芝浦三度調高價格 每股喊到1,371元 八度延長公開收購期限", source: "聯合科技產業" }
+            ],
+            "台達電": [
+                { title: "台達虛實整合方案亮相 打造智能工廠", source: "工商產業科技" },
+                { title: "台達電救珊瑚 機器手臂助復育", source: "中時樂活新聞" }
+            ],
+            "達明": [
+                { title: "達明、和椿、新漢大佬看人形機器人風向球 林茂昌：未來一年半是關鍵", source: "聯合產業綜合" },
+                { title: "達明董座：機器人及自動化為剛需", source: "工商產業科技" }
+            ],
+            "和椿": [
+                { title: "達明、和椿、新漢大佬看人形機器人風向球 林茂昌：未來一年半是關鍵", source: "聯合產業綜合" },
+                { title: "和椿程天縱：「AI＋機器人」是趨勢", source: "工商產業科技" }
+            ],
+            "華碩": [
+                { title: "華碩突圍 新電競掌機10月16日開賣", source: "聯合科技產業" }
+            ],
+            "阿里巴巴": [
+                { title: "阿里拆分斑馬智行赴港上市 提高財務透明度", source: "工商全球財經" }
+            ],
+            "Apple": [
+                { title: "不甩川普 庫克：沒有辭職打算", source: "工商全球財經" }
+            ],
+            "AI": [
+                { title: "谷歌AI產品接連出擊 台積先進製程助拳", source: "工商財經要聞" },
+                { title: "AI人才爭奪戰 Anthropic占上風", source: "工商全球財經" },
+                { title: "和椿程天縱：「AI＋機器人」是趨勢", source: "工商產業科技" },
+                { title: "Meta凍結招聘AI人才", source: "聯合財經新聞" },
+                { title: "DeepSeek V3.1升級版上線 具更高的思考效率", source: "工商全球財經" }
+            ],
+            "半導體": [
+                { title: "三星HBM4 傳通過輝達驗證 年底有望量產", source: "工商財經要聞" },
+                { title: "營運進補 安勤首獲半導體訂單", source: "工商產業科技" },
+                { title: "國巨收購芝浦規模將破千億日圓", source: "工商產業科技" }
+            ],
+            "機器人": [
+                { title: "達明、和椿、新漢大佬看人形機器人風向球 林茂昌：未來一年半是關鍵", source: "聯合產業綜合" },
+                { title: "達明董座：機器人及自動化為剛需", source: "工商產業科技" },
+                { title: "和椿程天縱：「AI＋機器人」是趨勢", source: "工商產業科技" },
+                { title: "台達電救珊瑚 機器手臂助復育", source: "中時樂活新聞" }
+            ],
+            "製造業": [
+                { title: "美、歐製造業報喜 8月同返擴張", source: "工商財經要聞" },
+                { title: "日本製造業無力 連二月萎縮", source: "工商全球財經" },
+                { title: "歐美8月綜合PMI 同步攀高", source: "聯合財經新聞" }
+            ],
+            "綠能": [
+                { title: "川普批綠能大騙局 台鏈失恃", source: "工商財經要聞" },
+                { title: "大甲溪光明電廠 環評補件再審", source: "聯合要聞" }
+            ],
+            "電商": [
+                { title: "極速物流時代 電商業迎新局", source: "工商產業科技" },
+                { title: "91APP 上半年每股賺1.97元", source: "工商產業科技" }
+            ],
+            "Fed": [
+                { title: "鮑爾Fed告別秀 全球盯降息訊號", source: "工商財經要聞" },
+                { title: "市場關注鮑爾演說 美股道瓊跌逾150點、史指連5日收黑", source: "聯合財經新聞" }
+            ],
+            "數發部": [
+                { title: "涉詐廣告未依時限下架 數發部第3度開罰Meta", source: "聯合要聞" }
+            ],
+            "台幣": [
+                { title: "跌破30.5價位成最弱亞幣 台幣爆量貶近2角", source: "工商財經要聞" },
+                { title: "郭智輝一句話 新台幣貶破30.5元", source: "中時財經新聞" }
+            ],
+            "美股": [
+                { title: "市場關注鮑爾演說 美股道瓊跌逾150點、史指連5日收黑", source: "聯合財經新聞" },
+                { title: "外資調節收斂、內資反手買超 台股回神收復月線", source: "工商財經要聞" }
+            ],
+            "降息": [
+                { title: "鮑爾Fed告別秀 全球盯降息訊號", source: "工商財經要聞" },
+                { title: "市場關注鮑爾演說 美股道瓊跌逾150點、史指連5日收黑", source: "聯合財經新聞" }
+            ],
+            "PMI": [
+                { title: "美、歐製造業報喜 8月同返擴張", source: "工商財經要聞" },
+                { title: "歐美8月綜合PMI 同步攀高", source: "聯合財經新聞" }
+            ]
+        };
+
+        // 關聯類型說明
+        const relationTypes = {
+            "美國-中國": "地緣政治關係",
+            "美國-台灣": "戰略夥伴關係",
+            "中國-台灣": "兩岸關係",
+            "川普-美國": "政治領導關係",
+            "川普-台積電": "政策影響關係",
+            "川普-綠能": "能源政策關係",
+            "鮑爾-Fed": "機構領導關係",
+            "鮑爾-降息": "貨幣政策關係",
+            "台積電-AI": "技術供應關係",
+            "台積電-半導體": "產業核心關係",
+            "台積電-Google": "商業合作關係",
+            "Google-AI": "技術發展關係",
+            "Meta-AI": "技術競爭關係",
+            "輝達-AI": "AI晶片關係",
+            "輝達-半導體": "晶片設計關係",
+            "輝達-三星": "供應鏈合作",
+            "輝達-中國": "貿易限制關係",
+            "Fed-降息": "貨幣政策執行",
+            "降息-美股": "市場影響關係",
+            "降息-台幣": "匯率影響關係",
+            "AI-半導體": "技術依賴關係",
+            "AI-機器人": "技術融合關係"
+        };
+
+        // 資料定義
+        const graphData = {
+            nodes: [
+                // 國家/地區
+                { id: "美國", group: "country", size: 15 },
+                { id: "中國", group: "country", size: 12 },
+                { id: "台灣", group: "country", size: 18 },
+                { id: "日本", group: "country", size: 6 },
+                { id: "歐洲", group: "country", size: 8 },
+                { id: "印度", group: "country", size: 5 },
+                
+                // 關鍵人物
+                { id: "川普", group: "person", size: 14 },
+                { id: "鮑爾", group: "person", size: 10 },
+                { id: "卓揆", group: "person", size: 8 },
+                { id: "庫克", group: "person", size: 7 },
+                { id: "李在明", group: "person", size: 6 },
+                { id: "郭智輝", group: "person", size: 6 },
+                { id: "童子賢", group: "person", size: 6 },
+                
+                // 公司
+                { id: "台積電", group: "company", size: 16 },
+                { id: "Google", group: "company", size: 14 },
+                { id: "Meta", group: "company", size: 12 },
+                { id: "輝達", group: "company", size: 13 },
+                { id: "OpenAI", group: "company", size: 10 },
+                { id: "三星", group: "company", size: 9 },
+                { id: "Anthropic", group: "company", size: 8 },
+                { id: "國巨", group: "company", size: 8 },
+                { id: "台達電", group: "company", size: 9 },
+                { id: "達明", group: "company", size: 7 },
+                { id: "和椿", group: "company", size: 7 },
+                { id: "華碩", group: "company", size: 7 },
+                { id: "阿里巴巴", group: "company", size: 7 },
+                { id: "Apple", group: "company", size: 9 },
+                
+                // 技術/產業
+                { id: "AI", group: "tech", size: 18 },
+                { id: "半導體", group: "tech", size: 14 },
+                { id: "機器人", group: "tech", size: 11 },
+                { id: "製造業", group: "tech", size: 9 },
+                { id: "綠能", group: "tech", size: 7 },
+                { id: "電商", group: "tech", size: 6 },
+                
+                // 組織
+                { id: "Fed", group: "org", size: 11 },
+                { id: "數發部", group: "org", size: 6 },
+                
+                // 金融
+                { id: "台幣", group: "finance", size: 9 },
+                { id: "美股", group: "finance", size: 8 },
+                { id: "降息", group: "finance", size: 10 },
+                { id: "PMI", group: "finance", size: 7 }
+            ],
+            links: [
+                // 國家關係
+                { source: "美國", target: "中國", value: 3 },
+                { source: "美國", target: "台灣", value: 4 },
+                { source: "中國", target: "台灣", value: 2 },
+                
+                // 人物關係
+                { source: "川普", target: "美國", value: 5 },
+                { source: "川普", target: "台積電", value: 3 },
+                { source: "川普", target: "綠能", value: 2 },
+                { source: "川普", target: "李在明", value: 2 },
+                { source: "鮑爾", target: "Fed", value: 5 },
+                { source: "鮑爾", target: "降息", value: 4 },
+                { source: "庫克", target: "Apple", value: 5 },
+                { source: "庫克", target: "川普", value: 2 },
+                { source: "卓揆", target: "台灣", value: 4 },
+                { source: "郭智輝", target: "台幣", value: 3 },
+                { source: "童子賢", target: "台積電", value: 3 },
+                
+                // 公司關係
+                { source: "台積電", target: "AI", value: 5 },
+                { source: "台積電", target: "半導體", value: 5 },
+                { source: "台積電", target: "Google", value: 4 },
+                { source: "Google", target: "AI", value: 5 },
+                { source: "Meta", target: "AI", value: 4 },
+                { source: "Meta", target: "數發部", value: 2 },
+                { source: "輝達", target: "AI", value: 5 },
+                { source: "輝達", target: "半導體", value: 5 },
+                { source: "輝達", target: "三星", value: 3 },
+                { source: "輝達", target: "中國", value: 2 },
+                { source: "OpenAI", target: "AI", value: 5 },
+                { source: "Anthropic", target: "AI", value: 5 },
+                { source: "三星", target: "半導體", value: 4 },
+                { source: "國巨", target: "半導體", value: 3 },
+                { source: "台達電", target: "機器人", value: 4 },
+                { source: "達明", target: "機器人", value: 5 },
+                { source: "和椿", target: "機器人", value: 5 },
+                
+                // 金融關係
+                { source: "Fed", target: "降息", value: 5 },
+                { source: "Fed", target: "美國", value: 4 },
+                { source: "降息", target: "美股", value: 3 },
+                { source: "降息", target: "台幣", value: 3 },
+                { source: "美股", target: "美國", value: 3 },
+                { source: "台幣", target: "台灣", value: 4 },
+                { source: "PMI", target: "製造業", value: 4 },
+                
+                // 產業關係
+                { source: "AI", target: "半導體", value: 4 },
+                { source: "AI", target: "機器人", value: 3 },
+                { source: "製造業", target: "日本", value: 2 },
+                { source: "製造業", target: "歐洲", value: 2 },
+                { source: "電商", target: "阿里巴巴", value: 3 }
+            ]
+        };
+
+        // 深色模式顏色對應
+        const colors = {
+            country: "#dc2626",    // 紅色
+            company: "#0891b2",    // 青色
+            person: "#7c3aed",     // 紫色
+            tech: "#0284c7",       // 藍色
+            org: "#ea580c",        // 橙色
+            finance: "#059669"     // 綠色
+        };
+
+        // 初始化
+        const container = document.getElementById('graph-container');
+        const width = container.clientWidth;
+        const height = 700;
+        
+        // 建立 SVG
+        const svg = d3.select('#graph-container')
+            .append('svg')
+            .attr('width', width)
+            .attr('height', height);
+
+        // 建立群組
+        const g = svg.append('g');
+
+        // 縮放功能
+        const zoom = d3.zoom()
+            .scaleExtent([0.5, 3])
+            .on('zoom', (event) => {
+                g.attr('transform', event.transform);
+            });
+
+        svg.call(zoom);
+
+        // 建立力模擬
+        const simulation = d3.forceSimulation(graphData.nodes)
+            .force('link', d3.forceLink(graphData.links)
+                .id(d => d.id)
+                .distance(80))
+            .force('charge', d3.forceManyBody()
+                .strength(-200))
+            .force('center', d3.forceCenter(width / 2, height / 2))
+            .force('collision', d3.forceCollide()
+                .radius(d => d.size * 2));
+
+        // 建立連結群組
+        const linkGroup = g.append('g');
+        
+        // 建立隱藏的點擊區域（較粗的透明線條）
+        const linkHitbox = linkGroup.selectAll('.link-hitbox')
+            .data(graphData.links)
+            .enter().append('line')
+            .attr('class', 'link-hitbox');
+        
+        // 建立可見的連結
+        const link = linkGroup.selectAll('.link')
+            .data(graphData.links)
+            .enter().append('line')
+            .attr('class', 'link')
+            .attr('stroke-width', d => Math.sqrt(d.value));
+
+        // 建立節點群組
+        const node = g.append('g')
+            .selectAll('g')
+            .data(graphData.nodes)
+            .enter().append('g')
+            .attr('class', 'node')
+            .call(d3.drag()
+                .on('start', dragstarted)
+                .on('drag', dragged)
+                .on('end', dragended));
+
+        // 加入圓圈
+        node.append('circle')
+            .attr('r', d => d.size * 1.5)
+            .attr('fill', d => colors[d.group] || '#666');
+
+        // 加入文字
+        node.append('text')
+            .text(d => d.id)
+            .attr('dy', 4);
+
+        // Tooltip
+        const tooltip = d3.select('.tooltip');
+        
+        // 節點互動
+        node.on('mouseover', function(event, d) {
+            tooltip.style('display', 'block')
+                .style('left', (event.pageX + 10) + 'px')
+                .style('top', (event.pageY - 10) + 'px')
+                .html(`<strong style="color: #fff;">${d.id}</strong><br>類型: ${getGroupName(d.group)}<br>權重: ${d.size}<br><em style="color: #666;">點擊查看相關新聞</em>`);
+            
+            // 高亮相關連結
+            link.classed('highlighted', l => l.source.id === d.id || l.target.id === d.id);
+        })
+        .on('mouseout', function() {
+            tooltip.style('display', 'none');
+            link.classed('highlighted', false);
+        })
+        .on('click', function(event, d) {
+            event.stopPropagation();
+            // 移除其他選中狀態
+            node.classed('selected', false);
+            link.classed('selected', false);
+            // 選中當前節點
+            d3.select(this).classed('selected', true);
+            // 顯示新聞面板
+            showNodeNews(d);
+        });
+
+        // 連線互動
+        linkHitbox.on('mouseover', function(event, d) {
+            const relationKey = `${d.source.id}-${d.target.id}`;
+            const relationType = relationTypes[relationKey] || "關聯關係";
+            
+            tooltip.style('display', 'block')
+                .style('left', (event.pageX + 10) + 'px')
+                .style('top', (event.pageY - 10) + 'px')
+                .html(`<strong style="color: #fff;">${d.source.id} ↔ ${d.target.id}</strong><br>關係類型: ${relationType}<br>強度: ${d.value}<br><em style="color: #666;">點擊查看關聯詳情</em>`);
+            
+            // 高亮當前連線
+            const sourceId = d.source.id;
+            const targetId = d.target.id;
+            link.classed('highlighted', l => 
+                (l.source.id === sourceId && l.target.id === targetId) ||
+                (l.source.id === targetId && l.target.id === sourceId)
+            );
+        })
+        .on('mouseout', function() {
+            tooltip.style('display', 'none');
+            link.classed('highlighted', false);
+        })
+        .on('click', function(event, d) {
+            event.stopPropagation();
+            // 移除其他選中狀態
+            node.classed('selected', false);
+            link.classed('selected', false);
+            // 選中當前連線
+            const sourceId = d.source.id;
+            const targetId = d.target.id;
+            link.classed('selected', l => 
+                (l.source.id === sourceId && l.target.id === targetId) ||
+                (l.source.id === targetId && l.target.id === sourceId)
+            );
+            // 選中相關節點
+            node.classed('selected', n => n.id === sourceId || n.id === targetId);
+            // 顯示關聯新聞
+            showRelationNews(d);
+        });
+
+        // 更新位置
+        simulation.on('tick', () => {
+            link
+                .attr('x1', d => d.source.x)
+                .attr('y1', d => d.source.y)
+                .attr('x2', d => d.target.x)
+                .attr('y2', d => d.target.y);
+            
+            linkHitbox
+                .attr('x1', d => d.source.x)
+                .attr('y1', d => d.source.y)
+                .attr('x2', d => d.target.x)
+                .attr('y2', d => d.target.y);
+
+            node
+                .attr('transform', d => `translate(${d.x},${d.y})`);
+        });
+
+        // 拖曳功能
+        function dragstarted(event, d) {
+            if (!event.active) simulation.alphaTarget(0.3).restart();
+            d.fx = d.x;
+            d.fy = d.y;
+        }
+
+        function dragged(event, d) {
+            d.fx = event.x;
+            d.fy = event.y;
+        }
+
+        function dragended(event, d) {
+            if (!event.active) simulation.alphaTarget(0);
+            d.fx = null;
+            d.fy = null;
+        }
+
+        // 顯示節點新聞
+        function showNodeNews(nodeData) {
+            const panel = document.getElementById('newsPanel');
+            const title = document.getElementById('newsPanelTitle');
+            const subtitle = document.getElementById('newsPanelSubtitle');
+            const content = document.getElementById('newsPanelContent');
+            
+            // 更新標題
+            title.textContent = nodeData.id;
+            subtitle.textContent = `${getGroupName(nodeData.group)} - 相關新聞`;
+            
+            // 獲取相關新聞
+            const news = newsDatabase[nodeData.id] || [];
+            
+            // 清空內容
+            content.innerHTML = '';
+            
+            if (news.length > 0) {
+                news.forEach(item => {
+                    const newsDiv = document.createElement('div');
+                    newsDiv.className = 'news-item';
+                    newsDiv.innerHTML = `
+                        <div class="news-item-title">${item.title}</div>
+                        <div class="news-item-source">▸ ${item.source}</div>
+                    `;
+                    content.appendChild(newsDiv);
+                });
+            } else {
+                content.innerHTML = '<div class="no-news">此節點暫無相關新聞</div>';
+            }
+            
+            // 顯示面板
+            panel.classList.add('active');
+        }
+
+        // 顯示關聯新聞
+        function showRelationNews(linkData) {
+            const panel = document.getElementById('newsPanel');
+            const title = document.getElementById('newsPanelTitle');
+            const subtitle = document.getElementById('newsPanelSubtitle');
+            const content = document.getElementById('newsPanelContent');
+            
+            const source = linkData.source;
+            const target = linkData.target;
+            const relationKey = `${source.id}-${target.id}`;
+            const relationType = relationTypes[relationKey] || "關聯關係";
+            
+            // 更新標題
+            title.textContent = `${source.id} ↔ ${target.id}`;
+            subtitle.textContent = relationType;
+            
+            // 清空內容
+            content.innerHTML = '';
+            
+            // 添加關聯說明
+            const relationInfo = document.createElement('div');
+            relationInfo.className = 'relation-info';
+            relationInfo.innerHTML = `
+                <div class="relation-info-title">關聯分析</div>
+                <div class="relation-info-content">
+                    這兩個實體之間存在 <strong>${relationType}</strong>，關聯強度為 ${linkData.value}/5。
+                    以下是各自的相關新聞報導。
+                </div>
+            `;
+            content.appendChild(relationInfo);
+            
+            // 獲取兩個節點的新聞
+            const sourceNews = newsDatabase[source.id] || [];
+            const targetNews = newsDatabase[target.id] || [];
+            
+            // 找出共同提及的新聞
+            const commonNews = sourceNews.filter(sNews => 
+                targetNews.some(tNews => sNews.title === tNews.title)
+            );
+            
+            // 如果有共同新聞，先顯示
+            if (commonNews.length > 0) {
+                const commonSection = document.createElement('div');
+                commonSection.className = 'entity-section';
+                commonSection.innerHTML = `
+                    <div class="entity-header">
+                        <div class="entity-icon" style="background: #8b0000; color: #fff;">
+                            ◆
+                        </div>
+                        <div class="entity-info">
+                            <div class="entity-name">共同提及</div>
+                            <div class="entity-type">同時涉及兩個實體的新聞</div>
+                        </div>
+                    </div>
+                `;
+                
+                commonNews.forEach(item => {
+                    const newsDiv = document.createElement('div');
+                    newsDiv.className = 'news-item common-news';
+                    newsDiv.innerHTML = `
+                        <div class="news-item-title">${item.title}</div>
+                        <div class="news-item-source">▸ ${item.source}</div>
+                    `;
+                    commonSection.appendChild(newsDiv);
+                });
+                
+                content.appendChild(commonSection);
+            }
+            
+            // 顯示第一個實體的新聞
+            if (sourceNews.length > 0) {
+                const sourceSection = document.createElement('div');
+                sourceSection.className = 'entity-section';
+                
+                const sourceColor = colors[source.group] || '#666';
+                sourceSection.innerHTML = `
+                    <div class="entity-header">
+                        <div class="entity-icon" style="background: ${sourceColor}; color: #fff;">
+                            ${source.id.charAt(0)}
+                        </div>
+                        <div class="entity-info">
+                            <div class="entity-name">${source.id}</div>
+                            <div class="entity-type">${getGroupName(source.group)}</div>
+                        </div>
+                    </div>
+                `;
+                
+                sourceNews.forEach(item => {
+                    // 跳過已經在共同新聞中顯示的
+                    if (!commonNews.some(cNews => cNews.title === item.title)) {
+                        const newsDiv = document.createElement('div');
+                        newsDiv.className = 'news-item';
+                        newsDiv.innerHTML = `
+                            <div class="news-item-title">${item.title}</div>
+                            <div class="news-item-source">▸ ${item.source}</div>
+                        `;
+                        sourceSection.appendChild(newsDiv);
+                    }
+                });
+                
+                content.appendChild(sourceSection);
+            }
+            
+            // 顯示第二個實體的新聞
+            if (targetNews.length > 0) {
+                const targetSection = document.createElement('div');
+                targetSection.className = 'entity-section';
+                
+                const targetColor = colors[target.group] || '#666';
+                targetSection.innerHTML = `
+                    <div class="entity-header">
+                        <div class="entity-icon" style="background: ${targetColor}; color: #fff;">
+                            ${target.id.charAt(0)}
+                        </div>
+                        <div class="entity-info">
+                            <div class="entity-name">${target.id}</div>
+                            <div class="entity-type">${getGroupName(target.group)}</div>
+                        </div>
+                    </div>
+                `;
+                
+                targetNews.forEach(item => {
+                    // 跳過已經在共同新聞中顯示的
+                    if (!commonNews.some(cNews => cNews.title === item.title)) {
+                        const newsDiv = document.createElement('div');
+                        newsDiv.className = 'news-item';
+                        newsDiv.innerHTML = `
+                            <div class="news-item-title">${item.title}</div>
+                            <div class="news-item-source">▸ ${item.source}</div>
+                        `;
+                        targetSection.appendChild(newsDiv);
+                    }
+                });
+                
+                content.appendChild(targetSection);
+            }
+            
+            // 如果都沒有新聞
+            if (sourceNews.length === 0 && targetNews.length === 0) {
+                content.innerHTML += '<div class="no-news">這兩個實體暫無相關新聞</div>';
+            }
+            
+            // 顯示面板
+            panel.classList.add('active');
+        }
+
+        // 關閉新聞面板
+        function closeNewsPanel() {
+            const panel = document.getElementById('newsPanel');
+            panel.classList.remove('active');
+            // 移除所有選中狀態
+            node.classed('selected', false);
+            link.classed('selected', false);
+        }
+
+        // 過濾功能
+        function filterNodes(type) {
+            // 更新按鈕狀態
+            document.querySelectorAll('button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            if (type === 'all') {
+                node.style('opacity', 1);
+                link.style('opacity', 0.4);
+            } else {
+                node.style('opacity', d => d.group === type ? 1 : 0.1);
+                link.style('opacity', l => {
+                    if (l.source.group === type || l.target.group === type) {
+                        return 0.4;
+                    }
+                    return 0.05;
+                });
+            }
+        }
+
+        // 重置圖形
+        function resetGraph() {
+            simulation.alpha(1).restart();
+            graphData.nodes.forEach(n => {
+                n.fx = null;
+                n.fy = null;
+            });
+            closeNewsPanel();
+        }
+
+        // 輔助函數
+        function getGroupName(group) {
+            const names = {
+                country: '國家/地區',
+                company: '公司企業',
+                person: '關鍵人物',
+                tech: '技術/產業',
+                org: '組織機構',
+                finance: '金融/市場'
+            };
+            return names[group] || group;
+        }
+
+        // 更新統計
+        document.getElementById('node-count').textContent = graphData.nodes.length;
+        document.getElementById('link-count').textContent = graphData.links.length;
+
+        // 設定全域函數
+        window.filterNodes = filterNodes;
+        window.resetGraph = resetGraph;
+        window.closeNewsPanel = closeNewsPanel;
+        
+        // 點擊空白處關閉面板
+        svg.on('click', function() {
+            closeNewsPanel();
+        });
+    </script>
+</body>
+</html>
