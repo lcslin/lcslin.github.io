@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>貪食蛇遊戲 | Snake Game</title>
+    <title>SNAKE GAME - APPLE ][ TERMINAL</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+        
         * {
             margin: 0;
             padding: 0;
@@ -12,112 +14,228 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'VT323', monospace;
+            background: #000000;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             padding: 20px;
+            color: #33ff33;
         }
 
-        .game-container {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            padding: 30px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            text-align: center;
-            max-width: 600px;
+        /* CRT Screen Effect */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                rgba(18, 16, 16, 0) 50%, 
+                rgba(0, 0, 0, 0.25) 50%
+            );
+            background-size: 100% 4px;
+            pointer-events: none;
+            z-index: 1000;
+            animation: flicker 0.15s infinite;
+        }
+
+        @keyframes flicker {
+            0% { opacity: 0.97; }
+            50% { opacity: 1; }
+            100% { opacity: 0.97; }
+        }
+
+        .terminal-container {
+            background: #001100;
+            border: 4px solid #33ff33;
+            border-radius: 0;
+            padding: 20px;
+            box-shadow: 
+                0 0 20px rgba(51, 255, 51, 0.3),
+                inset 0 0 30px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            max-width: 700px;
+            width: 100%;
+            position: relative;
+        }
+
+        /* Scanline effect */
+        .terminal-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                rgba(51, 255, 51, 0.03) 50%, 
+                transparent 50%
+            );
+            background-size: 100% 2px;
+            pointer-events: none;
+        }
+
+        /* Glow effect */
+        .terminal-container::after {
+            content: "";
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: transparent;
+            border: 2px solid rgba(51, 255, 51, 0.2);
+            border-radius: 0;
+            box-shadow: 0 0 40px rgba(51, 255, 51, 0.4);
+            pointer-events: none;
         }
 
         h1 {
-            color: #667eea;
-            margin-bottom: 20px;
-            font-size: 2.5em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            color: #33ff33;
+            margin-bottom: 15px;
+            font-size: 3em;
+            text-shadow: 
+                0 0 10px #33ff33,
+                0 0 20px #33ff33,
+                0 0 30px #33ff33;
+            letter-spacing: 0.1em;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #33ff33, 0 0 20px #33ff33; }
+            to { text-shadow: 0 0 20px #33ff33, 0 0 30px #33ff33, 0 0 40px #33ff33; }
+        }
+
+        .boot-text {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            text-align: left;
+            color: #33ff33;
+            text-shadow: 0 0 5px #33ff33;
         }
 
         .score-board {
             display: flex;
             justify-content: space-around;
-            margin-bottom: 20px;
-            font-size: 1.2em;
-            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            color: #33ff33;
+            text-shadow: 0 0 5px #33ff33;
         }
 
         .score-item {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: #002200;
+            color: #33ff33;
             padding: 10px 20px;
-            border-radius: 10px;
+            border: 2px solid #33ff33;
             font-weight: bold;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 
+                0 0 10px rgba(51, 255, 51, 0.3),
+                inset 0 0 10px rgba(51, 255, 51, 0.1);
         }
 
         #gameCanvas {
-            border: 4px solid #667eea;
-            border-radius: 10px;
-            background: #f0f0f0;
+            border: 3px solid #33ff33;
+            background: #000000;
             display: block;
-            margin: 0 auto 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 0 auto 15px;
+            box-shadow: 
+                0 0 20px rgba(51, 255, 51, 0.4),
+                inset 0 0 30px rgba(0, 0, 0, 0.8);
         }
 
         .controls {
             display: flex;
-            gap: 15px;
+            gap: 10px;
             justify-content: center;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             flex-wrap: wrap;
         }
 
         button {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            font-size: 1em;
-            border-radius: 8px;
+            background: #002200;
+            color: #33ff33;
+            border: 2px solid #33ff33;
+            padding: 10px 20px;
+            font-size: 1.5em;
+            font-family: 'VT323', monospace;
             cursor: pointer;
-            transition: all 0.3s ease;
-            font-weight: bold;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.1s ease;
+            box-shadow: 
+                0 0 10px rgba(51, 255, 51, 0.3),
+                inset 0 0 5px rgba(51, 255, 51, 0.1);
+            text-shadow: 0 0 5px #33ff33;
         }
 
         button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            background: #003300;
+            box-shadow: 
+                0 0 20px rgba(51, 255, 51, 0.6),
+                inset 0 0 10px rgba(51, 255, 51, 0.2);
         }
 
         button:active {
-            transform: translateY(0);
+            background: #004400;
         }
 
         button:disabled {
             opacity: 0.5;
             cursor: not-allowed;
-            transform: none;
+        }
+
+        .difficulty-selector {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .difficulty-btn {
+            padding: 8px 16px;
+            font-size: 1.3em;
+        }
+
+        .difficulty-btn.active {
+            background: #004400;
+            box-shadow: 
+                0 0 20px rgba(51, 255, 51, 0.6),
+                inset 0 0 15px rgba(51, 255, 51, 0.3);
         }
 
         .instructions {
-            background: #f8f9fa;
+            background: #001100;
             padding: 15px;
-            border-radius: 10px;
-            margin-top: 20px;
+            border: 2px solid #33ff33;
+            margin-top: 15px;
             text-align: left;
-            color: #555;
-            line-height: 1.6;
+            color: #33ff33;
+            line-height: 1.8;
+            font-size: 1.3em;
+            text-shadow: 0 0 5px #33ff33;
+            box-shadow: 
+                0 0 10px rgba(51, 255, 51, 0.2),
+                inset 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
         .instructions h3 {
-            color: #667eea;
+            color: #33ff33;
             margin-bottom: 10px;
+            font-size: 1.5em;
+            text-shadow: 0 0 10px #33ff33;
         }
 
         .instructions ul {
-            list-style-position: inside;
-            padding-left: 10px;
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .instructions li::before {
+            content: "> ";
+            color: #33ff33;
         }
 
         .game-over {
@@ -125,66 +243,65 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background: white;
+            background: #000000;
             padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+            border: 4px solid #33ff33;
+            box-shadow: 
+                0 0 40px rgba(51, 255, 51, 0.6),
+                inset 0 0 30px rgba(0, 0, 0, 0.8);
             text-align: center;
             display: none;
-            z-index: 1000;
+            z-index: 1001;
         }
 
         .game-over.show {
             display: block;
-            animation: slideIn 0.3s ease;
+            animation: terminalBlink 0.5s ease;
         }
 
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translate(-50%, -60%);
-            }
-            to {
-                opacity: 1;
-                transform: translate(-50%, -50%);
-            }
+        @keyframes terminalBlink {
+            0%, 50%, 100% { opacity: 1; }
+            25%, 75% { opacity: 0.5; }
         }
 
         .game-over h2 {
-            color: #e74c3c;
+            color: #33ff33;
             margin-bottom: 20px;
-            font-size: 2em;
+            font-size: 3em;
+            text-shadow: 
+                0 0 10px #33ff33,
+                0 0 20px #33ff33,
+                0 0 30px #33ff33;
+            animation: glow 1s ease-in-out infinite alternate;
         }
 
         .game-over p {
-            font-size: 1.2em;
+            font-size: 2em;
             margin-bottom: 20px;
-            color: #555;
+            color: #33ff33;
+            text-shadow: 0 0 10px #33ff33;
         }
 
-        .difficulty-selector {
-            display: flex;
-            gap: 10px;
-            justify-content: center;
-            margin-bottom: 20px;
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 20px;
+            background: #33ff33;
+            animation: blink 1s step-end infinite;
         }
 
-        .difficulty-btn {
-            padding: 8px 16px;
-            font-size: 0.9em;
-        }
-
-        .difficulty-btn.active {
-            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
         }
 
         @media (max-width: 600px) {
             h1 {
-                font-size: 1.8em;
+                font-size: 2em;
             }
 
             .score-board {
-                font-size: 1em;
+                font-size: 1.3em;
             }
 
             #gameCanvas {
@@ -202,47 +319,51 @@
     </style>
 </head>
 <body>
-    <div class="game-container">
-        <h1>🐍 貪食蛇遊戲</h1>
+    <div class="terminal-container">
+        <div class="boot-text">> APPLE ][ SYSTEM INITIALIZED</div>
+        <div class="boot-text">> LOADING SNAKE.BAS...</div>
+        <div class="boot-text">> READY.<span class="cursor"></span></div>
+        
+        <h1>*** SNAKE ***</h1>
         
         <div class="score-board">
             <div class="score-item">
-                <span>分數: </span><span id="score">0</span>
+                <span>SCORE: </span><span id="score">0000</span>
             </div>
             <div class="score-item">
-                <span>最高分: </span><span id="highScore">0</span>
+                <span>HI-SCORE: </span><span id="highScore">0000</span>
             </div>
         </div>
 
         <div class="difficulty-selector">
-            <button class="difficulty-btn" onclick="setDifficulty('easy')">簡單</button>
-            <button class="difficulty-btn active" onclick="setDifficulty('medium')">中等</button>
-            <button class="difficulty-btn" onclick="setDifficulty('hard')">困難</button>
+            <button class="difficulty-btn" onclick="setDifficulty('easy')">EASY</button>
+            <button class="difficulty-btn active" onclick="setDifficulty('medium')">NORMAL</button>
+            <button class="difficulty-btn" onclick="setDifficulty('hard')">HARD</button>
         </div>
 
         <canvas id="gameCanvas" width="400" height="400"></canvas>
 
         <div class="controls">
-            <button onclick="startGame()" id="startBtn">開始遊戲</button>
-            <button onclick="pauseGame()" id="pauseBtn" disabled>暫停</button>
-            <button onclick="resetGame()" id="resetBtn">重新開始</button>
+            <button onclick="startGame()" id="startBtn">[START]</button>
+            <button onclick="pauseGame()" id="pauseBtn" disabled>[PAUSE]</button>
+            <button onclick="resetGame()" id="resetBtn">[RESET]</button>
         </div>
 
         <div class="instructions">
-            <h3>遊戲說明:</h3>
+            <h3>*** INSTRUCTIONS ***</h3>
             <ul>
-                <li>使用方向鍵 (↑↓←→) 控制蛇的移動方向</li>
-                <li>吃到食物可以增加分數並讓蛇變長</li>
-                <li>撞到牆壁或自己的身體就會遊戲結束</li>
-                <li>選擇不同難度來挑戰自己!</li>
+                <li>USE ARROW KEYS TO MOVE</li>
+                <li>EAT FOOD TO GROW</li>
+                <li>AVOID WALLS AND SELF</li>
+                <li>SELECT DIFFICULTY LEVEL</li>
             </ul>
         </div>
     </div>
 
     <div class="game-over" id="gameOverScreen">
-        <h2>遊戲結束!</h2>
-        <p>你的分數: <span id="finalScore"></span></p>
-        <button onclick="resetGame()">再玩一次</button>
+        <h2>*** GAME OVER ***</h2>
+        <p>FINAL SCORE: <span id="finalScore"></span></p>
+        <button onclick="resetGame()">[PRESS TO CONTINUE]</button>
     </div>
 
     <script>
@@ -270,7 +391,8 @@
         let gameSpeed = 100;
         let difficulty = 'medium';
 
-        highScoreElement.textContent = highScore;
+        // Format score display
+        highScoreElement.textContent = String(highScore).padStart(4, '0');
 
         const difficulties = {
             easy: 150,
@@ -300,12 +422,13 @@
         }
 
         function clearCanvas() {
-            ctx.fillStyle = '#f0f0f0';
+            // Terminal black background
+            ctx.fillStyle = '#000000';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             
-            // Draw grid
-            ctx.strokeStyle = '#e0e0e0';
-            ctx.lineWidth = 0.5;
+            // Draw terminal grid
+            ctx.strokeStyle = '#002200';
+            ctx.lineWidth = 1;
             for (let i = 0; i <= tileCount; i++) {
                 ctx.beginPath();
                 ctx.moveTo(i * gridSize, 0);
@@ -321,41 +444,61 @@
 
         function drawSnake() {
             snake.forEach((segment, index) => {
-                if (index === 0) {
-                    // Head
-                    ctx.fillStyle = '#667eea';
-                    ctx.shadowColor = 'rgba(102, 126, 234, 0.5)';
-                    ctx.shadowBlur = 10;
-                } else {
-                    // Body
-                    ctx.fillStyle = '#764ba2';
-                    ctx.shadowBlur = 5;
-                }
+                // Apple II green phosphor effect
+                ctx.fillStyle = '#33ff33';
+                ctx.shadowColor = '#33ff33';
+                ctx.shadowBlur = 10;
                 
+                // Draw block with slight inset for retro look
                 ctx.fillRect(
-                    segment.x * gridSize + 1,
-                    segment.y * gridSize + 1,
-                    gridSize - 2,
-                    gridSize - 2
+                    segment.x * gridSize + 2,
+                    segment.y * gridSize + 2,
+                    gridSize - 4,
+                    gridSize - 4
                 );
+                
+                // Add highlight for CRT effect
+                if (index === 0) {
+                    ctx.fillStyle = '#66ff66';
+                    ctx.fillRect(
+                        segment.x * gridSize + 4,
+                        segment.y * gridSize + 4,
+                        gridSize - 12,
+                        gridSize - 12
+                    );
+                }
                 
                 ctx.shadowBlur = 0;
             });
         }
 
         function drawFood() {
-            ctx.fillStyle = '#e74c3c';
-            ctx.shadowColor = 'rgba(231, 76, 60, 0.5)';
+            // Blinking food effect
+            const blink = Math.floor(Date.now() / 200) % 2;
+            ctx.fillStyle = blink ? '#33ff33' : '#66ff66';
+            ctx.shadowColor = '#33ff33';
             ctx.shadowBlur = 15;
-            ctx.beginPath();
-            ctx.arc(
-                food.x * gridSize + gridSize / 2,
-                food.y * gridSize + gridSize / 2,
-                gridSize / 2 - 2,
-                0,
-                Math.PI * 2
+            
+            // Draw as square block for retro terminal look
+            ctx.fillRect(
+                food.x * gridSize + 2,
+                food.y * gridSize + 2,
+                gridSize - 4,
+                gridSize - 4
             );
-            ctx.fill();
+            
+            // Add blinking border
+            if (blink) {
+                ctx.strokeStyle = '#99ff99';
+                ctx.lineWidth = 2;
+                ctx.strokeRect(
+                    food.x * gridSize + 1,
+                    food.y * gridSize + 1,
+                    gridSize - 2,
+                    gridSize - 2
+                );
+            }
+            
             ctx.shadowBlur = 0;
         }
 
@@ -367,12 +510,12 @@
             
             if (head.x === food.x && head.y === food.y) {
                 score++;
-                scoreElement.textContent = score;
+                scoreElement.textContent = String(score).padStart(4, '0');
                 generateFood();
                 
                 if (score > highScore) {
                     highScore = score;
-                    highScoreElement.textContent = highScore;
+                    highScoreElement.textContent = String(highScore).padStart(4, '0');
                     localStorage.setItem('snakeHighScore', highScore);
                 }
             } else {
@@ -423,7 +566,7 @@
                 dx = 1;
                 dy = 0;
                 score = 0;
-                scoreElement.textContent = score;
+                scoreElement.textContent = String(score).padStart(4, '0');
                 generateFood();
             }
             
@@ -444,10 +587,10 @@
             
             if (isPaused) {
                 clearInterval(gameLoop);
-                pauseBtn.textContent = '繼續';
+                pauseBtn.textContent = '[RESUME]';
             } else {
                 gameLoop = setInterval(drawGame, gameSpeed);
-                pauseBtn.textContent = '暫停';
+                pauseBtn.textContent = '[PAUSE]';
             }
         }
 
@@ -457,12 +600,12 @@
             dx = 0;
             dy = 0;
             score = 0;
-            scoreElement.textContent = score;
+            scoreElement.textContent = String(score).padStart(4, '0');
             isGameRunning = false;
             isPaused = false;
             startBtn.disabled = false;
             pauseBtn.disabled = true;
-            pauseBtn.textContent = '暫停';
+            pauseBtn.textContent = '[PAUSE]';
             gameOverScreen.classList.remove('show');
             generateFood();
             drawGame();
@@ -473,7 +616,7 @@
             isGameRunning = false;
             startBtn.disabled = false;
             pauseBtn.disabled = true;
-            finalScoreElement.textContent = score;
+            finalScoreElement.textContent = String(score).padStart(4, '0');
             gameOverScreen.classList.add('show');
         }
 
