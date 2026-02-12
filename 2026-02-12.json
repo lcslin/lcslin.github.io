@@ -1,0 +1,1222 @@
+{
+  "nodes": [
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 25
+    },
+    {
+      "id": "台灣",
+      "group": "country",
+      "size": 24
+    },
+    {
+      "id": "中國",
+      "group": "country",
+      "size": 18
+    },
+    {
+      "id": "日本",
+      "group": "country",
+      "size": 12
+    },
+    {
+      "id": "韓國",
+      "group": "country",
+      "size": 12
+    },
+    {
+      "id": "川普",
+      "group": "person",
+      "size": 15
+    },
+    {
+      "id": "Fed",
+      "group": "org",
+      "size": 18
+    },
+    {
+      "id": "輝達",
+      "group": "company",
+      "size": 22
+    },
+    {
+      "id": "鴻海",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "台積電",
+      "group": "company",
+      "size": 20
+    },
+    {
+      "id": "三星",
+      "group": "company",
+      "size": 17
+    },
+    {
+      "id": "美光",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "馬斯克",
+      "group": "person",
+      "size": 16
+    },
+    {
+      "id": "特斯拉",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "微軟",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "中芯",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "字節跳動",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "AI",
+      "group": "tech",
+      "size": 20
+    },
+    {
+      "id": "半導體",
+      "group": "tech",
+      "size": 22
+    },
+    {
+      "id": "記憶體",
+      "group": "tech",
+      "size": 15
+    },
+    {
+      "id": "晶片",
+      "group": "tech",
+      "size": 19
+    },
+    {
+      "id": "新台幣",
+      "group": "finance",
+      "size": 14
+    },
+    {
+      "id": "關稅",
+      "group": "finance",
+      "size": 17
+    },
+    {
+      "id": "貿易協定",
+      "group": "finance",
+      "size": 16
+    },
+    {
+      "id": "薪資",
+      "group": "finance",
+      "size": 15
+    },
+    {
+      "id": "就業市場",
+      "group": "finance",
+      "size": 16
+    },
+    {
+      "id": "股市",
+      "group": "finance",
+      "size": 14
+    },
+    {
+      "id": "盧特尼克",
+      "group": "person",
+      "size": 10
+    },
+    {
+      "id": "李強",
+      "group": "person",
+      "size": 10
+    },
+    {
+      "id": "BMW",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "亞馬遜",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "群創",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "北士科",
+      "group": "org",
+      "size": 13
+    },
+    {
+      "id": "證交所",
+      "group": "org",
+      "size": 11
+    },
+    {
+      "id": "汽車產業",
+      "group": "tech",
+      "size": 13
+    },
+    {
+      "id": "2奈米",
+      "group": "tech",
+      "size": 12
+    },
+    {
+      "id": "低軌衛星",
+      "group": "tech",
+      "size": 11
+    },
+    {
+      "id": "印尼",
+      "group": "country",
+      "size": 12
+    },
+    {
+      "id": "鎳礦",
+      "group": "finance",
+      "size": 11
+    },
+    {
+      "id": "稀土",
+      "group": "finance",
+      "size": 10
+    },
+    {
+      "id": "荷蘭",
+      "group": "country",
+      "size": 9
+    },
+    {
+      "id": "安世",
+      "group": "company",
+      "size": 9
+    },
+    {
+      "id": "德國",
+      "group": "country",
+      "size": 8
+    }
+  ],
+  "links": [
+    {
+      "source": "美國",
+      "target": "台灣",
+      "value": 5,
+      "label": "貿易協定"
+    },
+    {
+      "source": "美國",
+      "target": "日本",
+      "value": 4,
+      "label": "投資關係"
+    },
+    {
+      "source": "美國",
+      "target": "韓國",
+      "value": 4,
+      "label": "投資關係"
+    },
+    {
+      "source": "美國",
+      "target": "中國",
+      "value": 5,
+      "label": "貿易競爭"
+    },
+    {
+      "source": "川普",
+      "target": "中國",
+      "value": 4,
+      "label": "外交訪問"
+    },
+    {
+      "source": "川普",
+      "target": "關稅",
+      "value": 5,
+      "label": "政策制定"
+    },
+    {
+      "source": "Fed",
+      "target": "就業市場",
+      "value": 5,
+      "label": "政策依據"
+    },
+    {
+      "source": "Fed",
+      "target": "美國",
+      "value": 5,
+      "label": "貨幣政策"
+    },
+    {
+      "source": "就業市場",
+      "target": "薪資",
+      "value": 4,
+      "label": "經濟指標"
+    },
+    {
+      "source": "新台幣",
+      "target": "台灣",
+      "value": 5,
+      "label": "匯率變動"
+    },
+    {
+      "source": "輝達",
+      "target": "北士科",
+      "value": 5,
+      "label": "設廠投資"
+    },
+    {
+      "source": "輝達",
+      "target": "台灣",
+      "value": 5,
+      "label": "海外總部"
+    },
+    {
+      "source": "輝達",
+      "target": "AI",
+      "value": 5,
+      "label": "技術領導"
+    },
+    {
+      "source": "輝達",
+      "target": "晶片",
+      "value": 5,
+      "label": "產品供應"
+    },
+    {
+      "source": "輝達",
+      "target": "中國",
+      "value": 4,
+      "label": "出口管制"
+    },
+    {
+      "source": "盧特尼克",
+      "target": "輝達",
+      "value": 4,
+      "label": "監管政策"
+    },
+    {
+      "source": "鴻海",
+      "target": "台灣",
+      "value": 4,
+      "label": "本土企業"
+    },
+    {
+      "source": "台積電",
+      "target": "半導體",
+      "value": 5,
+      "label": "產業龍頭"
+    },
+    {
+      "source": "台積電",
+      "target": "2奈米",
+      "value": 5,
+      "label": "製程技術"
+    },
+    {
+      "source": "台積電",
+      "target": "台灣",
+      "value": 5,
+      "label": "本土企業"
+    },
+    {
+      "source": "三星",
+      "target": "韓國",
+      "value": 5,
+      "label": "本土企業"
+    },
+    {
+      "source": "三星",
+      "target": "半導體",
+      "value": 4,
+      "label": "產業競爭"
+    },
+    {
+      "source": "三星",
+      "target": "字節跳動",
+      "value": 4,
+      "label": "晶片代工"
+    },
+    {
+      "source": "三星",
+      "target": "2奈米",
+      "value": 4,
+      "label": "製程開發"
+    },
+    {
+      "source": "美光",
+      "target": "群創",
+      "value": 4,
+      "label": "廠房收購"
+    },
+    {
+      "source": "美光",
+      "target": "記憶體",
+      "value": 5,
+      "label": "產能擴張"
+    },
+    {
+      "source": "美光",
+      "target": "台灣",
+      "value": 4,
+      "label": "投資設廠"
+    },
+    {
+      "source": "中芯",
+      "target": "中國",
+      "value": 5,
+      "label": "本土企業"
+    },
+    {
+      "source": "中芯",
+      "target": "半導體",
+      "value": 4,
+      "label": "產能擴充"
+    },
+    {
+      "source": "字節跳動",
+      "target": "AI",
+      "value": 4,
+      "label": "技術應用"
+    },
+    {
+      "source": "字節跳動",
+      "target": "晶片",
+      "value": 4,
+      "label": "自研晶片"
+    },
+    {
+      "source": "字節跳動",
+      "target": "中國",
+      "value": 4,
+      "label": "本土企業"
+    },
+    {
+      "source": "馬斯克",
+      "target": "特斯拉",
+      "value": 5,
+      "label": "企業領導"
+    },
+    {
+      "source": "馬斯克",
+      "target": "AI",
+      "value": 4,
+      "label": "技術布局"
+    },
+    {
+      "source": "馬斯克",
+      "target": "低軌衛星",
+      "value": 4,
+      "label": "月球工廠"
+    },
+    {
+      "source": "特斯拉",
+      "target": "台灣",
+      "value": 3,
+      "label": "充電站擴建"
+    },
+    {
+      "source": "微軟",
+      "target": "AI",
+      "value": 4,
+      "label": "基礎建設"
+    },
+    {
+      "source": "亞馬遜",
+      "target": "低軌衛星",
+      "value": 4,
+      "label": "衛星部署"
+    },
+    {
+      "source": "晶片",
+      "target": "半導體",
+      "value": 5,
+      "label": "產業鏈"
+    },
+    {
+      "source": "AI",
+      "target": "半導體",
+      "value": 5,
+      "label": "技術需求"
+    },
+    {
+      "source": "記憶體",
+      "target": "半導體",
+      "value": 4,
+      "label": "產業分支"
+    },
+    {
+      "source": "記憶體",
+      "target": "汽車產業",
+      "value": 3,
+      "label": "價格影響"
+    },
+    {
+      "source": "關稅",
+      "target": "貿易協定",
+      "value": 5,
+      "label": "政策工具"
+    },
+    {
+      "source": "關稅",
+      "target": "汽車產業",
+      "value": 4,
+      "label": "產業衝擊"
+    },
+    {
+      "source": "貿易協定",
+      "target": "台灣",
+      "value": 5,
+      "label": "對等協定"
+    },
+    {
+      "source": "汽車產業",
+      "target": "台灣",
+      "value": 4,
+      "label": "產值影響"
+    },
+    {
+      "source": "汽車產業",
+      "target": "美國",
+      "value": 4,
+      "label": "零關稅"
+    },
+    {
+      "source": "BMW",
+      "target": "德國",
+      "value": 4,
+      "label": "本土企業"
+    },
+    {
+      "source": "BMW",
+      "target": "汽車產業",
+      "value": 3,
+      "label": "產品召回"
+    },
+    {
+      "source": "印尼",
+      "target": "鎳礦",
+      "value": 5,
+      "label": "資源管控"
+    },
+    {
+      "source": "鎳礦",
+      "target": "半導體",
+      "value": 3,
+      "label": "原物料供應"
+    },
+    {
+      "source": "李強",
+      "target": "稀土",
+      "value": 4,
+      "label": "產業考察"
+    },
+    {
+      "source": "李強",
+      "target": "中國",
+      "value": 4,
+      "label": "政策制定"
+    },
+    {
+      "source": "稀土",
+      "target": "中國",
+      "value": 5,
+      "label": "談判籌碼"
+    },
+    {
+      "source": "稀土",
+      "target": "美國",
+      "value": 4,
+      "label": "貿易談判"
+    },
+    {
+      "source": "安世",
+      "target": "荷蘭",
+      "value": 4,
+      "label": "企業司法"
+    },
+    {
+      "source": "安世",
+      "target": "半導體",
+      "value": 3,
+      "label": "晶片供應"
+    },
+    {
+      "source": "股市",
+      "target": "台灣",
+      "value": 4,
+      "label": "資本市場"
+    },
+    {
+      "source": "證交所",
+      "target": "股市",
+      "value": 4,
+      "label": "市場監管"
+    },
+    {
+      "source": "薪資",
+      "target": "台灣",
+      "value": 4,
+      "label": "經濟成長"
+    }
+  ],
+  "newsDatabase": {
+    "美國": [
+      {
+        "title": "經濟學人分析各國貿易協議 日、韓、台對美大投資恐難兌現",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9325163"
+      },
+      {
+        "title": "美就業報佳音 降息預期淡了 1月非農數據增13萬人 失業率也有好消息",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9325113"
+      },
+      {
+        "title": "美1月就業數據報佳音 降息預期淡了",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9325113"
+      },
+      {
+        "title": "美國勞動市場回穩 3月Fed降息機率降溫",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260212000203-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台美對等貿易協定 周五簽署",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260212000211-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "為川普4月訪中暖場？ 美財長：美中保持競爭關係 不脫鉤",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260212000301-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美車零關稅衝擊 經部：汽車業產值恐減少40億",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260212000218-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台灣": [
+      {
+        "title": "經濟學人分析各國貿易協議 日、韓、台對美大投資恐難兌現",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9325163"
+      },
+      {
+        "title": "薪資成長雖亮眼 近7成勞工領不到平均薪資",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9324987"
+      },
+      {
+        "title": "台美對等貿易協定 周五簽署",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260212000211-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "去年薪資增3% 26年最大",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9325157"
+      },
+      {
+        "title": "去年經常性薪資年增3.09％ 創26年最大增幅",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1743607"
+      },
+      {
+        "title": "台幣爆量升 逼近31.4元",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7239/9325121"
+      },
+      {
+        "title": "證交所首辦封關典禮 證交所董事長林修銘：台灣資本市場強韌",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7251/9325078"
+      },
+      {
+        "title": "輝達海外總部落腳北士科簽約完成  將有上萬個工作機會",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/124626/9325068"
+      },
+      {
+        "title": "元月較去年同期成長15.7％ 台灣工具機出口報喜",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260212000348-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "經長：美車進口未必衝擊國產 短期可能取代歐洲、日本車",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9325110"
+      }
+    ],
+    "中國": [
+      {
+        "title": "春節錯月 陸CPI增速放緩",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260212000290-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "為川普4月訪中暖場？ 美財長：美中保持競爭關係 不脫鉤",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260212000301-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "盧特尼克：輝達晶片銷中 須確保軍方無法取得",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260212000240-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "本土需求強 中芯8吋產能超載",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260212000293-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "大基金三期出手 挺芯原垂直整合",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260212000296-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "李強考察稀土產業 或成對美談判籌碼",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260212000297-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "日本": [
+      {
+        "title": "經濟學人分析各國貿易協議 日、韓、台對美大投資恐難兌現",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9325163"
+      },
+      {
+        "title": "美元指數走低 新台幣、日圓強升",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260212000206-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "經長：美車進口未必衝擊國產 短期可能取代歐洲、日本車",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9325110"
+      }
+    ],
+    "韓國": [
+      {
+        "title": "經濟學人分析各國貿易協議 日、韓、台對美大投資恐難兌現",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9325163"
+      },
+      {
+        "title": "三星推新旗艦機 台鏈補",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9325033"
+      },
+      {
+        "title": "考量成本激增 三星 Galaxy S26 可能變貴",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9325047"
+      }
+    ],
+    "川普": [
+      {
+        "title": "為川普4月訪中暖場？ 美財長：美中保持競爭關係 不脫鉤",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260212000301-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "關稅案遲未宣判 大法官說分明",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260212000274-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Fed": [
+      {
+        "title": "美就業報佳音 降息預期淡了 1月非農數據增13萬人 失業率也有好消息",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9325113"
+      },
+      {
+        "title": "美1月就業數據報佳音 降息預期淡了",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9325113"
+      },
+      {
+        "title": "美國勞動市場回穩 3月Fed降息機率降溫",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260212000203-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "輝達": [
+      {
+        "title": "輝達效應 北士科住宅新案每坪喊到150萬",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/124626/9325069"
+      },
+      {
+        "title": "輝達海外總部落腳北士科簽約完成  將有上萬個工作機會",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/124626/9325068"
+      },
+      {
+        "title": "盧特尼克：輝達晶片銷中 須確保軍方無法取得",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260212000240-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "鴻海": [
+      {
+        "title": "鴻海績效獎金平均拉高10% 部分業績好的單位年增16%",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9325035"
+      },
+      {
+        "title": "鴻海360億永續聯貸案簽約",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9325044"
+      }
+    ],
+    "台積電": [
+      {
+        "title": "首款2奈米製程手機 將亮相",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260212000283-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "三星": [
+      {
+        "title": "三星推新旗艦機 台鏈補",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9325033"
+      },
+      {
+        "title": "考量成本激增 三星 Galaxy S26 可能變貴",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9325047"
+      },
+      {
+        "title": "字節跳動打造AI晶片 傳找三星助陣",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260212000243-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "首款2奈米製程手機 將亮相",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260212000283-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "美光": [
+      {
+        "title": "美光加速擴產 傳買群創五廠",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260212000235-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "馬斯克": [
+      {
+        "title": "馬斯克新點子 月球蓋工廠 規劃用來製造 AI 衛星",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9325049"
+      },
+      {
+        "title": "馬斯克新點子 月球蓋工廠規劃製造AI衛星",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9325049"
+      }
+    ],
+    "特斯拉": [
+      {
+        "title": "特斯拉全台最大超充站啟用",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9324986"
+      }
+    ],
+    "微軟": [
+      {
+        "title": "微軟測試高溫超導體電纜 有利加快興建伺服器園區進度",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9325056"
+      }
+    ],
+    "中芯": [
+      {
+        "title": "本土需求強 中芯8吋產能超載",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260212000293-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "字節跳動": [
+      {
+        "title": "字節跳動打造AI晶片 傳找三星助陣",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260212000243-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "AI": [
+      {
+        "title": "馬斯克新點子 月球蓋工廠 規劃用來製造 AI 衛星",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9325049"
+      },
+      {
+        "title": "OpenClaw 開闢邊緣AI新戰場",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260212000315-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "字節跳動打造AI晶片 傳找三星助陣",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260212000243-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "半導體": [
+      {
+        "title": "本土需求強 中芯8吋產能超載",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260212000293-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "大基金三期出手 挺芯原垂直整合",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260212000296-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "SEMI SMG：去年矽晶圓量增價弱",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260212000323-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "記憶體": [
+      {
+        "title": "記憶體漲價潮 燒到智慧手機",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260212000324-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美光加速擴產 傳買群創五廠",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260212000235-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "晶片": [
+      {
+        "title": "盧特尼克：輝達晶片銷中 須確保軍方無法取得",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260212000240-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "字節跳動打造AI晶片 傳找三星助陣",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260212000243-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "荷蘭法院調查晶片商安世　維持執行長張學政停職裁決",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9325333"
+      }
+    ],
+    "新台幣": [
+      {
+        "title": "美元指數走低 新台幣、日圓強升",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260212000206-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台幣爆量升 逼近31.4元",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7239/9325121"
+      }
+    ],
+    "關稅": [
+      {
+        "title": "關稅案遲未宣判 大法官說分明",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260212000274-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美車零關稅衝擊 經部：汽車業產值恐減少40億",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260212000218-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "貿易協定": [
+      {
+        "title": "經濟學人分析各國貿易協議 日、韓、台對美大投資恐難兌現",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9325163"
+      },
+      {
+        "title": "台美對等貿易協定 周五簽署",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260212000211-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "薪資": [
+      {
+        "title": "薪資成長雖亮眼 近7成勞工領不到平均薪資",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9324987"
+      },
+      {
+        "title": "去年薪資增3% 26年最大",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9325157"
+      },
+      {
+        "title": "去年經常性薪資年增3.09％ 創26年最大增幅",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1743607"
+      }
+    ],
+    "就業市場": [
+      {
+        "title": "美就業報佳音 降息預期淡了 1月非農數據增13萬人 失業率也有好消息",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9325113"
+      },
+      {
+        "title": "美1月就業數據報佳音 降息預期淡了",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9325113"
+      },
+      {
+        "title": "美國勞動市場回穩 3月Fed降息機率降溫",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260212000203-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "股市": [
+      {
+        "title": "差距正在擴大！結構失衡 學者：股市加劇財富對立",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7251/9325070"
+      },
+      {
+        "title": "證交所首辦封關典禮 證交所董事長林修銘：台灣資本市場強韌",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7251/9325078"
+      }
+    ],
+    "盧特尼克": [
+      {
+        "title": "盧特尼克：輝達晶片銷中 須確保軍方無法取得",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260212000240-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "李強": [
+      {
+        "title": "李強考察稀土產業 或成對美談判籌碼",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260212000297-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "BMW": [
+      {
+        "title": "BMW 再傳大規模召回 啟動馬達缺陷影響16款車型",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9325354"
+      }
+    ],
+    "亞馬遜": [
+      {
+        "title": "亞馬遜 擴大部署低軌衛星",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260212000280-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "群創": [
+      {
+        "title": "美光加速擴產 傳買群創五廠",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260212000235-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "北士科": [
+      {
+        "title": "輝達效應 北士科住宅新案每坪喊到150萬",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/124626/9325069"
+      },
+      {
+        "title": "輝達海外總部落腳北士科簽約完成  將有上萬個工作機會",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/124626/9325068"
+      }
+    ],
+    "證交所": [
+      {
+        "title": "證交所首辦封關典禮 證交所董事長林修銘：台灣資本市場強韌",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7251/9325078"
+      }
+    ],
+    "汽車產業": [
+      {
+        "title": "記憶體漲價潮 燒到智慧手機",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260212000324-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美車零關稅衝擊 經部：汽車業產值恐減少40億",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260212000218-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美車零關稅衝擊 勞部：研議30億補助與就業掛勾",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260212000220-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "經長：美車進口未必衝擊國產 短期可能取代歐洲、日本車",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9325110"
+      }
+    ],
+    "2奈米": [
+      {
+        "title": "首款2奈米製程手機 將亮相",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260212000283-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "低軌衛星": [
+      {
+        "title": "馬斯克新點子 月球蓋工廠 規劃用來製造 AI 衛星",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9325049"
+      },
+      {
+        "title": "亞馬遜 擴大部署低軌衛星",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260212000280-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "印尼": [
+      {
+        "title": "印尼暗示減產 鎳價漲不停 高盛：各國囤貨 加劇大宗商品價格波動",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9324998"
+      },
+      {
+        "title": "印尼限產最大鎳礦 價急漲",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260212000278-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "鎳礦": [
+      {
+        "title": "印尼暗示減產 鎳價漲不停 高盛：各國囤貨 加劇大宗商品價格波動",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9324998"
+      },
+      {
+        "title": "印尼限產最大鎳礦 價急漲",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260212000278-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "稀土": [
+      {
+        "title": "李強考察稀土產業 或成對美談判籌碼",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260212000297-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "荷蘭": [
+      {
+        "title": "荷蘭法院調查晶片商安世　維持執行長張學政停職裁決",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9325333"
+      }
+    ],
+    "安世": [
+      {
+        "title": "荷蘭法院調查晶片商安世　維持執行長張學政停職裁決",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9325333"
+      }
+    ],
+    "德國": [
+      {
+        "title": "美時獲德國抗癌藥授權",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7252/9324748"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "經濟學人分析各國貿易協議 日、韓、台對美大投資恐難兌現 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9325163",
+    "美就業報佳音 降息預期淡了 1月非農數據增13萬人 失業率也有好消息 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9325113",
+    "薪資成長雖亮眼 近7成勞工領不到平均薪資 (聯合_產經_股市)": "https://udn.com/news/story/7238/9324987",
+    "差距正在擴大！結構失衡 學者：股市加劇財富對立 (聯合_產經_股市)": "https://udn.com/news/story/7251/9325070",
+    "美1月就業數據報佳音 降息預期淡了 (聯合_產經_股市)": "https://udn.com/news/story/6811/9325113",
+    "美國勞動市場回穩 3月Fed降息機率降溫 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260212000203-260202?utm_source=iii_news&utm_medium=rss",
+    "美元指數走低 新台幣、日圓強升 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260212000206-260202?utm_source=iii_news&utm_medium=rss",
+    "台美對等貿易協定 周五簽署 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260212000211-260202?utm_source=iii_news&utm_medium=rss",
+    "關稅案遲未宣判 大法官說分明 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260212000274-260203?utm_source=iii_news&utm_medium=rss",
+    "春節錯月 陸CPI增速放緩 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260212000290-260203?utm_source=iii_news&utm_medium=rss",
+    "為川普4月訪中暖場？ 美財長：美中保持競爭關係 不脫鉤 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260212000301-260203?utm_source=iii_news&utm_medium=rss",
+    "去年薪資增3% 26年最大 (聯合_產經_股市)": "https://udn.com/news/story/7238/9325157",
+    "去年經常性薪資年增3.09％ 創26年最大增幅 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1743607",
+    "台幣爆量升 逼近31.4元 (聯合_產經_股市)": "https://udn.com/news/story/7239/9325121",
+    "證交所首辦封關典禮 證交所董事長林修銘：台灣資本市場強韌 (聯合_產經_股市)": "https://udn.com/news/story/7251/9325078",
+    "特斯拉全台最大超充站啟用 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9324986",
+    "鴻海績效獎金平均拉高10% 部分業績好的單位年增16% (經濟產業熱點)": "https://money.udn.com/money/story/5612/9325035",
+    "鴻海360億永續聯貸案簽約 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9325044",
+    "三星推新旗艦機 台鏈補 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9325033",
+    "考量成本激增 三星 Galaxy S26 可能變貴 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9325047",
+    "加密貨幣動能疲弱 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9325006",
+    "馬斯克新點子 月球蓋工廠 規劃用來製造 AI 衛星 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9325049",
+    "荷蘭法院調查晶片商安世　維持執行長張學政停職裁決 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9325333",
+    "BMW 再傳大規模召回 啟動馬達缺陷影響16款車型 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9325354",
+    "輝達效應 北士科住宅新案每坪喊到150萬 (聯合_產經_股市)": "https://udn.com/news/story/124626/9325069",
+    "輝達海外總部落腳北士科簽約完成  將有上萬個工作機會 (聯合_產經_股市)": "https://udn.com/news/story/124626/9325068",
+    "微軟測試高溫超導體電纜 有利加快興建伺服器園區進度 (聯合_產經_股市)": "https://udn.com/news/story/6811/9325056",
+    "馬斯克新點子 月球蓋工廠規劃製造AI衛星 (聯合_產經_股市)": "https://udn.com/news/story/6811/9325049",
+    "美光加速擴產 傳買群創五廠 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260212000235-260202?utm_source=iii_news&utm_medium=rss",
+    "力旺雙引擎點火 下半年營運動能靚 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260212000238-260202?utm_source=iii_news&utm_medium=rss",
+    "盧特尼克：輝達晶片銷中 須確保軍方無法取得 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260212000240-260202?utm_source=iii_news&utm_medium=rss",
+    "字節跳動打造AI晶片 傳找三星助陣 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260212000243-260202?utm_source=iii_news&utm_medium=rss",
+    "亞馬遜 擴大部署低軌衛星 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260212000280-260203?utm_source=iii_news&utm_medium=rss",
+    "首款2奈米製程手機 將亮相 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260212000283-260203?utm_source=iii_news&utm_medium=rss",
+    "本土需求強 中芯8吋產能超載 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260212000293-260203?utm_source=iii_news&utm_medium=rss",
+    "大基金三期出手 挺芯原垂直整合 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260212000296-260203?utm_source=iii_news&utm_medium=rss",
+    "OpenClaw 開闢邊緣AI新戰場 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260212000315-260204?utm_source=iii_news&utm_medium=rss",
+    "夏普K2廠 預計今年8月停工 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260212000318-260204?utm_source=iii_news&utm_medium=rss",
+    "電信三雄 備戰春節通訊高峰 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260212000320-260204?utm_source=iii_news&utm_medium=rss",
+    "SEMI SMG：去年矽晶圓量增價弱 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260212000323-260204?utm_source=iii_news&utm_medium=rss",
+    "記憶體漲價潮 燒到智慧手機 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260212000324-260204?utm_source=iii_news&utm_medium=rss",
+    "新漢將發新品 挹注業績 (聯合_產經_股市)": "https://udn.com/news/story/7254/9325031",
+    "玉晶光廈門廠大擴產 (聯合_產經_股市)": "https://udn.com/news/story/7253/9325017",
+    "美時獲德國抗癌藥授權 (聯合_產經_股市)": "https://udn.com/news/story/7252/9324748",
+    "華安泡泡龍新藥傳喜訊 (聯合_產經_股市)": "https://udn.com/news/story/7252/9324750",
+    "禾榮科注射劑將臨床試驗 (聯合_產經_股市)": "https://udn.com/news/story/7252/9324751",
+    "揪逾期麵包粉 馬可先生遭罰6萬 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260212000518-260114?utm_source=iii_news&utm_medium=rss",
+    "印尼暗示減產 鎳價漲不停 高盛：各國囤貨 加劇大宗商品價格波動 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9324998",
+    "重電廠變壓器漲價又一波 士電、華城及亞力最高調幅逾兩成 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9325029",
+    "美車零關稅衝擊 經部：汽車業產值恐減少40億 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260212000218-260202?utm_source=iii_news&utm_medium=rss",
+    "美車零關稅衝擊 勞部：研議30億補助與就業掛勾 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260212000220-260202?utm_source=iii_news&utm_medium=rss",
+    "建築太陽光電新制 增電力 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260212000247-260202?utm_source=iii_news&utm_medium=rss",
+    "印尼限產最大鎳礦 價急漲 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260212000278-260203?utm_source=iii_news&utm_medium=rss",
+    "李強考察稀土產業 或成對美談判籌碼 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260212000297-260203?utm_source=iii_news&utm_medium=rss",
+    "元月較去年同期成長15.7％ 台灣工具機出口報喜 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260212000348-260204?utm_source=iii_news&utm_medium=rss",
+    "經長：美車進口未必衝擊國產 短期可能取代歐洲、日本車 (聯合_產經_股市)": "https://udn.com/news/story/7238/9325110"
+  }
+}

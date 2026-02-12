@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITIS 每日新聞關聯圖譜</title>
+    <script src="https://unpkg.com/d3"></script>
+    <script src="https://unpkg.com/force-graph"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0b0b0b;
+            --text-color: #e0e0e0;
+            --accent-color: #ff9900; /* Cosmic Orange */
+            --node-bg: #1a1a1a;
+            --node-border: #ff9900;
+            --link-color: rgba(255, 153, 0, 0.4);
+            --dim-color: rgba(255, 255, 255, 0.1);
+        }
+
+        body { 
+            margin: 0; 
+            font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif; 
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            overflow: hidden; 
+        }
+
+        #graph { 
+            width: 100vw; 
+            height: 100vh; 
+        }
+
+        .controls {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(11, 11, 11, 0.9);
+            border: 1px solid var(--accent-color);
+            padding: 20px;
+            width: 280px;
+            max-height: 90vh;
+            overflow-y: auto;
+            z-index: 100;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            transition: transform 0.25s ease;
+        }
+        .controls.hidden {
+            transform: translateX(calc(-100% - 40px));
+        }
+        .controls .toggle-panel-btn {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: transparent;
+            border: 1px solid #555;
+            color: #ccc;
+            cursor: pointer;
+            padding: 10px 12px;
+            min-width: 44px;
+            min-height: 44px;
+            font-size: 0.9rem;
+            border-radius: 4px;
+            line-height: 1;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .controls .toggle-panel-btn:hover {
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+        }
+        .controls-toggle-tab {
+            position: fixed;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 99;
+            display: none;
+            padding: 14px 12px;
+            min-width: 44px;
+            min-height: 44px;
+            background: rgba(11, 11, 11, 0.95);
+            border: 1px solid var(--accent-color);
+            border-left: none;
+            border-radius: 0 8px 8px 0;
+            color: var(--accent-color);
+            cursor: pointer;
+            font-size: 1rem;
+            line-height: 1;
+            box-shadow: 2px 0 8px rgba(0,0,0,0.3);
+            align-items: center;
+            justify-content: center;
+        }
+        .controls-toggle-tab:hover {
+            background: rgba(26, 26, 26, 0.98);
+        }
+        .controls-toggle-tab.visible {
+            display: flex;
+        }
+
+        .controls h1 {
+            margin: 0 30px 15px 0;
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 1px solid var(--accent-color);
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: #aaa;
+            margin-bottom: 10px;
+        }
+
+        select, input[type="text"] {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            background: #222;
+            color: var(--text-color);
+            border: 1px solid var(--accent-color);
+            margin-top: 5px;
+            margin-bottom: 20px;
+            font-family: inherit;
+            outline: none;
+        }
+        
+        select:hover, input[type="text"]:hover {
+            background: #333;
+        }
+
+        #keyword-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .keyword-tag {
+            font-size: 0.8rem;
+            padding: 4px 8px;
+            border: 1px solid #555;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: #ccc;
+            background: rgba(255,255,255,0.05);
+        }
+
+        .keyword-tag:hover {
+            border-color: var(--accent-color);
+            color: #fff;
+        }
+
+        .keyword-tag.active {
+            background: var(--accent-color);
+            color: #000;
+            border-color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .node-label {
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 2px 5px;
+            font-size: 12px;
+            pointer-events: none;
+        }
+        
+        #loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            display: none;
+        }
+
+        #toast {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(26, 26, 26, 0.95);
+            border: 1px solid var(--accent-color);
+            padding: 15px 25px;
+            border-radius: 4px;
+            color: #fff;
+            display: none;
+            z-index: 200;
+            max-width: 80%;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(255, 153, 0, 0.2);
+        }
+        
+        #toast h3 {
+            margin: 0 0 5px 0;
+            color: var(--accent-color);
+            font-size: 1rem;
+        }
+
+        #news-panel {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 320px;
+            max-height: 85vh;
+            background: rgba(11, 11, 11, 0.95);
+            border: 1px solid var(--accent-color);
+            padding: 15px;
+            border-radius: 4px;
+            display: none;
+            z-index: 150;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+        }
+        #news-panel.visible { display: block; }
+        #news-panel h3 {
+            margin: 0 0 10px 0;
+            color: var(--accent-color);
+            font-size: 1rem;
+            padding-right: 28px;
+        }
+        #news-panel .close-btn {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: transparent;
+            border: 1px solid #555;
+            color: #ccc;
+            cursor: pointer;
+            padding: 2px 8px;
+            font-size: 0.9rem;
+            border-radius: 4px;
+        }
+        #news-panel .close-btn:hover {
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+        }
+        #news-panel .news-list {
+            overflow-y: auto;
+            max-height: calc(85vh - 60px);
+        }
+        #news-panel .news-item {
+            padding: 8px 0;
+            border-bottom: 1px solid #333;
+            font-size: 0.85rem;
+        }
+        #news-panel .news-item:last-child { border-bottom: none; }
+        #news-panel .news-item a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        #news-panel .news-item a:hover { text-decoration: underline; }
+        #news-panel .news-item .source { color: #888; font-size: 0.8rem; }
+
+    </style>
+</head>
+<body>
+    <div class="controls" id="controls-panel">
+        <button type="button" class="toggle-panel-btn" id="toggle-panel-btn" aria-label="收合側欄">◀ 收合</button>
+        <h1>每日新聞關聯圖譜</h1>
+        <p>節點：實體 (點擊查看相關新聞)</p>
+        <p>連線：實體關係 (點擊查看類型)</p>
+        
+        <select id="date-selector">
+            <option value="" disabled selected>選擇日期...</option>
+        </select>
+        
+        <p style="margin-top: 20px; border-top: 1px solid #333; padding-top: 10px; color: var(--accent-color);">搜尋標題</p>
+        <input type="text" id="search-input" placeholder="輸入關鍵字...">
+        
+        <p style="margin-top: 20px; border-top: 1px solid #333; padding-top: 10px; color: var(--accent-color);">關鍵字篩選</p>
+        <div id="keyword-list"></div>
+    </div>
+    
+    <button type="button" class="controls-toggle-tab" id="controls-toggle-tab" aria-label="開啟側欄">▶ 開啟</button>
+    <div id="loading">載入資料中...</div>
+    <div id="toast"></div>
+    <div id="news-panel">
+        <button class="close-btn" type="button" aria-label="關閉">×</button>
+        <h3 id="news-panel-title"></h3>
+        <div class="news-list" id="news-panel-list"></div>
+    </div>
+    <div id="graph"></div>
+
+    <script>
+        const graphContainer = document.getElementById('graph');
+        const dateSelector = document.getElementById('date-selector');
+        const searchInput = document.getElementById('search-input');
+        const keywordList = document.getElementById('keyword-list');
+        const loading = document.getElementById('loading');
+        const toast = document.getElementById('toast');
+        
+        // 1. Target Date (replaced by build, or use today when opening template directly)
+        const TARGET_DATE_RAW = "2026-02-12";
+        const TARGET_DATE = /^__.+\__$/.test(TARGET_DATE_RAW) ? (function () {
+            const d = new Date();
+            return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+        })() : TARGET_DATE_RAW;
+
+        // 2. Embedded Data (replaced by build; fallback when opening template directly)
+        let EMBEDDED_DATA;
+        try {
+            EMBEDDED_DATA = {"nodes": [{"id": "美國", "group": "country", "size": 25}, {"id": "台灣", "group": "country", "size": 24}, {"id": "中國", "group": "country", "size": 18}, {"id": "日本", "group": "country", "size": 12}, {"id": "韓國", "group": "country", "size": 12}, {"id": "川普", "group": "person", "size": 15}, {"id": "Fed", "group": "org", "size": 18}, {"id": "輝達", "group": "company", "size": 22}, {"id": "鴻海", "group": "company", "size": 16}, {"id": "台積電", "group": "company", "size": 20}, {"id": "三星", "group": "company", "size": 17}, {"id": "美光", "group": "company", "size": 15}, {"id": "馬斯克", "group": "person", "size": 16}, {"id": "特斯拉", "group": "company", "size": 14}, {"id": "微軟", "group": "company", "size": 13}, {"id": "中芯", "group": "company", "size": 14}, {"id": "字節跳動", "group": "company", "size": 12}, {"id": "AI", "group": "tech", "size": 20}, {"id": "半導體", "group": "tech", "size": 22}, {"id": "記憶體", "group": "tech", "size": 15}, {"id": "晶片", "group": "tech", "size": 19}, {"id": "新台幣", "group": "finance", "size": 14}, {"id": "關稅", "group": "finance", "size": 17}, {"id": "貿易協定", "group": "finance", "size": 16}, {"id": "薪資", "group": "finance", "size": 15}, {"id": "就業市場", "group": "finance", "size": 16}, {"id": "股市", "group": "finance", "size": 14}, {"id": "盧特尼克", "group": "person", "size": 10}, {"id": "李強", "group": "person", "size": 10}, {"id": "BMW", "group": "company", "size": 10}, {"id": "亞馬遜", "group": "company", "size": 11}, {"id": "群創", "group": "company", "size": 11}, {"id": "北士科", "group": "org", "size": 13}, {"id": "證交所", "group": "org", "size": 11}, {"id": "汽車產業", "group": "tech", "size": 13}, {"id": "2奈米", "group": "tech", "size": 12}, {"id": "低軌衛星", "group": "tech", "size": 11}, {"id": "印尼", "group": "country", "size": 12}, {"id": "鎳礦", "group": "finance", "size": 11}, {"id": "稀土", "group": "finance", "size": 10}, {"id": "荷蘭", "group": "country", "size": 9}, {"id": "安世", "group": "company", "size": 9}, {"id": "德國", "group": "country", "size": 8}], "links": [{"source": "美國", "target": "台灣", "value": 5, "label": "貿易協定"}, {"source": "美國", "target": "日本", "value": 4, "label": "投資關係"}, {"source": "美國", "target": "韓國", "value": 4, "label": "投資關係"}, {"source": "美國", "target": "中國", "value": 5, "label": "貿易競爭"}, {"source": "川普", "target": "中國", "value": 4, "label": "外交訪問"}, {"source": "川普", "target": "關稅", "value": 5, "label": "政策制定"}, {"source": "Fed", "target": "就業市場", "value": 5, "label": "政策依據"}, {"source": "Fed", "target": "美國", "value": 5, "label": "貨幣政策"}, {"source": "就業市場", "target": "薪資", "value": 4, "label": "經濟指標"}, {"source": "新台幣", "target": "台灣", "value": 5, "label": "匯率變動"}, {"source": "輝達", "target": "北士科", "value": 5, "label": "設廠投資"}, {"source": "輝達", "target": "台灣", "value": 5, "label": "海外總部"}, {"source": "輝達", "target": "AI", "value": 5, "label": "技術領導"}, {"source": "輝達", "target": "晶片", "value": 5, "label": "產品供應"}, {"source": "輝達", "target": "中國", "value": 4, "label": "出口管制"}, {"source": "盧特尼克", "target": "輝達", "value": 4, "label": "監管政策"}, {"source": "鴻海", "target": "台灣", "value": 4, "label": "本土企業"}, {"source": "台積電", "target": "半導體", "value": 5, "label": "產業龍頭"}, {"source": "台積電", "target": "2奈米", "value": 5, "label": "製程技術"}, {"source": "台積電", "target": "台灣", "value": 5, "label": "本土企業"}, {"source": "三星", "target": "韓國", "value": 5, "label": "本土企業"}, {"source": "三星", "target": "半導體", "value": 4, "label": "產業競爭"}, {"source": "三星", "target": "字節跳動", "value": 4, "label": "晶片代工"}, {"source": "三星", "target": "2奈米", "value": 4, "label": "製程開發"}, {"source": "美光", "target": "群創", "value": 4, "label": "廠房收購"}, {"source": "美光", "target": "記憶體", "value": 5, "label": "產能擴張"}, {"source": "美光", "target": "台灣", "value": 4, "label": "投資設廠"}, {"source": "中芯", "target": "中國", "value": 5, "label": "本土企業"}, {"source": "中芯", "target": "半導體", "value": 4, "label": "產能擴充"}, {"source": "字節跳動", "target": "AI", "value": 4, "label": "技術應用"}, {"source": "字節跳動", "target": "晶片", "value": 4, "label": "自研晶片"}, {"source": "字節跳動", "target": "中國", "value": 4, "label": "本土企業"}, {"source": "馬斯克", "target": "特斯拉", "value": 5, "label": "企業領導"}, {"source": "馬斯克", "target": "AI", "value": 4, "label": "技術布局"}, {"source": "馬斯克", "target": "低軌衛星", "value": 4, "label": "月球工廠"}, {"source": "特斯拉", "target": "台灣", "value": 3, "label": "充電站擴建"}, {"source": "微軟", "target": "AI", "value": 4, "label": "基礎建設"}, {"source": "亞馬遜", "target": "低軌衛星", "value": 4, "label": "衛星部署"}, {"source": "晶片", "target": "半導體", "value": 5, "label": "產業鏈"}, {"source": "AI", "target": "半導體", "value": 5, "label": "技術需求"}, {"source": "記憶體", "target": "半導體", "value": 4, "label": "產業分支"}, {"source": "記憶體", "target": "汽車產業", "value": 3, "label": "價格影響"}, {"source": "關稅", "target": "貿易協定", "value": 5, "label": "政策工具"}, {"source": "關稅", "target": "汽車產業", "value": 4, "label": "產業衝擊"}, {"source": "貿易協定", "target": "台灣", "value": 5, "label": "對等協定"}, {"source": "汽車產業", "target": "台灣", "value": 4, "label": "產值影響"}, {"source": "汽車產業", "target": "美國", "value": 4, "label": "零關稅"}, {"source": "BMW", "target": "德國", "value": 4, "label": "本土企業"}, {"source": "BMW", "target": "汽車產業", "value": 3, "label": "產品召回"}, {"source": "印尼", "target": "鎳礦", "value": 5, "label": "資源管控"}, {"source": "鎳礦", "target": "半導體", "value": 3, "label": "原物料供應"}, {"source": "李強", "target": "稀土", "value": 4, "label": "產業考察"}, {"source": "李強", "target": "中國", "value": 4, "label": "政策制定"}, {"source": "稀土", "target": "中國", "value": 5, "label": "談判籌碼"}, {"source": "稀土", "target": "美國", "value": 4, "label": "貿易談判"}, {"source": "安世", "target": "荷蘭", "value": 4, "label": "企業司法"}, {"source": "安世", "target": "半導體", "value": 3, "label": "晶片供應"}, {"source": "股市", "target": "台灣", "value": 4, "label": "資本市場"}, {"source": "證交所", "target": "股市", "value": 4, "label": "市場監管"}, {"source": "薪資", "target": "台灣", "value": 4, "label": "經濟成長"}], "newsDatabase": {"美國": [{"title": "經濟學人分析各國貿易協議 日、韓、台對美大投資恐難兌現", "source": "經濟國際焦點", "url": "https://money.udn.com/money/story/5599/9325163"}, {"title": "美就業報佳音 降息預期淡了 1月非農數據增13萬人 失業率也有好消息", "source": "經濟國際焦點", "url": "https://money.udn.com/money/story/5599/9325113"}, {"title": "美1月就業數據報佳音 降息預期淡了", "source": "聯合_產經_股市", "url": "https://udn.com/news/story/6811/9325113"}, {"title": "美國勞動市場回穩 3月Fed降息機率降溫", "source": "工商財經要聞", "url": "https://www.chinatimes.com/newspapers/20260212000203-260202?utm_source=iii_news&utm_medium=rss"}, {"title": "台美對等貿易協定 周五簽署", "source": "工商財經要聞", "url": "https://www.chinatimes.com/newspapers/20260212000211-260202?utm_source=iii_news&utm_medium=rss"}, {"title": "為川普4月訪中暖場？ 美財長：美中保持競爭關係 不脫鉤", "source": "工商全球財經", "url": "https://www.chinatimes.com/newspapers/20260212000301-260203?utm_source=iii_news&utm_medium=rss"}, {"title": "美車零關稅衝擊 經部：汽車業產值恐減少40億", "source": "工商財經要聞", "url": "https://www.chinatimes.com/newspapers/20260212000218-260202?utm_source=iii_news&utm_medium=rss"}], "台灣": [{"title": "經濟學人分析各國貿易協議 日、韓、台對美大投資恐難兌現", "source": "經濟國際焦點", "url": "https://money.udn.com/money/story/5599/9325163"}, {"title": "薪資成長雖亮眼 近7成勞工領不到平均薪資", "source": "聯合_產經_股市", "url": "https://udn.com/news/story/7238/9324987"}, {"title": "台美對等貿易協定 周五簽署", "source": "工商財經要聞", "url": "https://www.chinatimes.com/newspapers/20260212000211-260202?utm_source=iii_news&utm_medium=rss"}, {"title": "去年薪資增3% 26年最大", "source": "聯合_產經_股市", "url": "https://udn.com/news/story/7238/9325157"}, {"title": "去年經常性薪資年增3.09％ 創26年最大增幅", "source": "自由時報財經新聞", "url": "https://ec.ltn.com.tw/article/paper/1743607"}, {"title": "台幣爆量升 逼近31.4元", "source": "聯合_產經_股市", "url": "https://udn.com/news/story/7239/9325121"}, {"title": "證交所首辦封關典禮 證交所董事長林修銘：台灣資本市場強韌", "source": "聯合_產經_股市", "url": "https://udn.com/news/story/7251/9325078"}, {"title": "輝達海外總部落腳北士科簽約完成  將有上萬個工作機會", "source": "聯合_產經_股市", "url": "https://udn.com/news/story/124626/9325068"}, {"title": "元月較去年同期成長15.7％ 台灣工具機出口報喜", "source": "工商產業科技", "url": "https://www.chinatimes.com/newspapers/20260212000348-260204?utm_source=iii_news&utm_medium=rss"}, {"title": "經長：美車進口未必衝擊國產 短期可能取代歐洲、日本車", "source": "聯合_產經_股市", "url": "https://udn.com/news/story/7238/9325110"}], "中國": [{"title": "春節錯月 陸CPI增速放緩", "source": "工商全球財經", "url": "https://www.chinatimes.com/newspapers/20260212000290-260203?utm_source=iii_news&utm_medium=rss"}, {"title": "為川普4月訪中暖場？ 美財長：美中保持競爭關係 不脫鉤", "source": "工商全球財經", "url": "https://www.chinatimes.com/newspapers/20260212000301-260203?utm_source=iii_news&utm_medium=rss"}, {"title": "盧特尼克：輝達晶片銷中 須確保軍方無法取得", "source": "工商財經要聞", "url": "https://www.chinatimes.com/newspapers/20260212000240-260202?utm_source=iii_news&utm_medium=rss"}, {"title": "本土需求強 中芯8吋產能超載", "source": "工商全球財經", "url": "https://www.chinatimes.com/newspapers/20260212000293-260203?utm_source=iii_news&utm_medium=rss"}, {"title": "大基金三期出手 挺芯原垂直整合", "source": "工商全球財經", "url": "https://www.chinatimes.com/newspapers/20260212000296-260203?utm_source=iii_news&utm_medium=rss"}, {"title": "李強考察稀土產業 或成對美談判籌碼", "source": "工商全球財經", "url": "https://www.chinatimes.com/newspapers/20260212000297-260203?utm_source=iii_news&utm_medium=rss"}], "日本": [{"title": "經濟學人分析各國貿易協議 日、韓、台對美大投資恐難兌現", "source": "經濟國際焦點", "url": "https://money.udn.com/money/story/5599/9325163"}, {"title": "美元指數走低 新台幣、日圓強升", "source": "工商財經要聞", "url": "https://www.chinatimes.com/newspapers/20260212000206-260202?utm_source=iii_news&utm_medium=rss"}, {"title": "經長：美車進口未必衝擊國產 短期可能取代歐洲、日本車", "source": "聯合_產經_股市", "url": "https://udn.com/news/story/7238/9325110"}], "韓國": [{"title": "經濟學人分析各國貿易協議 日、韓、台對美大投資恐難兌現", "source": "經濟國際焦點", "url": "https://money.udn.com/money/story/5599/9325163"}, {"title": "三星推新旗艦機 台鏈補", "source": "經濟產業熱點", "url": "https://money.udn.com/money/story/5612/9325033"}, {"title": "考量成本激增 三星 Galaxy S26 可能變貴", "source": "經濟國際焦點", "url": "https://money.udn.com/money/story/5599/9325047"}], "川普": [{"title": "為川普4月訪中暖場？ 美財長：美中保持競爭關係 不脫鉤", "source": "工商全球財經", "url": "https://www.chinatimes.com/newspapers/20260212000301-260203?utm_source=iii_news&utm_medium=rss"}, {"title": "關稅案遲未宣判 大法官說分明", "source": "工商全球財經", "url": "https://www.chinatimes.com/newspapers/20260212000274-260203?utm_source=iii_news&utm_medium=rss"}], "Fed": [{"title": "美就業報佳音 降息預期淡了 1月非農數據增13萬人 失業率也有好消息", "source": "經濟國際焦點", "url": "https://money.udn.com/money/story/5599/9325113"}, {"title": "美1月就業數據報佳音 降息預期淡了", "source": "聯合_產經_股市", "url": "https://udn.com/news/story/6811/9325113"}, {"title": "美國勞動市場回穩 3月Fed降息機率降溫", "source": "工商財經要聞", "url": "https://www.chinatimes.com/newspapers/20260212000203-260202?utm_source=iii_news&utm_medium=rss"}], "輝達": [{"title": "輝達效應 北士科住宅新案每坪喊到150萬", "source": "聯合_產經_股市", "url": "https://udn.com/news/story/124626/9325069"}, {"title": "輝達海外總部落腳北士科簽約完成  將有上萬個工作機會", "source": "聯合_產經_股市", "url": "https://udn.com/news/story/124626/9325068"}, {"title": "盧特尼克：輝達晶片銷中 須確保軍方無法取得", "source": "工商財經要聞", "url": "https://www.chinatimes.com/newspapers/20260212000240-260202?utm_source=iii_news&utm_medium=rss"}], "鴻海": [{"title": "鴻海績效獎金平均拉高10% 部分業績好的單位年增16%", "source": "經濟產業熱點", "url": "https://money.udn.com/money/story/5612/9325035"}, {"title": "鴻海360億永續聯貸案簽約", "source": "經濟產業熱點", "url": "https://money.udn.com/money/story/5612/9325044"}], "台積電": [{"title": "首款2奈米製程手機 將亮相", "source": "工商全球財經", "url": "https://www.chinatimes.com/newspapers/20260212000283-260203?utm_source=iii_news&utm_medium=rss"}], "三星": [{"title": "三星推新旗艦機 台鏈補", "source": "經濟產業熱點", "url": "https://money.udn.com/money/story/5612/9325033"}, {"title": "考量成本激增 三星 Galaxy S26 可能變貴", "source": "經濟國際焦點", "url": "https://money.udn.com/money/story/5599/9325047"}, {"title": "字節跳動打造AI晶片 傳找三星助陣", "source": "工商財經要聞", "url": "https://www.chinatimes.com/newspapers/20260212000243-260202?utm_source=iii_news&utm_medium=rss"}, {"title": "首款2奈米製程手機 將亮相", "source": "工商全球財經", "url": "https://www.chinatimes.com/newspapers/20260212000283-260203?utm_source=iii_news&utm_medium=rss"}], "美光": [{"title": "美光加速擴產 傳買群創五廠", "source": "工商財經要聞", "url": "https://www.chinatimes.com/newspapers/20260212000235-260202?utm_source=iii_news&utm_medium=rss"}], "馬斯克": [{"title": "馬斯克新點子 月球蓋工廠 規劃用來製造 AI 衛星", "source": "經濟國際焦點", "url": "https://money.udn.com/money/story/5599/9325049"}, {"title": "馬斯克新點子 月球蓋工廠規劃製造AI衛星", "source": "聯合_產經_股市", "url": "https://udn.com/news/story/6811/9325049"}], "特斯拉": [{"title": "特斯拉全台最大超充站啟用", "source": "經濟產業熱點", "url": "https://money.udn.com/money/story/5612/9324986"}], "微軟": [{"title": "微軟測試高溫超導體電纜 有利加快興建伺服器園區進度", "source": "聯合_產經_股市", "url": "https://udn.com/news/story/6811/9325056"}], "中芯": [{"title": "本土需求強 中芯8吋產能超載", "source": "工商全球財經", "url": "https://www.chinatimes.com/newspapers/20260212000293-260203?utm_source=iii_news&utm_medium=rss"}], "字節跳動": [{"title": "字節跳動打造AI晶片 傳找三星助陣", "source": "工商財經要聞", "url": "https://www.chinatimes.com/newspapers/20260212000243-260202?utm_source=iii_news&utm_medium=rss"}], "AI": [{"title": "馬斯克新點子 月球蓋工廠 規劃用來製造 AI 衛星", "source": "經濟國際焦點", "url": "https://money.udn.com/money/story/5599/9325049"}, {"title": "OpenClaw 開闢邊緣AI新戰場", "source": "工商產業科技", "url": "https://www.chinatimes.com/newspapers/20260212000315-260204?utm_source=iii_news&utm_medium=rss"}, {"title": "字節跳動打造AI晶片 傳找三星助陣", "source": "工商財經要聞", "url": "https://www.chinatimes.com/newspapers/20260212000243-260202?utm_source=iii_news&utm_medium=rss"}], "半導體": [{"title": "本土需求強 中芯8吋產能超載", "source": "工商全球財經", "url": "https://www.chinatimes.com/newspapers/20260212000293-260203?utm_source=iii_news&utm_medium=rss"}, {"title": "大基金三期出手 挺芯原垂直整合", "source": "工商全球財經", "url": "https://www.chinatimes.com/newspapers/20260212000296-260203?utm_source=iii_news&utm_medium=rss"}, {"title": "SEMI SMG：去年矽晶圓量增價弱", "source": "工商產業科技", "url": "https://www.chinatimes.com/newspapers/20260212000323-260204?utm_source=iii_news&utm_medium=rss"}], "記憶體": [{"title": "記憶體漲價潮 燒到智慧手機", "source": "工商產業科技", "url": "https://www.chinatimes.com/newspapers/20260212000324-260204?utm_source=iii_news&utm_medium=rss"}, {"title": "美光加速擴產 傳買群創五廠", "source": "工商財經要聞", "url": "https://www.chinatimes.com/newspapers/20260212000235-260202?utm_source=iii_news&utm_medium=rss"}], "晶片": [{"title": "盧特尼克：輝達晶片銷中 須確保軍方無法取得", "source": "工商財經要聞", "url": "https://www.chinatimes.com/newspapers/20260212000240-260202?utm_source=iii_news&utm_medium=rss"}, {"title": "字節跳動打造AI晶片 傳找三星助陣", "source": "工商財經要聞", "url": "https://www.chinatimes.com/newspapers/20260212000243-260202?utm_source=iii_news&utm_medium=rss"}, {"title": "荷蘭法院調查晶片商安世　維持執行長張學政停職裁決", "source": "經濟國際焦點", "url": "https://money.udn.com/money/story/5599/9325333"}], "新台幣": [{"title": "美元指數走低 新台幣、日圓強升", "source": "工商財經要聞", "url": "https://www.chinatimes.com/newspapers/20260212000206-260202?utm_source=iii_news&utm_medium=rss"}, {"title": "台幣爆量升 逼近31.4元", "source": "聯合_產經_股市", "url": "https://udn.com/news/story/7239/9325121"}], "關稅": [{"title": "關稅案遲未宣判 大法官說分明", "source": "工商全球財經", "url": "https://www.chinatimes.com/newspapers/20260212000274-260203?utm_source=iii_news&utm_medium=rss"}, {"title": "美車零關稅衝擊 經部：汽車業產值恐減少40億", "source": "工商財經要聞", "url": "https://www.chinatimes.com/newspapers/20260212000218-260202?utm_source=iii_news&utm_medium=rss"}], "貿易協定": [{"title": "經濟學人分析各國貿易協議 日、韓、台對美大投資恐難兌現", "source": "經濟國際焦點", "url": "https://money.udn.com/money/story/5599/9325163"}, {"title": "台美對等貿易協定 周五簽署", "source": "工商財經要聞", "url": "https://www.chinatimes.com/newspapers/20260212000211-260202?utm_source=iii_news&utm_medium=rss"}], "薪資": [{"title": "薪資成長雖亮眼 近7成勞工領不到平均薪資", "source": "聯合_產經_股市", "url": "https://udn.com/news/story/7238/9324987"}, {"title": "去年薪資增3% 26年最大", "source": "聯合_產經_股市", "url": "https://udn.com/news/story/7238/9325157"}, {"title": "去年經常性薪資年增3.09％ 創26年最大增幅", "source": "自由時報財經新聞", "url": "https://ec.ltn.com.tw/article/paper/1743607"}], "就業市場": [{"title": "美就業報佳音 降息預期淡了 1月非農數據增13萬人 失業率也有好消息", "source": "經濟國際焦點", "url": "https://money.udn.com/money/story/5599/9325113"}, {"title": "美1月就業數據報佳音 降息預期淡了", "source": "聯合_產經_股市", "url": "https://udn.com/news/story/6811/9325113"}, {"title": "美國勞動市場回穩 3月Fed降息機率降溫", "source": "工商財經要聞", "url": "https://www.chinatimes.com/newspapers/20260212000203-260202?utm_source=iii_news&utm_medium=rss"}], "股市": [{"title": "差距正在擴大！結構失衡 學者：股市加劇財富對立", "source": "聯合_產經_股市", "url": "https://udn.com/news/story/7251/9325070"}, {"title": "證交所首辦封關典禮 證交所董事長林修銘：台灣資本市場強韌", "source": "聯合_產經_股市", "url": "https://udn.com/news/story/7251/9325078"}], "盧特尼克": [{"title": "盧特尼克：輝達晶片銷中 須確保軍方無法取得", "source": "工商財經要聞", "url": "https://www.chinatimes.com/newspapers/20260212000240-260202?utm_source=iii_news&utm_medium=rss"}], "李強": [{"title": "李強考察稀土產業 或成對美談判籌碼", "source": "工商全球財經", "url": "https://www.chinatimes.com/newspapers/20260212000297-260203?utm_source=iii_news&utm_medium=rss"}], "BMW": [{"title": "BMW 再傳大規模召回 啟動馬達缺陷影響16款車型", "source": "經濟國際焦點", "url": "https://money.udn.com/money/story/5599/9325354"}], "亞馬遜": [{"title": "亞馬遜 擴大部署低軌衛星", "source": "工商全球財經", "url": "https://www.chinatimes.com/newspapers/20260212000280-260203?utm_source=iii_news&utm_medium=rss"}], "群創": [{"title": "美光加速擴產 傳買群創五廠", "source": "工商財經要聞", "url": "https://www.chinatimes.com/newspapers/20260212000235-260202?utm_source=iii_news&utm_medium=rss"}], "北士科": [{"title": "輝達效應 北士科住宅新案每坪喊到150萬", "source": "聯合_產經_股市", "url": "https://udn.com/news/story/124626/9325069"}, {"title": "輝達海外總部落腳北士科簽約完成  將有上萬個工作機會", "source": "聯合_產經_股市", "url": "https://udn.com/news/story/124626/9325068"}], "證交所": [{"title": "證交所首辦封關典禮 證交所董事長林修銘：台灣資本市場強韌", "source": "聯合_產經_股市", "url": "https://udn.com/news/story/7251/9325078"}], "汽車產業": [{"title": "記憶體漲價潮 燒到智慧手機", "source": "工商產業科技", "url": "https://www.chinatimes.com/newspapers/20260212000324-260204?utm_source=iii_news&utm_medium=rss"}, {"title": "美車零關稅衝擊 經部：汽車業產值恐減少40億", "source": "工商財經要聞", "url": "https://www.chinatimes.com/newspapers/20260212000218-260202?utm_source=iii_news&utm_medium=rss"}, {"title": "美車零關稅衝擊 勞部：研議30億補助與就業掛勾", "source": "工商財經要聞", "url": "https://www.chinatimes.com/newspapers/20260212000220-260202?utm_source=iii_news&utm_medium=rss"}, {"title": "經長：美車進口未必衝擊國產 短期可能取代歐洲、日本車", "source": "聯合_產經_股市", "url": "https://udn.com/news/story/7238/9325110"}], "2奈米": [{"title": "首款2奈米製程手機 將亮相", "source": "工商全球財經", "url": "https://www.chinatimes.com/newspapers/20260212000283-260203?utm_source=iii_news&utm_medium=rss"}], "低軌衛星": [{"title": "馬斯克新點子 月球蓋工廠 規劃用來製造 AI 衛星", "source": "經濟國際焦點", "url": "https://money.udn.com/money/story/5599/9325049"}, {"title": "亞馬遜 擴大部署低軌衛星", "source": "工商全球財經", "url": "https://www.chinatimes.com/newspapers/20260212000280-260203?utm_source=iii_news&utm_medium=rss"}], "印尼": [{"title": "印尼暗示減產 鎳價漲不停 高盛：各國囤貨 加劇大宗商品價格波動", "source": "經濟國際焦點", "url": "https://money.udn.com/money/story/5599/9324998"}, {"title": "印尼限產最大鎳礦 價急漲", "source": "工商全球財經", "url": "https://www.chinatimes.com/newspapers/20260212000278-260203?utm_source=iii_news&utm_medium=rss"}], "鎳礦": [{"title": "印尼暗示減產 鎳價漲不停 高盛：各國囤貨 加劇大宗商品價格波動", "source": "經濟國際焦點", "url": "https://money.udn.com/money/story/5599/9324998"}, {"title": "印尼限產最大鎳礦 價急漲", "source": "工商全球財經", "url": "https://www.chinatimes.com/newspapers/20260212000278-260203?utm_source=iii_news&utm_medium=rss"}], "稀土": [{"title": "李強考察稀土產業 或成對美談判籌碼", "source": "工商全球財經", "url": "https://www.chinatimes.com/newspapers/20260212000297-260203?utm_source=iii_news&utm_medium=rss"}], "荷蘭": [{"title": "荷蘭法院調查晶片商安世　維持執行長張學政停職裁決", "source": "經濟國際焦點", "url": "https://money.udn.com/money/story/5599/9325333"}], "安世": [{"title": "荷蘭法院調查晶片商安世　維持執行長張學政停職裁決", "source": "經濟國際焦點", "url": "https://money.udn.com/money/story/5599/9325333"}], "德國": [{"title": "美時獲德國抗癌藥授權", "source": "聯合_產經_股市", "url": "https://udn.com/news/story/7252/9324748"}]}, "titleToUrl": {"經濟學人分析各國貿易協議 日、韓、台對美大投資恐難兌現 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9325163", "美就業報佳音 降息預期淡了 1月非農數據增13萬人 失業率也有好消息 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9325113", "薪資成長雖亮眼 近7成勞工領不到平均薪資 (聯合_產經_股市)": "https://udn.com/news/story/7238/9324987", "差距正在擴大！結構失衡 學者：股市加劇財富對立 (聯合_產經_股市)": "https://udn.com/news/story/7251/9325070", "美1月就業數據報佳音 降息預期淡了 (聯合_產經_股市)": "https://udn.com/news/story/6811/9325113", "美國勞動市場回穩 3月Fed降息機率降溫 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260212000203-260202?utm_source=iii_news&utm_medium=rss", "美元指數走低 新台幣、日圓強升 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260212000206-260202?utm_source=iii_news&utm_medium=rss", "台美對等貿易協定 周五簽署 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260212000211-260202?utm_source=iii_news&utm_medium=rss", "關稅案遲未宣判 大法官說分明 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260212000274-260203?utm_source=iii_news&utm_medium=rss", "春節錯月 陸CPI增速放緩 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260212000290-260203?utm_source=iii_news&utm_medium=rss", "為川普4月訪中暖場？ 美財長：美中保持競爭關係 不脫鉤 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260212000301-260203?utm_source=iii_news&utm_medium=rss", "去年薪資增3% 26年最大 (聯合_產經_股市)": "https://udn.com/news/story/7238/9325157", "去年經常性薪資年增3.09％ 創26年最大增幅 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1743607", "台幣爆量升 逼近31.4元 (聯合_產經_股市)": "https://udn.com/news/story/7239/9325121", "證交所首辦封關典禮 證交所董事長林修銘：台灣資本市場強韌 (聯合_產經_股市)": "https://udn.com/news/story/7251/9325078", "特斯拉全台最大超充站啟用 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9324986", "鴻海績效獎金平均拉高10% 部分業績好的單位年增16% (經濟產業熱點)": "https://money.udn.com/money/story/5612/9325035", "鴻海360億永續聯貸案簽約 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9325044", "三星推新旗艦機 台鏈補 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9325033", "考量成本激增 三星 Galaxy S26 可能變貴 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9325047", "加密貨幣動能疲弱 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9325006", "馬斯克新點子 月球蓋工廠 規劃用來製造 AI 衛星 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9325049", "荷蘭法院調查晶片商安世　維持執行長張學政停職裁決 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9325333", "BMW 再傳大規模召回 啟動馬達缺陷影響16款車型 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9325354", "輝達效應 北士科住宅新案每坪喊到150萬 (聯合_產經_股市)": "https://udn.com/news/story/124626/9325069", "輝達海外總部落腳北士科簽約完成  將有上萬個工作機會 (聯合_產經_股市)": "https://udn.com/news/story/124626/9325068", "微軟測試高溫超導體電纜 有利加快興建伺服器園區進度 (聯合_產經_股市)": "https://udn.com/news/story/6811/9325056", "馬斯克新點子 月球蓋工廠規劃製造AI衛星 (聯合_產經_股市)": "https://udn.com/news/story/6811/9325049", "美光加速擴產 傳買群創五廠 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260212000235-260202?utm_source=iii_news&utm_medium=rss", "力旺雙引擎點火 下半年營運動能靚 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260212000238-260202?utm_source=iii_news&utm_medium=rss", "盧特尼克：輝達晶片銷中 須確保軍方無法取得 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260212000240-260202?utm_source=iii_news&utm_medium=rss", "字節跳動打造AI晶片 傳找三星助陣 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260212000243-260202?utm_source=iii_news&utm_medium=rss", "亞馬遜 擴大部署低軌衛星 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260212000280-260203?utm_source=iii_news&utm_medium=rss", "首款2奈米製程手機 將亮相 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260212000283-260203?utm_source=iii_news&utm_medium=rss", "本土需求強 中芯8吋產能超載 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260212000293-260203?utm_source=iii_news&utm_medium=rss", "大基金三期出手 挺芯原垂直整合 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260212000296-260203?utm_source=iii_news&utm_medium=rss", "OpenClaw 開闢邊緣AI新戰場 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260212000315-260204?utm_source=iii_news&utm_medium=rss", "夏普K2廠 預計今年8月停工 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260212000318-260204?utm_source=iii_news&utm_medium=rss", "電信三雄 備戰春節通訊高峰 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260212000320-260204?utm_source=iii_news&utm_medium=rss", "SEMI SMG：去年矽晶圓量增價弱 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260212000323-260204?utm_source=iii_news&utm_medium=rss", "記憶體漲價潮 燒到智慧手機 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260212000324-260204?utm_source=iii_news&utm_medium=rss", "新漢將發新品 挹注業績 (聯合_產經_股市)": "https://udn.com/news/story/7254/9325031", "玉晶光廈門廠大擴產 (聯合_產經_股市)": "https://udn.com/news/story/7253/9325017", "美時獲德國抗癌藥授權 (聯合_產經_股市)": "https://udn.com/news/story/7252/9324748", "華安泡泡龍新藥傳喜訊 (聯合_產經_股市)": "https://udn.com/news/story/7252/9324750", "禾榮科注射劑將臨床試驗 (聯合_產經_股市)": "https://udn.com/news/story/7252/9324751", "揪逾期麵包粉 馬可先生遭罰6萬 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260212000518-260114?utm_source=iii_news&utm_medium=rss", "印尼暗示減產 鎳價漲不停 高盛：各國囤貨 加劇大宗商品價格波動 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9324998", "重電廠變壓器漲價又一波 士電、華城及亞力最高調幅逾兩成 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9325029", "美車零關稅衝擊 經部：汽車業產值恐減少40億 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260212000218-260202?utm_source=iii_news&utm_medium=rss", "美車零關稅衝擊 勞部：研議30億補助與就業掛勾 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260212000220-260202?utm_source=iii_news&utm_medium=rss", "建築太陽光電新制 增電力 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260212000247-260202?utm_source=iii_news&utm_medium=rss", "印尼限產最大鎳礦 價急漲 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260212000278-260203?utm_source=iii_news&utm_medium=rss", "李強考察稀土產業 或成對美談判籌碼 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260212000297-260203?utm_source=iii_news&utm_medium=rss", "元月較去年同期成長15.7％ 台灣工具機出口報喜 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260212000348-260204?utm_source=iii_news&utm_medium=rss", "經長：美車進口未必衝擊國產 短期可能取代歐洲、日本車 (聯合_產經_股市)": "https://udn.com/news/story/7238/9325110"}};
+        } catch (e) {
+            EMBEDDED_DATA = { nodes: [], links: [], titleToUrl: {} };
+        }
+
+        // Data Store
+        const dataStore = {
+            [TARGET_DATE]: EMBEDDED_DATA
+        };
+
+        // Cosmic Orange Palette
+        const ORANGE_PALETTE = ['#FF9900', '#FFB347', '#FFCC80', '#E68A00', '#CC7A00'];
+
+        // Filter State
+        let activeFilters = new Set(); // Multi-select Set
+        let searchText = "";
+        let highlightedNodes = new Set();
+        let highlightedLinks = new Set();
+        let currentLinks = [];
+        let currentGraphData = null;
+        const lastDragPosition = {};
+
+        function updateHighlights() {
+            highlightedNodes.clear();
+            highlightedLinks.clear();
+
+            if (activeFilters.size === 0 && !searchText) return;
+
+            currentLinks.forEach(link => {
+                const source = link.source;
+                const target = link.target;
+
+                // Keyword Match (OR logic: match ANY active filter)
+                let keywordMatch = true;
+                if (activeFilters.size > 0) {
+                    keywordMatch = false;
+                    if (link.tags && Array.isArray(link.tags)) {
+                        if (link.tags.some(tag => activeFilters.has(tag))) keywordMatch = true;
+                    }
+                    if (link.label && activeFilters.has(link.label)) keywordMatch = true;
+                }
+
+                // Search Match
+                const searchMatch = searchText ? 
+                    (source.id.toLowerCase().includes(searchText.toLowerCase()) || target.id.toLowerCase().includes(searchText.toLowerCase())) 
+                    : true;
+                
+                if (keywordMatch && searchMatch) {
+                    highlightedLinks.add(link);
+                    highlightedNodes.add(source);
+                    highlightedNodes.add(target);
+                }
+            });
+        }
+
+        function triggerRenderUpdate() {
+            Graph.nodeColor(Graph.nodeColor())
+                 .linkColor(Graph.linkColor())
+                 .linkWidth(Graph.linkWidth())
+                 .linkDirectionalParticles(Graph.linkDirectionalParticles());
+        }
+
+        let Graph = ForceGraph()(graphContainer)
+            .backgroundColor('#0b0b0b')
+            .nodeId('id')
+            .nodeRelSize(6)
+            .d3Force('charge', d3.forceManyBody().strength(-900))
+            .d3Force('link', d3.forceLink().id(d => d.id).distance(180))
+            .d3Force('collision', d3.forceCollide().radius(40).strength(0.8))
+            .nodeColor(node => ((activeFilters.size === 0 && !searchText) || highlightedNodes.has(node)) ? (ORANGE_PALETTE[Math.abs(node.id.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0)) % ORANGE_PALETTE.length]) : 'rgba(255, 255, 255, 0.1)')
+            .nodeLabel('id')
+            .linkColor(link => ((activeFilters.size === 0 && !searchText) || highlightedLinks.has(link)) ? 'rgba(255, 153, 0, 0.3)' : 'rgba(255, 255, 255, 0.05)')
+            .linkWidth(link => ((activeFilters.size === 0 && !searchText) || highlightedLinks.has(link)) ? (link.value ? Math.sqrt(link.value) : 1) : 0.5)
+            .linkDirectionalParticles(link => ((activeFilters.size === 0 && !searchText) || highlightedLinks.has(link)) ? 2 : 0)
+            .linkDirectionalParticleWidth(2)
+            .linkDirectionalParticleColor(() => '#ffaa00')
+            .onNodeClick(node => { onNodeClick(node); })
+            .onLinkClick(link => { showToast(link.label, link.reason || ''); })
+            .onNodeDrag((node) => {
+                if (typeof node.x === 'number' && typeof node.y === 'number' && Number.isFinite(node.x) && Number.isFinite(node.y)) {
+                    lastDragPosition[node.id] = { x: node.x, y: node.y };
+                }
+            })
+            .onNodeDragEnd((node) => {
+                const pos = lastDragPosition[node.id];
+                let x = (pos && Number.isFinite(pos.x)) ? pos.x : node.x;
+                let y = (pos && Number.isFinite(pos.y)) ? pos.y : node.y;
+                if (!Number.isFinite(x) || !Number.isFinite(y)) {
+                    x = Number.isFinite(node.x) ? node.x : 0;
+                    y = Number.isFinite(node.y) ? node.y : 0;
+                }
+                node.x = x;
+                node.y = y;
+                node.fx = x;
+                node.fy = y;
+                delete lastDragPosition[node.id];
+            });
+        if (typeof Graph.onBackgroundClick === 'function') {
+            Graph.onBackgroundClick(() => newsPanel.classList.remove('visible'));
+        }
+
+        // Custom Link Label Rendering
+        Graph.linkCanvasObject((link, ctx, globalScale) => {
+            const start = link.source;
+            const end = link.target;
+            if (typeof start !== 'object' || typeof end !== 'object') return;
+            const sx = start.x, sy = start.y, ex = end.x, ey = end.y;
+            if (typeof sx !== 'number' || typeof sy !== 'number' || typeof ex !== 'number' || typeof ey !== 'number') return;
+            if (!Number.isFinite(sx) || !Number.isFinite(sy) || !Number.isFinite(ex) || !Number.isFinite(ey)) return;
+            const isHighlighted = (activeFilters.size === 0 && !searchText) || highlightedLinks.has(link);
+
+            ctx.beginPath();
+            ctx.moveTo(sx, sy);
+            ctx.lineTo(ex, ey);
+            ctx.strokeStyle = isHighlighted ? 'rgba(255, 153, 0, 0.3)' : 'rgba(255, 255, 255, 0.05)';
+            ctx.lineWidth = (isHighlighted ? (link.value ? Math.sqrt(link.value) : 1) : 0.5) / globalScale;
+            ctx.stroke();
+
+            if (link.label && isHighlighted) {
+                const label = link.label;
+                const fontSize = Math.max(10, 14 / globalScale);
+                ctx.font = `${fontSize}px 'Noto Sans TC', Sans-Serif`;
+                const midX = (sx + ex) / 2;
+                const midY = (sy + ey) / 2;
+                const textWidth = ctx.measureText(label).width;
+                const bckgDimensions = [textWidth, fontSize].map(n => n + fontSize * 0.3);
+                ctx.fillStyle = '#222';
+                ctx.fillRect(midX - bckgDimensions[0] / 2, midY - bckgDimensions[1] / 2, ...bckgDimensions);
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillStyle = '#fff';
+                ctx.fillText(label, midX, midY);
+            }
+        });
+
+        // Custom Node Rendering
+        Graph.nodeCanvasObject((node, ctx, globalScale) => {
+            const x = node.x, y = node.y;
+            if (typeof x !== 'number' || typeof y !== 'number' || !Number.isFinite(x) || !Number.isFinite(y)) return;
+            const isHighlighted = (activeFilters.size === 0 && !searchText) || highlightedNodes.has(node);
+            const label = node.id;
+            const fontSize = 14 / globalScale;
+            ctx.font = `${fontSize}px 'Noto Sans TC', sans-serif`;
+            const textWidth = ctx.measureText(label).width;
+            const bckgDimensions = [textWidth, fontSize].map(n => n + fontSize * 0.5);
+            const boxX = x - bckgDimensions[0] / 2;
+            const boxY = y - bckgDimensions[1] / 2;
+            
+            ctx.fillStyle = isHighlighted ? 'rgba(26, 26, 26, 0.9)' : 'rgba(26, 26, 26, 0.2)';
+            ctx.strokeStyle = isHighlighted ? '#ff9900' : 'rgba(100, 100, 100, 0.2)';
+            ctx.lineWidth = 1 / globalScale;
+            ctx.fillRect(boxX, boxY, ...bckgDimensions);
+            ctx.strokeRect(boxX, boxY, ...bckgDimensions);
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillStyle = isHighlighted ? '#e0e0e0' : 'rgba(100, 100, 100, 0.5)';
+            ctx.fillText(label, x, y);
+
+            node.__bckgDimensions = bckgDimensions;
+        })
+        .nodePointerAreaPaint((node, color, ctx) => {
+            const bckgDimensions = node.__bckgDimensions;
+            if (bckgDimensions && typeof node.x === 'number' && typeof node.y === 'number') {
+                ctx.fillStyle = color;
+                ctx.fillRect(node.x - bckgDimensions[0] / 2, node.y - bckgDimensions[1] / 2, ...bckgDimensions);
+            }
+        });
+
+        // Toast Logic
+        let toastTimeout;
+        function showToast(title, message) {
+            if (!title) return;
+            toast.innerHTML = `<h3>${title}</h3><p>${message || ''}</p>`;
+            toast.style.display = 'block';
+            if (toastTimeout) clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => { toast.style.display = 'none'; }, 5000);
+        }
+
+        // News Panel (entity -> related news)
+        const newsPanel = document.getElementById('news-panel');
+        const newsPanelTitle = document.getElementById('news-panel-title');
+        const newsPanelList = document.getElementById('news-panel-list');
+        document.querySelector('#news-panel .close-btn').addEventListener('click', () => { newsPanel.classList.remove('visible'); });
+
+        // Left panel show/hide toggle
+        const controlsPanel = document.getElementById('controls-panel');
+        const controlsToggleTab = document.getElementById('controls-toggle-tab');
+        document.getElementById('toggle-panel-btn').addEventListener('click', () => {
+            controlsPanel.classList.add('hidden');
+            controlsToggleTab.classList.add('visible');
+        });
+        controlsToggleTab.addEventListener('click', () => {
+            controlsPanel.classList.remove('hidden');
+            controlsToggleTab.classList.remove('visible');
+        });
+
+        function onNodeClick(node) {
+            if (currentGraphData && currentGraphData.newsDatabase && currentGraphData.newsDatabase[node.id]) {
+                const items = currentGraphData.newsDatabase[node.id];
+                newsPanelTitle.textContent = node.id;
+                const titleToUrl = currentGraphData.titleToUrl || {};
+                newsPanelList.innerHTML = items.map(entry => {
+                    const source = entry.source ? ` <span class="source">(${escapeHtml(entry.source)})</span>` : '';
+                    const url = entry.url || titleToUrl[entry.title];
+                    if (url) {
+                        return `<div class="news-item"><a href="${escapeAttr(url)}" target="_blank" rel="noopener">${escapeHtml(entry.title)}</a>${source}</div>`;
+                    }
+                    return `<div class="news-item">${escapeHtml(entry.title)}${source}</div>`;
+                }).join('');
+                newsPanel.classList.add('visible');
+            } else if (node.url) {
+                window.open(node.url, '_blank');
+            } else {
+                showToast(node.id, '無相關新聞');
+            }
+        }
+        function escapeHtml(s) {
+            const div = document.createElement('div');
+            div.textContent = s;
+            return div.innerHTML;
+        }
+        function escapeAttr(s) {
+            return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        }
+
+        // --- Fetch Logic ---
+
+        function getPreviousDate(dateStr, days) {
+            const date = new Date(dateStr);
+            date.setDate(date.getDate() - days);
+            return date.toISOString().split('T')[0];
+        }
+
+        async function fetchHistory() {
+            // Check previous 3 days
+            for (let i = 1; i <= 3; i++) {
+                const prevDate = getPreviousDate(TARGET_DATE, i);
+                const filename = prevDate + ".json";
+                try {
+                    const response = await fetch(filename);
+                    if (response.ok) {
+                        const json = await response.json();
+                        dataStore[prevDate] = json;
+                        // Refresh selector
+                        populateSelector();
+                    }
+                } catch (e) {
+                    // Ignore fetch errors (likely local file system or missing file)
+                    console.log(`Skipping ${filename}: ${e}`);
+                }
+            }
+        }
+
+        // Init Logic
+        function init() {
+            // On narrow viewport (e.g. mobile), start with left panel hidden so graph is full-screen
+            if (window.matchMedia && window.matchMedia("(max-width: 768px)").matches) {
+                controlsPanel.classList.add("hidden");
+                controlsToggleTab.classList.add("visible");
+            }
+            populateSelector();
+
+            // Load embedded default
+            loadGraphData(TARGET_DATE);
+
+            // Try to fetch history (if on server)
+            fetchHistory();
+        }
+
+        function populateSelector() {
+            // Clear existing options
+            dateSelector.innerHTML = '<option value="" disabled>選擇日期...</option>';
+            
+            const sortedDates = Object.keys(dataStore).sort().reverse();
+            sortedDates.forEach(date => {
+                const option = document.createElement('option');
+                option.value = date;
+                option.textContent = date;
+                if (date === dateSelector.value) option.selected = true;
+                dateSelector.appendChild(option);
+            });
+            
+            // If nothing selected, select first
+            if (!dateSelector.value && sortedDates.length > 0) {
+                dateSelector.value = sortedDates[0];
+            }
+        }
+        
+        function populateKeywords(links, nodes) {
+            keywordList.innerHTML = '';
+            const labels = new Set();
+            (links || []).forEach(link => {
+                if (link.tags && Array.isArray(link.tags)) {
+                    link.tags.forEach(tag => labels.add(tag));
+                }
+                if (link.label) labels.add(link.label);
+            });
+            (nodes || []).forEach(node => {
+                if (node.group) labels.add(node.group);
+            });
+            const sortedLabels = Array.from(labels).sort();
+            sortedLabels.forEach(label => {
+                const tag = document.createElement('div');
+                tag.className = 'keyword-tag';
+                tag.textContent = label;
+                tag.onclick = () => toggleFilter(label, tag);
+                keywordList.appendChild(tag);
+            });
+        }
+
+        function toggleFilter(label, tagElement) {
+            // Toggle Logic: Add or Remove
+            if (activeFilters.has(label)) {
+                activeFilters.delete(label);
+                tagElement.classList.remove('active');
+            } else {
+                activeFilters.add(label);
+                tagElement.classList.add('active');
+            }
+            
+            updateHighlights();
+            triggerRenderUpdate();
+        }
+
+        function loadGraphData(dateKey) {
+            const graphData = dataStore[dateKey];
+            if (graphData) {
+                currentGraphData = graphData;
+                currentLinks = graphData.links || [];
+                activeFilters.clear();
+                searchText = "";
+                searchInput.value = "";
+                updateHighlights();
+                // Normalize node.val from node.size for compatibility (e.g. force-graph / rendering)
+                const nodes = graphData.nodes || [];
+                nodes.forEach((n, i) => {
+                    if (n.size != null && n.val == null) n.val = n.size;
+                });
+                // Give nodes initial positions so they don't all start at center (fixes clustered view)
+                const rect = graphContainer.getBoundingClientRect();
+                const centerX = rect.width / 2 || window.innerWidth / 2;
+                const centerY = rect.height / 2 || window.innerHeight / 2;
+                const spread = Math.min(rect.width, rect.height) * 0.35 || 350;
+                nodes.forEach((n, i) => {
+                    const angle = (i / Math.max(nodes.length, 1)) * 2 * Math.PI + (Math.random() * 0.5);
+                    n.x = centerX + spread * Math.cos(angle) + (Math.random() - 0.5) * 80;
+                    n.y = centerY + spread * Math.sin(angle) + (Math.random() - 0.5) * 80;
+                });
+                Graph.graphData(graphData);
+                if (typeof Graph.centerAt === 'function') {
+                    requestAnimationFrame(() => {
+                        Graph.centerAt(centerX, centerY);
+                    });
+                }
+                populateKeywords(graphData.links, graphData.nodes);
+                dateSelector.value = dateKey;
+            }
+        }
+
+        dateSelector.addEventListener('change', (e) => loadGraphData(e.target.value));
+        searchInput.addEventListener('input', (e) => {
+            searchText = e.target.value;
+            updateHighlights();
+            triggerRenderUpdate();
+        });
+
+        // Start
+        init();
+
+    </script>
+</body>
+</html>
