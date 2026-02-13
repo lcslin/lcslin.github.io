@@ -1,0 +1,1281 @@
+{
+  "nodes": [
+    {
+      "id": "川普",
+      "group": "person",
+      "size": 20
+    },
+    {
+      "id": "央行",
+      "group": "org",
+      "size": 18
+    },
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 22
+    },
+    {
+      "id": "台灣",
+      "group": "country",
+      "size": 25
+    },
+    {
+      "id": "AI",
+      "group": "tech",
+      "size": 24
+    },
+    {
+      "id": "鴻海",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "劉揚偉",
+      "group": "person",
+      "size": 12
+    },
+    {
+      "id": "廣達",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "華碩",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "Meta",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "輝達",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "黃仁勳",
+      "group": "person",
+      "size": 10
+    },
+    {
+      "id": "卓揆",
+      "group": "person",
+      "size": 13
+    },
+    {
+      "id": "關稅",
+      "group": "finance",
+      "size": 18
+    },
+    {
+      "id": "GDP",
+      "group": "finance",
+      "size": 15
+    },
+    {
+      "id": "通膨",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "台幣",
+      "group": "finance",
+      "size": 13
+    },
+    {
+      "id": "加拿大",
+      "group": "country",
+      "size": 14
+    },
+    {
+      "id": "印度",
+      "group": "country",
+      "size": 10
+    },
+    {
+      "id": "中國",
+      "group": "country",
+      "size": 16
+    },
+    {
+      "id": "伺服器",
+      "group": "tech",
+      "size": 16
+    },
+    {
+      "id": "半導體",
+      "group": "tech",
+      "size": 18
+    },
+    {
+      "id": "記憶體",
+      "group": "tech",
+      "size": 13
+    },
+    {
+      "id": "群創",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "日月光",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "南茂",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "中小企業",
+      "group": "org",
+      "size": 12
+    },
+    {
+      "id": "最低工資",
+      "group": "finance",
+      "size": 11
+    },
+    {
+      "id": "美光",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "HBM",
+      "group": "tech",
+      "size": 11
+    },
+    {
+      "id": "泰國",
+      "group": "country",
+      "size": 11
+    },
+    {
+      "id": "聯發科",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "新唐",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "采鈺",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "蘋果",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "馬斯克",
+      "group": "person",
+      "size": 10
+    },
+    {
+      "id": "貿易協定",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "美豬",
+      "group": "finance",
+      "size": 10
+    },
+    {
+      "id": "新加坡",
+      "group": "country",
+      "size": 9
+    },
+    {
+      "id": "核能",
+      "group": "tech",
+      "size": 10
+    },
+    {
+      "id": "韓國",
+      "group": "country",
+      "size": 9
+    },
+    {
+      "id": "應材",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "資料中心",
+      "group": "tech",
+      "size": 13
+    },
+    {
+      "id": "緯創",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "英業達",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "仁寶",
+      "group": "company",
+      "size": 10
+    }
+  ],
+  "links": [
+    {
+      "source": "川普",
+      "target": "關稅",
+      "value": 5,
+      "label": "政策制定"
+    },
+    {
+      "source": "川普",
+      "target": "加拿大",
+      "value": 4,
+      "label": "貿易衝突"
+    },
+    {
+      "source": "川普",
+      "target": "美國",
+      "value": 5,
+      "label": "國家領導"
+    },
+    {
+      "source": "央行",
+      "target": "通膨",
+      "value": 5,
+      "label": "貨幣政策"
+    },
+    {
+      "source": "央行",
+      "target": "台幣",
+      "value": 4,
+      "label": "匯率管理"
+    },
+    {
+      "source": "央行",
+      "target": "台灣",
+      "value": 5,
+      "label": "金融監管"
+    },
+    {
+      "source": "美國",
+      "target": "GDP",
+      "value": 4,
+      "label": "經濟指標"
+    },
+    {
+      "source": "美國",
+      "target": "關稅",
+      "value": 5,
+      "label": "貿易政策"
+    },
+    {
+      "source": "台灣",
+      "target": "GDP",
+      "value": 4,
+      "label": "經濟成長"
+    },
+    {
+      "source": "台灣",
+      "target": "半導體",
+      "value": 5,
+      "label": "產業優勢"
+    },
+    {
+      "source": "台灣",
+      "target": "AI",
+      "value": 5,
+      "label": "科技發展"
+    },
+    {
+      "source": "卓揆",
+      "target": "台灣",
+      "value": 5,
+      "label": "政府領導"
+    },
+    {
+      "source": "卓揆",
+      "target": "GDP",
+      "value": 4,
+      "label": "經濟目標"
+    },
+    {
+      "source": "卓揆",
+      "target": "最低工資",
+      "value": 4,
+      "label": "政策推動"
+    },
+    {
+      "source": "卓揆",
+      "target": "中小企業",
+      "value": 4,
+      "label": "產業扶持"
+    },
+    {
+      "source": "AI",
+      "target": "伺服器",
+      "value": 5,
+      "label": "技術應用"
+    },
+    {
+      "source": "AI",
+      "target": "資料中心",
+      "value": 5,
+      "label": "基礎建設"
+    },
+    {
+      "source": "AI",
+      "target": "半導體",
+      "value": 5,
+      "label": "技術支撐"
+    },
+    {
+      "source": "鴻海",
+      "target": "劉揚偉",
+      "value": 5,
+      "label": "企業領導"
+    },
+    {
+      "source": "鴻海",
+      "target": "台灣",
+      "value": 4,
+      "label": "產業貢獻"
+    },
+    {
+      "source": "鴻海",
+      "target": "AI",
+      "value": 4,
+      "label": "技術投資"
+    },
+    {
+      "source": "廣達",
+      "target": "泰國",
+      "value": 4,
+      "label": "海外擴產"
+    },
+    {
+      "source": "廣達",
+      "target": "AI",
+      "value": 4,
+      "label": "產品供應"
+    },
+    {
+      "source": "廣達",
+      "target": "伺服器",
+      "value": 5,
+      "label": "製造生產"
+    },
+    {
+      "source": "華碩",
+      "target": "伺服器",
+      "value": 5,
+      "label": "產品業務"
+    },
+    {
+      "source": "華碩",
+      "target": "AI",
+      "value": 4,
+      "label": "技術布局"
+    },
+    {
+      "source": "華碩",
+      "target": "美國",
+      "value": 3,
+      "label": "製造擴張"
+    },
+    {
+      "source": "Meta",
+      "target": "AI",
+      "value": 5,
+      "label": "技術投資"
+    },
+    {
+      "source": "Meta",
+      "target": "資料中心",
+      "value": 5,
+      "label": "基建投資"
+    },
+    {
+      "source": "Meta",
+      "target": "緯創",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "Meta",
+      "target": "英業達",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "Meta",
+      "target": "仁寶",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "輝達",
+      "target": "AI",
+      "value": 5,
+      "label": "技術領導"
+    },
+    {
+      "source": "輝達",
+      "target": "中國",
+      "value": 3,
+      "label": "市場限制"
+    },
+    {
+      "source": "輝達",
+      "target": "黃仁勳",
+      "value": 5,
+      "label": "企業領導"
+    },
+    {
+      "source": "黃仁勳",
+      "target": "AI",
+      "value": 5,
+      "label": "產業推動"
+    },
+    {
+      "source": "群創",
+      "target": "日月光",
+      "value": 4,
+      "label": "資產交易"
+    },
+    {
+      "source": "群創",
+      "target": "南茂",
+      "value": 4,
+      "label": "資產交易"
+    },
+    {
+      "source": "群創",
+      "target": "台灣",
+      "value": 3,
+      "label": "產業重組"
+    },
+    {
+      "source": "美光",
+      "target": "HBM",
+      "value": 5,
+      "label": "產品供應"
+    },
+    {
+      "source": "美光",
+      "target": "記憶體",
+      "value": 5,
+      "label": "製造生產"
+    },
+    {
+      "source": "美光",
+      "target": "AI",
+      "value": 4,
+      "label": "技術支援"
+    },
+    {
+      "source": "HBM",
+      "target": "記憶體",
+      "value": 5,
+      "label": "技術類別"
+    },
+    {
+      "source": "HBM",
+      "target": "AI",
+      "value": 5,
+      "label": "關鍵技術"
+    },
+    {
+      "source": "聯發科",
+      "target": "AI",
+      "value": 5,
+      "label": "超算中心"
+    },
+    {
+      "source": "聯發科",
+      "target": "台灣",
+      "value": 4,
+      "label": "產業投資"
+    },
+    {
+      "source": "新唐",
+      "target": "半導體",
+      "value": 4,
+      "label": "產品供應"
+    },
+    {
+      "source": "采鈺",
+      "target": "半導體",
+      "value": 4,
+      "label": "製造生產"
+    },
+    {
+      "source": "采鈺",
+      "target": "台灣",
+      "value": 3,
+      "label": "產業貢獻"
+    },
+    {
+      "source": "蘋果",
+      "target": "AI",
+      "value": 3,
+      "label": "產品升級"
+    },
+    {
+      "source": "馬斯克",
+      "target": "AI",
+      "value": 4,
+      "label": "企業布局"
+    },
+    {
+      "source": "印度",
+      "target": "貿易協定",
+      "value": 4,
+      "label": "勞工抗議"
+    },
+    {
+      "source": "貿易協定",
+      "target": "台灣",
+      "value": 4,
+      "label": "經濟談判"
+    },
+    {
+      "source": "貿易協定",
+      "target": "美國",
+      "value": 4,
+      "label": "經濟談判"
+    },
+    {
+      "source": "美豬",
+      "target": "貿易協定",
+      "value": 4,
+      "label": "市場開放"
+    },
+    {
+      "source": "美豬",
+      "target": "台灣",
+      "value": 3,
+      "label": "進口影響"
+    },
+    {
+      "source": "新加坡",
+      "target": "AI",
+      "value": 3,
+      "label": "產業發展"
+    },
+    {
+      "source": "中國",
+      "target": "AI",
+      "value": 4,
+      "label": "技術競爭"
+    },
+    {
+      "source": "中國",
+      "target": "半導體",
+      "value": 4,
+      "label": "產業限制"
+    },
+    {
+      "source": "應材",
+      "target": "中國",
+      "value": 4,
+      "label": "出口違規"
+    },
+    {
+      "source": "應材",
+      "target": "韓國",
+      "value": 3,
+      "label": "繞道貿易"
+    },
+    {
+      "source": "應材",
+      "target": "美國",
+      "value": 4,
+      "label": "監管處罰"
+    },
+    {
+      "source": "川普",
+      "target": "核能",
+      "value": 3,
+      "label": "能源政策"
+    },
+    {
+      "source": "半導體",
+      "target": "台灣",
+      "value": 5,
+      "label": "矽盾戰略"
+    },
+    {
+      "source": "最低工資",
+      "target": "台灣",
+      "value": 4,
+      "label": "勞工政策"
+    },
+    {
+      "source": "中小企業",
+      "target": "台灣",
+      "value": 4,
+      "label": "產業轉型"
+    },
+    {
+      "source": "關稅",
+      "target": "貿易協定",
+      "value": 5,
+      "label": "經濟工具"
+    }
+  ],
+  "newsDatabase": {
+    "川普": [
+      {
+        "title": "當初為何加瑞士關稅？ 川普：我不喜歡他們講話態度",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/124373/9327574"
+      },
+      {
+        "title": "共和黨黨內造反…挑戰川普政策 眾院撤銷對加拿大徵關稅",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/124373/9327572"
+      },
+      {
+        "title": "川普挺煤電 要國防部採購 指示與發電廠訂定長期協議",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9327522"
+      },
+      {
+        "title": "推乾淨燃煤 川普令戰爭部簽煤電長約",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260213000276-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "央行": [
+      {
+        "title": "貨幣政策…央行表態 不再只盯2%通膨率",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9327653"
+      },
+      {
+        "title": "當前貨幣政策 央行：順暢",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260213000193-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "央行貨幣政策檢視報告 有三考量",
+        "source": "工商金融稅務",
+        "url": "https://www.chinatimes.com/newspapers/20260213000309-260205?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "我貨幣4大特點 因應外部衝擊",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1743693"
+      }
+    ],
+    "美國": [
+      {
+        "title": "美年度赤字恐逾1.8兆美元",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9327526"
+      },
+      {
+        "title": "美國債務占GDP比重 2036年恐升至120％",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260213000199-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "外匯存底偏重美元 三因素",
+        "source": "經濟金融脈動",
+        "url": "https://money.udn.com/money/story/5613/9327475"
+      },
+      {
+        "title": "美眾院通過撤銷加國關稅案",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260213000278-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "占比僅2.4％ 去年美製車來台不到萬輛",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1743667"
+      }
+    ],
+    "台灣": [
+      {
+        "title": "卓揆：台灣人均GDP今年定達4萬美元",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260213000204-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台幣蛇年封關 估終結連三年收貶",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260213000234-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "出口持續爆發 今年GDP可望大幅上修",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1743694"
+      },
+      {
+        "title": "封關前夕 台幣一度升1角",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7239/9327568"
+      },
+      {
+        "title": "賴總統確保台灣矽盾",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260213000190-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "AI": [
+      {
+        "title": "Meta AI大基建 台鏈進補 緯創、英業達、仁寶等接單動能看增",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9327607"
+      },
+      {
+        "title": "2,000億！華碩伺服器拚績增五成 預期AI推論商機來了",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9327610"
+      },
+      {
+        "title": "星國喊打造全球 AI 中心",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9327527"
+      },
+      {
+        "title": "AI助招募「更專注人才本質」",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9327636"
+      },
+      {
+        "title": "拚AI算力 Meta再砸百億美元建大型資料中心",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260213000282-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI激戰 陸科企大模型升級",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260213000291-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI發威 聯想去年Q4營收創高",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260213000295-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "聯發科創意 自建AI超算中心",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260213000317-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI走入實體成新變革",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260213000327-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "黃仁勳：AI是史上最大規模基建",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1743691"
+      },
+      {
+        "title": "AI助攻經濟 93％勞工不滿目前薪資",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260213000527-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "鴻海": [
+      {
+        "title": "郭台銘尾牙加碼3億 鴻海十員工 抽到千萬紅包",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9327614"
+      },
+      {
+        "title": "鴻海金馬年 營收衝9兆 董座劉揚偉喊「絕對比去年好很多」",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9327562"
+      },
+      {
+        "title": "劉揚偉：今年絕對大勝去年",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260213000214-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "劉揚偉": [
+      {
+        "title": "鴻海金馬年 營收衝9兆 董座劉揚偉喊「絕對比去年好很多」",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9327562"
+      },
+      {
+        "title": "劉揚偉：今年絕對大勝去年",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260213000214-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "廣達": [
+      {
+        "title": "廣達砸10億 泰國擴產",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9327609"
+      },
+      {
+        "title": "海外布局再下一城 廣達斥11億加碼泰國擴產",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260213000217-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "華碩": [
+      {
+        "title": "2,000億！華碩伺服器拚績增五成 預期AI推論商機來了",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9327610"
+      },
+      {
+        "title": "衝刺AI伺服器業務 華碩下波成長放眼美國製造",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260213000219-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Meta": [
+      {
+        "title": "Meta AI大基建 台鏈進補 緯創、英業達、仁寶等接單動能看增",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9327607"
+      },
+      {
+        "title": "拚AI算力 Meta再砸百億美元建大型資料中心",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260213000282-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "輝達": [
+      {
+        "title": "輝達中國特供版顯卡 市場不買單",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260213000294-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "黃仁勳": [
+      {
+        "title": "黃仁勳：AI是史上最大規模基建",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1743691"
+      }
+    ],
+    "卓揆": [
+      {
+        "title": "卓揆：台灣人均GDP今年定達4萬美元",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260213000204-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "卓揆喊話 明年最低工資衝3萬",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260213000525-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "關稅": [
+      {
+        "title": "當初為何加瑞士關稅？ 川普：我不喜歡他們講話態度",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/124373/9327574"
+      },
+      {
+        "title": "共和黨黨內造反…挑戰川普政策 眾院撤銷對加拿大徵關稅",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/124373/9327572"
+      },
+      {
+        "title": "美眾院通過撤銷加國關稅案",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260213000278-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "化工品遭美課反傾銷稅",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9327531"
+      }
+    ],
+    "GDP": [
+      {
+        "title": "卓揆：台灣人均GDP今年定達4萬美元",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260213000204-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美國債務占GDP比重 2036年恐升至120％",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260213000199-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "出口持續爆發 今年GDP可望大幅上修",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1743694"
+      }
+    ],
+    "通膨": [
+      {
+        "title": "貨幣政策…央行表態 不再只盯2%通膨率",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9327653"
+      }
+    ],
+    "台幣": [
+      {
+        "title": "台幣蛇年封關 估終結連三年收貶",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260213000234-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "封關前夕 台幣一度升1角",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7239/9327568"
+      }
+    ],
+    "加拿大": [
+      {
+        "title": "共和黨黨內造反…挑戰川普政策 眾院撤銷對加拿大徵關稅",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/124373/9327572"
+      },
+      {
+        "title": "美眾院通過撤銷加國關稅案",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260213000278-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "印度": [
+      {
+        "title": "不滿貿易協議…10工會串聯 印度3億人全國大罷工",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/124373/9327582"
+      }
+    ],
+    "中國": [
+      {
+        "title": "輸中「繞道韓國」沒用！應材遭美罰重金",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260213000225-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "輝達中國特供版顯卡 市場不買單",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260213000294-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI激戰 陸科企大模型升級",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260213000291-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "伺服器": [
+      {
+        "title": "2,000億！華碩伺服器拚績增五成 預期AI推論商機來了",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9327610"
+      },
+      {
+        "title": "衝刺AI伺服器業務 華碩下波成長放眼美國製造",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260213000219-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "半導體": [
+      {
+        "title": "賴總統確保台灣矽盾",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260213000190-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "記憶體": [
+      {
+        "title": "記憶體價飆衝擊毛利率 思科股價重挫",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260213000287-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "群創": [
+      {
+        "title": "群創售廠 南茂、日月光有興趣 傳看上南科二廠及五廠",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9327503"
+      },
+      {
+        "title": "群創南科5廠 市場點名買家是日月光",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1743692"
+      }
+    ],
+    "日月光": [
+      {
+        "title": "群創售廠 南茂、日月光有興趣 傳看上南科二廠及五廠",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9327503"
+      },
+      {
+        "title": "群創南科5廠 市場點名買家是日月光",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1743692"
+      }
+    ],
+    "南茂": [
+      {
+        "title": "群創售廠 南茂、日月光有興趣 傳看上南科二廠及五廠",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9327503"
+      }
+    ],
+    "中小企業": [
+      {
+        "title": "經部射四箭 助中小微企轉型",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260213000207-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "政院4隻箭 助中小微企業升級 4年投入42.5億 強化數位與淨零轉型",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1743669"
+      }
+    ],
+    "最低工資": [
+      {
+        "title": "最低工資破3萬 工商界憂物價狂飆",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260213000529-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "卓揆喊話 明年最低工資衝3萬",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260213000525-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "美光": [
+      {
+        "title": "美光財務長：HBM4已出貨 強調產能供不應求",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260213000226-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "HBM": [
+      {
+        "title": "美光財務長：HBM4已出貨 強調產能供不應求",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260213000226-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "泰國": [
+      {
+        "title": "廣達砸10億 泰國擴產",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9327609"
+      },
+      {
+        "title": "海外布局再下一城 廣達斥11億加碼泰國擴產",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260213000217-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "聯發科": [
+      {
+        "title": "聯發科創意 自建AI超算中心",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260213000317-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "新唐": [
+      {
+        "title": "新唐報喜 BMC訂單看到年底",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260213000326-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "新唐樂觀 MCU 市況",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7253/9327251"
+      }
+    ],
+    "采鈺": [
+      {
+        "title": "采鈺H1穩健 毛利率回神",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260213000320-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "采鈺2025年每股賺4.01元 將配息3元 調高2026年資本支出",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7253/9327250"
+      }
+    ],
+    "蘋果": [
+      {
+        "title": "測試階段受挫 蘋果Siri升級再延期",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260213000285-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "馬斯克": [
+      {
+        "title": "馬斯克重組xAI四大團隊 推Macrohard叫陣微軟",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260213000289-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "貿易協定": [
+      {
+        "title": "不滿貿易協議…10工會串聯 印度3億人全國大罷工",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/124373/9327582"
+      },
+      {
+        "title": "台美簽署貿易協定 美豬降關稅衝擊大？ 美豬開放4年 國產豬穩守9成市占",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1743666"
+      }
+    ],
+    "美豬": [
+      {
+        "title": "業界：美豬難撼台豬市場",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260213000212-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台美簽署貿易協定 美豬降關稅衝擊大？ 美豬開放4年 國產豬穩守9成市占",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1743666"
+      }
+    ],
+    "新加坡": [
+      {
+        "title": "星國喊打造全球 AI 中心",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9327527"
+      }
+    ],
+    "核能": [
+      {
+        "title": "政院強調核能三原則》高階核廢料選址條例 草擬中",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260213000213-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "韓國": [
+      {
+        "title": "輸中「繞道韓國」沒用！應材遭美罰重金",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260213000225-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "應材": [
+      {
+        "title": "輸中「繞道韓國」沒用！應材遭美罰重金",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260213000225-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "資料中心": [
+      {
+        "title": "拚AI算力 Meta再砸百億美元建大型資料中心",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260213000282-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "緯創": [
+      {
+        "title": "Meta AI大基建 台鏈進補 緯創、英業達、仁寶等接單動能看增",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9327607"
+      }
+    ],
+    "英業達": [
+      {
+        "title": "Meta AI大基建 台鏈進補 緯創、英業達、仁寶等接單動能看增",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9327607"
+      }
+    ],
+    "仁寶": [
+      {
+        "title": "Meta AI大基建 台鏈進補 緯創、英業達、仁寶等接單動能看增",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9327607"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "外匯存底偏重美元 三因素 (經濟金融脈動)": "https://money.udn.com/money/story/5613/9327475",
+    "美年度赤字恐逾1.8兆美元 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9327526",
+    "貨幣政策…央行表態 不再只盯2%通膨率 (聯合_產經_股市)": "https://udn.com/news/story/7238/9327653",
+    "當初為何加瑞士關稅？ 川普：我不喜歡他們講話態度 (聯合_產經_股市)": "https://udn.com/news/story/124373/9327574",
+    "不滿貿易協議…10工會串聯 印度3億人全國大罷工 (聯合_產經_股市)": "https://udn.com/news/story/124373/9327582",
+    "共和黨黨內造反…挑戰川普政策 眾院撤銷對加拿大徵關稅 (聯合_產經_股市)": "https://udn.com/news/story/124373/9327572",
+    "高市早苗拚經濟 國防支出是關鍵 (聯合_產經_股市)": "https://udn.com/news/story/6811/9327644",
+    "當前貨幣政策 央行：順暢 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260213000193-260202?utm_source=iii_news&utm_medium=rss",
+    "美國債務占GDP比重 2036年恐升至120％ (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260213000199-260202?utm_source=iii_news&utm_medium=rss",
+    "卓揆：台灣人均GDP今年定達4萬美元 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260213000204-260202?utm_source=iii_news&utm_medium=rss",
+    "經部射四箭 助中小微企轉型 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260213000207-260202?utm_source=iii_news&utm_medium=rss",
+    "台幣蛇年封關 估終結連三年收貶 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260213000234-260202?utm_source=iii_news&utm_medium=rss",
+    "美眾院通過撤銷加國關稅案 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260213000278-260203?utm_source=iii_news&utm_medium=rss",
+    "央行貨幣政策檢視報告 有三考量 (工商金融稅務)": "https://www.chinatimes.com/newspapers/20260213000309-260205?utm_source=iii_news&utm_medium=rss",
+    "年關到 定存單標售急凍 364天期定存單利率升至1.275％ (工商金融稅務)": "https://www.chinatimes.com/newspapers/20260213000315-260205?utm_source=iii_news&utm_medium=rss",
+    "AI助攻經濟 93％勞工不滿目前薪資 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260213000527-260110?utm_source=iii_news&utm_medium=rss",
+    "最低工資破3萬 工商界憂物價狂飆 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260213000529-260110?utm_source=iii_news&utm_medium=rss",
+    "政院4隻箭 助中小微企業升級 4年投入42.5億 強化數位與淨零轉型 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1743669",
+    "出口持續爆發 今年GDP可望大幅上修 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1743694",
+    "我貨幣4大特點 因應外部衝擊 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1743693",
+    "封關前夕 台幣一度升1角 (聯合_產經_股市)": "https://udn.com/news/story/7239/9327568",
+    "Meta AI大基建 台鏈進補 緯創、英業達、仁寶等接單動能看增 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9327607",
+    "廣達砸10億 泰國擴產 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9327609",
+    "2,000億！華碩伺服器拚績增五成 預期AI推論商機來了 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9327610",
+    "郭台銘尾牙加碼3億 鴻海十員工 抽到千萬紅包 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9327614",
+    "群創售廠 南茂、日月光有興趣 傳看上南科二廠及五廠 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9327503",
+    "鴻海金馬年 營收衝9兆 董座劉揚偉喊「絕對比去年好很多」 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9327562",
+    "化工品遭美課反傾銷稅 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9327531",
+    "中華開發資本聚焦科技新創 (經濟金融脈動)": "https://money.udn.com/money/story/5613/9327485",
+    "星國喊打造全球 AI 中心 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9327527",
+    "AI助招募「更專注人才本質」 (聯合_產經_股市)": "https://udn.com/news/story/7238/9327636",
+    "賴總統確保台灣矽盾 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260213000190-260202?utm_source=iii_news&utm_medium=rss",
+    "劉揚偉：今年絕對大勝去年 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260213000214-260202?utm_source=iii_news&utm_medium=rss",
+    "海外布局再下一城 廣達斥11億加碼泰國擴產 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260213000217-260202?utm_source=iii_news&utm_medium=rss",
+    "衝刺AI伺服器業務 華碩下波成長放眼美國製造 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260213000219-260202?utm_source=iii_news&utm_medium=rss",
+    "輸中「繞道韓國」沒用！應材遭美罰重金 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260213000225-260202?utm_source=iii_news&utm_medium=rss",
+    "美光財務長：HBM4已出貨 強調產能供不應求 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260213000226-260202?utm_source=iii_news&utm_medium=rss",
+    "拚AI算力 Meta再砸百億美元建大型資料中心 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260213000282-260203?utm_source=iii_news&utm_medium=rss",
+    "測試階段受挫 蘋果Siri升級再延期 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260213000285-260203?utm_source=iii_news&utm_medium=rss",
+    "記憶體價飆衝擊毛利率 思科股價重挫 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260213000287-260203?utm_source=iii_news&utm_medium=rss",
+    "馬斯克重組xAI四大團隊 推Macrohard叫陣微軟 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260213000289-260203?utm_source=iii_news&utm_medium=rss",
+    "AI激戰 陸科企大模型升級 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260213000291-260203?utm_source=iii_news&utm_medium=rss",
+    "輝達中國特供版顯卡 市場不買單 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260213000294-260203?utm_source=iii_news&utm_medium=rss",
+    "AI發威 聯想去年Q4營收創高 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260213000295-260203?utm_source=iii_news&utm_medium=rss",
+    "聯發科創意 自建AI超算中心 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260213000317-260204?utm_source=iii_news&utm_medium=rss",
+    "采鈺H1穩健 毛利率回神 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260213000320-260204?utm_source=iii_news&utm_medium=rss",
+    "新唐報喜 BMC訂單看到年底 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260213000326-260204?utm_source=iii_news&utm_medium=rss",
+    "AI走入實體成新變革 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260213000327-260204?utm_source=iii_news&utm_medium=rss",
+    "華新科 增持松尾電機 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260213000328-260204?utm_source=iii_news&utm_medium=rss",
+    "智生活App爆資安 16項檢測未過 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260213000506-260114?utm_source=iii_news&utm_medium=rss",
+    "App更新藏危機 專家籲數發部監測 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260213000508-260114?utm_source=iii_news&utm_medium=rss",
+    "群創南科5廠 市場點名買家是日月光 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1743692",
+    "黃仁勳：AI是史上最大規模基建 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1743691",
+    "采鈺2025年每股賺4.01元 將配息3元 調高2026年資本支出 (聯合_產經_股市)": "https://udn.com/news/story/7253/9327250",
+    "新唐樂觀 MCU 市況 (聯合_產經_股市)": "https://udn.com/news/story/7253/9327251",
+    "利機強化高利潤產品線 (聯合_產經_股市)": "https://udn.com/news/story/7253/9327252",
+    "今年首起百日咳現蹤 越南返台嬰確診麻疹 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260213000517-260114?utm_source=iii_news&utm_medium=rss",
+    "業界：美豬難撼台豬市場 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260213000212-260202?utm_source=iii_news&utm_medium=rss",
+    "卓揆喊話 明年最低工資衝3萬 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260213000525-260110?utm_source=iii_news&utm_medium=rss",
+    "台美簽署貿易協定 美豬降關稅衝擊大？ 美豬開放4年 國產豬穩守9成市占 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1743666",
+    "鎳價大漲 不銹鋼廠前景俏 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9327529",
+    "不銹鋼市場 中長線要看終端需求 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9327530",
+    "川普挺煤電 要國防部採購 指示與發電廠訂定長期協議 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9327522",
+    "政院強調核能三原則》高階核廢料選址條例 草擬中 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260213000213-260202?utm_source=iii_news&utm_medium=rss",
+    "推乾淨燃煤 川普令戰爭部簽煤電長約 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260213000276-260203?utm_source=iii_news&utm_medium=rss",
+    "尋「非紅」稀土礦源 經部鎖定美3州 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1743670",
+    "占比僅2.4％ 去年美製車來台不到萬輛 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1743667"
+  }
+}
