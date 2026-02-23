@@ -1,0 +1,1225 @@
+{
+  "nodes": [
+    {
+      "id": "川普",
+      "group": "person",
+      "size": 25
+    },
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 22
+    },
+    {
+      "id": "中國",
+      "group": "country",
+      "size": 18
+    },
+    {
+      "id": "德國",
+      "group": "country",
+      "size": 15
+    },
+    {
+      "id": "台灣",
+      "group": "country",
+      "size": 20
+    },
+    {
+      "id": "關稅政策",
+      "group": "finance",
+      "size": 24
+    },
+    {
+      "id": "輝達",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "台積電",
+      "group": "company",
+      "size": 17
+    },
+    {
+      "id": "鴻海",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "力積電",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "三星",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "SK海力士",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "AI產業",
+      "group": "tech",
+      "size": 20
+    },
+    {
+      "id": "記憶體產業",
+      "group": "tech",
+      "size": 17
+    },
+    {
+      "id": "低軌衛星",
+      "group": "tech",
+      "size": 15
+    },
+    {
+      "id": "半導體產業",
+      "group": "tech",
+      "size": 19
+    },
+    {
+      "id": "聯準會",
+      "group": "org",
+      "size": 13
+    },
+    {
+      "id": "央行",
+      "group": "org",
+      "size": 12
+    },
+    {
+      "id": "SpaceX",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "亞馬遜",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "微軟",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "OpenAI",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "阿里",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "新台幣",
+      "group": "finance",
+      "size": 13
+    },
+    {
+      "id": "貿易協議",
+      "group": "finance",
+      "size": 16
+    },
+    {
+      "id": "天聲",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "鋼鐵業",
+      "group": "tech",
+      "size": 11
+    },
+    {
+      "id": "伊朗",
+      "group": "country",
+      "size": 8
+    },
+    {
+      "id": "墨西哥",
+      "group": "country",
+      "size": 8
+    },
+    {
+      "id": "日本",
+      "group": "country",
+      "size": 10
+    },
+    {
+      "id": "諾基亞",
+      "group": "company",
+      "size": 9
+    },
+    {
+      "id": "華碩",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "宏碁",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "新藥產業",
+      "group": "tech",
+      "size": 11
+    },
+    {
+      "id": "村田",
+      "group": "company",
+      "size": 9
+    },
+    {
+      "id": "大東電",
+      "group": "company",
+      "size": 9
+    },
+    {
+      "id": "全球傳動",
+      "group": "company",
+      "size": 8
+    }
+  ],
+  "links": [
+    {
+      "source": "川普",
+      "target": "關稅政策",
+      "value": 5,
+      "label": "政策主導"
+    },
+    {
+      "source": "川普",
+      "target": "美國",
+      "value": 5,
+      "label": "國家領導"
+    },
+    {
+      "source": "關稅政策",
+      "target": "中國",
+      "value": 5,
+      "label": "貿易衝突"
+    },
+    {
+      "source": "關稅政策",
+      "target": "台灣",
+      "value": 4,
+      "label": "政策影響"
+    },
+    {
+      "source": "關稅政策",
+      "target": "德國",
+      "value": 4,
+      "label": "貿易關係"
+    },
+    {
+      "source": "中國",
+      "target": "德國",
+      "value": 4,
+      "label": "最大貿易夥伴"
+    },
+    {
+      "source": "川普",
+      "target": "貿易協議",
+      "value": 4,
+      "label": "協議談判"
+    },
+    {
+      "source": "川普",
+      "target": "伊朗",
+      "value": 3,
+      "label": "外交施壓"
+    },
+    {
+      "source": "川普",
+      "target": "墨西哥",
+      "value": 3,
+      "label": "政策施壓"
+    },
+    {
+      "source": "聯準會",
+      "target": "新台幣",
+      "value": 4,
+      "label": "政策影響"
+    },
+    {
+      "source": "央行",
+      "target": "新台幣",
+      "value": 4,
+      "label": "匯率監控"
+    },
+    {
+      "source": "央行",
+      "target": "關稅政策",
+      "value": 3,
+      "label": "政策關注"
+    },
+    {
+      "source": "輝達",
+      "target": "AI產業",
+      "value": 5,
+      "label": "產業領導"
+    },
+    {
+      "source": "輝達",
+      "target": "台積電",
+      "value": 5,
+      "label": "供應鏈合作"
+    },
+    {
+      "source": "輝達",
+      "target": "鴻海",
+      "value": 4,
+      "label": "供應鏈合作"
+    },
+    {
+      "source": "台積電",
+      "target": "半導體產業",
+      "value": 5,
+      "label": "產業龍頭"
+    },
+    {
+      "source": "台積電",
+      "target": "台灣",
+      "value": 5,
+      "label": "關鍵企業"
+    },
+    {
+      "source": "鴻海",
+      "target": "AI產業",
+      "value": 4,
+      "label": "產業布局"
+    },
+    {
+      "source": "鴻海",
+      "target": "OpenAI",
+      "value": 4,
+      "label": "商業合作"
+    },
+    {
+      "source": "力積電",
+      "target": "記憶體產業",
+      "value": 5,
+      "label": "製造重任"
+    },
+    {
+      "source": "力積電",
+      "target": "AI產業",
+      "value": 4,
+      "label": "供應鏈整合"
+    },
+    {
+      "source": "力積電",
+      "target": "台灣",
+      "value": 4,
+      "label": "台美日合作"
+    },
+    {
+      "source": "力積電",
+      "target": "日本",
+      "value": 3,
+      "label": "技術合作"
+    },
+    {
+      "source": "力積電",
+      "target": "美國",
+      "value": 3,
+      "label": "技術合作"
+    },
+    {
+      "source": "三星",
+      "target": "記憶體產業",
+      "value": 5,
+      "label": "市場霸主"
+    },
+    {
+      "source": "三星",
+      "target": "SK海力士",
+      "value": 4,
+      "label": "市場競爭"
+    },
+    {
+      "source": "SK海力士",
+      "target": "記憶體產業",
+      "value": 4,
+      "label": "價格主導"
+    },
+    {
+      "source": "記憶體產業",
+      "target": "AI產業",
+      "value": 5,
+      "label": "關鍵供應"
+    },
+    {
+      "source": "村田",
+      "target": "三星",
+      "value": 3,
+      "label": "產能協同"
+    },
+    {
+      "source": "低軌衛星",
+      "target": "SpaceX",
+      "value": 5,
+      "label": "技術領先"
+    },
+    {
+      "source": "低軌衛星",
+      "target": "亞馬遜",
+      "value": 4,
+      "label": "市場布局"
+    },
+    {
+      "source": "低軌衛星",
+      "target": "台灣",
+      "value": 4,
+      "label": "供應鏈機會"
+    },
+    {
+      "source": "微軟",
+      "target": "AI產業",
+      "value": 4,
+      "label": "技術應用"
+    },
+    {
+      "source": "OpenAI",
+      "target": "AI產業",
+      "value": 5,
+      "label": "技術領導"
+    },
+    {
+      "source": "阿里",
+      "target": "AI產業",
+      "value": 4,
+      "label": "技術開發"
+    },
+    {
+      "source": "阿里",
+      "target": "中國",
+      "value": 4,
+      "label": "本土企業"
+    },
+    {
+      "source": "諾基亞",
+      "target": "華碩",
+      "value": 4,
+      "label": "專利爭議"
+    },
+    {
+      "source": "諾基亞",
+      "target": "宏碁",
+      "value": 4,
+      "label": "專利爭議"
+    },
+    {
+      "source": "諾基亞",
+      "target": "德國",
+      "value": 3,
+      "label": "市場禁售"
+    },
+    {
+      "source": "華碩",
+      "target": "台灣",
+      "value": 4,
+      "label": "本土企業"
+    },
+    {
+      "source": "宏碁",
+      "target": "台灣",
+      "value": 4,
+      "label": "本土企業"
+    },
+    {
+      "source": "天聲",
+      "target": "鋼鐵業",
+      "value": 5,
+      "label": "產業代表"
+    },
+    {
+      "source": "天聲",
+      "target": "美國",
+      "value": 4,
+      "label": "海外設廠"
+    },
+    {
+      "source": "天聲",
+      "target": "台灣",
+      "value": 4,
+      "label": "本土企業"
+    },
+    {
+      "source": "鋼鐵業",
+      "target": "關稅政策",
+      "value": 4,
+      "label": "政策影響"
+    },
+    {
+      "source": "大東電",
+      "target": "AI產業",
+      "value": 3,
+      "label": "電力線纜供應"
+    },
+    {
+      "source": "大東電",
+      "target": "台灣",
+      "value": 3,
+      "label": "本土企業"
+    },
+    {
+      "source": "全球傳動",
+      "target": "中國",
+      "value": 3,
+      "label": "投資設廠"
+    },
+    {
+      "source": "全球傳動",
+      "target": "台灣",
+      "value": 3,
+      "label": "本土企業"
+    },
+    {
+      "source": "新藥產業",
+      "target": "台灣",
+      "value": 4,
+      "label": "產業發展"
+    },
+    {
+      "source": "新藥產業",
+      "target": "日本",
+      "value": 3,
+      "label": "市場拓展"
+    },
+    {
+      "source": "半導體產業",
+      "target": "AI產業",
+      "value": 5,
+      "label": "核心技術"
+    },
+    {
+      "source": "半導體產業",
+      "target": "台灣",
+      "value": 5,
+      "label": "關鍵產業"
+    },
+    {
+      "source": "關稅政策",
+      "target": "美國",
+      "value": 5,
+      "label": "政策來源"
+    }
+  ],
+  "newsDatabase": {
+    "川普": [
+      {
+        "title": "川普施壓伊朗恐有反效果 使中東陷入新動盪",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9338139"
+      },
+      {
+        "title": "川普：加徵15%關稅 各國審慎 估不會撤銷與美協議",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9338204"
+      },
+      {
+        "title": "川普全球加徵15%關稅 專家：「B計畫」也無法律基礎",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9338228"
+      },
+      {
+        "title": "川普：加徵15%關稅立即生效 全球貿易重返不確定性時代",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9338203"
+      },
+      {
+        "title": "川普關稅被判違法／央行密切關注其最新發展 匯銀人士提五點觀察",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9336994"
+      },
+      {
+        "title": "川普再漲關稅至15% 立即生效",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/124373/9338170"
+      },
+      {
+        "title": "川普再反擊 全球關稅升至15％",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000099-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "川普關稅違法裁決 傳產業…讓子彈飛一下",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000109-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "川普關稅違法 各國謹慎以對",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000110-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "火速加徵15％ 全球經貿陷動盪",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000387-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "川普施壓墨西哥剿毒　毒梟歐塞奎拉軍事行動中負傷身亡",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9338341"
+      },
+      {
+        "title": "川普祭新關稅 比特幣下挫",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260223000173-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "美國": [
+      {
+        "title": "川普全球加徵15%關稅 專家：「B計畫」也無法律基礎",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9338228"
+      },
+      {
+        "title": "超越美國 大陸重登德國最大貿易夥伴",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9338171"
+      },
+      {
+        "title": "關稅違法 美企紛提告求退款",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260223000166-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "通膨上升、減重藥熱銷 美食品業降價吸引顧客回流",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9338166"
+      },
+      {
+        "title": "美車4月零關稅 得再等等",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000404-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中國": [
+      {
+        "title": "超越美國 大陸重登德國最大貿易夥伴",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9338171"
+      },
+      {
+        "title": "中籲取消IEEPA關稅 若加徵將反制",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000113-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "2025年中國對德順差增逾三成…梅爾茨明訪中深化貿易合作",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260223000179-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "全球傳動 啟動大陸蘇州建廠計畫",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000204-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "德國": [
+      {
+        "title": "超越美國 大陸重登德國最大貿易夥伴",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9338171"
+      },
+      {
+        "title": "2025年中國對德順差增逾三成…梅爾茨明訪中深化貿易合作",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260223000179-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "諾基亞專利爭議 雙A 部分PC產品暫停德國銷售",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000208-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "雙A部分PC遭德國禁售",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7253/9337935"
+      }
+    ],
+    "台灣": [
+      {
+        "title": "評估台美協議 台灣動不如靜",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000107-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台美日聯手進擊 AI 記憶體 力積電扛起試產與製造重任",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9338193"
+      },
+      {
+        "title": "搶進歐系衛星供應鏈！前進MWC 台擬與IEEC簽合作協議",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000146-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "低軌衛星熱度升 台鏈衝",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000152-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "主權衛星熱 引爆兆元商機…燿華、昇達科等有望受惠",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9338198"
+      },
+      {
+        "title": "力闖國際 台灣新藥迎決戰年",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000154-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "鋼廠赴美設點開出第一槍 API 石油鋼管大廠天聲將斥資13億元前進德州",
+        "source": "經濟電商新鮮事",
+        "url": "https://money.udn.com/money/story/10871/9338207"
+      }
+    ],
+    "關稅政策": [
+      {
+        "title": "彭博示警 緩衝期過後祭301永久措施",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9338230"
+      },
+      {
+        "title": "川普：加徵15%關稅 各國審慎 估不會撤銷與美協議",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9338204"
+      },
+      {
+        "title": "川普全球加徵15%關稅 專家：「B計畫」也無法律基礎",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9338228"
+      },
+      {
+        "title": "川普：加徵15%關稅立即生效 全球貿易重返不確定性時代",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9338203"
+      },
+      {
+        "title": "川普關稅被判違法／央行密切關注其最新發展 匯銀人士提五點觀察",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9336994"
+      },
+      {
+        "title": "川普再漲關稅至15% 立即生效",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/124373/9338170"
+      },
+      {
+        "title": "川普再反擊 全球關稅升至15％",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000099-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "評估台美協議 台灣動不如靜",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000107-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "川普關稅違法裁決 傳產業…讓子彈飛一下",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000109-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "川普關稅違法 各國謹慎以對",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000110-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "中籲取消IEEPA關稅 若加徵將反制",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000113-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "關稅違法 美企紛提告求退款",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260223000166-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "火速加徵15％ 全球經貿陷動盪",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000387-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "輝達": [
+      {
+        "title": "輝達 GTC 將秀新品「世界前所未見」晶片 台積、鴻海等營運進補",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9338194"
+      },
+      {
+        "title": "輝達本周公布財報 營收估增67%",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9338199"
+      },
+      {
+        "title": "輝達GTC將秀新品 台積、鴻海等營運進補",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9338194"
+      }
+    ],
+    "台積電": [
+      {
+        "title": "輝達 GTC 將秀新品「世界前所未見」晶片 台積、鴻海等營運進補",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9338194"
+      },
+      {
+        "title": "輝達GTC將秀新品 台積、鴻海等營運進補",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9338194"
+      }
+    ],
+    "鴻海": [
+      {
+        "title": "輝達 GTC 將秀新品「世界前所未見」晶片 台積、鴻海等營運進補",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9338194"
+      },
+      {
+        "title": "輝達GTC將秀新品 台積、鴻海等營運進補",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9338194"
+      },
+      {
+        "title": "OpenAI切入實體AI市場 鴻海有望通吃大單",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9338202"
+      }
+    ],
+    "力積電": [
+      {
+        "title": "台美日聯手進擊 AI 記憶體 力積電扛起試產與製造重任",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9338193"
+      },
+      {
+        "title": "力積電 變身AI供應鏈整合者",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9338195"
+      }
+    ],
+    "三星": [
+      {
+        "title": "三星重登全球 DRAM 霸主",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9338169"
+      },
+      {
+        "title": "三星重登全球DRAM霸主",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9338169"
+      },
+      {
+        "title": "村田、三星電機產能滿載…MLCC大廠喊漲價 台廠受惠",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000144-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "SK海力士": [
+      {
+        "title": "記憶體轉向賣方市場…SK海力士：價格上漲成定局",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000151-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "AI產業": [
+      {
+        "title": "台美日聯手進擊 AI 記憶體 力積電扛起試產與製造重任",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9338193"
+      },
+      {
+        "title": "AI 伺服器、先進封裝 擇優加碼",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7251/9337955"
+      },
+      {
+        "title": "AI影片逼真 Seedance2.0遭美控侵權",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9338191"
+      },
+      {
+        "title": "力積電 變身AI供應鏈整合者",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9338195"
+      },
+      {
+        "title": "蔡力行示警 AI算力能源牆危機",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000207-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "資料中心送上太空 奧特曼：荒謬",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260223000169-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "微軟：未來一年白領工作多被AI取代",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260223000171-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "阿里推Qwen Coding Plan 獲專業工程師青睞",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260223000183-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "OpenAI切入實體AI市場 鴻海有望通吃大單",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9338202"
+      },
+      {
+        "title": "大東電董座林志明專訪／拚 AI 電力線纜第一股",
+        "source": "經濟電商新鮮事",
+        "url": "https://money.udn.com/money/story/10871/9338140"
+      }
+    ],
+    "記憶體產業": [
+      {
+        "title": "三星重登全球 DRAM 霸主",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9338169"
+      },
+      {
+        "title": "台美日聯手進擊 AI 記憶體 力積電扛起試產與製造重任",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9338193"
+      },
+      {
+        "title": "三星重登全球DRAM霸主",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9338169"
+      },
+      {
+        "title": "記憶體轉向賣方市場…SK海力士：價格上漲成定局",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000151-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "低軌衛星": [
+      {
+        "title": "MWC焦點…低軌衛星夯 SpaceX、亞馬遜領跑",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9338130"
+      },
+      {
+        "title": "全球元年…手機直連衛星 飛機上也能用",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9338129"
+      },
+      {
+        "title": "搶進歐系衛星供應鏈！前進MWC 台擬與IEEC簽合作協議",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000146-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "低軌衛星熱度升 台鏈衝",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000152-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "主權衛星熱 引爆兆元商機…燿華、昇達科等有望受惠",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9338198"
+      }
+    ],
+    "半導體產業": [
+      {
+        "title": "輝達 GTC 將秀新品「世界前所未見」晶片 台積、鴻海等營運進補",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9338194"
+      },
+      {
+        "title": "AI 伺服器、先進封裝 擇優加碼",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7251/9337955"
+      }
+    ],
+    "聯準會": [
+      {
+        "title": "美元還能強多久？新台幣盤整靜待聯準會「華許政策」",
+        "source": "經濟金融脈動",
+        "url": "https://money.udn.com/money/story/5613/9338301"
+      }
+    ],
+    "央行": [
+      {
+        "title": "川普關稅被判違法／央行密切關注其最新發展 匯銀人士提五點觀察",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9336994"
+      }
+    ],
+    "SpaceX": [
+      {
+        "title": "MWC焦點…低軌衛星夯 SpaceX、亞馬遜領跑",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9338130"
+      }
+    ],
+    "亞馬遜": [
+      {
+        "title": "MWC焦點…低軌衛星夯 SpaceX、亞馬遜領跑",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9338130"
+      }
+    ],
+    "微軟": [
+      {
+        "title": "微軟：未來一年白領工作多被AI取代",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260223000171-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "OpenAI": [
+      {
+        "title": "OpenAI切入實體AI市場 鴻海有望通吃大單",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9338202"
+      },
+      {
+        "title": "資料中心送上太空 奧特曼：荒謬",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260223000169-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "阿里": [
+      {
+        "title": "阿里推Qwen Coding Plan 獲專業工程師青睞",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260223000183-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "新台幣": [
+      {
+        "title": "美元還能強多久？新台幣盤整靜待聯準會「華許政策」",
+        "source": "經濟金融脈動",
+        "url": "https://money.udn.com/money/story/5613/9338301"
+      },
+      {
+        "title": "川普關稅被判違法／央行密切關注其最新發展 匯銀人士提五點觀察",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9336994"
+      }
+    ],
+    "貿易協議": [
+      {
+        "title": "川普：加徵15%關稅 各國審慎 估不會撤銷與美協議",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9338204"
+      },
+      {
+        "title": "評估台美協議 台灣動不如靜",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000107-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "天聲": [
+      {
+        "title": "鋼廠赴美設點開出第一槍 API 石油鋼管大廠天聲將斥資13億元前進德州",
+        "source": "經濟電商新鮮事",
+        "url": "https://money.udn.com/money/story/10871/9338207"
+      },
+      {
+        "title": "傾銷爭議 天聲董事長張水圳曾硬槓美政府",
+        "source": "經濟電商新鮮事",
+        "url": "https://money.udn.com/money/story/10871/9338184"
+      },
+      {
+        "title": "鋼廠赴美設點開出第一槍 API石油鋼管大廠天聲將斥資13億元前進德州",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7241/9338207"
+      }
+    ],
+    "鋼鐵業": [
+      {
+        "title": "鋼廠赴美設點開出第一槍 API 石油鋼管大廠天聲將斥資13億元前進德州",
+        "source": "經濟電商新鮮事",
+        "url": "https://money.udn.com/money/story/10871/9338207"
+      },
+      {
+        "title": "全球鋼市 今年有望先蹲後跳",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000198-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "鋼鐵業復甦之路需克服三變數",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000201-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "伊朗": [
+      {
+        "title": "川普施壓伊朗恐有反效果 使中東陷入新動盪",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9338139"
+      }
+    ],
+    "墨西哥": [
+      {
+        "title": "川普施壓墨西哥剿毒　毒梟歐塞奎拉軍事行動中負傷身亡",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9338341"
+      }
+    ],
+    "日本": [
+      {
+        "title": "台美日聯手進擊 AI 記憶體 力積電扛起試產與製造重任",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9338193"
+      },
+      {
+        "title": "藥華藥新藥攻日報捷",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7253/9337948"
+      }
+    ],
+    "諾基亞": [
+      {
+        "title": "諾基亞專利爭議 雙A 部分PC產品暫停德國銷售",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000208-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "雙A部分PC遭德國禁售",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7253/9337935"
+      }
+    ],
+    "華碩": [
+      {
+        "title": "諾基亞專利爭議 雙A 部分PC產品暫停德國銷售",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000208-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "雙A部分PC遭德國禁售",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7253/9337935"
+      }
+    ],
+    "宏碁": [
+      {
+        "title": "諾基亞專利爭議 雙A 部分PC產品暫停德國銷售",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000208-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "雙A部分PC遭德國禁售",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7253/9337935"
+      }
+    ],
+    "新藥產業": [
+      {
+        "title": "藥華藥新藥攻日報捷",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7253/9337948"
+      },
+      {
+        "title": "力闖國際 台灣新藥迎決戰年",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000154-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "《再生醫療雙法》新制上路 新藥公司競拚暫時性藥證",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000157-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "村田": [
+      {
+        "title": "村田、三星電機產能滿載…MLCC大廠喊漲價 台廠受惠",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000144-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "大東電": [
+      {
+        "title": "大東電董座林志明專訪／他，善用數據 掌握極限",
+        "source": "經濟電商新鮮事",
+        "url": "https://money.udn.com/money/story/10871/9338142"
+      },
+      {
+        "title": "大東電董座林志明專訪／拚 AI 電力線纜第一股",
+        "source": "經濟電商新鮮事",
+        "url": "https://money.udn.com/money/story/10871/9338140"
+      }
+    ],
+    "全球傳動": [
+      {
+        "title": "全球傳動 啟動大陸蘇州建廠計畫",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260223000204-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "川普施壓伊朗恐有反效果 使中東陷入新動盪 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9338139",
+    "彭博示警 緩衝期過後祭301永久措施 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9338230",
+    "川普：加徵15%關稅 各國審慎 估不會撤銷與美協議 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9338204",
+    "川普全球加徵15%關稅 專家：「B計畫」也無法律基礎 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9338228",
+    "川普：加徵15%關稅立即生效 全球貿易重返不確定性時代 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9338203",
+    "美元還能強多久？新台幣盤整靜待聯準會「華許政策」 (經濟金融脈動)": "https://money.udn.com/money/story/5613/9338301",
+    "川普關稅被判違法／央行密切關注其最新發展 匯銀人士提五點觀察 (聯合_產經_股市)": "https://udn.com/news/story/7238/9336994",
+    "川普再漲關稅至15% 立即生效 (聯合_產經_股市)": "https://udn.com/news/story/124373/9338170",
+    "超越美國 大陸重登德國最大貿易夥伴 (聯合_產經_股市)": "https://udn.com/news/story/6811/9338171",
+    "川普再反擊 全球關稅升至15％ (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260223000099-260202?utm_source=iii_news&utm_medium=rss",
+    "評估台美協議 台灣動不如靜 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260223000107-260202?utm_source=iii_news&utm_medium=rss",
+    "川普關稅違法裁決 傳產業…讓子彈飛一下 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260223000109-260202?utm_source=iii_news&utm_medium=rss",
+    "川普關稅違法 各國謹慎以對 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260223000110-260202?utm_source=iii_news&utm_medium=rss",
+    "中籲取消IEEPA關稅 若加徵將反制 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260223000113-260202?utm_source=iii_news&utm_medium=rss",
+    "關稅違法 美企紛提告求退款 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260223000166-260203?utm_source=iii_news&utm_medium=rss",
+    "2025年中國對德順差增逾三成…梅爾茨明訪中深化貿易合作 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260223000179-260203?utm_source=iii_news&utm_medium=rss",
+    "火速加徵15％ 全球經貿陷動盪 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260223000387-260110?utm_source=iii_news&utm_medium=rss",
+    "三星重登全球 DRAM 霸主 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9338169",
+    "輝達 GTC 將秀新品「世界前所未見」晶片 台積、鴻海等營運進補 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9338194",
+    "台美日聯手進擊 AI 記憶體 力積電扛起試產與製造重任 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9338193",
+    "川普施壓墨西哥剿毒　毒梟歐塞奎拉軍事行動中負傷身亡 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9338341",
+    "輝達本周公布財報 營收估增67% (聯合_產經_股市)": "https://udn.com/news/story/7240/9338199",
+    "MWC焦點…低軌衛星夯 SpaceX、亞馬遜領跑 (聯合_產經_股市)": "https://udn.com/news/story/7240/9338130",
+    "全球元年…手機直連衛星 飛機上也能用 (聯合_產經_股市)": "https://udn.com/news/story/7240/9338129",
+    "AI 伺服器、先進封裝 擇優加碼 (聯合_產經_股市)": "https://udn.com/news/story/7251/9337955",
+    "AI影片逼真 Seedance2.0遭美控侵權 (聯合_產經_股市)": "https://udn.com/news/story/6811/9338191",
+    "輝達GTC將秀新品 台積、鴻海等營運進補 (聯合_產經_股市)": "https://udn.com/news/story/7240/9338194",
+    "力積電 變身AI供應鏈整合者 (聯合_產經_股市)": "https://udn.com/news/story/7240/9338195",
+    "三星重登全球DRAM霸主 (聯合_產經_股市)": "https://udn.com/news/story/6811/9338169",
+    "村田、三星電機產能滿載…MLCC大廠喊漲價 台廠受惠 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260223000144-260202?utm_source=iii_news&utm_medium=rss",
+    "搶進歐系衛星供應鏈！前進MWC 台擬與IEEC簽合作協議 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260223000146-260202?utm_source=iii_news&utm_medium=rss",
+    "記憶體轉向賣方市場…SK海力士：價格上漲成定局 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260223000151-260202?utm_source=iii_news&utm_medium=rss",
+    "低軌衛星熱度升 台鏈衝 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260223000152-260202?utm_source=iii_news&utm_medium=rss",
+    "全球傳動 啟動大陸蘇州建廠計畫 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260223000204-260202?utm_source=iii_news&utm_medium=rss",
+    "蔡力行示警 AI算力能源牆危機 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260223000207-260202?utm_source=iii_news&utm_medium=rss",
+    "諾基亞專利爭議 雙A 部分PC產品暫停德國銷售 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260223000208-260202?utm_source=iii_news&utm_medium=rss",
+    "資料中心送上太空 奧特曼：荒謬 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260223000169-260203?utm_source=iii_news&utm_medium=rss",
+    "微軟：未來一年白領工作多被AI取代 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260223000171-260203?utm_source=iii_news&utm_medium=rss",
+    "川普祭新關稅 比特幣下挫 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260223000173-260203?utm_source=iii_news&utm_medium=rss",
+    "阿里推Qwen Coding Plan 獲專業工程師青睞 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260223000183-260203?utm_source=iii_news&utm_medium=rss",
+    "主權衛星熱 引爆兆元商機…燿華、昇達科等有望受惠 (聯合_產經_股市)": "https://udn.com/news/story/7240/9338198",
+    "OpenAI切入實體AI市場 鴻海有望通吃大單 (聯合_產經_股市)": "https://udn.com/news/story/7240/9338202",
+    "雙A部分PC遭德國禁售 (聯合_產經_股市)": "https://udn.com/news/story/7253/9337935",
+    "藥華藥新藥攻日報捷 (聯合_產經_股市)": "https://udn.com/news/story/7253/9337948",
+    "通膨上升、減重藥熱銷 美食品業降價吸引顧客回流 (聯合_產經_股市)": "https://udn.com/news/story/6811/9338166",
+    "力闖國際 台灣新藥迎決戰年 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260223000154-260202?utm_source=iii_news&utm_medium=rss",
+    "《再生醫療雙法》新制上路 新藥公司競拚暫時性藥證 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260223000157-260202?utm_source=iii_news&utm_medium=rss",
+    "省稅助攻 會計完備醫療院所增3家 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260223000424-260114?utm_source=iii_news&utm_medium=rss",
+    "複利效應 勞退自提助退休金翻倍 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260223000162-260202?utm_source=iii_news&utm_medium=rss",
+    "鋼廠赴美設點開出第一槍 API 石油鋼管大廠天聲將斥資13億元前進德州 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9338207",
+    "傾銷爭議 天聲董事長張水圳曾硬槓美政府 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9338184",
+    "大東電董座林志明專訪／他，善用數據 掌握極限 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9338142",
+    "大東電董座林志明專訪／拚 AI 電力線纜第一股 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9338140",
+    "全球鋼市 今年有望先蹲後跳 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260223000198-260202?utm_source=iii_news&utm_medium=rss",
+    "鋼鐵業復甦之路需克服三變數 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260223000201-260202?utm_source=iii_news&utm_medium=rss",
+    "鋼廠赴美設點開出第一槍 API石油鋼管大廠天聲將斥資13億元前進德州 (聯合_產經_股市)": "https://udn.com/news/story/7241/9338207",
+    "美車4月零關稅 得再等等 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260223000404-260110?utm_source=iii_news&utm_medium=rss"
+  }
+}

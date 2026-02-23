@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITIS 每日新聞關聯圖譜</title>
+    <script src="https://unpkg.com/d3"></script>
+    <script src="https://unpkg.com/force-graph"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0b0b0b;
+            --text-color: #e0e0e0;
+            --accent-color: #ff9900; /* Cosmic Orange */
+            --node-bg: #1a1a1a;
+            --node-border: #ff9900;
+            --link-color: rgba(255, 153, 0, 0.4);
+            --dim-color: rgba(255, 255, 255, 0.1);
+        }
+
+        body { 
+            margin: 0; 
+            font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif; 
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            overflow: hidden; 
+        }
+
+        #graph { 
+            width: 100vw; 
+            height: 100vh; 
+        }
+
+        .controls {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(11, 11, 11, 0.9);
+            border: 1px solid var(--accent-color);
+            padding: 20px;
+            width: 280px;
+            max-height: 90vh;
+            overflow-y: auto;
+            z-index: 100;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            transition: transform 0.25s ease;
+        }
+        .controls.hidden {
+            transform: translateX(calc(-100% - 40px));
+        }
+        .controls .toggle-panel-btn {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: transparent;
+            border: 1px solid #555;
+            color: #ccc;
+            cursor: pointer;
+            padding: 10px 12px;
+            min-width: 44px;
+            min-height: 44px;
+            font-size: 0.9rem;
+            border-radius: 4px;
+            line-height: 1;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .controls .toggle-panel-btn:hover {
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+        }
+        .controls-toggle-tab {
+            position: fixed;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 99;
+            display: none;
+            padding: 14px 12px;
+            min-width: 44px;
+            min-height: 44px;
+            background: rgba(11, 11, 11, 0.95);
+            border: 1px solid var(--accent-color);
+            border-left: none;
+            border-radius: 0 8px 8px 0;
+            color: var(--accent-color);
+            cursor: pointer;
+            font-size: 1rem;
+            line-height: 1;
+            box-shadow: 2px 0 8px rgba(0,0,0,0.3);
+            align-items: center;
+            justify-content: center;
+        }
+        .controls-toggle-tab:hover {
+            background: rgba(26, 26, 26, 0.98);
+        }
+        .controls-toggle-tab.visible {
+            display: flex;
+        }
+
+        .controls h1 {
+            margin: 0 30px 15px 0;
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 1px solid var(--accent-color);
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: #aaa;
+            margin-bottom: 10px;
+        }
+
+        select, input[type="text"] {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            background: #222;
+            color: var(--text-color);
+            border: 1px solid var(--accent-color);
+            margin-top: 5px;
+            margin-bottom: 20px;
+            font-family: inherit;
+            outline: none;
+        }
+        
+        select:hover, input[type="text"]:hover {
+            background: #333;
+        }
+
+        #keyword-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .keyword-tag {
+            font-size: 0.8rem;
+            padding: 4px 8px;
+            border: 1px solid #555;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: #ccc;
+            background: rgba(255,255,255,0.05);
+        }
+
+        .keyword-tag:hover {
+            border-color: var(--accent-color);
+            color: #fff;
+        }
+
+        .keyword-tag.active {
+            background: var(--accent-color);
+            color: #000;
+            border-color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .node-label {
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 2px 5px;
+            font-size: 12px;
+            pointer-events: none;
+        }
+        
+        #loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            display: none;
+        }
+
+        #toast {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(26, 26, 26, 0.95);
+            border: 1px solid var(--accent-color);
+            padding: 15px 25px;
+            border-radius: 4px;
+            color: #fff;
+            display: none;
+            z-index: 200;
+            max-width: 80%;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(255, 153, 0, 0.2);
+        }
+        
+        #toast h3 {
+            margin: 0 0 5px 0;
+            color: var(--accent-color);
+            font-size: 1rem;
+        }
+
+        #news-panel {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 320px;
+            max-height: 85vh;
+            background: rgba(11, 11, 11, 0.95);
+            border: 1px solid var(--accent-color);
+            padding: 15px;
+            border-radius: 4px;
+            display: none;
+            z-index: 150;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+        }
+        #news-panel.visible { display: block; }
+        #news-panel h3 {
+            margin: 0 0 10px 0;
+            color: var(--accent-color);
+            font-size: 1rem;
+            padding-right: 28px;
+        }
+        #news-panel .close-btn {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: transparent;
+            border: 1px solid #555;
+            color: #ccc;
+            cursor: pointer;
+            padding: 2px 8px;
+            font-size: 0.9rem;
+            border-radius: 4px;
+        }
+        #news-panel .close-btn:hover {
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+        }
+        #news-panel .news-list {
+            overflow-y: auto;
+            max-height: calc(85vh - 60px);
+        }
+        #news-panel .news-item {
+            padding: 8px 0;
+            border-bottom: 1px solid #333;
+            font-size: 0.85rem;
+        }
+        #news-panel .news-item:last-child { border-bottom: none; }
+        #news-panel .news-item a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        #news-panel .news-item a:hover { text-decoration: underline; }
+        #news-panel .news-item .source { color: #888; font-size: 0.8rem; }
+
+    </style>
+</head>
+<body>
+    <div class="controls" id="controls-panel">
+        <button type="button" class="toggle-panel-btn" id="toggle-panel-btn" aria-label="收合側欄">◀ 收合</button>
+        <h1>每日新聞關聯圖譜</h1>
+        <p>節點：實體 (點擊查看相關新聞)</p>
+        <p>連線：實體關係 (點擊查看類型)</p>
+        
+        <select id="date-selector">
+            <option value="" disabled selected>選擇日期...</option>
+        </select>
+        
+        <p style="margin-top: 20px; border-top: 1px solid #333; padding-top: 10px; color: var(--accent-color);">搜尋標題</p>
+        <input type="text" id="search-input" placeholder="輸入關鍵字...">
+        
+        <p style="margin-top: 20px; border-top: 1px solid #333; padding-top: 10px; color: var(--accent-color);">關鍵字篩選</p>
+        <div id="keyword-list"></div>
+    </div>
+    
+    <button type="button" class="controls-toggle-tab" id="controls-toggle-tab" aria-label="開啟側欄">▶ 開啟</button>
+    <div id="loading">載入資料中...</div>
+    <div id="toast"></div>
+    <div id="news-panel">
+        <button class="close-btn" type="button" aria-label="關閉">×</button>
+        <h3 id="news-panel-title"></h3>
+        <div class="news-list" id="news-panel-list"></div>
+    </div>
+    <div id="graph"></div>
+
+    <script>
+        const graphContainer = document.getElementById('graph');
+        const dateSelector = document.getElementById('date-selector');
+        const searchInput = document.getElementById('search-input');
+        const keywordList = document.getElementById('keyword-list');
+        const loading = document.getElementById('loading');
+        const toast = document.getElementById('toast');
+        
+        // 1. Target Date (replaced by build, or use today when opening template directly)
+        const TARGET_DATE_RAW = "__TARGET_DATE__";
+        const TARGET_DATE = /^__.+\__$/.test(TARGET_DATE_RAW) ? (function () {
+            const d = new Date();
+            return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+        })() : TARGET_DATE_RAW;
+
+        // 2. Embedded Data (replaced by build; fallback when opening template directly)
+        let EMBEDDED_DATA;
+        try {
+            EMBEDDED_DATA = __EMBEDDED_DATA__;
+        } catch (e) {
+            EMBEDDED_DATA = { nodes: [], links: [], titleToUrl: {} };
+        }
+
+        // Data Store
+        const dataStore = {
+            [TARGET_DATE]: EMBEDDED_DATA
+        };
+
+        // Cosmic Orange Palette
+        const ORANGE_PALETTE = ['#FF9900', '#FFB347', '#FFCC80', '#E68A00', '#CC7A00'];
+
+        // Filter State
+        let activeFilters = new Set(); // Multi-select Set
+        let searchText = "";
+        let highlightedNodes = new Set();
+        let highlightedLinks = new Set();
+        let currentLinks = [];
+        let currentGraphData = null;
+        const lastDragPosition = {};
+
+        function updateHighlights() {
+            highlightedNodes.clear();
+            highlightedLinks.clear();
+
+            if (activeFilters.size === 0 && !searchText) return;
+
+            currentLinks.forEach(link => {
+                const source = link.source;
+                const target = link.target;
+
+                // Keyword Match (OR logic: match ANY active filter)
+                let keywordMatch = true;
+                if (activeFilters.size > 0) {
+                    keywordMatch = false;
+                    if (link.tags && Array.isArray(link.tags)) {
+                        if (link.tags.some(tag => activeFilters.has(tag))) keywordMatch = true;
+                    }
+                    if (link.label && activeFilters.has(link.label)) keywordMatch = true;
+                }
+
+                // Search Match
+                const searchMatch = searchText ? 
+                    (source.id.toLowerCase().includes(searchText.toLowerCase()) || target.id.toLowerCase().includes(searchText.toLowerCase())) 
+                    : true;
+                
+                if (keywordMatch && searchMatch) {
+                    highlightedLinks.add(link);
+                    highlightedNodes.add(source);
+                    highlightedNodes.add(target);
+                }
+            });
+        }
+
+        function triggerRenderUpdate() {
+            Graph.nodeColor(Graph.nodeColor())
+                 .linkColor(Graph.linkColor())
+                 .linkWidth(Graph.linkWidth())
+                 .linkDirectionalParticles(Graph.linkDirectionalParticles());
+        }
+
+        let Graph = ForceGraph()(graphContainer)
+            .backgroundColor('#0b0b0b')
+            .nodeId('id')
+            .nodeRelSize(6)
+            .d3Force('charge', d3.forceManyBody().strength(-900))
+            .d3Force('link', d3.forceLink().id(d => d.id).distance(180))
+            .d3Force('collision', d3.forceCollide().radius(40).strength(0.8))
+            .nodeColor(node => ((activeFilters.size === 0 && !searchText) || highlightedNodes.has(node)) ? (ORANGE_PALETTE[Math.abs(node.id.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0)) % ORANGE_PALETTE.length]) : 'rgba(255, 255, 255, 0.1)')
+            .nodeLabel('id')
+            .linkColor(link => ((activeFilters.size === 0 && !searchText) || highlightedLinks.has(link)) ? 'rgba(255, 153, 0, 0.3)' : 'rgba(255, 255, 255, 0.05)')
+            .linkWidth(link => ((activeFilters.size === 0 && !searchText) || highlightedLinks.has(link)) ? (link.value ? Math.sqrt(link.value) : 1) : 0.5)
+            .linkDirectionalParticles(link => ((activeFilters.size === 0 && !searchText) || highlightedLinks.has(link)) ? 2 : 0)
+            .linkDirectionalParticleWidth(2)
+            .linkDirectionalParticleColor(() => '#ffaa00')
+            .onNodeClick(node => { onNodeClick(node); })
+            .onLinkClick(link => { showToast(link.label, link.reason || ''); })
+            .onNodeDrag((node) => {
+                if (typeof node.x === 'number' && typeof node.y === 'number' && Number.isFinite(node.x) && Number.isFinite(node.y)) {
+                    lastDragPosition[node.id] = { x: node.x, y: node.y };
+                }
+            })
+            .onNodeDragEnd((node) => {
+                const pos = lastDragPosition[node.id];
+                let x = (pos && Number.isFinite(pos.x)) ? pos.x : node.x;
+                let y = (pos && Number.isFinite(pos.y)) ? pos.y : node.y;
+                if (!Number.isFinite(x) || !Number.isFinite(y)) {
+                    x = Number.isFinite(node.x) ? node.x : 0;
+                    y = Number.isFinite(node.y) ? node.y : 0;
+                }
+                node.x = x;
+                node.y = y;
+                node.fx = x;
+                node.fy = y;
+                delete lastDragPosition[node.id];
+            });
+        if (typeof Graph.onBackgroundClick === 'function') {
+            Graph.onBackgroundClick(() => newsPanel.classList.remove('visible'));
+        }
+
+        // Custom Link Label Rendering
+        Graph.linkCanvasObject((link, ctx, globalScale) => {
+            const start = link.source;
+            const end = link.target;
+            if (typeof start !== 'object' || typeof end !== 'object') return;
+            const sx = start.x, sy = start.y, ex = end.x, ey = end.y;
+            if (typeof sx !== 'number' || typeof sy !== 'number' || typeof ex !== 'number' || typeof ey !== 'number') return;
+            if (!Number.isFinite(sx) || !Number.isFinite(sy) || !Number.isFinite(ex) || !Number.isFinite(ey)) return;
+            const isHighlighted = (activeFilters.size === 0 && !searchText) || highlightedLinks.has(link);
+
+            ctx.beginPath();
+            ctx.moveTo(sx, sy);
+            ctx.lineTo(ex, ey);
+            ctx.strokeStyle = isHighlighted ? 'rgba(255, 153, 0, 0.3)' : 'rgba(255, 255, 255, 0.05)';
+            ctx.lineWidth = (isHighlighted ? (link.value ? Math.sqrt(link.value) : 1) : 0.5) / globalScale;
+            ctx.stroke();
+
+            if (link.label && isHighlighted) {
+                const label = link.label;
+                const fontSize = Math.max(10, 14 / globalScale);
+                ctx.font = `${fontSize}px 'Noto Sans TC', Sans-Serif`;
+                const midX = (sx + ex) / 2;
+                const midY = (sy + ey) / 2;
+                const textWidth = ctx.measureText(label).width;
+                const bckgDimensions = [textWidth, fontSize].map(n => n + fontSize * 0.3);
+                ctx.fillStyle = '#222';
+                ctx.fillRect(midX - bckgDimensions[0] / 2, midY - bckgDimensions[1] / 2, ...bckgDimensions);
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillStyle = '#fff';
+                ctx.fillText(label, midX, midY);
+            }
+        });
+
+        // Custom Node Rendering
+        Graph.nodeCanvasObject((node, ctx, globalScale) => {
+            const x = node.x, y = node.y;
+            if (typeof x !== 'number' || typeof y !== 'number' || !Number.isFinite(x) || !Number.isFinite(y)) return;
+            const isHighlighted = (activeFilters.size === 0 && !searchText) || highlightedNodes.has(node);
+            const label = node.id;
+            const fontSize = 14 / globalScale;
+            ctx.font = `${fontSize}px 'Noto Sans TC', sans-serif`;
+            const textWidth = ctx.measureText(label).width;
+            const bckgDimensions = [textWidth, fontSize].map(n => n + fontSize * 0.5);
+            const boxX = x - bckgDimensions[0] / 2;
+            const boxY = y - bckgDimensions[1] / 2;
+            
+            ctx.fillStyle = isHighlighted ? 'rgba(26, 26, 26, 0.9)' : 'rgba(26, 26, 26, 0.2)';
+            ctx.strokeStyle = isHighlighted ? '#ff9900' : 'rgba(100, 100, 100, 0.2)';
+            ctx.lineWidth = 1 / globalScale;
+            ctx.fillRect(boxX, boxY, ...bckgDimensions);
+            ctx.strokeRect(boxX, boxY, ...bckgDimensions);
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillStyle = isHighlighted ? '#e0e0e0' : 'rgba(100, 100, 100, 0.5)';
+            ctx.fillText(label, x, y);
+
+            node.__bckgDimensions = bckgDimensions;
+        })
+        .nodePointerAreaPaint((node, color, ctx) => {
+            const bckgDimensions = node.__bckgDimensions;
+            if (bckgDimensions && typeof node.x === 'number' && typeof node.y === 'number') {
+                ctx.fillStyle = color;
+                ctx.fillRect(node.x - bckgDimensions[0] / 2, node.y - bckgDimensions[1] / 2, ...bckgDimensions);
+            }
+        });
+
+        // Toast Logic
+        let toastTimeout;
+        function showToast(title, message) {
+            if (!title) return;
+            toast.innerHTML = `<h3>${title}</h3><p>${message || ''}</p>`;
+            toast.style.display = 'block';
+            if (toastTimeout) clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => { toast.style.display = 'none'; }, 5000);
+        }
+
+        // News Panel (entity -> related news)
+        const newsPanel = document.getElementById('news-panel');
+        const newsPanelTitle = document.getElementById('news-panel-title');
+        const newsPanelList = document.getElementById('news-panel-list');
+        document.querySelector('#news-panel .close-btn').addEventListener('click', () => { newsPanel.classList.remove('visible'); });
+
+        // Left panel show/hide toggle
+        const controlsPanel = document.getElementById('controls-panel');
+        const controlsToggleTab = document.getElementById('controls-toggle-tab');
+        document.getElementById('toggle-panel-btn').addEventListener('click', () => {
+            controlsPanel.classList.add('hidden');
+            controlsToggleTab.classList.add('visible');
+        });
+        controlsToggleTab.addEventListener('click', () => {
+            controlsPanel.classList.remove('hidden');
+            controlsToggleTab.classList.remove('visible');
+        });
+
+        function onNodeClick(node) {
+            if (currentGraphData && currentGraphData.newsDatabase && currentGraphData.newsDatabase[node.id]) {
+                const items = currentGraphData.newsDatabase[node.id];
+                newsPanelTitle.textContent = node.id;
+                const titleToUrl = currentGraphData.titleToUrl || {};
+                newsPanelList.innerHTML = items.map(entry => {
+                    const source = entry.source ? ` <span class="source">(${escapeHtml(entry.source)})</span>` : '';
+                    const url = entry.url || titleToUrl[entry.title];
+                    if (url) {
+                        return `<div class="news-item"><a href="${escapeAttr(url)}" target="_blank" rel="noopener">${escapeHtml(entry.title)}</a>${source}</div>`;
+                    }
+                    return `<div class="news-item">${escapeHtml(entry.title)}${source}</div>`;
+                }).join('');
+                newsPanel.classList.add('visible');
+            } else if (node.url) {
+                window.open(node.url, '_blank');
+            } else {
+                showToast(node.id, '無相關新聞');
+            }
+        }
+        function escapeHtml(s) {
+            const div = document.createElement('div');
+            div.textContent = s;
+            return div.innerHTML;
+        }
+        function escapeAttr(s) {
+            return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        }
+
+        // --- Fetch Logic ---
+
+        function getPreviousDate(dateStr, days) {
+            const date = new Date(dateStr);
+            date.setDate(date.getDate() - days);
+            return date.toISOString().split('T')[0];
+        }
+
+        async function fetchHistory() {
+            // Check previous 3 days
+            for (let i = 1; i <= 3; i++) {
+                const prevDate = getPreviousDate(TARGET_DATE, i);
+                const filename = prevDate + ".json";
+                try {
+                    const response = await fetch(filename);
+                    if (response.ok) {
+                        const json = await response.json();
+                        dataStore[prevDate] = json;
+                        // Refresh selector
+                        populateSelector();
+                    }
+                } catch (e) {
+                    // Ignore fetch errors (likely local file system or missing file)
+                    console.log(`Skipping ${filename}: ${e}`);
+                }
+            }
+        }
+
+        // Init Logic
+        function init() {
+            // On narrow viewport (e.g. mobile), start with left panel hidden so graph is full-screen
+            if (window.matchMedia && window.matchMedia("(max-width: 768px)").matches) {
+                controlsPanel.classList.add("hidden");
+                controlsToggleTab.classList.add("visible");
+            }
+            populateSelector();
+
+            // Load embedded default
+            loadGraphData(TARGET_DATE);
+
+            // Try to fetch history (if on server)
+            fetchHistory();
+        }
+
+        function populateSelector() {
+            // Clear existing options
+            dateSelector.innerHTML = '<option value="" disabled>選擇日期...</option>';
+            
+            const sortedDates = Object.keys(dataStore).sort().reverse();
+            sortedDates.forEach(date => {
+                const option = document.createElement('option');
+                option.value = date;
+                option.textContent = date;
+                if (date === dateSelector.value) option.selected = true;
+                dateSelector.appendChild(option);
+            });
+            
+            // If nothing selected, select first
+            if (!dateSelector.value && sortedDates.length > 0) {
+                dateSelector.value = sortedDates[0];
+            }
+        }
+        
+        function populateKeywords(links, nodes) {
+            keywordList.innerHTML = '';
+            const labels = new Set();
+            (links || []).forEach(link => {
+                if (link.tags && Array.isArray(link.tags)) {
+                    link.tags.forEach(tag => labels.add(tag));
+                }
+                if (link.label) labels.add(link.label);
+            });
+            (nodes || []).forEach(node => {
+                if (node.group) labels.add(node.group);
+            });
+            const sortedLabels = Array.from(labels).sort();
+            sortedLabels.forEach(label => {
+                const tag = document.createElement('div');
+                tag.className = 'keyword-tag';
+                tag.textContent = label;
+                tag.onclick = () => toggleFilter(label, tag);
+                keywordList.appendChild(tag);
+            });
+        }
+
+        function toggleFilter(label, tagElement) {
+            // Toggle Logic: Add or Remove
+            if (activeFilters.has(label)) {
+                activeFilters.delete(label);
+                tagElement.classList.remove('active');
+            } else {
+                activeFilters.add(label);
+                tagElement.classList.add('active');
+            }
+            
+            updateHighlights();
+            triggerRenderUpdate();
+        }
+
+        function loadGraphData(dateKey) {
+            const graphData = dataStore[dateKey];
+            if (graphData) {
+                currentGraphData = graphData;
+                currentLinks = graphData.links || [];
+                activeFilters.clear();
+                searchText = "";
+                searchInput.value = "";
+                updateHighlights();
+                // Normalize node.val from node.size for compatibility (e.g. force-graph / rendering)
+                const nodes = graphData.nodes || [];
+                nodes.forEach((n, i) => {
+                    if (n.size != null && n.val == null) n.val = n.size;
+                });
+                // Give nodes initial positions so they don't all start at center (fixes clustered view)
+                const rect = graphContainer.getBoundingClientRect();
+                const centerX = rect.width / 2 || window.innerWidth / 2;
+                const centerY = rect.height / 2 || window.innerHeight / 2;
+                const spread = Math.min(rect.width, rect.height) * 0.35 || 350;
+                nodes.forEach((n, i) => {
+                    const angle = (i / Math.max(nodes.length, 1)) * 2 * Math.PI + (Math.random() * 0.5);
+                    n.x = centerX + spread * Math.cos(angle) + (Math.random() - 0.5) * 80;
+                    n.y = centerY + spread * Math.sin(angle) + (Math.random() - 0.5) * 80;
+                });
+                Graph.graphData(graphData);
+                if (typeof Graph.centerAt === 'function') {
+                    requestAnimationFrame(() => {
+                        Graph.centerAt(centerX, centerY);
+                    });
+                }
+                populateKeywords(graphData.links, graphData.nodes);
+                dateSelector.value = dateKey;
+            }
+        }
+
+        dateSelector.addEventListener('change', (e) => loadGraphData(e.target.value));
+        searchInput.addEventListener('input', (e) => {
+            searchText = e.target.value;
+            updateHighlights();
+            triggerRenderUpdate();
+        });
+
+        // Start
+        init();
+
+    </script>
+</body>
+</html>

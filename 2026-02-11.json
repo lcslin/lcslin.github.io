@@ -1,0 +1,1175 @@
+{
+  "nodes": [
+    {
+      "id": "川普",
+      "group": "person",
+      "size": 20
+    },
+    {
+      "id": "鄭麗君",
+      "group": "person",
+      "size": 18
+    },
+    {
+      "id": "卓揆",
+      "group": "person",
+      "size": 12
+    },
+    {
+      "id": "台積電",
+      "group": "company",
+      "size": 25
+    },
+    {
+      "id": "輝達",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "鴻海",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "友達",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "華邦",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "聯發科",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "群聯",
+      "group": "company",
+      "size": 9
+    },
+    {
+      "id": "和碩",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "中芯國際",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "微軟",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "Alphabet",
+      "group": "company",
+      "size": 9
+    },
+    {
+      "id": "思科",
+      "group": "company",
+      "size": 8
+    },
+    {
+      "id": "騰訊",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "阿里",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 22
+    },
+    {
+      "id": "台灣",
+      "group": "country",
+      "size": 24
+    },
+    {
+      "id": "中國大陸",
+      "group": "country",
+      "size": 16
+    },
+    {
+      "id": "加拿大",
+      "group": "country",
+      "size": 12
+    },
+    {
+      "id": "AI",
+      "group": "tech",
+      "size": 23
+    },
+    {
+      "id": "半導體",
+      "group": "tech",
+      "size": 22
+    },
+    {
+      "id": "記憶體",
+      "group": "tech",
+      "size": 15
+    },
+    {
+      "id": "晶片",
+      "group": "tech",
+      "size": 20
+    },
+    {
+      "id": "伺服器",
+      "group": "tech",
+      "size": 14
+    },
+    {
+      "id": "核能",
+      "group": "tech",
+      "size": 13
+    },
+    {
+      "id": "電動車",
+      "group": "tech",
+      "size": 11
+    },
+    {
+      "id": "低軌衛星",
+      "group": "tech",
+      "size": 9
+    },
+    {
+      "id": "台美貿易協定",
+      "group": "finance",
+      "size": 19
+    },
+    {
+      "id": "關稅",
+      "group": "finance",
+      "size": 18
+    },
+    {
+      "id": "GDP",
+      "group": "finance",
+      "size": 10
+    },
+    {
+      "id": "零售銷售",
+      "group": "finance",
+      "size": 11
+    },
+    {
+      "id": "APEC",
+      "group": "org",
+      "size": 9
+    },
+    {
+      "id": "工研院",
+      "group": "org",
+      "size": 10
+    },
+    {
+      "id": "財政部",
+      "group": "org",
+      "size": 9
+    },
+    {
+      "id": "經濟部",
+      "group": "org",
+      "size": 10
+    }
+  ],
+  "links": [
+    {
+      "source": "川普",
+      "target": "加拿大",
+      "value": 5,
+      "label": "關稅威脅"
+    },
+    {
+      "source": "川普",
+      "target": "中國大陸",
+      "value": 4,
+      "label": "貿易限制"
+    },
+    {
+      "source": "川普",
+      "target": "台積電",
+      "value": 5,
+      "label": "關稅豁免政策"
+    },
+    {
+      "source": "川普",
+      "target": "關稅",
+      "value": 5,
+      "label": "政策工具"
+    },
+    {
+      "source": "鄭麗君",
+      "target": "台美貿易協定",
+      "value": 5,
+      "label": "談判主導"
+    },
+    {
+      "source": "鄭麗君",
+      "target": "美國",
+      "value": 5,
+      "label": "外交訪問"
+    },
+    {
+      "source": "卓揆",
+      "target": "核能",
+      "value": 4,
+      "label": "政策評估"
+    },
+    {
+      "source": "卓揆",
+      "target": "台灣",
+      "value": 4,
+      "label": "能源政策"
+    },
+    {
+      "source": "台積電",
+      "target": "半導體",
+      "value": 5,
+      "label": "產業龍頭"
+    },
+    {
+      "source": "台積電",
+      "target": "晶片",
+      "value": 5,
+      "label": "製造生產"
+    },
+    {
+      "source": "台積電",
+      "target": "美國",
+      "value": 5,
+      "label": "關稅豁免"
+    },
+    {
+      "source": "台積電",
+      "target": "AI",
+      "value": 4,
+      "label": "技術應用"
+    },
+    {
+      "source": "台積電",
+      "target": "台灣",
+      "value": 5,
+      "label": "營收貢獻"
+    },
+    {
+      "source": "輝達",
+      "target": "台灣",
+      "value": 4,
+      "label": "設點投資"
+    },
+    {
+      "source": "輝達",
+      "target": "AI",
+      "value": 5,
+      "label": "技術領導"
+    },
+    {
+      "source": "鴻海",
+      "target": "伺服器",
+      "value": 4,
+      "label": "訂單承接"
+    },
+    {
+      "source": "鴻海",
+      "target": "AI",
+      "value": 4,
+      "label": "產業布局"
+    },
+    {
+      "source": "友達",
+      "target": "AI",
+      "value": 4,
+      "label": "策略布局"
+    },
+    {
+      "source": "友達",
+      "target": "台灣",
+      "value": 3,
+      "label": "營運成長"
+    },
+    {
+      "source": "華邦",
+      "target": "記憶體",
+      "value": 5,
+      "label": "供應緊張"
+    },
+    {
+      "source": "華邦",
+      "target": "AI",
+      "value": 3,
+      "label": "需求帶動"
+    },
+    {
+      "source": "聯發科",
+      "target": "晶片",
+      "value": 4,
+      "label": "產品研發"
+    },
+    {
+      "source": "聯發科",
+      "target": "台灣",
+      "value": 3,
+      "label": "營收表現"
+    },
+    {
+      "source": "群聯",
+      "target": "半導體",
+      "value": 3,
+      "label": "產業參與"
+    },
+    {
+      "source": "和碩",
+      "target": "AI",
+      "value": 3,
+      "label": "伺服器布局"
+    },
+    {
+      "source": "和碩",
+      "target": "伺服器",
+      "value": 4,
+      "label": "製造供應"
+    },
+    {
+      "source": "中芯國際",
+      "target": "中國大陸",
+      "value": 5,
+      "label": "本土企業"
+    },
+    {
+      "source": "中芯國際",
+      "target": "半導體",
+      "value": 4,
+      "label": "製造競爭"
+    },
+    {
+      "source": "微軟",
+      "target": "AI",
+      "value": 4,
+      "label": "技術投資"
+    },
+    {
+      "source": "微軟",
+      "target": "美國",
+      "value": 4,
+      "label": "市值變動"
+    },
+    {
+      "source": "Alphabet",
+      "target": "美國",
+      "value": 3,
+      "label": "融資計畫"
+    },
+    {
+      "source": "思科",
+      "target": "AI",
+      "value": 4,
+      "label": "晶片研發"
+    },
+    {
+      "source": "騰訊",
+      "target": "中國大陸",
+      "value": 4,
+      "label": "AI市場"
+    },
+    {
+      "source": "騰訊",
+      "target": "AI",
+      "value": 5,
+      "label": "模型競爭"
+    },
+    {
+      "source": "阿里",
+      "target": "中國大陸",
+      "value": 4,
+      "label": "AI市場"
+    },
+    {
+      "source": "阿里",
+      "target": "AI",
+      "value": 5,
+      "label": "模型競爭"
+    },
+    {
+      "source": "台美貿易協定",
+      "target": "美國",
+      "value": 5,
+      "label": "雙邊談判"
+    },
+    {
+      "source": "台美貿易協定",
+      "target": "台灣",
+      "value": 5,
+      "label": "經濟影響"
+    },
+    {
+      "source": "台美貿易協定",
+      "target": "關稅",
+      "value": 5,
+      "label": "核心議題"
+    },
+    {
+      "source": "關稅",
+      "target": "美國",
+      "value": 5,
+      "label": "貿易政策"
+    },
+    {
+      "source": "關稅",
+      "target": "晶片",
+      "value": 4,
+      "label": "豁免措施"
+    },
+    {
+      "source": "關稅",
+      "target": "電動車",
+      "value": 3,
+      "label": "產業衝擊"
+    },
+    {
+      "source": "GDP",
+      "target": "台灣",
+      "value": 4,
+      "label": "經濟預測"
+    },
+    {
+      "source": "零售銷售",
+      "target": "美國",
+      "value": 4,
+      "label": "經濟指標"
+    },
+    {
+      "source": "AI",
+      "target": "半導體",
+      "value": 5,
+      "label": "技術驅動"
+    },
+    {
+      "source": "AI",
+      "target": "晶片",
+      "value": 5,
+      "label": "需求增長"
+    },
+    {
+      "source": "AI",
+      "target": "伺服器",
+      "value": 5,
+      "label": "基礎建設"
+    },
+    {
+      "source": "半導體",
+      "target": "台灣",
+      "value": 5,
+      "label": "核心產業"
+    },
+    {
+      "source": "半導體",
+      "target": "晶片",
+      "value": 5,
+      "label": "產業關聯"
+    },
+    {
+      "source": "記憶體",
+      "target": "半導體",
+      "value": 4,
+      "label": "產業分支"
+    },
+    {
+      "source": "記憶體",
+      "target": "AI",
+      "value": 4,
+      "label": "供應緊張"
+    },
+    {
+      "source": "晶片",
+      "target": "台灣",
+      "value": 5,
+      "label": "製造優勢"
+    },
+    {
+      "source": "核能",
+      "target": "台灣",
+      "value": 4,
+      "label": "能源政策"
+    },
+    {
+      "source": "電動車",
+      "target": "美國",
+      "value": 3,
+      "label": "市場趨勢"
+    },
+    {
+      "source": "工研院",
+      "target": "台灣",
+      "value": 4,
+      "label": "研發基地"
+    },
+    {
+      "source": "工研院",
+      "target": "半導體",
+      "value": 4,
+      "label": "技術研發"
+    },
+    {
+      "source": "財政部",
+      "target": "台灣",
+      "value": 3,
+      "label": "金融政策"
+    },
+    {
+      "source": "經濟部",
+      "target": "台灣",
+      "value": 3,
+      "label": "產業輔導"
+    },
+    {
+      "source": "經濟部",
+      "target": "電動車",
+      "value": 3,
+      "label": "轉型基金"
+    }
+  ],
+  "newsDatabase": {
+    "川普": [
+      {
+        "title": "川普再警告 對加國課稅100% 阻止與中國大陸簽訂自貿協定",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9322365"
+      },
+      {
+        "title": "台積電免關稅晶片將分配美企 川普拿台美協議當籌碼",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9322324"
+      },
+      {
+        "title": "川普擬開後門 豁免CSP巨頭晶片採購關稅",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260211000253-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "鄭麗君": [
+      {
+        "title": "鄭麗君昨晚赴美 拚簽台美關稅協定",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260211000243-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台美貿易協定倒數 鄭麗君赴美簽署",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1743464"
+      }
+    ],
+    "卓揆": [
+      {
+        "title": "卓揆：全面接觸新式核能",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9322283"
+      },
+      {
+        "title": "卓揆：全面接觸新核能技術 將以三大原則審慎評估",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9322389"
+      },
+      {
+        "title": "卓揆：全面接觸新核能技術",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260211000285-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台積電": [
+      {
+        "title": "台積電免關稅晶片將分配美企 川普拿台美協議當籌碼",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9322324"
+      },
+      {
+        "title": "台積元月營收大驚豔 打破淡季束縛 飛越4,000億元創新高",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9322385"
+      },
+      {
+        "title": "台積專利申請 連十年奪冠",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9322452"
+      },
+      {
+        "title": "台積電分紅…台灣員工平均每人264萬 獎金總額2,061億寫新高",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9322430"
+      },
+      {
+        "title": "台積電元月營收 首登4千億",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260211000236-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台積擢升8主管 組接班梯隊",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260211000257-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台積元月營收打破淡季束縛 飛越4,000億元創新高",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7251/9322385"
+      },
+      {
+        "title": "台積1月營收 首度飆破4千億",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260211000612-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "輝達": [
+      {
+        "title": "輝達落腳北士科 今簽約",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9322350"
+      },
+      {
+        "title": "李四川證實 11日與輝達簽約",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260211000266-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "鴻海": [
+      {
+        "title": "奧特曼唱旺 ChatGPT  鴻海可望承接更多伺服器訂單",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9322439"
+      }
+    ],
+    "友達": [
+      {
+        "title": "友達射AI四箭 逐步發酵",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260211000267-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "友達衝刺AI布局四箭齊發 拚營運逐季成長",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9322294"
+      },
+      {
+        "title": "友達2025年終結連三虧 將配息0.4元",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7253/9322296"
+      }
+    ],
+    "華邦": [
+      {
+        "title": "華邦：DRAM 價上半年看漲四倍 DDR4供應缺口「大到不曉得怎麼補」",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9322327"
+      },
+      {
+        "title": "華強北記憶體報價強升 助益台廠",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9322334"
+      }
+    ],
+    "聯發科": [
+      {
+        "title": "聯發科、世芯元月黯淡 拚逆襲",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260211000260-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "群聯": [
+      {
+        "title": "群聯CEO潘健成賣股？ 本人出面喊沒這回事",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9322457"
+      }
+    ],
+    "和碩": [
+      {
+        "title": "和碩 正向看AI伺服器布局",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260211000358-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中芯國際": [
+      {
+        "title": "中芯國際去年Q4淨利 年增逾6成",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260211000335-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "微軟": [
+      {
+        "title": "微軟評級華爾街調降 預估本益比近13年來首度低於IBM",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9322363"
+      }
+    ],
+    "Alphabet": [
+      {
+        "title": "Alphabet擬發百年期公司債",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260211000319-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "思科": [
+      {
+        "title": "思科發表新一代AI網路晶片",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260211000322-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "騰訊": [
+      {
+        "title": "陸AI百模大戰告終 騰訊、阿里吃香",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260211000337-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "阿里": [
+      {
+        "title": "陸AI百模大戰告終 騰訊、阿里吃香",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260211000337-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "美國": [
+      {
+        "title": "美國去年12月零售銷售意外0成長 低於市場預期",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9322369"
+      },
+      {
+        "title": "美12月零售銷售持平　低於市場預期",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9322598"
+      },
+      {
+        "title": "美去年12月零售銷售放緩",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260211000315-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "電動車銷售走下坡 美電池廠重心轉向儲能系統",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9322366"
+      },
+      {
+        "title": "美拚AI 允科技業取得免稅晶片",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260211000616-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台灣": [
+      {
+        "title": "美銀預測：台灣今年GDP增幅衝8%",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9322330"
+      },
+      {
+        "title": "台灣先進半導體基地動土 助廠商加速走向市場",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7241/9322451"
+      },
+      {
+        "title": "先進半導體研發基地 動土",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9322302"
+      },
+      {
+        "title": "3部會攜手打造 先進半導體研發基地落腳工研院",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1743466"
+      }
+    ],
+    "中國大陸": [
+      {
+        "title": "川普再警告 對加國課稅100% 阻止與中國大陸簽訂自貿協定",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9322365"
+      },
+      {
+        "title": "陸AI百模大戰告終 騰訊、阿里吃香",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260211000337-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "加拿大": [
+      {
+        "title": "川普再警告 對加國課稅100% 阻止與中國大陸簽訂自貿協定",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9322365"
+      }
+    ],
+    "AI": [
+      {
+        "title": "奧特曼唱旺 ChatGPT  鴻海可望承接更多伺服器訂單",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9322439"
+      },
+      {
+        "title": "友達射AI四箭 逐步發酵",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260211000267-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "陸AI百模大戰告終 騰訊、阿里吃香",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260211000337-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "和碩 正向看AI伺服器布局",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260211000358-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI晶片帶動先進封裝擴產 印能科技 1月營收翻倍增",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260211000363-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "友達衝刺AI布局四箭齊發 拚營運逐季成長",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9322294"
+      },
+      {
+        "title": "美拚AI 允科技業取得免稅晶片",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260211000616-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI生成性影像 學生成最大受害者",
+        "source": "中時樂活新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260211000603-260114?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "思科發表新一代AI網路晶片",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260211000322-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "半導體": [
+      {
+        "title": "台灣先進半導體基地動土 助廠商加速走向市場",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7241/9322451"
+      },
+      {
+        "title": "先進半導體研發基地 動土",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9322302"
+      },
+      {
+        "title": "3部會攜手打造 先進半導體研發基地落腳工研院",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1743466"
+      }
+    ],
+    "記憶體": [
+      {
+        "title": "華邦：DRAM 價上半年看漲四倍 DDR4供應缺口「大到不曉得怎麼補」",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9322327"
+      },
+      {
+        "title": "華強北記憶體報價強升 助益台廠",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9322334"
+      },
+      {
+        "title": "記憶體供應緊張 恐至年底",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260211000324-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "提前掌握記憶體缺料風險 威聯通 1月營收年月雙增",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260211000364-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "晶片": [
+      {
+        "title": "台積電免關稅晶片將分配美企 川普拿台美協議當籌碼",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9322324"
+      },
+      {
+        "title": "美企購晶片 擬豁免關稅",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/124373/9322420"
+      },
+      {
+        "title": "川普擬開後門 豁免CSP巨頭晶片採購關稅",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260211000253-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "思科發表新一代AI網路晶片",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260211000322-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI晶片帶動先進封裝擴產 印能科技 1月營收翻倍增",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260211000363-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美拚AI 允科技業取得免稅晶片",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260211000616-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "伺服器": [
+      {
+        "title": "奧特曼唱旺 ChatGPT  鴻海可望承接更多伺服器訂單",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9322439"
+      },
+      {
+        "title": "和碩 正向看AI伺服器布局",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260211000358-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "核能": [
+      {
+        "title": "卓揆：全面接觸新式核能",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9322283"
+      },
+      {
+        "title": "卓揆：全面接觸新核能技術 將以三大原則審慎評估",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9322389"
+      },
+      {
+        "title": "卓揆：全面接觸新核能技術",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260211000285-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "科技業掌握能源政策關鍵話語權",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260211000288-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "電動車": [
+      {
+        "title": "電動車銷售走下坡 美電池廠重心轉向儲能系統",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9322366"
+      },
+      {
+        "title": "美車恐零關稅 業者提配套聚焦降稅、留才",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9322325"
+      }
+    ],
+    "低軌衛星": [
+      {
+        "title": "低軌衛星的另一顆明日之星升空 鐳洋從「求生」到「星群通訊」的故事",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9322278"
+      }
+    ],
+    "台美貿易協定": [
+      {
+        "title": "台美貿易協定掀牌倒數…美車、農產將開放 藍批黑箱",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/124373/9322464"
+      },
+      {
+        "title": "台美對等貿易協定談判團隊赴美 拚六個目標",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9322328"
+      },
+      {
+        "title": "鄭麗君昨晚赴美 拚簽台美關稅協定",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260211000243-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "關稅協定 簽完還有仗要打",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260211000256-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台美信用保證機制 2,500億美元找財源",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260211000289-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台美貿易協定倒數 鄭麗君赴美簽署",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1743464"
+      }
+    ],
+    "關稅": [
+      {
+        "title": "川普再警告 對加國課稅100% 阻止與中國大陸簽訂自貿協定",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9322365"
+      },
+      {
+        "title": "鄭麗君昨晚赴美 拚簽台美關稅協定",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260211000243-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "關稅協定 簽完還有仗要打",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260211000256-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美企購晶片 擬豁免關稅",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/124373/9322420"
+      },
+      {
+        "title": "川普擬開後門 豁免CSP巨頭晶片採購關稅",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260211000253-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "GDP": [
+      {
+        "title": "美銀預測：台灣今年GDP增幅衝8%",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9322330"
+      }
+    ],
+    "零售銷售": [
+      {
+        "title": "美國去年12月零售銷售意外0成長 低於市場預期",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9322369"
+      },
+      {
+        "title": "美12月零售銷售持平　低於市場預期",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9322598"
+      },
+      {
+        "title": "美去年12月零售銷售放緩",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260211000315-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "APEC": [
+      {
+        "title": "出席APEC高官會 王毅：本屆將推四項工作",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260211000338-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "工研院": [
+      {
+        "title": "台灣先進半導體基地動土 助廠商加速走向市場",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7241/9322451"
+      },
+      {
+        "title": "先進半導體研發基地 動土",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9322302"
+      },
+      {
+        "title": "3部會攜手打造 先進半導體研發基地落腳工研院",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1743466"
+      }
+    ],
+    "財政部": [
+      {
+        "title": "財部籲公股力挺風電融資",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260211000292-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "經濟部": [
+      {
+        "title": "美車叩關 經部備30億金援",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260211000248-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美車叩關 車輛公會籲設轉型基金、進口零件同步免稅",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260211000251-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "川普再警告 對加國課稅100% 阻止與中國大陸簽訂自貿協定 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9322365",
+    "美國去年12月零售銷售意外0成長 低於市場預期 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9322369",
+    "台美貿易協定掀牌倒數…美車、農產將開放 藍批黑箱 (聯合_產經_股市)": "https://udn.com/news/story/124373/9322464",
+    "美12月零售銷售持平　低於市場預期 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9322598",
+    "台美對等貿易協定談判團隊赴美 拚六個目標 (聯合_產經_股市)": "https://udn.com/news/story/7238/9322328",
+    "美銀預測：台灣今年GDP增幅衝8% (聯合_產經_股市)": "https://udn.com/news/story/7238/9322330",
+    "鄭麗君昨晚赴美 拚簽台美關稅協定 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260211000243-260202?utm_source=iii_news&utm_medium=rss",
+    "關稅協定 簽完還有仗要打 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260211000256-260202?utm_source=iii_news&utm_medium=rss",
+    "台美信用保證機制 2,500億美元找財源 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260211000289-260202?utm_source=iii_news&utm_medium=rss",
+    "財部籲公股力挺風電融資 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260211000292-260202?utm_source=iii_news&utm_medium=rss",
+    "美去年12月零售銷售放緩 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260211000315-260203?utm_source=iii_news&utm_medium=rss",
+    "出席APEC高官會 王毅：本屆將推四項工作 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260211000338-260203?utm_source=iii_news&utm_medium=rss",
+    "台美貿易協定倒數 鄭麗君赴美簽署 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1743464",
+    "低軌衛星的另一顆明日之星升空 鐳洋從「求生」到「星群通訊」的故事 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9322278",
+    "奧特曼唱旺 ChatGPT  鴻海可望承接更多伺服器訂單 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9322439",
+    "台積電免關稅晶片將分配美企 川普拿台美協議當籌碼 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9322324",
+    "台積元月營收大驚豔 打破淡季束縛 飛越4,000億元創新高 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9322385",
+    "最強 YouTuber  進軍金融圈 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9322368",
+    "華邦：DRAM 價上半年看漲四倍 DDR4供應缺口「大到不曉得怎麼補」 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9322327",
+    "華強北記憶體報價強升 助益台廠 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9322334",
+    "輝達落腳北士科 今簽約 (聯合_產經_股市)": "https://udn.com/news/story/7240/9322350",
+    "台積專利申請 連十年奪冠 (聯合_產經_股市)": "https://udn.com/news/story/7240/9322452",
+    "群聯CEO潘健成賣股？ 本人出面喊沒這回事 (聯合_產經_股市)": "https://udn.com/news/story/7240/9322457",
+    "台積電分紅…台灣員工平均每人264萬 獎金總額2,061億寫新高 (聯合_產經_股市)": "https://udn.com/news/story/7240/9322430",
+    "台灣先進半導體基地動土 助廠商加速走向市場 (聯合_產經_股市)": "https://udn.com/news/story/7241/9322451",
+    "美企購晶片 擬豁免關稅 (聯合_產經_股市)": "https://udn.com/news/story/124373/9322420",
+    "微軟評級華爾街調降 預估本益比近13年來首度低於IBM (聯合_產經_股市)": "https://udn.com/news/story/6811/9322363",
+    "先進半導體研發基地 動土 (聯合_產經_股市)": "https://udn.com/news/story/7240/9322302",
+    "台積電元月營收 首登4千億 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260211000236-260202?utm_source=iii_news&utm_medium=rss",
+    "川普擬開後門 豁免CSP巨頭晶片採購關稅 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260211000253-260202?utm_source=iii_news&utm_medium=rss",
+    "台積擢升8主管 組接班梯隊 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260211000257-260202?utm_source=iii_news&utm_medium=rss",
+    "聯發科、世芯元月黯淡 拚逆襲 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260211000260-260202?utm_source=iii_news&utm_medium=rss",
+    "李四川證實 11日與輝達簽約 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260211000266-260202?utm_source=iii_news&utm_medium=rss",
+    "友達射AI四箭 逐步發酵 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260211000267-260202?utm_source=iii_news&utm_medium=rss",
+    "Alphabet擬發百年期公司債 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260211000319-260203?utm_source=iii_news&utm_medium=rss",
+    "思科發表新一代AI網路晶片 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260211000322-260203?utm_source=iii_news&utm_medium=rss",
+    "記憶體供應緊張 恐至年底 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260211000324-260203?utm_source=iii_news&utm_medium=rss",
+    "中芯國際去年Q4淨利 年增逾6成 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260211000335-260203?utm_source=iii_news&utm_medium=rss",
+    "陸AI百模大戰告終 騰訊、阿里吃香 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260211000337-260203?utm_source=iii_news&utm_medium=rss",
+    "電信三雄 元月業績紅不讓 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260211000355-260204?utm_source=iii_news&utm_medium=rss",
+    "和碩 正向看AI伺服器布局 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260211000358-260204?utm_source=iii_news&utm_medium=rss",
+    "小金雞給力 華擎營收寫最強1月 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260211000360-260204?utm_source=iii_news&utm_medium=rss",
+    "800G以上光收發模組 出貨看旺 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260211000362-260204?utm_source=iii_news&utm_medium=rss",
+    "AI晶片帶動先進封裝擴產 印能科技 1月營收翻倍增 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260211000363-260204?utm_source=iii_news&utm_medium=rss",
+    "提前掌握記憶體缺料風險 威聯通 1月營收年月雙增 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260211000364-260204?utm_source=iii_news&utm_medium=rss",
+    "友達衝刺AI布局四箭齊發 拚營運逐季成長 (聯合_產經_股市)": "https://udn.com/news/story/7240/9322294",
+    "台積元月營收打破淡季束縛 飛越4,000億元創新高 (聯合_產經_股市)": "https://udn.com/news/story/7251/9322385",
+    "友達2025年終結連三虧 將配息0.4元 (聯合_產經_股市)": "https://udn.com/news/story/7253/9322296",
+    "台積1月營收 首度飆破4千億 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260211000612-260110?utm_source=iii_news&utm_medium=rss",
+    "美拚AI 允科技業取得免稅晶片 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260211000616-260110?utm_source=iii_news&utm_medium=rss",
+    "AI生成性影像 學生成最大受害者 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260211000603-260114?utm_source=iii_news&utm_medium=rss",
+    "3部會攜手打造 先進半導體研發基地落腳工研院 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1743466",
+    "美車恐零關稅 業者提配套聚焦降稅、留才 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9322325",
+    "電動車銷售走下坡 美電池廠重心轉向儲能系統 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9322366",
+    "卓揆：全面接觸新式核能 (聯合_產經_股市)": "https://udn.com/news/story/7238/9322283",
+    "卓揆：全面接觸新核能技術 將以三大原則審慎評估 (聯合_產經_股市)": "https://udn.com/news/story/7238/9322389",
+    "美車叩關 經部備30億金援 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260211000248-260202?utm_source=iii_news&utm_medium=rss",
+    "美車叩關 車輛公會籲設轉型基金、進口零件同步免稅 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260211000251-260202?utm_source=iii_news&utm_medium=rss",
+    "機械出口開紅盤 工具機未脫離谷底 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260211000279-260202?utm_source=iii_news&utm_medium=rss",
+    "卓揆：全面接觸新核能技術 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260211000285-260202?utm_source=iii_news&utm_medium=rss",
+    "科技業掌握能源政策關鍵話語權 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260211000288-260202?utm_source=iii_news&utm_medium=rss",
+    "大甲溪電廠環評通過 環團憂釀潰壩 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260211000607-260114?utm_source=iii_news&utm_medium=rss"
+  }
+}
