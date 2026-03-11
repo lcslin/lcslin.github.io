@@ -1,0 +1,1385 @@
+{
+  "nodes": [
+    {
+      "id": "台積電",
+      "group": "company",
+      "size": 25
+    },
+    {
+      "id": "聯發科",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "輝達",
+      "group": "company",
+      "size": 20
+    },
+    {
+      "id": "黃仁勳",
+      "group": "person",
+      "size": 15
+    },
+    {
+      "id": "鴻海",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "群創",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "華碩",
+      "group": "company",
+      "size": 17
+    },
+    {
+      "id": "蘋果",
+      "group": "company",
+      "size": 19
+    },
+    {
+      "id": "OpenAI",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "中華電",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "南茂",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "日月光",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "和碩",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "群光",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "南亞科",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "英業達",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "台塑化",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "萬海",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "中鋼",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "川普",
+      "group": "person",
+      "size": 17
+    },
+    {
+      "id": "台灣",
+      "group": "country",
+      "size": 22
+    },
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 20
+    },
+    {
+      "id": "中國",
+      "group": "country",
+      "size": 16
+    },
+    {
+      "id": "日本",
+      "group": "country",
+      "size": 14
+    },
+    {
+      "id": "韓國",
+      "group": "country",
+      "size": 12
+    },
+    {
+      "id": "印度",
+      "group": "country",
+      "size": 13
+    },
+    {
+      "id": "伊朗",
+      "group": "country",
+      "size": 16
+    },
+    {
+      "id": "AI",
+      "group": "tech",
+      "size": 24
+    },
+    {
+      "id": "半導體",
+      "group": "tech",
+      "size": 22
+    },
+    {
+      "id": "記憶體",
+      "group": "tech",
+      "size": 18
+    },
+    {
+      "id": "先進封裝",
+      "group": "tech",
+      "size": 15
+    },
+    {
+      "id": "AI伺服器",
+      "group": "tech",
+      "size": 17
+    },
+    {
+      "id": "三星",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "中東",
+      "group": "country",
+      "size": 19
+    },
+    {
+      "id": "石油",
+      "group": "finance",
+      "size": 18
+    },
+    {
+      "id": "天然氣",
+      "group": "finance",
+      "size": 13
+    },
+    {
+      "id": "核能",
+      "group": "tech",
+      "size": 14
+    },
+    {
+      "id": "人民幣",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "台幣",
+      "group": "finance",
+      "size": 11
+    },
+    {
+      "id": "GDP",
+      "group": "finance",
+      "size": 13
+    },
+    {
+      "id": "關稅",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "物價",
+      "group": "finance",
+      "size": 11
+    },
+    {
+      "id": "航空業",
+      "group": "tech",
+      "size": 14
+    },
+    {
+      "id": "電信業",
+      "group": "tech",
+      "size": 12
+    },
+    {
+      "id": "化學品",
+      "group": "tech",
+      "size": 11
+    },
+    {
+      "id": "龔明鑫",
+      "group": "person",
+      "size": 10
+    }
+  ],
+  "links": [
+    {
+      "source": "台積電",
+      "target": "AI",
+      "value": 5,
+      "label": "技術應用"
+    },
+    {
+      "source": "台積電",
+      "target": "半導體",
+      "value": 5,
+      "label": "產業核心"
+    },
+    {
+      "source": "台積電",
+      "target": "先進封裝",
+      "value": 4,
+      "label": "技術發展"
+    },
+    {
+      "source": "輝達",
+      "target": "AI",
+      "value": 5,
+      "label": "技術領導"
+    },
+    {
+      "source": "輝達",
+      "target": "黃仁勳",
+      "value": 5,
+      "label": "企業領袖"
+    },
+    {
+      "source": "輝達",
+      "target": "台積電",
+      "value": 4,
+      "label": "供應鏈"
+    },
+    {
+      "source": "黃仁勳",
+      "target": "AI",
+      "value": 5,
+      "label": "產業願景"
+    },
+    {
+      "source": "聯發科",
+      "target": "半導體",
+      "value": 5,
+      "label": "產業核心"
+    },
+    {
+      "source": "聯發科",
+      "target": "記憶體",
+      "value": 4,
+      "label": "供應鏈依賴"
+    },
+    {
+      "source": "華碩",
+      "target": "AI伺服器",
+      "value": 5,
+      "label": "產品營收"
+    },
+    {
+      "source": "華碩",
+      "target": "AI",
+      "value": 4,
+      "label": "技術應用"
+    },
+    {
+      "source": "華碩",
+      "target": "記憶體",
+      "value": 4,
+      "label": "供應鏈壓力"
+    },
+    {
+      "source": "鴻海",
+      "target": "群創",
+      "value": 4,
+      "label": "持股處分"
+    },
+    {
+      "source": "鴻海",
+      "target": "蘋果",
+      "value": 5,
+      "label": "代工合作"
+    },
+    {
+      "source": "鴻海",
+      "target": "印度",
+      "value": 4,
+      "label": "製造基地"
+    },
+    {
+      "source": "群創",
+      "target": "南茂",
+      "value": 4,
+      "label": "資產交易"
+    },
+    {
+      "source": "蘋果",
+      "target": "AI",
+      "value": 5,
+      "label": "產品開發"
+    },
+    {
+      "source": "蘋果",
+      "target": "印度",
+      "value": 4,
+      "label": "生產基地"
+    },
+    {
+      "source": "蘋果",
+      "target": "美國",
+      "value": 4,
+      "label": "總部所在"
+    },
+    {
+      "source": "OpenAI",
+      "target": "AI",
+      "value": 5,
+      "label": "技術研發"
+    },
+    {
+      "source": "OpenAI",
+      "target": "美國",
+      "value": 3,
+      "label": "公司所在"
+    },
+    {
+      "source": "中華電",
+      "target": "電信業",
+      "value": 5,
+      "label": "產業核心"
+    },
+    {
+      "source": "中華電",
+      "target": "台灣",
+      "value": 4,
+      "label": "本土企業"
+    },
+    {
+      "source": "日月光",
+      "target": "先進封裝",
+      "value": 5,
+      "label": "技術專長"
+    },
+    {
+      "source": "日月光",
+      "target": "AI",
+      "value": 4,
+      "label": "市場機會"
+    },
+    {
+      "source": "日月光",
+      "target": "半導體",
+      "value": 5,
+      "label": "產業鏈"
+    },
+    {
+      "source": "和碩",
+      "target": "蘋果",
+      "value": 4,
+      "label": "代工合作"
+    },
+    {
+      "source": "南亞科",
+      "target": "記憶體",
+      "value": 5,
+      "label": "產品核心"
+    },
+    {
+      "source": "南亞科",
+      "target": "三星",
+      "value": 3,
+      "label": "市場競爭"
+    },
+    {
+      "source": "三星",
+      "target": "記憶體",
+      "value": 5,
+      "label": "產業主導"
+    },
+    {
+      "source": "三星",
+      "target": "韓國",
+      "value": 4,
+      "label": "國家企業"
+    },
+    {
+      "source": "英業達",
+      "target": "AI伺服器",
+      "value": 3,
+      "label": "產品製造"
+    },
+    {
+      "source": "川普",
+      "target": "美國",
+      "value": 5,
+      "label": "政治領袖"
+    },
+    {
+      "source": "川普",
+      "target": "台幣",
+      "value": 3,
+      "label": "政策影響"
+    },
+    {
+      "source": "川普",
+      "target": "伊朗",
+      "value": 4,
+      "label": "外交衝突"
+    },
+    {
+      "source": "川普",
+      "target": "關稅",
+      "value": 4,
+      "label": "貿易政策"
+    },
+    {
+      "source": "台塑化",
+      "target": "中東",
+      "value": 4,
+      "label": "供應影響"
+    },
+    {
+      "source": "台塑化",
+      "target": "石油",
+      "value": 5,
+      "label": "原料依賴"
+    },
+    {
+      "source": "台塑化",
+      "target": "化學品",
+      "value": 5,
+      "label": "產品生產"
+    },
+    {
+      "source": "萬海",
+      "target": "航空業",
+      "value": 3,
+      "label": "運輸業"
+    },
+    {
+      "source": "萬海",
+      "target": "台灣",
+      "value": 4,
+      "label": "本土企業"
+    },
+    {
+      "source": "中鋼",
+      "target": "台灣",
+      "value": 4,
+      "label": "國營企業"
+    },
+    {
+      "source": "中東",
+      "target": "石油",
+      "value": 5,
+      "label": "資源供應"
+    },
+    {
+      "source": "中東",
+      "target": "伊朗",
+      "value": 5,
+      "label": "地緣政治"
+    },
+    {
+      "source": "中東",
+      "target": "物價",
+      "value": 4,
+      "label": "能源影響"
+    },
+    {
+      "source": "伊朗",
+      "target": "石油",
+      "value": 5,
+      "label": "資源控制"
+    },
+    {
+      "source": "伊朗",
+      "target": "美國",
+      "value": 5,
+      "label": "軍事衝突"
+    },
+    {
+      "source": "石油",
+      "target": "物價",
+      "value": 5,
+      "label": "價格影響"
+    },
+    {
+      "source": "石油",
+      "target": "航空業",
+      "value": 4,
+      "label": "成本壓力"
+    },
+    {
+      "source": "日本",
+      "target": "核能",
+      "value": 4,
+      "label": "能源政策"
+    },
+    {
+      "source": "日本",
+      "target": "GDP",
+      "value": 3,
+      "label": "經濟指標"
+    },
+    {
+      "source": "韓國",
+      "target": "GDP",
+      "value": 3,
+      "label": "經濟表現"
+    },
+    {
+      "source": "韓國",
+      "target": "台灣",
+      "value": 3,
+      "label": "經濟競爭"
+    },
+    {
+      "source": "中國",
+      "target": "人民幣",
+      "value": 5,
+      "label": "貨幣政策"
+    },
+    {
+      "source": "中國",
+      "target": "石油",
+      "value": 3,
+      "label": "能源儲備"
+    },
+    {
+      "source": "印度",
+      "target": "石油",
+      "value": 3,
+      "label": "制裁豁免"
+    },
+    {
+      "source": "台灣",
+      "target": "核能",
+      "value": 4,
+      "label": "能源政策"
+    },
+    {
+      "source": "台灣",
+      "target": "半導體",
+      "value": 5,
+      "label": "產業優勢"
+    },
+    {
+      "source": "台灣",
+      "target": "AI",
+      "value": 4,
+      "label": "科技發展"
+    },
+    {
+      "source": "龔明鑫",
+      "target": "核能",
+      "value": 4,
+      "label": "政策推動"
+    },
+    {
+      "source": "龔明鑫",
+      "target": "台灣",
+      "value": 4,
+      "label": "政府官員"
+    },
+    {
+      "source": "記憶體",
+      "target": "AI伺服器",
+      "value": 4,
+      "label": "關鍵零組件"
+    },
+    {
+      "source": "天然氣",
+      "target": "物價",
+      "value": 4,
+      "label": "能源價格"
+    },
+    {
+      "source": "天然氣",
+      "target": "中東",
+      "value": 3,
+      "label": "供應來源"
+    },
+    {
+      "source": "航空業",
+      "target": "物價",
+      "value": 3,
+      "label": "票價調整"
+    },
+    {
+      "source": "電信業",
+      "target": "AI",
+      "value": 3,
+      "label": "技術應用"
+    }
+  ],
+  "newsDatabase": {
+    "台積電": [
+      {
+        "title": "台積電2月營收淡月減20.8% 本月回神 法人：Q1財測有望超標",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9372130"
+      },
+      {
+        "title": "台積電2月營收月減20.8%本月回神 法人：Q1財測有望超標",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7253/9372130"
+      },
+      {
+        "title": "台積電營收 寫最強2月",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260311000160-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "2月營收創高 台積首季輕鬆達標",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260311000569-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台積電2月營收首破3千億",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1746389"
+      }
+    ],
+    "聯發科": [
+      {
+        "title": "聯發科2月營收失守400億 兩年低點 記憶體漲價影響、工作天數減少是主因",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9372132"
+      },
+      {
+        "title": "聯發科2月營收失守400億 兩年低點",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7253/9372132"
+      },
+      {
+        "title": "淡季、空窗影響…聯發科、世芯2月營收熄火",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260311000189-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "營收獲利速報》聯發科2月營收年月雙減 創2年來新低",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1746395"
+      }
+    ],
+    "輝達": [
+      {
+        "title": "輝達執行長發表專文 黃仁勳：AI 建設才剛開始",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9372144"
+      },
+      {
+        "title": "輝達 將進軍AI代理市場",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260311000260-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "黃仁勳": [
+      {
+        "title": "輝達執行長發表專文 黃仁勳：AI 建設才剛開始",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9372144"
+      },
+      {
+        "title": "AI基建 黃仁勳點五層蛋糕鏈",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260311000186-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "鴻海": [
+      {
+        "title": "鴻海大賣群創逾8萬張持股",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9372122"
+      },
+      {
+        "title": "iPhone 印度製造大躍進 包辦全球25%產能 鴻海營運沾光",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9372083"
+      }
+    ],
+    "群創": [
+      {
+        "title": "群創模組廠8.8億賣南茂 市場：南科二廠、五廠要出售了",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9372108"
+      },
+      {
+        "title": "鴻海大賣群創逾8萬張持股",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9372122"
+      },
+      {
+        "title": "群創去年獲利衰退 擬配息1元",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9372116"
+      },
+      {
+        "title": "模組廠賣南茂 群創處分利益6.59億",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1746390"
+      }
+    ],
+    "華碩": [
+      {
+        "title": "華碩報喜 去年賺六個股本 喊話今年 AI 伺服器營收倍增",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9372041"
+      },
+      {
+        "title": "AI伺服器業績超標！華碩去年賺進6個股本",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260311000191-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "華碩：記憶體缺貨恐持續2年",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1746391"
+      }
+    ],
+    "蘋果": [
+      {
+        "title": "蘋果50年最大挑戰！急需開發「殺手級」AI產品",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9372085"
+      },
+      {
+        "title": "書寫傳奇50年 定義世界的「蘋果之道」",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9372089"
+      },
+      {
+        "title": "蘋果50年 挾3大優勢拚AI時代逆轉勝",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9372088"
+      },
+      {
+        "title": "蘋果智慧家庭裝置 延後推出",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260311000257-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "OpenAI": [
+      {
+        "title": "OpenAI 投資喊卡…技術考量",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9372038"
+      },
+      {
+        "title": "價值觀重於錢 OpenAI失人才",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9372109"
+      }
+    ],
+    "中華電": [
+      {
+        "title": "中華電打造防詐生態圈",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9372057"
+      },
+      {
+        "title": "中華電2月EPS 0.45元",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7252/9371639"
+      },
+      {
+        "title": "電信三雄 2月業績齊高歌",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260311000293-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "中華電信首創SIM Swap偵測技術",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260311000296-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "南茂": [
+      {
+        "title": "群創模組廠8.8億賣南茂 市場：南科二廠、五廠要出售了",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9372108"
+      }
+    ],
+    "日月光": [
+      {
+        "title": "看好AI多頭趨勢未變 日月光拚先進封測營收翻倍",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260311000298-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "日月光合併營收寫最旺2月",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7253/9371709"
+      }
+    ],
+    "和碩": [
+      {
+        "title": "和碩、可成2月合併營收月減26%",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7253/9371718"
+      },
+      {
+        "title": "季底拉貨效應 和碩3月回溫可期",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260311000301-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "群光": [
+      {
+        "title": "群光2025年EPS 9.05元 發7.2元股息",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7253/9371695"
+      },
+      {
+        "title": "群光2025年每股賺9.05元",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260311000304-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "南亞科": [
+      {
+        "title": "華強北最新報價出爐 DDR4大漲 南亞科、華邦樂",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9372114"
+      },
+      {
+        "title": "營收獲利速報》南亞科2月EPS2.45元 單月賺贏去年全年",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1746394"
+      }
+    ],
+    "英業達": [
+      {
+        "title": "英業達2025年EPS 2.42元",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7253/9371710"
+      }
+    ],
+    "台塑化": [
+      {
+        "title": "美伊戰爭效應 台塑化、台塑減產 對客戶發出不可抗力通知",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9372139"
+      },
+      {
+        "title": "台塑化宣告不可抗力 減產、暫停接單",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260311000177-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "萬海": [
+      {
+        "title": "萬海去年每股賺11.21元",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9372110"
+      },
+      {
+        "title": "萬海砸175億買船 將躋身全球10強",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260311000217-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中鋼": [
+      {
+        "title": "出貨回穩 中鋼3月營收看增",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260311000222-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "中鋼2月合併營收年減12%",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7252/9371672"
+      }
+    ],
+    "川普": [
+      {
+        "title": "川普：戰爭近完成 台幣返31.8元",
+        "source": "工商金融稅務",
+        "url": "https://www.chinatimes.com/newspapers/20260311000282-260205?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "川普：戰事將「很快」結束 並讓美國海軍護送油輪 油價應聲大跌",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9372121"
+      },
+      {
+        "title": "伊朗恐部署水雷擋油船 川普警告：軍事後果前所未見",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9372308"
+      }
+    ],
+    "台灣": [
+      {
+        "title": "韓國經濟陷停滯 GNI落後台灣、日本",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260311000248-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "iPhone 印度製造大躍進 包辦全球25%產能 鴻海營運沾光",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9372083"
+      }
+    ],
+    "美國": [
+      {
+        "title": "董瑞斌談美降息 5月見真章",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260311000198-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "白宮：美國海軍未護送任何油輪度過荷莫茲海峽",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9372289"
+      },
+      {
+        "title": "美擬暫時放寬對俄國石油制裁 印度先取得豁免30天",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260311000182-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中國": [
+      {
+        "title": "西南證券首席策略分析師張剛：陸出口大增 恐引起各國擔憂",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260311000270-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "人行放手 人民幣在岸價激升",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260311000274-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "即使中東原油供應中斷 美專家：中國戰備儲油可撐半年",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260311000180-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "日本": [
+      {
+        "title": "日本旗艦經濟戰略鎖定17產業 上調去年 Q4 GDP 至1.3%",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9372056"
+      },
+      {
+        "title": "韓國經濟陷停滯 GNI落後台灣、日本",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260311000248-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "311地震15週年　日本走出福島核災創傷轉為擁抱核能",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9372244"
+      }
+    ],
+    "韓國": [
+      {
+        "title": "韓國經濟陷停滯 GNI落後台灣、日本",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260311000248-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "印度": [
+      {
+        "title": "iPhone 印度製造大躍進 包辦全球25%產能 鴻海營運沾光",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9372083"
+      },
+      {
+        "title": "美擬暫時放寬對俄國石油制裁 印度先取得豁免30天",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260311000182-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "伊朗": [
+      {
+        "title": "伊朗恐部署水雷擋油船 川普警告：軍事後果前所未見",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9372308"
+      },
+      {
+        "title": "中東區域衝突不斷 瑞銀：化學品鏈受衝擊",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7252/9371697"
+      }
+    ],
+    "AI": [
+      {
+        "title": "輝達執行長發表專文 黃仁勳：AI 建設才剛開始",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9372144"
+      },
+      {
+        "title": "華碩報喜 去年賺六個股本 喊話今年 AI 伺服器營收倍增",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9372041"
+      },
+      {
+        "title": "蘋果50年最大挑戰！急需開發「殺手級」AI產品",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9372085"
+      },
+      {
+        "title": "AI基建 黃仁勳點五層蛋糕鏈",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260311000186-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "看好AI多頭趨勢未變 日月光拚先進封測營收翻倍",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260311000298-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "因應AI產業需求 興達燃氣機組擬延役",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1746418"
+      }
+    ],
+    "半導體": [
+      {
+        "title": "台積電2月營收淡月減20.8% 本月回神 法人：Q1財測有望超標",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9372130"
+      }
+    ],
+    "記憶體": [
+      {
+        "title": "聯發科2月營收失守400億 兩年低點 記憶體漲價影響、工作天數減少是主因",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9372132"
+      },
+      {
+        "title": "三星大罷工…記憶體更缺了 群聯、威剛等台廠受惠",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9372104"
+      },
+      {
+        "title": "華強北最新報價出爐 DDR4大漲 南亞科、華邦樂",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9372114"
+      },
+      {
+        "title": "華碩：記憶體缺貨恐持續2年",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1746391"
+      }
+    ],
+    "先進封裝": [
+      {
+        "title": "先進封裝鏈 明發表業績",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7254/9371738"
+      },
+      {
+        "title": "看好AI多頭趨勢未變 日月光拚先進封測營收翻倍",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260311000298-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "AI伺服器": [
+      {
+        "title": "華碩報喜 去年賺六個股本 喊話今年 AI 伺服器營收倍增",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9372041"
+      },
+      {
+        "title": "AI伺服器業績超標！華碩去年賺進6個股本",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260311000191-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "三星": [
+      {
+        "title": "三星大罷工…記憶體更缺了 群聯、威剛等台廠受惠",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9372104"
+      }
+    ],
+    "中東": [
+      {
+        "title": "中東情勢造成國際油價波動 政院五招穩物價、擴大減稅",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9372014"
+      },
+      {
+        "title": "美伊戰爭效應 台塑化、台塑減產 對客戶發出不可抗力通知",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9372139"
+      },
+      {
+        "title": "中東區域衝突不斷 瑞銀：化學品鏈受衝擊",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7252/9371697"
+      },
+      {
+        "title": "中東衝突爆能源危機 電池業迎機遇",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260311000350-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "即使中東原油供應中斷 美專家：中國戰備儲油可撐半年",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260311000180-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "石油": [
+      {
+        "title": "中東情勢造成國際油價波動 政院五招穩物價、擴大減稅",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9372014"
+      },
+      {
+        "title": "川普：戰事將「很快」結束 並讓美國海軍護送油輪 油價應聲大跌",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9372121"
+      },
+      {
+        "title": "沙國示警油市「災難性後果」原已吃緊的原油庫存將加劇減少",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9372060"
+      },
+      {
+        "title": "白宮：美國海軍未護送任何油輪度過荷莫茲海峽",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9372289"
+      },
+      {
+        "title": "即使中東原油供應中斷 美專家：中國戰備儲油可撐半年",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260311000180-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美擬暫時放寬對俄國石油制裁 印度先取得豁免30天",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260311000182-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "市場關注荷莫茲海峽與伊朗戰爭　國際油價收跌逾11%",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9372317"
+      }
+    ],
+    "天然氣": [
+      {
+        "title": "亞洲瘋搶天然氣 價格飆漲1.5倍",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260311000251-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "核能": [
+      {
+        "title": "311地震15週年　日本走出福島核災創傷轉為擁抱核能",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9372244"
+      },
+      {
+        "title": "核三縮短啟用時間 有條件",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9372044"
+      },
+      {
+        "title": "經長龔明鑫：核三有望2028前重啟",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260311000169-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "人民幣": [
+      {
+        "title": "人行放手 人民幣在岸價激升",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260311000274-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台幣": [
+      {
+        "title": "川普：戰爭近完成 台幣返31.8元",
+        "source": "工商金融稅務",
+        "url": "https://www.chinatimes.com/newspapers/20260311000282-260205?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "GDP": [
+      {
+        "title": "日本旗艦經濟戰略鎖定17產業 上調去年 Q4 GDP 至1.3%",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9372056"
+      },
+      {
+        "title": "韓國經濟陷停滯 GNI落後台灣、日本",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260311000248-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "關稅": [
+      {
+        "title": "中東情勢造成國際油價波動 政院五招穩物價、擴大減稅",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9372014"
+      }
+    ],
+    "物價": [
+      {
+        "title": "中東情勢造成國際油價波動 政院五招穩物價、擴大減稅",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9372014"
+      },
+      {
+        "title": "塑化產品價看升 加重下游成本",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9372145"
+      }
+    ],
+    "航空業": [
+      {
+        "title": "農曆年前後旅遊旺季加持 航空四雄2月營收高飛",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9372120"
+      },
+      {
+        "title": "亞洲航空業調漲機票價格 國內業者將適時調整燃油附加費",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9372155"
+      },
+      {
+        "title": "航空四傑績昂 歷年2月最旺",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260311000214-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "油價飆添壓 亞洲航空業掀漲價潮",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260311000253-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "電信業": [
+      {
+        "title": "電信三雄 2月業績齊高歌",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260311000293-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "化學品": [
+      {
+        "title": "中東區域衝突不斷 瑞銀：化學品鏈受衝擊",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7252/9371697"
+      }
+    ],
+    "龔明鑫": [
+      {
+        "title": "經長龔明鑫：核三有望2028前重啟",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260311000169-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "日本旗艦經濟戰略鎖定17產業 上調去年 Q4 GDP 至1.3% (經濟國際焦點)": "https://money.udn.com/money/story/5599/9372056",
+    "中東情勢造成國際油價波動 政院五招穩物價、擴大減稅 (聯合_產經_股市)": "https://udn.com/news/story/7238/9372014",
+    "董瑞斌談美降息 5月見真章 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260311000198-260202?utm_source=iii_news&utm_medium=rss",
+    "韓國經濟陷停滯 GNI落後台灣、日本 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260311000248-260203?utm_source=iii_news&utm_medium=rss",
+    "西南證券首席策略分析師張剛：陸出口大增 恐引起各國擔憂 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260311000270-260203?utm_source=iii_news&utm_medium=rss",
+    "人行放手 人民幣在岸價激升 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260311000274-260203?utm_source=iii_news&utm_medium=rss",
+    "川普：戰爭近完成 台幣返31.8元 (工商金融稅務)": "https://www.chinatimes.com/newspapers/20260311000282-260205?utm_source=iii_news&utm_medium=rss",
+    "群創模組廠8.8億賣南茂 市場：南科二廠、五廠要出售了 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9372108",
+    "鴻海大賣群創逾8萬張持股 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9372122",
+    "群創去年獲利衰退 擬配息1元 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9372116",
+    "聯發科2月營收失守400億 兩年低點 記憶體漲價影響、工作天數減少是主因 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9372132",
+    "輝達執行長發表專文 黃仁勳：AI 建設才剛開始 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9372144",
+    "台積電2月營收淡月減20.8% 本月回神 法人：Q1財測有望超標 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9372130",
+    "中保科獲利、股利締新猷 去年 EPS 6.77元 配發6.2元股利 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9372048",
+    "OpenAI 投資喊卡…技術考量 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9372038",
+    "iPhone 印度製造大躍進 包辦全球25%產能 鴻海營運沾光 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9372083",
+    "華碩報喜 去年賺六個股本 喊話今年 AI 伺服器營收倍增 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9372041",
+    "集邦：主流 NB 恐漲價40% (經濟產業熱點)": "https://money.udn.com/money/story/5612/9372045",
+    "中華電打造防詐生態圈 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9372057",
+    "三星大罷工…記憶體更缺了 群聯、威剛等台廠受惠 (聯合_產經_股市)": "https://udn.com/news/story/7240/9372104",
+    "蘋果50年最大挑戰！急需開發「殺手級」AI產品 (聯合_產經_股市)": "https://udn.com/news/story/7240/9372085",
+    "誠信金融論壇17日登場／數發部主秘胡貝蒂：主動監測 即時阻詐 (聯合_產經_股市)": "https://udn.com/news/story/7238/9372126",
+    "中華電2月EPS 0.45元 (聯合_產經_股市)": "https://udn.com/news/story/7252/9371639",
+    "聯發科2月營收失守400億 兩年低點 (聯合_產經_股市)": "https://udn.com/news/story/7253/9372132",
+    "台積電2月營收月減20.8%本月回神 法人：Q1財測有望超標 (聯合_產經_股市)": "https://udn.com/news/story/7253/9372130",
+    "勤誠2025年EPS 29.06元 規劃配息14元 歷來最高 (聯合_產經_股市)": "https://udn.com/news/story/7253/9371691",
+    "價值觀重於錢 OpenAI失人才 (聯合_產經_股市)": "https://udn.com/news/story/6811/9372109",
+    "書寫傳奇50年 定義世界的「蘋果之道」 (聯合_產經_股市)": "https://udn.com/news/story/7240/9372089",
+    "華強北最新報價出爐 DDR4大漲 南亞科、華邦樂 (聯合_產經_股市)": "https://udn.com/news/story/7240/9372114",
+    "蘋果50年 挾3大優勢拚AI時代逆轉勝 (聯合_產經_股市)": "https://udn.com/news/story/7240/9372088",
+    "先進封裝鏈 明發表業績 (聯合_產經_股市)": "https://udn.com/news/story/7254/9371738",
+    "和碩、可成2月合併營收月減26% (聯合_產經_股市)": "https://udn.com/news/story/7253/9371718",
+    "金像電2025年EPS 19.47元 健鼎19.45元 (聯合_產經_股市)": "https://udn.com/news/story/7253/9371693",
+    "群光2025年EPS 9.05元 發7.2元股息 (聯合_產經_股市)": "https://udn.com/news/story/7253/9371695",
+    "台積電營收 寫最強2月 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260311000160-260202?utm_source=iii_news&utm_medium=rss",
+    "AI基建 黃仁勳點五層蛋糕鏈 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260311000186-260202?utm_source=iii_news&utm_medium=rss",
+    "淡季、空窗影響…聯發科、世芯2月營收熄火 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260311000189-260202?utm_source=iii_news&utm_medium=rss",
+    "AI伺服器業績超標！華碩去年賺進6個股本 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260311000191-260202?utm_source=iii_news&utm_medium=rss",
+    "今年筆電售價 恐漲近40％ (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260311000194-260202?utm_source=iii_news&utm_medium=rss",
+    "AI光通訊升級潮 波若威卡位 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260311000343-260202?utm_source=iii_news&utm_medium=rss",
+    "台郡力求轉型 新品動能看旺 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260311000346-260202?utm_source=iii_news&utm_medium=rss",
+    "蘋果智慧家庭裝置 延後推出 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260311000257-260203?utm_source=iii_news&utm_medium=rss",
+    "輝達 將進軍AI代理市場 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260311000260-260203?utm_source=iii_news&utm_medium=rss",
+    "楊立昆AI新創公司 募逾10億美元 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260311000262-260203?utm_source=iii_news&utm_medium=rss",
+    "電信三雄 2月業績齊高歌 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260311000293-260204?utm_source=iii_news&utm_medium=rss",
+    "中華電信首創SIM Swap偵測技術 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260311000296-260204?utm_source=iii_news&utm_medium=rss",
+    "看好AI多頭趨勢未變 日月光拚先進封測營收翻倍 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260311000298-260204?utm_source=iii_news&utm_medium=rss",
+    "季底拉貨效應 和碩3月回溫可期 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260311000301-260204?utm_source=iii_news&utm_medium=rss",
+    "義隆 搶進衛星通訊商機 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260311000302-260204?utm_source=iii_news&utm_medium=rss",
+    "光寶科上月營收 年增逾17％ (工商產業科技)": "https://www.chinatimes.com/newspapers/20260311000303-260204?utm_source=iii_news&utm_medium=rss",
+    "群光2025年每股賺9.05元 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260311000304-260204?utm_source=iii_news&utm_medium=rss",
+    "原子精製 打造多片型模組化ALD平台 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260311000338-260204?utm_source=iii_news&utm_medium=rss",
+    "義隆揮軍低軌衛星 (聯合_產經_股市)": "https://udn.com/news/story/7253/9371712",
+    "日月光合併營收寫最旺2月 (聯合_產經_股市)": "https://udn.com/news/story/7253/9371709",
+    "中磊2025年每股賺4.04元 (聯合_產經_股市)": "https://udn.com/news/story/7253/9371640",
+    "2月營收創高 台積首季輕鬆達標 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260311000569-260110?utm_source=iii_news&utm_medium=rss",
+    "台積電2月營收首破3千億 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1746389",
+    "模組廠賣南茂 群創處分利益6.59億 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1746390",
+    "營收獲利速報》聯發科2月營收年月雙減 創2年來新低 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1746395",
+    "營收獲利速報》南亞科2月EPS2.45元 單月賺贏去年全年 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1746394",
+    "華碩：記憶體缺貨恐持續2年 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1746391",
+    "日電貿攻AI  營收進補 (聯合_產經_股市)": "https://udn.com/news/story/7253/9371643",
+    "英業達2025年EPS 2.42元 (聯合_產經_股市)": "https://udn.com/news/story/7253/9371710",
+    "Potato Corner 8萬個紙碗驗出螢光劑 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260311000560-260114?utm_source=iii_news&utm_medium=rss",
+    "農曆年前後旅遊旺季加持 航空四雄2月營收高飛 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9372120",
+    "萬海去年每股賺11.21元 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9372110",
+    "塑化產品價看升 加重下游成本 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9372145",
+    "亞洲航空業調漲機票價格 國內業者將適時調整燃油附加費 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9372155",
+    "美伊戰爭效應 台塑化、台塑減產 對客戶發出不可抗力通知 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9372139",
+    "中東區域衝突不斷 瑞銀：化學品鏈受衝擊 (聯合_產經_股市)": "https://udn.com/news/story/7252/9371697",
+    "台塑化宣告不可抗力 減產、暫停接單 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260311000177-260202?utm_source=iii_news&utm_medium=rss",
+    "航空四傑績昂 歷年2月最旺 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260311000214-260202?utm_source=iii_news&utm_medium=rss",
+    "萬海砸175億買船 將躋身全球10強 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260311000217-260202?utm_source=iii_news&utm_medium=rss",
+    "油價飆添壓 亞洲航空業掀漲價潮 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260311000253-260203?utm_source=iii_news&utm_medium=rss",
+    "311地震15週年　日本走出福島核災創傷轉為擁抱核能 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9372244",
+    "川普：戰事將「很快」結束 並讓美國海軍護送油輪 油價應聲大跌 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9372121",
+    "沙國示警油市「災難性後果」原已吃緊的原油庫存將加劇減少 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9372060",
+    "白宮：美國海軍未護送任何油輪度過荷莫茲海峽 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9372289",
+    "核三縮短啟用時間 有條件 (聯合_產經_股市)": "https://udn.com/news/story/7238/9372044",
+    "經長龔明鑫：核三有望2028前重啟 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260311000169-260202?utm_source=iii_news&utm_medium=rss",
+    "即使中東原油供應中斷 美專家：中國戰備儲油可撐半年 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260311000180-260202?utm_source=iii_news&utm_medium=rss",
+    "美擬暫時放寬對俄國石油制裁 印度先取得豁免30天 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260311000182-260202?utm_source=iii_news&utm_medium=rss",
+    "機械、工具機 前二月出口報喜 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260311000219-260202?utm_source=iii_news&utm_medium=rss",
+    "出貨回穩 中鋼3月營收看增 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260311000222-260202?utm_source=iii_news&utm_medium=rss",
+    "中東衝突爆能源危機 電池業迎機遇 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260311000350-260202?utm_source=iii_news&utm_medium=rss",
+    "黑粉高值化回收的關鍵路線 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260311000351-260202?utm_source=iii_news&utm_medium=rss",
+    "亞洲瘋搶天然氣 價格飆漲1.5倍 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260311000251-260203?utm_source=iii_news&utm_medium=rss",
+    "中鋼2月合併營收年減12% (聯合_產經_股市)": "https://udn.com/news/story/7252/9371672",
+    "興達二期環評 居民怒吼不准動 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260311000554-260114?utm_source=iii_news&utm_medium=rss",
+    "伊朗恐部署水雷擋油船 川普警告：軍事後果前所未見 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9372308",
+    "因應AI產業需求 興達燃氣機組擬延役 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1746418",
+    "市場關注荷莫茲海峽與伊朗戰爭　國際油價收跌逾11% (經濟國際焦點)": "https://money.udn.com/money/story/5599/9372317"
+  }
+}
