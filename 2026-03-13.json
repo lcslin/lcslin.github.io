@@ -18,17 +18,17 @@
     {
       "id": "伊朗",
       "group": "country",
-      "size": 20
+      "size": 18
     },
     {
       "id": "印度",
       "group": "country",
-      "size": 10
+      "size": 8
     },
     {
       "id": "南韓",
       "group": "country",
-      "size": 8
+      "size": 6
     },
     {
       "id": "台積電",
@@ -38,17 +38,17 @@
     {
       "id": "群創",
       "group": "company",
-      "size": 18
+      "size": 15
     },
     {
       "id": "中華電信",
       "group": "company",
-      "size": 17
+      "size": 14
     },
     {
       "id": "台塑集團",
       "group": "company",
-      "size": 21
+      "size": 20
     },
     {
       "id": "輝達",
@@ -56,144 +56,154 @@
       "size": 12
     },
     {
-      "id": "Meta",
-      "group": "company",
-      "size": 14
-    },
-    {
       "id": "英特爾",
       "group": "company",
-      "size": 13
+      "size": 10
+    },
+    {
+      "id": "Meta",
+      "group": "company",
+      "size": 10
     },
     {
       "id": "日月光",
       "group": "company",
-      "size": 11
+      "size": 8
     },
     {
       "id": "京元電",
       "group": "company",
-      "size": 10
+      "size": 8
     },
     {
       "id": "聯電",
       "group": "company",
-      "size": 12
+      "size": 9
     },
     {
       "id": "東元",
       "group": "company",
-      "size": 9
-    },
-    {
-      "id": "比亞迪",
-      "group": "company",
-      "size": 8
-    },
-    {
-      "id": "高通",
-      "group": "company",
-      "size": 10
+      "size": 7
     },
     {
       "id": "緯穎",
       "group": "company",
-      "size": 9
+      "size": 7
     },
     {
-      "id": "301調查",
-      "group": "finance",
-      "size": 20
+      "id": "高通",
+      "group": "company",
+      "size": 8
     },
     {
-      "id": "關稅",
-      "group": "finance",
-      "size": 19
+      "id": "比亞迪",
+      "group": "company",
+      "size": 7
     },
     {
-      "id": "貿易協定",
-      "group": "finance",
-      "size": 16
-    },
-    {
-      "id": "油價",
-      "group": "finance",
-      "size": 23
-    },
-    {
-      "id": "通膨",
+      "id": "301條款",
       "group": "finance",
       "size": 18
     },
     {
-      "id": "國安基金",
+      "id": "關稅",
+      "group": "finance",
+      "size": 20
+    },
+    {
+      "id": "油價",
+      "group": "finance",
+      "size": 22
+    },
+    {
+      "id": "通膨",
+      "group": "finance",
+      "size": 16
+    },
+    {
+      "id": "貿易協定",
       "group": "finance",
       "size": 12
     },
     {
-      "id": "AI晶片",
-      "group": "tech",
-      "size": 22
-    },
-    {
-      "id": "半導體",
-      "group": "tech",
-      "size": 21
-    },
-    {
-      "id": "記憶體",
-      "group": "tech",
-      "size": 13
+      "id": "國安基金",
+      "group": "org",
+      "size": 10
     },
     {
       "id": "AI",
       "group": "tech",
-      "size": 20
+      "size": 25
     },
     {
-      "id": "衛星",
+      "id": "半導體",
+      "group": "tech",
+      "size": 23
+    },
+    {
+      "id": "晶圓代工",
+      "group": "tech",
+      "size": 15
+    },
+    {
+      "id": "AI晶片",
+      "group": "tech",
+      "size": 18
+    },
+    {
+      "id": "記憶體",
+      "group": "tech",
+      "size": 10
+    },
+    {
+      "id": "面板",
+      "group": "tech",
+      "size": 12
+    },
+    {
+      "id": "低軌衛星",
+      "group": "tech",
+      "size": 9
+    },
+    {
+      "id": "新能源",
       "group": "tech",
       "size": 14
     },
     {
-      "id": "能源",
-      "group": "tech",
-      "size": 19
-    },
-    {
       "id": "核能",
       "group": "tech",
-      "size": 11
+      "size": 8
+    },
+    {
+      "id": "荷莫茲海峽",
+      "group": "finance",
+      "size": 12
     },
     {
       "id": "卓揆",
       "group": "person",
-      "size": 15
+      "size": 10
     },
     {
       "id": "施俊吉",
       "group": "person",
-      "size": 10
+      "size": 7
     },
     {
       "id": "吳嘉昭",
       "group": "person",
-      "size": 9
+      "size": 7
     },
     {
       "id": "USTR",
       "group": "org",
-      "size": 12
+      "size": 8
     },
     {
       "id": "IEA",
       "group": "org",
-      "size": 11
-    },
-    {
-      "id": "荷莫茲海峽",
-      "group": "country",
-      "size": 17
+      "size": 7
     }
   ],
   "links": [
@@ -201,25 +211,19 @@
       "source": "美國",
       "target": "台灣",
       "value": 5,
-      "label": "301調查威脅"
+      "label": "貿易關稅調查"
     },
     {
       "source": "美國",
-      "target": "301調查",
+      "target": "301條款",
       "value": 5,
-      "label": "發起調查"
+      "label": "政策工具"
     },
     {
-      "source": "301調查",
+      "source": "301條款",
       "target": "台灣",
       "value": 5,
-      "label": "貿易壓力"
-    },
-    {
-      "source": "301調查",
-      "target": "關稅",
-      "value": 4,
-      "label": "懲罰手段"
+      "label": "貿易風險"
     },
     {
       "source": "美國",
@@ -230,98 +234,38 @@
     {
       "source": "美國",
       "target": "關稅",
-      "value": 4,
+      "value": 5,
       "label": "貿易政策"
-    },
-    {
-      "source": "台灣",
-      "target": "貿易協定",
-      "value": 4,
-      "label": "ART優惠"
-    },
-    {
-      "source": "施俊吉",
-      "target": "貿易協定",
-      "value": 3,
-      "label": "政策評論"
     },
     {
       "source": "伊朗",
       "target": "荷莫茲海峽",
       "value": 5,
-      "label": "封鎖威脅"
+      "label": "封鎖行動"
     },
     {
       "source": "荷莫茲海峽",
       "target": "油價",
       "value": 5,
-      "label": "供應中斷"
-    },
-    {
-      "source": "伊朗",
-      "target": "油價",
-      "value": 5,
-      "label": "戰爭推升"
+      "label": "供應威脅"
     },
     {
       "source": "油價",
       "target": "通膨",
       "value": 5,
-      "label": "價格傳導"
+      "label": "成本推動"
     },
     {
       "source": "油價",
-      "target": "能源",
-      "value": 4,
-      "label": "能源危機"
-    },
-    {
-      "source": "能源",
-      "target": "核能",
-      "value": 4,
-      "label": "替代方案"
-    },
-    {
-      "source": "台塑集團",
-      "target": "油價",
-      "value": 5,
-      "label": "成本壓力"
-    },
-    {
-      "source": "台塑集團",
-      "target": "能源",
-      "value": 4,
-      "label": "能源轉型"
-    },
-    {
-      "source": "台塑集團",
-      "target": "半導體",
-      "value": 4,
-      "label": "跨足佈局"
-    },
-    {
-      "source": "吳嘉昭",
       "target": "台塑集團",
       "value": 4,
-      "label": "領導轉型"
+      "label": "原料成本"
     },
     {
-      "source": "卓揆",
-      "target": "油價",
+      "source": "油價",
+      "target": "核能",
       "value": 4,
-      "label": "政策因應"
-    },
-    {
-      "source": "卓揆",
-      "target": "國安基金",
-      "value": 4,
-      "label": "穩定市場"
-    },
-    {
-      "source": "卓揆",
-      "target": "能源",
-      "value": 3,
-      "label": "調度替代"
+      "label": "替代能源需求"
     },
     {
       "source": "台積電",
@@ -330,34 +274,34 @@
       "label": "製造代工"
     },
     {
+      "source": "台積電",
+      "target": "Meta",
+      "value": 4,
+      "label": "供應鏈合作"
+    },
+    {
+      "source": "台積電",
+      "target": "晶圓代工",
+      "value": 5,
+      "label": "市場主導"
+    },
+    {
       "source": "Meta",
       "target": "AI晶片",
-      "value": 5,
-      "label": "加速推進"
+      "value": 4,
+      "label": "研發投資"
     },
     {
       "source": "Meta",
-      "target": "台積電",
-      "value": 5,
-      "label": "委託製造"
-    },
-    {
-      "source": "台積電",
       "target": "日月光",
-      "value": 4,
-      "label": "供應鏈"
+      "value": 3,
+      "label": "封裝合作"
     },
     {
-      "source": "台積電",
+      "source": "Meta",
       "target": "京元電",
-      "value": 4,
-      "label": "供應鏈"
-    },
-    {
-      "source": "台積電",
-      "target": "半導體",
-      "value": 5,
-      "label": "產業龍頭"
+      "value": 3,
+      "label": "測試合作"
     },
     {
       "source": "輝達",
@@ -366,64 +310,82 @@
       "label": "技術領先"
     },
     {
-      "source": "輝達",
-      "target": "AI晶片",
-      "value": 4,
-      "label": "產品開發"
-    },
-    {
       "source": "英特爾",
       "target": "美國",
       "value": 4,
       "label": "政府入股"
     },
     {
-      "source": "英特爾",
-      "target": "半導體",
-      "value": 4,
-      "label": "晶片製造"
+      "source": "群創",
+      "target": "面板",
+      "value": 5,
+      "label": "主營業務"
     },
     {
       "source": "群創",
       "target": "半導體",
       "value": 4,
-      "label": "跨足佈局"
+      "label": "業務轉型"
     },
     {
       "source": "群創",
       "target": "記憶體",
       "value": 3,
-      "label": "業務相關"
+      "label": "市場影響"
     },
     {
       "source": "中華電信",
-      "target": "AI",
-      "value": 4,
-      "label": "投資布局"
-    },
-    {
-      "source": "中華電信",
-      "target": "衛星",
+      "target": "低軌衛星",
       "value": 4,
       "label": "服務拓展"
     },
     {
       "source": "中華電信",
-      "target": "台灣",
+      "target": "AI",
       "value": 3,
+      "label": "數位轉型"
+    },
+    {
+      "source": "中華電信",
+      "target": "台灣",
+      "value": 4,
       "label": "基礎建設"
     },
     {
-      "source": "聯電",
+      "source": "台塑集團",
       "target": "半導體",
       "value": 4,
-      "label": "晶圓代工"
+      "label": "產業布局"
+    },
+    {
+      "source": "台塑集團",
+      "target": "新能源",
+      "value": 4,
+      "label": "轉型投資"
+    },
+    {
+      "source": "台塑集團",
+      "target": "伊朗",
+      "value": 4,
+      "label": "石油供應"
+    },
+    {
+      "source": "台塑集團",
+      "target": "吳嘉昭",
+      "value": 3,
+      "label": "企業領導"
     },
     {
       "source": "東元",
       "target": "AI",
       "value": 3,
       "label": "AIDC業務"
+    },
+    {
+      "source": "聯電",
+      "target": "半導體",
+      "value": 4,
+      "label": "晶圓製造"
     },
     {
       "source": "高通",
@@ -434,32 +396,68 @@
     {
       "source": "緯穎",
       "target": "AI",
-      "value": 4,
-      "label": "架構建設"
+      "value": 3,
+      "label": "伺服器方案"
     },
     {
       "source": "印度",
       "target": "半導體",
       "value": 4,
-      "label": "補助製造"
-    },
-    {
-      "source": "比亞迪",
-      "target": "中國",
-      "value": 3,
-      "label": "品牌拓展"
+      "label": "產業補助"
     },
     {
       "source": "南韓",
       "target": "油價",
       "value": 3,
-      "label": "抑制措施"
+      "label": "價格管制"
     },
     {
       "source": "中國",
-      "target": "能源",
+      "target": "油價",
       "value": 3,
-      "label": "禁止出口"
+      "label": "出口禁令"
+    },
+    {
+      "source": "卓揆",
+      "target": "台灣",
+      "value": 4,
+      "label": "政策領導"
+    },
+    {
+      "source": "卓揆",
+      "target": "國安基金",
+      "value": 4,
+      "label": "市場穩定"
+    },
+    {
+      "source": "卓揆",
+      "target": "油價",
+      "value": 3,
+      "label": "能源調度"
+    },
+    {
+      "source": "施俊吉",
+      "target": "美國",
+      "value": 3,
+      "label": "貿易評論"
+    },
+    {
+      "source": "施俊吉",
+      "target": "貿易協定",
+      "value": 3,
+      "label": "政策分析"
+    },
+    {
+      "source": "USTR",
+      "target": "美國",
+      "value": 4,
+      "label": "貿易代表"
+    },
+    {
+      "source": "USTR",
+      "target": "中國",
+      "value": 3,
+      "label": "談判對話"
     },
     {
       "source": "IEA",
@@ -468,22 +466,28 @@
       "label": "釋油調控"
     },
     {
-      "source": "USTR",
-      "target": "美國",
-      "value": 4,
-      "label": "貿易談判"
-    },
-    {
-      "source": "USTR",
-      "target": "中國",
-      "value": 3,
-      "label": "關係協商"
-    },
-    {
-      "source": "台灣",
+      "source": "AI",
       "target": "半導體",
       "value": 5,
+      "label": "核心技術"
+    },
+    {
+      "source": "AI",
+      "target": "台灣",
+      "value": 5,
       "label": "產業優勢"
+    },
+    {
+      "source": "半導體",
+      "target": "台灣",
+      "value": 5,
+      "label": "戰略產業"
+    },
+    {
+      "source": "晶圓代工",
+      "target": "半導體",
+      "value": 5,
+      "label": "製程技術"
     },
     {
       "source": "通膨",
@@ -492,16 +496,34 @@
       "label": "經濟壓力"
     },
     {
-      "source": "AI",
-      "target": "半導體",
-      "value": 5,
-      "label": "核心技術"
+      "source": "關稅",
+      "target": "貿易協定",
+      "value": 4,
+      "label": "貿易障礙"
     },
     {
-      "source": "衛星",
-      "target": "台灣",
+      "source": "新能源",
+      "target": "核能",
       "value": 3,
-      "label": "產業機會"
+      "label": "能源轉型"
+    },
+    {
+      "source": "低軌衛星",
+      "target": "AI",
+      "value": 3,
+      "label": "技術整合"
+    },
+    {
+      "source": "比亞迪",
+      "target": "中國",
+      "value": 3,
+      "label": "企業代表"
+    },
+    {
+      "source": "國安基金",
+      "target": "台灣",
+      "value": 4,
+      "label": "市場干預"
     }
   ],
   "newsDatabase": {
@@ -561,14 +583,14 @@
         "url": "https://money.udn.com/money/story/5599/9377380"
       },
       {
-        "title": "養龍蝦熱潮藏危機 陸工信部提六要六不要建議",
-        "source": "工商全球財經",
-        "url": "https://www.chinatimes.com/newspapers/20260313000272-260203?utm_source=iii_news&utm_medium=rss"
-      },
-      {
         "title": "能源危機升溫 陸禁3月成品油出口",
         "source": "工商全球財經",
         "url": "https://www.chinatimes.com/newspapers/20260313000260-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "養龍蝦熱潮藏危機 陸工信部提六要六不要建議",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260313000272-260203?utm_source=iii_news&utm_medium=rss"
       }
     ],
     "伊朗": [
@@ -702,13 +724,6 @@
         "url": "https://www.chinatimes.com/newspapers/20260313000254-260203?utm_source=iii_news&utm_medium=rss"
       }
     ],
-    "Meta": [
-      {
-        "title": "Meta加速推AI晶片 台積操刀 日月光、京元電也沾光",
-        "source": "經濟產業熱點",
-        "url": "https://money.udn.com/money/story/5612/9377172"
-      }
-    ],
     "英特爾": [
       {
         "title": "1分鐘看世界／小股東告英特爾 訴請撤銷美國政府入股交易",
@@ -719,6 +734,13 @@
         "title": "美政府入股英特爾 股東狀告喊無效",
         "source": "工商全球財經",
         "url": "https://www.chinatimes.com/newspapers/20260313000256-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Meta": [
+      {
+        "title": "Meta加速推AI晶片 台積操刀 日月光、京元電也沾光",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9377172"
       }
     ],
     "日月光": [
@@ -749,11 +771,11 @@
         "url": "https://www.chinatimes.com/newspapers/20260313000214-260202?utm_source=iii_news&utm_medium=rss"
       }
     ],
-    "比亞迪": [
+    "緯穎": [
       {
-        "title": "傳比亞迪擬進軍F1 拚提升全球品牌知名度",
-        "source": "工商全球財經",
-        "url": "https://www.chinatimes.com/newspapers/20260313000273-260203?utm_source=iii_news&utm_medium=rss"
+        "title": "結盟緯穎 Ayar Labs建新AI機櫃級架構",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260313000200-260202?utm_source=iii_news&utm_medium=rss"
       }
     ],
     "高通": [
@@ -763,23 +785,18 @@
         "url": "https://www.chinatimes.com/newspapers/20260313000199-260202?utm_source=iii_news&utm_medium=rss"
       }
     ],
-    "緯穎": [
+    "比亞迪": [
       {
-        "title": "結盟緯穎 Ayar Labs建新AI機櫃級架構",
-        "source": "工商財經要聞",
-        "url": "https://www.chinatimes.com/newspapers/20260313000200-260202?utm_source=iii_news&utm_medium=rss"
+        "title": "傳比亞迪擬進軍F1 拚提升全球品牌知名度",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260313000273-260203?utm_source=iii_news&utm_medium=rss"
       }
     ],
-    "301調查": [
+    "301條款": [
       {
         "title": "再祭關稅？ 美對貿易夥伴301調查",
         "source": "聯合_產經_股市",
         "url": "https://udn.com/news/story/124373/9377196"
-      },
-      {
-        "title": "觀察站／台美貿易順差顯著…台灣301風險高 要繫好安全帶",
-        "source": "聯合_產經_股市",
-        "url": "https://udn.com/news/story/124373/9377236"
       },
       {
         "title": "學者：301條款可限制進口 懲罰關稅無上限",
@@ -795,6 +812,11 @@
         "title": "美提301 我力保ART優惠不打折",
         "source": "工商財經要聞",
         "url": "https://www.chinatimes.com/newspapers/20260313000167-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美啟動301調查》防範強迫勞動 勞部已發參考指引",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260313000171-260202?utm_source=iii_news&utm_medium=rss"
       }
     ],
     "關稅": [
@@ -812,18 +834,6 @@
         "title": "學者：301條款可限制進口 懲罰關稅無上限",
         "source": "聯合_產經_股市",
         "url": "https://udn.com/news/story/124373/9377240"
-      }
-    ],
-    "貿易協定": [
-      {
-        "title": "施俊吉：美若不留餘地 有協定又奈何",
-        "source": "聯合_產經_股市",
-        "url": "https://udn.com/news/story/124373/9377241"
-      },
-      {
-        "title": "美提301 我力保ART優惠不打折",
-        "source": "工商財經要聞",
-        "url": "https://www.chinatimes.com/newspapers/20260313000167-260202?utm_source=iii_news&utm_medium=rss"
       }
     ],
     "油價": [
@@ -856,6 +866,11 @@
         "title": "IEA釋油速度 主宰油價走勢",
         "source": "工商全球財經",
         "url": "https://www.chinatimes.com/newspapers/20260313000242-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "氣價暴增 經長：確保通膨不失控",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260313000519-260110?utm_source=iii_news&utm_medium=rss"
       }
     ],
     "通膨": [
@@ -865,14 +880,26 @@
         "url": "https://money.udn.com/money/story/5599/9377092"
       },
       {
-        "title": "晶片通膨!三大廠帶頭喊漲",
-        "source": "工商全球財經",
-        "url": "https://www.chinatimes.com/newspapers/20260313000251-260203?utm_source=iii_news&utm_medium=rss"
-      },
-      {
         "title": "氣價暴增 經長：確保通膨不失控",
         "source": "中時財經新聞",
         "url": "https://www.chinatimes.com/newspapers/20260313000519-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "晶片通膨!三大廠帶頭喊漲",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260313000251-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "貿易協定": [
+      {
+        "title": "施俊吉：美若不留餘地 有協定又奈何",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/124373/9377241"
+      },
+      {
+        "title": "美提301 我力保ART優惠不打折",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260313000167-260202?utm_source=iii_news&utm_medium=rss"
       }
     ],
     "國安基金": [
@@ -880,45 +907,19 @@
         "title": "卓揆：5月調度替代氣源…市場若不理性 國安基金隨時開會",
         "source": "聯合_產經_股市",
         "url": "https://udn.com/news/story/7238/9377291"
+      },
+      {
+        "title": "盯戰事 股市穩定小組出動",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260313000176-260202?utm_source=iii_news&utm_medium=rss"
       }
     ],
-    "AI晶片": [
+    "AI": [
       {
         "title": "Meta加速推AI晶片 台積操刀 日月光、京元電也沾光",
         "source": "經濟產業熱點",
         "url": "https://money.udn.com/money/story/5612/9377172"
       },
-      {
-        "title": "晶片通膨!三大廠帶頭喊漲",
-        "source": "工商全球財經",
-        "url": "https://www.chinatimes.com/newspapers/20260313000251-260203?utm_source=iii_news&utm_medium=rss"
-      }
-    ],
-    "半導體": [
-      {
-        "title": "台塑集團半導體新能源 衝鋒",
-        "source": "工商財經要聞",
-        "url": "https://www.chinatimes.com/newspapers/20260313000203-260202?utm_source=iii_news&utm_medium=rss"
-      },
-      {
-        "title": "群創拚認證 放大半導體營收",
-        "source": "工商產業科技",
-        "url": "https://www.chinatimes.com/newspapers/20260313000288-260204?utm_source=iii_news&utm_medium=rss"
-      },
-      {
-        "title": "印度打金援牌衝晶片製造 同步補助智慧機 獎勵出口與本土零件使用率",
-        "source": "經濟國際焦點",
-        "url": "https://money.udn.com/money/story/5599/9377114"
-      }
-    ],
-    "記憶體": [
-      {
-        "title": "群創：電視面板價Q2續揚 相關業務較不受記憶體市況影響",
-        "source": "經濟產業熱點",
-        "url": "https://money.udn.com/money/story/5612/9377178"
-      }
-    ],
-    "AI": [
       {
         "title": "AI議題 跨部會整合施政原則",
         "source": "工商財經要聞",
@@ -933,6 +934,11 @@
         "title": "結盟緯穎 Ayar Labs建新AI機櫃級架構",
         "source": "工商財經要聞",
         "url": "https://www.chinatimes.com/newspapers/20260313000200-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "瞄準AI算力 台塑四寶挺進電力商機",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260313000206-260202?utm_source=iii_news&utm_medium=rss"
       },
       {
         "title": "慧榮科技 秀AI最佳化開機儲存解方",
@@ -950,12 +956,77 @@
         "url": "https://www.chinatimes.com/newspapers/20260313000291-260204?utm_source=iii_news&utm_medium=rss"
       },
       {
+        "title": "數位發功 中華電翻轉偏鄉教育",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260313000293-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
         "title": "東元先蹲後跳 AIDC營收將倍數成長",
         "source": "工商財經要聞",
         "url": "https://www.chinatimes.com/newspapers/20260313000214-260202?utm_source=iii_news&utm_medium=rss"
       }
     ],
-    "衛星": [
+    "半導體": [
+      {
+        "title": "台塑集團半導體新能源 衝鋒",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260313000203-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "印度打金援牌衝晶片製造 同步補助智慧機 獎勵出口與本土零件使用率",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9377114"
+      },
+      {
+        "title": "群創拚認證 放大半導體營收",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260313000288-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "聯電集團攜HyperLight 推TFLN量產",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260313000295-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "晶圓代工": [
+      {
+        "title": "台積電市占 升勢叫停",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9377183"
+      },
+      {
+        "title": "去年十大晶圓代工市占率 台積居冠",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260313000194-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "AI晶片": [
+      {
+        "title": "Meta加速推AI晶片 台積操刀 日月光、京元電也沾光",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9377172"
+      },
+      {
+        "title": "晶片通膨!三大廠帶頭喊漲",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260313000251-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "記憶體": [
+      {
+        "title": "群創：電視面板價Q2續揚 相關業務較不受記憶體市況影響",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9377178"
+      }
+    ],
+    "面板": [
+      {
+        "title": "群創：電視面板價Q2續揚 相關業務較不受記憶體市況影響",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9377178"
+      }
+    ],
+    "低軌衛星": [
       {
         "title": "AI＋低軌衛星 台灣PCB產值衝兆元",
         "source": "工商產業科技",
@@ -967,7 +1038,7 @@
         "url": "https://ec.ltn.com.tw/article/paper/1746703"
       }
     ],
-    "能源": [
+    "新能源": [
       {
         "title": "台塑集團半導體新能源 衝鋒",
         "source": "工商財經要聞",
@@ -977,16 +1048,6 @@
         "title": "美伊戰爭加速「核能復興」 油氣斷供 各國急尋穩定能源",
         "source": "經濟國際焦點",
         "url": "https://money.udn.com/money/story/5599/9377095"
-      },
-      {
-        "title": "能源危機升溫 陸禁3月成品油出口",
-        "source": "工商全球財經",
-        "url": "https://www.chinatimes.com/newspapers/20260313000260-260203?utm_source=iii_news&utm_medium=rss"
-      },
-      {
-        "title": "拒燃煤救斷氣 民團促開能源國是會議",
-        "source": "中時財經新聞",
-        "url": "https://www.chinatimes.com/newspapers/20260313000517-260110?utm_source=iii_news&utm_medium=rss"
       }
     ],
     "核能": [
@@ -994,6 +1055,23 @@
         "title": "美伊戰爭加速「核能復興」 油氣斷供 各國急尋穩定能源",
         "source": "經濟國際焦點",
         "url": "https://money.udn.com/money/story/5599/9377095"
+      },
+      {
+        "title": "拒燃煤救斷氣 民團促開能源國是會議",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260313000517-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "荷莫茲海峽": [
+      {
+        "title": "伊朗放話：繼續關閉荷莫茲 布蘭特再漲破100美元",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9377129"
+      },
+      {
+        "title": "伊朗矢言繼續封鎖荷莫茲海峽　國際油價收漲逾9%",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9377362"
       }
     ],
     "卓揆": [
@@ -1034,18 +1112,6 @@
         "title": "IEA釋油速度 主宰油價走勢",
         "source": "工商全球財經",
         "url": "https://www.chinatimes.com/newspapers/20260313000242-260203?utm_source=iii_news&utm_medium=rss"
-      }
-    ],
-    "荷莫茲海峽": [
-      {
-        "title": "伊朗放話：繼續關閉荷莫茲 布蘭特再漲破100美元",
-        "source": "經濟國際焦點",
-        "url": "https://money.udn.com/money/story/5599/9377129"
-      },
-      {
-        "title": "伊朗矢言繼續封鎖荷莫茲海峽　國際油價收漲逾9%",
-        "source": "經濟國際焦點",
-        "url": "https://money.udn.com/money/story/5599/9377362"
       }
     ]
   },

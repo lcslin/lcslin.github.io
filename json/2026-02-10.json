@@ -1,0 +1,889 @@
+{
+  "nodes": [
+    {
+      "id": "華許掌 Fed  市場推演二情境 可能規範實施量化寬鬆限於「真正緊急狀況」 (經濟國際焦點)",
+      "url": "https://money.udn.com/money/story/5599/9319701",
+      "group": "總體經濟",
+      "val": 7
+    },
+    {
+      "id": "日本眾議院大選結果出爐 經濟、產業可望重返成長 (經濟金融脈動)",
+      "url": "https://money.udn.com/money/story/5613/9319800",
+      "group": "國家",
+      "val": 7
+    },
+    {
+      "id": "元月出口 電子產品貢獻逾九成 (聯合_產經_股市)",
+      "url": "https://udn.com/news/story/7238/9319821",
+      "group": "總體經濟",
+      "val": 8
+    },
+    {
+      "id": "台商赴美 學者憂我「訂單減、出口降 消費不會好」 (聯合_產經_股市)",
+      "url": "https://udn.com/news/story/7238/9319771",
+      "group": "個體經濟",
+      "val": 7
+    },
+    {
+      "id": "元月出口五大市場紅通通 外銷美國年增1.5倍、連四月倍增 (聯合_產經_股市)",
+      "url": "https://udn.com/news/story/7238/9319817",
+      "group": "總體經濟",
+      "val": 8
+    },
+    {
+      "id": "1月出口跳增70%  金額657億美元創新高...連27紅 (聯合_產經_股市)",
+      "url": "https://udn.com/news/story/7238/9319779",
+      "group": "總體經濟",
+      "val": 9
+    },
+    {
+      "id": "元月出口 創歷年單月最高 (工商財經要聞)",
+      "url": "https://www.chinatimes.com/newspapers/20260210000181-260202?utm_source=iii_news&utm_medium=rss",
+      "group": "總體經濟",
+      "val": 9
+    },
+    {
+      "id": "鄭麗君今率隊赴華府 台美貿易協定12日明朗 (工商財經要聞)",
+      "url": "https://www.chinatimes.com/newspapers/20260210000186-260202?utm_source=iii_news&utm_medium=rss",
+      "group": "政府部會",
+      "val": 7
+    },
+    {
+      "id": "美日財長聯手 致力日圓穩定 (工商財經要聞)",
+      "url": "https://www.chinatimes.com/newspapers/20260210000193-260202?utm_source=iii_news&utm_medium=rss",
+      "group": "政府部會",
+      "val": 6
+    },
+    {
+      "id": "標普看台灣信用環境 2變數當前 (工商財經要聞)",
+      "url": "https://www.chinatimes.com/newspapers/20260210000221-260202?utm_source=iii_news&utm_medium=rss",
+      "group": "總體經濟",
+      "val": 6
+    },
+    {
+      "id": "資通訊出口 增速16年最強 (工商財經要聞)",
+      "url": "https://www.chinatimes.com/newspapers/20260210000224-260202?utm_source=iii_news&utm_medium=rss",
+      "group": "產業別",
+      "val": 8
+    },
+    {
+      "id": "貝森特：Fed不會激進縮表 (工商全球財經)",
+      "url": "https://www.chinatimes.com/newspapers/20260210000255-260203?utm_source=iii_news&utm_medium=rss",
+      "group": "總體經濟",
+      "val": 6
+    },
+    {
+      "id": "中國建議銀行減持美債 (工商全球財經)",
+      "url": "https://www.chinatimes.com/newspapers/20260210000257-260203?utm_source=iii_news&utm_medium=rss",
+      "group": "國家",
+      "val": 6
+    },
+    {
+      "id": "節前資金缺口 人行料補水 (工商全球財經)",
+      "url": "https://www.chinatimes.com/newspapers/20260210000274-260203?utm_source=iii_news&utm_medium=rss",
+      "group": "總體經濟",
+      "val": 5
+    },
+    {
+      "id": "1月出口首破2兆 估首季年增逾3成 (中時財經新聞)",
+      "url": "https://www.chinatimes.com/newspapers/20260210000520-260110?utm_source=iii_news&utm_medium=rss",
+      "group": "總體經濟",
+      "val": 9
+    },
+    {
+      "id": "232條款衝擊扣件業 經部祭4措施 (中時財經新聞)",
+      "url": "https://www.chinatimes.com/newspapers/20260210000524-260110?utm_source=iii_news&utm_medium=rss",
+      "group": "產業別",
+      "val": 6
+    },
+    {
+      "id": "聯發科組隊 攻衛星通訊 (經濟產業熱點)",
+      "url": "https://money.udn.com/money/story/5612/9319730",
+      "group": "科技領域",
+      "val": 7
+    },
+    {
+      "id": "集邦看記憶體產值 將較晶圓代工倍增 (經濟產業熱點)",
+      "url": "https://money.udn.com/money/story/5612/9319731",
+      "group": "產業別",
+      "val": 8
+    },
+    {
+      "id": "廣達元月營收同期新高 GB300出貨動能火熱 有望淡季不淡 (經濟產業熱點)",
+      "url": "https://money.udn.com/money/story/5612/9319741",
+      "group": "產業別",
+      "val": 8
+    },
+    {
+      "id": "國巨元月營收成長5% 締新猷 (經濟產業熱點)",
+      "url": "https://money.udn.com/money/story/5612/9319756",
+      "group": "產業別",
+      "val": 6
+    },
+    {
+      "id": "穎崴訂單塞爆 大擴產 (經濟產業熱點)",
+      "url": "https://money.udn.com/money/story/5612/9319757",
+      "group": "產業別",
+      "val": 6
+    },
+    {
+      "id": "SpaceX 建設重心轉到月球 (經濟國際焦點)",
+      "url": "https://money.udn.com/money/story/5599/9319716",
+      "group": "科技領域",
+      "val": 7
+    },
+    {
+      "id": "台積電調產能 淡出成熟製程 將多數8吋代工釋出給世界 (經濟產業熱點)",
+      "url": "https://money.udn.com/money/story/5612/9319737",
+      "group": "產業別",
+      "val": 8
+    },
+    {
+      "id": "成熟製程代工廠世界先進 報價擬調漲15% (經濟產業熱點)",
+      "url": "https://money.udn.com/money/story/5612/9319754",
+      "group": "產業別",
+      "val": 7
+    },
+    {
+      "id": "美超微來台籌資557億 (經濟金融脈動)",
+      "url": "https://money.udn.com/money/story/5613/9319768",
+      "group": "產業別",
+      "val": 7
+    },
+    {
+      "id": "華碩、宏碁硬挺 元月營收月減年增 (聯合_產經_股市)",
+      "url": "https://udn.com/news/story/7253/9319723",
+      "group": "產業別",
+      "val": 7
+    },
+    {
+      "id": "網通三強1月營收 紅不讓 (聯合_產經_股市)",
+      "url": "https://udn.com/news/story/7253/9319426",
+      "group": "產業別",
+      "val": 7
+    },
+    {
+      "id": "輝達、SK集團談新合作 「炸雞啤酒會」討論記憶體、資料中心投資 (聯合_產經_股市)",
+      "url": "https://udn.com/news/story/6811/9319726",
+      "group": "產業別",
+      "val": 8
+    },
+    {
+      "id": "台達電營收寫最強1月 光寶141億元近四年同期最佳 (聯合_產經_股市)",
+      "url": "https://udn.com/news/story/7253/9319474",
+      "group": "產業別",
+      "val": 7
+    },
+    {
+      "id": "奇鋐1月營收月增21% 富世達增18% (聯合_產經_股市)",
+      "url": "https://udn.com/news/story/7253/9319475",
+      "group": "產業別",
+      "val": 6
+    },
+    {
+      "id": "SpaceX建設重心轉到月球 (聯合_產經_股市)",
+      "url": "https://udn.com/news/story/6811/9319716",
+      "group": "科技領域",
+      "val": 7
+    },
+    {
+      "id": "蘋果新品將上演連環秀 平價iPhone、新款iPad、多款Mac 快來了 (聯合_產經_股市)",
+      "url": "https://udn.com/news/story/6811/9319719",
+      "group": "產業別",
+      "val": 7
+    },
+    {
+      "id": "AI撐腰 電源雙雄1月營收來電 (工商財經要聞)",
+      "url": "https://www.chinatimes.com/newspapers/20260210000199-260202?utm_source=iii_news&utm_medium=rss",
+      "group": "科技領域",
+      "val": 7
+    },
+    {
+      "id": "AI伺服器需求旺 廣達、神達 齊寫最強元月 (工商財經要聞)",
+      "url": "https://www.chinatimes.com/newspapers/20260210000202-260202?utm_source=iii_news&utm_medium=rss",
+      "group": "科技領域",
+      "val": 8
+    },
+    {
+      "id": "聯發科、原相領軍 台灣IC設計 切入太空應用 (工商財經要聞)",
+      "url": "https://www.chinatimes.com/newspapers/20260210000207-260202?utm_source=iii_news&utm_medium=rss",
+      "group": "科技領域",
+      "val": 7
+    },
+    {
+      "id": "記憶體產值 逾晶圓代工2倍 (工商財經要聞)",
+      "url": "https://www.chinatimes.com/newspapers/20260210000211-260202?utm_source=iii_news&utm_medium=rss",
+      "group": "產業別",
+      "val": 8
+    },
+    {
+      "id": "威睿科技 進軍非洲市場 (工商財經要聞)",
+      "url": "https://www.chinatimes.com/newspapers/20260210000425-260202?utm_source=iii_news&utm_medium=rss",
+      "group": "產業別",
+      "val": 5
+    },
+    {
+      "id": "黃仁勳、SK會長在美雞啤會內容曝光 (工商全球財經)",
+      "url": "https://www.chinatimes.com/newspapers/20260210000261-260203?utm_source=iii_news&utm_medium=rss",
+      "group": "產業別",
+      "val": 7
+    },
+    {
+      "id": "SpaceX轉攻月球 馬斯克喊10年造城 (工商全球財經)",
+      "url": "https://www.chinatimes.com/newspapers/20260210000264-260203?utm_source=iii_news&utm_medium=rss",
+      "group": "科技領域",
+      "val": 7
+    },
+    {
+      "id": "高盛預期今明兩年 記憶體面臨史上最嚴峻短缺 (工商全球財經)",
+      "url": "https://www.chinatimes.com/newspapers/20260210000280-260203?utm_source=iii_news&utm_medium=rss",
+      "group": "產業別",
+      "val": 8
+    },
+    {
+      "id": "字節跳動 推AI影片生成模型 (工商全球財經)",
+      "url": "https://www.chinatimes.com/newspapers/20260210000281-260203?utm_source=iii_news&utm_medium=rss",
+      "group": "科技領域",
+      "val": 6
+    },
+    {
+      "id": "淡季不淡 PC品牌廠營收靚 (工商產業科技)",
+      "url": "https://www.chinatimes.com/newspapers/20260210000294-260204?utm_source=iii_news&utm_medium=rss",
+      "group": "產業別",
+      "val": 7
+    },
+    {
+      "id": "需求旺 緯穎加速美、台擴產 (工商產業科技)",
+      "url": "https://www.chinatimes.com/newspapers/20260210000297-260204?utm_source=iii_news&utm_medium=rss",
+      "group": "產業別",
+      "val": 7
+    },
+    {
+      "id": "TPCA組國家隊 搶灘APEX EXPO (工商產業科技)",
+      "url": "https://www.chinatimes.com/newspapers/20260210000298-260204?utm_source=iii_news&utm_medium=rss",
+      "group": "展覽",
+      "val": 6
+    },
+    {
+      "id": "雙引擎 聯強元月業績逾400億 (工商產業科技)",
+      "url": "https://www.chinatimes.com/newspapers/20260210000302-260204?utm_source=iii_news&utm_medium=rss",
+      "group": "產業別",
+      "val": 6
+    },
+    {
+      "id": "AI資本支出增強 閎康MA、FA訂單加溫 (工商產業科技)",
+      "url": "https://www.chinatimes.com/newspapers/20260210000303-260204?utm_source=iii_news&utm_medium=rss",
+      "group": "科技領域",
+      "val": 7
+    },
+    {
+      "id": "中華資安 上月營收年增逾4成 (工商產業科技)",
+      "url": "https://www.chinatimes.com/newspapers/20260210000304-260204?utm_source=iii_news&utm_medium=rss",
+      "group": "科技領域",
+      "val": 6
+    },
+    {
+      "id": "華通擴廠 第2季挹注產能 (聯合_產經_股市)",
+      "url": "https://udn.com/news/story/7253/9319431",
+      "group": "產業別",
+      "val": 6
+    },
+    {
+      "id": "卡位太空應用 聯發科組4方聯盟 (中時財經新聞)",
+      "url": "https://www.chinatimes.com/newspapers/20260210000522-260110?utm_source=iii_news&utm_medium=rss",
+      "group": "科技領域",
+      "val": 7
+    },
+    {
+      "id": "工研院攜SAES 補台灣半導體缺口 (中時財經新聞)",
+      "url": "https://www.chinatimes.com/newspapers/20260210000526-260110?utm_source=iii_news&utm_medium=rss",
+      "group": "產業別",
+      "val": 6
+    },
+    {
+      "id": "宏致1月營收月增16% 寫新高紀錄 (聯合_產經_股市)",
+      "url": "https://udn.com/news/story/7253/9319427",
+      "group": "產業別",
+      "val": 6
+    },
+    {
+      "id": "神達1月營收站穩百億 同期最佳 (聯合_產經_股市)",
+      "url": "https://udn.com/news/story/7253/9319428",
+      "group": "產業別",
+      "val": 7
+    },
+    {
+      "id": "預期關稅降至零 六車廠都要引進美車 市占率挺進兩成 (經濟產業熱點)",
+      "url": "https://money.udn.com/money/story/5612/9319814",
+      "group": "產業別",
+      "val": 7
+    },
+    {
+      "id": "美製車關稅有望下降！六大車廠擬「策略性」引進 (聯合_產經_股市)",
+      "url": "https://udn.com/news/story/7241/9319774",
+      "group": "產業別",
+      "val": 7
+    },
+    {
+      "id": "降稅效應！若關稅降為0…美製車降價1成 (聯合_產經_股市)",
+      "url": "https://udn.com/news/story/7241/9319773",
+      "group": "產業別",
+      "val": 6
+    },
+    {
+      "id": "停機逾14年 日本重啟全球最大核電廠 (工商全球財經)",
+      "url": "https://www.chinatimes.com/newspapers/20260210000266-260203?utm_source=iii_news&utm_medium=rss",
+      "group": "國家",
+      "val": 6
+    },
+    {
+      "id": "美國建議船隻遠離伊朗水域　國際油價走揚 (經濟國際焦點)",
+      "url": "https://money.udn.com/money/story/5599/9320061",
+      "group": "國家",
+      "val": 6
+    }
+  ],
+  "links": [
+    {
+      "source": "元月出口 電子產品貢獻逾九成 (聯合_產經_股市)",
+      "target": "1月出口跳增70%  金額657億美元創新高...連27紅 (聯合_產經_股市)",
+      "value": 10,
+      "label": "總體經濟",
+      "tags": [
+        "出口成長",
+        "電子產品",
+        "貿易"
+      ],
+      "reason": "兩則新聞均報導台灣1月出口成績亮眼，電子產品是主要推動力"
+    },
+    {
+      "source": "1月出口跳增70%  金額657億美元創新高...連27紅 (聯合_產經_股市)",
+      "target": "元月出口 創歷年單月最高 (工商財經要聞)",
+      "value": 10,
+      "label": "總體經濟",
+      "tags": [
+        "出口紀錄",
+        "月度最高"
+      ],
+      "reason": "同報導台灣1月出口創歷史新高的相同議題"
+    },
+    {
+      "source": "1月出口首破2兆 估首季年增逾3成 (中時財經新聞)",
+      "target": "元月出口 創歷年單月最高 (工商財經要聞)",
+      "value": 10,
+      "label": "總體經濟",
+      "tags": [
+        "出口破2兆",
+        "月度成長"
+      ],
+      "reason": "兩則新聞均報導1月出口創新高達2兆台幣的成績"
+    },
+    {
+      "source": "元月出口五大市場紅通通 外銷美國年增1.5倍、連四月倍增 (聯合_產經_股市)",
+      "target": "1月出口跳增70%  金額657億美元創新高...連27紅 (聯合_產經_股市)",
+      "value": 9,
+      "label": "總體經濟",
+      "tags": [
+        "出口市場",
+        "美國市場",
+        "成長"
+      ],
+      "reason": "皆涉及台灣出口成績，並特別提及美國市場表現"
+    },
+    {
+      "source": "資通訊出口 增速16年最強 (工商財經要聞)",
+      "target": "元月出口 電子產品貢獻逾九成 (聯合_產經_股市)",
+      "value": 8,
+      "label": "產業別",
+      "tags": [
+        "資通訊",
+        "電子產品",
+        "出口"
+      ],
+      "reason": "資通訊為電子產品的重要組成部分，皆報導出口強勁"
+    },
+    {
+      "source": "廣達元月營收同期新高 GB300出貨動能火熱 有望淡季不淡 (經濟產業熱點)",
+      "target": "AI伺服器需求旺 廣達、神達 齊寫最強元月 (工商財經要聞)",
+      "value": 9,
+      "label": "科技領域",
+      "tags": [
+        "AI伺服器",
+        "廣達",
+        "GB300"
+      ],
+      "reason": "皆報導廣達在AI伺服器領域的強勁表現與GB300出貨"
+    },
+    {
+      "source": "AI伺服器需求旺 廣達、神達 齊寫最強元月 (工商財經要聞)",
+      "target": "神達1月營收站穩百億 同期最佳 (聯合_產經_股市)",
+      "value": 8,
+      "label": "科技領域",
+      "tags": [
+        "AI伺服器",
+        "神達",
+        "元月營收"
+      ],
+      "reason": "皆報導神達在AI伺服器領域的元月表現"
+    },
+    {
+      "source": "集邦看記憶體產值 將較晶圓代工倍增 (經濟產業熱點)",
+      "target": "記憶體產值 逾晶圓代工2倍 (工商財經要聞)",
+      "value": 10,
+      "label": "產業別",
+      "tags": [
+        "記憶體",
+        "晶圓代工",
+        "產值"
+      ],
+      "reason": "完全相同的議題，均報導記憶體產值將超越晶圓代工"
+    },
+    {
+      "source": "記憶體產值 逾晶圓代工2倍 (工商財經要聞)",
+      "target": "高盛預期今明兩年 記憶體面臨史上最嚴峻短缺 (工商全球財經)",
+      "value": 8,
+      "label": "產業別",
+      "tags": [
+        "記憶體",
+        "產值",
+        "短缺預期"
+      ],
+      "reason": "皆涉及記憶體市場前景，記憶體產值提升與短缺預期相關"
+    },
+    {
+      "source": "台積電調產能 淡出成熟製程 將多數8吋代工釋出給世界 (經濟產業熱點)",
+      "target": "成熟製程代工廠世界先進 報價擬調漲15% (經濟產業熱點)",
+      "value": 8,
+      "label": "產業別",
+      "tags": [
+        "晶圓代工",
+        "8吋製程",
+        "成熟製程"
+      ],
+      "reason": "台積電釋出的代工訂單預期流向世界先進等成熟製程廠商"
+    },
+    {
+      "source": "輝達、SK集團談新合作 「炸雞啤酒會」討論記憶體、資料中心投資 (聯合_產經_股市)",
+      "target": "黃仁勳、SK會長在美雞啤會內容曝光 (工商全球財經)",
+      "value": 9,
+      "label": "科技領域",
+      "tags": [
+        "輝達",
+        "SK集團",
+        "記憶體",
+        "資料中心"
+      ],
+      "reason": "報導同一事件：輝達CEO與SK會長的雞啤會談內容"
+    },
+    {
+      "source": "輝達、SK集團談新合作 「炸雞啤酒會」討論記憶體、資料中心投資 (聯合_產經_股市)",
+      "target": "記憶體產值 逾晶圓代工2倍 (工商財經要聞)",
+      "value": 7,
+      "label": "產業別",
+      "tags": [
+        "記憶體",
+        "投資",
+        "產值"
+      ],
+      "reason": "SK集團與輝達討論記憶體投資，與記憶體產值前景密切相關"
+    },
+    {
+      "source": "聯發科組隊 攻衛星通訊 (經濟產業熱點)",
+      "target": "聯發科、原相領軍 台灣IC設計 切入太空應用 (工商財經要聞)",
+      "value": 9,
+      "label": "科技領域",
+      "tags": [
+        "聯發科",
+        "衛星通訊",
+        "太空應用",
+        "IC設計"
+      ],
+      "reason": "皆報導聯發科在衛星/太空通訊領域的發展與策略"
+    },
+    {
+      "source": "聯發科、原相領軍 台灣IC設計 切入太空應用 (工商財經要聞)",
+      "target": "卡位太空應用 聯發科組4方聯盟 (中時財經新聞)",
+      "value": 8,
+      "label": "科技領域",
+      "tags": [
+        "聯發科",
+        "太空應用",
+        "聯盟"
+      ],
+      "reason": "同報導聯發科組織聯盟切入太空應用領域的策略"
+    },
+    {
+      "source": "SpaceX 建設重心轉到月球 (經濟國際焦點)",
+      "target": "SpaceX轉攻月球 馬斯克喊10年造城 (工商全球財經)",
+      "value": 10,
+      "label": "科技領域",
+      "tags": [
+        "SpaceX",
+        "月球",
+        "太空"
+      ],
+      "reason": "報導同一事件：SpaceX轉向月球開發的戰略變化"
+    },
+    {
+      "source": "聯發科、原相領軍 台灣IC設計 切入太空應用 (工商財經要聞)",
+      "target": "SpaceX 建設重心轉到月球 (經濟國際焦點)",
+      "value": 6,
+      "label": "科技領域",
+      "tags": [
+        "太空應用",
+        "月球",
+        "衛星"
+      ],
+      "reason": "台灣IC設計進入太空應用領域，與SpaceX月球計畫形成相關生態"
+    },
+    {
+      "source": "AI撐腰 電源雙雄1月營收來電 (工商財經要聞)",
+      "target": "AI伺服器需求旺 廣達、神達 齊寫最強元月 (工商財經要聞)",
+      "value": 8,
+      "label": "科技領域",
+      "tags": [
+        "AI",
+        "1月營收",
+        "元件需求"
+      ],
+      "reason": "AI伺服器需求帶動電源和伺服器廠商元月業績成長"
+    },
+    {
+      "source": "AI資本支出增強 閎康MA、FA訂單加溫 (工商產業科技)",
+      "target": "AI伺服器需求旺 廣達、神達 齊寫最強元月 (工商財經要聞)",
+      "value": 7,
+      "label": "科技領域",
+      "tags": [
+        "AI資本支出",
+        "伺服器",
+        "訂單"
+      ],
+      "reason": "AI資本支出增加帶動伺服器與相關設備廠商訂單"
+    },
+    {
+      "source": "華碩、宏碁硬挺 元月營收月減年增 (聯合_產經_股市)",
+      "target": "淡季不淡 PC品牌廠營收靚 (工商產業科技)",
+      "value": 7,
+      "label": "產業別",
+      "tags": [
+        "PC品牌",
+        "元月營收",
+        "淡季"
+      ],
+      "reason": "皆報導PC品牌廠商元月表現堅挺，淡季仍展現成長"
+    },
+    {
+      "source": "淡季不淡 PC品牌廠營收靚 (工商產業科技)",
+      "target": "蘋果新品將上演連環秀 平價iPhone、新款iPad、多款Mac 快來了 (聯合_產經_股市)",
+      "value": 6,
+      "label": "產業別",
+      "tags": [
+        "PC",
+        "Mac",
+        "新品發布"
+      ],
+      "reason": "蘋果新品推出將帶動PC市場需求，支撐淡季表現"
+    },
+    {
+      "source": "網通三強1月營收 紅不讓 (聯合_產經_股市)",
+      "target": "資通訊出口 增速16年最強 (工商財經要聞)",
+      "value": 7,
+      "label": "產業別",
+      "tags": [
+        "網通",
+        "資通訊",
+        "出口"
+      ],
+      "reason": "網通廠商元月表現與資通訊出口成長密切相關"
+    },
+    {
+      "source": "台達電營收寫最強1月 光寶141億元近四年同期最佳 (聯合_產經_股市)",
+      "target": "AI撐腰 電源雙雄1月營收來電 (工商財經要聞)",
+      "value": 8,
+      "label": "科技領域",
+      "tags": [
+        "電源供應",
+        "AI伺服器",
+        "1月營收"
+      ],
+      "reason": "台達電和光寶作為電源雙雄，受AI伺服器需求帶動"
+    },
+    {
+      "source": "美超微來台籌資557億 (經濟金融脈動)",
+      "target": "AI伺服器需求旺 廣達、神達 齊寫最強元月 (工商財經要聞)",
+      "value": 7,
+      "label": "科技領域",
+      "tags": [
+        "伺服器",
+        "AI",
+        "資本支出"
+      ],
+      "reason": "美超微籌資擴產用於AI伺服器，與市場需求旺盛相符"
+    },
+    {
+      "source": "鄭麗君今率隊赴華府 台美貿易協定12日明朗 (工商財經要聞)",
+      "target": "元月出口五大市場紅通通 外銷美國年增1.5倍、連四月倍增 (聯合_產經_股市)",
+      "value": 7,
+      "label": "國家",
+      "tags": [
+        "台美",
+        "貿易協定",
+        "美國市場",
+        "出口"
+      ],
+      "reason": "台美貿易協定將影響台灣對美出口前景與市場機會"
+    },
+    {
+      "source": "台商赴美 學者憂我「訂單減、出口降 消費不會好」 (聯合_產經_股市)",
+      "target": "鄭麗君今率隊赴華府 台美貿易協定12日明朗 (工商財經要聞)",
+      "value": 6,
+      "label": "政府部會",
+      "tags": [
+        "台商",
+        "美國",
+        "貿易協定"
+      ],
+      "reason": "台美貿易協定談判與台商前景密切相關"
+    },
+    {
+      "source": "預期關稅降至零 六車廠都要引進美車 市占率挺進兩成 (經濟產業熱點)",
+      "target": "美製車關稅有望下降！六大車廠擬「策略性」引進 (聯合_產經_股市)",
+      "value": 9,
+      "label": "產業別",
+      "tags": [
+        "美製車",
+        "關稅",
+        "台灣車廠"
+      ],
+      "reason": "同報導美製車進口關稅下降對台灣車廠的影響"
+    },
+    {
+      "source": "美製車關稅有望下降！六大車廠擬「策略性」引進 (聯合_產經_股市)",
+      "target": "降稅效應！若關稅降為0…美製車降價1成 (聯合_產經_股市)",
+      "value": 9,
+      "label": "產業別",
+      "tags": [
+        "美製車",
+        "關稅",
+        "降價"
+      ],
+      "reason": "同報導關稅下降對美製車價格與台灣市場的影響"
+    },
+    {
+      "source": "232條款衝擊扣件業 經部祭4措施 (中時財經新聞)",
+      "target": "台商赴美 學者憂我「訂單減、出口降 消費不會好」 (聯合_產經_股市)",
+      "value": 6,
+      "label": "產業別",
+      "tags": [
+        "232條款",
+        "關稅",
+        "對美出口"
+      ],
+      "reason": "美國關稅措施對台灣產業出口造成衝擊"
+    },
+    {
+      "source": "日本眾議院大選結果出爐 經濟、產業可望重返成長 (經濟金融脈動)",
+      "target": "美日財長聯手 致力日圓穩定 (工商財經要聞)",
+      "value": 7,
+      "label": "國家",
+      "tags": [
+        "日本",
+        "經濟政策",
+        "日圓"
+      ],
+      "reason": "日本大選後的經濟政策將與美日協調的日圓穩定相關"
+    },
+    {
+      "source": "美日財長聯手 致力日圓穩定 (工商財經要聞)",
+      "target": "停機逾14年 日本重啟全球最大核電廠 (工商全球財經)",
+      "value": 6,
+      "label": "國家",
+      "tags": [
+        "日本",
+        "經濟成長",
+        "能源"
+      ],
+      "reason": "日本核電廠重啟是經濟成長與能源政策的重要舉措"
+    },
+    {
+      "source": "華許掌 Fed  市場推演二情境 可能規範實施量化寬鬆限於「真正緊急狀況」 (經濟國際焦點)",
+      "target": "貝森特：Fed不會激進縮表 (工商全球財經)",
+      "value": 8,
+      "label": "總體經濟",
+      "tags": [
+        "Fed",
+        "貨幣政策",
+        "量化寬鬆"
+      ],
+      "reason": "皆報導美國聯準會的貨幣政策方向與市場預期"
+    },
+    {
+      "source": "中國建議銀行減持美債 (工商全球財經)",
+      "target": "華許掌 Fed  市場推演二情境 可能規範實施量化寬鬆限於「真正緊急狀況」 (經濟國際焦點)",
+      "value": 6,
+      "label": "國家",
+      "tags": [
+        "美債",
+        "中國",
+        "美元政策"
+      ],
+      "reason": "中國減持美債與美國貨幣政策相關，反映全球經濟動態"
+    },
+    {
+      "source": "節前資金缺口 人行料補水 (工商全球財經)",
+      "target": "中國建議銀行減持美債 (工商全球財經)",
+      "value": 6,
+      "label": "總體經濟",
+      "tags": [
+        "中國央行",
+        "流動性",
+        "貨幣政策"
+      ],
+      "reason": "皆涉及中國央行的貨幣政策與金融市場調節"
+    },
+    {
+      "source": "需求旺 緯穎加速美、台擴產 (工商產業科技)",
+      "target": "AI伺服器需求旺 廣達、神達 齊寫最強元月 (工商財經要聞)",
+      "value": 7,
+      "label": "科技領域",
+      "tags": [
+        "伺服器",
+        "擴產",
+        "AI需求"
+      ],
+      "reason": "AI伺服器需求旺盛帶動伺服器廠商的擴產計畫"
+    },
+    {
+      "source": "華通擴廠 第2季挹注產能 (聯合_產經_股市)",
+      "target": "AI伺服器需求旺 廣達、神達 齊寫最強元月 (工商財經要聞)",
+      "value": 6,
+      "label": "科技領域",
+      "tags": [
+        "PCB",
+        "AI伺服器",
+        "產能"
+      ],
+      "reason": "華通擴廠將為伺服器與AI相關產品提供PCB支援"
+    },
+    {
+      "source": "工研院攜SAES 補台灣半導體缺口 (中時財經新聞)",
+      "target": "台積電調產能 淡出成熟製程 將多數8吋代工釋出給世界 (經濟產業熱點)",
+      "value": 6,
+      "label": "產業別",
+      "tags": [
+        "半導體",
+        "製程",
+        "產能"
+      ],
+      "reason": "台灣積極補足半導體缺口，與產業調整相關"
+    },
+    {
+      "source": "標普看台灣信用環境 2變數當前 (工商財經要聞)",
+      "target": "元月出口 創歷年單月最高 (工商財經要聞)",
+      "value": 5,
+      "label": "總體經濟",
+      "tags": [
+        "信用評級",
+        "台灣經濟",
+        "出口"
+      ],
+      "reason": "出口成績優異將支撐台灣的信用評級前景"
+    },
+    {
+      "source": "字節跳動 推AI影片生成模型 (工商全球財經)",
+      "target": "AI資本支出增強 閎康MA、FA訂單加溫 (工商產業科技)",
+      "value": 5,
+      "label": "科技領域",
+      "tags": [
+        "AI",
+        "技術創新",
+        "資本支出"
+      ],
+      "reason": "AI應用創新推動相關產業的資本支出與投資"
+    },
+    {
+      "source": "中華資安 上月營收年增逾4成 (工商產業科技)",
+      "target": "AI資本支出增強 閎康MA、FA訂單加溫 (工商產業科技)",
+      "value": 5,
+      "label": "科技領域",
+      "tags": [
+        "資安",
+        "AI",
+        "資本支出"
+      ],
+      "reason": "AI相關投資增加對資安等相關產業的帶動作用"
+    },
+    {
+      "source": "威睿科技 進軍非洲市場 (工商財經要聞)",
+      "target": "台商赴美 學者憂我「訂單減、出口降 消費不會好」 (聯合_產經_股市)",
+      "value": 4,
+      "label": "國家",
+      "tags": [
+        "海外市場",
+        "台商",
+        "出口"
+      ],
+      "reason": "台商開拓新市場與整體出口戰略相關"
+    },
+    {
+      "source": "TPCA組國家隊 搶灘APEX EXPO (工商產業科技)",
+      "target": "卡位太空應用 聯發科組4方聯盟 (中時財經新聞)",
+      "value": 6,
+      "label": "展覽",
+      "tags": [
+        "APEX EXPO",
+        "展覽",
+        "太空應用"
+      ],
+      "reason": "APEX EXPO與太空應用產業展示相關，台灣產業積極參展"
+    },
+    {
+      "source": "雙引擎 聯強元月業績逾400億 (工商產業科技)",
+      "target": "淡季不淡 PC品牌廠營收靚 (工商產業科技)",
+      "value": 6,
+      "label": "產業別",
+      "tags": [
+        "PC",
+        "銷售通路",
+        "元月業績"
+      ],
+      "reason": "PC相關業績成長與通路商業績表現相關"
+    },
+    {
+      "source": "奇鋐1月營收月增21% 富世達增18% (聯合_產經_股市)",
+      "target": "AI伺服器需求旺 廣達、神達 齊寫最強元月 (工商財經要聞)",
+      "value": 5,
+      "label": "科技領域",
+      "tags": [
+        "電源管理",
+        "伺服器",
+        "1月成長"
+      ],
+      "reason": "電源管理廠商受AI伺服器需求帶動而成長"
+    },
+    {
+      "source": "宏致1月營收月增16% 寫新高紀錄 (聯合_產經_股市)",
+      "target": "AI伺服器需求旺 廣達、神達 齊寫最強元月 (工商財經要聞)",
+      "value": 5,
+      "label": "科技領域",
+      "tags": [
+        "連接器",
+        "伺服器",
+        "1月成長"
+      ],
+      "reason": "連接器廠商受AI伺服器需求帶動業績成長"
+    },
+    {
+      "source": "美國建議船隻遠離伊朗水域　國際油價走揚 (經濟國際焦點)",
+      "target": "華許掌 Fed  市場推演二情境 可能規範實施量化寬鬆限於「真正緊急狀況」 (經濟國際焦點)",
+      "value": 5,
+      "label": "總體經濟",
+      "tags": [
+        "國際局勢",
+        "油價",
+        "貨幣政策"
+      ],
+      "reason": "地緣政治風險對全球油價與央行政策均有影響"
+    }
+  ]
+}
