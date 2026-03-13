@@ -369,20 +369,64 @@
                  .linkDirectionalParticles(Graph.linkDirectionalParticles());
         }
 
+        function estimateNodeRadius(node) {
+            const labelLength = ((node && node.id) ? String(node.id).length : 0);
+            const weight = Number(node && (node.val ?? node.size)) || 1;
+            return Math.max(36, 20 + labelLength * 5 + Math.sqrt(weight) * 6);
+        }
+
+        function seedNodePositions(nodes) {
+            const count = Math.max(nodes.length, 1);
+            const radius = Math.max(220, Math.sqrt(count) * 90);
+            nodes.forEach((node, index) => {
+                const angle = (index / count) * Math.PI * 2;
+                const ringOffset = ((index % 5) - 2) * 18;
+                node.x = (radius + ringOffset) * Math.cos(angle);
+                node.y = (radius + ringOffset) * Math.sin(angle);
+                node.vx = 0;
+                node.vy = 0;
+                delete node.fx;
+                delete node.fy;
+            });
+        }
+
+        function getViewportPadding() {
+            const isMobile = window.matchMedia && window.matchMedia("(max-width: 768px)").matches;
+            if (isMobile) return 48;
+            return controlsPanel.classList.contains('hidden') ? 120 : 220;
+        }
+
+        function fitGraphToViewport(duration = 900) {
+            if (!currentGraphData || !currentGraphData.nodes || currentGraphData.nodes.length === 0) return;
+            requestAnimationFrame(() => {
+                Graph.zoomToFit(duration, getViewportPadding(), node => Number.isFinite(node.x) && Number.isFinite(node.y));
+                Graph.centerAt(0, 0, duration);
+            });
+        }
+
         let Graph = ForceGraph()(graphContainer)
             .backgroundColor('#0b0b0b')
             .nodeId('id')
-            .nodeRelSize(6)
-            .d3Force('charge', d3.forceManyBody().strength(-900))
-            .d3Force('link', d3.forceLink().id(d => d.id).distance(180))
-            .d3Force('collision', d3.forceCollide().radius(40).strength(0.8))
+            .nodeRelSize(7)
+            .warmupTicks(160)
+            .cooldownTicks(240)
+            .d3AlphaDecay(0.035)
+            .d3VelocityDecay(0.22)
+            .d3Force('charge', d3.forceManyBody().strength(node => -Math.max(900, estimateNodeRadius(node) * 22)))
+            .d3Force('link', d3.forceLink().id(d => d.id).distance(link => {
+                const sourceRadius = estimateNodeRadius(link.source);
+                const targetRadius = estimateNodeRadius(link.target);
+                return Math.max(220, sourceRadius + targetRadius + 40);
+            }).strength(0.9))
+            .d3Force('collision', d3.forceCollide().radius(node => estimateNodeRadius(node) + 10).strength(1))
             .nodeColor(node => ((activeFilters.size === 0 && !searchText) || highlightedNodes.has(node)) ? (ORANGE_PALETTE[Math.abs(node.id.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0)) % ORANGE_PALETTE.length]) : 'rgba(255, 255, 255, 0.1)')
             .nodeLabel('id')
-            .linkColor(link => ((activeFilters.size === 0 && !searchText) || highlightedLinks.has(link)) ? 'rgba(255, 153, 0, 0.3)' : 'rgba(255, 255, 255, 0.05)')
-            .linkWidth(link => ((activeFilters.size === 0 && !searchText) || highlightedLinks.has(link)) ? (link.value ? Math.sqrt(link.value) : 1) : 0.5)
+            .linkColor(link => ((activeFilters.size === 0 && !searchText) || highlightedLinks.has(link)) ? 'rgba(255, 183, 77, 0.42)' : 'rgba(255, 255, 255, 0.06)')
+            .linkWidth(link => ((activeFilters.size === 0 && !searchText) || highlightedLinks.has(link)) ? Math.max(1.4, link.value ? Math.sqrt(link.value) * 1.1 : 1.4) : 0.7)
             .linkDirectionalParticles(link => ((activeFilters.size === 0 && !searchText) || highlightedLinks.has(link)) ? 2 : 0)
             .linkDirectionalParticleWidth(2)
             .linkDirectionalParticleColor(() => '#ffaa00')
+            .onEngineStop(() => fitGraphToViewport(700))
             .onNodeClick(node => { onNodeClick(node); })
             .onLinkClick(link => { showToast(link.label, link.reason || ''); })
             .onNodeDrag((node) => {
@@ -421,23 +465,23 @@
             ctx.beginPath();
             ctx.moveTo(sx, sy);
             ctx.lineTo(ex, ey);
-            ctx.strokeStyle = isHighlighted ? 'rgba(255, 153, 0, 0.3)' : 'rgba(255, 255, 255, 0.05)';
-            ctx.lineWidth = (isHighlighted ? (link.value ? Math.sqrt(link.value) : 1) : 0.5) / globalScale;
+            ctx.strokeStyle = isHighlighted ? 'rgba(255, 183, 77, 0.42)' : 'rgba(255, 255, 255, 0.06)';
+            ctx.lineWidth = (isHighlighted ? Math.max(1.4, link.value ? Math.sqrt(link.value) * 1.1 : 1.4) : 0.7) / globalScale;
             ctx.stroke();
 
             if (link.label && isHighlighted) {
                 const label = link.label;
-                const fontSize = Math.max(10, 14 / globalScale);
+                const fontSize = Math.max(11, 15 / globalScale);
                 ctx.font = `${fontSize}px 'Noto Sans TC', Sans-Serif`;
                 const midX = (sx + ex) / 2;
                 const midY = (sy + ey) / 2;
                 const textWidth = ctx.measureText(label).width;
-                const bckgDimensions = [textWidth, fontSize].map(n => n + fontSize * 0.3);
-                ctx.fillStyle = '#222';
+                const bckgDimensions = [textWidth, fontSize].map(n => n + fontSize * 0.45);
+                ctx.fillStyle = 'rgba(12, 12, 12, 0.92)';
                 ctx.fillRect(midX - bckgDimensions[0] / 2, midY - bckgDimensions[1] / 2, ...bckgDimensions);
                 ctx.textAlign = 'center';
                 ctx.textBaseline = 'middle';
-                ctx.fillStyle = '#fff';
+                ctx.fillStyle = '#ffe0b2';
                 ctx.fillText(label, midX, midY);
             }
         });
@@ -448,16 +492,16 @@
             if (typeof x !== 'number' || typeof y !== 'number' || !Number.isFinite(x) || !Number.isFinite(y)) return;
             const isHighlighted = (activeFilters.size === 0 && !searchText) || highlightedNodes.has(node);
             const label = node.id;
-            const fontSize = 14 / globalScale;
+            const fontSize = Math.max(12, 16 / globalScale);
             ctx.font = `${fontSize}px 'Noto Sans TC', sans-serif`;
             const textWidth = ctx.measureText(label).width;
-            const bckgDimensions = [textWidth, fontSize].map(n => n + fontSize * 0.5);
+            const bckgDimensions = [textWidth, fontSize].map(n => n + fontSize * 0.7);
             const boxX = x - bckgDimensions[0] / 2;
             const boxY = y - bckgDimensions[1] / 2;
             
             ctx.fillStyle = isHighlighted ? 'rgba(26, 26, 26, 0.9)' : 'rgba(26, 26, 26, 0.2)';
             ctx.strokeStyle = isHighlighted ? '#ff9900' : 'rgba(100, 100, 100, 0.2)';
-            ctx.lineWidth = 1 / globalScale;
+            ctx.lineWidth = 1.4 / globalScale;
             ctx.fillRect(boxX, boxY, ...bckgDimensions);
             ctx.strokeRect(boxX, boxY, ...bckgDimensions);
             ctx.textAlign = 'center';
@@ -497,10 +541,12 @@
         document.getElementById('toggle-panel-btn').addEventListener('click', () => {
             controlsPanel.classList.add('hidden');
             controlsToggleTab.classList.add('visible');
+            fitGraphToViewport(500);
         });
         controlsToggleTab.addEventListener('click', () => {
             controlsPanel.classList.remove('hidden');
             controlsToggleTab.classList.remove('visible');
+            fitGraphToViewport(500);
         });
 
         function onNodeClick(node) {
@@ -642,25 +688,12 @@
                 updateHighlights();
                 // Normalize node.val from node.size for compatibility (e.g. force-graph / rendering)
                 const nodes = graphData.nodes || [];
-                nodes.forEach((n, i) => {
+                nodes.forEach((n) => {
                     if (n.size != null && n.val == null) n.val = n.size;
                 });
-                // Give nodes initial positions so they don't all start at center (fixes clustered view)
-                const rect = graphContainer.getBoundingClientRect();
-                const centerX = rect.width / 2 || window.innerWidth / 2;
-                const centerY = rect.height / 2 || window.innerHeight / 2;
-                const spread = Math.min(rect.width, rect.height) * 0.35 || 350;
-                nodes.forEach((n, i) => {
-                    const angle = (i / Math.max(nodes.length, 1)) * 2 * Math.PI + (Math.random() * 0.5);
-                    n.x = centerX + spread * Math.cos(angle) + (Math.random() - 0.5) * 80;
-                    n.y = centerY + spread * Math.sin(angle) + (Math.random() - 0.5) * 80;
-                });
+                seedNodePositions(nodes);
                 Graph.graphData(graphData);
-                if (typeof Graph.centerAt === 'function') {
-                    requestAnimationFrame(() => {
-                        Graph.centerAt(centerX, centerY);
-                    });
-                }
+                fitGraphToViewport(0);
                 populateKeywords(graphData.links, graphData.nodes);
                 dateSelector.value = dateKey;
             }
@@ -672,6 +705,7 @@
             updateHighlights();
             triggerRenderUpdate();
         });
+        window.addEventListener('resize', () => fitGraphToViewport(250));
 
         // Start
         init();
