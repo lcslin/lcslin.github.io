@@ -11,6 +11,11 @@
       "size": 15
     },
     {
+      "id": "央行",
+      "group": "org",
+      "size": 20
+    },
+    {
       "id": "台積電",
       "group": "company",
       "size": 25
@@ -26,29 +31,39 @@
       "size": 18
     },
     {
-      "id": "特斯拉",
-      "group": "company",
-      "size": 20
-    },
-    {
-      "id": "馬斯克",
-      "group": "person",
-      "size": 16
-    },
-    {
       "id": "鴻海",
       "group": "company",
-      "size": 18
+      "size": 16
     },
     {
       "id": "劉揚偉",
       "group": "person",
-      "size": 14
+      "size": 12
     },
     {
-      "id": "央行",
-      "group": "org",
-      "size": 20
+      "id": "特斯拉",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "馬斯克",
+      "group": "person",
+      "size": 15
+    },
+    {
+      "id": "聯電",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "緯創",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "緯穎",
+      "group": "company",
+      "size": 10
     },
     {
       "id": "美國",
@@ -58,22 +73,27 @@
     {
       "id": "中國",
       "group": "country",
-      "size": 18
+      "size": 16
     },
     {
       "id": "台灣",
       "group": "country",
-      "size": 22
+      "size": 18
     },
     {
       "id": "日本",
       "group": "country",
-      "size": 15
+      "size": 12
     },
     {
       "id": "伊朗",
       "group": "country",
-      "size": 16
+      "size": 14
+    },
+    {
+      "id": "非洲",
+      "group": "country",
+      "size": 10
     },
     {
       "id": "AI",
@@ -83,112 +103,77 @@
     {
       "id": "半導體",
       "group": "tech",
-      "size": 23
+      "size": 22
     },
     {
-      "id": "晶圓代工",
+      "id": "HBM",
       "group": "tech",
-      "size": 20
-    },
-    {
-      "id": "HBM4",
-      "group": "tech",
-      "size": 16
+      "size": 14
     },
     {
       "id": "1奈米製程",
       "group": "tech",
-      "size": 18
+      "size": 12
+    },
+    {
+      "id": "晶圓代工",
+      "group": "tech",
+      "size": 16
     },
     {
       "id": "GTC大會",
       "group": "org",
-      "size": 20
-    },
-    {
-      "id": "聯電",
-      "group": "company",
-      "size": 14
-    },
-    {
-      "id": "緯創",
-      "group": "company",
-      "size": 13
-    },
-    {
-      "id": "緯穎",
-      "group": "company",
-      "size": 13
-    },
-    {
-      "id": "國發會",
-      "group": "org",
-      "size": 12
+      "size": 18
     },
     {
       "id": "關稅",
       "group": "finance",
-      "size": 17
-    },
-    {
-      "id": "石油",
-      "group": "finance",
-      "size": 18
+      "size": 14
     },
     {
       "id": "利率",
       "group": "finance",
-      "size": 19
+      "size": 16
     },
     {
-      "id": "通膨",
+      "id": "石油",
       "group": "finance",
       "size": 16
     },
     {
-      "id": "債券",
-      "group": "finance",
-      "size": 12
-    },
-    {
       "id": "加密幣",
       "group": "finance",
+      "size": 10
+    },
+    {
+      "id": "國發會",
+      "group": "org",
+      "size": 10
+    },
+    {
+      "id": "科學園區",
+      "group": "org",
       "size": 12
     },
     {
       "id": "伺服器",
       "group": "tech",
-      "size": 14
-    },
-    {
-      "id": "機器人",
-      "group": "tech",
-      "size": 13
+      "size": 12
     },
     {
       "id": "資安",
       "group": "tech",
+      "size": 10
+    },
+    {
+      "id": "機器人",
+      "group": "tech",
       "size": 11
-    },
-    {
-      "id": "非洲",
-      "group": "country",
-      "size": 12
-    },
-    {
-      "id": "科學園區",
-      "group": "org",
-      "size": 15
     },
     {
       "id": "稀土",
       "group": "finance",
-      "size": 14
-    },
-    {
-      "id": "國際能源總署",
-      "group": "org",
-      "size": 13
+      "size": 11
     }
   ],
   "links": [
@@ -211,16 +196,10 @@
       "label": "政策工具"
     },
     {
-      "source": "央行",
-      "target": "通膨",
-      "value": 4,
-      "label": "監控指標"
-    },
-    {
-      "source": "通膨",
-      "target": "利率",
-      "value": 4,
-      "label": "相互影響"
+      "source": "Fed",
+      "target": "美國",
+      "value": 5,
+      "label": "國家機構"
     },
     {
       "source": "台積電",
@@ -230,9 +209,9 @@
     },
     {
       "source": "台積電",
-      "target": "晶圓代工",
-      "value": 5,
-      "label": "核心業務"
+      "target": "科學園區",
+      "value": 4,
+      "label": "主要貢獻者"
     },
     {
       "source": "台積電",
@@ -242,9 +221,9 @@
     },
     {
       "source": "台積電",
-      "target": "科學園區",
-      "value": 4,
-      "label": "營收貢獻"
+      "target": "晶圓代工",
+      "value": 5,
+      "label": "業務核心"
     },
     {
       "source": "台積電",
@@ -266,9 +245,9 @@
     },
     {
       "source": "輝達",
-      "target": "HBM4",
+      "target": "HBM",
       "value": 4,
-      "label": "技術需求"
+      "label": "供應需求"
     },
     {
       "source": "黃仁勳",
@@ -279,38 +258,8 @@
     {
       "source": "黃仁勳",
       "target": "GTC大會",
-      "value": 5,
+      "value": 4,
       "label": "主講人"
-    },
-    {
-      "source": "特斯拉",
-      "target": "馬斯克",
-      "value": 5,
-      "label": "執行長"
-    },
-    {
-      "source": "特斯拉",
-      "target": "晶圓代工",
-      "value": 4,
-      "label": "自建產能"
-    },
-    {
-      "source": "特斯拉",
-      "target": "機器人",
-      "value": 4,
-      "label": "產品開發"
-    },
-    {
-      "source": "特斯拉",
-      "target": "半導體",
-      "value": 4,
-      "label": "供應鏈建設"
-    },
-    {
-      "source": "鴻海",
-      "target": "劉揚偉",
-      "value": 5,
-      "label": "董事長"
     },
     {
       "source": "鴻海",
@@ -326,39 +275,63 @@
     },
     {
       "source": "劉揚偉",
+      "target": "鴻海",
+      "value": 5,
+      "label": "董事長"
+    },
+    {
+      "source": "劉揚偉",
       "target": "GTC大會",
+      "value": 3,
+      "label": "參與講者"
+    },
+    {
+      "source": "緯創",
+      "target": "GTC大會",
+      "value": 3,
+      "label": "參展廠商"
+    },
+    {
+      "source": "緯創",
+      "target": "AI",
+      "value": 3,
+      "label": "商機布局"
+    },
+    {
+      "source": "緯穎",
+      "target": "GTC大會",
+      "value": 3,
+      "label": "參展廠商"
+    },
+    {
+      "source": "緯穎",
+      "target": "AI",
+      "value": 3,
+      "label": "商機布局"
+    },
+    {
+      "source": "特斯拉",
+      "target": "機器人",
       "value": 4,
-      "label": "演講嘉賓"
+      "label": "產品開發"
     },
     {
-      "source": "緯創",
-      "target": "GTC大會",
-      "value": 3,
-      "label": "參展廠商"
+      "source": "特斯拉",
+      "target": "半導體",
+      "value": 4,
+      "label": "自建晶圓廠"
     },
     {
-      "source": "緯創",
-      "target": "AI",
-      "value": 3,
-      "label": "商機搶攻"
-    },
-    {
-      "source": "緯穎",
-      "target": "GTC大會",
-      "value": 3,
-      "label": "參展廠商"
-    },
-    {
-      "source": "緯穎",
-      "target": "AI",
-      "value": 3,
-      "label": "商機搶攻"
+      "source": "馬斯克",
+      "target": "特斯拉",
+      "value": 5,
+      "label": "執行長"
     },
     {
       "source": "聯電",
       "target": "晶圓代工",
       "value": 4,
-      "label": "核心業務"
+      "label": "業務核心"
     },
     {
       "source": "聯電",
@@ -367,28 +340,28 @@
       "label": "產業參與"
     },
     {
-      "source": "半導體",
-      "target": "晶圓代工",
-      "value": 5,
-      "label": "產業關聯"
-    },
-    {
       "source": "AI",
       "target": "伺服器",
       "value": 4,
-      "label": "硬體需求"
+      "label": "應用需求"
     },
     {
       "source": "AI",
       "target": "資安",
       "value": 3,
-      "label": "安全需求"
+      "label": "安全挑戰"
     },
     {
-      "source": "美國",
-      "target": "Fed",
+      "source": "半導體",
+      "target": "台灣",
       "value": 5,
-      "label": "央行所在"
+      "label": "產業重鎮"
+    },
+    {
+      "source": "HBM",
+      "target": "半導體",
+      "value": 4,
+      "label": "關鍵零組件"
     },
     {
       "source": "美國",
@@ -403,46 +376,34 @@
       "label": "貿易政策"
     },
     {
-      "source": "美國",
+      "source": "中國",
       "target": "稀土",
       "value": 3,
-      "label": "戰略資源"
+      "label": "資源管制"
+    },
+    {
+      "source": "中國",
+      "target": "非洲",
+      "value": 3,
+      "label": "資源爭奪"
+    },
+    {
+      "source": "美國",
+      "target": "非洲",
+      "value": 3,
+      "label": "資源爭奪"
+    },
+    {
+      "source": "中國",
+      "target": "AI",
+      "value": 3,
+      "label": "技術競爭"
     },
     {
       "source": "美國",
       "target": "伊朗",
       "value": 4,
       "label": "地緣衝突"
-    },
-    {
-      "source": "中國",
-      "target": "關稅",
-      "value": 4,
-      "label": "貿易談判"
-    },
-    {
-      "source": "中國",
-      "target": "稀土",
-      "value": 4,
-      "label": "出口管制"
-    },
-    {
-      "source": "中國",
-      "target": "非洲",
-      "value": 3,
-      "label": "資源競爭"
-    },
-    {
-      "source": "中國",
-      "target": "AI",
-      "value": 3,
-      "label": "技術發展"
-    },
-    {
-      "source": "美國",
-      "target": "非洲",
-      "value": 3,
-      "label": "資源競爭"
     },
     {
       "source": "伊朗",
@@ -453,56 +414,32 @@
     {
       "source": "日本",
       "target": "石油",
-      "value": 4,
-      "label": "戰備釋出"
-    },
-    {
-      "source": "日本",
-      "target": "央行",
       "value": 3,
-      "label": "貨幣政策"
+      "label": "儲備釋出"
     },
     {
-      "source": "石油",
-      "target": "國際能源總署",
+      "source": "央行",
+      "target": "台灣",
       "value": 4,
-      "label": "儲備釋出"
+      "label": "政策機構"
     },
     {
       "source": "國發會",
       "target": "台灣",
       "value": 4,
-      "label": "政策制定"
-    },
-    {
-      "source": "債券",
-      "target": "央行",
-      "value": 3,
-      "label": "市場操作"
+      "label": "政策規劃"
     },
     {
       "source": "加密幣",
-      "target": "金融市場",
-      "value": 3,
-      "label": "投資工具"
+      "target": "美國",
+      "value": 2,
+      "label": "市場熱潮"
     },
     {
-      "source": "HBM4",
-      "target": "AI",
-      "value": 4,
-      "label": "記憶體需求"
-    },
-    {
-      "source": "台灣",
-      "target": "半導體",
+      "source": "晶圓代工",
+      "target": "台灣",
       "value": 5,
       "label": "產業優勢"
-    },
-    {
-      "source": "台灣",
-      "target": "科學園區",
-      "value": 4,
-      "label": "產業聚落"
     },
     {
       "source": "GTC大會",
@@ -511,10 +448,16 @@
       "label": "技術展示"
     },
     {
-      "source": "晶圓代工",
-      "target": "1奈米製程",
-      "value": 4,
-      "label": "技術演進"
+      "source": "關稅",
+      "target": "中國",
+      "value": 3,
+      "label": "貿易議題"
+    },
+    {
+      "source": "稀土",
+      "target": "美國",
+      "value": 3,
+      "label": "貿易談判"
     }
   ],
   "newsDatabase": {
@@ -569,49 +512,196 @@
         "url": "https://www.chinatimes.com/newspapers/20260316000153-260202?utm_source=iii_news&utm_medium=rss"
       }
     ],
-    "利率": [
+    "台積電": [
+      {
+        "title": "科學園區營收 台積貢獻最多占比63%創新高 未來只會再增加",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9381786"
+      },
+      {
+        "title": "台積電1.2奈米預定地環評 有進展",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9381793"
+      },
+      {
+        "title": "沙崙生態科學園區用地環評若拍板 台積全包 生產先進1奈米製程",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260316000167-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "輝達": [
+      {
+        "title": "輝達 GTC 15台廠董總親征 鴻海、緯創、緯穎等帶頭搶 AI 商機",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9381851"
+      },
+      {
+        "title": "輝達GTC大會16～19日登場 外資提6看點",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260316000139-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "HBM4吃緊 傳Rubin投片下修",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260316000158-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "黃仁勳": [
+      {
+        "title": "黃仁勳秀Rubin新平台 台鏈歡呼",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260316000161-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "鴻海": [
+      {
+        "title": "輝達 GTC 15台廠董總親征 鴻海、緯創、緯穎等帶頭搶 AI 商機",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9381851"
+      },
+      {
+        "title": "鴻海董事長劉揚偉親征 GTC 代工龍頭開講三技術",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9381856"
+      }
+    ],
+    "劉揚偉": [
+      {
+        "title": "鴻海董事長劉揚偉親征 GTC 代工龍頭開講三技術",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9381856"
+      }
+    ],
+    "特斯拉": [
+      {
+        "title": "特斯拉機器人「早到」提前至今夏生產 亞光、盟立等打強心針",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9381859"
+      },
+      {
+        "title": "特斯拉執行長馬斯克：超大型晶圓廠動了",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9381862"
+      },
+      {
+        "title": "確保供貨 Tesla自建晶圓廠",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260316000210-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "馬斯克": [
+      {
+        "title": "特斯拉執行長馬斯克：超大型晶圓廠動了",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9381862"
+      }
+    ],
+    "聯電": [
+      {
+        "title": "半導體漲價又一波 聯電、世界等調升代工價 IC 設計廠也有動作",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9381834"
+      }
+    ],
+    "緯創": [
+      {
+        "title": "輝達 GTC 15台廠董總親征 鴻海、緯創、緯穎等帶頭搶 AI 商機",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9381851"
+      }
+    ],
+    "緯穎": [
+      {
+        "title": "輝達 GTC 15台廠董總親征 鴻海、緯創、緯穎等帶頭搶 AI 商機",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9381851"
+      }
+    ],
+    "美國": [
+      {
+        "title": "超級央行周多數按兵不動 Fed 預料不會釋出近期降息訊號",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9381797"
+      },
+      {
+        "title": "美伊拒和談油價震不停 分析師示警將擴大為全球供應震撼",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9381811"
+      },
+      {
+        "title": "美伊衝突導致荷莫茲實質封閉 化學品、食品、汽車衝擊大",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9381813"
+      },
+      {
+        "title": "中美經貿會談巴黎登場 聚焦關稅、稀土、科技出口管制",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260316000145-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中國": [
+      {
+        "title": "中美AI探礦 爭奪非洲地下寶藏",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6809/9381795"
+      },
+      {
+        "title": "陸掀養蝦瘋潮 Mini PC買氣衝",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260316000168-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "中美經貿會談巴黎登場 聚焦關稅、稀土、科技出口管制",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260316000145-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台灣": [
+      {
+        "title": "科學園區營收 台積貢獻最多占比63%創新高 未來只會再增加",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9381786"
+      },
+      {
+        "title": "台積電1.2奈米預定地環評 有進展",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9381793"
+      },
+      {
+        "title": "沙崙生態科學園區用地環評若拍板 台積全包 生產先進1奈米製程",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260316000167-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "日本": [
       {
         "title": "多國將舉行央行會議 市場估美日歐利率不變",
         "source": "聯合_產經_股市",
         "url": "https://udn.com/news/story/6811/9381790"
       },
       {
-        "title": "本報調查：央行Q1利率 金融業一面倒",
-        "source": "工商財經要聞",
-        "url": "https://www.chinatimes.com/newspapers/20260316000148-260202?utm_source=iii_news&utm_medium=rss"
+        "title": "日本今釋出戰備儲油 喊澳洲提高LNG產量",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260316000217-260203?utm_source=iii_news&utm_medium=rss"
       }
     ],
-    "通膨": [
+    "伊朗": [
       {
-        "title": "通膨疑慮…七大央行觀望氣氛濃",
-        "source": "工商財經要聞",
-        "url": "https://www.chinatimes.com/newspapers/20260316000153-260202?utm_source=iii_news&utm_medium=rss"
-      }
-    ],
-    "國發會": [
-      {
-        "title": "主權基金財源 擬三大管道籌措",
-        "source": "工商財經要聞",
-        "url": "https://www.chinatimes.com/newspapers/20260316000156-260202?utm_source=iii_news&utm_medium=rss"
+        "title": "美伊拒和談油價震不停 分析師示警將擴大為全球供應震撼",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9381811"
       },
       {
-        "title": "擴大投資動能 國發會估公建經費再創高",
-        "source": "工商財經要聞",
-        "url": "https://www.chinatimes.com/newspapers/20260316000192-260202?utm_source=iii_news&utm_medium=rss"
-      }
-    ],
-    "債券": [
-      {
-        "title": "銀行業元月狂掃2,386億債券",
-        "source": "工商金融稅務",
-        "url": "https://www.chinatimes.com/newspapers/20260316000234-260205?utm_source=iii_news&utm_medium=rss"
-      }
-    ],
-    "加密幣": [
-      {
-        "title": "超短期加密幣押注掀熱潮 吸引散戶湧入 每日交易量7,000萬美元",
+        "title": "美伊衝突導致荷莫茲實質封閉 化學品、食品、汽車衝擊大",
         "source": "經濟國際焦點",
-        "url": "https://money.udn.com/money/story/5599/9381805"
+        "url": "https://money.udn.com/money/story/5599/9381813"
+      }
+    ],
+    "非洲": [
+      {
+        "title": "中美AI探礦 爭奪非洲地下寶藏",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6809/9381795"
       }
     ],
     "AI": [
@@ -641,102 +731,42 @@
         "url": "https://www.chinatimes.com/newspapers/20260316000475-260110?utm_source=iii_news&utm_medium=rss"
       }
     ],
-    "台積電": [
+    "半導體": [
       {
-        "title": "科學園區營收 台積貢獻最多占比63%創新高 未來只會再增加",
+        "title": "半導體漲價又一波 聯電、世界等調升代工價 IC 設計廠也有動作",
         "source": "經濟產業熱點",
-        "url": "https://money.udn.com/money/story/5612/9381786"
+        "url": "https://money.udn.com/money/story/5612/9381834"
       },
       {
-        "title": "台積電1.2奈米預定地環評 有進展",
-        "source": "經濟產業熱點",
-        "url": "https://money.udn.com/money/story/5612/9381793"
-      },
+        "title": "成本墊高 成熟製程Q2起喊漲",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260316000164-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "HBM": [
+      {
+        "title": "HBM4吃緊 傳Rubin投片下修",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260316000158-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "1奈米製程": [
       {
         "title": "沙崙生態科學園區用地環評若拍板 台積全包 生產先進1奈米製程",
         "source": "工商財經要聞",
         "url": "https://www.chinatimes.com/newspapers/20260316000167-260202?utm_source=iii_news&utm_medium=rss"
       }
     ],
-    "特斯拉": [
+    "晶圓代工": [
       {
-        "title": "特斯拉機器人「早到」提前至今夏生產 亞光、盟立等打強心針",
+        "title": "半導體漲價又一波 聯電、世界等調升代工價 IC 設計廠也有動作",
         "source": "經濟產業熱點",
-        "url": "https://money.udn.com/money/story/5612/9381859"
+        "url": "https://money.udn.com/money/story/5612/9381834"
       },
       {
-        "title": "特斯拉執行長馬斯克：超大型晶圓廠動了",
-        "source": "經濟產業熱點",
-        "url": "https://money.udn.com/money/story/5612/9381862"
-      },
-      {
-        "title": "確保供貨 Tesla自建晶圓廠",
-        "source": "工商全球財經",
-        "url": "https://www.chinatimes.com/newspapers/20260316000210-260203?utm_source=iii_news&utm_medium=rss"
-      }
-    ],
-    "馬斯克": [
-      {
-        "title": "特斯拉執行長馬斯克：超大型晶圓廠動了",
-        "source": "經濟產業熱點",
-        "url": "https://money.udn.com/money/story/5612/9381862"
-      }
-    ],
-    "輝達": [
-      {
-        "title": "輝達 GTC 15台廠董總親征 鴻海、緯創、緯穎等帶頭搶 AI 商機",
-        "source": "經濟產業熱點",
-        "url": "https://money.udn.com/money/story/5612/9381851"
-      },
-      {
-        "title": "輝達GTC大會16～19日登場 外資提6看點",
+        "title": "晶圓代工今年營收 拚1,700億美元",
         "source": "工商財經要聞",
-        "url": "https://www.chinatimes.com/newspapers/20260316000139-260202?utm_source=iii_news&utm_medium=rss"
-      },
-      {
-        "title": "黃仁勳秀Rubin新平台 台鏈歡呼",
-        "source": "工商財經要聞",
-        "url": "https://www.chinatimes.com/newspapers/20260316000161-260202?utm_source=iii_news&utm_medium=rss"
-      }
-    ],
-    "黃仁勳": [
-      {
-        "title": "黃仁勳秀Rubin新平台 台鏈歡呼",
-        "source": "工商財經要聞",
-        "url": "https://www.chinatimes.com/newspapers/20260316000161-260202?utm_source=iii_news&utm_medium=rss"
-      }
-    ],
-    "鴻海": [
-      {
-        "title": "輝達 GTC 15台廠董總親征 鴻海、緯創、緯穎等帶頭搶 AI 商機",
-        "source": "經濟產業熱點",
-        "url": "https://money.udn.com/money/story/5612/9381851"
-      },
-      {
-        "title": "鴻海董事長劉揚偉親征 GTC 代工龍頭開講三技術",
-        "source": "經濟產業熱點",
-        "url": "https://money.udn.com/money/story/5612/9381856"
-      }
-    ],
-    "劉揚偉": [
-      {
-        "title": "鴻海董事長劉揚偉親征 GTC 代工龍頭開講三技術",
-        "source": "經濟產業熱點",
-        "url": "https://money.udn.com/money/story/5612/9381856"
-      }
-    ],
-    "緯創": [
-      {
-        "title": "輝達 GTC 15台廠董總親征 鴻海、緯創、緯穎等帶頭搶 AI 商機",
-        "source": "經濟產業熱點",
-        "url": "https://money.udn.com/money/story/5612/9381851"
-      }
-    ],
-    "緯穎": [
-      {
-        "title": "輝達 GTC 15台廠董總親征 鴻海、緯創、緯穎等帶頭搶 AI 商機",
-        "source": "經濟產業熱點",
-        "url": "https://money.udn.com/money/story/5612/9381851"
+        "url": "https://www.chinatimes.com/newspapers/20260316000166-260202?utm_source=iii_news&utm_medium=rss"
       }
     ],
     "GTC大會": [
@@ -766,130 +796,6 @@
         "url": "https://www.chinatimes.com/newspapers/20260316000475-260110?utm_source=iii_news&utm_medium=rss"
       }
     ],
-    "半導體": [
-      {
-        "title": "半導體漲價又一波 聯電、世界等調升代工價 IC 設計廠也有動作",
-        "source": "經濟產業熱點",
-        "url": "https://money.udn.com/money/story/5612/9381834"
-      }
-    ],
-    "聯電": [
-      {
-        "title": "半導體漲價又一波 聯電、世界等調升代工價 IC 設計廠也有動作",
-        "source": "經濟產業熱點",
-        "url": "https://money.udn.com/money/story/5612/9381834"
-      }
-    ],
-    "晶圓代工": [
-      {
-        "title": "晶圓代工今年營收 拚1,700億美元",
-        "source": "工商財經要聞",
-        "url": "https://www.chinatimes.com/newspapers/20260316000166-260202?utm_source=iii_news&utm_medium=rss"
-      },
-      {
-        "title": "確保供貨 Tesla自建晶圓廠",
-        "source": "工商全球財經",
-        "url": "https://www.chinatimes.com/newspapers/20260316000210-260203?utm_source=iii_news&utm_medium=rss"
-      }
-    ],
-    "HBM4": [
-      {
-        "title": "HBM4吃緊 傳Rubin投片下修",
-        "source": "工商財經要聞",
-        "url": "https://www.chinatimes.com/newspapers/20260316000158-260202?utm_source=iii_news&utm_medium=rss"
-      }
-    ],
-    "1奈米製程": [
-      {
-        "title": "沙崙生態科學園區用地環評若拍板 台積全包 生產先進1奈米製程",
-        "source": "工商財經要聞",
-        "url": "https://www.chinatimes.com/newspapers/20260316000167-260202?utm_source=iii_news&utm_medium=rss"
-      }
-    ],
-    "科學園區": [
-      {
-        "title": "科學園區營收 台積貢獻最多占比63%創新高 未來只會再增加",
-        "source": "經濟產業熱點",
-        "url": "https://money.udn.com/money/story/5612/9381786"
-      },
-      {
-        "title": "沙崙生態科學園區用地環評若拍板 台積全包 生產先進1奈米製程",
-        "source": "工商財經要聞",
-        "url": "https://www.chinatimes.com/newspapers/20260316000167-260202?utm_source=iii_news&utm_medium=rss"
-      }
-    ],
-    "機器人": [
-      {
-        "title": "特斯拉機器人「早到」提前至今夏生產 亞光、盟立等打強心針",
-        "source": "經濟產業熱點",
-        "url": "https://money.udn.com/money/story/5612/9381859"
-      }
-    ],
-    "伺服器": [
-      {
-        "title": "關鍵零組件產供失衡 IDC估伺服器市場量減價漲",
-        "source": "工商財經要聞",
-        "url": "https://www.chinatimes.com/newspapers/20260316000253-260202?utm_source=iii_news&utm_medium=rss"
-      }
-    ],
-    "資安": [
-      {
-        "title": "AI代理帶旺 資安業迎成長契機",
-        "source": "工商財經要聞",
-        "url": "https://www.chinatimes.com/newspapers/20260316000171-260202?utm_source=iii_news&utm_medium=rss"
-      },
-      {
-        "title": "補漏洞 360衛士推安全龍蝦",
-        "source": "工商全球財經",
-        "url": "https://www.chinatimes.com/newspapers/20260316000222-260203?utm_source=iii_news&utm_medium=rss"
-      }
-    ],
-    "中國": [
-      {
-        "title": "中美AI探礦 爭奪非洲地下寶藏",
-        "source": "聯合_產經_股市",
-        "url": "https://udn.com/news/story/6809/9381795"
-      },
-      {
-        "title": "陸掀養蝦瘋潮 Mini PC買氣衝",
-        "source": "工商財經要聞",
-        "url": "https://www.chinatimes.com/newspapers/20260316000168-260202?utm_source=iii_news&utm_medium=rss"
-      },
-      {
-        "title": "中美經貿會談巴黎登場 聚焦關稅、稀土、科技出口管制",
-        "source": "工商財經要聞",
-        "url": "https://www.chinatimes.com/newspapers/20260316000145-260202?utm_source=iii_news&utm_medium=rss"
-      }
-    ],
-    "美國": [
-      {
-        "title": "中美AI探礦 爭奪非洲地下寶藏",
-        "source": "聯合_產經_股市",
-        "url": "https://udn.com/news/story/6809/9381795"
-      },
-      {
-        "title": "中美經貿會談巴黎登場 聚焦關稅、稀土、科技出口管制",
-        "source": "工商財經要聞",
-        "url": "https://www.chinatimes.com/newspapers/20260316000145-260202?utm_source=iii_news&utm_medium=rss"
-      },
-      {
-        "title": "美伊拒和談油價震不停 分析師示警將擴大為全球供應震撼",
-        "source": "經濟國際焦點",
-        "url": "https://money.udn.com/money/story/5599/9381811"
-      },
-      {
-        "title": "美伊衝突導致荷莫茲實質封閉 化學品、食品、汽車衝擊大",
-        "source": "經濟國際焦點",
-        "url": "https://money.udn.com/money/story/5599/9381813"
-      }
-    ],
-    "非洲": [
-      {
-        "title": "中美AI探礦 爭奪非洲地下寶藏",
-        "source": "聯合_產經_股市",
-        "url": "https://udn.com/news/story/6809/9381795"
-      }
-    ],
     "關稅": [
       {
         "title": "中美經貿會談巴黎登場 聚焦關稅、稀土、科技出口管制",
@@ -897,11 +803,21 @@
         "url": "https://www.chinatimes.com/newspapers/20260316000145-260202?utm_source=iii_news&utm_medium=rss"
       }
     ],
-    "稀土": [
+    "利率": [
       {
-        "title": "中美經貿會談巴黎登場 聚焦關稅、稀土、科技出口管制",
+        "title": "超級央行周多數按兵不動 Fed 預料不會釋出近期降息訊號",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9381797"
+      },
+      {
+        "title": "多國將舉行央行會議 市場估美日歐利率不變",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9381790"
+      },
+      {
+        "title": "本報調查：央行Q1利率 金融業一面倒",
         "source": "工商財經要聞",
-        "url": "https://www.chinatimes.com/newspapers/20260316000145-260202?utm_source=iii_news&utm_medium=rss"
+        "url": "https://www.chinatimes.com/newspapers/20260316000148-260202?utm_source=iii_news&utm_medium=rss"
       }
     ],
     "石油": [
@@ -931,52 +847,53 @@
         "url": "https://www.chinatimes.com/newspapers/20260316000473-260110?utm_source=iii_news&utm_medium=rss"
       }
     ],
-    "伊朗": [
+    "加密幣": [
       {
-        "title": "美伊拒和談油價震不停 分析師示警將擴大為全球供應震撼",
+        "title": "超短期加密幣押注掀熱潮 吸引散戶湧入 每日交易量7,000萬美元",
         "source": "經濟國際焦點",
-        "url": "https://money.udn.com/money/story/5599/9381811"
-      },
-      {
-        "title": "美伊衝突導致荷莫茲實質封閉 化學品、食品、汽車衝擊大",
-        "source": "經濟國際焦點",
-        "url": "https://money.udn.com/money/story/5599/9381813"
+        "url": "https://money.udn.com/money/story/5599/9381805"
       }
     ],
-    "日本": [
+    "國發會": [
       {
-        "title": "多國將舉行央行會議 市場估美日歐利率不變",
-        "source": "聯合_產經_股市",
-        "url": "https://udn.com/news/story/6811/9381790"
-      },
-      {
-        "title": "日本今釋出戰備儲油 喊澳洲提高LNG產量",
-        "source": "工商全球財經",
-        "url": "https://www.chinatimes.com/newspapers/20260316000217-260203?utm_source=iii_news&utm_medium=rss"
+        "title": "擴大投資動能 國發會估公建經費再創高",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260316000192-260202?utm_source=iii_news&utm_medium=rss"
       }
     ],
-    "國際能源總署": [
-      {
-        "title": "國際能源總署：亞洲和大洋洲戰略石油儲備立即釋出",
-        "source": "經濟國際焦點",
-        "url": "https://money.udn.com/money/story/5599/9381989"
-      }
-    ],
-    "台灣": [
+    "科學園區": [
       {
         "title": "科學園區營收 台積貢獻最多占比63%創新高 未來只會再增加",
         "source": "經濟產業熱點",
         "url": "https://money.udn.com/money/story/5612/9381786"
-      },
+      }
+    ],
+    "伺服器": [
       {
-        "title": "台積電1.2奈米預定地環評 有進展",
-        "source": "經濟產業熱點",
-        "url": "https://money.udn.com/money/story/5612/9381793"
-      },
+        "title": "關鍵零組件產供失衡 IDC估伺服器市場量減價漲",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260316000253-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "資安": [
       {
-        "title": "輝達 GTC 15台廠董總親征 鴻海、緯創、緯穎等帶頭搶 AI 商機",
+        "title": "AI代理帶旺 資安業迎成長契機",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260316000171-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "機器人": [
+      {
+        "title": "特斯拉機器人「早到」提前至今夏生產 亞光、盟立等打強心針",
         "source": "經濟產業熱點",
-        "url": "https://money.udn.com/money/story/5612/9381851"
+        "url": "https://money.udn.com/money/story/5612/9381859"
+      }
+    ],
+    "稀土": [
+      {
+        "title": "中美經貿會談巴黎登場 聚焦關稅、稀土、科技出口管制",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260316000145-260202?utm_source=iii_news&utm_medium=rss"
       }
     ]
   },
