@@ -31,6 +31,24 @@
             height: 100vh; 
         }
 
+        #graph-size-readout {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 180;
+            padding: 10px 12px;
+            background: rgba(11, 11, 11, 0.88);
+            border: 1px solid rgba(255, 153, 0, 0.6);
+            border-radius: 6px;
+            color: #ffe0b2;
+            font-size: 0.78rem;
+            line-height: 1.45;
+            letter-spacing: 0.02em;
+            pointer-events: none;
+            white-space: pre-line;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+        }
+
         .controls {
             position: absolute;
             top: 20px;
@@ -288,9 +306,11 @@
         <div class="news-list" id="news-panel-list"></div>
     </div>
     <div id="graph"></div>
+    <div id="graph-size-readout"></div>
 
     <script>
         const graphContainer = document.getElementById('graph');
+        const graphSizeReadout = document.getElementById('graph-size-readout');
         const dateSelector = document.getElementById('date-selector');
         const searchInput = document.getElementById('search-input');
         const keywordList = document.getElementById('keyword-list');
@@ -328,6 +348,18 @@
         let currentLinks = [];
         let currentGraphData = null;
         const lastDragPosition = {};
+
+        function getLabelMetrics(node) {
+            const label = ((node && node.id) ? String(node.id) : '');
+            const fontSize = 16;
+            const horizontalPadding = 28;
+            const verticalPadding = 12;
+            const estimatedTextWidth = label.length * fontSize * 0.95;
+            const width = Math.max(84, estimatedTextWidth + horizontalPadding);
+            const height = fontSize + verticalPadding;
+            const radius = Math.ceil(Math.sqrt(width * width + height * height) / 2);
+            return { width, height, radius, fontSize };
+        }
 
         function updateHighlights() {
             highlightedNodes.clear();
@@ -370,9 +402,9 @@
         }
 
         function estimateNodeRadius(node) {
-            const labelLength = ((node && node.id) ? String(node.id).length : 0);
             const weight = Number(node && (node.val ?? node.size)) || 1;
-            return Math.max(36, 20 + labelLength * 5 + Math.sqrt(weight) * 6);
+            const labelRadius = getLabelMetrics(node).radius;
+            return Math.max(labelRadius, 26 + Math.sqrt(weight) * 7);
         }
 
         function seedNodePositions(nodes) {
@@ -404,6 +436,13 @@
             });
         }
 
+        function updateGraphSizeReadout() {
+            const width = Math.round(graphContainer.clientWidth || window.innerWidth || 0);
+            const height = Math.round(graphContainer.clientHeight || window.innerHeight || 0);
+            const padding = getViewportPadding();
+            graphSizeReadout.textContent = `graph: ${width} x ${height}\npadding: ${padding}`;
+        }
+
         let Graph = ForceGraph()(graphContainer)
             .backgroundColor('#0b0b0b')
             .nodeId('id')
@@ -412,13 +451,13 @@
             .cooldownTicks(240)
             .d3AlphaDecay(0.035)
             .d3VelocityDecay(0.22)
-            .d3Force('charge', d3.forceManyBody().strength(node => -Math.max(900, estimateNodeRadius(node) * 22)))
+            .d3Force('charge', d3.forceManyBody().strength(node => -Math.max(1400, estimateNodeRadius(node) * 28)))
             .d3Force('link', d3.forceLink().id(d => d.id).distance(link => {
                 const sourceRadius = estimateNodeRadius(link.source);
                 const targetRadius = estimateNodeRadius(link.target);
-                return Math.max(220, sourceRadius + targetRadius + 40);
+                return Math.max(280, sourceRadius + targetRadius + 90);
             }).strength(0.9))
-            .d3Force('collision', d3.forceCollide().radius(node => estimateNodeRadius(node) + 10).strength(1))
+            .d3Force('collision', d3.forceCollide().radius(node => estimateNodeRadius(node) + 28).strength(1))
             .nodeColor(node => ((activeFilters.size === 0 && !searchText) || highlightedNodes.has(node)) ? (ORANGE_PALETTE[Math.abs(node.id.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0)) % ORANGE_PALETTE.length]) : 'rgba(255, 255, 255, 0.1)')
             .nodeLabel('id')
             .linkColor(link => ((activeFilters.size === 0 && !searchText) || highlightedLinks.has(link)) ? 'rgba(255, 183, 77, 0.42)' : 'rgba(255, 255, 255, 0.06)')
@@ -475,14 +514,20 @@
                 ctx.font = `${fontSize}px 'Noto Sans TC', Sans-Serif`;
                 const midX = (sx + ex) / 2;
                 const midY = (sy + ey) / 2;
+                const dx = ex - sx;
+                const dy = ey - sy;
+                const length = Math.sqrt(dx * dx + dy * dy) || 1;
+                const offset = Math.min(18 / globalScale, length * 0.18);
+                const labelX = midX + (-dy / length) * offset;
+                const labelY = midY + (dx / length) * offset;
                 const textWidth = ctx.measureText(label).width;
                 const bckgDimensions = [textWidth, fontSize].map(n => n + fontSize * 0.45);
                 ctx.fillStyle = 'rgba(12, 12, 12, 0.92)';
-                ctx.fillRect(midX - bckgDimensions[0] / 2, midY - bckgDimensions[1] / 2, ...bckgDimensions);
+                ctx.fillRect(labelX - bckgDimensions[0] / 2, labelY - bckgDimensions[1] / 2, ...bckgDimensions);
                 ctx.textAlign = 'center';
                 ctx.textBaseline = 'middle';
                 ctx.fillStyle = '#ffe0b2';
-                ctx.fillText(label, midX, midY);
+                ctx.fillText(label, labelX, labelY);
             }
         });
 
@@ -492,10 +537,13 @@
             if (typeof x !== 'number' || typeof y !== 'number' || !Number.isFinite(x) || !Number.isFinite(y)) return;
             const isHighlighted = (activeFilters.size === 0 && !searchText) || highlightedNodes.has(node);
             const label = node.id;
-            const fontSize = Math.max(12, 16 / globalScale);
+            const fontSize = Math.max(13, 18 / globalScale);
             ctx.font = `${fontSize}px 'Noto Sans TC', sans-serif`;
             const textWidth = ctx.measureText(label).width;
-            const bckgDimensions = [textWidth, fontSize].map(n => n + fontSize * 0.7);
+            const bckgDimensions = [
+                textWidth + fontSize * 1.35,
+                fontSize + fontSize * 0.9
+            ];
             const boxX = x - bckgDimensions[0] / 2;
             const boxY = y - bckgDimensions[1] / 2;
             
@@ -542,11 +590,13 @@
             controlsPanel.classList.add('hidden');
             controlsToggleTab.classList.add('visible');
             fitGraphToViewport(500);
+            updateGraphSizeReadout();
         });
         controlsToggleTab.addEventListener('click', () => {
             controlsPanel.classList.remove('hidden');
             controlsToggleTab.classList.remove('visible');
             fitGraphToViewport(500);
+            updateGraphSizeReadout();
         });
 
         function onNodeClick(node) {
@@ -694,6 +744,7 @@
                 seedNodePositions(nodes);
                 Graph.graphData(graphData);
                 fitGraphToViewport(0);
+                updateGraphSizeReadout();
                 populateKeywords(graphData.links, graphData.nodes);
                 dateSelector.value = dateKey;
             }
@@ -705,7 +756,12 @@
             updateHighlights();
             triggerRenderUpdate();
         });
-        window.addEventListener('resize', () => fitGraphToViewport(250));
+        window.addEventListener('resize', () => {
+            fitGraphToViewport(250);
+            updateGraphSizeReadout();
+        });
+        new ResizeObserver(() => updateGraphSizeReadout()).observe(graphContainer);
+        updateGraphSizeReadout();
 
         // Start
         init();
