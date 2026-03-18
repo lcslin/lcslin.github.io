@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITIS 每日新聞關聯圖譜</title>
+    <title>Synanews | 演算本日關鍵產業新聞的拓樸</title>
     <script src="https://unpkg.com/d3"></script>
     <script src="https://unpkg.com/force-graph"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500;700&display=swap" rel="stylesheet">
@@ -124,7 +124,15 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             border-bottom: 1px solid var(--accent-color);
-            padding-bottom: 10px;
+            padding-bottom: 6px;
+        }
+
+        .controls .subtitle {
+            margin: 0 0 14px 0;
+            font-size: 0.82rem;
+            line-height: 1.5;
+            color: #ffe0b2;
+            letter-spacing: 0.06em;
         }
 
         p {
@@ -282,7 +290,8 @@
 <body>
     <div class="controls" id="controls-panel">
         <button type="button" class="toggle-panel-btn" id="toggle-panel-btn" aria-label="收合側欄">◀ 收合</button>
-        <h1>每日新聞關聯圖譜</h1>
+        <h1>Synanews</h1>
+        <p class="subtitle">演算本日關鍵產業新聞的拓樸</p>
         <p>節點：實體 (點擊查看相關新聞)</p>
         <p>連線：實體關係 (點擊查看類型)</p>
         
