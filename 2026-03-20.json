@@ -1,0 +1,1390 @@
+{
+  "nodes": [
+    {
+      "id": "Fed",
+      "group": "org",
+      "size": 20
+    },
+    {
+      "id": "鮑爾",
+      "group": "person",
+      "size": 18
+    },
+    {
+      "id": "央行",
+      "group": "org",
+      "size": 25
+    },
+    {
+      "id": "楊金龍",
+      "group": "person",
+      "size": 22
+    },
+    {
+      "id": "台積電",
+      "group": "company",
+      "size": 24
+    },
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 23
+    },
+    {
+      "id": "中國",
+      "group": "country",
+      "size": 18
+    },
+    {
+      "id": "印尼",
+      "group": "country",
+      "size": 10
+    },
+    {
+      "id": "伊朗",
+      "group": "country",
+      "size": 22
+    },
+    {
+      "id": "以色列",
+      "group": "country",
+      "size": 15
+    },
+    {
+      "id": "日本",
+      "group": "country",
+      "size": 12
+    },
+    {
+      "id": "歐洲",
+      "group": "country",
+      "size": 14
+    },
+    {
+      "id": "英國",
+      "group": "country",
+      "size": 10
+    },
+    {
+      "id": "印度",
+      "group": "country",
+      "size": 8
+    },
+    {
+      "id": "美光",
+      "group": "company",
+      "size": 20
+    },
+    {
+      "id": "輝達",
+      "group": "company",
+      "size": 19
+    },
+    {
+      "id": "三星",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "蘋果",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "鴻海",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "阿里",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "小米",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "中華電",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "台達電",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "南亞科",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "華邦",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "中鋼",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "中油",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "NTT",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "健亞",
+      "group": "company",
+      "size": 9
+    },
+    {
+      "id": "強生",
+      "group": "company",
+      "size": 9
+    },
+    {
+      "id": "AI",
+      "group": "tech",
+      "size": 25
+    },
+    {
+      "id": "記憶體",
+      "group": "tech",
+      "size": 19
+    },
+    {
+      "id": "晶圓代工",
+      "group": "tech",
+      "size": 17
+    },
+    {
+      "id": "折疊手機",
+      "group": "tech",
+      "size": 14
+    },
+    {
+      "id": "MicroLED",
+      "group": "tech",
+      "size": 11
+    },
+    {
+      "id": "雲端",
+      "group": "tech",
+      "size": 13
+    },
+    {
+      "id": "資料中心",
+      "group": "tech",
+      "size": 12
+    },
+    {
+      "id": "降息",
+      "group": "finance",
+      "size": 20
+    },
+    {
+      "id": "升息",
+      "group": "finance",
+      "size": 19
+    },
+    {
+      "id": "通膨",
+      "group": "finance",
+      "size": 18
+    },
+    {
+      "id": "貨幣政策",
+      "group": "finance",
+      "size": 22
+    },
+    {
+      "id": "美債",
+      "group": "finance",
+      "size": 17
+    },
+    {
+      "id": "人民幣",
+      "group": "finance",
+      "size": 13
+    },
+    {
+      "id": "房市",
+      "group": "finance",
+      "size": 20
+    },
+    {
+      "id": "房貸",
+      "group": "finance",
+      "size": 18
+    },
+    {
+      "id": "油價",
+      "group": "finance",
+      "size": 21
+    },
+    {
+      "id": "關稅",
+      "group": "finance",
+      "size": 15
+    },
+    {
+      "id": "貝森特",
+      "group": "person",
+      "size": 12
+    }
+  ],
+  "links": [
+    {
+      "source": "Fed",
+      "target": "鮑爾",
+      "value": 5,
+      "label": "領導關係"
+    },
+    {
+      "source": "Fed",
+      "target": "降息",
+      "value": 5,
+      "label": "貨幣政策"
+    },
+    {
+      "source": "Fed",
+      "target": "升息",
+      "value": 5,
+      "label": "政策討論"
+    },
+    {
+      "source": "鮑爾",
+      "target": "升息",
+      "value": 4,
+      "label": "政策立場"
+    },
+    {
+      "source": "Fed",
+      "target": "貨幣政策",
+      "value": 5,
+      "label": "政策制定"
+    },
+    {
+      "source": "央行",
+      "target": "楊金龍",
+      "value": 5,
+      "label": "領導關係"
+    },
+    {
+      "source": "央行",
+      "target": "貨幣政策",
+      "value": 5,
+      "label": "政策制定"
+    },
+    {
+      "source": "央行",
+      "target": "通膨",
+      "value": 4,
+      "label": "政策目標"
+    },
+    {
+      "source": "楊金龍",
+      "target": "通膨",
+      "value": 4,
+      "label": "政策關注"
+    },
+    {
+      "source": "央行",
+      "target": "房市",
+      "value": 5,
+      "label": "管制政策"
+    },
+    {
+      "source": "央行",
+      "target": "房貸",
+      "value": 5,
+      "label": "管制調整"
+    },
+    {
+      "source": "楊金龍",
+      "target": "房市",
+      "value": 4,
+      "label": "政策微調"
+    },
+    {
+      "source": "美國",
+      "target": "Fed",
+      "value": 5,
+      "label": "所屬國家"
+    },
+    {
+      "source": "美國",
+      "target": "美債",
+      "value": 5,
+      "label": "債務發行"
+    },
+    {
+      "source": "美國",
+      "target": "伊朗",
+      "value": 5,
+      "label": "軍事衝突"
+    },
+    {
+      "source": "美國",
+      "target": "印尼",
+      "value": 4,
+      "label": "貿易協議"
+    },
+    {
+      "source": "印尼",
+      "target": "關稅",
+      "value": 4,
+      "label": "關稅調降"
+    },
+    {
+      "source": "中國",
+      "target": "美債",
+      "value": 4,
+      "label": "增持資產"
+    },
+    {
+      "source": "中國",
+      "target": "人民幣",
+      "value": 5,
+      "label": "貨幣管理"
+    },
+    {
+      "source": "伊朗",
+      "target": "以色列",
+      "value": 5,
+      "label": "軍事衝突"
+    },
+    {
+      "source": "伊朗",
+      "target": "油價",
+      "value": 5,
+      "label": "能源攻擊"
+    },
+    {
+      "source": "以色列",
+      "target": "油價",
+      "value": 4,
+      "label": "能源威脅"
+    },
+    {
+      "source": "貝森特",
+      "target": "油價",
+      "value": 3,
+      "label": "政策應對"
+    },
+    {
+      "source": "貝森特",
+      "target": "伊朗",
+      "value": 3,
+      "label": "制裁政策"
+    },
+    {
+      "source": "日本",
+      "target": "貨幣政策",
+      "value": 3,
+      "label": "按兵不動"
+    },
+    {
+      "source": "歐洲",
+      "target": "貨幣政策",
+      "value": 3,
+      "label": "按兵不動"
+    },
+    {
+      "source": "英國",
+      "target": "貨幣政策",
+      "value": 3,
+      "label": "按兵不動"
+    },
+    {
+      "source": "印度",
+      "target": "油價",
+      "value": 2,
+      "label": "供應衝擊"
+    },
+    {
+      "source": "台積電",
+      "target": "晶圓代工",
+      "value": 5,
+      "label": "產業龍頭"
+    },
+    {
+      "source": "台積電",
+      "target": "AI",
+      "value": 5,
+      "label": "先進製程"
+    },
+    {
+      "source": "台積電",
+      "target": "折疊手機",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "晶圓代工",
+      "target": "AI",
+      "value": 4,
+      "label": "產業支撐"
+    },
+    {
+      "source": "美光",
+      "target": "記憶體",
+      "value": 5,
+      "label": "產能擴張"
+    },
+    {
+      "source": "美光",
+      "target": "AI",
+      "value": 4,
+      "label": "戰略物資"
+    },
+    {
+      "source": "美光",
+      "target": "南亞科",
+      "value": 4,
+      "label": "產業利多"
+    },
+    {
+      "source": "美光",
+      "target": "華邦",
+      "value": 4,
+      "label": "產業利多"
+    },
+    {
+      "source": "記憶體",
+      "target": "AI",
+      "value": 5,
+      "label": "戰略資源"
+    },
+    {
+      "source": "輝達",
+      "target": "AI",
+      "value": 5,
+      "label": "市場領導"
+    },
+    {
+      "source": "輝達",
+      "target": "記憶體",
+      "value": 4,
+      "label": "供應鏈需求"
+    },
+    {
+      "source": "三星",
+      "target": "晶圓代工",
+      "value": 4,
+      "label": "擴產投資"
+    },
+    {
+      "source": "三星",
+      "target": "AI",
+      "value": 4,
+      "label": "晶片生產"
+    },
+    {
+      "source": "蘋果",
+      "target": "折疊手機",
+      "value": 5,
+      "label": "新產品"
+    },
+    {
+      "source": "蘋果",
+      "target": "台積電",
+      "value": 4,
+      "label": "供應鏈"
+    },
+    {
+      "source": "蘋果",
+      "target": "中國",
+      "value": 4,
+      "label": "市場銷售"
+    },
+    {
+      "source": "折疊手機",
+      "target": "台積電",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "鴻海",
+      "target": "AI",
+      "value": 3,
+      "label": "車用布局"
+    },
+    {
+      "source": "阿里",
+      "target": "中國",
+      "value": 4,
+      "label": "企業所在地"
+    },
+    {
+      "source": "小米",
+      "target": "AI",
+      "value": 4,
+      "label": "大模型研發"
+    },
+    {
+      "source": "小米",
+      "target": "中國",
+      "value": 4,
+      "label": "企業所在地"
+    },
+    {
+      "source": "中華電",
+      "target": "AI",
+      "value": 4,
+      "label": "資料中心"
+    },
+    {
+      "source": "中華電",
+      "target": "資料中心",
+      "value": 4,
+      "label": "服務提供"
+    },
+    {
+      "source": "台達電",
+      "target": "AI",
+      "value": 4,
+      "label": "自動化應用"
+    },
+    {
+      "source": "雲端",
+      "target": "AI",
+      "value": 5,
+      "label": "算力服務"
+    },
+    {
+      "source": "資料中心",
+      "target": "AI",
+      "value": 5,
+      "label": "基礎設施"
+    },
+    {
+      "source": "NTT",
+      "target": "資料中心",
+      "value": 4,
+      "label": "產能擴張"
+    },
+    {
+      "source": "MicroLED",
+      "target": "AI",
+      "value": 3,
+      "label": "光互連應用"
+    },
+    {
+      "source": "健亞",
+      "target": "強生",
+      "value": 4,
+      "label": "經營權爭奪"
+    },
+    {
+      "source": "中鋼",
+      "target": "關稅",
+      "value": 3,
+      "label": "價格調整"
+    },
+    {
+      "source": "中油",
+      "target": "油價",
+      "value": 5,
+      "label": "價格影響"
+    },
+    {
+      "source": "中油",
+      "target": "伊朗",
+      "value": 3,
+      "label": "能源衝擊"
+    },
+    {
+      "source": "通膨",
+      "target": "油價",
+      "value": 4,
+      "label": "價格推升"
+    },
+    {
+      "source": "貨幣政策",
+      "target": "通膨",
+      "value": 5,
+      "label": "政策目標"
+    },
+    {
+      "source": "降息",
+      "target": "升息",
+      "value": 5,
+      "label": "政策轉向"
+    },
+    {
+      "source": "美債",
+      "target": "伊朗",
+      "value": 4,
+      "label": "戰爭成本"
+    },
+    {
+      "source": "房貸",
+      "target": "房市",
+      "value": 5,
+      "label": "管制工具"
+    },
+    {
+      "source": "歐洲",
+      "target": "AI",
+      "value": 3,
+      "label": "晶片供應"
+    },
+    {
+      "source": "歐洲",
+      "target": "伊朗",
+      "value": 3,
+      "label": "空運影響"
+    }
+  ],
+  "newsDatabase": {
+    "Fed": [
+      {
+        "title": "Fed放鷹 降息氛圍淡了 鮑爾透露已有官員提出升息之議",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9391467"
+      },
+      {
+        "title": "暗藏鷹聲…Fed利率按兵不動 但沒排除升息",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9391609"
+      },
+      {
+        "title": "全球央行亂世決策》鮑爾放鷹 升息見苗頭",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000158-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "全球央行亂世決策》聯準會降息氣勢 全被戰火削弱",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000165-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "鮑爾": [
+      {
+        "title": "Fed放鷹 降息氛圍淡了 鮑爾透露已有官員提出升息之議",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9391467"
+      },
+      {
+        "title": "鮑爾：留任到司法結案",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9391477"
+      },
+      {
+        "title": "全球央行亂世決策》鮑爾放鷹 升息見苗頭",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000158-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "央行": [
+      {
+        "title": "央行理監事會 GDP增幅7.28% CPI調至1.8%",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9391573"
+      },
+      {
+        "title": "央行理監事會 楊金龍：中東衝突多數持續不久",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9391654"
+      },
+      {
+        "title": "央行貨幣政策基調 朝向緊縮",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000508-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "央行︰貨幣政策偏緊縮 Q2是關鍵",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1747511"
+      },
+      {
+        "title": "央行理監事會 房貸鬆綁 第二戶可貸六成",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9391569"
+      },
+      {
+        "title": "全球央行亂世決策》楊金龍微調 房市管制",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000162-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "打房尚未成功 央行戰術微調",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000510-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "楊金龍": [
+      {
+        "title": "通膨來襲！楊金龍：第2季是關鍵 貨幣政策轉緊縮",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9391588"
+      },
+      {
+        "title": "央行理監事會 楊金龍：中東衝突多數持續不久",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9391654"
+      },
+      {
+        "title": "全球央行亂世決策》楊金龍微調 房市管制",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000162-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台積電": [
+      {
+        "title": "集邦：台積先進製程喊漲 訂單看到2027年",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9391499"
+      },
+      {
+        "title": "集邦：台積電今年產值看增32%",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9391501"
+      },
+      {
+        "title": "折疊iPhone看俏 台鏈受惠 台積、大立光等進補",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9391468"
+      },
+      {
+        "title": "晶圓代工漲價潮 一觸即發",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000219-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "美國": [
+      {
+        "title": "對伊朗開戰3周 美國國債飆破39兆美元",
+        "source": "",
+        "url": "https://udn.com/news/story/124061/9391494"
+      },
+      {
+        "title": "五角大廈狂燒錢 美債壓力升",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000255-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "印尼與美達成新貿易協議 美國將關稅從32%調降至19%",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9391478"
+      },
+      {
+        "title": "美製車零關稅效應 品牌提前開戰",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9391533"
+      }
+    ],
+    "中國": [
+      {
+        "title": "中國1月增持美債109億美元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000270-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "蘋果大陸銷售 逆勢突圍",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9391470"
+      },
+      {
+        "title": "陸急追 高階玻纖布產能喊衝",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000267-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "印尼": [
+      {
+        "title": "印尼與美達成新貿易協議 美國將關稅從32%調降至19%",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9391478"
+      }
+    ],
+    "伊朗": [
+      {
+        "title": "對伊朗開戰3周 美國國債飆破39兆美元",
+        "source": "",
+        "url": "https://udn.com/news/story/124061/9391494"
+      },
+      {
+        "title": "伊朗打能源毀滅戰 油價恐慌式暴衝",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9391555"
+      },
+      {
+        "title": "伊朗報復…轟鄰國氣田、油廠 國際油氣價格飆漲",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9391639"
+      },
+      {
+        "title": "全球央行亂世決策》伊以兩國瘋了！狂炸油氣",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000167-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "壓油價…貝森特：美可能釋更多儲油 解除海上的伊朗石油制裁",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9391644"
+      }
+    ],
+    "以色列": [
+      {
+        "title": "以色列能源部：伊朗射彈擊中煉油廠　無重大損害",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9391786"
+      },
+      {
+        "title": "全球央行亂世決策》伊以兩國瘋了！狂炸油氣",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000167-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "日本": [
+      {
+        "title": "日、歐、英央行按兵不動",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9391481"
+      }
+    ],
+    "歐洲": [
+      {
+        "title": "日、歐、英央行按兵不動",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9391481"
+      },
+      {
+        "title": "中東空運卡關 歐洲晶片恐告急",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000262-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "英國": [
+      {
+        "title": "日、歐、英央行按兵不動",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9391481"
+      }
+    ],
+    "印度": [
+      {
+        "title": "液化石油氣短缺　印度外交部：設法讓供應更多元",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9391724"
+      }
+    ],
+    "美光": [
+      {
+        "title": "美光唱旺記憶體 啟動大擴產 南亞科、華邦等沾光",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9391458"
+      },
+      {
+        "title": "美光示警PC、智慧機市況不妙",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9391461"
+      },
+      {
+        "title": "美光唱旺記憶體 亞翔、洋基、漢唐迎商機",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9391465"
+      },
+      {
+        "title": "資本支出飆 美光：不得不花",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000222-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "輝達": [
+      {
+        "title": "輝達押寶AI需求 促供應鏈擴產",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000227-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "ASIC更具性價比 輝達拋兆元訂單 市場冷淡",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000229-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "搶輝達AI Agents商機！台廠端桌邊型AI超級工作站",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000296-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "三星": [
+      {
+        "title": "三星擴產晶片大投資 2026年計劃砸733億美元",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9391537"
+      }
+    ],
+    "蘋果": [
+      {
+        "title": "折疊iPhone看俏 台鏈受惠 台積、大立光等進補",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9391468"
+      },
+      {
+        "title": "蘋果大陸銷售 逆勢突圍",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9391470"
+      },
+      {
+        "title": "蘋果進場 全球折疊智慧機出貨看增",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000291-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "鴻海": [
+      {
+        "title": "鴻海強化車用零組件布局",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9391475"
+      }
+    ],
+    "阿里": [
+      {
+        "title": "阿里上季淨利 暴跌逾6成",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000264-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "小米": [
+      {
+        "title": "搶熱潮 小米推三款自研大模型",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000274-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中華電": [
+      {
+        "title": "中華電AIDC 推GPU租用、主權AI方案",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000298-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台達電": [
+      {
+        "title": "台達電攻AI自動化 產能提升5倍",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000294-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "南亞科": [
+      {
+        "title": "美光唱旺記憶體 啟動大擴產 南亞科、華邦等沾光",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9391458"
+      }
+    ],
+    "華邦": [
+      {
+        "title": "美光唱旺記憶體 啟動大擴產 南亞科、華邦等沾光",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9391458"
+      }
+    ],
+    "中鋼": [
+      {
+        "title": "中鋼開漲盤 近三年最大升勢 燁輝、裕鐵等下游將跟進",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9391518"
+      },
+      {
+        "title": "中鋼斥資50億 衝刺頂規鋼材",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9391522"
+      }
+    ],
+    "中油": [
+      {
+        "title": "汽油恐累漲12.9元 中油月虧百億",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000512-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "NTT": [
+      {
+        "title": "NTT 資料中心容量將倍增",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9391510"
+      }
+    ],
+    "健亞": [
+      {
+        "title": "健亞經營權攻防戰延燒 強生不排除行使異議股東股份收買請求權",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9391538"
+      }
+    ],
+    "強生": [
+      {
+        "title": "健亞經營權攻防戰延燒 強生不排除行使異議股東股份收買請求權",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9391538"
+      }
+    ],
+    "AI": [
+      {
+        "title": "美中六大雲端巨頭紛紛漲價 AI算力服務 價格變貴了",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9391504"
+      },
+      {
+        "title": "AI服務分級收費 有助產業發展",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9391505"
+      },
+      {
+        "title": "AI時代 記憶體成戰略物資",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000225-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "MicroLED導入光互連 台廠受惠",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000226-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "輝達押寶AI需求 促供應鏈擴產",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000227-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "搶輝達AI Agents商機！台廠端桌邊型AI超級工作站",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000296-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "中華電AIDC 推GPU租用、主權AI方案",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000298-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台達電攻AI自動化 產能提升5倍",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000294-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "趨勢觀察／人工智慧 驅動經濟成長",
+        "source": "",
+        "url": "https://udn.com/news/story/7241/9391335"
+      },
+      {
+        "title": "智慧經營／漢康生技董事長劉世高 智慧生醫  AI 幫大忙",
+        "source": "",
+        "url": "https://udn.com/news/story/7241/9391328"
+      },
+      {
+        "title": "搶熱潮 小米推三款自研大模型",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000274-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "記憶體": [
+      {
+        "title": "美光唱旺記憶體 啟動大擴產 南亞科、華邦等沾光",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9391458"
+      },
+      {
+        "title": "美光唱旺記憶體 亞翔、洋基、漢唐迎商機",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9391465"
+      },
+      {
+        "title": "AI時代 記憶體成戰略物資",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000225-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "晶圓代工": [
+      {
+        "title": "集邦：台積先進製程喊漲 訂單看到2027年",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9391499"
+      },
+      {
+        "title": "晶圓代工漲價潮 一觸即發",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000219-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "折疊手機": [
+      {
+        "title": "折疊iPhone看俏 台鏈受惠 台積、大立光等進補",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9391468"
+      },
+      {
+        "title": "蘋果進場 全球折疊智慧機出貨看增",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000291-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "MicroLED": [
+      {
+        "title": "MicroLED導入光互連 台廠受惠",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000226-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "雲端": [
+      {
+        "title": "美中六大雲端巨頭紛紛漲價 AI算力服務 價格變貴了",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9391504"
+      }
+    ],
+    "資料中心": [
+      {
+        "title": "NTT 資料中心容量將倍增",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9391510"
+      },
+      {
+        "title": "中華電AIDC 推GPU租用、主權AI方案",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000298-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "降息": [
+      {
+        "title": "Fed放鷹 降息氛圍淡了 鮑爾透露已有官員提出升息之議",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9391467"
+      },
+      {
+        "title": "全球央行亂世決策》聯準會降息氣勢 全被戰火削弱",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000165-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "升息": [
+      {
+        "title": "Fed放鷹 降息氛圍淡了 鮑爾透露已有官員提出升息之議",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9391467"
+      },
+      {
+        "title": "暗藏鷹聲…Fed利率按兵不動 但沒排除升息",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9391609"
+      },
+      {
+        "title": "全球央行亂世決策》鮑爾放鷹 升息見苗頭",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000158-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "通膨": [
+      {
+        "title": "通膨來襲！楊金龍：第2季是關鍵 貨幣政策轉緊縮",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9391588"
+      }
+    ],
+    "貨幣政策": [
+      {
+        "title": "通膨來襲！楊金龍：第2季是關鍵 貨幣政策轉緊縮",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9391588"
+      },
+      {
+        "title": "央行貨幣政策基調 朝向緊縮",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000508-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "央行︰貨幣政策偏緊縮 Q2是關鍵",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1747511"
+      },
+      {
+        "title": "日、歐、英央行按兵不動",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9391481"
+      }
+    ],
+    "美債": [
+      {
+        "title": "對伊朗開戰3周 美國國債飆破39兆美元",
+        "source": "",
+        "url": "https://udn.com/news/story/124061/9391494"
+      },
+      {
+        "title": "五角大廈狂燒錢 美債壓力升",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000255-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "中國1月增持美債109億美元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000270-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "人民幣": [
+      {
+        "title": "人民幣震盪 人行放話維穩匯市",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000272-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "房市": [
+      {
+        "title": "央行理監事會 房貸鬆綁 第二戶可貸六成",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9391569"
+      },
+      {
+        "title": "全球央行亂世決策》楊金龍微調 房市管制",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000162-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "打房尚未成功 央行戰術微調",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000510-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "房貸": [
+      {
+        "title": "央行理監事會 房貸鬆綁 第二戶可貸六成",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9391569"
+      },
+      {
+        "title": "房貸總量未鬆綁 建商︰未必排得到",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1747512"
+      }
+    ],
+    "油價": [
+      {
+        "title": "伊朗打能源毀滅戰 油價恐慌式暴衝",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9391555"
+      },
+      {
+        "title": "能源市場震盪　布倫特原油收漲、WTI小幅下跌",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9391797"
+      },
+      {
+        "title": "伊朗報復…轟鄰國氣田、油廠 國際油氣價格飆漲",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9391639"
+      },
+      {
+        "title": "壓油價…貝森特：美可能釋更多儲油 解除海上的伊朗石油制裁",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9391644"
+      },
+      {
+        "title": "全球央行亂世決策》伊以兩國瘋了！狂炸油氣",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000167-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "汽油恐累漲12.9元 中油月虧百億",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260320000512-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "關稅": [
+      {
+        "title": "印尼與美達成新貿易協議 美國將關稅從32%調降至19%",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9391478"
+      },
+      {
+        "title": "美製車零關稅效應 品牌提前開戰",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9391533"
+      }
+    ],
+    "貝森特": [
+      {
+        "title": "壓油價…貝森特：美可能釋更多儲油 解除海上的伊朗石油制裁",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9391644"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "Fed放鷹 降息氛圍淡了 鮑爾透露已有官員提出升息之議 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9391467",
+    "鮑爾：留任到司法結案 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9391477",
+    "日、歐、英央行按兵不動 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9391481",
+    "雙重震撼 股債金銀銅全倒 亞、歐股市一片慘綠 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9391471",
+    "央行理監事會 GDP增幅7.28% CPI調至1.8% (經濟金融脈動)": "https://money.udn.com/money/story/5613/9391573",
+    "印尼與美達成新貿易協議 美國將關稅從32%調降至19% (經濟國際焦點)": "https://money.udn.com/money/story/5599/9391478",
+    "通膨來襲！楊金龍：第2季是關鍵 貨幣政策轉緊縮 (聯合_產經_股市)": "https://udn.com/news/story/7238/9391588",
+    "央行理監事會 楊金龍：中東衝突多數持續不久 (聯合_產經_股市)": "https://udn.com/news/story/7238/9391654",
+    "對伊朗開戰3周 美國國債飆破39兆美元 (聯合_產經_股市)": "https://udn.com/news/story/124061/9391494",
+    "暗藏鷹聲…Fed利率按兵不動 但沒排除升息 (聯合_產經_股市)": "https://udn.com/news/story/6811/9391609",
+    "全球央行亂世決策》鮑爾放鷹 升息見苗頭 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260320000158-260202?utm_source=iii_news&utm_medium=rss",
+    "全球央行亂世決策》聯準會降息氣勢 全被戰火削弱 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260320000165-260202?utm_source=iii_news&utm_medium=rss",
+    "五角大廈狂燒錢 美債壓力升 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260320000255-260203?utm_source=iii_news&utm_medium=rss",
+    "中國1月增持美債109億美元 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260320000270-260203?utm_source=iii_news&utm_medium=rss",
+    "人民幣震盪 人行放話維穩匯市 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260320000272-260203?utm_source=iii_news&utm_medium=rss",
+    "2月散戶風向球 首破4兆 (工商金融稅務)": "https://www.chinatimes.com/newspapers/20260320000276-260205?utm_source=iii_news&utm_medium=rss",
+    "央行貨幣政策基調 朝向緊縮 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260320000508-260110?utm_source=iii_news&utm_medium=rss",
+    "央行︰貨幣政策偏緊縮 Q2是關鍵 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1747511",
+    "集邦：台積先進製程喊漲 訂單看到2027年 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9391499",
+    "集邦：台積電今年產值看增32% (經濟產業熱點)": "https://money.udn.com/money/story/5612/9391501",
+    "美中六大雲端巨頭紛紛漲價 AI算力服務 價格變貴了 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9391504",
+    "AI服務分級收費 有助產業發展 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9391505",
+    "美光唱旺記憶體 啟動大擴產 南亞科、華邦等沾光 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9391458",
+    "美光示警PC、智慧機市況不妙 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9391461",
+    "美光唱旺記憶體 亞翔、洋基、漢唐迎商機 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9391465",
+    "折疊iPhone看俏 台鏈受惠 台積、大立光等進補 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9391468",
+    "蘋果大陸銷售 逆勢突圍 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9391470",
+    "鴻海強化車用零組件布局 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9391475",
+    "NTT 資料中心容量將倍增 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9391510",
+    "三星擴產晶片大投資 2026年計劃砸733億美元 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9391537",
+    "晶圓代工漲價潮 一觸即發 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260320000219-260202?utm_source=iii_news&utm_medium=rss",
+    "資本支出飆 美光：不得不花 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260320000222-260202?utm_source=iii_news&utm_medium=rss",
+    "AI時代 記憶體成戰略物資 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260320000225-260202?utm_source=iii_news&utm_medium=rss",
+    "MicroLED導入光互連 台廠受惠 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260320000226-260202?utm_source=iii_news&utm_medium=rss",
+    "輝達押寶AI需求 促供應鏈擴產 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260320000227-260202?utm_source=iii_news&utm_medium=rss",
+    "ASIC更具性價比 輝達拋兆元訂單 市場冷淡 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260320000229-260202?utm_source=iii_news&utm_medium=rss",
+    "烏國無人機新創 Swarmer股價暴衝 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260320000260-260203?utm_source=iii_news&utm_medium=rss",
+    "中東空運卡關 歐洲晶片恐告急 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260320000262-260203?utm_source=iii_news&utm_medium=rss",
+    "阿里上季淨利 暴跌逾6成 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260320000264-260203?utm_source=iii_news&utm_medium=rss",
+    "陸急追 高階玻纖布產能喊衝 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260320000267-260203?utm_source=iii_news&utm_medium=rss",
+    "搶熱潮 小米推三款自研大模型 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260320000274-260203?utm_source=iii_news&utm_medium=rss",
+    "蘋果進場 全球折疊智慧機出貨看增 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260320000291-260204?utm_source=iii_news&utm_medium=rss",
+    "台達電攻AI自動化 產能提升5倍 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260320000294-260204?utm_source=iii_news&utm_medium=rss",
+    "搶輝達AI Agents商機！台廠端桌邊型AI超級工作站 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260320000296-260204?utm_source=iii_news&utm_medium=rss",
+    "中華電AIDC 推GPU租用、主權AI方案 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260320000298-260204?utm_source=iii_news&utm_medium=rss",
+    "鎧俠 TSOP封裝NAND進入停產 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260320000299-260204?utm_source=iii_news&utm_medium=rss",
+    "趨勢觀察／人工智慧 驅動經濟成長 (聯合_產經_股市)": "https://udn.com/news/story/7241/9391335",
+    "健亞經營權攻防戰延燒 強生不排除行使異議股東股份收買請求權 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9391538",
+    "智慧經營／漢康生技董事長劉世高 智慧生醫  AI 幫大忙 (聯合_產經_股市)": "https://udn.com/news/story/7241/9391328",
+    "央行理監事會 房貸鬆綁 第二戶可貸六成 (經濟金融脈動)": "https://money.udn.com/money/story/5613/9391569",
+    "全球央行亂世決策》楊金龍微調 房市管制 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260320000162-260202?utm_source=iii_news&utm_medium=rss",
+    "打房尚未成功 央行戰術微調 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260320000510-260110?utm_source=iii_news&utm_medium=rss",
+    "長照安排假有譜 立院下周專案報告 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260320000524-260114?utm_source=iii_news&utm_medium=rss",
+    "房貸總量未鬆綁 建商︰未必排得到 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1747512",
+    "液化石油氣短缺　印度外交部：設法讓供應更多元 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9391724",
+    "美製車零關稅效應 品牌提前開戰 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9391533",
+    "中鋼開漲盤 近三年最大升勢 燁輝、裕鐵等下游將跟進 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9391518",
+    "中鋼斥資50億 衝刺頂規鋼材 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9391522",
+    "伊朗打能源毀滅戰 油價恐慌式暴衝 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9391555",
+    "以色列能源部：伊朗射彈擊中煉油廠　無重大損害 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9391786",
+    "能源市場震盪　布倫特原油收漲、WTI小幅下跌 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9391797",
+    "伊朗報復…轟鄰國氣田、油廠 國際油氣價格飆漲 (聯合_產經_股市)": "https://udn.com/news/story/6811/9391639",
+    "壓油價…貝森特：美可能釋更多儲油 解除海上的伊朗石油制裁 (聯合_產經_股市)": "https://udn.com/news/story/6811/9391644",
+    "全球央行亂世決策》伊以兩國瘋了！狂炸油氣 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260320000167-260202?utm_source=iii_news&utm_medium=rss",
+    "響應淨零排放 上市櫃揭露溫室氣體盤查 (工商金融稅務)": "https://www.chinatimes.com/newspapers/20260320000289-260205?utm_source=iii_news&utm_medium=rss",
+    "汽油恐累漲12.9元 中油月虧百億 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260320000512-260110?utm_source=iii_news&utm_medium=rss",
+    "拉高油氣安全天數經部：增加成本 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260320000514-260110?utm_source=iii_news&utm_medium=rss"
+  }
+}
