@@ -325,6 +325,36 @@
             font-size: 0.75rem;
         }
 
+        .layout-btn-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-top: 8px;
+        }
+        .layout-btn {
+            flex: 1 1 calc(33% - 4px);
+            padding: 6px 4px;
+            background: #0F0F0F;
+            color: var(--text-secondary);
+            border: 1px solid var(--border-visible);
+            cursor: pointer;
+            font-size: 0.72rem;
+            font-family: inherit;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            text-align: center;
+            transition: border-color 0.15s, color 0.15s;
+        }
+        .layout-btn:hover {
+            border-color: var(--accent-blue);
+            color: var(--text-color);
+        }
+        .layout-btn.active {
+            border-color: var(--accent-blue);
+            color: var(--accent-blue);
+            box-shadow: 0 0 6px rgba(0, 160, 210, 0.3);
+        }
+
     </style>
 </head>
 <body>
@@ -345,6 +375,15 @@
 
         <div class="section-label">關鍵字篩選</div>
         <div id="keyword-list"></div>
+
+        <div class="section-label">圖形佈局</div>
+        <div class="layout-btn-group" id="layout-btn-group">
+            <button class="layout-btn active" data-layout="force">Force</button>
+            <button class="layout-btn" data-layout="radial">Radial</button>
+            <button class="layout-btn" data-layout="circular">Circular</button>
+            <button class="layout-btn" data-layout="hier">Hier.</button>
+            <button class="layout-btn" data-layout="grid">Grid</button>
+        </div>
     </div>
     
     <button type="button" class="controls-toggle-tab" id="controls-toggle-tab" aria-label="開啟側欄">▶ 開啟</button>
@@ -409,6 +448,139 @@
         let currentLinks = [];
         let currentGraphData = null;
         const lastDragPosition = {};
+
+        // Layout State
+        let currentLayout = 'force';
+
+        function setActiveLayoutBtn(name) {
+            document.querySelectorAll('.layout-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.layout === name);
+            });
+        }
+
+        function layoutRadial(nodes, links) {
+            const groups = {};
+            nodes.forEach(n => {
+                const g = n.group || 'other';
+                if (!groups[g]) groups[g] = [];
+                groups[g].push(n);
+            });
+            const groupKeys = Object.keys(groups);
+            const W = Graph.width(), H = Graph.height();
+            const outerRadius = Math.min(W, H) * 0.38;
+            groupKeys.forEach((key, gi) => {
+                const sectorAngle = (2 * Math.PI) / groupKeys.length;
+                const sectorMid = gi * sectorAngle - Math.PI / 2 + sectorAngle / 2;
+                const members = groups[key];
+                const arcSpan = sectorAngle * 0.8;
+                const rings = Math.max(1, Math.ceil(members.length / 5));
+                const perRing = Math.ceil(members.length / rings);
+                members.forEach((n, i) => {
+                    const ring = Math.floor(i / perRing);
+                    const ringR = outerRadius * (0.55 + ring * 0.25);
+                    const posInRing = i % perRing;
+                    const countInRing = Math.min(perRing, members.length - ring * perRing);
+                    const angle = countInRing === 1
+                        ? sectorMid
+                        : sectorMid - arcSpan / 2 + (posInRing / (countInRing - 1)) * arcSpan;
+                    n.fx = ringR * Math.cos(angle);
+                    n.fy = ringR * Math.sin(angle);
+                });
+            });
+        }
+
+        function layoutCircular(nodes, links) {
+            const degreeMap = {};
+            nodes.forEach(n => { degreeMap[n.id] = 0; });
+            links.forEach(l => {
+                const sid = typeof l.source === 'object' ? l.source.id : l.source;
+                const tid = typeof l.target === 'object' ? l.target.id : l.target;
+                if (degreeMap[sid] != null) degreeMap[sid]++;
+                if (degreeMap[tid] != null) degreeMap[tid]++;
+            });
+            const sorted = [...nodes].sort((a, b) => (degreeMap[b.id] || 0) - (degreeMap[a.id] || 0));
+            const W = Graph.width(), H = Graph.height();
+            const radius = Math.min(W, H) * 0.40;
+            sorted.forEach((n, i) => {
+                const angle = (i / sorted.length) * 2 * Math.PI - Math.PI / 2;
+                n.fx = radius * Math.cos(angle);
+                n.fy = radius * Math.sin(angle);
+            });
+        }
+
+        function layoutHierarchical(nodes, links) {
+            const degreeMap = {};
+            const adjList = {};
+            nodes.forEach(n => { degreeMap[n.id] = 0; adjList[n.id] = []; });
+            links.forEach(l => {
+                const sid = typeof l.source === 'object' ? l.source.id : l.source;
+                const tid = typeof l.target === 'object' ? l.target.id : l.target;
+                if (degreeMap[sid] != null) degreeMap[sid]++;
+                if (degreeMap[tid] != null) degreeMap[tid]++;
+                if (adjList[sid]) adjList[sid].push(tid);
+                if (adjList[tid]) adjList[tid].push(sid);
+            });
+            const root = nodes.reduce((a, b) => (degreeMap[b.id] || 0) > (degreeMap[a.id] || 0) ? b : a).id;
+            const levels = { [root]: 0 };
+            const queue = [root];
+            while (queue.length) {
+                const curr = queue.shift();
+                (adjList[curr] || []).forEach(nb => {
+                    if (levels[nb] == null) { levels[nb] = levels[curr] + 1; queue.push(nb); }
+                });
+            }
+            const maxLevel = Math.max(...Object.values(levels), 0);
+            nodes.forEach(n => { if (levels[n.id] == null) levels[n.id] = maxLevel + 1; });
+            const byLevel = {};
+            nodes.forEach(n => { const lv = levels[n.id]; if (!byLevel[lv]) byLevel[lv] = []; byLevel[lv].push(n); });
+            const numLevels = Object.keys(byLevel).length;
+            const W = Graph.width(), H = Graph.height();
+            const levelHeight = Math.min(H * 0.75 / Math.max(numLevels - 1, 1), 180);
+            const totalHeight = (numLevels - 1) * levelHeight;
+            Object.keys(byLevel).forEach(lv => {
+                const nodesInLevel = byLevel[lv];
+                const y = -totalHeight / 2 + Number(lv) * levelHeight;
+                const totalWidth = W * 0.72;
+                nodesInLevel.forEach((n, i) => {
+                    n.fx = nodesInLevel.length === 1 ? 0 : -totalWidth / 2 + (i / (nodesInLevel.length - 1)) * totalWidth;
+                    n.fy = y;
+                });
+            });
+        }
+
+        function layoutGrid(nodes, links) {
+            const sorted = [...nodes].sort((a, b) => (b.size || b.val || 1) - (a.size || a.val || 1));
+            const cols = Math.ceil(Math.sqrt(sorted.length));
+            const W = Graph.width(), H = Graph.height();
+            const rows = Math.ceil(sorted.length / cols);
+            const cellW = Math.min(W * 0.72 / cols, 220);
+            const cellH = Math.min(H * 0.72 / rows, 120);
+            const startX = -(cols - 1) * cellW / 2;
+            const startY = -(rows - 1) * cellH / 2;
+            sorted.forEach((n, i) => {
+                n.fx = startX + (i % cols) * cellW;
+                n.fy = startY + Math.floor(i / cols) * cellH;
+            });
+        }
+
+        function switchLayout(name) {
+            currentLayout = name;
+            setActiveLayoutBtn(name);
+            if (!currentGraphData || !currentGraphData.nodes) return;
+            const nodes = currentGraphData.nodes;
+            const links = currentGraphData.links || [];
+            if (name === 'force') {
+                nodes.forEach(n => { delete n.fx; delete n.fy; });
+                Graph.d3ReheatSimulation();
+            } else {
+                if (name === 'radial') layoutRadial(nodes, links);
+                else if (name === 'circular') layoutCircular(nodes, links);
+                else if (name === 'hier') layoutHierarchical(nodes, links);
+                else if (name === 'grid') layoutGrid(nodes, links);
+                Graph.graphData(currentGraphData);
+                setTimeout(() => fitGraphToViewport(600), 80);
+            }
+        }
 
         function getLabelMetrics(node) {
             const label = ((node && node.id) ? String(node.id) : '');
@@ -803,6 +975,8 @@
                 nodes.forEach((n) => {
                     if (n.size != null && n.val == null) n.val = n.size;
                 });
+                currentLayout = 'force';
+                setActiveLayoutBtn('force');
                 seedNodePositions(nodes);
                 Graph.graphData(graphData);
                 fitGraphToViewport(0);
@@ -811,6 +985,11 @@
                 dateSelector.value = dateKey;
             }
         }
+
+        document.getElementById('layout-btn-group').addEventListener('click', e => {
+            const btn = e.target.closest('.layout-btn');
+            if (btn) switchLayout(btn.dataset.layout);
+        });
 
         dateSelector.addEventListener('change', (e) => loadGraphData(e.target.value));
         searchInput.addEventListener('input', (e) => {
