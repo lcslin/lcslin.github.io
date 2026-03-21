@@ -6,29 +6,32 @@
     <title>Synanews | 演算本日關鍵產業新聞的拓樸</title>
     <script src="https://unpkg.com/d3"></script>
     <script src="https://unpkg.com/force-graph"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-color: #0b0b0b;
-            --text-color: #e0e0e0;
-            --accent-color: #ff9900; /* Cosmic Orange */
-            --node-bg: #1a1a1a;
-            --node-border: #ff9900;
-            --link-color: rgba(255, 153, 0, 0.4);
-            --dim-color: rgba(255, 255, 255, 0.1);
+            --bg-color: #0A0A0A;
+            --text-color: #E8E8E8;
+            --text-secondary: #8A8A8A;
+            --text-muted: #4A4A4A;
+            --accent-color: #F26522;   /* Bloomberg Orange */
+            --accent-blue: #00A0D2;    /* Bloomberg Blue */
+            --panel-bg: rgba(10, 10, 10, 0.97);
+            --border-subtle: #1A1A1A;
+            --border-visible: #2C2C2C;
+            --border-active: #F26522;
         }
 
-        body { 
-            margin: 0; 
-            font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif; 
+        body {
+            margin: 0;
+            font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
-            overflow: hidden; 
+            overflow: hidden;
         }
 
-        #graph { 
-            width: 100vw; 
-            height: 100vh; 
+        #graph {
+            width: 100vw;
+            height: 100vh;
         }
 
         #graph-size-readout {
@@ -36,31 +39,35 @@
             right: 20px;
             bottom: 20px;
             z-index: 180;
-            padding: 10px 12px;
-            background: rgba(11, 11, 11, 0.88);
-            border: 1px solid rgba(255, 153, 0, 0.6);
-            border-radius: 6px;
-            color: #ffe0b2;
-            font-size: 0.78rem;
-            line-height: 1.45;
-            letter-spacing: 0.02em;
+            padding: 8px 12px;
+            background: rgba(8, 8, 8, 0.94);
+            border-top: 2px solid var(--accent-color);
+            border-right: 1px solid var(--border-visible);
+            border-bottom: 1px solid var(--border-visible);
+            border-left: 1px solid var(--border-visible);
+            color: var(--text-secondary);
+            font-size: 0.72rem;
+            line-height: 1.55;
+            letter-spacing: 0.04em;
+            font-variant-numeric: tabular-nums;
             pointer-events: none;
             white-space: pre-line;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
         }
 
         .controls {
             position: absolute;
             top: 20px;
             left: 20px;
-            background: rgba(11, 11, 11, 0.9);
-            border: 1px solid var(--accent-color);
-            padding: 20px;
-            width: 280px;
+            background: var(--panel-bg);
+            border-top: 2px solid var(--accent-color);
+            border-right: 1px solid var(--border-visible);
+            border-bottom: 1px solid var(--border-visible);
+            border-left: 1px solid var(--border-visible);
+            padding: 18px 20px 20px;
+            width: 272px;
             max-height: 90vh;
             overflow-y: auto;
             z-index: 100;
-            box-shadow: 0 0 15px rgba(0,0,0,0.5);
             transition: transform 0.25s ease;
         }
         .controls.hidden {
@@ -71,18 +78,18 @@
             top: 12px;
             right: 12px;
             background: transparent;
-            border: 1px solid #555;
-            color: #ccc;
+            border: 1px solid var(--border-visible);
+            color: var(--text-secondary);
             cursor: pointer;
-            padding: 10px 12px;
+            padding: 8px 10px;
             min-width: 44px;
             min-height: 44px;
-            font-size: 0.9rem;
-            border-radius: 4px;
+            font-size: 0.8rem;
             line-height: 1;
             display: inline-flex;
             align-items: center;
             justify-content: center;
+            letter-spacing: 0.04em;
         }
         .controls .toggle-panel-btn:hover {
             border-color: var(--accent-color);
@@ -95,115 +102,135 @@
             transform: translateY(-50%);
             z-index: 99;
             display: none;
-            padding: 14px 12px;
+            padding: 14px 10px;
             min-width: 44px;
             min-height: 44px;
-            background: rgba(11, 11, 11, 0.95);
-            border: 1px solid var(--accent-color);
+            background: rgba(8, 8, 8, 0.97);
+            border-top: 1px solid var(--border-visible);
+            border-right: 2px solid var(--accent-color);
+            border-bottom: 1px solid var(--border-visible);
             border-left: none;
-            border-radius: 0 8px 8px 0;
             color: var(--accent-color);
             cursor: pointer;
-            font-size: 1rem;
+            font-size: 0.85rem;
             line-height: 1;
-            box-shadow: 2px 0 8px rgba(0,0,0,0.3);
             align-items: center;
             justify-content: center;
+            letter-spacing: 0.04em;
         }
         .controls-toggle-tab:hover {
-            background: rgba(26, 26, 26, 0.98);
+            background: rgba(20, 20, 20, 0.99);
         }
         .controls-toggle-tab.visible {
             display: flex;
         }
 
         .controls h1 {
-            margin: 0 30px 15px 0;
-            font-size: 1.2rem;
-            color: var(--accent-color);
+            margin: 0 36px 4px 0;
+            font-size: 1.0rem;
+            font-weight: 700;
+            color: var(--text-color);
             text-transform: uppercase;
-            letter-spacing: 2px;
-            border-bottom: 1px solid var(--accent-color);
-            padding-bottom: 6px;
+            letter-spacing: 0.18em;
         }
 
         .controls .subtitle {
-            margin: 0 0 14px 0;
-            font-size: 0.82rem;
-            line-height: 1.5;
-            color: #ffe0b2;
+            margin: 0 0 16px 0;
+            font-size: 0.75rem;
+            line-height: 1.4;
+            color: var(--accent-color);
             letter-spacing: 0.06em;
+            font-weight: 300;
         }
 
         p {
-            font-size: 0.9rem;
+            font-size: 0.82rem;
             line-height: 1.5;
-            color: #aaa;
-            margin-bottom: 10px;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+
+        .section-label {
+            margin-top: 18px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border-subtle);
+            font-size: 0.68rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            color: var(--accent-blue);
+            margin-bottom: 8px;
         }
 
         select, input[type="text"] {
             width: 100%;
             box-sizing: border-box;
-            padding: 10px;
-            background: #222;
+            padding: 8px 10px;
+            background: #0F0F0F;
             color: var(--text-color);
-            border: 1px solid var(--accent-color);
-            margin-top: 5px;
-            margin-bottom: 20px;
+            border: 1px solid var(--border-visible);
+            border-bottom-color: var(--accent-color);
+            margin-top: 4px;
+            margin-bottom: 0;
             font-family: inherit;
+            font-size: 0.85rem;
             outline: none;
         }
-        
         select:hover, input[type="text"]:hover {
-            background: #333;
+            border-color: var(--border-active);
+            background: #141414;
+        }
+        select:focus, input[type="text"]:focus {
+            border-color: var(--accent-color);
+            background: #141414;
         }
 
         #keyword-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 10px;
+            gap: 6px;
+            margin-top: 8px;
         }
 
         .keyword-tag {
-            font-size: 0.8rem;
-            padding: 4px 8px;
-            border: 1px solid #555;
-            border-radius: 4px;
+            font-size: 0.72rem;
+            padding: 3px 8px;
+            border: 1px solid var(--border-visible);
             cursor: pointer;
-            transition: all 0.2s;
-            color: #ccc;
-            background: rgba(255,255,255,0.05);
+            transition: border-color 0.15s, color 0.15s, background 0.15s;
+            color: var(--text-secondary);
+            background: transparent;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
         }
-
         .keyword-tag:hover {
             border-color: var(--accent-color);
-            color: #fff;
+            color: var(--text-color);
         }
-
         .keyword-tag.active {
             background: var(--accent-color);
             color: #000;
             border-color: var(--accent-color);
-            font-weight: bold;
+            font-weight: 500;
         }
 
         .node-label {
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 0.85);
             color: #fff;
             padding: 2px 5px;
             font-size: 12px;
             pointer-events: none;
         }
-        
+
         #loading {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             color: var(--accent-color);
-            font-size: 1.5rem;
+            font-size: 1.3rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
             display: none;
         }
 
@@ -212,22 +239,25 @@
             bottom: 20px;
             left: 50%;
             transform: translateX(-50%);
-            background: rgba(26, 26, 26, 0.95);
-            border: 1px solid var(--accent-color);
-            padding: 15px 25px;
-            border-radius: 4px;
-            color: #fff;
+            background: rgba(10, 10, 10, 0.98);
+            border-top: 2px solid var(--accent-color);
+            border-right: 1px solid var(--border-visible);
+            border-bottom: 1px solid var(--border-visible);
+            border-left: 1px solid var(--border-visible);
+            padding: 12px 22px;
+            color: var(--text-color);
             display: none;
             z-index: 200;
             max-width: 80%;
             text-align: center;
-            box-shadow: 0 0 15px rgba(255, 153, 0, 0.2);
         }
-        
         #toast h3 {
-            margin: 0 0 5px 0;
+            margin: 0 0 4px 0;
             color: var(--accent-color);
-            font-size: 1rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
         }
 
         #news-panel {
@@ -236,33 +266,36 @@
             right: 20px;
             width: 320px;
             max-height: 85vh;
-            background: rgba(11, 11, 11, 0.95);
-            border: 1px solid var(--accent-color);
-            padding: 15px;
-            border-radius: 4px;
+            background: var(--panel-bg);
+            border-top: 2px solid var(--accent-blue);
+            border-right: 1px solid var(--border-visible);
+            border-bottom: 1px solid var(--border-visible);
+            border-left: 1px solid var(--border-visible);
+            padding: 14px 15px;
             display: none;
             z-index: 150;
             overflow: hidden;
-            box-shadow: 0 0 15px rgba(0,0,0,0.5);
         }
         #news-panel.visible { display: block; }
         #news-panel h3 {
             margin: 0 0 10px 0;
-            color: var(--accent-color);
-            font-size: 1rem;
+            color: var(--accent-blue);
+            font-size: 0.88rem;
+            font-weight: 500;
+            letter-spacing: 0.06em;
             padding-right: 28px;
+            text-transform: uppercase;
         }
         #news-panel .close-btn {
             position: absolute;
             top: 12px;
             right: 12px;
             background: transparent;
-            border: 1px solid #555;
-            color: #ccc;
+            border: 1px solid var(--border-visible);
+            color: var(--text-secondary);
             cursor: pointer;
             padding: 2px 8px;
             font-size: 0.9rem;
-            border-radius: 4px;
         }
         #news-panel .close-btn:hover {
             border-color: var(--accent-color);
@@ -274,16 +307,23 @@
         }
         #news-panel .news-item {
             padding: 8px 0;
-            border-bottom: 1px solid #333;
-            font-size: 0.85rem;
+            border-bottom: 1px solid var(--border-subtle);
+            font-size: 0.83rem;
+            line-height: 1.5;
         }
         #news-panel .news-item:last-child { border-bottom: none; }
         #news-panel .news-item a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+        #news-panel .news-item a:hover {
             color: var(--accent-color);
             text-decoration: none;
         }
-        #news-panel .news-item a:hover { text-decoration: underline; }
-        #news-panel .news-item .source { color: #888; font-size: 0.8rem; }
+        #news-panel .news-item .source {
+            color: var(--text-muted);
+            font-size: 0.75rem;
+        }
 
     </style>
 </head>
@@ -294,15 +334,16 @@
         <p class="subtitle">演算本日關鍵產業新聞的拓樸</p>
         <p>節點：實體 (點擊查看相關新聞)</p>
         <p>連線：實體關係 (點擊查看類型)</p>
-        
+
+        <div class="section-label">資料日期</div>
         <select id="date-selector">
             <option value="" disabled selected>選擇日期...</option>
         </select>
-        
-        <p style="margin-top: 20px; border-top: 1px solid #333; padding-top: 10px; color: var(--accent-color);">搜尋標題</p>
+
+        <div class="section-label">搜尋標題</div>
         <input type="text" id="search-input" placeholder="輸入關鍵字...">
-        
-        <p style="margin-top: 20px; border-top: 1px solid #333; padding-top: 10px; color: var(--accent-color);">關鍵字篩選</p>
+
+        <div class="section-label">關鍵字篩選</div>
         <div id="keyword-list"></div>
     </div>
     
@@ -346,8 +387,19 @@
             [TARGET_DATE]: EMBEDDED_DATA
         };
 
-        // Cosmic Orange Palette
-        const ORANGE_PALETTE = ['#FF9900', '#FFB347', '#FFCC80', '#E68A00', '#CC7A00'];
+        // Bloomberg Entity Group Colors
+        const GROUP_COLORS = {
+            'company':  '#00A0D2',   // Bloomberg Blue
+            'person':   '#F26522',   // Bloomberg Orange
+            'country':  '#3DBE8A',   // Teal Green
+            'tech':     '#A566FF',   // Violet
+            'org':      '#D4AF00',   // Amber Gold
+            'finance':  '#E5342A',   // Red
+        };
+        const DEFAULT_NODE_COLOR = '#6A6A6A';
+        function getNodeColor(node) {
+            return GROUP_COLORS[(node && node.group) || ''] || DEFAULT_NODE_COLOR;
+        }
 
         // Filter State
         let activeFilters = new Set(); // Multi-select Set
@@ -453,7 +505,7 @@
         }
 
         let Graph = ForceGraph()(graphContainer)
-            .backgroundColor('#0b0b0b')
+            .backgroundColor('#0A0A0A')
             .nodeId('id')
             .nodeRelSize(7)
             .warmupTicks(160)
@@ -467,13 +519,13 @@
                 return Math.max(280, sourceRadius + targetRadius + 90);
             }).strength(0.9))
             .d3Force('collision', d3.forceCollide().radius(node => estimateNodeRadius(node) + 28).strength(1))
-            .nodeColor(node => ((activeFilters.size === 0 && !searchText) || highlightedNodes.has(node)) ? (ORANGE_PALETTE[Math.abs(node.id.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0)) % ORANGE_PALETTE.length]) : 'rgba(255, 255, 255, 0.1)')
+            .nodeColor(node => ((activeFilters.size === 0 && !searchText) || highlightedNodes.has(node)) ? getNodeColor(node) : 'rgba(255, 255, 255, 0.06)')
             .nodeLabel('id')
-            .linkColor(link => ((activeFilters.size === 0 && !searchText) || highlightedLinks.has(link)) ? 'rgba(255, 183, 77, 0.42)' : 'rgba(255, 255, 255, 0.06)')
-            .linkWidth(link => ((activeFilters.size === 0 && !searchText) || highlightedLinks.has(link)) ? Math.max(1.4, link.value ? Math.sqrt(link.value) * 1.1 : 1.4) : 0.7)
+            .linkColor(link => ((activeFilters.size === 0 && !searchText) || highlightedLinks.has(link)) ? 'rgba(0, 160, 210, 0.38)' : 'rgba(255, 255, 255, 0.05)')
+            .linkWidth(link => ((activeFilters.size === 0 && !searchText) || highlightedLinks.has(link)) ? Math.max(1.4, link.value ? Math.sqrt(link.value) * 1.1 : 1.4) : 0.6)
             .linkDirectionalParticles(link => ((activeFilters.size === 0 && !searchText) || highlightedLinks.has(link)) ? 2 : 0)
             .linkDirectionalParticleWidth(2)
-            .linkDirectionalParticleColor(() => '#ffaa00')
+            .linkDirectionalParticleColor(() => '#F26522')
             .onEngineStop(() => fitGraphToViewport(700))
             .onNodeClick(node => { onNodeClick(node); })
             .onLinkClick(link => { showToast(link.label, link.reason || ''); })
@@ -513,8 +565,8 @@
             ctx.beginPath();
             ctx.moveTo(sx, sy);
             ctx.lineTo(ex, ey);
-            ctx.strokeStyle = isHighlighted ? 'rgba(255, 183, 77, 0.42)' : 'rgba(255, 255, 255, 0.06)';
-            ctx.lineWidth = (isHighlighted ? Math.max(1.4, link.value ? Math.sqrt(link.value) * 1.1 : 1.4) : 0.7) / globalScale;
+            ctx.strokeStyle = isHighlighted ? 'rgba(0, 160, 210, 0.38)' : 'rgba(255, 255, 255, 0.05)';
+            ctx.lineWidth = (isHighlighted ? Math.max(1.4, link.value ? Math.sqrt(link.value) * 1.1 : 1.4) : 0.6) / globalScale;
             ctx.stroke();
 
             if (link.label && isHighlighted) {
@@ -531,11 +583,11 @@
                 const labelY = midY + (dx / length) * offset;
                 const textWidth = ctx.measureText(label).width;
                 const bckgDimensions = [textWidth, fontSize].map(n => n + fontSize * 0.45);
-                ctx.fillStyle = 'rgba(12, 12, 12, 0.92)';
+                ctx.fillStyle = 'rgba(8, 8, 8, 0.94)';
                 ctx.fillRect(labelX - bckgDimensions[0] / 2, labelY - bckgDimensions[1] / 2, ...bckgDimensions);
                 ctx.textAlign = 'center';
                 ctx.textBaseline = 'middle';
-                ctx.fillStyle = '#ffe0b2';
+                ctx.fillStyle = '#00A0D2';
                 ctx.fillText(label, labelX, labelY);
             }
         });
@@ -556,14 +608,15 @@
             const boxX = x - bckgDimensions[0] / 2;
             const boxY = y - bckgDimensions[1] / 2;
             
-            ctx.fillStyle = isHighlighted ? 'rgba(26, 26, 26, 0.9)' : 'rgba(26, 26, 26, 0.2)';
-            ctx.strokeStyle = isHighlighted ? '#ff9900' : 'rgba(100, 100, 100, 0.2)';
-            ctx.lineWidth = 1.4 / globalScale;
+            const groupColor = getNodeColor(node);
+            ctx.fillStyle = isHighlighted ? 'rgba(10, 10, 10, 0.93)' : 'rgba(10, 10, 10, 0.18)';
+            ctx.strokeStyle = isHighlighted ? groupColor : 'rgba(50, 50, 50, 0.25)';
+            ctx.lineWidth = (isHighlighted ? 1.5 : 0.8) / globalScale;
             ctx.fillRect(boxX, boxY, ...bckgDimensions);
             ctx.strokeRect(boxX, boxY, ...bckgDimensions);
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
-            ctx.fillStyle = isHighlighted ? '#e0e0e0' : 'rgba(100, 100, 100, 0.5)';
+            ctx.fillStyle = isHighlighted ? '#E8E8E8' : 'rgba(80, 80, 80, 0.55)';
             ctx.fillText(label, x, y);
 
             node.__bckgDimensions = bckgDimensions;
