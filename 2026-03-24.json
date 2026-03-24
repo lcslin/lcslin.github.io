@@ -1,0 +1,1299 @@
+{
+  "nodes": [
+    {
+      "id": "台積電",
+      "group": "company",
+      "size": 25
+    },
+    {
+      "id": "央行",
+      "group": "org",
+      "size": 20
+    },
+    {
+      "id": "川普",
+      "group": "person",
+      "size": 22
+    },
+    {
+      "id": "伊朗",
+      "group": "country",
+      "size": 23
+    },
+    {
+      "id": "Fed",
+      "group": "org",
+      "size": 18
+    },
+    {
+      "id": "Grab",
+      "group": "company",
+      "size": 20
+    },
+    {
+      "id": "foodpanda",
+      "group": "company",
+      "size": 19
+    },
+    {
+      "id": "特斯拉",
+      "group": "company",
+      "size": 21
+    },
+    {
+      "id": "馬斯克",
+      "group": "person",
+      "size": 18
+    },
+    {
+      "id": "超微",
+      "group": "company",
+      "size": 17
+    },
+    {
+      "id": "鴻海",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "華為",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "新思科技",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "Elliott",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "台灣",
+      "group": "country",
+      "size": 22
+    },
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 19
+    },
+    {
+      "id": "中國",
+      "group": "country",
+      "size": 16
+    },
+    {
+      "id": "韓國",
+      "group": "country",
+      "size": 13
+    },
+    {
+      "id": "印度",
+      "group": "country",
+      "size": 12
+    },
+    {
+      "id": "墨西哥",
+      "group": "country",
+      "size": 10
+    },
+    {
+      "id": "俄羅斯",
+      "group": "country",
+      "size": 11
+    },
+    {
+      "id": "AI",
+      "group": "tech",
+      "size": 20
+    },
+    {
+      "id": "晶片",
+      "group": "tech",
+      "size": 21
+    },
+    {
+      "id": "半導體",
+      "group": "tech",
+      "size": 18
+    },
+    {
+      "id": "油價",
+      "group": "finance",
+      "size": 20
+    },
+    {
+      "id": "通膨",
+      "group": "finance",
+      "size": 19
+    },
+    {
+      "id": "台幣",
+      "group": "finance",
+      "size": 17
+    },
+    {
+      "id": "人民幣",
+      "group": "finance",
+      "size": 14
+    },
+    {
+      "id": "公平會",
+      "group": "org",
+      "size": 13
+    },
+    {
+      "id": "國發會",
+      "group": "org",
+      "size": 11
+    },
+    {
+      "id": "華碩",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "台智雲",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "群聯",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "昕力資",
+      "group": "company",
+      "size": 9
+    },
+    {
+      "id": "小鵬",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "中微半導",
+      "group": "company",
+      "size": 9
+    },
+    {
+      "id": "Uber",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "能源",
+      "group": "finance",
+      "size": 18
+    },
+    {
+      "id": "中東戰爭",
+      "group": "finance",
+      "size": 21
+    },
+    {
+      "id": "貨幣政策",
+      "group": "finance",
+      "size": 16
+    },
+    {
+      "id": "供應鏈",
+      "group": "finance",
+      "size": 15
+    },
+    {
+      "id": "主權AI",
+      "group": "tech",
+      "size": 14
+    },
+    {
+      "id": "伺服器",
+      "group": "tech",
+      "size": 13
+    },
+    {
+      "id": "虛擬資產",
+      "group": "finance",
+      "size": 12
+    }
+  ],
+  "links": [
+    {
+      "source": "中東戰爭",
+      "target": "央行",
+      "value": 4,
+      "label": "政策影響"
+    },
+    {
+      "source": "中東戰爭",
+      "target": "通膨",
+      "value": 5,
+      "label": "風險影響"
+    },
+    {
+      "source": "伊朗",
+      "target": "中東戰爭",
+      "value": 5,
+      "label": "戰爭主體"
+    },
+    {
+      "source": "伊朗",
+      "target": "油價",
+      "value": 5,
+      "label": "供應影響"
+    },
+    {
+      "source": "川普",
+      "target": "伊朗",
+      "value": 5,
+      "label": "外交談判"
+    },
+    {
+      "source": "川普",
+      "target": "油價",
+      "value": 4,
+      "label": "政策影響"
+    },
+    {
+      "source": "川普",
+      "target": "台幣",
+      "value": 4,
+      "label": "政策衝擊"
+    },
+    {
+      "source": "川普",
+      "target": "央行",
+      "value": 3,
+      "label": "匯市干預"
+    },
+    {
+      "source": "Fed",
+      "target": "通膨",
+      "value": 5,
+      "label": "政策目標"
+    },
+    {
+      "source": "Fed",
+      "target": "貨幣政策",
+      "value": 5,
+      "label": "決策主體"
+    },
+    {
+      "source": "央行",
+      "target": "通膨",
+      "value": 5,
+      "label": "風險管理"
+    },
+    {
+      "source": "央行",
+      "target": "貨幣政策",
+      "value": 5,
+      "label": "政策工具"
+    },
+    {
+      "source": "央行",
+      "target": "台幣",
+      "value": 5,
+      "label": "匯率調節"
+    },
+    {
+      "source": "人民幣",
+      "target": "中國",
+      "value": 5,
+      "label": "貨幣政策"
+    },
+    {
+      "source": "Grab",
+      "target": "foodpanda",
+      "value": 5,
+      "label": "併購交易"
+    },
+    {
+      "source": "Grab",
+      "target": "台灣",
+      "value": 4,
+      "label": "市場擴張"
+    },
+    {
+      "source": "Grab",
+      "target": "公平會",
+      "value": 4,
+      "label": "審查監管"
+    },
+    {
+      "source": "foodpanda",
+      "target": "台灣",
+      "value": 4,
+      "label": "在地營運"
+    },
+    {
+      "source": "foodpanda",
+      "target": "Uber",
+      "value": 3,
+      "label": "市場競爭"
+    },
+    {
+      "source": "公平會",
+      "target": "台灣",
+      "value": 3,
+      "label": "監管機構"
+    },
+    {
+      "source": "特斯拉",
+      "target": "台積電",
+      "value": 5,
+      "label": "人才挖角"
+    },
+    {
+      "source": "特斯拉",
+      "target": "晶片",
+      "value": 5,
+      "label": "自製策略"
+    },
+    {
+      "source": "馬斯克",
+      "target": "特斯拉",
+      "value": 5,
+      "label": "經營決策"
+    },
+    {
+      "source": "馬斯克",
+      "target": "台積電",
+      "value": 4,
+      "label": "人才需求"
+    },
+    {
+      "source": "台積電",
+      "target": "晶片",
+      "value": 5,
+      "label": "製造核心"
+    },
+    {
+      "source": "台積電",
+      "target": "半導體",
+      "value": 5,
+      "label": "產業龍頭"
+    },
+    {
+      "source": "台積電",
+      "target": "台灣",
+      "value": 5,
+      "label": "產業支柱"
+    },
+    {
+      "source": "台積電",
+      "target": "美國",
+      "value": 4,
+      "label": "海外建廠"
+    },
+    {
+      "source": "超微",
+      "target": "晶片",
+      "value": 5,
+      "label": "產品供應"
+    },
+    {
+      "source": "超微",
+      "target": "韓國",
+      "value": 4,
+      "label": "商業合作"
+    },
+    {
+      "source": "超微",
+      "target": "AI",
+      "value": 4,
+      "label": "技術應用"
+    },
+    {
+      "source": "韓國",
+      "target": "AI",
+      "value": 4,
+      "label": "產業發展"
+    },
+    {
+      "source": "印度",
+      "target": "AI",
+      "value": 4,
+      "label": "技術合作"
+    },
+    {
+      "source": "印度",
+      "target": "台灣",
+      "value": 3,
+      "label": "科技交流"
+    },
+    {
+      "source": "鴻海",
+      "target": "墨西哥",
+      "value": 4,
+      "label": "海外投資"
+    },
+    {
+      "source": "鴻海",
+      "target": "伺服器",
+      "value": 4,
+      "label": "產品布局"
+    },
+    {
+      "source": "華為",
+      "target": "中國",
+      "value": 5,
+      "label": "本土企業"
+    },
+    {
+      "source": "華為",
+      "target": "晶片",
+      "value": 3,
+      "label": "技術挑戰"
+    },
+    {
+      "source": "新思科技",
+      "target": "Elliott",
+      "value": 5,
+      "label": "策略投資"
+    },
+    {
+      "source": "新思科技",
+      "target": "半導體",
+      "value": 4,
+      "label": "軟體工具"
+    },
+    {
+      "source": "華碩",
+      "target": "台智雲",
+      "value": 4,
+      "label": "投資關係"
+    },
+    {
+      "source": "台智雲",
+      "target": "主權AI",
+      "value": 5,
+      "label": "商機布局"
+    },
+    {
+      "source": "台智雲",
+      "target": "AI",
+      "value": 4,
+      "label": "技術服務"
+    },
+    {
+      "source": "昕力資",
+      "target": "群聯",
+      "value": 4,
+      "label": "產業聯盟"
+    },
+    {
+      "source": "昕力資",
+      "target": "AI",
+      "value": 3,
+      "label": "技術應用"
+    },
+    {
+      "source": "小鵬",
+      "target": "中國",
+      "value": 4,
+      "label": "本土企業"
+    },
+    {
+      "source": "中微半導",
+      "target": "中國",
+      "value": 4,
+      "label": "產業布局"
+    },
+    {
+      "source": "中微半導",
+      "target": "半導體",
+      "value": 4,
+      "label": "記憶體投資"
+    },
+    {
+      "source": "國發會",
+      "target": "AI",
+      "value": 4,
+      "label": "產業輔導"
+    },
+    {
+      "source": "國發會",
+      "target": "台灣",
+      "value": 3,
+      "label": "政策推動"
+    },
+    {
+      "source": "AI",
+      "target": "台灣",
+      "value": 4,
+      "label": "產業發展"
+    },
+    {
+      "source": "AI",
+      "target": "半導體",
+      "value": 4,
+      "label": "技術依賴"
+    },
+    {
+      "source": "主權AI",
+      "target": "台灣",
+      "value": 4,
+      "label": "戰略布局"
+    },
+    {
+      "source": "主權AI",
+      "target": "AI",
+      "value": 5,
+      "label": "產業趨勢"
+    },
+    {
+      "source": "油價",
+      "target": "能源",
+      "value": 5,
+      "label": "市場指標"
+    },
+    {
+      "source": "油價",
+      "target": "通膨",
+      "value": 5,
+      "label": "成本影響"
+    },
+    {
+      "source": "中東戰爭",
+      "target": "能源",
+      "value": 5,
+      "label": "供應衝擊"
+    },
+    {
+      "source": "中東戰爭",
+      "target": "台灣",
+      "value": 4,
+      "label": "產業衝擊"
+    },
+    {
+      "source": "俄羅斯",
+      "target": "能源",
+      "value": 5,
+      "label": "供應影響"
+    },
+    {
+      "source": "俄羅斯",
+      "target": "油價",
+      "value": 4,
+      "label": "出口暫停"
+    },
+    {
+      "source": "虛擬資產",
+      "target": "台灣",
+      "value": 4,
+      "label": "監管機制"
+    },
+    {
+      "source": "供應鏈",
+      "target": "台灣",
+      "value": 4,
+      "label": "產業影響"
+    },
+    {
+      "source": "供應鏈",
+      "target": "中東戰爭",
+      "value": 3,
+      "label": "風險衝擊"
+    },
+    {
+      "source": "半導體",
+      "target": "台灣",
+      "value": 5,
+      "label": "核心產業"
+    },
+    {
+      "source": "晶片",
+      "target": "台灣",
+      "value": 5,
+      "label": "製造優勢"
+    }
+  ],
+  "newsDatabase": {
+    "台積電": [
+      {
+        "title": "特斯拉製造晶片來台挖角 劍指台積等一線大廠核心工程師",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9398456"
+      },
+      {
+        "title": "馬斯克要挖台積電強者…自製晶片 求即戰力",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9398469"
+      },
+      {
+        "title": "海內外建廠催速 台積AZ廠明年H2衝刺3奈米",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000181-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "全民挺台積 今年股東人數增逾60萬",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000184-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "央行": [
+      {
+        "title": "中東戰爭效應 央行擬建構「通膨風險值」 提升貨幣政策精準度",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9398348"
+      },
+      {
+        "title": "川普TACO再現》台幣貶新低 央行宣示進場調節",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000134-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "川普": [
+      {
+        "title": "川普TACO再現》台幣貶新低 央行宣示進場調節",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000134-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "川普連番發話油價走低 先喊延後攻擊 又說將與伊朗達成協議",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9398484"
+      },
+      {
+        "title": "川普暫停攻擊 喊五天內可能結束戰爭 伊朗：未接觸談判",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9398447"
+      },
+      {
+        "title": "川普暫緩打擊伊朗能源設施 國際油價大跌10%",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9398655"
+      }
+    ],
+    "伊朗": [
+      {
+        "title": "伊朗戰爭引發停滯性通膨憂慮 3月債市蒸發逾2.5兆美元",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9398481"
+      },
+      {
+        "title": "川普連番發話油價走低 先喊延後攻擊 又說將與伊朗達成協議",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9398484"
+      },
+      {
+        "title": "川普暫停攻擊 喊五天內可能結束戰爭 伊朗：未接觸談判",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9398447"
+      },
+      {
+        "title": "經濟學人推算美伊停火情境 油氣市場回穩…要四個月",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9398473"
+      },
+      {
+        "title": "川普暫緩打擊伊朗能源設施 國際油價大跌10%",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9398655"
+      }
+    ],
+    "Fed": [
+      {
+        "title": "Fed 領導更替…華許尷尬了 降息承諾與通膨情勢矛盾",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9398486"
+      }
+    ],
+    "Grab": [
+      {
+        "title": "Grab 收購台灣 foodpanda 斥資192億預計下半年完成交易",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9398408"
+      },
+      {
+        "title": "Grab 收購 foodpanda 台灣 併購案...還要過三關",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9398413"
+      },
+      {
+        "title": "中資疑慮…Grab收購foodpanda台灣 審查恐有變數",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9398467"
+      },
+      {
+        "title": "東南亞平台Grab 併購台灣foodpanda",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9398465"
+      },
+      {
+        "title": "Grab砸192億 收購台灣foodpanda",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000497-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "foodpanda": [
+      {
+        "title": "Grab 收購台灣 foodpanda 斥資192億預計下半年完成交易",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9398408"
+      },
+      {
+        "title": "Grab 收購 foodpanda 台灣 併購案...還要過三關",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9398413"
+      },
+      {
+        "title": "中資疑慮…Grab收購foodpanda台灣 審查恐有變數",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9398467"
+      },
+      {
+        "title": "東南亞平台Grab 併購台灣foodpanda",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9398465"
+      },
+      {
+        "title": "Uber繞道併foodpanda？ 公平會：審核不受舊案影響",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1748046"
+      },
+      {
+        "title": "Grab砸192億 收購台灣foodpanda",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000497-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "特斯拉": [
+      {
+        "title": "特斯拉製造晶片來台挖角 劍指台積等一線大廠核心工程師",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9398456"
+      },
+      {
+        "title": "特斯拉拚晶片自製 要搞定3難題",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9398470"
+      }
+    ],
+    "馬斯克": [
+      {
+        "title": "馬斯克要挖台積電強者…自製晶片 求即戰力",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9398469"
+      }
+    ],
+    "超微": [
+      {
+        "title": "韓 AI 新創洽購萬顆超微晶片",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9398434"
+      },
+      {
+        "title": "韓AI新創擬購買超微晶片",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000232-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美超微涉走私 毛利率不升反降",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000507-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "鴻海": [
+      {
+        "title": "鴻海衝伺服器 增資墨國",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9398464"
+      }
+    ],
+    "華為": [
+      {
+        "title": "頂住壓力 華為推新平價機",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000238-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "新思科技": [
+      {
+        "title": "避險基金Elliott入股新思科技 推動提升軟體和服務的獲利能力",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9398432"
+      },
+      {
+        "title": "Elliott砸數十億美元 投資新思科技",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000234-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Elliott": [
+      {
+        "title": "避險基金Elliott入股新思科技 推動提升軟體和服務的獲利能力",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9398432"
+      },
+      {
+        "title": "Elliott砸數十億美元 投資新思科技",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000234-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台灣": [
+      {
+        "title": "Grab 收購台灣 foodpanda 斥資192億預計下半年完成交易",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9398408"
+      },
+      {
+        "title": "Grab 收購 foodpanda 台灣 併購案...還要過三關",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9398413"
+      },
+      {
+        "title": "特斯拉製造晶片來台挖角 劍指台積等一線大廠核心工程師",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9398456"
+      },
+      {
+        "title": "印度最大科技博覽會 與台灣AI合作成焦點",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9398622"
+      },
+      {
+        "title": "中資疑慮…Grab收購foodpanda台灣 審查恐有變數",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9398467"
+      },
+      {
+        "title": "東南亞平台Grab 併購台灣foodpanda",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9398465"
+      },
+      {
+        "title": "主權 AI 產業聯盟 打國際盃",
+        "source": "",
+        "url": "https://udn.com/news/story/7253/9398097"
+      },
+      {
+        "title": "華碩小金雞引策略投資人 台智雲搶攻主權AI商機",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000189-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "智慧城市展成果豐碩 台廠獲國際業者結盟",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000274-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "Grab砸192億 收購台灣foodpanda",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000497-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "工具機展商機衝20億美元 3月25日在台中登場",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9398345"
+      },
+      {
+        "title": "中東危機 逾400台廠受衝擊",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9398382"
+      }
+    ],
+    "美國": [
+      {
+        "title": "伊朗戰爭引發停滯性通膨憂慮 3月債市蒸發逾2.5兆美元",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9398481"
+      },
+      {
+        "title": "海內外建廠催速 台積AZ廠明年H2衝刺3奈米",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000181-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中國": [
+      {
+        "title": "北威論壇專家觀點 人民幣保持強勢方能留住外資",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000246-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "頂住壓力 華為推新平價機",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000238-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "小鵬拚Robotaxi 新設業務部",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000241-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "砸人民幣1.6億 中微半導布局記憶體",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000247-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "韓國": [
+      {
+        "title": "韓 AI 新創洽購萬顆超微晶片",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9398434"
+      },
+      {
+        "title": "韓AI新創擬購買超微晶片",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000232-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "印度": [
+      {
+        "title": "印度最大科技博覽會 與台灣AI合作成焦點",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9398622"
+      }
+    ],
+    "墨西哥": [
+      {
+        "title": "鴻海衝伺服器 增資墨國",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9398464"
+      }
+    ],
+    "俄羅斯": [
+      {
+        "title": "俄最大油港暫停原油出口",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9398492"
+      }
+    ],
+    "AI": [
+      {
+        "title": "韓 AI 新創洽購萬顆超微晶片",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9398434"
+      },
+      {
+        "title": "印度最大科技博覽會 與台灣AI合作成焦點",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9398622"
+      },
+      {
+        "title": "主權 AI 產業聯盟 打國際盃",
+        "source": "",
+        "url": "https://udn.com/news/story/7253/9398097"
+      },
+      {
+        "title": "華碩小金雞引策略投資人 台智雲搶攻主權AI商機",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000189-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "國發會 助AI新創組團參展GTC",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000203-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "韓AI新創擬購買超微晶片",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000232-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "昕力資揪群聯 組AISO聯盟",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000268-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "晶片": [
+      {
+        "title": "特斯拉製造晶片來台挖角 劍指台積等一線大廠核心工程師",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9398456"
+      },
+      {
+        "title": "韓 AI 新創洽購萬顆超微晶片",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9398434"
+      },
+      {
+        "title": "特斯拉拚晶片自製 要搞定3難題",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9398470"
+      },
+      {
+        "title": "馬斯克要挖台積電強者…自製晶片 求即戰力",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9398469"
+      },
+      {
+        "title": "韓AI新創擬購買超微晶片",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000232-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "半導體": [
+      {
+        "title": "SEMI年度會員調查 聚焦半導體挑戰",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000396-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "砸人民幣1.6億 中微半導布局記憶體",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000247-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "油價": [
+      {
+        "title": "川普連番發話油價走低 先喊延後攻擊 又說將與伊朗達成協議",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9398484"
+      },
+      {
+        "title": "川普暫緩打擊伊朗能源設施 國際油價大跌10%",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9398655"
+      }
+    ],
+    "通膨": [
+      {
+        "title": "中東戰爭效應 央行擬建構「通膨風險值」 提升貨幣政策精準度",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9398348"
+      },
+      {
+        "title": "伊朗戰爭引發停滯性通膨憂慮 3月債市蒸發逾2.5兆美元",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9398481"
+      },
+      {
+        "title": "Fed 領導更替…華許尷尬了 降息承諾與通膨情勢矛盾",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9398486"
+      }
+    ],
+    "台幣": [
+      {
+        "title": "川普TACO再現》台幣貶新低 央行宣示進場調節",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000134-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "人民幣": [
+      {
+        "title": "北威論壇專家觀點 人民幣保持強勢方能留住外資",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000246-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "公平會": [
+      {
+        "title": "Grab 收購 foodpanda 台灣 併購案...還要過三關",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9398413"
+      },
+      {
+        "title": "Uber繞道併foodpanda？ 公平會：審核不受舊案影響",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1748046"
+      }
+    ],
+    "國發會": [
+      {
+        "title": "國發會 助AI新創組團參展GTC",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000203-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "華碩": [
+      {
+        "title": "華碩小金雞引策略投資人 台智雲搶攻主權AI商機",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000189-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台智雲": [
+      {
+        "title": "華碩小金雞引策略投資人 台智雲搶攻主權AI商機",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000189-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "群聯": [
+      {
+        "title": "昕力資揪群聯 組AISO聯盟",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000268-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "昕力資": [
+      {
+        "title": "昕力資揪群聯 組AISO聯盟",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000268-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "小鵬": [
+      {
+        "title": "小鵬拚Robotaxi 新設業務部",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000241-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中微半導": [
+      {
+        "title": "砸人民幣1.6億 中微半導布局記憶體",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000247-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Uber": [
+      {
+        "title": "Uber繞道併foodpanda？ 公平會：審核不受舊案影響",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1748046"
+      }
+    ],
+    "能源": [
+      {
+        "title": "川普連番發話油價走低 先喊延後攻擊 又說將與伊朗達成協議",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9398484"
+      },
+      {
+        "title": "俄最大油港暫停原油出口",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9398492"
+      },
+      {
+        "title": "金融時報：全球液化天然氣 瀕臨「供應懸崖」",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9398558"
+      },
+      {
+        "title": "川普暫緩打擊伊朗能源設施 國際油價大跌10%",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9398655"
+      }
+    ],
+    "中東戰爭": [
+      {
+        "title": "中東戰爭效應 央行擬建構「通膨風險值」 提升貨幣政策精準度",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9398348"
+      },
+      {
+        "title": "中東危機 逾400台廠受衝擊",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9398382"
+      },
+      {
+        "title": "經濟學人推算美伊停火情境 油氣市場回穩…要四個月",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9398473"
+      },
+      {
+        "title": "中東戰爭破壞力＝三次能源危機總和",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9398476"
+      }
+    ],
+    "貨幣政策": [
+      {
+        "title": "中東戰爭效應 央行擬建構「通膨風險值」 提升貨幣政策精準度",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9398348"
+      },
+      {
+        "title": "Fed 領導更替…華許尷尬了 降息承諾與通膨情勢矛盾",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9398486"
+      }
+    ],
+    "供應鏈": [
+      {
+        "title": "中東危機 逾400台廠受衝擊",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9398382"
+      }
+    ],
+    "主權AI": [
+      {
+        "title": "主權 AI 產業聯盟 打國際盃",
+        "source": "",
+        "url": "https://udn.com/news/story/7253/9398097"
+      },
+      {
+        "title": "華碩小金雞引策略投資人 台智雲搶攻主權AI商機",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260324000189-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "伺服器": [
+      {
+        "title": "鴻海衝伺服器 增資墨國",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9398464"
+      }
+    ],
+    "虛擬資產": [
+      {
+        "title": "虛擬資產業將導入信託、隔離管理機制 境外幣商落地 三家有意願",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9398336"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "中東戰爭效應 央行擬建構「通膨風險值」 提升貨幣政策精準度 (經濟金融脈動)": "https://money.udn.com/money/story/5613/9398348",
+    "伊朗戰爭引發停滯性通膨憂慮 3月債市蒸發逾2.5兆美元 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9398481",
+    "Fed 領導更替…華許尷尬了 降息承諾與通膨情勢矛盾 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9398486",
+    "川普TACO再現》台幣貶新低 央行宣示進場調節 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260324000134-260202?utm_source=iii_news&utm_medium=rss",
+    "北威論壇專家觀點 人民幣保持強勢方能留住外資 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260324000246-260203?utm_source=iii_news&utm_medium=rss",
+    "Grab 收購台灣 foodpanda 斥資192億預計下半年完成交易 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9398408",
+    "Grab 收購 foodpanda 台灣 併購案...還要過三關 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9398413",
+    "虛擬資產業將導入信託、隔離管理機制 境外幣商落地 三家有意願 (經濟金融脈動)": "https://money.udn.com/money/story/5613/9398336",
+    "鴻海衝伺服器 增資墨國 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9398464",
+    "特斯拉製造晶片來台挖角 劍指台積等一線大廠核心工程師 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9398456",
+    "韓 AI 新創洽購萬顆超微晶片 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9398434",
+    "印度最大科技博覽會 與台灣AI合作成焦點 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9398622",
+    "特斯拉拚晶片自製 要搞定3難題 (聯合_產經_股市)": "https://udn.com/news/story/7240/9398470",
+    "馬斯克要挖台積電強者…自製晶片 求即戰力 (聯合_產經_股市)": "https://udn.com/news/story/7240/9398469",
+    "中資疑慮…Grab收購foodpanda台灣 審查恐有變數 (聯合_產經_股市)": "https://udn.com/news/story/7238/9398467",
+    "東南亞平台Grab 併購台灣foodpanda (聯合_產經_股市)": "https://udn.com/news/story/7238/9398465",
+    "主權 AI 產業聯盟 打國際盃 (聯合_產經_股市)": "https://udn.com/news/story/7253/9398097",
+    "避險基金Elliott入股新思科技 推動提升軟體和服務的獲利能力 (聯合_產經_股市)": "https://udn.com/news/story/6811/9398432",
+    "海內外建廠催速 台積AZ廠明年H2衝刺3奈米 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260324000181-260202?utm_source=iii_news&utm_medium=rss",
+    "全民挺台積 今年股東人數增逾60萬 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260324000184-260202?utm_source=iii_news&utm_medium=rss",
+    "壓不住 PC品牌廠Q2再漲3成 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260324000186-260202?utm_source=iii_news&utm_medium=rss",
+    "華碩小金雞引策略投資人 台智雲搶攻主權AI商機 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260324000189-260202?utm_source=iii_news&utm_medium=rss",
+    "國發會 助AI新創組團參展GTC (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260324000203-260202?utm_source=iii_news&utm_medium=rss",
+    "SEMI年度會員調查 聚焦半導體挑戰 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260324000396-260202?utm_source=iii_news&utm_medium=rss",
+    "韓AI新創擬購買超微晶片 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260324000232-260203?utm_source=iii_news&utm_medium=rss",
+    "Elliott砸數十億美元 投資新思科技 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260324000234-260203?utm_source=iii_news&utm_medium=rss",
+    "頂住壓力 華為推新平價機 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260324000238-260203?utm_source=iii_news&utm_medium=rss",
+    "小鵬拚Robotaxi 新設業務部 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260324000241-260203?utm_source=iii_news&utm_medium=rss",
+    "砸人民幣1.6億 中微半導布局記憶體 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260324000247-260203?utm_source=iii_news&utm_medium=rss",
+    "潘健成：消費電子恐降規保價 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260324000265-260204?utm_source=iii_news&utm_medium=rss",
+    "昕力資揪群聯 組AISO聯盟 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260324000268-260204?utm_source=iii_news&utm_medium=rss",
+    "2026手機平均容量 估年增4.8％ (工商產業科技)": "https://www.chinatimes.com/newspapers/20260324000270-260204?utm_source=iii_news&utm_medium=rss",
+    "智慧城市展成果豐碩 台廠獲國際業者結盟 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260324000274-260204?utm_source=iii_news&utm_medium=rss",
+    "三箭齊發 倍力資訊拚重返成長 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260324000275-260204?utm_source=iii_news&utm_medium=rss",
+    "光罩加碼投資12吋產線 (聯合_產經_股市)": "https://udn.com/news/story/7253/9398098",
+    "友通營運動能穩健攀升 (聯合_產經_股市)": "https://udn.com/news/story/7253/9398102",
+    "Grab砸192億 收購台灣foodpanda (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260324000497-260110?utm_source=iii_news&utm_medium=rss",
+    "美超微涉走私 毛利率不升反降 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260324000507-260110?utm_source=iii_news&utm_medium=rss",
+    "Uber繞道併foodpanda？ 公平會：審核不受舊案影響 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1748046",
+    "漲價？不織布業者：暫未調漲價格 4月是觀察關鍵 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9398587",
+    "工具機展商機衝20億美元 3月25日在台中登場 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9398345",
+    "國瑞汽車外銷日本最大意義…品質對標原廠 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9398343",
+    "中東危機 逾400台廠受衝擊 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9398382",
+    "經濟學人推算美伊停火情境 油氣市場回穩…要四個月 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9398473",
+    "中東戰爭破壞力＝三次能源危機總和 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9398476",
+    "川普連番發話油價走低 先喊延後攻擊 又說將與伊朗達成協議 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9398484",
+    "川普暫停攻擊 喊五天內可能結束戰爭 伊朗：未接觸談判 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9398447",
+    "俄最大油港暫停原油出口 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9398492",
+    "金融時報：全球液化天然氣 瀕臨「供應懸崖」 (聯合_產經_股市)": "https://udn.com/news/story/6811/9398558",
+    "川普暫緩打擊伊朗能源設施 國際油價大跌10% (經濟國際焦點)": "https://money.udn.com/money/story/5599/9398655",
+    "協和擬「邊運轉邊拆廠」 環團抗議 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260324000512-260114?utm_source=iii_news&utm_medium=rss"
+  }
+}
