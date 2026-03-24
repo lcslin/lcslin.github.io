@@ -447,6 +447,56 @@
         let highlightedLinks = new Set();
         let currentLinks = [];
         let currentGraphData = null;
+
+        // Focus State (node/edge click selection)
+        let hasFocus = false;
+        let focusCenterNode = null;   // the node that was clicked
+        let focusOriginLink = null;   // the link that was clicked
+        let focusedNodes = new Set();
+        let focusedLinks = new Set();
+
+        function clearFocus() {
+            hasFocus = false;
+            focusCenterNode = null;
+            focusOriginLink = null;
+            focusedNodes.clear();
+            focusedLinks.clear();
+        }
+
+        function setNodeFocus(node) {
+            clearFocus();
+            hasFocus = true;
+            focusCenterNode = node;
+            focusedNodes.add(node);
+            currentLinks.forEach(link => {
+                const srcId = typeof link.source === 'object' ? link.source.id : link.source;
+                const tgtId = typeof link.target === 'object' ? link.target.id : link.target;
+                if (srcId === node.id || tgtId === node.id) {
+                    focusedLinks.add(link);
+                    if (typeof link.source === 'object') focusedNodes.add(link.source);
+                    if (typeof link.target === 'object') focusedNodes.add(link.target);
+                }
+            });
+        }
+
+        function setLinkFocus(link) {
+            clearFocus();
+            hasFocus = true;
+            focusOriginLink = link;
+            focusedLinks.add(link);
+            if (typeof link.source === 'object') focusedNodes.add(link.source);
+            if (typeof link.target === 'object') focusedNodes.add(link.target);
+        }
+
+        function isNodeActive(node) {
+            if (hasFocus) return focusedNodes.has(node);
+            return (activeFilters.size === 0 && !searchText) || highlightedNodes.has(node);
+        }
+
+        function isLinkActive(link) {
+            if (hasFocus) return focusedLinks.has(link);
+            return (activeFilters.size === 0 && !searchText) || highlightedLinks.has(link);
+        }
         const lastDragPosition = {};
 
         // Layout State
@@ -691,16 +741,16 @@
                 return Math.max(280, sourceRadius + targetRadius + 90);
             }).strength(0.9))
             .d3Force('collision', d3.forceCollide().radius(node => estimateNodeRadius(node) + 28).strength(1))
-            .nodeColor(node => ((activeFilters.size === 0 && !searchText) || highlightedNodes.has(node)) ? getNodeColor(node) : 'rgba(255, 255, 255, 0.06)')
+            .nodeColor(node => isNodeActive(node) ? getNodeColor(node) : 'rgba(255, 255, 255, 0.06)')
             .nodeLabel('id')
-            .linkColor(link => ((activeFilters.size === 0 && !searchText) || highlightedLinks.has(link)) ? 'rgba(0, 160, 210, 0.38)' : 'rgba(255, 255, 255, 0.05)')
-            .linkWidth(link => ((activeFilters.size === 0 && !searchText) || highlightedLinks.has(link)) ? Math.max(1.4, link.value ? Math.sqrt(link.value) * 1.1 : 1.4) : 0.6)
-            .linkDirectionalParticles(link => ((activeFilters.size === 0 && !searchText) || highlightedLinks.has(link)) ? 2 : 0)
+            .linkColor(link => isLinkActive(link) ? (link === focusOriginLink ? 'rgba(242, 101, 34, 0.7)' : 'rgba(0, 160, 210, 0.38)') : 'rgba(255, 255, 255, 0.05)')
+            .linkWidth(link => isLinkActive(link) ? Math.max(1.4, link.value ? Math.sqrt(link.value) * 1.1 : 1.4) : 0.6)
+            .linkDirectionalParticles(link => isLinkActive(link) ? 2 : 0)
             .linkDirectionalParticleWidth(2)
             .linkDirectionalParticleColor(() => '#F26522')
             .onEngineStop(() => fitGraphToViewport(700))
-            .onNodeClick(node => { onNodeClick(node); })
-            .onLinkClick(link => { showToast(link.label, link.reason || ''); })
+            .onNodeClick(node => { setNodeFocus(node); triggerRenderUpdate(); onNodeClick(node); })
+            .onLinkClick(link => { setLinkFocus(link); triggerRenderUpdate(); showToast(link.label, link.reason || ''); })
             .onNodeDrag((node) => {
                 if (typeof node.x === 'number' && typeof node.y === 'number' && Number.isFinite(node.x) && Number.isFinite(node.y)) {
                     lastDragPosition[node.id] = { x: node.x, y: node.y };
@@ -721,7 +771,11 @@
                 delete lastDragPosition[node.id];
             });
         if (typeof Graph.onBackgroundClick === 'function') {
-            Graph.onBackgroundClick(() => newsPanel.classList.remove('visible'));
+            Graph.onBackgroundClick(() => {
+                newsPanel.classList.remove('visible');
+                clearFocus();
+                triggerRenderUpdate();
+            });
         }
 
         // Custom Link Label Rendering
@@ -732,12 +786,13 @@
             const sx = start.x, sy = start.y, ex = end.x, ey = end.y;
             if (typeof sx !== 'number' || typeof sy !== 'number' || typeof ex !== 'number' || typeof ey !== 'number') return;
             if (!Number.isFinite(sx) || !Number.isFinite(sy) || !Number.isFinite(ex) || !Number.isFinite(ey)) return;
-            const isHighlighted = (activeFilters.size === 0 && !searchText) || highlightedLinks.has(link);
+            const isHighlighted = isLinkActive(link);
+            const isFocusOrigin = link === focusOriginLink;
 
             ctx.beginPath();
             ctx.moveTo(sx, sy);
             ctx.lineTo(ex, ey);
-            ctx.strokeStyle = isHighlighted ? 'rgba(0, 160, 210, 0.38)' : 'rgba(255, 255, 255, 0.05)';
+            ctx.strokeStyle = isHighlighted ? (isFocusOrigin ? 'rgba(242, 101, 34, 0.7)' : 'rgba(0, 160, 210, 0.38)') : 'rgba(255, 255, 255, 0.05)';
             ctx.lineWidth = (isHighlighted ? Math.max(1.4, link.value ? Math.sqrt(link.value) * 1.1 : 1.4) : 0.6) / globalScale;
             ctx.stroke();
 
@@ -759,7 +814,7 @@
                 ctx.fillRect(labelX - bckgDimensions[0] / 2, labelY - bckgDimensions[1] / 2, ...bckgDimensions);
                 ctx.textAlign = 'center';
                 ctx.textBaseline = 'middle';
-                ctx.fillStyle = '#00A0D2';
+                ctx.fillStyle = isFocusOrigin ? '#F26522' : '#00A0D2';
                 ctx.fillText(label, labelX, labelY);
             }
         });
@@ -768,7 +823,8 @@
         Graph.nodeCanvasObject((node, ctx, globalScale) => {
             const x = node.x, y = node.y;
             if (typeof x !== 'number' || typeof y !== 'number' || !Number.isFinite(x) || !Number.isFinite(y)) return;
-            const isHighlighted = (activeFilters.size === 0 && !searchText) || highlightedNodes.has(node);
+            const isHighlighted = isNodeActive(node);
+            const isFocusCenter = node === focusCenterNode;
             const label = node.id;
             const fontSize = Math.max(13, 18 / globalScale);
             ctx.font = `${fontSize}px 'Noto Sans TC', sans-serif`;
@@ -779,11 +835,11 @@
             ];
             const boxX = x - bckgDimensions[0] / 2;
             const boxY = y - bckgDimensions[1] / 2;
-            
+
             const groupColor = getNodeColor(node);
             ctx.fillStyle = isHighlighted ? 'rgba(10, 10, 10, 0.93)' : 'rgba(10, 10, 10, 0.18)';
-            ctx.strokeStyle = isHighlighted ? groupColor : 'rgba(50, 50, 50, 0.25)';
-            ctx.lineWidth = (isHighlighted ? 1.5 : 0.8) / globalScale;
+            ctx.strokeStyle = isFocusCenter ? '#F26522' : (isHighlighted ? groupColor : 'rgba(50, 50, 50, 0.25)');
+            ctx.lineWidth = (isFocusCenter ? 2.5 : isHighlighted ? 1.5 : 0.8) / globalScale;
             ctx.fillRect(boxX, boxY, ...bckgDimensions);
             ctx.strokeRect(boxX, boxY, ...bckgDimensions);
             ctx.textAlign = 'center';
@@ -968,6 +1024,7 @@
                 currentLinks = graphData.links || [];
                 activeFilters.clear();
                 searchText = "";
+                clearFocus();
                 searchInput.value = "";
                 updateHighlights();
                 // Normalize node.val from node.size for compatibility (e.g. force-graph / rendering)
