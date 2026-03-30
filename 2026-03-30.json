@@ -1,0 +1,1168 @@
+{
+  "nodes": [
+    {
+      "id": "WTO",
+      "group": "org",
+      "size": 12
+    },
+    {
+      "id": "歐盟",
+      "group": "country",
+      "size": 15
+    },
+    {
+      "id": "中國大陸",
+      "group": "country",
+      "size": 18
+    },
+    {
+      "id": "加拿大",
+      "group": "country",
+      "size": 10
+    },
+    {
+      "id": "央行",
+      "group": "org",
+      "size": 16
+    },
+    {
+      "id": "台幣",
+      "group": "finance",
+      "size": 14
+    },
+    {
+      "id": "立法院",
+      "group": "org",
+      "size": 13
+    },
+    {
+      "id": "行政院",
+      "group": "org",
+      "size": 12
+    },
+    {
+      "id": "韓國",
+      "group": "country",
+      "size": 14
+    },
+    {
+      "id": "AI",
+      "group": "tech",
+      "size": 25
+    },
+    {
+      "id": "Google",
+      "group": "company",
+      "size": 20
+    },
+    {
+      "id": "華邦",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "Anthropic",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "量子電腦",
+      "group": "tech",
+      "size": 18
+    },
+    {
+      "id": "仁寶",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "金寶",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "輝達",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "鴻海",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "廣達",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "台積電",
+      "group": "company",
+      "size": 22
+    },
+    {
+      "id": "三星",
+      "group": "company",
+      "size": 17
+    },
+    {
+      "id": "博通",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "台灣大",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "技嘉",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "車美仕",
+      "group": "company",
+      "size": 9
+    },
+    {
+      "id": "豐田",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "宇樹",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "長榮",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "陽明",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "萬海",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "中鋼",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "富邦金",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "中東",
+      "group": "country",
+      "size": 24
+    },
+    {
+      "id": "伊朗",
+      "group": "country",
+      "size": 20
+    },
+    {
+      "id": "巴林",
+      "group": "country",
+      "size": 12
+    },
+    {
+      "id": "阿聯",
+      "group": "country",
+      "size": 13
+    },
+    {
+      "id": "澳洲",
+      "group": "country",
+      "size": 11
+    },
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 15
+    },
+    {
+      "id": "油價",
+      "group": "finance",
+      "size": 20
+    },
+    {
+      "id": "停滯性通膨",
+      "group": "finance",
+      "size": 16
+    },
+    {
+      "id": "數位貿易",
+      "group": "finance",
+      "size": 13
+    },
+    {
+      "id": "資安",
+      "group": "tech",
+      "size": 15
+    },
+    {
+      "id": "雲端",
+      "group": "tech",
+      "size": 14
+    },
+    {
+      "id": "晶圓代工",
+      "group": "tech",
+      "size": 16
+    },
+    {
+      "id": "光通訊",
+      "group": "tech",
+      "size": 12
+    },
+    {
+      "id": "具身智慧",
+      "group": "tech",
+      "size": 11
+    },
+    {
+      "id": "海運",
+      "group": "finance",
+      "size": 17
+    },
+    {
+      "id": "供應鏈",
+      "group": "finance",
+      "size": 19
+    },
+    {
+      "id": "紡織業",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "鋼鐵市場",
+      "group": "finance",
+      "size": 14
+    },
+    {
+      "id": "LNG",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "鋁材",
+      "group": "finance",
+      "size": 14
+    },
+    {
+      "id": "綠電",
+      "group": "tech",
+      "size": 13
+    },
+    {
+      "id": "環境部",
+      "group": "org",
+      "size": 10
+    }
+  ],
+  "links": [
+    {
+      "source": "WTO",
+      "target": "數位貿易",
+      "value": 5,
+      "label": "國際協議"
+    },
+    {
+      "source": "歐盟",
+      "target": "WTO",
+      "value": 4,
+      "label": "成員參與"
+    },
+    {
+      "source": "中國大陸",
+      "target": "WTO",
+      "value": 4,
+      "label": "成員參與"
+    },
+    {
+      "source": "加拿大",
+      "target": "WTO",
+      "value": 3,
+      "label": "成員參與"
+    },
+    {
+      "source": "中東",
+      "target": "油價",
+      "value": 5,
+      "label": "地緣影響"
+    },
+    {
+      "source": "油價",
+      "target": "停滯性通膨",
+      "value": 5,
+      "label": "經濟衝擊"
+    },
+    {
+      "source": "央行",
+      "target": "台幣",
+      "value": 5,
+      "label": "匯率管理"
+    },
+    {
+      "source": "立法院",
+      "target": "行政院",
+      "value": 4,
+      "label": "預算審議"
+    },
+    {
+      "source": "韓國",
+      "target": "AI",
+      "value": 5,
+      "label": "國家戰略"
+    },
+    {
+      "source": "Google",
+      "target": "資安",
+      "value": 4,
+      "label": "技術推動"
+    },
+    {
+      "source": "Google",
+      "target": "量子電腦",
+      "value": 5,
+      "label": "技術突破"
+    },
+    {
+      "source": "華邦",
+      "target": "資安",
+      "value": 4,
+      "label": "商機受益"
+    },
+    {
+      "source": "Anthropic",
+      "target": "AI",
+      "value": 5,
+      "label": "技術開發"
+    },
+    {
+      "source": "Anthropic",
+      "target": "雲端",
+      "value": 4,
+      "label": "算力需求"
+    },
+    {
+      "source": "量子電腦",
+      "target": "仁寶",
+      "value": 4,
+      "label": "商機機會"
+    },
+    {
+      "source": "量子電腦",
+      "target": "金寶",
+      "value": 4,
+      "label": "商機機會"
+    },
+    {
+      "source": "量子電腦",
+      "target": "輝達",
+      "value": 4,
+      "label": "市場競爭"
+    },
+    {
+      "source": "量子電腦",
+      "target": "鴻海",
+      "value": 4,
+      "label": "商機機會"
+    },
+    {
+      "source": "量子電腦",
+      "target": "廣達",
+      "value": 4,
+      "label": "商機機會"
+    },
+    {
+      "source": "台積電",
+      "target": "晶圓代工",
+      "value": 5,
+      "label": "產業龍頭"
+    },
+    {
+      "source": "三星",
+      "target": "晶圓代工",
+      "value": 5,
+      "label": "罷工危機"
+    },
+    {
+      "source": "博通",
+      "target": "供應鏈",
+      "value": 4,
+      "label": "產業願景"
+    },
+    {
+      "source": "AI",
+      "target": "資安",
+      "value": 4,
+      "label": "應用深化"
+    },
+    {
+      "source": "AI",
+      "target": "雲端",
+      "value": 4,
+      "label": "技術結合"
+    },
+    {
+      "source": "技嘉",
+      "target": "AI",
+      "value": 3,
+      "label": "新廠投資"
+    },
+    {
+      "source": "車美仕",
+      "target": "豐田",
+      "value": 4,
+      "label": "供應鏈核心"
+    },
+    {
+      "source": "中國大陸",
+      "target": "供應鏈",
+      "value": 3,
+      "label": "筆電銷量"
+    },
+    {
+      "source": "宇樹",
+      "target": "具身智慧",
+      "value": 4,
+      "label": "技術突破"
+    },
+    {
+      "source": "中東",
+      "target": "海運",
+      "value": 5,
+      "label": "航道封鎖"
+    },
+    {
+      "source": "海運",
+      "target": "長榮",
+      "value": 4,
+      "label": "運價上漲"
+    },
+    {
+      "source": "海運",
+      "target": "陽明",
+      "value": 4,
+      "label": "運價上漲"
+    },
+    {
+      "source": "海運",
+      "target": "萬海",
+      "value": 4,
+      "label": "運價上漲"
+    },
+    {
+      "source": "中東",
+      "target": "紡織業",
+      "value": 4,
+      "label": "戰火衝擊"
+    },
+    {
+      "source": "紡織業",
+      "target": "供應鏈",
+      "value": 4,
+      "label": "斷鏈危機"
+    },
+    {
+      "source": "澳洲",
+      "target": "LNG",
+      "value": 4,
+      "label": "氣旋影響"
+    },
+    {
+      "source": "鋼鐵市場",
+      "target": "中鋼",
+      "value": 4,
+      "label": "盤價上漲"
+    },
+    {
+      "source": "伊朗",
+      "target": "中東",
+      "value": 5,
+      "label": "地緣衝突"
+    },
+    {
+      "source": "伊朗",
+      "target": "巴林",
+      "value": 5,
+      "label": "軍事襲擊"
+    },
+    {
+      "source": "伊朗",
+      "target": "阿聯",
+      "value": 5,
+      "label": "軍事襲擊"
+    },
+    {
+      "source": "伊朗",
+      "target": "鋁材",
+      "value": 5,
+      "label": "供應衝擊"
+    },
+    {
+      "source": "鋁材",
+      "target": "供應鏈",
+      "value": 5,
+      "label": "斷料危機"
+    },
+    {
+      "source": "中東",
+      "target": "供應鏈",
+      "value": 5,
+      "label": "戰火波及"
+    },
+    {
+      "source": "綠電",
+      "target": "環境部",
+      "value": 3,
+      "label": "政策推動"
+    },
+    {
+      "source": "富邦金",
+      "target": "鋁材",
+      "value": 2,
+      "label": "市場分析"
+    },
+    {
+      "source": "美國",
+      "target": "伊朗",
+      "value": 3,
+      "label": "戰事關係"
+    },
+    {
+      "source": "光通訊",
+      "target": "供應鏈",
+      "value": 3,
+      "label": "產業機會"
+    },
+    {
+      "source": "輝達",
+      "target": "AI",
+      "value": 4,
+      "label": "技術領導"
+    },
+    {
+      "source": "鴻海",
+      "target": "供應鏈",
+      "value": 3,
+      "label": "產業布局"
+    },
+    {
+      "source": "廣達",
+      "target": "供應鏈",
+      "value": 3,
+      "label": "產業布局"
+    },
+    {
+      "source": "長榮",
+      "target": "供應鏈",
+      "value": 3,
+      "label": "航線布局"
+    },
+    {
+      "source": "陽明",
+      "target": "供應鏈",
+      "value": 3,
+      "label": "航線布局"
+    },
+    {
+      "source": "萬海",
+      "target": "供應鏈",
+      "value": 3,
+      "label": "航線布局"
+    },
+    {
+      "source": "中東",
+      "target": "油價",
+      "value": 5,
+      "label": "供應壓力"
+    },
+    {
+      "source": "歐盟",
+      "target": "供應鏈",
+      "value": 3,
+      "label": "貿易影響"
+    }
+  ],
+  "newsDatabase": {
+    "WTO": [
+      {
+        "title": "WTO數位貿易協議邁大步 歐盟、大陸、加國等66成員國同意各自啟動相關程序",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9410505"
+      }
+    ],
+    "歐盟": [
+      {
+        "title": "WTO數位貿易協議邁大步 歐盟、大陸、加國等66成員國同意各自啟動相關程序",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9410505"
+      }
+    ],
+    "中國大陸": [
+      {
+        "title": "WTO數位貿易協議邁大步 歐盟、大陸、加國等66成員國同意各自啟動相關程序",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9410505"
+      },
+      {
+        "title": "陷寒冬 陸筆電開年銷量大跌",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000237-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "加拿大": [
+      {
+        "title": "WTO數位貿易協議邁大步 歐盟、大陸、加國等66成員國同意各自啟動相關程序",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9410505"
+      }
+    ],
+    "央行": [
+      {
+        "title": "阻貶台幣 央行穩匯率 亮銀彈秀肌肉",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9410565"
+      }
+    ],
+    "台幣": [
+      {
+        "title": "阻貶台幣 央行穩匯率 亮銀彈秀肌肉",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9410565"
+      }
+    ],
+    "立法院": [
+      {
+        "title": "總預算98％被立院丟包…政院：應盡速完成審議",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000204-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "行政院": [
+      {
+        "title": "總預算98％被立院丟包…政院：應盡速完成審議",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000204-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "韓國": [
+      {
+        "title": "韓訂三年藍圖 要當 AI 強國",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9410508"
+      }
+    ],
+    "AI": [
+      {
+        "title": "韓訂三年藍圖 要當 AI 強國",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9410508"
+      },
+      {
+        "title": "Anthropic 新 AI 代理用量太大 CSP 搶算力激戰 代工廠開趴",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9410564"
+      },
+      {
+        "title": "AI應用深化，資安及軟體業拓利基 雲端資安躍2026新商機",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000189-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "技嘉小金雞 土城蓋AI新廠",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000265-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Google": [
+      {
+        "title": "Google 呼籲提前布局後量子密碼演算法 華邦躍資安大贏家",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9410559"
+      },
+      {
+        "title": "Google 宣布量子電腦大突破 發展速度超乎預期 鴻海、廣達等迎大商機",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9410555"
+      }
+    ],
+    "華邦": [
+      {
+        "title": "Google 呼籲提前布局後量子密碼演算法 華邦躍資安大贏家",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9410559"
+      }
+    ],
+    "Anthropic": [
+      {
+        "title": "Anthropic 新 AI 代理用量太大 CSP 搶算力激戰 代工廠開趴",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9410564"
+      }
+    ],
+    "量子電腦": [
+      {
+        "title": "量子電腦前景看俏 仁寶、金寶跟著輝達搶市",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9410563"
+      },
+      {
+        "title": "Google 宣布量子電腦大突破 發展速度超乎預期 鴻海、廣達等迎大商機",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9410555"
+      }
+    ],
+    "仁寶": [
+      {
+        "title": "量子電腦前景看俏 仁寶、金寶跟著輝達搶市",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9410563"
+      }
+    ],
+    "金寶": [
+      {
+        "title": "量子電腦前景看俏 仁寶、金寶跟著輝達搶市",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9410563"
+      }
+    ],
+    "輝達": [
+      {
+        "title": "量子電腦前景看俏 仁寶、金寶跟著輝達搶市",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9410563"
+      }
+    ],
+    "鴻海": [
+      {
+        "title": "Google 宣布量子電腦大突破 發展速度超乎預期 鴻海、廣達等迎大商機",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9410555"
+      }
+    ],
+    "廣達": [
+      {
+        "title": "Google 宣布量子電腦大突破 發展速度超乎預期 鴻海、廣達等迎大商機",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9410555"
+      }
+    ],
+    "台積電": [
+      {
+        "title": "台積季線保衛戰 擁3優勢",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000161-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "三星": [
+      {
+        "title": "三星罷工危機延燒晶圓代工 DDIC、PMIC首當其衝",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000164-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "博通": [
+      {
+        "title": "博通200T願景 台廠概念股沾光",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000185-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台灣大": [
+      {
+        "title": "活化資產 台灣大釋出庫藏股",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000254-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "技嘉": [
+      {
+        "title": "技嘉小金雞 土城蓋AI新廠",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000265-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "車美仕": [
+      {
+        "title": "車美仕 坐穩豐田供應鏈核心",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000266-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "豐田": [
+      {
+        "title": "車美仕 坐穩豐田供應鏈核心",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000266-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "宇樹": [
+      {
+        "title": "具身智慧爆發 宇樹：GPT時刻逼近",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000239-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "長榮": [
+      {
+        "title": "貨櫃海運價下月全面走揚 法人樂觀長榮、陽明、萬海後市",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9410514"
+      },
+      {
+        "title": "美伊戰事之下 貨櫃三雄深化亞洲航線布局",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9410519"
+      }
+    ],
+    "陽明": [
+      {
+        "title": "貨櫃海運價下月全面走揚 法人樂觀長榮、陽明、萬海後市",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9410514"
+      },
+      {
+        "title": "美伊戰事之下 貨櫃三雄深化亞洲航線布局",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9410519"
+      }
+    ],
+    "萬海": [
+      {
+        "title": "貨櫃海運價下月全面走揚 法人樂觀長榮、陽明、萬海後市",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9410514"
+      },
+      {
+        "title": "美伊戰事之下 貨櫃三雄深化亞洲航線布局",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9410519"
+      }
+    ],
+    "中鋼": [
+      {
+        "title": "鋼市強勁復甦 上游中鋼盤價直直漲 鋼管報價同步向上",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9410520"
+      }
+    ],
+    "富邦金": [
+      {
+        "title": "全球金屬展望 富邦金：金、銀波動風險高",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000209-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中東": [
+      {
+        "title": "2大地緣衝突壓力！低油價恐成過去式",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9410568"
+      },
+      {
+        "title": "關鍵航道封鎖恐重創亞歐 經濟學人模擬受阻情境",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9410546"
+      },
+      {
+        "title": "戰火外溢曼德海峽…海陸空運4月全漲",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000174-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "戰火無情 紡纖業H1回溫夢碎",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000212-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "戰爭打不停…紡纖廠憂斷鏈",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000216-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "中東戰火波及鋁材供應鏈 台灣鋁加工產業鏈斷料加劇",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9410558"
+      },
+      {
+        "title": "專家：中東局勢對供應衝擊遠勝過去",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000215-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "伊朗": [
+      {
+        "title": "伊朗襲擊巴林、阿聯煉鋁廠 大宗商品荒 燒向鋁供應鏈",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000169-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "巴林": [
+      {
+        "title": "伊朗襲擊巴林、阿聯煉鋁廠 大宗商品荒 燒向鋁供應鏈",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000169-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "阿聯": [
+      {
+        "title": "伊朗襲擊巴林、阿聯煉鋁廠 大宗商品荒 燒向鋁供應鏈",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000169-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "澳洲": [
+      {
+        "title": "熱帶氣旋侵襲 澳洲 LNG 出口受阻加劇短缺",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9410510"
+      }
+    ],
+    "美國": [
+      {
+        "title": "美伊戰事之下 貨櫃三雄深化亞洲航線布局",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9410519"
+      }
+    ],
+    "油價": [
+      {
+        "title": "油市供應遭遇兩大壓力 全球面臨停滯性通膨風暴",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9410557"
+      },
+      {
+        "title": "2大地緣衝突壓力！低油價恐成過去式",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9410568"
+      },
+      {
+        "title": "業者：「低價石油」成過去式",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9410561"
+      }
+    ],
+    "停滯性通膨": [
+      {
+        "title": "油市供應遭遇兩大壓力 全球面臨停滯性通膨風暴",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9410557"
+      }
+    ],
+    "數位貿易": [
+      {
+        "title": "WTO數位貿易協議邁大步 歐盟、大陸、加國等66成員國同意各自啟動相關程序",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9410505"
+      }
+    ],
+    "資安": [
+      {
+        "title": "Google 呼籲提前布局後量子密碼演算法 華邦躍資安大贏家",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9410559"
+      },
+      {
+        "title": "AI應用深化，資安及軟體業拓利基 雲端資安躍2026新商機",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000189-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "雲端": [
+      {
+        "title": "Anthropic 新 AI 代理用量太大 CSP 搶算力激戰 代工廠開趴",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9410564"
+      },
+      {
+        "title": "AI應用深化，資安及軟體業拓利基 雲端資安躍2026新商機",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000189-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "晶圓代工": [
+      {
+        "title": "三星罷工危機延燒晶圓代工 DDIC、PMIC首當其衝",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000164-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "光通訊": [
+      {
+        "title": "ASIC 新賽道 照亮光通訊",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9410567"
+      }
+    ],
+    "具身智慧": [
+      {
+        "title": "具身智慧爆發 宇樹：GPT時刻逼近",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000239-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "海運": [
+      {
+        "title": "關鍵航道封鎖恐重創亞歐 經濟學人模擬受阻情境",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9410546"
+      },
+      {
+        "title": "貨櫃海運價下月全面走揚 法人樂觀長榮、陽明、萬海後市",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9410514"
+      },
+      {
+        "title": "戰火外溢曼德海峽…海陸空運4月全漲",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000174-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "供應鏈": [
+      {
+        "title": "三星罷工危機延燒晶圓代工 DDIC、PMIC首當其衝",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000164-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "車美仕 坐穩豐田供應鏈核心",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000266-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "戰爭打不停…紡纖廠憂斷鏈",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000216-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "中東戰火波及鋁材供應鏈 台灣鋁加工產業鏈斷料加劇",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9410558"
+      },
+      {
+        "title": "伊朗襲擊巴林、阿聯煉鋁廠 大宗商品荒 燒向鋁供應鏈",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000169-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "紡織業": [
+      {
+        "title": "戰火無情 紡纖業H1回溫夢碎",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000212-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "戰爭打不停…紡纖廠憂斷鏈",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000216-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "鋼鐵市場": [
+      {
+        "title": "鋼筋行情向上 主力鋼廠封盤「價高量低」結構短期不易改變",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9410515"
+      },
+      {
+        "title": "鋼市強勁復甦 上游中鋼盤價直直漲 鋼管報價同步向上",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9410520"
+      }
+    ],
+    "LNG": [
+      {
+        "title": "熱帶氣旋侵襲 澳洲 LNG 出口受阻加劇短缺",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9410510"
+      }
+    ],
+    "鋁材": [
+      {
+        "title": "中東戰火波及鋁材供應鏈 台灣鋁加工產業鏈斷料加劇",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9410558"
+      },
+      {
+        "title": "伊朗襲擊巴林、阿聯煉鋁廠 大宗商品荒 燒向鋁供應鏈",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000169-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "綠電": [
+      {
+        "title": "離岸風電後盾！綠電國家融保 再加碼35億",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000205-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "環境部": [
+      {
+        "title": "環境部 擴大綠領人才培訓",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000217-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "綠領培訓課程納入ETS、CBAM",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260330000220-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "WTO數位貿易協議邁大步 歐盟、大陸、加國等66成員國同意各自啟動相關程序 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9410505",
+    "油市供應遭遇兩大壓力 全球面臨停滯性通膨風暴 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9410557",
+    "2大地緣衝突壓力！低油價恐成過去式 (聯合_產經_股市)": "https://udn.com/news/story/7238/9410568",
+    "阻貶台幣 央行穩匯率 亮銀彈秀肌肉 (聯合_產經_股市)": "https://udn.com/news/story/7238/9410565",
+    "總預算98％被立院丟包…政院：應盡速完成審議 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260330000204-260202?utm_source=iii_news&utm_medium=rss",
+    "韓訂三年藍圖 要當 AI 強國 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9410508",
+    "Google 呼籲提前布局後量子密碼演算法 華邦躍資安大贏家 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9410559",
+    "Anthropic 新 AI 代理用量太大 CSP 搶算力激戰 代工廠開趴 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9410564",
+    "ASIC 新賽道 照亮光通訊 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9410567",
+    "量子電腦前景看俏 仁寶、金寶跟著輝達搶市 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9410563",
+    "Google 宣布量子電腦大突破 發展速度超乎預期 鴻海、廣達等迎大商機 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9410555",
+    "台積季線保衛戰 擁3優勢 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260330000161-260202?utm_source=iii_news&utm_medium=rss",
+    "三星罷工危機延燒晶圓代工 DDIC、PMIC首當其衝 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260330000164-260202?utm_source=iii_news&utm_medium=rss",
+    "博通200T願景 台廠概念股沾光 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260330000185-260202?utm_source=iii_news&utm_medium=rss",
+    "AI應用深化，資安及軟體業拓利基 雲端資安躍2026新商機 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260330000189-260202?utm_source=iii_news&utm_medium=rss",
+    "活化資產 台灣大釋出庫藏股 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260330000254-260202?utm_source=iii_news&utm_medium=rss",
+    "跨境電商進口規模 創新高 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260330000264-260202?utm_source=iii_news&utm_medium=rss",
+    "技嘉小金雞 土城蓋AI新廠 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260330000265-260202?utm_source=iii_news&utm_medium=rss",
+    "車美仕 坐穩豐田供應鏈核心 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260330000266-260202?utm_source=iii_news&utm_medium=rss",
+    "陷寒冬 陸筆電開年銷量大跌 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260330000237-260203?utm_source=iii_news&utm_medium=rss",
+    "具身智慧爆發 宇樹：GPT時刻逼近 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260330000239-260203?utm_source=iii_news&utm_medium=rss",
+    "關鍵航道封鎖恐重創亞歐 經濟學人模擬受阻情境 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9410546",
+    "貨櫃海運價下月全面走揚 法人樂觀長榮、陽明、萬海後市 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9410514",
+    "美伊戰事之下 貨櫃三雄深化亞洲航線布局 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9410519",
+    "戰火外溢曼德海峽…海陸空運4月全漲 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260330000174-260202?utm_source=iii_news&utm_medium=rss",
+    "戰火無情 紡纖業H1回溫夢碎 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260330000212-260202?utm_source=iii_news&utm_medium=rss",
+    "戰爭打不停…紡纖廠憂斷鏈 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260330000216-260202?utm_source=iii_news&utm_medium=rss",
+    "退休好生活》失業給付未領完 先就職不吃虧 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260330000499-260110?utm_source=iii_news&utm_medium=rss",
+    "加熱菸上市菸捐持平 疑走私猖獗 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260330000472-260114?utm_source=iii_news&utm_medium=rss",
+    "熱帶氣旋侵襲 澳洲 LNG 出口受阻加劇短缺 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9410510",
+    "鋼筋行情向上 主力鋼廠封盤「價高量低」結構短期不易改變 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9410515",
+    "鋼市強勁復甦 上游中鋼盤價直直漲 鋼管報價同步向上 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9410520",
+    "業者：「低價石油」成過去式 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9410561",
+    "中東戰火波及鋁材供應鏈 台灣鋁加工產業鏈斷料加劇 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9410558",
+    "伊朗襲擊巴林、阿聯煉鋁廠 大宗商品荒 燒向鋁供應鏈 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260330000169-260202?utm_source=iii_news&utm_medium=rss",
+    "缺溴素…阻燃劑等化工品爆斷料危機 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260330000173-260202?utm_source=iii_news&utm_medium=rss",
+    "離岸風電後盾！綠電國家融保 再加碼35億 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260330000205-260202?utm_source=iii_news&utm_medium=rss",
+    "全球金屬展望 富邦金：金、銀波動風險高 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260330000209-260202?utm_source=iii_news&utm_medium=rss",
+    "專家：中東局勢對供應衝擊遠勝過去 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260330000215-260202?utm_source=iii_news&utm_medium=rss",
+    "環境部 擴大綠領人才培訓 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260330000217-260202?utm_source=iii_news&utm_medium=rss",
+    "綠領培訓課程納入ETS、CBAM (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260330000220-260202?utm_source=iii_news&utm_medium=rss"
+  }
+}
