@@ -1,0 +1,1370 @@
+{
+  "nodes": [
+    {
+      "id": "Fed",
+      "group": "org",
+      "size": 20
+    },
+    {
+      "id": "鮑爾",
+      "group": "person",
+      "size": 15
+    },
+    {
+      "id": "台積電",
+      "group": "company",
+      "size": 25
+    },
+    {
+      "id": "輝達",
+      "group": "company",
+      "size": 23
+    },
+    {
+      "id": "三星",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "邁威爾",
+      "group": "company",
+      "size": 17
+    },
+    {
+      "id": "鴻海",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "廣達",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "微軟",
+      "group": "company",
+      "size": 17
+    },
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 22
+    },
+    {
+      "id": "台灣",
+      "group": "country",
+      "size": 20
+    },
+    {
+      "id": "中國",
+      "group": "country",
+      "size": 17
+    },
+    {
+      "id": "伊朗",
+      "group": "country",
+      "size": 19
+    },
+    {
+      "id": "南韓",
+      "group": "country",
+      "size": 14
+    },
+    {
+      "id": "歐元區",
+      "group": "country",
+      "size": 15
+    },
+    {
+      "id": "泰國",
+      "group": "country",
+      "size": 12
+    },
+    {
+      "id": "日本",
+      "group": "country",
+      "size": 13
+    },
+    {
+      "id": "AI",
+      "group": "tech",
+      "size": 24
+    },
+    {
+      "id": "先進製程",
+      "group": "tech",
+      "size": 19
+    },
+    {
+      "id": "矽光子",
+      "group": "tech",
+      "size": 16
+    },
+    {
+      "id": "DRAM",
+      "group": "tech",
+      "size": 15
+    },
+    {
+      "id": "CPO",
+      "group": "tech",
+      "size": 14
+    },
+    {
+      "id": "通膨",
+      "group": "finance",
+      "size": 22
+    },
+    {
+      "id": "美債",
+      "group": "finance",
+      "size": 20
+    },
+    {
+      "id": "升息",
+      "group": "finance",
+      "size": 18
+    },
+    {
+      "id": "油價",
+      "group": "finance",
+      "size": 21
+    },
+    {
+      "id": "IMF",
+      "group": "org",
+      "size": 14
+    },
+    {
+      "id": "台塑集團",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "中油",
+      "group": "company",
+      "size": 17
+    },
+    {
+      "id": "華為",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "文曄",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "張錫",
+      "group": "person",
+      "size": 13
+    },
+    {
+      "id": "賴總統",
+      "group": "person",
+      "size": 14
+    },
+    {
+      "id": "卓揆",
+      "group": "person",
+      "size": 13
+    },
+    {
+      "id": "CPTPP",
+      "group": "org",
+      "size": 12
+    },
+    {
+      "id": "中東",
+      "group": "country",
+      "size": 18
+    },
+    {
+      "id": "乙烯",
+      "group": "finance",
+      "size": 15
+    },
+    {
+      "id": "電動車",
+      "group": "tech",
+      "size": 13
+    },
+    {
+      "id": "伺服器",
+      "group": "tech",
+      "size": 17
+    },
+    {
+      "id": "華碩",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "聯想",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "英飛凌",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "兆易創新",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "長鑫",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "經濟部",
+      "group": "org",
+      "size": 14
+    },
+    {
+      "id": "白宮",
+      "group": "org",
+      "size": 13
+    },
+    {
+      "id": "革命衛隊",
+      "group": "org",
+      "size": 12
+    },
+    {
+      "id": "台經院",
+      "group": "org",
+      "size": 11
+    },
+    {
+      "id": "遠傳",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "中石化",
+      "group": "company",
+      "size": 12
+    }
+  ],
+  "links": [
+    {
+      "source": "Fed",
+      "target": "升息",
+      "value": 5,
+      "label": "政策影響"
+    },
+    {
+      "source": "Fed",
+      "target": "美債",
+      "value": 5,
+      "label": "政策影響"
+    },
+    {
+      "source": "鮑爾",
+      "target": "Fed",
+      "value": 5,
+      "label": "政策制定"
+    },
+    {
+      "source": "鮑爾",
+      "target": "升息",
+      "value": 4,
+      "label": "政策立場"
+    },
+    {
+      "source": "油價",
+      "target": "通膨",
+      "value": 5,
+      "label": "成本推動"
+    },
+    {
+      "source": "油價",
+      "target": "美債",
+      "value": 4,
+      "label": "市場影響"
+    },
+    {
+      "source": "通膨",
+      "target": "升息",
+      "value": 5,
+      "label": "政策應對"
+    },
+    {
+      "source": "歐元區",
+      "target": "通膨",
+      "value": 4,
+      "label": "經濟壓力"
+    },
+    {
+      "source": "南韓",
+      "target": "通膨",
+      "value": 3,
+      "label": "經濟應對"
+    },
+    {
+      "source": "IMF",
+      "target": "通膨",
+      "value": 3,
+      "label": "政策預警"
+    },
+    {
+      "source": "台積電",
+      "target": "先進製程",
+      "value": 5,
+      "label": "技術領先"
+    },
+    {
+      "source": "台積電",
+      "target": "AI",
+      "value": 5,
+      "label": "供應鏈"
+    },
+    {
+      "source": "台積電",
+      "target": "輝達",
+      "value": 5,
+      "label": "商業合作"
+    },
+    {
+      "source": "台積電",
+      "target": "日本",
+      "value": 4,
+      "label": "海外擴產"
+    },
+    {
+      "source": "台積電",
+      "target": "張錫",
+      "value": 3,
+      "label": "投資建議"
+    },
+    {
+      "source": "台積電",
+      "target": "經濟部",
+      "value": 4,
+      "label": "政策核准"
+    },
+    {
+      "source": "三星",
+      "target": "先進製程",
+      "value": 5,
+      "label": "技術競爭"
+    },
+    {
+      "source": "三星",
+      "target": "台積電",
+      "value": 5,
+      "label": "產業競爭"
+    },
+    {
+      "source": "輝達",
+      "target": "AI",
+      "value": 5,
+      "label": "技術領導"
+    },
+    {
+      "source": "輝達",
+      "target": "邁威爾",
+      "value": 5,
+      "label": "商業合作"
+    },
+    {
+      "source": "輝達",
+      "target": "伊朗",
+      "value": 4,
+      "label": "地緣威脅"
+    },
+    {
+      "source": "輝達",
+      "target": "革命衛隊",
+      "value": 4,
+      "label": "安全威脅"
+    },
+    {
+      "source": "邁威爾",
+      "target": "矽光子",
+      "value": 4,
+      "label": "技術合作"
+    },
+    {
+      "source": "微軟",
+      "target": "泰國",
+      "value": 4,
+      "label": "投資擴張"
+    },
+    {
+      "source": "微軟",
+      "target": "鴻海",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "微軟",
+      "target": "廣達",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "鴻海",
+      "target": "AI",
+      "value": 4,
+      "label": "代工製造"
+    },
+    {
+      "source": "廣達",
+      "target": "AI",
+      "value": 4,
+      "label": "代工製造"
+    },
+    {
+      "source": "鴻海",
+      "target": "伺服器",
+      "value": 4,
+      "label": "製造業務"
+    },
+    {
+      "source": "廣達",
+      "target": "伺服器",
+      "value": 4,
+      "label": "製造業務"
+    },
+    {
+      "source": "AI",
+      "target": "先進製程",
+      "value": 5,
+      "label": "技術需求"
+    },
+    {
+      "source": "AI",
+      "target": "DRAM",
+      "value": 4,
+      "label": "技術需求"
+    },
+    {
+      "source": "AI",
+      "target": "伺服器",
+      "value": 5,
+      "label": "應用領域"
+    },
+    {
+      "source": "矽光子",
+      "target": "先進製程",
+      "value": 4,
+      "label": "技術演進"
+    },
+    {
+      "source": "CPO",
+      "target": "矽光子",
+      "value": 4,
+      "label": "技術應用"
+    },
+    {
+      "source": "中東",
+      "target": "伊朗",
+      "value": 5,
+      "label": "地緣衝突"
+    },
+    {
+      "source": "中東",
+      "target": "油價",
+      "value": 5,
+      "label": "供應影響"
+    },
+    {
+      "source": "中東",
+      "target": "美國",
+      "value": 4,
+      "label": "地緣對抗"
+    },
+    {
+      "source": "伊朗",
+      "target": "美國",
+      "value": 5,
+      "label": "地緣對抗"
+    },
+    {
+      "source": "白宮",
+      "target": "伊朗",
+      "value": 4,
+      "label": "軍事對峙"
+    },
+    {
+      "source": "白宮",
+      "target": "美國",
+      "value": 5,
+      "label": "政府機構"
+    },
+    {
+      "source": "革命衛隊",
+      "target": "伊朗",
+      "value": 5,
+      "label": "軍事組織"
+    },
+    {
+      "source": "油價",
+      "target": "台塑集團",
+      "value": 5,
+      "label": "成本影響"
+    },
+    {
+      "source": "油價",
+      "target": "中油",
+      "value": 5,
+      "label": "價格調整"
+    },
+    {
+      "source": "油價",
+      "target": "電動車",
+      "value": 3,
+      "label": "市場影響"
+    },
+    {
+      "source": "台塑集團",
+      "target": "乙烯",
+      "value": 5,
+      "label": "生產供應"
+    },
+    {
+      "source": "台塑集團",
+      "target": "卓揆",
+      "value": 4,
+      "label": "政策協調"
+    },
+    {
+      "source": "中油",
+      "target": "乙烯",
+      "value": 4,
+      "label": "生產供應"
+    },
+    {
+      "source": "中油",
+      "target": "卓揆",
+      "value": 4,
+      "label": "政策協調"
+    },
+    {
+      "source": "中油",
+      "target": "經濟部",
+      "value": 4,
+      "label": "主管機關"
+    },
+    {
+      "source": "卓揆",
+      "target": "台灣",
+      "value": 5,
+      "label": "政策制定"
+    },
+    {
+      "source": "卓揆",
+      "target": "經濟部",
+      "value": 4,
+      "label": "政府協調"
+    },
+    {
+      "source": "賴總統",
+      "target": "台灣",
+      "value": 5,
+      "label": "國家領導"
+    },
+    {
+      "source": "賴總統",
+      "target": "CPTPP",
+      "value": 4,
+      "label": "貿易政策"
+    },
+    {
+      "source": "台灣",
+      "target": "CPTPP",
+      "value": 3,
+      "label": "貿易談判"
+    },
+    {
+      "source": "台經院",
+      "target": "台灣",
+      "value": 3,
+      "label": "經濟研究"
+    },
+    {
+      "source": "華為",
+      "target": "中國",
+      "value": 4,
+      "label": "科技代表"
+    },
+    {
+      "source": "聯想",
+      "target": "中國",
+      "value": 3,
+      "label": "科技代表"
+    },
+    {
+      "source": "兆易創新",
+      "target": "中國",
+      "value": 3,
+      "label": "半導體產業"
+    },
+    {
+      "source": "長鑫",
+      "target": "中國",
+      "value": 3,
+      "label": "半導體產業"
+    },
+    {
+      "source": "兆易創新",
+      "target": "長鑫",
+      "value": 4,
+      "label": "商業合作"
+    },
+    {
+      "source": "兆易創新",
+      "target": "DRAM",
+      "value": 4,
+      "label": "產品擴張"
+    },
+    {
+      "source": "長鑫",
+      "target": "DRAM",
+      "value": 4,
+      "label": "製造生產"
+    },
+    {
+      "source": "中石化",
+      "target": "台塑集團",
+      "value": 3,
+      "label": "產業關聯"
+    },
+    {
+      "source": "文曄",
+      "target": "台灣",
+      "value": 2,
+      "label": "產業代表"
+    },
+    {
+      "source": "華碩",
+      "target": "台灣",
+      "value": 2,
+      "label": "產業代表"
+    },
+    {
+      "source": "遠傳",
+      "target": "台灣",
+      "value": 2,
+      "label": "產業代表"
+    },
+    {
+      "source": "英飛凌",
+      "target": "電動車",
+      "value": 3,
+      "label": "技術供應"
+    },
+    {
+      "source": "日本",
+      "target": "油價",
+      "value": 3,
+      "label": "能源依賴"
+    },
+    {
+      "source": "南韓",
+      "target": "油價",
+      "value": 3,
+      "label": "能源依賴"
+    },
+    {
+      "source": "南韓",
+      "target": "AI",
+      "value": 3,
+      "label": "產業投資"
+    }
+  ],
+  "newsDatabase": {
+    "Fed": [
+      {
+        "title": "Fed 暗示暫不考慮升息 帶動美債價格大漲",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9415062"
+      },
+      {
+        "title": "Fed難降息 金價3月狂瀉13％",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000223-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "鮑爾": [
+      {
+        "title": "鮑爾放鴿 緩和升息疑慮",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000142-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台積電": [
+      {
+        "title": "多頭總司令張錫：台積1,800元以下閉眼買",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000165-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "輝達Rubin改版不減量 台積接單穩",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000175-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "算力需求爆發 Foundry 2.0加速 台積市占續揚",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000180-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台積電COUPE 預計今年量產",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000269-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台積熊本廠升級3奈米 經部准了",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000514-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "輝達": [
+      {
+        "title": "伊朗革命衛隊：再有領袖遇刺 將攻擊輝達等美企",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9415272"
+      },
+      {
+        "title": "輝達結盟邁威爾衝刺光通訊 台鏈沾光 華星光也將受惠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9415059"
+      },
+      {
+        "title": "Rubin Ultra傳架構調整 衝擊AI鏈",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000172-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "輝達Rubin改版不減量 台積接單穩",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000175-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "輝達斥20億美元 投資邁威爾 強化NVLink生態系",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000183-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "三星": [
+      {
+        "title": "三星喊推1奈米再槓台積 2030年前到位、量產 業界首家釋出藍圖",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9415056"
+      }
+    ],
+    "邁威爾": [
+      {
+        "title": "輝達結盟邁威爾衝刺光通訊 台鏈沾光 華星光也將受惠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9415059"
+      },
+      {
+        "title": "輝達斥20億美元 投資邁威爾 強化NVLink生態系",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000183-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "鴻海": [
+      {
+        "title": "微軟投資泰國320億 鴻海、廣達等協力廠迎新訂單",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9415065"
+      },
+      {
+        "title": "ODM三雄 大啖AI伺服器紅利",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000176-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "廣達": [
+      {
+        "title": "微軟投資泰國320億 鴻海、廣達等協力廠迎新訂單",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9415065"
+      },
+      {
+        "title": "ODM三雄 大啖AI伺服器紅利",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000176-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "微軟": [
+      {
+        "title": "微軟投資泰國320億 鴻海、廣達等協力廠迎新訂單",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9415065"
+      }
+    ],
+    "美國": [
+      {
+        "title": "白宮：美軍已準備好反制伊朗任何攻擊",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9415313"
+      },
+      {
+        "title": "美伊釋出緩和衝突訊號 國際油價收盤互有漲跌",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9415319"
+      },
+      {
+        "title": "美汽油每加侖升破4美元 3年新高",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000228-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美晶片股3月慘跌 後市看俏",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000235-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台灣": [
+      {
+        "title": "賴總統籲英挺台入CPTPP",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000184-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台經院：2月製造業景氣 亮黃藍燈",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000156-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中國": [
+      {
+        "title": "陸製造業3月PMI 重返擴張",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000241-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "華為去年獲利年增8.7％",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000248-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "兆易創新攜長鑫 擴DRAM版圖",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000251-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "伊朗": [
+      {
+        "title": "伊朗革命衛隊：再有領袖遇刺 將攻擊輝達等美企",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9415272"
+      },
+      {
+        "title": "白宮：美軍已準備好反制伊朗任何攻擊",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9415313"
+      },
+      {
+        "title": "美伊釋出緩和衝突訊號 國際油價收盤互有漲跌",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9415319"
+      }
+    ],
+    "南韓": [
+      {
+        "title": "南韓拚物價凍漲 將追加預算 金額達173億美元",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9415078"
+      },
+      {
+        "title": "韓AI晶片新創 募資4億美元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000237-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "中東斷「氣」危機 日韓啟動燃煤應急",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1749072"
+      }
+    ],
+    "歐元區": [
+      {
+        "title": "歐元區通膨升至一年新高 3月 CPI 年增2.5%",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9415082"
+      },
+      {
+        "title": "因應能源危機 歐盟稱有必要壓低燃料需求",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9415311"
+      }
+    ],
+    "泰國": [
+      {
+        "title": "微軟投資泰國320億 鴻海、廣達等協力廠迎新訂單",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9415065"
+      }
+    ],
+    "日本": [
+      {
+        "title": "台積熊本廠升級3奈米 經部准了",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000514-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "中東斷「氣」危機 日韓啟動燃煤應急",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1749072"
+      }
+    ],
+    "AI": [
+      {
+        "title": "Rubin Ultra傳架構調整 衝擊AI鏈",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000172-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "ODM三雄 大啖AI伺服器紅利",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000176-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "機櫃價值量增 電力、熱管理 成AI基建新戰場",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000177-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "算力需求爆發 Foundry 2.0加速 台積市占續揚",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000180-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "顯示產業串聯AI智造 打造產業生態系",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9415038"
+      },
+      {
+        "title": "韓AI晶片新創 募資4億美元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000237-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "先進製程": [
+      {
+        "title": "三星喊推1奈米再槓台積 2030年前到位、量產 業界首家釋出藍圖",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9415056"
+      },
+      {
+        "title": "晶圓代工廠先進製程持續推進 協力廠將吃香喝辣",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9415098"
+      },
+      {
+        "title": "台積熊本廠升級3奈米 經部准了",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000514-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "矽光子": [
+      {
+        "title": "「光進銅退」大時代 面板雙虎轉型進擊矽光子",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9415037"
+      },
+      {
+        "title": "Touch Taiwan展下週登場 矽光子吸睛",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1749175"
+      }
+    ],
+    "DRAM": [
+      {
+        "title": "兆易創新攜長鑫 擴DRAM版圖",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000251-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "DRAM、NAND Q2報價齊漲",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000275-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "記憶體需求傳變數 專家提5觀察重點",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000518-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "CPO": [
+      {
+        "title": "TDUA：看好CPO兩年後商業化",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000271-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "通膨": [
+      {
+        "title": "全球央行掀美債拋售潮 凸顯能源價飆漲 迫使石油進口國支撐經濟及匯率",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9415054"
+      },
+      {
+        "title": "歐元區通膨升至一年新高 3月 CPI 年增2.5%",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9415082"
+      },
+      {
+        "title": "南韓拚物價凍漲 將追加預算 金額達173億美元",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9415078"
+      },
+      {
+        "title": "阻貶抗通膨 全球央行拋美債",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000145-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "IMF示警 全球高物價、低成長",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9415175"
+      }
+    ],
+    "美債": [
+      {
+        "title": "全球央行掀美債拋售潮 凸顯能源價飆漲 迫使石油進口國支撐經濟及匯率",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9415054"
+      },
+      {
+        "title": "Fed 暗示暫不考慮升息 帶動美債價格大漲",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9415062"
+      },
+      {
+        "title": "阻貶抗通膨 全球央行拋美債",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000145-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "升息": [
+      {
+        "title": "Fed 暗示暫不考慮升息 帶動美債價格大漲",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9415062"
+      },
+      {
+        "title": "鮑爾放鴿 緩和升息疑慮",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000142-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "油價": [
+      {
+        "title": "全球央行掀美債拋售潮 凸顯能源價飆漲 迫使石油進口國支撐經濟及匯率",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9415054"
+      },
+      {
+        "title": "油價居高不下 客戶來台搶料 台塑集團產品全面漲價",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9415146"
+      },
+      {
+        "title": "油價居高不下…客戶來台搶料 台塑集團產品全面漲價",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9415146"
+      },
+      {
+        "title": "加油焦慮...電動車人氣回溫",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9415138"
+      },
+      {
+        "title": "美伊釋出緩和衝突訊號 國際油價收盤互有漲跌",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9415319"
+      },
+      {
+        "title": "美汽油每加侖升破4美元 3年新高",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000228-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "IMF": [
+      {
+        "title": "IMF示警 全球高物價、低成長",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9415175"
+      }
+    ],
+    "台塑集團": [
+      {
+        "title": "油價居高不下 客戶來台搶料 台塑集團產品全面漲價",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9415146"
+      },
+      {
+        "title": "油價居高不下…客戶來台搶料 台塑集團產品全面漲價",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9415146"
+      },
+      {
+        "title": "卓揆：敦促中油、協調台塑增產乙烯",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000153-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中油": [
+      {
+        "title": "卓揆：敦促中油、協調台塑增產乙烯",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000153-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "中油：工業用戶天然氣漲5％",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000150-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "華為": [
+      {
+        "title": "華為去年獲利年增8.7％",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000248-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "文曄": [
+      {
+        "title": "文曄配息7.8元 創新高",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9415188"
+      }
+    ],
+    "張錫": [
+      {
+        "title": "多頭總司令張錫：台積1,800元以下閉眼買",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000165-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "賴總統": [
+      {
+        "title": "賴總統籲英挺台入CPTPP",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000184-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "卓揆": [
+      {
+        "title": "卓揆：敦促中油、協調台塑增產乙烯",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000153-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "塑膠包材漲價 卓揆：戰事超越當初預期",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9415057"
+      }
+    ],
+    "CPTPP": [
+      {
+        "title": "賴總統籲英挺台入CPTPP",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000184-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中東": [
+      {
+        "title": "中東戰火燒出「塑膠袋之亂」 政府部門總動員三路應變",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9415103"
+      },
+      {
+        "title": "中東斷「氣」危機 日韓啟動燃煤應急",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1749072"
+      }
+    ],
+    "乙烯": [
+      {
+        "title": "卓揆：敦促中油、協調台塑增產乙烯",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000153-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "電動車": [
+      {
+        "title": "加油焦慮...電動車人氣回溫",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9415138"
+      },
+      {
+        "title": "英飛凌攻800V商機 H2發力",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000266-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "伺服器": [
+      {
+        "title": "ODM三雄 大啖AI伺服器紅利",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000176-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "華碩": [
+      {
+        "title": "華碩電競螢幕 新品齊發",
+        "source": "",
+        "url": "https://udn.com/news/story/7253/9414744"
+      }
+    ],
+    "聯想": [
+      {
+        "title": "槓蘋果 聯想推養蝦專用PC",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000244-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "英飛凌": [
+      {
+        "title": "英飛凌攻800V商機 H2發力",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000266-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "兆易創新": [
+      {
+        "title": "兆易創新攜長鑫 擴DRAM版圖",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000251-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "長鑫": [
+      {
+        "title": "兆易創新攜長鑫 擴DRAM版圖",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000251-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "經濟部": [
+      {
+        "title": "經部出手 確保塑膠袋穩供應",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000188-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台積熊本廠升級3奈米 經部准了",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000514-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "白宮": [
+      {
+        "title": "白宮：美軍已準備好反制伊朗任何攻擊",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9415313"
+      }
+    ],
+    "革命衛隊": [
+      {
+        "title": "伊朗革命衛隊：再有領袖遇刺 將攻擊輝達等美企",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9415272"
+      }
+    ],
+    "台經院": [
+      {
+        "title": "台經院：2月製造業景氣 亮黃藍燈",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000156-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "遠傳": [
+      {
+        "title": "遠傳電信扮推手 2029智慧運輸世界大會在台北",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260401000274-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中石化": [
+      {
+        "title": "只花1塊錢 中石化買高雄塑酯60%股權 成全資子公司",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9415041"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "全球央行掀美債拋售潮 凸顯能源價飆漲 迫使石油進口國支撐經濟及匯率 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9415054",
+    "Fed 暗示暫不考慮升息 帶動美債價格大漲 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9415062",
+    "南韓拚物價凍漲 將追加預算 金額達173億美元 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9415078",
+    "大馬小幅上修 GDP 成長預測 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9415090",
+    "歐元區通膨升至一年新高 3月 CPI 年增2.5% (經濟國際焦點)": "https://money.udn.com/money/story/5599/9415082",
+    "IMF示警 全球高物價、低成長 (聯合_產經_股市)": "https://udn.com/news/story/6811/9415175",
+    "鮑爾放鴿 緩和升息疑慮 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260401000142-260202?utm_source=iii_news&utm_medium=rss",
+    "阻貶抗通膨 全球央行拋美債 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260401000145-260202?utm_source=iii_news&utm_medium=rss",
+    "台經院：2月製造業景氣 亮黃藍燈 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260401000156-260202?utm_source=iii_news&utm_medium=rss",
+    "戰事若延續至下半年…學者憂經濟成長恐折半 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260401000159-260202?utm_source=iii_news&utm_medium=rss",
+    "賴總統籲英挺台入CPTPP (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260401000184-260202?utm_source=iii_news&utm_medium=rss",
+    "Fed難降息 金價3月狂瀉13％ (工商全球財經)": "https://www.chinatimes.com/newspapers/20260401000223-260203?utm_source=iii_news&utm_medium=rss",
+    "陸製造業3月PMI 重返擴張 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260401000241-260203?utm_source=iii_news&utm_medium=rss",
+    "微軟投資泰國320億 鴻海、廣達等協力廠迎新訂單 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9415065",
+    "文曄配息7.8元 創新高 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9415188",
+    "伊朗革命衛隊：再有領袖遇刺 將攻擊輝達等美企 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9415272",
+    "三星喊推1奈米再槓台積 2030年前到位、量產 業界首家釋出藍圖 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9415056",
+    "晶圓代工廠先進製程持續推進 協力廠將吃香喝辣 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9415098",
+    "輝達結盟邁威爾衝刺光通訊 台鏈沾光 華星光也將受惠 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9415059",
+    "白宮：美軍已準備好反制伊朗任何攻擊 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9415313",
+    "「光進銅退」大時代 面板雙虎轉型進擊矽光子 (聯合_產經_股市)": "https://udn.com/news/story/7240/9415037",
+    "友勁補虧損 擬減資8% (聯合_產經_股市)": "https://udn.com/news/story/7253/9414804",
+    "神基衝刺無人機應用 看好2026年相關業務成長 (聯合_產經_股市)": "https://udn.com/news/story/7253/9414741",
+    "網通廠搶開放網路商機 (聯合_產經_股市)": "https://udn.com/news/story/7240/9414802",
+    "顯示產業串聯AI智造 打造產業生態系 (聯合_產經_股市)": "https://udn.com/news/story/7240/9415038",
+    "華碩電競螢幕 新品齊發 (聯合_產經_股市)": "https://udn.com/news/story/7253/9414744",
+    "多頭總司令張錫：台積1,800元以下閉眼買 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260401000165-260202?utm_source=iii_news&utm_medium=rss",
+    "Rubin Ultra傳架構調整 衝擊AI鏈 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260401000172-260202?utm_source=iii_news&utm_medium=rss",
+    "輝達Rubin改版不減量 台積接單穩 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260401000175-260202?utm_source=iii_news&utm_medium=rss",
+    "ODM三雄 大啖AI伺服器紅利 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260401000176-260202?utm_source=iii_news&utm_medium=rss",
+    "機櫃價值量增 電力、熱管理 成AI基建新戰場 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260401000177-260202?utm_source=iii_news&utm_medium=rss",
+    "算力需求爆發 Foundry 2.0加速 台積市占續揚 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260401000180-260202?utm_source=iii_news&utm_medium=rss",
+    "輝達斥20億美元 投資邁威爾 強化NVLink生態系 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260401000183-260202?utm_source=iii_news&utm_medium=rss",
+    "美晶片股3月慘跌 後市看俏 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260401000235-260203?utm_source=iii_news&utm_medium=rss",
+    "韓AI晶片新創 募資4億美元 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260401000237-260203?utm_source=iii_news&utm_medium=rss",
+    "槓蘋果 聯想推養蝦專用PC (工商全球財經)": "https://www.chinatimes.com/newspapers/20260401000244-260203?utm_source=iii_news&utm_medium=rss",
+    "華為去年獲利年增8.7％ (工商全球財經)": "https://www.chinatimes.com/newspapers/20260401000248-260203?utm_source=iii_news&utm_medium=rss",
+    "兆易創新攜長鑫 擴DRAM版圖 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260401000251-260203?utm_source=iii_news&utm_medium=rss",
+    "英飛凌攻800V商機 H2發力 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260401000266-260204?utm_source=iii_news&utm_medium=rss",
+    "台積電COUPE 預計今年量產 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260401000269-260204?utm_source=iii_news&utm_medium=rss",
+    "TDUA：看好CPO兩年後商業化 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260401000271-260204?utm_source=iii_news&utm_medium=rss",
+    "大量半導體事業 分割讓與子公司 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260401000273-260204?utm_source=iii_news&utm_medium=rss",
+    "遠傳電信扮推手 2029智慧運輸世界大會在台北 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260401000274-260204?utm_source=iii_news&utm_medium=rss",
+    "DRAM、NAND Q2報價齊漲 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260401000275-260204?utm_source=iii_news&utm_medium=rss",
+    "達運場域創新解方 奪四獎 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260401000276-260204?utm_source=iii_news&utm_medium=rss",
+    "南科2025營收衝3兆 再創新高 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260401000437-260204?utm_source=iii_news&utm_medium=rss",
+    "電信、電視業強攻寬頻 (聯合_產經_股市)": "https://udn.com/news/story/7241/9414750",
+    "橘子遊戲改版 賺連假財 (聯合_產經_股市)": "https://udn.com/news/story/7254/9414751",
+    "利機第2季業績有望增溫 (聯合_產經_股市)": "https://udn.com/news/story/7254/9414754",
+    "台積熊本廠升級3奈米 經部准了 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260401000514-260110?utm_source=iii_news&utm_medium=rss",
+    "記憶體需求傳變數 專家提5觀察重點 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260401000518-260110?utm_source=iii_news&utm_medium=rss",
+    "Touch Taiwan展下週登場 矽光子吸睛 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1749175",
+    "萬泰科2026年營收衝百億 (聯合_產經_股市)": "https://udn.com/news/story/7254/9414716",
+    "智通海外雙核心出擊 (聯合_產經_股市)": "https://udn.com/news/story/7254/9414718",
+    "流感疫苗購705萬劑 加強型首納公費 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260401000501-260114?utm_source=iii_news&utm_medium=rss",
+    "只花1塊錢 中石化買高雄塑酯60%股權 成全資子公司 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9415041",
+    "油價居高不下 客戶來台搶料 台塑集團產品全面漲價 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9415146",
+    "油價居高不下…客戶來台搶料 台塑集團產品全面漲價 (聯合_產經_股市)": "https://udn.com/news/story/7238/9415146",
+    "物價聯合小組 3地稽查囤積哄抬 (聯合_產經_股市)": "https://udn.com/news/story/7238/9415068",
+    "中東戰火燒出「塑膠袋之亂」 政府部門總動員三路應變 (聯合_產經_股市)": "https://udn.com/news/story/7238/9415103",
+    "塑膠包材漲價 卓揆：戰事超越當初預期 (聯合_產經_股市)": "https://udn.com/news/story/7238/9415057",
+    "卓揆：敦促中油、協調台塑增產乙烯 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260401000153-260202?utm_source=iii_news&utm_medium=rss",
+    "經部出手 確保塑膠袋穩供應 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260401000188-260202?utm_source=iii_news&utm_medium=rss",
+    "加油焦慮...電動車人氣回溫 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9415138",
+    "因應能源危機 歐盟稱有必要壓低燃料需求 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9415311",
+    "美伊釋出緩和衝突訊號 國際油價收盤互有漲跌 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9415319",
+    "中油：工業用戶天然氣漲5％ (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260401000150-260202?utm_source=iii_news&utm_medium=rss",
+    "美汽油每加侖升破4美元 3年新高 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260401000228-260203?utm_source=iii_news&utm_medium=rss",
+    "中東斷「氣」危機 日韓啟動燃煤應急 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1749072"
+  }
+}
