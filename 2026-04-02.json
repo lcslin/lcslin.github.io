@@ -1,0 +1,1451 @@
+{
+  "nodes": [
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 25
+    },
+    {
+      "id": "南韓",
+      "group": "country",
+      "size": 18
+    },
+    {
+      "id": "台灣",
+      "group": "country",
+      "size": 20
+    },
+    {
+      "id": "中國",
+      "group": "country",
+      "size": 15
+    },
+    {
+      "id": "伊朗",
+      "group": "country",
+      "size": 16
+    },
+    {
+      "id": "印度",
+      "group": "country",
+      "size": 12
+    },
+    {
+      "id": "中東",
+      "group": "country",
+      "size": 17
+    },
+    {
+      "id": "亞洲",
+      "group": "country",
+      "size": 14
+    },
+    {
+      "id": "輝達",
+      "group": "company",
+      "size": 22
+    },
+    {
+      "id": "台積電",
+      "group": "company",
+      "size": 23
+    },
+    {
+      "id": "聯發科",
+      "group": "company",
+      "size": 20
+    },
+    {
+      "id": "鴻海",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "亞馬遜",
+      "group": "company",
+      "size": 17
+    },
+    {
+      "id": "華碩",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "鎧俠",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "華邦",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "旺宏",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "甲骨文",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "OpenAI",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "世芯",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "瑞昱",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "聯詠",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "特斯拉",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "達美航空",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "華航",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "長榮航",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "星宇",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "中鋼",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "台塑",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "台塑化",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "中油",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "福特",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "力積電",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "聯想",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "Intel",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "群聯",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "MARVELL",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "半導體",
+      "group": "tech",
+      "size": 24
+    },
+    {
+      "id": "AI",
+      "group": "tech",
+      "size": 23
+    },
+    {
+      "id": "NAND Flash",
+      "group": "tech",
+      "size": 16
+    },
+    {
+      "id": "製造業",
+      "group": "tech",
+      "size": 17
+    },
+    {
+      "id": "IC設計",
+      "group": "tech",
+      "size": 15
+    },
+    {
+      "id": "電動車",
+      "group": "tech",
+      "size": 15
+    },
+    {
+      "id": "關稅",
+      "group": "finance",
+      "size": 22
+    },
+    {
+      "id": "出口",
+      "group": "finance",
+      "size": 19
+    },
+    {
+      "id": "油價",
+      "group": "finance",
+      "size": 20
+    },
+    {
+      "id": "新台幣",
+      "group": "finance",
+      "size": 14
+    },
+    {
+      "id": "PMI",
+      "group": "finance",
+      "size": 15
+    },
+    {
+      "id": "稅收",
+      "group": "finance",
+      "size": 14
+    },
+    {
+      "id": "虛擬資產",
+      "group": "finance",
+      "size": 13
+    },
+    {
+      "id": "中經院",
+      "group": "org",
+      "size": 12
+    }
+  ],
+  "links": [
+    {
+      "source": "中東",
+      "target": "製造業",
+      "value": 4,
+      "label": "戰事衝擊"
+    },
+    {
+      "source": "中東",
+      "target": "亞洲",
+      "value": 4,
+      "label": "影響經濟"
+    },
+    {
+      "source": "美國",
+      "target": "關稅",
+      "value": 5,
+      "label": "貿易政策"
+    },
+    {
+      "source": "南韓",
+      "target": "出口",
+      "value": 5,
+      "label": "成長強勁"
+    },
+    {
+      "source": "南韓",
+      "target": "半導體",
+      "value": 5,
+      "label": "外銷創新高"
+    },
+    {
+      "source": "台灣",
+      "target": "美國",
+      "value": 4,
+      "label": "貿易承諾"
+    },
+    {
+      "source": "關稅",
+      "target": "稅收",
+      "value": 4,
+      "label": "進口車免稅衝擊"
+    },
+    {
+      "source": "美國",
+      "target": "PMI",
+      "value": 3,
+      "label": "製造業走揚"
+    },
+    {
+      "source": "中國",
+      "target": "PMI",
+      "value": 3,
+      "label": "製造業遜預期"
+    },
+    {
+      "source": "中東",
+      "target": "新台幣",
+      "value": 3,
+      "label": "局勢影響匯率"
+    },
+    {
+      "source": "亞馬遜",
+      "target": "達美航空",
+      "value": 3,
+      "label": "商業合作"
+    },
+    {
+      "source": "伊朗",
+      "target": "亞馬遜",
+      "value": 4,
+      "label": "報復襲擊"
+    },
+    {
+      "source": "鎧俠",
+      "target": "NAND Flash",
+      "value": 4,
+      "label": "停產"
+    },
+    {
+      "source": "華邦",
+      "target": "NAND Flash",
+      "value": 4,
+      "label": "轉單利多"
+    },
+    {
+      "source": "旺宏",
+      "target": "NAND Flash",
+      "value": 4,
+      "label": "轉單利多"
+    },
+    {
+      "source": "輝達",
+      "target": "IC設計",
+      "value": 5,
+      "label": "全球龍頭"
+    },
+    {
+      "source": "聯發科",
+      "target": "IC設計",
+      "value": 4,
+      "label": "上榜企業"
+    },
+    {
+      "source": "瑞昱",
+      "target": "IC設計",
+      "value": 3,
+      "label": "上榜企業"
+    },
+    {
+      "source": "聯詠",
+      "target": "IC設計",
+      "value": 3,
+      "label": "上榜企業"
+    },
+    {
+      "source": "台灣",
+      "target": "虛擬資產",
+      "value": 3,
+      "label": "立法推動"
+    },
+    {
+      "source": "鴻海",
+      "target": "台灣",
+      "value": 3,
+      "label": "輪值CEO異動"
+    },
+    {
+      "source": "世芯",
+      "target": "AI",
+      "value": 4,
+      "label": "AI晶片出貨"
+    },
+    {
+      "source": "甲骨文",
+      "target": "AI",
+      "value": 4,
+      "label": "裁員節省成本"
+    },
+    {
+      "source": "聯發科",
+      "target": "半導體",
+      "value": 4,
+      "label": "下修投片量"
+    },
+    {
+      "source": "OpenAI",
+      "target": "AI",
+      "value": 5,
+      "label": "募資創紀錄"
+    },
+    {
+      "source": "台積電",
+      "target": "半導體",
+      "value": 5,
+      "label": "產業領導"
+    },
+    {
+      "source": "聯想",
+      "target": "AI",
+      "value": 3,
+      "label": "全面轉型"
+    },
+    {
+      "source": "印度",
+      "target": "半導體",
+      "value": 4,
+      "label": "產業布局"
+    },
+    {
+      "source": "鴻海",
+      "target": "印度",
+      "value": 3,
+      "label": "投資半導體"
+    },
+    {
+      "source": "力積電",
+      "target": "印度",
+      "value": 3,
+      "label": "投資半導體"
+    },
+    {
+      "source": "Intel",
+      "target": "群聯",
+      "value": 3,
+      "label": "技術合作"
+    },
+    {
+      "source": "輝達",
+      "target": "MARVELL",
+      "value": 4,
+      "label": "投資20億美元"
+    },
+    {
+      "source": "油價",
+      "target": "華航",
+      "value": 4,
+      "label": "燃油附加費上漲"
+    },
+    {
+      "source": "油價",
+      "target": "長榮航",
+      "value": 4,
+      "label": "燃油附加費上漲"
+    },
+    {
+      "source": "油價",
+      "target": "星宇",
+      "value": 4,
+      "label": "燃油附加費上漲"
+    },
+    {
+      "source": "油價",
+      "target": "中油",
+      "value": 5,
+      "label": "成本負擔"
+    },
+    {
+      "source": "台塑",
+      "target": "台塑化",
+      "value": 3,
+      "label": "集團關係"
+    },
+    {
+      "source": "關稅",
+      "target": "福特",
+      "value": 4,
+      "label": "零關稅搶市"
+    },
+    {
+      "source": "美國",
+      "target": "伊朗",
+      "value": 5,
+      "label": "戰爭與和談"
+    },
+    {
+      "source": "中東",
+      "target": "油價",
+      "value": 5,
+      "label": "戰事影響"
+    },
+    {
+      "source": "特斯拉",
+      "target": "電動車",
+      "value": 4,
+      "label": "歐洲掛牌激增"
+    },
+    {
+      "source": "油價",
+      "target": "電動車",
+      "value": 4,
+      "label": "危機帶動買氣"
+    },
+    {
+      "source": "中經院",
+      "target": "台灣",
+      "value": 3,
+      "label": "產業分析"
+    },
+    {
+      "source": "華碩",
+      "target": "AI",
+      "value": 3,
+      "label": "新事業布局"
+    },
+    {
+      "source": "中鋼",
+      "target": "台灣",
+      "value": 3,
+      "label": "價格調整"
+    },
+    {
+      "source": "半導體",
+      "target": "台灣",
+      "value": 5,
+      "label": "產業核心"
+    },
+    {
+      "source": "AI",
+      "target": "半導體",
+      "value": 5,
+      "label": "晶片需求"
+    },
+    {
+      "source": "關稅",
+      "target": "台灣",
+      "value": 4,
+      "label": "稅收衝擊"
+    },
+    {
+      "source": "美國",
+      "target": "出口",
+      "value": 3,
+      "label": "就業數據"
+    },
+    {
+      "source": "製造業",
+      "target": "PMI",
+      "value": 4,
+      "label": "景氣指標"
+    },
+    {
+      "source": "半導體",
+      "target": "出口",
+      "value": 4,
+      "label": "外銷主力"
+    },
+    {
+      "source": "NAND Flash",
+      "target": "半導體",
+      "value": 4,
+      "label": "記憶體產業"
+    },
+    {
+      "source": "IC設計",
+      "target": "半導體",
+      "value": 5,
+      "label": "產業鏈環節"
+    },
+    {
+      "source": "AI",
+      "target": "台積電",
+      "value": 4,
+      "label": "晶片代工"
+    },
+    {
+      "source": "AI",
+      "target": "輝達",
+      "value": 5,
+      "label": "AI晶片領導"
+    },
+    {
+      "source": "OpenAI",
+      "target": "美國",
+      "value": 4,
+      "label": "募資市場"
+    },
+    {
+      "source": "甲骨文",
+      "target": "美國",
+      "value": 3,
+      "label": "企業裁員"
+    },
+    {
+      "source": "油價",
+      "target": "伊朗",
+      "value": 4,
+      "label": "地緣政治"
+    },
+    {
+      "source": "中東",
+      "target": "伊朗",
+      "value": 5,
+      "label": "區域衝突"
+    },
+    {
+      "source": "電動車",
+      "target": "亞洲",
+      "value": 3,
+      "label": "市場需求"
+    },
+    {
+      "source": "關稅",
+      "target": "電動車",
+      "value": 3,
+      "label": "政策影響"
+    },
+    {
+      "source": "台灣",
+      "target": "新台幣",
+      "value": 3,
+      "label": "匯率變動"
+    },
+    {
+      "source": "出口",
+      "target": "台灣",
+      "value": 4,
+      "label": "貿易活動"
+    },
+    {
+      "source": "製造業",
+      "target": "台灣",
+      "value": 4,
+      "label": "產業動能"
+    },
+    {
+      "source": "油價",
+      "target": "台灣",
+      "value": 3,
+      "label": "能源成本"
+    },
+    {
+      "source": "南韓",
+      "target": "台灣",
+      "value": 3,
+      "label": "產業競爭"
+    },
+    {
+      "source": "中國",
+      "target": "製造業",
+      "value": 3,
+      "label": "產業表現"
+    },
+    {
+      "source": "印度",
+      "target": "鴻海",
+      "value": 3,
+      "label": "投資布局"
+    },
+    {
+      "source": "聯發科",
+      "target": "台灣",
+      "value": 4,
+      "label": "本土企業"
+    },
+    {
+      "source": "鴻海",
+      "target": "半導體",
+      "value": 3,
+      "label": "供應鏈角色"
+    },
+    {
+      "source": "華航",
+      "target": "長榮航",
+      "value": 4,
+      "label": "產業競爭"
+    },
+    {
+      "source": "華航",
+      "target": "台灣",
+      "value": 3,
+      "label": "本土航空"
+    },
+    {
+      "source": "台塑",
+      "target": "油價",
+      "value": 3,
+      "label": "石化產業"
+    },
+    {
+      "source": "福特",
+      "target": "美國",
+      "value": 3,
+      "label": "美製車輸台"
+    },
+    {
+      "source": "福特",
+      "target": "關稅",
+      "value": 4,
+      "label": "零關稅優勢"
+    },
+    {
+      "source": "特斯拉",
+      "target": "美國",
+      "value": 3,
+      "label": "美國車廠"
+    }
+  ],
+  "newsDatabase": {
+    "中東": [
+      {
+        "title": "中東戰事衝擊 亞洲製造業景氣 增速放緩",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9417714"
+      },
+      {
+        "title": "中東局勢拚降溫 新台幣盤中升破31.9元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000293-260205?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美伊終戰現曙光 國際油價下跌",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9417881"
+      }
+    ],
+    "美國": [
+      {
+        "title": "對等關稅周年 「拋售美國」逆轉",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9417719"
+      },
+      {
+        "title": "美貿易報告緊盯我ART承諾 我對美農產品放棄SSG防衛權",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9417753"
+      },
+      {
+        "title": "美3月小非農就業 遠優於預期",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000181-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美歐3月製造業PMI齊走揚",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000252-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美三分之二民眾 盼盡快停戰",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000255-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美對等關稅違憲 退款系統擬月底上線",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000259-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "校園禁基改食品 美促撤銷",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000546-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美伊終戰現曙光 國際油價下跌",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9417881"
+      },
+      {
+        "title": "卡達LNG供應受損 美天然氣股飆",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000268-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "南韓": [
+      {
+        "title": "南韓3月出口年增48% 40年最旺 半導體外銷成長1.5倍創新高",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9417661"
+      },
+      {
+        "title": "韓3月出口 衝破800億美元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000257-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台灣": [
+      {
+        "title": "中經院：電子業動能依舊強勁",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9417717"
+      },
+      {
+        "title": "美貿易報告緊盯我ART承諾 我對美農產品放棄SSG防衛權",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9417753"
+      },
+      {
+        "title": "進口車全免稅 衝擊368億稅收",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9417644"
+      },
+      {
+        "title": "中東局勢拚降溫 新台幣盤中升破31.9元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000293-260205?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "虛擬資產法列優先法案 政院預計4月2日拍板",
+        "source": "",
+        "url": "https://udn.com/news/story/7243/9417562"
+      },
+      {
+        "title": "汽車關稅降至零 衝擊368億元稅收",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000548-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "3關鍵逐步到位 台灣穩定幣2026迎轉折",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000295-260205?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中國": [
+      {
+        "title": "陸3月標普製造業PMI 遜預期",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000281-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "伊朗": [
+      {
+        "title": "伊朗報復美企第一槍？亞馬遜巴林雲端設施傳遇襲起火",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9417856"
+      },
+      {
+        "title": "美伊終戰現曙光 國際油價下跌",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9417881"
+      }
+    ],
+    "印度": [
+      {
+        "title": "印度拚半導體 鴻海、力積電搶進",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000279-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "亞洲": [
+      {
+        "title": "中東戰事衝擊 亞洲製造業景氣 增速放緩",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9417714"
+      },
+      {
+        "title": "憂石油危機 亞太區電動車現買氣",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000263-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "輝達": [
+      {
+        "title": "輝達蟬聯全球IC設計龍頭 聯發科、瑞昱、聯詠也上榜",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9417650"
+      },
+      {
+        "title": "輝達砸20億美元 投資MARVELL",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000555-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台積電": [
+      {
+        "title": "台積獨董伯恩斯 加碼買進台積ADS",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000220-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "聯發科": [
+      {
+        "title": "輝達蟬聯全球IC設計龍頭 聯發科、瑞昱、聯詠也上榜",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9417650"
+      },
+      {
+        "title": "手機需求降溫 聯發科下修4奈米投片量",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000209-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "外資送暖聯發科 升評至買進",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000215-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "鴻海": [
+      {
+        "title": "鴻海輪值CEO  蔣集恆接任",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9417616"
+      },
+      {
+        "title": "印度拚半導體 鴻海、力積電搶進",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000279-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "亞馬遜": [
+      {
+        "title": "亞馬遜與達美航空推機上 Wi-Fi",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9417602"
+      },
+      {
+        "title": "伊朗報復美企第一槍？亞馬遜巴林雲端設施傳遇襲起火",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9417856"
+      },
+      {
+        "title": "亞馬遜與達美航空推機上Wi-Fi",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9417602"
+      }
+    ],
+    "華碩": [
+      {
+        "title": "華碩趙國維掌新事業群",
+        "source": "",
+        "url": "https://udn.com/news/story/7253/9417364"
+      }
+    ],
+    "鎧俠": [
+      {
+        "title": "鎧俠停產2D NAND…台廠利多 華邦、旺宏有望迎接轉單",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9417628"
+      },
+      {
+        "title": "鎧俠停供部分NAND Flash",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000221-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "華邦": [
+      {
+        "title": "鎧俠停產2D NAND…台廠利多 華邦、旺宏有望迎接轉單",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9417628"
+      }
+    ],
+    "旺宏": [
+      {
+        "title": "鎧俠停產2D NAND…台廠利多 華邦、旺宏有望迎接轉單",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9417628"
+      }
+    ],
+    "甲骨文": [
+      {
+        "title": "AI太燒錢 甲骨文爆裁員數千人",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9417611"
+      },
+      {
+        "title": "甲骨文大裁員 上看3萬人",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000261-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "OpenAI": [
+      {
+        "title": "AI資本競賽升級 OpenAI募資1,220億美元創紀錄",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000217-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "世芯": [
+      {
+        "title": "受惠美廠新AI晶片出貨放量 世芯第2季營收將上衝",
+        "source": "",
+        "url": "https://udn.com/news/story/7253/9417310"
+      }
+    ],
+    "瑞昱": [
+      {
+        "title": "輝達蟬聯全球IC設計龍頭 聯發科、瑞昱、聯詠也上榜",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9417650"
+      }
+    ],
+    "聯詠": [
+      {
+        "title": "輝達蟬聯全球IC設計龍頭 聯發科、瑞昱、聯詠也上榜",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9417650"
+      }
+    ],
+    "特斯拉": [
+      {
+        "title": "特斯拉回神 歐洲掛牌激增",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9417607"
+      }
+    ],
+    "達美航空": [
+      {
+        "title": "亞馬遜與達美航空推機上 Wi-Fi",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9417602"
+      },
+      {
+        "title": "亞馬遜與達美航空推機上Wi-Fi",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9417602"
+      }
+    ],
+    "華航": [
+      {
+        "title": "油價飆 國際機票漲逾一成 華航、長榮航、星宇下周二起調漲燃油附加費",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9417634"
+      },
+      {
+        "title": "油價飆！國際機票漲逾一成 華航、長榮航、星宇下周二起調漲燃油附加費",
+        "source": "",
+        "url": "https://udn.com/news/story/7241/9417634"
+      }
+    ],
+    "長榮航": [
+      {
+        "title": "油價飆 國際機票漲逾一成 華航、長榮航、星宇下周二起調漲燃油附加費",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9417634"
+      },
+      {
+        "title": "油價飆！國際機票漲逾一成 華航、長榮航、星宇下周二起調漲燃油附加費",
+        "source": "",
+        "url": "https://udn.com/news/story/7241/9417634"
+      }
+    ],
+    "星宇": [
+      {
+        "title": "油價飆 國際機票漲逾一成 華航、長榮航、星宇下周二起調漲燃油附加費",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9417634"
+      },
+      {
+        "title": "油價飆！國際機票漲逾一成 華航、長榮航、星宇下周二起調漲燃油附加費",
+        "source": "",
+        "url": "https://udn.com/news/story/7241/9417634"
+      }
+    ],
+    "中鋼": [
+      {
+        "title": "內外銷報價同步提高 中鋼、中鴻注入強心針",
+        "source": "",
+        "url": "https://udn.com/news/story/7252/9417347"
+      }
+    ],
+    "台塑": [
+      {
+        "title": "駁斥民代指控 強調沒有減產囤積 台塑、台塑化：未操縱價格",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9417649"
+      }
+    ],
+    "台塑化": [
+      {
+        "title": "駁斥民代指控 強調沒有減產囤積 台塑、台塑化：未操縱價格",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9417649"
+      }
+    ],
+    "中油": [
+      {
+        "title": "油氣暴漲 經部︰中油估多扛2080億",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1749218"
+      }
+    ],
+    "福特": [
+      {
+        "title": "福特搶市…零關稅價賣美車 和泰、裕日、南陽也將導入美製車款",
+        "source": "",
+        "url": "https://udn.com/news/story/7241/9417640"
+      }
+    ],
+    "力積電": [
+      {
+        "title": "印度拚半導體 鴻海、力積電搶進",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000279-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "聯想": [
+      {
+        "title": "聯想CEO：全面轉型AI原生公司",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000277-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Intel": [
+      {
+        "title": "群聯攜Intel推混合型龍蝦",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000306-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "群聯": [
+      {
+        "title": "群聯攜Intel推混合型龍蝦",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000306-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "MARVELL": [
+      {
+        "title": "輝達砸20億美元 投資MARVELL",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000555-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "半導體": [
+      {
+        "title": "南韓3月出口年增48% 40年最旺 半導體外銷成長1.5倍創新高",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9417661"
+      },
+      {
+        "title": "印度拚半導體 鴻海、力積電搶進",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000279-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "全球晶圓代工規模 今年上看2,500億美元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000300-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "AI": [
+      {
+        "title": "受惠美廠新AI晶片出貨放量 世芯第2季營收將上衝",
+        "source": "",
+        "url": "https://udn.com/news/story/7253/9417310"
+      },
+      {
+        "title": "AI太燒錢 甲骨文爆裁員數千人",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9417611"
+      },
+      {
+        "title": "AI資本競賽升級 OpenAI募資1,220億美元創紀錄",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000217-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "甲骨文大裁員 上看3萬人",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000261-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI指標股智譜 去年收入翻倍",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000274-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "聯想CEO：全面轉型AI原生公司",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000277-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "輔信攻AI PC  後市添動能",
+        "source": "",
+        "url": "https://udn.com/news/story/7253/9417323"
+      },
+      {
+        "title": "歐迪爾智慧遠程控制 打造AI之眼",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000463-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "NAND Flash": [
+      {
+        "title": "鎧俠停產2D NAND…台廠利多 華邦、旺宏有望迎接轉單",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9417628"
+      },
+      {
+        "title": "鎧俠停供部分NAND Flash",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000221-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "製造業": [
+      {
+        "title": "中東戰事衝擊 亞洲製造業景氣 增速放緩",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9417714"
+      },
+      {
+        "title": "美歐3月製造業PMI齊走揚",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000252-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "陸3月標普製造業PMI 遜預期",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000281-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "創見秀智慧製造戰力",
+        "source": "",
+        "url": "https://udn.com/news/story/7253/9417327"
+      }
+    ],
+    "IC設計": [
+      {
+        "title": "輝達蟬聯全球IC設計龍頭 聯發科、瑞昱、聯詠也上榜",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9417650"
+      }
+    ],
+    "電動車": [
+      {
+        "title": "特斯拉回神 歐洲掛牌激增",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9417607"
+      },
+      {
+        "title": "憂石油危機 亞太區電動車現買氣",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000263-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "關稅": [
+      {
+        "title": "對等關稅周年 「拋售美國」逆轉",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9417719"
+      },
+      {
+        "title": "進口車全免稅 衝擊368億稅收",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9417644"
+      },
+      {
+        "title": "美對等關稅違憲 退款系統擬月底上線",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000259-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "汽車關稅降至零 衝擊368億元稅收",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000548-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "福特搶市…零關稅價賣美車 和泰、裕日、南陽也將導入美製車款",
+        "source": "",
+        "url": "https://udn.com/news/story/7241/9417640"
+      },
+      {
+        "title": "關稅議題淡化 3月車市回暖",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000557-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "出口": [
+      {
+        "title": "南韓3月出口年增48% 40年最旺 半導體外銷成長1.5倍創新高",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9417661"
+      },
+      {
+        "title": "韓3月出口 衝破800億美元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000257-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "油價": [
+      {
+        "title": "油價飆 國際機票漲逾一成 華航、長榮航、星宇下周二起調漲燃油附加費",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9417634"
+      },
+      {
+        "title": "油價攀升 虎航：動態調整機票售價",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9417647"
+      },
+      {
+        "title": "油價飆！國際機票漲逾一成 華航、長榮航、星宇下周二起調漲燃油附加費",
+        "source": "",
+        "url": "https://udn.com/news/story/7241/9417634"
+      },
+      {
+        "title": "美伊終戰現曙光 國際油價下跌",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9417881"
+      },
+      {
+        "title": "憂石油危機 亞太區電動車現買氣",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000263-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "油氣暴漲 經部︰中油估多扛2080億",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1749218"
+      }
+    ],
+    "新台幣": [
+      {
+        "title": "中東局勢拚降溫 新台幣盤中升破31.9元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000293-260205?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "PMI": [
+      {
+        "title": "美歐3月製造業PMI齊走揚",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000252-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "陸3月標普製造業PMI 遜預期",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000281-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "稅收": [
+      {
+        "title": "進口車全免稅 衝擊368億稅收",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9417644"
+      },
+      {
+        "title": "汽車關稅降至零 衝擊368億元稅收",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000548-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "虛擬資產": [
+      {
+        "title": "虛擬資產法列優先法案 政院預計4月2日拍板",
+        "source": "",
+        "url": "https://udn.com/news/story/7243/9417562"
+      },
+      {
+        "title": "3關鍵逐步到位 台灣穩定幣2026迎轉折",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260402000295-260205?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中經院": [
+      {
+        "title": "中經院：電子業動能依舊強勁",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9417717"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "中東戰事衝擊 亞洲製造業景氣 增速放緩 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9417714",
+    "對等關稅周年 「拋售美國」逆轉 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9417719",
+    "南韓3月出口年增48% 40年最旺 半導體外銷成長1.5倍創新高 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9417661",
+    "中經院：電子業動能依舊強勁 (聯合_產經_股市)": "https://udn.com/news/story/7238/9417717",
+    "美貿易報告緊盯我ART承諾 我對美農產品放棄SSG防衛權 (聯合_產經_股市)": "https://udn.com/news/story/6811/9417753",
+    "進口車全免稅 衝擊368億稅收 (聯合_產經_股市)": "https://udn.com/news/story/7238/9417644",
+    "美3月小非農就業 遠優於預期 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260402000181-260202?utm_source=iii_news&utm_medium=rss",
+    "美歐3月製造業PMI齊走揚 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260402000252-260203?utm_source=iii_news&utm_medium=rss",
+    "美三分之二民眾 盼盡快停戰 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260402000255-260203?utm_source=iii_news&utm_medium=rss",
+    "韓3月出口 衝破800億美元 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260402000257-260203?utm_source=iii_news&utm_medium=rss",
+    "美對等關稅違憲 退款系統擬月底上線 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260402000259-260203?utm_source=iii_news&utm_medium=rss",
+    "陸3月標普製造業PMI 遜預期 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260402000281-260203?utm_source=iii_news&utm_medium=rss",
+    "中東局勢拚降溫 新台幣盤中升破31.9元 (工商金融稅務)": "https://www.chinatimes.com/newspapers/20260402000293-260205?utm_source=iii_news&utm_medium=rss",
+    "汽車關稅降至零 衝擊368億元稅收 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260402000548-260110?utm_source=iii_news&utm_medium=rss",
+    "亞馬遜與達美航空推機上 Wi-Fi (經濟國際焦點)": "https://money.udn.com/money/story/5599/9417602",
+    "伊朗報復美企第一槍？亞馬遜巴林雲端設施傳遇襲起火 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9417856",
+    "鎧俠停產2D NAND…台廠利多 華邦、旺宏有望迎接轉單 (聯合_產經_股市)": "https://udn.com/news/story/7240/9417628",
+    "輝達蟬聯全球IC設計龍頭 聯發科、瑞昱、聯詠也上榜 (聯合_產經_股市)": "https://udn.com/news/story/7240/9417650",
+    "虛擬資產法列優先法案 政院預計4月2日拍板 (聯合_產經_股市)": "https://udn.com/news/story/7243/9417562",
+    "廣宇機器人業績喊衝 (聯合_產經_股市)": "https://udn.com/news/story/7253/9417336",
+    "華碩趙國維掌新事業群 (聯合_產經_股市)": "https://udn.com/news/story/7253/9417364",
+    "受惠美廠新AI晶片出貨放量 世芯第2季營收將上衝 (聯合_產經_股市)": "https://udn.com/news/story/7253/9417310",
+    "鴻海輪值CEO  蔣集恆接任 (聯合_產經_股市)": "https://udn.com/news/story/7240/9417616",
+    "網路交換器供應鏈 帶勁 (聯合_產經_股市)": "https://udn.com/news/story/7251/9417330",
+    "德鴻3月合併營收月增83% 互動3月營收月增52% (聯合_產經_股市)": "https://udn.com/news/story/7254/9417328",
+    "辛耘營收逐季向上 (聯合_產經_股市)": "https://udn.com/news/story/7253/9417322",
+    "輔信攻AI PC  後市添動能 (聯合_產經_股市)": "https://udn.com/news/story/7253/9417323",
+    "創見秀智慧製造戰力 (聯合_產經_股市)": "https://udn.com/news/story/7253/9417327",
+    "面板雙虎「透明顯示器」拚場 (聯合_產經_股市)": "https://udn.com/news/story/7253/9417332",
+    "錼創轉型 2026年拚轉盈 (聯合_產經_股市)": "https://udn.com/news/story/7253/9417334",
+    "AI太燒錢 甲骨文爆裁員數千人 (聯合_產經_股市)": "https://udn.com/news/story/6811/9417611",
+    "手機需求降溫 聯發科下修4奈米投片量 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260402000209-260202?utm_source=iii_news&utm_medium=rss",
+    "手機廠救市 漲價＋降規成常態 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260402000212-260202?utm_source=iii_news&utm_medium=rss",
+    "外資送暖聯發科 升評至買進 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260402000215-260202?utm_source=iii_news&utm_medium=rss",
+    "AI資本競賽升級 OpenAI募資1,220億美元創紀錄 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260402000217-260202?utm_source=iii_news&utm_medium=rss",
+    "台積獨董伯恩斯 加碼買進台積ADS (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260402000220-260202?utm_source=iii_news&utm_medium=rss",
+    "鎧俠停供部分NAND Flash (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260402000221-260202?utm_source=iii_news&utm_medium=rss",
+    "甲骨文大裁員 上看3萬人 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260402000261-260203?utm_source=iii_news&utm_medium=rss",
+    "AI指標股智譜 去年收入翻倍 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260402000274-260203?utm_source=iii_news&utm_medium=rss",
+    "聯想CEO：全面轉型AI原生公司 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260402000277-260203?utm_source=iii_news&utm_medium=rss",
+    "印度拚半導體 鴻海、力積電搶進 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260402000279-260203?utm_source=iii_news&utm_medium=rss",
+    "華強北 DDR5價格慘摔3成 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260402000282-260203?utm_source=iii_news&utm_medium=rss",
+    "3關鍵逐步到位 台灣穩定幣2026迎轉折 (工商金融稅務)": "https://www.chinatimes.com/newspapers/20260402000295-260205?utm_source=iii_news&utm_medium=rss",
+    "漲價潮 高性價比旗艦手機夯 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260402000296-260204?utm_source=iii_news&utm_medium=rss",
+    "聯亞董座 候選緯穎獨董 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260402000299-260204?utm_source=iii_news&utm_medium=rss",
+    "全球晶圓代工規模 今年上看2,500億美元 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260402000300-260204?utm_source=iii_news&utm_medium=rss",
+    "帳號遭無預警登出...Line災情 台灣大：優化遠端驗證 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260402000302-260204?utm_source=iii_news&utm_medium=rss",
+    "三商電 2026年毛利率回溫 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260402000304-260204?utm_source=iii_news&utm_medium=rss",
+    "群聯攜Intel推混合型龍蝦 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260402000306-260204?utm_source=iii_news&utm_medium=rss",
+    "歐迪爾智慧遠程控制 打造AI之眼 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260402000463-260204?utm_source=iii_news&utm_medium=rss",
+    "電信三雄攻兒童商機 (聯合_產經_股市)": "https://udn.com/news/story/7241/9417316",
+    "崇越2026年營運拚新高 (聯合_產經_股市)": "https://udn.com/news/story/7253/9417317",
+    "亞馬遜與達美航空推機上Wi-Fi (聯合_產經_股市)": "https://udn.com/news/story/6811/9417602",
+    "輝達砸20億美元 投資MARVELL (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260402000555-260110?utm_source=iii_news&utm_medium=rss",
+    "宏碁衝智慧移動事業 (聯合_產經_股市)": "https://udn.com/news/story/7253/9417311",
+    "太景流感新藥 在韓申請臨床 (聯合_產經_股市)": "https://udn.com/news/story/7254/9417349",
+    "長聖雙引擎 寫最強3月 (聯合_產經_股市)": "https://udn.com/news/story/7254/9417350",
+    "油價飆 國際機票漲逾一成 華航、長榮航、星宇下周二起調漲燃油附加費 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9417634",
+    "油價攀升 虎航：動態調整機票售價 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9417647",
+    "燃料成本大增 陸韓歐美航空業者 紛紛上調機票售價 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9417642",
+    "杜拜中轉失靈 航空雙雄得利 訂位量能延伸至暑假 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9417638",
+    "好市多限購塑膠製品 要求每位會員每項只能買一組 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9417641",
+    "駁斥民代指控 強調沒有減產囤積 台塑、台塑化：未操縱價格 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9417649",
+    "職場霸凌專章 拚7月上路 (聯合_產經_股市)": "https://udn.com/news/story/7243/9417439",
+    "油價飆！國際機票漲逾一成 華航、長榮航、星宇下周二起調漲燃油附加費 (聯合_產經_股市)": "https://udn.com/news/story/7241/9417634",
+    "校園禁基改食品 美促撤銷 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260402000546-260110?utm_source=iii_news&utm_medium=rss",
+    "提前布局 南山人壽掌握長壽紅利 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260402000550-260110?utm_source=iii_news&utm_medium=rss",
+    "近8成社工過勞 工會促檢討制度 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260402000538-260114?utm_source=iii_news&utm_medium=rss",
+    "彈性育嬰假擬放寬 下半年提修法 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260402000542-260114?utm_source=iii_news&utm_medium=rss",
+    "爭調勞退逾20年未果 勞團府前抗議 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260402000544-260114?utm_source=iii_news&utm_medium=rss",
+    "福特搶市…零關稅價賣美車 和泰、裕日、南陽也將導入美製車款 (聯合_產經_股市)": "https://udn.com/news/story/7241/9417640",
+    "內外銷報價同步提高 中鋼、中鴻注入強心針 (聯合_產經_股市)": "https://udn.com/news/story/7252/9417347",
+    "美伊終戰現曙光 國際油價下跌 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9417881",
+    "特斯拉回神 歐洲掛牌激增 (聯合_產經_股市)": "https://udn.com/news/story/6811/9417607",
+    "憂石油危機 亞太區電動車現買氣 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260402000263-260203?utm_source=iii_news&utm_medium=rss",
+    "卡達LNG供應受損 美天然氣股飆 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260402000268-260203?utm_source=iii_news&utm_medium=rss",
+    "關稅議題淡化 3月車市回暖 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260402000557-260110?utm_source=iii_news&utm_medium=rss",
+    "油氣暴漲 經部︰中油估多扛2080億 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1749218"
+  }
+}
