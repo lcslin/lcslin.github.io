@@ -1,0 +1,1277 @@
+{
+  "nodes": [
+    {
+      "id": "川普",
+      "group": "person",
+      "size": 20
+    },
+    {
+      "id": "伊朗",
+      "group": "country",
+      "size": 22
+    },
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 18
+    },
+    {
+      "id": "台積電",
+      "group": "company",
+      "size": 20
+    },
+    {
+      "id": "外資",
+      "group": "finance",
+      "size": 21
+    },
+    {
+      "id": "央行",
+      "group": "org",
+      "size": 18
+    },
+    {
+      "id": "IMF",
+      "group": "org",
+      "size": 17
+    },
+    {
+      "id": "通膨",
+      "group": "finance",
+      "size": 16
+    },
+    {
+      "id": "外匯存底",
+      "group": "finance",
+      "size": 19
+    },
+    {
+      "id": "台幣",
+      "group": "finance",
+      "size": 15
+    },
+    {
+      "id": "ECB",
+      "group": "org",
+      "size": 12
+    },
+    {
+      "id": "巴基斯坦",
+      "group": "country",
+      "size": 13
+    },
+    {
+      "id": "賴清德",
+      "group": "person",
+      "size": 10
+    },
+    {
+      "id": "中國",
+      "group": "country",
+      "size": 14
+    },
+    {
+      "id": "韓國",
+      "group": "country",
+      "size": 12
+    },
+    {
+      "id": "AI",
+      "group": "tech",
+      "size": 25
+    },
+    {
+      "id": "博通",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "Google",
+      "group": "company",
+      "size": 17
+    },
+    {
+      "id": "Anthropic",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "OpenAI",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "三星",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "英特爾",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "光通訊",
+      "group": "tech",
+      "size": 17
+    },
+    {
+      "id": "信驊",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "穎崴",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "大立光",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "華為",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "蘋果",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "記憶體",
+      "group": "tech",
+      "size": 15
+    },
+    {
+      "id": "旺宏",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "威剛",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "先進封裝",
+      "group": "tech",
+      "size": 16
+    },
+    {
+      "id": "ABF載板",
+      "group": "tech",
+      "size": 14
+    },
+    {
+      "id": "景碩",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "南電",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "國泰金",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "馬斯克",
+      "group": "person",
+      "size": 12
+    },
+    {
+      "id": "面板",
+      "group": "tech",
+      "size": 13
+    },
+    {
+      "id": "散熱",
+      "group": "tech",
+      "size": 11
+    },
+    {
+      "id": "伺服器",
+      "group": "tech",
+      "size": 14
+    },
+    {
+      "id": "塑膠袋",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "台塑",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "特斯拉",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "油價",
+      "group": "finance",
+      "size": 14
+    },
+    {
+      "id": "華航",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "沙烏地",
+      "group": "country",
+      "size": 10
+    },
+    {
+      "id": "荷莫茲海峽",
+      "group": "country",
+      "size": 13
+    },
+    {
+      "id": "天然氣",
+      "group": "finance",
+      "size": 11
+    },
+    {
+      "id": "經濟成長",
+      "group": "finance",
+      "size": 15
+    },
+    {
+      "id": "台股",
+      "group": "finance",
+      "size": 16
+    }
+  ],
+  "links": [
+    {
+      "source": "川普",
+      "target": "伊朗",
+      "value": 5,
+      "label": "停火協議"
+    },
+    {
+      "source": "伊朗",
+      "target": "荷莫茲海峽",
+      "value": 4,
+      "label": "船舶通行"
+    },
+    {
+      "source": "伊朗",
+      "target": "沙烏地",
+      "value": 3,
+      "label": "軍事衝突"
+    },
+    {
+      "source": "伊朗",
+      "target": "通膨",
+      "value": 4,
+      "label": "戰爭推升"
+    },
+    {
+      "source": "伊朗",
+      "target": "油價",
+      "value": 4,
+      "label": "戰爭影響"
+    },
+    {
+      "source": "川普",
+      "target": "美國",
+      "value": 5,
+      "label": "政策主導"
+    },
+    {
+      "source": "川普",
+      "target": "巴基斯坦",
+      "value": 3,
+      "label": "停火協商"
+    },
+    {
+      "source": "外資",
+      "target": "台股",
+      "value": 5,
+      "label": "資金流動"
+    },
+    {
+      "source": "外資",
+      "target": "外匯存底",
+      "value": 5,
+      "label": "淨匯出影響"
+    },
+    {
+      "source": "外資",
+      "target": "台幣",
+      "value": 4,
+      "label": "匯率壓力"
+    },
+    {
+      "source": "外資",
+      "target": "韓國",
+      "value": 3,
+      "label": "資金外流"
+    },
+    {
+      "source": "央行",
+      "target": "台幣",
+      "value": 4,
+      "label": "匯率干預"
+    },
+    {
+      "source": "央行",
+      "target": "外匯存底",
+      "value": 4,
+      "label": "賣匯操作"
+    },
+    {
+      "source": "IMF",
+      "target": "經濟成長",
+      "value": 4,
+      "label": "下修預測"
+    },
+    {
+      "source": "IMF",
+      "target": "通膨",
+      "value": 4,
+      "label": "調高預測"
+    },
+    {
+      "source": "通膨",
+      "target": "ECB",
+      "value": 3,
+      "label": "升息預期"
+    },
+    {
+      "source": "通膨",
+      "target": "經濟成長",
+      "value": 4,
+      "label": "經濟衝擊"
+    },
+    {
+      "source": "賴清德",
+      "target": "美國",
+      "value": 2,
+      "label": "經貿合作"
+    },
+    {
+      "source": "中國",
+      "target": "外匯存底",
+      "value": 2,
+      "label": "降幅創高"
+    },
+    {
+      "source": "AI",
+      "target": "台積電",
+      "value": 5,
+      "label": "先進製程"
+    },
+    {
+      "source": "AI",
+      "target": "伺服器",
+      "value": 4,
+      "label": "算力需求"
+    },
+    {
+      "source": "AI",
+      "target": "光通訊",
+      "value": 4,
+      "label": "傳輸速度"
+    },
+    {
+      "source": "AI",
+      "target": "先進封裝",
+      "value": 5,
+      "label": "晶片升級"
+    },
+    {
+      "source": "博通",
+      "target": "Google",
+      "value": 5,
+      "label": "晶片長約"
+    },
+    {
+      "source": "博通",
+      "target": "Anthropic",
+      "value": 4,
+      "label": "戰略合作"
+    },
+    {
+      "source": "博通",
+      "target": "台積電",
+      "value": 4,
+      "label": "先進製程"
+    },
+    {
+      "source": "Google",
+      "target": "Anthropic",
+      "value": 4,
+      "label": "AI合作"
+    },
+    {
+      "source": "Google",
+      "target": "AI",
+      "value": 5,
+      "label": "技術開發"
+    },
+    {
+      "source": "OpenAI",
+      "target": "國泰金",
+      "value": 3,
+      "label": "戰略結盟"
+    },
+    {
+      "source": "OpenAI",
+      "target": "AI",
+      "value": 4,
+      "label": "技術供應"
+    },
+    {
+      "source": "英特爾",
+      "target": "馬斯克",
+      "value": 3,
+      "label": "Terafab合作"
+    },
+    {
+      "source": "三星",
+      "target": "記憶體",
+      "value": 3,
+      "label": "營收成長"
+    },
+    {
+      "source": "華為",
+      "target": "蘋果",
+      "value": 3,
+      "label": "折疊機競爭"
+    },
+    {
+      "source": "華為",
+      "target": "大立光",
+      "value": 2,
+      "label": "鏡頭訂單"
+    },
+    {
+      "source": "蘋果",
+      "target": "大立光",
+      "value": 3,
+      "label": "鏡頭訂單"
+    },
+    {
+      "source": "信驊",
+      "target": "伺服器",
+      "value": 4,
+      "label": "BMC出貨"
+    },
+    {
+      "source": "信驊",
+      "target": "AI",
+      "value": 3,
+      "label": "訂單旺盛"
+    },
+    {
+      "source": "光通訊",
+      "target": "AI",
+      "value": 5,
+      "label": "資料中心需求"
+    },
+    {
+      "source": "穎崴",
+      "target": "光通訊",
+      "value": 2,
+      "label": "營收增長"
+    },
+    {
+      "source": "記憶體",
+      "target": "旺宏",
+      "value": 3,
+      "label": "營收創高"
+    },
+    {
+      "source": "記憶體",
+      "target": "威剛",
+      "value": 3,
+      "label": "營收創高"
+    },
+    {
+      "source": "先進封裝",
+      "target": "台積電",
+      "value": 4,
+      "label": "產能需求"
+    },
+    {
+      "source": "先進封裝",
+      "target": "景碩",
+      "value": 3,
+      "label": "載板需求"
+    },
+    {
+      "source": "ABF載板",
+      "target": "景碩",
+      "value": 4,
+      "label": "漲價預期"
+    },
+    {
+      "source": "ABF載板",
+      "target": "南電",
+      "value": 3,
+      "label": "產能滿載"
+    },
+    {
+      "source": "ABF載板",
+      "target": "AI",
+      "value": 4,
+      "label": "AI基建"
+    },
+    {
+      "source": "面板",
+      "target": "AI",
+      "value": 2,
+      "label": "矽光子技術"
+    },
+    {
+      "source": "散熱",
+      "target": "AI",
+      "value": 3,
+      "label": "伺服器需求"
+    },
+    {
+      "source": "塑膠袋",
+      "target": "台塑",
+      "value": 4,
+      "label": "供貨爭議"
+    },
+    {
+      "source": "油價",
+      "target": "華航",
+      "value": 3,
+      "label": "燃油附加費"
+    },
+    {
+      "source": "油價",
+      "target": "通膨",
+      "value": 3,
+      "label": "價格上漲"
+    },
+    {
+      "source": "特斯拉",
+      "target": "油價",
+      "value": 2,
+      "label": "促銷策略"
+    },
+    {
+      "source": "荷莫茲海峽",
+      "target": "天然氣",
+      "value": 4,
+      "label": "供應短缺"
+    },
+    {
+      "source": "荷莫茲海峽",
+      "target": "油價",
+      "value": 4,
+      "label": "運輸影響"
+    },
+    {
+      "source": "台積電",
+      "target": "先進封裝",
+      "value": 5,
+      "label": "製程需求"
+    },
+    {
+      "source": "經濟成長",
+      "target": "台股",
+      "value": 3,
+      "label": "市場影響"
+    }
+  ],
+  "newsDatabase": {
+    "川普": [
+      {
+        "title": "Axios：川普最後通牒期限將至 達停火協議機率不高",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9427894"
+      },
+      {
+        "title": "「川普得罪了太多人」美攻伊朗沒盟友挺 近1世紀以來首例",
+        "source": "",
+        "url": "https://udn.com/news/story/124061/9427705"
+      },
+      {
+        "title": "川普最後通牒將至 巴基斯坦總理籲延長期限2週",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9427930"
+      }
+    ],
+    "伊朗": [
+      {
+        "title": "伊朗放行船舶效期不明 亞洲多國獲准通過荷莫茲",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9427783"
+      },
+      {
+        "title": "美伊戰爭效應 ECB 升息最快4月底行動",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9427755"
+      },
+      {
+        "title": "「川普得罪了太多人」美攻伊朗沒盟友挺 近1世紀以來首例",
+        "source": "",
+        "url": "https://udn.com/news/story/124061/9427705"
+      },
+      {
+        "title": "快訊》巴基斯坦提停火兩周方案  CNN：美伊很快將傳來好消息",
+        "source": "",
+        "url": "https://www.chinatimes.com/realtimenews/20260408000877-260408?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "伊朗稱成功攻擊沙烏地朱拜爾工業區 報復石化廠遇襲",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9427866"
+      }
+    ],
+    "美國": [
+      {
+        "title": "「川普得罪了太多人」美攻伊朗沒盟友挺 近1世紀以來首例",
+        "source": "",
+        "url": "https://udn.com/news/story/124061/9427705"
+      },
+      {
+        "title": "提升雙方經貿合作 賴總統：盼速通過解決台美雙重課稅",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000162-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美二手電動車 買氣飆",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9427742"
+      },
+      {
+        "title": "豁免瓊斯法案沒用 美石油出口續增",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000203-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台積電": [
+      {
+        "title": "博通、 Google 與 Anthropic 三方戰略合作 台積電先進製程需求爆發",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9427820"
+      },
+      {
+        "title": "台積法說下周登場 外資揭六大必考題",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000145-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "外資": [
+      {
+        "title": "外資3月淨匯出7,675億創高 金管會：Q1淨流入5,692億 台股資金動能暫無虞",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9427779"
+      },
+      {
+        "title": "外資3月淨匯出7,675億創高 外匯存底跌破6,000億美元",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9427779"
+      },
+      {
+        "title": "外資落跑 台韓股失血",
+        "source": "",
+        "url": "https://udn.com/news/story/10103/9427682"
+      },
+      {
+        "title": "外資3月淨匯出 同期第四高",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000154-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "外資狂賣股 外匯存底重見5字頭",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000497-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "央行": [
+      {
+        "title": "預估央行連二季淨賣匯",
+        "source": "",
+        "url": "https://udn.com/news/story/7239/9427788"
+      },
+      {
+        "title": "央行進場 台幣力守32元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000124-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "IMF": [
+      {
+        "title": "IMF 總裁示警 戰爭推升通膨 衝擊經濟",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9427730"
+      },
+      {
+        "title": "IMF看衰經濟！將下修全球成長、調高通膨",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9427718"
+      },
+      {
+        "title": "IMF估全球經濟成長放緩",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000132-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "通膨": [
+      {
+        "title": "IMF 總裁示警 戰爭推升通膨 衝擊經濟",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9427730"
+      },
+      {
+        "title": "IMF看衰經濟！將下修全球成長、調高通膨",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9427718"
+      }
+    ],
+    "外匯存底": [
+      {
+        "title": "外資3月淨匯出7,675億創高 外匯存底跌破6,000億美元",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9427779"
+      },
+      {
+        "title": "我上月外匯存底大減 三因素影響",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000157-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "陸3月外匯存底 降幅逾十年高",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000226-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "外資狂賣股 外匯存底重見5字頭",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000497-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台幣": [
+      {
+        "title": "央行進場 台幣力守32元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000124-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "ECB": [
+      {
+        "title": "美伊戰爭效應 ECB 升息最快4月底行動",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9427755"
+      }
+    ],
+    "巴基斯坦": [
+      {
+        "title": "川普最後通牒將至 巴基斯坦總理籲延長期限2週",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9427930"
+      },
+      {
+        "title": "快訊》巴基斯坦提停火兩周方案  CNN：美伊很快將傳來好消息",
+        "source": "",
+        "url": "https://www.chinatimes.com/realtimenews/20260408000877-260408?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "賴清德": [
+      {
+        "title": "提升雙方經貿合作 賴總統：盼速通過解決台美雙重課稅",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000162-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中國": [
+      {
+        "title": "陸3月外匯存底 降幅逾十年高",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000226-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "韓國": [
+      {
+        "title": "外資落跑 台韓股失血",
+        "source": "",
+        "url": "https://udn.com/news/story/10103/9427682"
+      }
+    ],
+    "AI": [
+      {
+        "title": "博通、 Google 與 Anthropic 三方戰略合作 台積電先進製程需求爆發",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9427820"
+      },
+      {
+        "title": "光進銅退？AI資料中心「內外有別」",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9427722"
+      },
+      {
+        "title": "AI晶片升級 先進封裝設備投資夯",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000151-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "防陸AI蒸餾行為 美3巨頭合作",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000225-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI動能強 南電ABF產能近滿載",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000245-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "華碩推首款AI USB 價格估四位數",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000248-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "加速AI Agent應用落地 精誠EAP平台導入日本電信客戶",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000249-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI基建帶旺PCB、基板市場",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000251-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI伺服器晶片出貨旺 信驊3月營收創新高",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1750077"
+      }
+    ],
+    "博通": [
+      {
+        "title": "博通、 Google 與 Anthropic 三方戰略合作 台積電先進製程需求爆發",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9427820"
+      },
+      {
+        "title": "博通 拿下谷歌AI晶片五年長約",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000212-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Google": [
+      {
+        "title": "博通、 Google 與 Anthropic 三方戰略合作 台積電先進製程需求爆發",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9427820"
+      },
+      {
+        "title": "博通 拿下谷歌AI晶片五年長約",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000212-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Anthropic": [
+      {
+        "title": "博通、 Google 與 Anthropic 三方戰略合作 台積電先進製程需求爆發",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9427820"
+      },
+      {
+        "title": "Anthropic年化營收 衝上300億美元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000214-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "OpenAI": [
+      {
+        "title": "國泰金結盟 OpenAI 強化戰力",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9427660"
+      }
+    ],
+    "三星": [
+      {
+        "title": "三星上季營利大增7.5倍",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9427745"
+      },
+      {
+        "title": "三星Q1財報超猛 股價嗨",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000207-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "英特爾": [
+      {
+        "title": "英特爾 加入馬斯克Terafab",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000142-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "光通訊": [
+      {
+        "title": "「光通訊大時代」全新、穩懋同步寫最強Q1 相關類股受矚目",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9427738"
+      },
+      {
+        "title": "業界關注焦點從算力轉為傳輸速度 光通訊台鏈跟著紅",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9427824"
+      },
+      {
+        "title": "光進銅退？AI資料中心「內外有別」",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9427722"
+      }
+    ],
+    "信驊": [
+      {
+        "title": "「股王」信驊營收寫兩個新高 伺服器BMC出貨報捷",
+        "source": "",
+        "url": "https://udn.com/news/story/7251/9427831"
+      },
+      {
+        "title": "信驊Q1營收超標 訂單看到Q4",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000139-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI伺服器晶片出貨旺 信驊3月營收創新高",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1750077"
+      }
+    ],
+    "穎崴": [
+      {
+        "title": "「股后」穎崴單月績增40% 營收可望逐季增長",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9427825"
+      }
+    ],
+    "大立光": [
+      {
+        "title": "華為新折疊機叫陣蘋果 大立光通吃手機鏡頭訂單 營運看俏",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9427828"
+      }
+    ],
+    "華為": [
+      {
+        "title": "華為新折疊機叫陣蘋果 大立光通吃手機鏡頭訂單 營運看俏",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9427828"
+      }
+    ],
+    "蘋果": [
+      {
+        "title": "華為新折疊機叫陣蘋果 大立光通吃手機鏡頭訂單 營運看俏",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9427828"
+      },
+      {
+        "title": "蘋果折疊機難產？外媒：遇挑戰 上市計畫恐延後",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000210-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "記憶體": [
+      {
+        "title": "記憶體族群上月營收旺！旺宏近51個月最佳 威剛、十銓同寫新高",
+        "source": "",
+        "url": "https://udn.com/news/story/7253/9427735"
+      },
+      {
+        "title": "記憶體漲不停 Q2上看5成",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000242-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "旺宏": [
+      {
+        "title": "記憶體族群上月營收旺！旺宏近51個月最佳 威剛、十銓同寫新高",
+        "source": "",
+        "url": "https://udn.com/news/story/7253/9427735"
+      }
+    ],
+    "威剛": [
+      {
+        "title": "記憶體族群上月營收旺！旺宏近51個月最佳 威剛、十銓同寫新高",
+        "source": "",
+        "url": "https://udn.com/news/story/7253/9427735"
+      }
+    ],
+    "先進封裝": [
+      {
+        "title": "先進封裝產能緊張 設備廠擴產紅利吃好吃滿",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000148-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI晶片升級 先進封裝設備投資夯",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000151-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "ABF載板": [
+      {
+        "title": "景碩：ABF載板下半年漲幅更大",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1750078"
+      },
+      {
+        "title": "AI動能強 南電ABF產能近滿載",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000245-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "景碩": [
+      {
+        "title": "景碩：高階載板需求無虞",
+        "source": "",
+        "url": "https://udn.com/news/story/7253/9427367"
+      },
+      {
+        "title": "景碩：ABF載板下半年漲幅更大",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1750078"
+      }
+    ],
+    "南電": [
+      {
+        "title": "AI動能強 南電ABF產能近滿載",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000245-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "國泰金": [
+      {
+        "title": "國泰金結盟 OpenAI 強化戰力",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9427660"
+      }
+    ],
+    "馬斯克": [
+      {
+        "title": "英特爾 加入馬斯克Terafab",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000142-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "面板": [
+      {
+        "title": "大尺寸 TV 面板漲勢延續 中小尺寸利潤空間受壓縮",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9427704"
+      },
+      {
+        "title": "Touch Taiwan展開展！矽光子技術 面板產業新焦點",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9427723"
+      },
+      {
+        "title": "大尺寸TV面板漲勢延續 中小尺寸利潤空間受壓縮",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9427704"
+      }
+    ],
+    "散熱": [
+      {
+        "title": "散熱三雄3月營收創高 首季同步改寫新猷",
+        "source": "",
+        "url": "https://udn.com/news/story/7251/9427359"
+      }
+    ],
+    "伺服器": [
+      {
+        "title": "「股王」信驊營收寫兩個新高 伺服器BMC出貨報捷",
+        "source": "",
+        "url": "https://udn.com/news/story/7251/9427831"
+      },
+      {
+        "title": "AI伺服器晶片出貨旺 信驊3月營收創新高",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1750077"
+      }
+    ],
+    "塑膠袋": [
+      {
+        "title": "經長喊話 塑膠袋整體供貨穩定",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000133-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "塑膠袋之亂延燒 中南部缺最凶",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000495-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台塑": [
+      {
+        "title": "查漲價 檢方二度約談台塑主管",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000501-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "特斯拉": [
+      {
+        "title": "特斯拉搶市 推油轉電補貼 和泰車、南陽也出招促銷",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9427702"
+      }
+    ],
+    "油價": [
+      {
+        "title": "油價漲不停航空運價飆高下 中菲行、捷迅業績報喜",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9427740"
+      }
+    ],
+    "華航": [
+      {
+        "title": "華航下周四起調高燃油附加費漲幅7%起跳 航空貨運價再掀一波漲勢",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9427733"
+      }
+    ],
+    "沙烏地": [
+      {
+        "title": "伊朗稱成功攻擊沙烏地朱拜爾工業區 報復石化廠遇襲",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9427866"
+      }
+    ],
+    "荷莫茲海峽": [
+      {
+        "title": "伊朗放行船舶效期不明 亞洲多國獲准通過荷莫茲",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9427783"
+      },
+      {
+        "title": "荷姆茲卡關 天然氣短缺加劇",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000129-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "天然氣": [
+      {
+        "title": "荷姆茲卡關 天然氣短缺加劇",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000129-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "經濟成長": [
+      {
+        "title": "IMF 總裁示警 戰爭推升通膨 衝擊經濟",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9427730"
+      },
+      {
+        "title": "IMF看衰經濟！將下修全球成長、調高通膨",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9427718"
+      },
+      {
+        "title": "IMF估全球經濟成長放緩",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260408000132-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台股": [
+      {
+        "title": "外資3月淨匯出7,675億創高 金管會：Q1淨流入5,692億 台股資金動能暫無虞",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9427779"
+      },
+      {
+        "title": "外資落跑 台韓股失血",
+        "source": "",
+        "url": "https://udn.com/news/story/10103/9427682"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "伊朗放行船舶效期不明 亞洲多國獲准通過荷莫茲 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9427783",
+    "外資3月淨匯出7,675億創高 金管會：Q1淨流入5,692億 台股資金動能暫無虞 (經濟金融脈動)": "https://money.udn.com/money/story/5613/9427779",
+    "Axios：川普最後通牒期限將至 達停火協議機率不高 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9427894",
+    "美伊戰爭效應 ECB 升息最快4月底行動 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9427755",
+    "IMF 總裁示警 戰爭推升通膨 衝擊經濟 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9427730",
+    "預估央行連二季淨賣匯 (聯合_產經_股市)": "https://udn.com/news/story/7239/9427788",
+    "外資3月淨匯出7,675億創高 外匯存底跌破6,000億美元 (聯合_產經_股市)": "https://udn.com/news/story/7238/9427779",
+    "外資落跑 台韓股失血 (聯合_產經_股市)": "https://udn.com/news/story/10103/9427682",
+    "「川普得罪了太多人」美攻伊朗沒盟友挺 近1世紀以來首例 (聯合_產經_股市)": "https://udn.com/news/story/124061/9427705",
+    "IMF看衰經濟！將下修全球成長、調高通膨 (聯合_產經_股市)": "https://udn.com/news/story/6811/9427718",
+    "川普最後通牒將至 巴基斯坦總理籲延長期限2週 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9427930",
+    "央行進場 台幣力守32元 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260408000124-260202?utm_source=iii_news&utm_medium=rss",
+    "IMF估全球經濟成長放緩 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260408000132-260202?utm_source=iii_news&utm_medium=rss",
+    "外資3月淨匯出 同期第四高 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260408000154-260202?utm_source=iii_news&utm_medium=rss",
+    "我上月外匯存底大減 三因素影響 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260408000157-260202?utm_source=iii_news&utm_medium=rss",
+    "提升雙方經貿合作 賴總統：盼速通過解決台美雙重課稅 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260408000162-260202?utm_source=iii_news&utm_medium=rss",
+    "陸3月外匯存底 降幅逾十年高 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260408000226-260203?utm_source=iii_news&utm_medium=rss",
+    "外資狂賣股 外匯存底重見5字頭 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260408000497-260110?utm_source=iii_news&utm_medium=rss",
+    "快訊》巴基斯坦提停火兩周方案  CNN：美伊很快將傳來好消息 (中時國際新聞)": "https://www.chinatimes.com/realtimenews/20260408000877-260408?utm_source=iii_news&utm_medium=rss",
+    "「光通訊大時代」全新、穩懋同步寫最強Q1 相關類股受矚目 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9427738",
+    "台光電3月營收年增52% 騰輝年增22% (經濟產業熱點)": "https://money.udn.com/money/story/5612/9427758",
+    "貿聯3月營收年增27% 全年衝千億 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9427759",
+    "三星上季營利大增7.5倍 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9427745",
+    "「股后」穎崴單月績增40% 營收可望逐季增長 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9427825",
+    "博通、 Google 與 Anthropic 三方戰略合作 台積電先進製程需求爆發 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9427820",
+    "業界關注焦點從算力轉為傳輸速度 光通訊台鏈跟著紅 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9427824",
+    "華為新折疊機叫陣蘋果 大立光通吃手機鏡頭訂單 營運看俏 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9427828",
+    "大尺寸 TV 面板漲勢延續 中小尺寸利潤空間受壓縮 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9427704",
+    "國泰金結盟 OpenAI 強化戰力 (經濟金融脈動)": "https://money.udn.com/money/story/5613/9427660",
+    "光進銅退？AI資料中心「內外有別」 (聯合_產經_股市)": "https://udn.com/news/story/7240/9427722",
+    "Touch Taiwan展開展！矽光子技術 面板產業新焦點 (聯合_產經_股市)": "https://udn.com/news/story/7240/9427723",
+    "現實版「杯麵」來了！台灣紅外線熱影像晶片即將正式量產，天淵掌握8吋MEMS先機 (聯合_產經_股市)": "https://udn.com/news/story/7238/9426029",
+    "「股王」信驊營收寫兩個新高 伺服器BMC出貨報捷 (聯合_產經_股市)": "https://udn.com/news/story/7251/9427831",
+    "散熱三雄3月營收創高 首季同步改寫新猷 (聯合_產經_股市)": "https://udn.com/news/story/7251/9427359",
+    "記憶體族群上月營收旺！旺宏近51個月最佳 威剛、十銓同寫新高 (聯合_產經_股市)": "https://udn.com/news/story/7253/9427735",
+    "大尺寸TV面板漲勢延續 中小尺寸利潤空間受壓縮 (聯合_產經_股市)": "https://udn.com/news/story/7240/9427704",
+    "川湖3月單月、第1季單季營收雙雙攻頂 (聯合_產經_股市)": "https://udn.com/news/story/7253/9427365",
+    "景碩：高階載板需求無虞 (聯合_產經_股市)": "https://udn.com/news/story/7253/9427367",
+    "信驊Q1營收超標 訂單看到Q4 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260408000139-260202?utm_source=iii_news&utm_medium=rss",
+    "英特爾 加入馬斯克Terafab (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260408000142-260202?utm_source=iii_news&utm_medium=rss",
+    "台積法說下周登場 外資揭六大必考題 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260408000145-260202?utm_source=iii_news&utm_medium=rss",
+    "先進封裝產能緊張 設備廠擴產紅利吃好吃滿 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260408000148-260202?utm_source=iii_news&utm_medium=rss",
+    "AI晶片升級 先進封裝設備投資夯 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260408000151-260202?utm_source=iii_news&utm_medium=rss",
+    "預計4／20掛牌 宏碁智新、神數 今起申購 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260408000166-260202?utm_source=iii_news&utm_medium=rss",
+    "三星Q1財報超猛 股價嗨 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260408000207-260203?utm_source=iii_news&utm_medium=rss",
+    "蘋果折疊機難產？外媒：遇挑戰 上市計畫恐延後 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260408000210-260203?utm_source=iii_news&utm_medium=rss",
+    "博通 拿下谷歌AI晶片五年長約 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260408000212-260203?utm_source=iii_news&utm_medium=rss",
+    "Anthropic年化營收 衝上300億美元 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260408000214-260203?utm_source=iii_news&utm_medium=rss",
+    "馬雲、雷軍押寶機器人 注資千尋智能 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260408000222-260203?utm_source=iii_news&utm_medium=rss",
+    "防陸AI蒸餾行為 美3巨頭合作 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260408000225-260203?utm_source=iii_news&utm_medium=rss",
+    "記憶體漲不停 Q2上看5成 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260408000242-260204?utm_source=iii_news&utm_medium=rss",
+    "AI動能強 南電ABF產能近滿載 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260408000245-260204?utm_source=iii_news&utm_medium=rss",
+    "仁寶新品牌 深化車用布局 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260408000246-260204?utm_source=iii_news&utm_medium=rss",
+    "華碩推首款AI USB 價格估四位數 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260408000248-260204?utm_source=iii_news&utm_medium=rss",
+    "加速AI Agent應用落地 精誠EAP平台導入日本電信客戶 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260408000249-260204?utm_source=iii_news&utm_medium=rss",
+    "AI基建帶旺PCB、基板市場 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260408000251-260204?utm_source=iii_news&utm_medium=rss",
+    "投資AIDC 台灣大、遠傳有妙招 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260408000252-260204?utm_source=iii_news&utm_medium=rss",
+    "台矽谷新創基地 科技巨頭投資 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260408000499-260110?utm_source=iii_news&utm_medium=rss",
+    "AI伺服器晶片出貨旺 信驊3月營收創新高 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1750077",
+    "景碩：ABF載板下半年漲幅更大 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1750078",
+    "富世達3月營收月增35% 寫新紀錄 (聯合_產經_股市)": "https://udn.com/news/story/7253/9427361",
+    "中裕愛滋新藥 邁大步 (聯合_產經_股市)": "https://udn.com/news/story/7254/9427388",
+    "今年首例 婦瑞典返台確診萊姆病 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260408000491-260114?utm_source=iii_news&utm_medium=rss",
+    "孕期塑化劑暴露 擾新生兒發育 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260408000493-260114?utm_source=iii_news&utm_medium=rss",
+    "華航下周四起調高燃油附加費漲幅7%起跳 航空貨運價再掀一波漲勢 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9427733",
+    "油價漲不停航空運價飆高下 中菲行、捷迅業績報喜 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9427740",
+    "經長喊話 塑膠袋整體供貨穩定 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260408000133-260202?utm_source=iii_news&utm_medium=rss",
+    "海運兩樣情 美續揚、歐調降 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260408000179-260202?utm_source=iii_news&utm_medium=rss",
+    "塑膠袋之亂延燒 中南部缺最凶 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260408000495-260110?utm_source=iii_news&utm_medium=rss",
+    "查漲價 檢方二度約談台塑主管 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260408000501-260110?utm_source=iii_news&utm_medium=rss",
+    "伊朗稱成功攻擊沙烏地朱拜爾工業區 報復石化廠遇襲 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9427866",
+    "特斯拉搶市 推油轉電補貼 和泰車、南陽也出招促銷 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9427702",
+    "美二手電動車 買氣飆 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9427742",
+    "荷姆茲卡關 天然氣短缺加劇 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260408000129-260202?utm_source=iii_news&utm_medium=rss",
+    "賴文祥：綠能供應鏈 支撐能源轉型韌性 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260408000152-260202?utm_source=iii_news&utm_medium=rss",
+    "豁免瓊斯法案沒用 美石油出口續增 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260408000203-260203?utm_source=iii_news&utm_medium=rss"
+  }
+}
