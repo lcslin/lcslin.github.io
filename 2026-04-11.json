@@ -1,0 +1,1257 @@
+{
+  "nodes": [
+    {
+      "id": "Meta",
+      "group": "company",
+      "size": 25
+    },
+    {
+      "id": "台積電",
+      "group": "company",
+      "size": 23
+    },
+    {
+      "id": "三星",
+      "group": "company",
+      "size": 20
+    },
+    {
+      "id": "蘋果",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "川普",
+      "group": "person",
+      "size": 16
+    },
+    {
+      "id": "Fed",
+      "group": "org",
+      "size": 22
+    },
+    {
+      "id": "世銀",
+      "group": "org",
+      "size": 15
+    },
+    {
+      "id": "中國",
+      "group": "country",
+      "size": 20
+    },
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 22
+    },
+    {
+      "id": "伊朗",
+      "group": "country",
+      "size": 21
+    },
+    {
+      "id": "台灣",
+      "group": "country",
+      "size": 19
+    },
+    {
+      "id": "日本",
+      "group": "country",
+      "size": 12
+    },
+    {
+      "id": "德國",
+      "group": "country",
+      "size": 10
+    },
+    {
+      "id": "義大利",
+      "group": "country",
+      "size": 10
+    },
+    {
+      "id": "法國",
+      "group": "country",
+      "size": 10
+    },
+    {
+      "id": "印度",
+      "group": "country",
+      "size": 11
+    },
+    {
+      "id": "俄羅斯",
+      "group": "country",
+      "size": 12
+    },
+    {
+      "id": "以色列",
+      "group": "country",
+      "size": 13
+    },
+    {
+      "id": "AI",
+      "group": "tech",
+      "size": 24
+    },
+    {
+      "id": "半導體",
+      "group": "tech",
+      "size": 20
+    },
+    {
+      "id": "記憶體",
+      "group": "tech",
+      "size": 16
+    },
+    {
+      "id": "HBM",
+      "group": "tech",
+      "size": 14
+    },
+    {
+      "id": "通膨",
+      "group": "finance",
+      "size": 19
+    },
+    {
+      "id": "原油",
+      "group": "finance",
+      "size": 18
+    },
+    {
+      "id": "能源危機",
+      "group": "finance",
+      "size": 17
+    },
+    {
+      "id": "GDP",
+      "group": "finance",
+      "size": 14
+    },
+    {
+      "id": "鴻海",
+      "group": "company",
+      "size": 17
+    },
+    {
+      "id": "聯發科",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "台達電",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "Google",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "英特爾",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "宏碁",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "仁寶",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "工研院",
+      "group": "org",
+      "size": 15
+    },
+    {
+      "id": "台泥",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "富采",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "環球晶",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "南亞科",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "華邦",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "旺宏",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "光寶",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "中華電",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "安謀",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "軟銀",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "長鑫存儲",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "CoreWeave",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "NATO",
+      "group": "org",
+      "size": 13
+    },
+    {
+      "id": "荷莫茲海峽",
+      "group": "finance",
+      "size": 16
+    },
+    {
+      "id": "中油",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "新台幣",
+      "group": "finance",
+      "size": 13
+    },
+    {
+      "id": "人民幣",
+      "group": "finance",
+      "size": 12
+    }
+  ],
+  "links": [
+    {
+      "source": "世銀",
+      "target": "GDP",
+      "value": 4,
+      "label": "經濟預測"
+    },
+    {
+      "source": "世銀",
+      "target": "中國",
+      "value": 4,
+      "label": "經濟預測"
+    },
+    {
+      "source": "Fed",
+      "target": "通膨",
+      "value": 5,
+      "label": "貨幣政策"
+    },
+    {
+      "source": "Fed",
+      "target": "美國",
+      "value": 5,
+      "label": "政策機構"
+    },
+    {
+      "source": "川普",
+      "target": "NATO",
+      "value": 4,
+      "label": "軍事政策"
+    },
+    {
+      "source": "川普",
+      "target": "德國",
+      "value": 3,
+      "label": "外交壓力"
+    },
+    {
+      "source": "川普",
+      "target": "義大利",
+      "value": 3,
+      "label": "外交壓力"
+    },
+    {
+      "source": "川普",
+      "target": "法國",
+      "value": 3,
+      "label": "外交壓力"
+    },
+    {
+      "source": "通膨",
+      "target": "原油",
+      "value": 4,
+      "label": "價格影響"
+    },
+    {
+      "source": "伊朗",
+      "target": "美國",
+      "value": 5,
+      "label": "談判關係"
+    },
+    {
+      "source": "伊朗",
+      "target": "荷莫茲海峽",
+      "value": 5,
+      "label": "戰略控制"
+    },
+    {
+      "source": "以色列",
+      "target": "伊朗",
+      "value": 4,
+      "label": "衝突關係"
+    },
+    {
+      "source": "荷莫茲海峽",
+      "target": "原油",
+      "value": 5,
+      "label": "供應鏈"
+    },
+    {
+      "source": "荷莫茲海峽",
+      "target": "中油",
+      "value": 4,
+      "label": "原油運輸"
+    },
+    {
+      "source": "荷莫茲海峽",
+      "target": "能源危機",
+      "value": 5,
+      "label": "戰略要道"
+    },
+    {
+      "source": "中國",
+      "target": "能源危機",
+      "value": 3,
+      "label": "受益者"
+    },
+    {
+      "source": "台灣",
+      "target": "新台幣",
+      "value": 4,
+      "label": "貨幣政策"
+    },
+    {
+      "source": "新台幣",
+      "target": "人民幣",
+      "value": 3,
+      "label": "匯率關係"
+    },
+    {
+      "source": "Meta",
+      "target": "AI",
+      "value": 5,
+      "label": "技術研發"
+    },
+    {
+      "source": "Meta",
+      "target": "CoreWeave",
+      "value": 4,
+      "label": "算力採購"
+    },
+    {
+      "source": "Meta",
+      "target": "台積電",
+      "value": 4,
+      "label": "供應鏈"
+    },
+    {
+      "source": "AI",
+      "target": "台達電",
+      "value": 4,
+      "label": "產業需求"
+    },
+    {
+      "source": "AI",
+      "target": "鴻海",
+      "value": 3,
+      "label": "伺服器需求"
+    },
+    {
+      "source": "AI",
+      "target": "安謀",
+      "value": 3,
+      "label": "晶片設計"
+    },
+    {
+      "source": "安謀",
+      "target": "軟銀",
+      "value": 3,
+      "label": "投資關係"
+    },
+    {
+      "source": "台積電",
+      "target": "半導體",
+      "value": 5,
+      "label": "產業龍頭"
+    },
+    {
+      "source": "台積電",
+      "target": "台灣",
+      "value": 5,
+      "label": "產業支柱"
+    },
+    {
+      "source": "台積電",
+      "target": "工研院",
+      "value": 3,
+      "label": "技術合作"
+    },
+    {
+      "source": "台灣",
+      "target": "日本",
+      "value": 4,
+      "label": "半導體合作"
+    },
+    {
+      "source": "台灣",
+      "target": "半導體",
+      "value": 5,
+      "label": "產業優勢"
+    },
+    {
+      "source": "三星",
+      "target": "記憶體",
+      "value": 5,
+      "label": "產業龍頭"
+    },
+    {
+      "source": "三星",
+      "target": "蘋果",
+      "value": 4,
+      "label": "供應關係"
+    },
+    {
+      "source": "三星",
+      "target": "南亞科",
+      "value": 3,
+      "label": "市場影響"
+    },
+    {
+      "source": "三星",
+      "target": "華邦",
+      "value": 3,
+      "label": "市場影響"
+    },
+    {
+      "source": "三星",
+      "target": "旺宏",
+      "value": 3,
+      "label": "市場影響"
+    },
+    {
+      "source": "記憶體",
+      "target": "HBM",
+      "value": 4,
+      "label": "技術升級"
+    },
+    {
+      "source": "HBM",
+      "target": "長鑫存儲",
+      "value": 3,
+      "label": "技術追趕"
+    },
+    {
+      "source": "長鑫存儲",
+      "target": "中國",
+      "value": 4,
+      "label": "產業發展"
+    },
+    {
+      "source": "蘋果",
+      "target": "鴻海",
+      "value": 4,
+      "label": "供應鏈"
+    },
+    {
+      "source": "蘋果",
+      "target": "光寶",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "Google",
+      "target": "英特爾",
+      "value": 4,
+      "label": "晶片採購"
+    },
+    {
+      "source": "Google",
+      "target": "AI",
+      "value": 4,
+      "label": "技術競爭"
+    },
+    {
+      "source": "英特爾",
+      "target": "半導體",
+      "value": 4,
+      "label": "產業參與"
+    },
+    {
+      "source": "工研院",
+      "target": "鴻海",
+      "value": 3,
+      "label": "創新獎項"
+    },
+    {
+      "source": "工研院",
+      "target": "聯發科",
+      "value": 3,
+      "label": "創新獎項"
+    },
+    {
+      "source": "工研院",
+      "target": "台灣",
+      "value": 4,
+      "label": "研發機構"
+    },
+    {
+      "source": "宏碁",
+      "target": "台灣",
+      "value": 3,
+      "label": "本土企業"
+    },
+    {
+      "source": "仁寶",
+      "target": "台灣",
+      "value": 3,
+      "label": "本土企業"
+    },
+    {
+      "source": "台達電",
+      "target": "台灣",
+      "value": 4,
+      "label": "本土企業"
+    },
+    {
+      "source": "富采",
+      "target": "台灣",
+      "value": 3,
+      "label": "光電產業"
+    },
+    {
+      "source": "環球晶",
+      "target": "半導體",
+      "value": 4,
+      "label": "材料供應"
+    },
+    {
+      "source": "中華電",
+      "target": "台灣",
+      "value": 3,
+      "label": "電信基礎"
+    },
+    {
+      "source": "台泥",
+      "target": "台灣",
+      "value": 3,
+      "label": "資產開發"
+    },
+    {
+      "source": "半導體",
+      "target": "台灣",
+      "value": 5,
+      "label": "產業核心"
+    },
+    {
+      "source": "美國",
+      "target": "中國",
+      "value": 4,
+      "label": "貿易制裁"
+    },
+    {
+      "source": "俄羅斯",
+      "target": "能源危機",
+      "value": 3,
+      "label": "天然氣供應"
+    },
+    {
+      "source": "印度",
+      "target": "台灣",
+      "value": 3,
+      "label": "移工政策"
+    }
+  ],
+  "newsDatabase": {
+    "世銀": [
+      {
+        "title": "世銀調降東亞經濟成長",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9432621"
+      },
+      {
+        "title": "陸今年GDP增幅 世銀估4.2％",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000270-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Fed": [
+      {
+        "title": "Fed 會議紀錄 基調偏鷹",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9432579"
+      },
+      {
+        "title": "中東戰火推升通膨 Fed研擬升息",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000169-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "川普": [
+      {
+        "title": "傳川普擬將美軍調離不挺戰北約盟國 西德義法遭點名",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9432796"
+      }
+    ],
+    "伊朗": [
+      {
+        "title": "美伊將談判 台股3劇本應戰",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000172-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美伊停火生效後 首艘非伊朗籍油輪通過荷莫茲海峽",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9432755"
+      },
+      {
+        "title": "荷姆茲通行費 伊朗只收加密幣",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000181-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美伊停火 瑞銀示警五隱憂",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000186-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "通膨": [
+      {
+        "title": "中東戰火推升通膨 Fed研擬升息",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000169-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美國2月核心PCE年增3％ 通膨仍高",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000175-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "新台幣": [
+      {
+        "title": "新台幣9日亞幣中獨強 專家看人民幣未來持續升值",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000189-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "人民幣": [
+      {
+        "title": "新台幣9日亞幣中獨強 專家看人民幣未來持續升值",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000189-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中國": [
+      {
+        "title": "陸今年GDP增幅 世銀估4.2％",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000270-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "長鑫存儲量產HBM 急追韓廠",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000273-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美擬禁中國測試銷美電子產品",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000280-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "德銀：中國成能源危機中的贏家",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000278-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "GDP": [
+      {
+        "title": "陸今年GDP增幅 世銀估4.2％",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000270-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Meta": [
+      {
+        "title": "Meta最強AI模型 台鏈叫好 預期引爆更多伺服器需求",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9432574"
+      },
+      {
+        "title": "Meta最強AI模型…零食成分 它「看」一眼就知道",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9432584"
+      },
+      {
+        "title": "Meta加碼買算力 再砸6,720億元",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9432585"
+      },
+      {
+        "title": "挑戰GPT！Meta AI新模型 隨手生成遊戲、提供穿搭靈感",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9432592"
+      },
+      {
+        "title": "Meta推自研模型 掀AI大戰",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000261-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "算力軍備賽升級 CoreWeave、Meta簽大單",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000264-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "AI": [
+      {
+        "title": "Meta最強AI模型 台鏈叫好 預期引爆更多伺服器需求",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9432574"
+      },
+      {
+        "title": "Meta最強AI模型…零食成分 它「看」一眼就知道",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9432584"
+      },
+      {
+        "title": "安謀 CEO 將助軟銀推動 AI",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9432626"
+      },
+      {
+        "title": "挑戰GPT！Meta AI新模型 隨手生成遊戲、提供穿搭靈感",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9432592"
+      },
+      {
+        "title": "AI續旺 台達電營收締最強Q1",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000192-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "Meta推自研模型 掀AI大戰",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000261-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "智慧經營／台塑企業總管理處總經理林善志 善用 AI  落實製程安全",
+        "source": "",
+        "url": "https://udn.com/news/story/7241/9432414"
+      }
+    ],
+    "三星": [
+      {
+        "title": "三星家族賣股 殃及記憶體 南亞科、華邦、旺宏等跟著跳水",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9432578"
+      },
+      {
+        "title": "三星家族賣股 台廠喊記憶體向上趨勢不變",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9432587"
+      },
+      {
+        "title": "全球最高遺產稅12兆韓元 三星家族賣股繳清",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9432597"
+      },
+      {
+        "title": "三星顯示器 獨供蘋果折疊機",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000266-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "記憶體": [
+      {
+        "title": "三星家族賣股 殃及記憶體 南亞科、華邦、旺宏等跟著跳水",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9432578"
+      },
+      {
+        "title": "三星家族賣股 台廠喊記憶體向上趨勢不變",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9432587"
+      }
+    ],
+    "南亞科": [
+      {
+        "title": "三星家族賣股 殃及記憶體 南亞科、華邦、旺宏等跟著跳水",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9432578"
+      }
+    ],
+    "華邦": [
+      {
+        "title": "三星家族賣股 殃及記憶體 南亞科、華邦、旺宏等跟著跳水",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9432578"
+      }
+    ],
+    "旺宏": [
+      {
+        "title": "三星家族賣股 殃及記憶體 南亞科、華邦、旺宏等跟著跳水",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9432578"
+      }
+    ],
+    "蘋果": [
+      {
+        "title": "養龍蝦效應 蘋果Mac缺貨 鴻海、光寶等有望迎追單",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9432581"
+      },
+      {
+        "title": "蘋果Mac Mini硬體+資安優勢 養龍蝦CP值高",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9432590"
+      },
+      {
+        "title": "三星顯示器 獨供蘋果折疊機",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000266-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "鴻海": [
+      {
+        "title": "養龍蝦效應 蘋果Mac缺貨 鴻海、光寶等有望迎追單",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9432581"
+      },
+      {
+        "title": "百大創新獎 工研院大贏家 鴻海、聯發科、台積等上榜",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9432490"
+      }
+    ],
+    "光寶": [
+      {
+        "title": "養龍蝦效應 蘋果Mac缺貨 鴻海、光寶等有望迎追單",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9432581"
+      }
+    ],
+    "宏碁": [
+      {
+        "title": "宏碁3月營收月增39% 多元事業助攻",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9432486"
+      },
+      {
+        "title": "PC急單挹注 雙A業績攀高",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000295-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "工研院": [
+      {
+        "title": "百大創新獎 工研院大贏家 鴻海、聯發科、台積等上榜",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9432490"
+      },
+      {
+        "title": "工研院大秀專利 10度獲全球百大創新機構",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000307-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "全球創新百大機構 台連5年列第3",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1750244"
+      }
+    ],
+    "聯發科": [
+      {
+        "title": "百大創新獎 工研院大贏家 鴻海、聯發科、台積等上榜",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9432490"
+      }
+    ],
+    "台積電": [
+      {
+        "title": "百大創新獎 工研院大贏家 鴻海、聯發科、台積等上榜",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9432490"
+      },
+      {
+        "title": "台積法說倒數 供應鏈先讚聲",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000200-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "安謀": [
+      {
+        "title": "安謀 CEO 將助軟銀推動 AI",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9432626"
+      }
+    ],
+    "軟銀": [
+      {
+        "title": "安謀 CEO 將助軟銀推動 AI",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9432626"
+      }
+    ],
+    "Google": [
+      {
+        "title": "Google 擬導入英特爾晶片",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9432632"
+      }
+    ],
+    "英特爾": [
+      {
+        "title": "Google 擬導入英特爾晶片",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9432632"
+      }
+    ],
+    "台達電": [
+      {
+        "title": "AI續旺 台達電營收締最強Q1",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000192-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "半導體": [
+      {
+        "title": "接單熱 半導體設備廠3月吃補",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000195-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台日首次半導體國會對談 拚深化合作",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000226-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台灣": [
+      {
+        "title": "台日首次半導體國會對談 拚深化合作",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000226-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "全球創新百大機構 台連5年列第3",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1750244"
+      }
+    ],
+    "日本": [
+      {
+        "title": "台日首次半導體國會對談 拚深化合作",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000226-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "CoreWeave": [
+      {
+        "title": "算力軍備賽升級 CoreWeave、Meta簽大單",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000264-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "長鑫存儲": [
+      {
+        "title": "長鑫存儲量產HBM 急追韓廠",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000273-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "HBM": [
+      {
+        "title": "長鑫存儲量產HBM 急追韓廠",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000273-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "美國": [
+      {
+        "title": "美擬禁中國測試銷美電子產品",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000280-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美國2月核心PCE年增3％ 通膨仍高",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000175-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "富采": [
+      {
+        "title": "富采減資瘦身 每股退4.58元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000298-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "3+1戰略進入落地期 富采Micro LED、車用、光通訊同步發酵",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1750278"
+      }
+    ],
+    "仁寶": [
+      {
+        "title": "仁寶首季營收穩 Q2出貨會更好",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000301-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中華電": [
+      {
+        "title": "中華電攻50G PON 搶寬頻商機",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000302-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "環球晶": [
+      {
+        "title": "環球晶 營運逐步向上",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000304-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台泥": [
+      {
+        "title": "台泥資產活化 要蓋頂級商辦 打造三棟綠色辦公大樓",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9432567"
+      },
+      {
+        "title": "台泥開發案三大項目 列為重點",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9432555"
+      },
+      {
+        "title": "台泥城市綠洲 身價看450億",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000219-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台泥舊廠變身頂級廠辦 城市綠洲每坪月租拚3千",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000222-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中油": [
+      {
+        "title": "荷姆茲海峽若解禁 中油200萬桶原油有望抵台",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000184-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "荷莫茲海峽": [
+      {
+        "title": "荷姆茲海峽若解禁 中油200萬桶原油有望抵台",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000184-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美伊停火生效後 首艘非伊朗籍油輪通過荷莫茲海峽",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9432755"
+      },
+      {
+        "title": "童子賢：不要浪費荷莫茲海峽這場能源危機",
+        "source": "",
+        "url": "https://udn.com/news/story/121591/9432735"
+      },
+      {
+        "title": "荷姆茲通行費 伊朗只收加密幣",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000181-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "原油": [
+      {
+        "title": "荷姆茲海峽若解禁 中油200萬桶原油有望抵台",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000184-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "布蘭特現貨價高掛124美元 顯示原油供應緊俏",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9432609"
+      }
+    ],
+    "印度": [
+      {
+        "title": "印度移工元年 勞長：今年有可能",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000560-260114?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "能源危機": [
+      {
+        "title": "童子賢：不要浪費荷莫茲海峽這場能源危機",
+        "source": "",
+        "url": "https://udn.com/news/story/121591/9432735"
+      },
+      {
+        "title": "強化能源韌性系列報導》林泉興：能源策略 從成本思維轉向風險思維",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000205-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "德銀：中國成能源危機中的贏家",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260410000278-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "俄羅斯": [
+      {
+        "title": "1分鐘看世界／俄羅斯兜售受美制裁天然氣 擬打六折賣給東南亞",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9432511"
+      }
+    ],
+    "以色列": [
+      {
+        "title": "以色列計劃與黎巴嫩和談 國際油價漲幅收斂",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9432802"
+      }
+    ],
+    "NATO": [
+      {
+        "title": "傳川普擬將美軍調離不挺戰北約盟國 西德義法遭點名",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9432796"
+      }
+    ],
+    "德國": [
+      {
+        "title": "傳川普擬將美軍調離不挺戰北約盟國 西德義法遭點名",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9432796"
+      }
+    ],
+    "義大利": [
+      {
+        "title": "傳川普擬將美軍調離不挺戰北約盟國 西德義法遭點名",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9432796"
+      }
+    ],
+    "法國": [
+      {
+        "title": "傳川普擬將美軍調離不挺戰北約盟國 西德義法遭點名",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9432796"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "世銀調降東亞經濟成長 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9432621",
+    "Fed 會議紀錄 基調偏鷹 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9432579",
+    "傳川普擬將美軍調離不挺戰北約盟國 西德義法遭點名 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9432796",
+    "中東戰火推升通膨 Fed研擬升息 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260410000169-260202?utm_source=iii_news&utm_medium=rss",
+    "美伊將談判 台股3劇本應戰 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260410000172-260202?utm_source=iii_news&utm_medium=rss",
+    "美國2月核心PCE年增3％ 通膨仍高 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260410000175-260202?utm_source=iii_news&utm_medium=rss",
+    "新台幣9日亞幣中獨強 專家看人民幣未來持續升值 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260410000189-260202?utm_source=iii_news&utm_medium=rss",
+    "陸今年GDP增幅 世銀估4.2％ (工商全球財經)": "https://www.chinatimes.com/newspapers/20260410000270-260203?utm_source=iii_news&utm_medium=rss",
+    "戰爭資金緊 3月隔拆平均利率走高 (工商金融稅務)": "https://www.chinatimes.com/newspapers/20260410000287-260205?utm_source=iii_news&utm_medium=rss",
+    "Meta最強AI模型 台鏈叫好 預期引爆更多伺服器需求 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9432574",
+    "Meta最強AI模型…零食成分 它「看」一眼就知道 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9432584",
+    "三星家族賣股 殃及記憶體 南亞科、華邦、旺宏等跟著跳水 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9432578",
+    "三星家族賣股 台廠喊記憶體向上趨勢不變 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9432587",
+    "養龍蝦效應 蘋果Mac缺貨 鴻海、光寶等有望迎追單 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9432581",
+    "蘋果Mac Mini硬體+資安優勢 養龍蝦CP值高 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9432590",
+    "Meta加碼買算力 再砸6,720億元 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9432585",
+    "宏碁3月營收月增39% 多元事業助攻 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9432486",
+    "百大創新獎 工研院大贏家 鴻海、聯發科、台積等上榜 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9432490",
+    "全球海底電纜保衛戰 開打 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9432624",
+    "安謀 CEO 將助軟銀推動 AI (經濟國際焦點)": "https://money.udn.com/money/story/5599/9432626",
+    "Google 擬導入英特爾晶片 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9432632",
+    "挑戰GPT！Meta AI新模型 隨手生成遊戲、提供穿搭靈感 (聯合_產經_股市)": "https://udn.com/news/story/7238/9432592",
+    "全球最高遺產稅12兆韓元 三星家族賣股繳清 (聯合_產經_股市)": "https://udn.com/news/story/6811/9432597",
+    "AI續旺 台達電營收締最強Q1 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260410000192-260202?utm_source=iii_news&utm_medium=rss",
+    "接單熱 半導體設備廠3月吃補 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260410000195-260202?utm_source=iii_news&utm_medium=rss",
+    "台積法說倒數 供應鏈先讚聲 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260410000200-260202?utm_source=iii_news&utm_medium=rss",
+    "數保公司上路 監理彈性化 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260410000207-260202?utm_source=iii_news&utm_medium=rss",
+    "台日首次半導體國會對談 拚深化合作 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260410000226-260202?utm_source=iii_news&utm_medium=rss",
+    "Meta推自研模型 掀AI大戰 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260410000261-260203?utm_source=iii_news&utm_medium=rss",
+    "算力軍備賽升級 CoreWeave、Meta簽大單 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260410000264-260203?utm_source=iii_news&utm_medium=rss",
+    "三星顯示器 獨供蘋果折疊機 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260410000266-260203?utm_source=iii_news&utm_medium=rss",
+    "長鑫存儲量產HBM 急追韓廠 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260410000273-260203?utm_source=iii_news&utm_medium=rss",
+    "美擬禁中國測試銷美電子產品 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260410000280-260203?utm_source=iii_news&utm_medium=rss",
+    "非現金支付 小額交易占大宗 (工商金融稅務)": "https://www.chinatimes.com/newspapers/20260410000282-260205?utm_source=iii_news&utm_medium=rss",
+    "PC急單挹注 雙A業績攀高 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260410000295-260204?utm_source=iii_news&utm_medium=rss",
+    "富采減資瘦身 每股退4.58元 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260410000298-260204?utm_source=iii_news&utm_medium=rss",
+    "仁寶首季營收穩 Q2出貨會更好 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260410000301-260204?utm_source=iii_news&utm_medium=rss",
+    "中華電攻50G PON 搶寬頻商機 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260410000302-260204?utm_source=iii_news&utm_medium=rss",
+    "環球晶 營運逐步向上 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260410000304-260204?utm_source=iii_news&utm_medium=rss",
+    "虹彩新品齊發 今年登興櫃 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260410000305-260204?utm_source=iii_news&utm_medium=rss",
+    "工研院大秀專利 10度獲全球百大創新機構 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260410000307-260204?utm_source=iii_news&utm_medium=rss",
+    "3+1戰略進入落地期 富采Micro LED、車用、光通訊同步發酵 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1750278",
+    "全球創新百大機構 台連5年列第3 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1750244",
+    "藥華藥收購加國藥廠 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9432491",
+    "7月上路惹議 寵物用藥新制今研商 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260410000565-260114?utm_source=iii_news&utm_medium=rss",
+    "輸入延遲 2款青光眼常用藥急缺 7月才有貨 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260410000567-260114?utm_source=iii_news&utm_medium=rss",
+    "台泥資產活化 要蓋頂級商辦 打造三棟綠色辦公大樓 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9432567",
+    "台泥開發案三大項目 列為重點 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9432555",
+    "普發1萬 尚有40萬人未領 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260410000178-260202?utm_source=iii_news&utm_medium=rss",
+    "荷姆茲海峽若解禁 中油200萬桶原油有望抵台 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260410000184-260202?utm_source=iii_news&utm_medium=rss",
+    "台泥城市綠洲 身價看450億 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260410000219-260202?utm_source=iii_news&utm_medium=rss",
+    "台泥舊廠變身頂級廠辦 城市綠洲每坪月租拚3千 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260410000222-260202?utm_source=iii_news&utm_medium=rss",
+    "貨櫃三雄3月營收年減 部分遞延至4月 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260410000227-260202?utm_source=iii_news&utm_medium=rss",
+    "智慧經營／台塑企業總管理處總經理林善志 善用 AI  落實製程安全 (聯合_產經_股市)": "https://udn.com/news/story/7241/9432414",
+    "解囤貨亂象 平價塑膠袋1周內供貨 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260410000573-260110?utm_source=iii_news&utm_medium=rss",
+    "5部會說查無囤貨 立委傻眼 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260410000581-260110?utm_source=iii_news&utm_medium=rss",
+    "印度移工元年 勞長：今年有可能 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260410000560-260114?utm_source=iii_news&utm_medium=rss",
+    "外傭鬆綁加劇不公 人權會促暫緩 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260410000569-260114?utm_source=iii_news&utm_medium=rss",
+    "外籍白領均可領勞退 6月底前確認新舊制 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260410000571-260114?utm_source=iii_news&utm_medium=rss",
+    "政院修法 扣留移工護照最重罰30萬 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1750242",
+    "勞長：年底前簡化移工直聘流程 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1750243",
+    "布蘭特現貨價高掛124美元 顯示原油供應緊俏 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9432609",
+    "美伊停火生效後 首艘非伊朗籍油輪通過荷莫茲海峽 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9432755",
+    "1分鐘看世界／俄羅斯兜售受美制裁天然氣 擬打六折賣給東南亞 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9432511",
+    "童子賢：不要浪費荷莫茲海峽這場能源危機 (聯合_產經_股市)": "https://udn.com/news/story/121591/9432735",
+    "荷姆茲通行費 伊朗只收加密幣 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260410000181-260202?utm_source=iii_news&utm_medium=rss",
+    "美伊停火 瑞銀示警五隱憂 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260410000186-260202?utm_source=iii_news&utm_medium=rss",
+    "強化能源韌性系列報導》林泉興：能源策略 從成本思維轉向風險思維 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260410000205-260202?utm_source=iii_news&utm_medium=rss",
+    "循環雙法 廠商要負回收責任 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260410000211-260202?utm_source=iii_news&utm_medium=rss",
+    "氣候戰爭夾擊 推升全球糧價 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260410000252-260203?utm_source=iii_news&utm_medium=rss",
+    "德銀：中國成能源危機中的贏家 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260410000278-260203?utm_source=iii_news&utm_medium=rss",
+    "以色列計劃與黎巴嫩和談 國際油價漲幅收斂 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9432802",
+    "美伊戰火稍歇 黃金拋售潮暫緩 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260410000583-260110?utm_source=iii_news&utm_medium=rss"
+  }
+}
