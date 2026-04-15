@@ -1,0 +1,1409 @@
+{
+  "nodes": [
+    {
+      "id": "川普",
+      "group": "person",
+      "size": 20
+    },
+    {
+      "id": "莫迪",
+      "group": "person",
+      "size": 10
+    },
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 25
+    },
+    {
+      "id": "伊朗",
+      "group": "country",
+      "size": 18
+    },
+    {
+      "id": "新加坡",
+      "group": "country",
+      "size": 20
+    },
+    {
+      "id": "台灣",
+      "group": "country",
+      "size": 22
+    },
+    {
+      "id": "中國",
+      "group": "country",
+      "size": 20
+    },
+    {
+      "id": "歐盟",
+      "group": "org",
+      "size": 18
+    },
+    {
+      "id": "IMF",
+      "group": "org",
+      "size": 20
+    },
+    {
+      "id": "Fed",
+      "group": "org",
+      "size": 15
+    },
+    {
+      "id": "貝森特",
+      "group": "person",
+      "size": 12
+    },
+    {
+      "id": "習近平",
+      "group": "person",
+      "size": 15
+    },
+    {
+      "id": "范德賴恩",
+      "group": "person",
+      "size": 10
+    },
+    {
+      "id": "台積電",
+      "group": "company",
+      "size": 22
+    },
+    {
+      "id": "鴻海",
+      "group": "company",
+      "size": 20
+    },
+    {
+      "id": "微軟",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "亞馬遜",
+      "group": "company",
+      "size": 17
+    },
+    {
+      "id": "輝達",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "OpenAI",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "SpaceX",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "廣達",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "和碩",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "緯創",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "英業達",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "南電",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "欣興",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "中鼎",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "康舒",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "太陽誘電",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "長江存儲",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "華碩",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "東陽",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "裕隆",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "全聯",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "統一",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "日產",
+      "group": "company",
+      "size": 9
+    },
+    {
+      "id": "Globalstar",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "貨幣政策",
+      "group": "finance",
+      "size": 20
+    },
+    {
+      "id": "通膨",
+      "group": "finance",
+      "size": 18
+    },
+    {
+      "id": "PPI",
+      "group": "finance",
+      "size": 15
+    },
+    {
+      "id": "經濟成長",
+      "group": "finance",
+      "size": 18
+    },
+    {
+      "id": "台幣匯率",
+      "group": "finance",
+      "size": 16
+    },
+    {
+      "id": "關稅",
+      "group": "finance",
+      "size": 17
+    },
+    {
+      "id": "貿易",
+      "group": "finance",
+      "size": 16
+    },
+    {
+      "id": "AI",
+      "group": "tech",
+      "size": 22
+    },
+    {
+      "id": "記憶體",
+      "group": "tech",
+      "size": 16
+    },
+    {
+      "id": "被動元件",
+      "group": "tech",
+      "size": 15
+    },
+    {
+      "id": "電動車",
+      "group": "tech",
+      "size": 18
+    },
+    {
+      "id": "ABF",
+      "group": "tech",
+      "size": 13
+    },
+    {
+      "id": "量子計算",
+      "group": "tech",
+      "size": 12
+    },
+    {
+      "id": "衛星通訊",
+      "group": "tech",
+      "size": 14
+    }
+  ],
+  "links": [
+    {
+      "source": "川普",
+      "target": "莫迪",
+      "value": 3,
+      "label": "外交會談"
+    },
+    {
+      "source": "川普",
+      "target": "美國",
+      "value": 5,
+      "label": "政策主導"
+    },
+    {
+      "source": "川普",
+      "target": "伊朗",
+      "value": 4,
+      "label": "談判協商"
+    },
+    {
+      "source": "美國",
+      "target": "伊朗",
+      "value": 4,
+      "label": "制裁豁免"
+    },
+    {
+      "source": "新加坡",
+      "target": "貨幣政策",
+      "value": 5,
+      "label": "緊縮政策"
+    },
+    {
+      "source": "新加坡",
+      "target": "通膨",
+      "value": 4,
+      "label": "壓抑物價"
+    },
+    {
+      "source": "美國",
+      "target": "PPI",
+      "value": 3,
+      "label": "通膨指標"
+    },
+    {
+      "source": "IMF",
+      "target": "經濟成長",
+      "value": 5,
+      "label": "經濟預測"
+    },
+    {
+      "source": "IMF",
+      "target": "台灣",
+      "value": 4,
+      "label": "上修預測"
+    },
+    {
+      "source": "IMF",
+      "target": "通膨",
+      "value": 4,
+      "label": "示警風險"
+    },
+    {
+      "source": "台灣",
+      "target": "經濟成長",
+      "value": 5,
+      "label": "成長領先"
+    },
+    {
+      "source": "貝森特",
+      "target": "Fed",
+      "value": 3,
+      "label": "政策建議"
+    },
+    {
+      "source": "Fed",
+      "target": "貨幣政策",
+      "value": 4,
+      "label": "降息觀望"
+    },
+    {
+      "source": "中國",
+      "target": "貿易",
+      "value": 4,
+      "label": "出口衰退"
+    },
+    {
+      "source": "習近平",
+      "target": "中國",
+      "value": 5,
+      "label": "政策主導"
+    },
+    {
+      "source": "台灣",
+      "target": "台幣匯率",
+      "value": 4,
+      "label": "匯率升值"
+    },
+    {
+      "source": "美國",
+      "target": "關稅",
+      "value": 4,
+      "label": "301調查"
+    },
+    {
+      "source": "台灣",
+      "target": "關稅",
+      "value": 3,
+      "label": "因應準備"
+    },
+    {
+      "source": "歐盟",
+      "target": "關稅",
+      "value": 4,
+      "label": "鋼鐵關稅"
+    },
+    {
+      "source": "范德賴恩",
+      "target": "歐盟",
+      "value": 3,
+      "label": "改革推動"
+    },
+    {
+      "source": "台積電",
+      "target": "AI",
+      "value": 5,
+      "label": "先進製程"
+    },
+    {
+      "source": "台積電",
+      "target": "台灣",
+      "value": 5,
+      "label": "產業支柱"
+    },
+    {
+      "source": "微軟",
+      "target": "記憶體",
+      "value": 4,
+      "label": "漲價影響"
+    },
+    {
+      "source": "微軟",
+      "target": "廣達",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "微軟",
+      "target": "和碩",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "亞馬遜",
+      "target": "AI",
+      "value": 5,
+      "label": "投資擴張"
+    },
+    {
+      "source": "亞馬遜",
+      "target": "緯創",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "亞馬遜",
+      "target": "英業達",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "亞馬遜",
+      "target": "Globalstar",
+      "value": 4,
+      "label": "收購整合"
+    },
+    {
+      "source": "亞馬遜",
+      "target": "衛星通訊",
+      "value": 4,
+      "label": "市場競爭"
+    },
+    {
+      "source": "SpaceX",
+      "target": "衛星通訊",
+      "value": 5,
+      "label": "星鏈營收"
+    },
+    {
+      "source": "SpaceX",
+      "target": "Globalstar",
+      "value": 3,
+      "label": "市場競爭"
+    },
+    {
+      "source": "輝達",
+      "target": "AI",
+      "value": 5,
+      "label": "技術開發"
+    },
+    {
+      "source": "輝達",
+      "target": "量子計算",
+      "value": 4,
+      "label": "模型發表"
+    },
+    {
+      "source": "OpenAI",
+      "target": "AI",
+      "value": 4,
+      "label": "估值修正"
+    },
+    {
+      "source": "南電",
+      "target": "ABF",
+      "value": 4,
+      "label": "產能擴張"
+    },
+    {
+      "source": "欣興",
+      "target": "ABF",
+      "value": 4,
+      "label": "產能擴張"
+    },
+    {
+      "source": "ABF",
+      "target": "AI",
+      "value": 4,
+      "label": "供應需求"
+    },
+    {
+      "source": "中鼎",
+      "target": "AI",
+      "value": 3,
+      "label": "商機拓展"
+    },
+    {
+      "source": "康舒",
+      "target": "電動車",
+      "value": 4,
+      "label": "車電產品"
+    },
+    {
+      "source": "鴻海",
+      "target": "電動車",
+      "value": 5,
+      "label": "電池量產"
+    },
+    {
+      "source": "鴻海",
+      "target": "台灣",
+      "value": 4,
+      "label": "產業布局"
+    },
+    {
+      "source": "太陽誘電",
+      "target": "被動元件",
+      "value": 5,
+      "label": "漲價策略"
+    },
+    {
+      "source": "被動元件",
+      "target": "台灣",
+      "value": 3,
+      "label": "產業利多"
+    },
+    {
+      "source": "長江存儲",
+      "target": "記憶體",
+      "value": 4,
+      "label": "產能擴張"
+    },
+    {
+      "source": "長江存儲",
+      "target": "中國",
+      "value": 4,
+      "label": "產業布局"
+    },
+    {
+      "source": "華碩",
+      "target": "電動車",
+      "value": 3,
+      "label": "車電方案"
+    },
+    {
+      "source": "東陽",
+      "target": "電動車",
+      "value": 3,
+      "label": "零組件供應"
+    },
+    {
+      "source": "裕隆",
+      "target": "電動車",
+      "value": 3,
+      "label": "產業參展"
+    },
+    {
+      "source": "全聯",
+      "target": "台灣",
+      "value": 3,
+      "label": "電商市場"
+    },
+    {
+      "source": "統一",
+      "target": "台灣",
+      "value": 3,
+      "label": "電商市場"
+    },
+    {
+      "source": "日產",
+      "target": "電動車",
+      "value": 2,
+      "label": "產品策略"
+    },
+    {
+      "source": "記憶體",
+      "target": "AI",
+      "value": 4,
+      "label": "供應需求"
+    },
+    {
+      "source": "電動車",
+      "target": "台灣",
+      "value": 4,
+      "label": "產業發展"
+    },
+    {
+      "source": "通膨",
+      "target": "貨幣政策",
+      "value": 5,
+      "label": "政策因應"
+    },
+    {
+      "source": "關稅",
+      "target": "貿易",
+      "value": 5,
+      "label": "貿易壁壘"
+    },
+    {
+      "source": "美國",
+      "target": "貿易",
+      "value": 4,
+      "label": "貿易政策"
+    }
+  ],
+  "newsDatabase": {
+    "川普": [
+      {
+        "title": "川普與莫迪通話 強調維持荷莫茲海峽開放重要性",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9442126"
+      },
+      {
+        "title": "美伊新一輪談判現曙光 美媒：川普稱可能兩天內舉行",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9442120"
+      },
+      {
+        "title": "盟友撕破臉 川普砲轟義總理：戰爭中不助美、沒勇氣",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9442157"
+      }
+    ],
+    "莫迪": [
+      {
+        "title": "川普與莫迪通話 強調維持荷莫茲海峽開放重要性",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9442126"
+      }
+    ],
+    "美國": [
+      {
+        "title": "川普與莫迪通話 強調維持荷莫茲海峽開放重要性",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9442126"
+      },
+      {
+        "title": "美伊新一輪談判現曙光 美媒：川普稱可能兩天內舉行",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9442120"
+      },
+      {
+        "title": "美3月 PPI 升幅月增0.5% 低於預期 廠商未充分反映能源上漲成本",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9442015"
+      },
+      {
+        "title": "美封鎖海峽 專家：西方一個月內受衝擊",
+        "source": "",
+        "url": "https://udn.com/news/story/124061/9442056"
+      },
+      {
+        "title": "美財長貝森特：Fed降息前應先觀望",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000189-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美3月PPI年增4％ 三年新高",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000196-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美國301調查即將舉行公聽會 卓揆：準備好了",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9441929"
+      },
+      {
+        "title": "盼抑制油價 美延長對俄路克石油制裁豁免",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9442162"
+      },
+      {
+        "title": "美財政部：伊朗石油制裁豁免到期後不再展延",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9442233"
+      }
+    ],
+    "伊朗": [
+      {
+        "title": "美伊新一輪談判現曙光 美媒：川普稱可能兩天內舉行",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9442120"
+      },
+      {
+        "title": "美財政部：伊朗石油制裁豁免到期後不再展延",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9442233"
+      }
+    ],
+    "新加坡": [
+      {
+        "title": "星國緊縮貨幣 亞洲第一槍",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9442010"
+      },
+      {
+        "title": "開亞洲第一砲！星緊縮貨幣 壓抑物價",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9441997"
+      },
+      {
+        "title": "壓抑物價…新加坡緊縮貨幣 亞洲第一槍",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9442010"
+      },
+      {
+        "title": "亞洲第一槍 新加坡重啟貨幣緊縮",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000192-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台灣": [
+      {
+        "title": "IMF 看淡全球經濟 按讚台灣 大幅上修至5.2%",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9442008"
+      },
+      {
+        "title": "局勢緩和 台幣匯率重返31.6元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000147-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "熱錢回流 台幣升上31.69",
+        "source": "",
+        "url": "https://udn.com/news/story/7239/9441961"
+      },
+      {
+        "title": "美國301調查即將舉行公聽會 卓揆：準備好了",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9441929"
+      },
+      {
+        "title": "3月證交稅535億創新高 年增1.4倍連八紅 營業稅1,320億同步登頂",
+        "source": "",
+        "url": "https://udn.com/news/story/7243/9441933"
+      },
+      {
+        "title": "台股飆 36K 創六紀錄…法人看好漲勢不墜",
+        "source": "",
+        "url": "https://udn.com/news/story/7251/9442039"
+      },
+      {
+        "title": "IMF世界經濟展望 台灣今年預估成長破5% 擊敗日、韓居冠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9442203"
+      }
+    ],
+    "中國": [
+      {
+        "title": "陸3月出口年增 5個月低點",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000207-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "專家：陸今年貿易順差將大幅收窄",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000210-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "習近平會桑切斯 捍衛多邊主義",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000211-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "長江存儲傳蓋2新廠 產能將翻倍",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000214-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "陸今年智慧手機出貨估減1成",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000216-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "塑膠原料缺 陸家電掀漲價潮",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000217-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "歐盟": [
+      {
+        "title": "匈牙利總理奧班剛敗選 范德賴恩急推歐盟共識決改革",
+        "source": "",
+        "url": "https://udn.com/news/story/6809/9442044"
+      },
+      {
+        "title": "歐盟鋼鐵關稅喊提高至50% 免稅額度同步大砍47% 世界鋼鐵協會下修全球需求",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9442025"
+      },
+      {
+        "title": "歐盟最新鋼鐵防衛措施進一步升級 不利低價鋼品銷售",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9442029"
+      }
+    ],
+    "IMF": [
+      {
+        "title": "IMF 看淡全球經濟 按讚台灣 大幅上修至5.2%",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9442008"
+      },
+      {
+        "title": "IMF看衰經濟、示警通膨 憂戰爭引爆最大能源危機",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9442087"
+      },
+      {
+        "title": "IMF：全球經濟年增降至3.1％",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000109-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "IMF世界經濟展望 台灣今年預估成長破5% 擊敗日、韓居冠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9442203"
+      }
+    ],
+    "Fed": [
+      {
+        "title": "美財長貝森特：Fed降息前應先觀望",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000189-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "貝森特": [
+      {
+        "title": "美財長貝森特：Fed降息前應先觀望",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000189-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "習近平": [
+      {
+        "title": "習近平會桑切斯 捍衛多邊主義",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000211-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "范德賴恩": [
+      {
+        "title": "匈牙利總理奧班剛敗選 范德賴恩急推歐盟共識決改革",
+        "source": "",
+        "url": "https://udn.com/news/story/6809/9442044"
+      }
+    ],
+    "台積電": [
+      {
+        "title": "台積電法說行情啟動 飆2055元新天價╱先進製程產能爆滿 外資調高目標價",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1750938"
+      }
+    ],
+    "鴻海": [
+      {
+        "title": "車用三展催動千億商機 鴻海、裕隆、華城、東元等參展",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9442023"
+      },
+      {
+        "title": "鴻海打造電動車一條龍服務",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9442027"
+      },
+      {
+        "title": "鴻海國產化電池將量產",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000166-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "鴻海磷酸鋰鐵電池量產 新款Model C布局北美",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1750939"
+      }
+    ],
+    "微軟": [
+      {
+        "title": "記憶體大漲效應 微軟 NB 漲價30% 牽動代工廠廣達、和碩後市",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9441987"
+      },
+      {
+        "title": "筆電漲價潮 微軟Surface跟進",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000232-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "亞馬遜": [
+      {
+        "title": "亞馬遜、微軟等 AI 投資大潮總金額上看32兆元 帶旺緯創、英業達等台鏈",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9442050"
+      },
+      {
+        "title": "亞馬遜115億美元買衛星營運商 Globalstar 與 SpaceX 星鏈競爭加劇",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9442019"
+      }
+    ],
+    "輝達": [
+      {
+        "title": "從應用層邁向運算架構核心 輝達發表開源量子AI模型",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000132-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "OpenAI": [
+      {
+        "title": "OpenAI高估值 面臨修正",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000201-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "SpaceX": [
+      {
+        "title": "亞馬遜115億美元買衛星營運商 Globalstar 與 SpaceX 星鏈競爭加劇",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9442019"
+      },
+      {
+        "title": "SpaceX金雞母 星鏈狠賺",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000198-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "廣達": [
+      {
+        "title": "記憶體大漲效應 微軟 NB 漲價30% 牽動代工廠廣達、和碩後市",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9441987"
+      }
+    ],
+    "和碩": [
+      {
+        "title": "記憶體大漲效應 微軟 NB 漲價30% 牽動代工廠廣達、和碩後市",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9441987"
+      }
+    ],
+    "緯創": [
+      {
+        "title": "亞馬遜、微軟等 AI 投資大潮總金額上看32兆元 帶旺緯創、英業達等台鏈",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9442050"
+      }
+    ],
+    "英業達": [
+      {
+        "title": "亞馬遜、微軟等 AI 投資大潮總金額上看32兆元 帶旺緯創、英業達等台鏈",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9442050"
+      }
+    ],
+    "南電": [
+      {
+        "title": "ABF缺口擴大…南電、欣興 外資喊準千金",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000135-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "欣興": [
+      {
+        "title": "ABF缺口擴大…南電、欣興 外資喊準千金",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000135-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中鼎": [
+      {
+        "title": "中鼎私募 三大集團注資",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9441993"
+      },
+      {
+        "title": "中鼎私募引進三大咖 攻AI、中東重建商機",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000161-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "康舒": [
+      {
+        "title": "甲骨文挺燃料電池與 Bloom Energy 擴大合作 康舒、高力跟著沾光",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9442059"
+      },
+      {
+        "title": "金仁寶集團秀肌肉 康舒推車電新品大啖商機",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000241-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "太陽誘電": [
+      {
+        "title": "日商太陽誘電調漲被動元件報價 代理商蜜望實躍大贏家",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9442072"
+      },
+      {
+        "title": "被動元件又漲價 日商太陽誘電預告下月起調漲兩位數 台廠添利多",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9442069"
+      },
+      {
+        "title": "太陽誘電 被動元件全漲",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000129-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "長江存儲": [
+      {
+        "title": "長江存儲傳蓋2新廠 產能將翻倍",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000214-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "華碩": [
+      {
+        "title": "華碩攻車電市場 宇碩電子秀三大創新解方",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000236-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "東陽": [
+      {
+        "title": "汽車零組件大廠東陽 Q1每股賺2.02元",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9442028"
+      }
+    ],
+    "裕隆": [
+      {
+        "title": "車用三展催動千億商機 鴻海、裕隆、華城、東元等參展",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9442023"
+      }
+    ],
+    "全聯": [
+      {
+        "title": "全聯、統一跨足電商 靠「生態系戰略」搶市",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9442005"
+      }
+    ],
+    "統一": [
+      {
+        "title": "全聯、統一跨足電商 靠「生態系戰略」搶市",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9442005"
+      }
+    ],
+    "日產": [
+      {
+        "title": "日產重新出發 精簡產品陣容",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000205-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Globalstar": [
+      {
+        "title": "亞馬遜115億美元買衛星營運商 Globalstar 與 SpaceX 星鏈競爭加劇",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9442019"
+      }
+    ],
+    "貨幣政策": [
+      {
+        "title": "星國緊縮貨幣 亞洲第一槍",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9442010"
+      },
+      {
+        "title": "開亞洲第一砲！星緊縮貨幣 壓抑物價",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9441997"
+      },
+      {
+        "title": "壓抑物價…新加坡緊縮貨幣 亞洲第一槍",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9442010"
+      },
+      {
+        "title": "亞洲第一槍 新加坡重啟貨幣緊縮",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000192-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美財長貝森特：Fed降息前應先觀望",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000189-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "緊縮預期 2年期公債標售利率走升",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000227-260205?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "通膨": [
+      {
+        "title": "星國緊縮貨幣 亞洲第一槍",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9442010"
+      },
+      {
+        "title": "開亞洲第一砲！星緊縮貨幣 壓抑物價",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9441997"
+      },
+      {
+        "title": "壓抑物價…新加坡緊縮貨幣 亞洲第一槍",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9442010"
+      },
+      {
+        "title": "IMF看衰經濟、示警通膨 憂戰爭引爆最大能源危機",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9442087"
+      }
+    ],
+    "PPI": [
+      {
+        "title": "美3月 PPI 升幅月增0.5% 低於預期 廠商未充分反映能源上漲成本",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9442015"
+      },
+      {
+        "title": "美3月PPI年增4％ 三年新高",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000196-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "經濟成長": [
+      {
+        "title": "IMF 看淡全球經濟 按讚台灣 大幅上修至5.2%",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9442008"
+      },
+      {
+        "title": "IMF看衰經濟、示警通膨 憂戰爭引爆最大能源危機",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9442087"
+      },
+      {
+        "title": "IMF：全球經濟年增降至3.1％",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000109-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "IMF世界經濟展望 台灣今年預估成長破5% 擊敗日、韓居冠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9442203"
+      }
+    ],
+    "台幣匯率": [
+      {
+        "title": "局勢緩和 台幣匯率重返31.6元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000147-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "熱錢回流 台幣升上31.69",
+        "source": "",
+        "url": "https://udn.com/news/story/7239/9441961"
+      }
+    ],
+    "關稅": [
+      {
+        "title": "美國301調查即將舉行公聽會 卓揆：準備好了",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9441929"
+      },
+      {
+        "title": "歐盟鋼鐵關稅喊提高至50% 免稅額度同步大砍47% 世界鋼鐵協會下修全球需求",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9442025"
+      },
+      {
+        "title": "歐盟最新鋼鐵防衛措施進一步升級 不利低價鋼品銷售",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9442029"
+      }
+    ],
+    "貿易": [
+      {
+        "title": "陸3月出口年增 5個月低點",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000207-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "專家：陸今年貿易順差將大幅收窄",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000210-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "AI": [
+      {
+        "title": "亞馬遜、微軟等 AI 投資大潮總金額上看32兆元 帶旺緯創、英業達等台鏈",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9442050"
+      },
+      {
+        "title": "雲端大咖啟動大投資 關鍵元件廠 全速喊衝",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9442057"
+      },
+      {
+        "title": "從應用層邁向運算架構核心 輝達發表開源量子AI模型",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000132-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "ABF缺口擴大…南電、欣興 外資喊準千金",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000135-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "中鼎私募引進三大咖 攻AI、中東重建商機",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000161-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台積電法說行情啟動 飆2055元新天價╱先進製程產能爆滿 外資調高目標價",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1750938"
+      }
+    ],
+    "記憶體": [
+      {
+        "title": "記憶體大漲效應 微軟 NB 漲價30% 牽動代工廠廣達、和碩後市",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9441987"
+      },
+      {
+        "title": "品牌商「有感漲價」 業界憂本季 PC 出貨不妙",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9441992"
+      },
+      {
+        "title": "長江存儲傳蓋2新廠 產能將翻倍",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000214-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "被動元件": [
+      {
+        "title": "日商太陽誘電調漲被動元件報價 代理商蜜望實躍大贏家",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9442072"
+      },
+      {
+        "title": "被動元件又漲價 日商太陽誘電預告下月起調漲兩位數 台廠添利多",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9442069"
+      },
+      {
+        "title": "太陽誘電 被動元件全漲",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000129-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "電動車": [
+      {
+        "title": "車用三展催動千億商機 鴻海、裕隆、華城、東元等參展",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9442023"
+      },
+      {
+        "title": "鴻海打造電動車一條龍服務",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9442027"
+      },
+      {
+        "title": "車用電子三合一展登場 黃志芳：高油價助攻電車",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000163-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "鴻海國產化電池將量產",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000166-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "鴻海磷酸鋰鐵電池量產 新款Model C布局北美",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1750939"
+      },
+      {
+        "title": "金仁寶集團秀肌肉 康舒推車電新品大啖商機",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000241-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "華碩攻車電市場 宇碩電子秀三大創新解方",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000236-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "汽車零組件大廠東陽 Q1每股賺2.02元",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9442028"
+      },
+      {
+        "title": "日產重新出發 精簡產品陣容",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000205-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "ABF": [
+      {
+        "title": "ABF缺口擴大…南電、欣興 外資喊準千金",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000135-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "量子計算": [
+      {
+        "title": "從應用層邁向運算架構核心 輝達發表開源量子AI模型",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000132-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "衛星通訊": [
+      {
+        "title": "亞馬遜115億美元買衛星營運商 Globalstar 與 SpaceX 星鏈競爭加劇",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9442019"
+      },
+      {
+        "title": "SpaceX金雞母 星鏈狠賺",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260415000198-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "川普與莫迪通話 強調維持荷莫茲海峽開放重要性 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9442126",
+    "美伊新一輪談判現曙光 美媒：川普稱可能兩天內舉行 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9442120",
+    "星國緊縮貨幣 亞洲第一槍 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9442010",
+    "美3月 PPI 升幅月增0.5% 低於預期 廠商未充分反映能源上漲成本 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9442015",
+    "IMF 看淡全球經濟 按讚台灣 大幅上修至5.2% (經濟國際焦點)": "https://money.udn.com/money/story/5599/9442008",
+    "開亞洲第一砲！星緊縮貨幣 壓抑物價 (聯合_產經_股市)": "https://udn.com/news/story/7238/9441997",
+    "匈牙利總理奧班剛敗選 范德賴恩急推歐盟共識決改革 (聯合_產經_股市)": "https://udn.com/news/story/6809/9442044",
+    "美封鎖海峽 專家：西方一個月內受衝擊 (聯合_產經_股市)": "https://udn.com/news/story/124061/9442056",
+    "壓抑物價…新加坡緊縮貨幣 亞洲第一槍 (聯合_產經_股市)": "https://udn.com/news/story/6811/9442010",
+    "IMF看衰經濟、示警通膨 憂戰爭引爆最大能源危機 (聯合_產經_股市)": "https://udn.com/news/story/6811/9442087",
+    "IMF：全球經濟年增降至3.1％ (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260415000109-260202?utm_source=iii_news&utm_medium=rss",
+    "局勢緩和 台幣匯率重返31.6元 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260415000147-260202?utm_source=iii_news&utm_medium=rss",
+    "美財長貝森特：Fed降息前應先觀望 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260415000189-260203?utm_source=iii_news&utm_medium=rss",
+    "亞洲第一槍 新加坡重啟貨幣緊縮 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260415000192-260203?utm_source=iii_news&utm_medium=rss",
+    "美3月PPI年增4％ 三年新高 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260415000196-260203?utm_source=iii_news&utm_medium=rss",
+    "陸3月出口年增 5個月低點 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260415000207-260203?utm_source=iii_news&utm_medium=rss",
+    "專家：陸今年貿易順差將大幅收窄 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260415000210-260203?utm_source=iii_news&utm_medium=rss",
+    "習近平會桑切斯 捍衛多邊主義 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260415000211-260203?utm_source=iii_news&utm_medium=rss",
+    "緊縮預期 2年期公債標售利率走升 (工商金融稅務)": "https://www.chinatimes.com/newspapers/20260415000227-260205?utm_source=iii_news&utm_medium=rss",
+    "熱錢回流 台幣升上31.69 (聯合_產經_股市)": "https://udn.com/news/story/7239/9441961",
+    "美國301調查即將舉行公聽會 卓揆：準備好了 (聯合_產經_股市)": "https://udn.com/news/story/7238/9441929",
+    "3月證交稅535億創新高 年增1.4倍連八紅 營業稅1,320億同步登頂 (聯合_產經_股市)": "https://udn.com/news/story/7243/9441933",
+    "台股飆 36K 創六紀錄…法人看好漲勢不墜 (聯合_產經_股市)": "https://udn.com/news/story/7251/9442039",
+    "IMF世界經濟展望 台灣今年預估成長破5% 擊敗日、韓居冠 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9442203",
+    "記憶體大漲效應 微軟 NB 漲價30% 牽動代工廠廣達、和碩後市 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9441987",
+    "品牌商「有感漲價」 業界憂本季 PC 出貨不妙 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9441992",
+    "亞馬遜、微軟等 AI 投資大潮總金額上看32兆元 帶旺緯創、英業達等台鏈 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9442050",
+    "雲端大咖啟動大投資 關鍵元件廠 全速喊衝 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9442057",
+    "甲骨文挺燃料電池與 Bloom Energy 擴大合作 康舒、高力跟著沾光 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9442059",
+    "中鼎私募 三大集團注資 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9441993",
+    "電商土洋大戰！外商拚補貼搶攤 本土商打服務戰對抗 (聯合_產經_股市)": "https://udn.com/news/story/7238/9442004",
+    "全聯、統一跨足電商 靠「生態系戰略」搶市 (聯合_產經_股市)": "https://udn.com/news/story/7238/9442005",
+    "日商太陽誘電調漲被動元件報價 代理商蜜望實躍大贏家 (聯合_產經_股市)": "https://udn.com/news/story/7240/9442072",
+    "被動元件又漲價 日商太陽誘電預告下月起調漲兩位數 台廠添利多 (聯合_產經_股市)": "https://udn.com/news/story/7240/9442069",
+    "亞馬遜115億美元買衛星營運商 Globalstar 與 SpaceX 星鏈競爭加劇 (聯合_產經_股市)": "https://udn.com/news/story/6811/9442019",
+    "CCL三雄 本月報價齊升 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260415000126-260202?utm_source=iii_news&utm_medium=rss",
+    "從應用層邁向運算架構核心 輝達發表開源量子AI模型 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260415000132-260202?utm_source=iii_news&utm_medium=rss",
+    "ABF缺口擴大…南電、欣興 外資喊準千金 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260415000135-260202?utm_source=iii_news&utm_medium=rss",
+    "中鼎私募引進三大咖 攻AI、中東重建商機 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260415000161-260202?utm_source=iii_news&utm_medium=rss",
+    "SpaceX金雞母 星鏈狠賺 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260415000198-260203?utm_source=iii_news&utm_medium=rss",
+    "OpenAI高估值 面臨修正 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260415000201-260203?utm_source=iii_news&utm_medium=rss",
+    "長江存儲傳蓋2新廠 產能將翻倍 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260415000214-260203?utm_source=iii_news&utm_medium=rss",
+    "陸今年智慧手機出貨估減1成 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260415000216-260203?utm_source=iii_news&utm_medium=rss",
+    "筆電漲價潮 微軟Surface跟進 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260415000232-260204?utm_source=iii_news&utm_medium=rss",
+    "光通訊加持 同欣電上修全年預期 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260415000235-260204?utm_source=iii_news&utm_medium=rss",
+    "華碩攻車電市場 宇碩電子秀三大創新解方 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260415000236-260204?utm_source=iii_news&utm_medium=rss",
+    "ERSO Award 三得主出爐 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260415000237-260204?utm_source=iii_news&utm_medium=rss",
+    "強化IoT資安生態系 Exein在台設亞太營運中心 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260415000238-260204?utm_source=iii_news&utm_medium=rss",
+    "獲利新引擎 兆利光通訊營收占比拚破10％ (工商產業科技)": "https://www.chinatimes.com/newspapers/20260415000240-260204?utm_source=iii_news&utm_medium=rss",
+    "金仁寶集團秀肌肉 康舒推車電新品大啖商機 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260415000241-260204?utm_source=iii_news&utm_medium=rss",
+    "三大業務擴張 Gogolook成長動能爆發 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260415000365-260204?utm_source=iii_news&utm_medium=rss",
+    "台積電法說行情啟動 飆2055元新天價╱先進製程產能爆滿 外資調高目標價 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1750938",
+    "亞洲生技大會 FDA 首度參與 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9441952",
+    "亞洲生技大會媒合場次倍增 將逾1萬場 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9441967",
+    "鈦隼NaoTrac 精準神經外科治療 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260415000361-260204?utm_source=iii_news&utm_medium=rss",
+    "安邦生技ABT-301雙項研究 入選AACR (工商產業科技)": "https://www.chinatimes.com/newspapers/20260415000363-260204?utm_source=iii_news&utm_medium=rss",
+    "塑膠原料缺 陸家電掀漲價潮 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260415000217-260203?utm_source=iii_news&utm_medium=rss",
+    "最低工資審議 首納外送聲音 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260415000487-260114?utm_source=iii_news&utm_medium=rss",
+    "平價塑膠袋來了 首批供31萬包 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260415000489-260114?utm_source=iii_news&utm_medium=rss",
+    "車用三展催動千億商機 鴻海、裕隆、華城、東元等參展 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9442023",
+    "汽車零組件大廠東陽 Q1每股賺2.02元 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9442028",
+    "鴻海打造電動車一條龍服務 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9442027",
+    "歐盟鋼鐵關稅喊提高至50% 免稅額度同步大砍47% 世界鋼鐵協會下修全球需求 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9442025",
+    "歐盟最新鋼鐵防衛措施進一步升級 不利低價鋼品銷售 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9442029",
+    "盟友撕破臉 川普砲轟義總理：戰爭中不助美、沒勇氣 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9442157",
+    "盼抑制油價 美延長對俄路克石油制裁豁免 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9442162",
+    "太陽誘電 被動元件全漲 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260415000129-260202?utm_source=iii_news&utm_medium=rss",
+    "強化能源韌性系列報導》王奕仁：守護風電產業鏈關鍵十年 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260415000137-260202?utm_source=iii_news&utm_medium=rss",
+    "車用電子三合一展登場 黃志芳：高油價助攻電車 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260415000163-260202?utm_source=iii_news&utm_medium=rss",
+    "鴻海國產化電池將量產 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260415000166-260202?utm_source=iii_news&utm_medium=rss",
+    "日產重新出發 精簡產品陣容 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260415000205-260203?utm_source=iii_news&utm_medium=rss",
+    "經部TARC主題館 秀台灣車電雙引擎 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260415000256-260204?utm_source=iii_news&utm_medium=rss",
+    "鴻海磷酸鋰鐵電池量產 新款Model C布局北美 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1750939",
+    "電電公會海外4大園區 墨西哥進度最快 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1750960",
+    "美財政部：伊朗石油制裁豁免到期後不再展延 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9442233"
+  }
+}
