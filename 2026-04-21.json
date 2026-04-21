@@ -1,0 +1,1156 @@
+{
+  "nodes": [
+    {
+      "id": "台積電",
+      "group": "company",
+      "size": 20
+    },
+    {
+      "id": "鴻海",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "蘋果",
+      "group": "company",
+      "size": 19
+    },
+    {
+      "id": "三星",
+      "group": "company",
+      "size": 17
+    },
+    {
+      "id": "聯發科",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "大立光",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "廣達",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "SK海力士",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "字節跳動",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "輝達",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "神腦",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "萬海",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "台塑",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "訊芯",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "富鼎",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "工業富聯",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "允強",
+      "group": "company",
+      "size": 8
+    },
+    {
+      "id": "運錩",
+      "group": "company",
+      "size": 8
+    },
+    {
+      "id": "有益",
+      "group": "company",
+      "size": 8
+    },
+    {
+      "id": "台灣",
+      "group": "country",
+      "size": 18
+    },
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 17
+    },
+    {
+      "id": "印度",
+      "group": "country",
+      "size": 12
+    },
+    {
+      "id": "南韓",
+      "group": "country",
+      "size": 13
+    },
+    {
+      "id": "伊朗",
+      "group": "country",
+      "size": 15
+    },
+    {
+      "id": "中國",
+      "group": "country",
+      "size": 14
+    },
+    {
+      "id": "阿聯",
+      "group": "country",
+      "size": 12
+    },
+    {
+      "id": "歐洲",
+      "group": "country",
+      "size": 11
+    },
+    {
+      "id": "AI",
+      "group": "tech",
+      "size": 22
+    },
+    {
+      "id": "記憶體",
+      "group": "tech",
+      "size": 20
+    },
+    {
+      "id": "CPO",
+      "group": "tech",
+      "size": 16
+    },
+    {
+      "id": "CPU",
+      "group": "tech",
+      "size": 15
+    },
+    {
+      "id": "Micro LED",
+      "group": "tech",
+      "size": 13
+    },
+    {
+      "id": "MCU",
+      "group": "tech",
+      "size": 12
+    },
+    {
+      "id": "ASIC",
+      "group": "tech",
+      "size": 11
+    },
+    {
+      "id": "PCB",
+      "group": "tech",
+      "size": 10
+    },
+    {
+      "id": "電動車",
+      "group": "tech",
+      "size": 12
+    },
+    {
+      "id": "儲能電池",
+      "group": "tech",
+      "size": 11
+    },
+    {
+      "id": "Siri",
+      "group": "tech",
+      "size": 10
+    },
+    {
+      "id": "金管會",
+      "group": "org",
+      "size": 13
+    },
+    {
+      "id": "國泰",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "工研院",
+      "group": "org",
+      "size": 10
+    },
+    {
+      "id": "BIS",
+      "group": "org",
+      "size": 9
+    },
+    {
+      "id": "台幣",
+      "group": "finance",
+      "size": 14
+    },
+    {
+      "id": "通膨",
+      "group": "finance",
+      "size": 13
+    },
+    {
+      "id": "股利",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "穩定幣",
+      "group": "finance",
+      "size": 10
+    },
+    {
+      "id": "石油",
+      "group": "finance",
+      "size": 16
+    },
+    {
+      "id": "人民幣",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "碳費",
+      "group": "finance",
+      "size": 10
+    },
+    {
+      "id": "庫克",
+      "group": "person",
+      "size": 13
+    },
+    {
+      "id": "特納斯",
+      "group": "person",
+      "size": 12
+    }
+  ],
+  "links": [
+    {
+      "source": "三星",
+      "target": "記憶體",
+      "value": 5,
+      "label": "供應中斷"
+    },
+    {
+      "source": "記憶體",
+      "target": "蘋果",
+      "value": 5,
+      "label": "缺貨影響"
+    },
+    {
+      "source": "蘋果",
+      "target": "台積電",
+      "value": 4,
+      "label": "供應鏈"
+    },
+    {
+      "source": "蘋果",
+      "target": "廣達",
+      "value": 4,
+      "label": "供應鏈"
+    },
+    {
+      "source": "鴻海",
+      "target": "CPO",
+      "value": 5,
+      "label": "技術布局"
+    },
+    {
+      "source": "訊芯",
+      "target": "CPO",
+      "value": 4,
+      "label": "關鍵角色"
+    },
+    {
+      "source": "富鼎",
+      "target": "CPO",
+      "value": 4,
+      "label": "關鍵角色"
+    },
+    {
+      "source": "鴻海",
+      "target": "訊芯",
+      "value": 4,
+      "label": "集團布局"
+    },
+    {
+      "source": "鴻海",
+      "target": "富鼎",
+      "value": 4,
+      "label": "集團布局"
+    },
+    {
+      "source": "工業富聯",
+      "target": "CPO",
+      "value": 4,
+      "label": "產品出貨"
+    },
+    {
+      "source": "鴻海",
+      "target": "工業富聯",
+      "value": 4,
+      "label": "集團布局"
+    },
+    {
+      "source": "AI",
+      "target": "CPU",
+      "value": 5,
+      "label": "投資熱潮"
+    },
+    {
+      "source": "台積電",
+      "target": "CPU",
+      "value": 4,
+      "label": "代工商機"
+    },
+    {
+      "source": "AI",
+      "target": "台積電",
+      "value": 4,
+      "label": "代工需求"
+    },
+    {
+      "source": "CPU",
+      "target": "記憶體",
+      "value": 4,
+      "label": "AI紅利"
+    },
+    {
+      "source": "SK海力士",
+      "target": "輝達",
+      "value": 5,
+      "label": "專用模組"
+    },
+    {
+      "source": "SK海力士",
+      "target": "記憶體",
+      "value": 4,
+      "label": "生產供應"
+    },
+    {
+      "source": "聯發科",
+      "target": "Micro LED",
+      "value": 4,
+      "label": "技術進軍"
+    },
+    {
+      "source": "Micro LED",
+      "target": "CPO",
+      "value": 3,
+      "label": "光通訊"
+    },
+    {
+      "source": "蘋果",
+      "target": "Siri",
+      "value": 4,
+      "label": "產品升級"
+    },
+    {
+      "source": "Siri",
+      "target": "AI",
+      "value": 4,
+      "label": "技術升級"
+    },
+    {
+      "source": "金管會",
+      "target": "股利",
+      "value": 4,
+      "label": "政策開放"
+    },
+    {
+      "source": "股利",
+      "target": "台灣",
+      "value": 3,
+      "label": "上市櫃公司"
+    },
+    {
+      "source": "大立光",
+      "target": "台灣",
+      "value": 3,
+      "label": "留才措施"
+    },
+    {
+      "source": "國泰",
+      "target": "通膨",
+      "value": 4,
+      "label": "調查預期"
+    },
+    {
+      "source": "通膨",
+      "target": "台灣",
+      "value": 3,
+      "label": "經濟影響"
+    },
+    {
+      "source": "美國",
+      "target": "伊朗",
+      "value": 5,
+      "label": "和談停火"
+    },
+    {
+      "source": "伊朗",
+      "target": "石油",
+      "value": 5,
+      "label": "價格影響"
+    },
+    {
+      "source": "美國",
+      "target": "台幣",
+      "value": 3,
+      "label": "匯率影響"
+    },
+    {
+      "source": "台塑",
+      "target": "石油",
+      "value": 4,
+      "label": "原油供應"
+    },
+    {
+      "source": "台塑",
+      "target": "伊朗",
+      "value": 3,
+      "label": "荷姆茲運輸"
+    },
+    {
+      "source": "台塑",
+      "target": "台灣",
+      "value": 4,
+      "label": "供應危機"
+    },
+    {
+      "source": "阿聯",
+      "target": "人民幣",
+      "value": 4,
+      "label": "石油交易"
+    },
+    {
+      "source": "阿聯",
+      "target": "石油",
+      "value": 4,
+      "label": "貿易結算"
+    },
+    {
+      "source": "中國",
+      "target": "人民幣",
+      "value": 3,
+      "label": "貿易結算"
+    },
+    {
+      "source": "印度",
+      "target": "南韓",
+      "value": 4,
+      "label": "雙邊貿易"
+    },
+    {
+      "source": "字節跳動",
+      "target": "AI",
+      "value": 4,
+      "label": "投資成本"
+    },
+    {
+      "source": "字節跳動",
+      "target": "中國",
+      "value": 3,
+      "label": "企業獲利"
+    },
+    {
+      "source": "萬海",
+      "target": "台灣",
+      "value": 3,
+      "label": "航運業者"
+    },
+    {
+      "source": "庫克",
+      "target": "蘋果",
+      "value": 5,
+      "label": "人事異動"
+    },
+    {
+      "source": "特納斯",
+      "target": "蘋果",
+      "value": 5,
+      "label": "接任執行長"
+    },
+    {
+      "source": "庫克",
+      "target": "特納斯",
+      "value": 4,
+      "label": "職位交接"
+    },
+    {
+      "source": "BIS",
+      "target": "穩定幣",
+      "value": 3,
+      "label": "監管合作"
+    },
+    {
+      "source": "工研院",
+      "target": "台灣",
+      "value": 3,
+      "label": "能源創新"
+    },
+    {
+      "source": "碳費",
+      "target": "台灣",
+      "value": 3,
+      "label": "政策開徵"
+    },
+    {
+      "source": "歐洲",
+      "target": "電動車",
+      "value": 4,
+      "label": "銷量成長"
+    },
+    {
+      "source": "中國",
+      "target": "石油",
+      "value": 3,
+      "label": "煤製天然氣"
+    },
+    {
+      "source": "儲能電池",
+      "target": "台灣",
+      "value": 3,
+      "label": "全球建設"
+    },
+    {
+      "source": "ASIC",
+      "target": "台灣",
+      "value": 3,
+      "label": "台鏈受惠"
+    },
+    {
+      "source": "MCU",
+      "target": "台灣",
+      "value": 3,
+      "label": "市場復甦"
+    },
+    {
+      "source": "PCB",
+      "target": "中國",
+      "value": 3,
+      "label": "昆山開工"
+    },
+    {
+      "source": "允強",
+      "target": "運錩",
+      "value": 3,
+      "label": "產業聯動"
+    },
+    {
+      "source": "允強",
+      "target": "有益",
+      "value": 3,
+      "label": "產業聯動"
+    },
+    {
+      "source": "三星",
+      "target": "南韓",
+      "value": 4,
+      "label": "罷工影響"
+    },
+    {
+      "source": "三星",
+      "target": "台灣",
+      "value": 4,
+      "label": "轉單機會"
+    },
+    {
+      "source": "神腦",
+      "target": "台灣",
+      "value": 2,
+      "label": "營收策略"
+    }
+  ],
+  "newsDatabase": {
+    "台積電": [
+      {
+        "title": "AI 投資熱潮擴大 帶旺 CPU 台積有望搶食代工商機",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9453722"
+      },
+      {
+        "title": "記憶體缺貨比預期嚴重 蘋果新 Mac 延後發表 台積、廣達等受影響",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9453698"
+      }
+    ],
+    "鴻海": [
+      {
+        "title": "鴻海集團布局 CPO 訊芯、富鼎扮關鍵要角",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9453729"
+      },
+      {
+        "title": "鴻海集團布局 CPO 邁大步 旗下工業富聯全光交換機今年將出貨上萬台",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9453717"
+      }
+    ],
+    "蘋果": [
+      {
+        "title": "記憶體缺貨比預期嚴重 蘋果新 Mac 延後發表 台積、廣達等受影響",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9453698"
+      },
+      {
+        "title": "新 Mac 延後發表 非蘋品牌動能同步放緩",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9453723"
+      },
+      {
+        "title": "記憶體缺貨 蘋果兩款Mac延期亮相",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000208-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "Siri大升級 可望刺激i18銷量",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000112-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "蘋果任命特納斯接執行長 庫克將轉任執行董事長",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9453937"
+      }
+    ],
+    "三星": [
+      {
+        "title": "三星 LPDDR4 停產供給將更吃緊 報價持續上衝 台廠迎轉單",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9453694"
+      },
+      {
+        "title": "三星罷工倒數 全球供應添變數",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9453719"
+      }
+    ],
+    "聯發科": [
+      {
+        "title": "聯發科 進軍Micro LED光通訊",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000125-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "大立光": [
+      {
+        "title": "大立光留才 首發限制股",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9453610"
+      }
+    ],
+    "廣達": [
+      {
+        "title": "記憶體缺貨比預期嚴重 蘋果新 Mac 延後發表 台積、廣達等受影響",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9453698"
+      }
+    ],
+    "SK海力士": [
+      {
+        "title": "SK海力士 量產輝達專用模組",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000206-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "字節跳動": [
+      {
+        "title": "AI太燒錢 字節去年獲利減逾7成",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000220-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "輝達": [
+      {
+        "title": "SK海力士 量產輝達專用模組",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000206-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "神腦": [
+      {
+        "title": "神腦四策略 拚今年營收持平",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000248-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "萬海": [
+      {
+        "title": "萬海上調亞洲、北美線運價",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9453613"
+      }
+    ],
+    "台塑": [
+      {
+        "title": "強渡荷姆茲助緩解台灣原油供應危機》台塑君善輪200萬桶原油 5／6抵台",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000121-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "訊芯": [
+      {
+        "title": "鴻海集團布局 CPO 訊芯、富鼎扮關鍵要角",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9453729"
+      }
+    ],
+    "富鼎": [
+      {
+        "title": "鴻海集團布局 CPO 訊芯、富鼎扮關鍵要角",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9453729"
+      }
+    ],
+    "工業富聯": [
+      {
+        "title": "鴻海集團布局 CPO 邁大步 旗下工業富聯全光交換機今年將出貨上萬台",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9453717"
+      }
+    ],
+    "允強": [
+      {
+        "title": "不銹鋼族群營運升溫 允強、運錩、有益等進補",
+        "source": "",
+        "url": "https://udn.com/news/story/7253/9453385"
+      }
+    ],
+    "運錩": [
+      {
+        "title": "不銹鋼族群營運升溫 允強、運錩、有益等進補",
+        "source": "",
+        "url": "https://udn.com/news/story/7253/9453385"
+      }
+    ],
+    "有益": [
+      {
+        "title": "不銹鋼族群營運升溫 允強、運錩、有益等進補",
+        "source": "",
+        "url": "https://udn.com/news/story/7253/9453385"
+      }
+    ],
+    "台灣": [
+      {
+        "title": "美伊和談匯市反應冷 台幣偏升格局 測試31.4元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000119-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "戰火未歇…台股信心指數雙降",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000137-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "強渡荷姆茲助緩解台灣原油供應危機》台塑君善輪200萬桶原油 5／6抵台",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000121-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "碳費5月開繳 估首年收45億",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000150-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "美國": [
+      {
+        "title": "美伊和談匯市反應冷 台幣偏升格局 測試31.4元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000119-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美國與伊朗停火期限逼近緊張升溫 國際油價勁揚",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9453931"
+      },
+      {
+        "title": "美汽油價 恐難回戰前水準",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000194-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "印度": [
+      {
+        "title": "印度、南韓擬擴大雙邊貿易",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9453695"
+      }
+    ],
+    "南韓": [
+      {
+        "title": "印度、南韓擬擴大雙邊貿易",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9453695"
+      },
+      {
+        "title": "三星罷工倒數 全球供應添變數",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9453719"
+      }
+    ],
+    "伊朗": [
+      {
+        "title": "美伊和談匯市反應冷 台幣偏升格局 測試31.4元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000119-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美國與伊朗停火期限逼近緊張升溫 國際油價勁揚",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9453931"
+      }
+    ],
+    "中國": [
+      {
+        "title": "AI太燒錢 字節去年獲利減逾7成",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000220-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "PCB夯 滬電新項目昆山開工",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000223-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "保障能源 陸重啟煤製天然氣",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000212-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "阿聯": [
+      {
+        "title": "阿聯 恐被迫以人民幣交易石油",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000123-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "歐洲": [
+      {
+        "title": "歐洲Q1電動車銷量 年增近3成",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000197-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "AI": [
+      {
+        "title": "AI 投資熱潮擴大 帶旺 CPU 台積有望搶食代工商機",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9453722"
+      },
+      {
+        "title": "AI光世代大爆發 台廠卡位1.6T商機",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000128-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "CPU、記憶體 接棒AI紅利",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000203-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI太燒錢 字節去年獲利減逾7成",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000220-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "Siri大升級 可望刺激i18銷量",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000112-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "記憶體": [
+      {
+        "title": "三星 LPDDR4 停產供給將更吃緊 報價持續上衝 台廠迎轉單",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9453694"
+      },
+      {
+        "title": "三星罷工倒數 全球供應添變數",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9453719"
+      },
+      {
+        "title": "記憶體缺貨比預期嚴重 蘋果新 Mac 延後發表 台積、廣達等受影響",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9453698"
+      },
+      {
+        "title": "CPU、記憶體 接棒AI紅利",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000203-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "記憶體缺貨 蘋果兩款Mac延期亮相",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000208-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "記憶體供應大洗牌 業者苦哈哈",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000246-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "CPO": [
+      {
+        "title": "鴻海集團布局 CPO 訊芯、富鼎扮關鍵要角",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9453729"
+      },
+      {
+        "title": "鴻海集團布局 CPO 邁大步 旗下工業富聯全光交換機今年將出貨上萬台",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9453717"
+      }
+    ],
+    "CPU": [
+      {
+        "title": "AI 投資熱潮擴大 帶旺 CPU 台積有望搶食代工商機",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9453722"
+      },
+      {
+        "title": "CPU、記憶體 接棒AI紅利",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000203-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Micro LED": [
+      {
+        "title": "聯發科 進軍Micro LED光通訊",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000125-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "MCU": [
+      {
+        "title": "現貨價彈升，MCU落底？ 法人：復甦偏L型 非快速反轉",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000133-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "ASIC": [
+      {
+        "title": "成熟製程回暖 ASIC台鏈歡呼",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000239-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "PCB": [
+      {
+        "title": "PCB夯 滬電新項目昆山開工",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000223-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "電動車": [
+      {
+        "title": "歐洲Q1電動車銷量 年增近3成",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000197-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "儲能電池": [
+      {
+        "title": "全球搶蓋儲能電池設施",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9453731"
+      }
+    ],
+    "Siri": [
+      {
+        "title": "Siri大升級 可望刺激i18銷量",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000112-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "金管會": [
+      {
+        "title": "金管會擬開放上市櫃公司以美元發放現金股利 電子大廠高喊利多",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9453757"
+      }
+    ],
+    "國泰": [
+      {
+        "title": "國泰調查 6成民眾預期今年通膨高於2％",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000527-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "工研院": [
+      {
+        "title": "強化能源韌性系列報導》工研院助攻新興能源 打造創新生態",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000135-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "BIS": [
+      {
+        "title": "BIS籲各國應加強穩定幣合作",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000200-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台幣": [
+      {
+        "title": "美伊和談匯市反應冷 台幣偏升格局 測試31.4元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000119-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "通膨": [
+      {
+        "title": "國泰調查 6成民眾預期今年通膨高於2％",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000527-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "股利": [
+      {
+        "title": "股利改發美元 引發因應ART聯想",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000525-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "金管會擬開放上市櫃公司以美元發放現金股利 電子大廠高喊利多",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9453757"
+      }
+    ],
+    "穩定幣": [
+      {
+        "title": "BIS籲各國應加強穩定幣合作",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000200-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "石油": [
+      {
+        "title": "強渡荷姆茲助緩解台灣原油供應危機》台塑君善輪200萬桶原油 5／6抵台",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000121-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "阿聯 恐被迫以人民幣交易石油",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000123-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美國與伊朗停火期限逼近緊張升溫 國際油價勁揚",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9453931"
+      },
+      {
+        "title": "保障能源 陸重啟煤製天然氣",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000212-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "人民幣": [
+      {
+        "title": "阿聯 恐被迫以人民幣交易石油",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000123-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "碳費": [
+      {
+        "title": "碳費5月開繳 估首年收45億",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260421000150-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "庫克": [
+      {
+        "title": "蘋果任命特納斯接執行長 庫克將轉任執行董事長",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9453937"
+      }
+    ],
+    "特納斯": [
+      {
+        "title": "蘋果任命特納斯接執行長 庫克將轉任執行董事長",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9453937"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "印度、南韓擬擴大雙邊貿易 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9453695",
+    "美伊和談匯市反應冷 台幣偏升格局 測試31.4元 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260421000119-260202?utm_source=iii_news&utm_medium=rss",
+    "戰火未歇…台股信心指數雙降 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260421000137-260202?utm_source=iii_news&utm_medium=rss",
+    "股利改發美元 引發因應ART聯想 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260421000525-260110?utm_source=iii_news&utm_medium=rss",
+    "國泰調查 6成民眾預期今年通膨高於2％ (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260421000527-260110?utm_source=iii_news&utm_medium=rss",
+    "鴻海集團布局 CPO 訊芯、富鼎扮關鍵要角 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9453729",
+    "三星 LPDDR4 停產供給將更吃緊 報價持續上衝 台廠迎轉單 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9453694",
+    "三星罷工倒數 全球供應添變數 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9453719",
+    "記憶體缺貨比預期嚴重 蘋果新 Mac 延後發表 台積、廣達等受影響 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9453698",
+    "新 Mac 延後發表 非蘋品牌動能同步放緩 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9453723",
+    "鴻海集團布局 CPO 邁大步 旗下工業富聯全光交換機今年將出貨上萬台 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9453717",
+    "金管會擬開放上市櫃公司以美元發放現金股利 電子大廠高喊利多 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9453757",
+    "大立光留才 首發限制股 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9453610",
+    "AI 投資熱潮擴大 帶旺 CPU 台積有望搶食代工商機 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9453722",
+    "Siri大升級 可望刺激i18銷量 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260421000112-260202?utm_source=iii_news&utm_medium=rss",
+    "聯發科 進軍Micro LED光通訊 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260421000125-260202?utm_source=iii_news&utm_medium=rss",
+    "AI光世代大爆發 台廠卡位1.6T商機 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260421000128-260202?utm_source=iii_news&utm_medium=rss",
+    "現貨價彈升，MCU落底？ 法人：復甦偏L型 非快速反轉 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260421000133-260202?utm_source=iii_news&utm_medium=rss",
+    "BIS籲各國應加強穩定幣合作 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260421000200-260203?utm_source=iii_news&utm_medium=rss",
+    "CPU、記憶體 接棒AI紅利 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260421000203-260203?utm_source=iii_news&utm_medium=rss",
+    "SK海力士 量產輝達專用模組 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260421000206-260203?utm_source=iii_news&utm_medium=rss",
+    "記憶體缺貨 蘋果兩款Mac延期亮相 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260421000208-260203?utm_source=iii_news&utm_medium=rss",
+    "AI太燒錢 字節去年獲利減逾7成 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260421000220-260203?utm_source=iii_news&utm_medium=rss",
+    "PCB夯 滬電新項目昆山開工 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260421000223-260203?utm_source=iii_news&utm_medium=rss",
+    "成熟製程回暖 ASIC台鏈歡呼 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260421000239-260204?utm_source=iii_news&utm_medium=rss",
+    "成本飆 中小尺寸面板漲勢疲 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260421000242-260204?utm_source=iii_news&utm_medium=rss",
+    "強固型電腦剛需湧現 台廠搶推新品 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260421000245-260204?utm_source=iii_news&utm_medium=rss",
+    "記憶體供應大洗牌 業者苦哈哈 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260421000246-260204?utm_source=iii_news&utm_medium=rss",
+    "神腦四策略 拚今年營收持平 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260421000248-260204?utm_source=iii_news&utm_medium=rss",
+    "蘋果任命特納斯接執行長 庫克將轉任執行董事長 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9453937",
+    "萬海上調亞洲、北美線運價 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9453613",
+    "航空貨運 燃油附加費翻倍 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260421000116-260202?utm_source=iii_news&utm_medium=rss",
+    "強渡荷姆茲助緩解台灣原油供應危機》台塑君善輪200萬桶原油 5／6抵台 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260421000121-260202?utm_source=iii_news&utm_medium=rss",
+    "發芽馬鈴薯「單顆剔除」有疑慮 專家：食安不應退讓 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260421000505-260114?utm_source=iii_news&utm_medium=rss",
+    "全球搶蓋儲能電池設施 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9453731",
+    "阿聯 恐被迫以人民幣交易石油 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260421000123-260202?utm_source=iii_news&utm_medium=rss",
+    "強化能源韌性系列報導》工研院助攻新興能源 打造創新生態 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260421000135-260202?utm_source=iii_news&utm_medium=rss",
+    "碳費5月開繳 估首年收45億 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260421000150-260202?utm_source=iii_news&utm_medium=rss",
+    "美汽油價 恐難回戰前水準 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260421000194-260203?utm_source=iii_news&utm_medium=rss",
+    "歐洲Q1電動車銷量 年增近3成 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260421000197-260203?utm_source=iii_news&utm_medium=rss",
+    "保障能源 陸重啟煤製天然氣 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260421000212-260203?utm_source=iii_news&utm_medium=rss",
+    "不銹鋼族群營運升溫 允強、運錩、有益等進補 (聯合_產經_股市)": "https://udn.com/news/story/7253/9453385",
+    "美國與伊朗停火期限逼近緊張升溫 國際油價勁揚 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9453931"
+  }
+}
