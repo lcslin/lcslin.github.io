@@ -1,0 +1,1224 @@
+{
+  "nodes": [
+    {
+      "id": "Fed",
+      "group": "org",
+      "size": 25
+    },
+    {
+      "id": "鮑爾",
+      "group": "person",
+      "size": 18
+    },
+    {
+      "id": "川普",
+      "group": "person",
+      "size": 16
+    },
+    {
+      "id": "彭淮南",
+      "group": "person",
+      "size": 12
+    },
+    {
+      "id": "台積電",
+      "group": "company",
+      "size": 22
+    },
+    {
+      "id": "鴻海",
+      "group": "company",
+      "size": 24
+    },
+    {
+      "id": "輝達",
+      "group": "company",
+      "size": 23
+    },
+    {
+      "id": "南亞科",
+      "group": "company",
+      "size": 20
+    },
+    {
+      "id": "聯發科",
+      "group": "company",
+      "size": 17
+    },
+    {
+      "id": "DeepSeek",
+      "group": "company",
+      "size": 19
+    },
+    {
+      "id": "SK海力士",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "美光",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "Google",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "摩爾線程",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "Groq",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "精誠資訊",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "大樹",
+      "group": "company",
+      "size": 8
+    },
+    {
+      "id": "央行",
+      "group": "org",
+      "size": 15
+    },
+    {
+      "id": "經濟部",
+      "group": "org",
+      "size": 11
+    },
+    {
+      "id": "生策會",
+      "group": "org",
+      "size": 10
+    },
+    {
+      "id": "中央大學",
+      "group": "org",
+      "size": 8
+    },
+    {
+      "id": "熙特爾新能源",
+      "group": "company",
+      "size": 7
+    },
+    {
+      "id": "楊泮池",
+      "group": "person",
+      "size": 12
+    },
+    {
+      "id": "華許",
+      "group": "person",
+      "size": 10
+    },
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 18
+    },
+    {
+      "id": "台灣",
+      "group": "country",
+      "size": 20
+    },
+    {
+      "id": "中國",
+      "group": "country",
+      "size": 15
+    },
+    {
+      "id": "伊朗",
+      "group": "country",
+      "size": 9
+    },
+    {
+      "id": "高雄",
+      "group": "country",
+      "size": 10
+    },
+    {
+      "id": "AI",
+      "group": "tech",
+      "size": 25
+    },
+    {
+      "id": "半導體",
+      "group": "tech",
+      "size": 22
+    },
+    {
+      "id": "記憶體",
+      "group": "tech",
+      "size": 18
+    },
+    {
+      "id": "算力",
+      "group": "tech",
+      "size": 19
+    },
+    {
+      "id": "ASIC",
+      "group": "tech",
+      "size": 14
+    },
+    {
+      "id": "SSD",
+      "group": "tech",
+      "size": 12
+    },
+    {
+      "id": "資料中心",
+      "group": "tech",
+      "size": 13
+    },
+    {
+      "id": "離岸風電",
+      "group": "tech",
+      "size": 11
+    },
+    {
+      "id": "生醫產業",
+      "group": "tech",
+      "size": 10
+    },
+    {
+      "id": "數位帳戶",
+      "group": "tech",
+      "size": 9
+    },
+    {
+      "id": "通膨",
+      "group": "finance",
+      "size": 20
+    },
+    {
+      "id": "降息",
+      "group": "finance",
+      "size": 19
+    },
+    {
+      "id": "利率",
+      "group": "finance",
+      "size": 17
+    },
+    {
+      "id": "債券",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "供應鏈",
+      "group": "finance",
+      "size": 16
+    },
+    {
+      "id": "毛利率",
+      "group": "finance",
+      "size": 13
+    },
+    {
+      "id": "鋼鐵業",
+      "group": "tech",
+      "size": 10
+    }
+  ],
+  "links": [
+    {
+      "source": "Fed",
+      "target": "鮑爾",
+      "value": 5,
+      "label": "領導關係"
+    },
+    {
+      "source": "Fed",
+      "target": "通膨",
+      "value": 5,
+      "label": "政策目標"
+    },
+    {
+      "source": "Fed",
+      "target": "降息",
+      "value": 5,
+      "label": "貨幣政策"
+    },
+    {
+      "source": "Fed",
+      "target": "利率",
+      "value": 5,
+      "label": "政策工具"
+    },
+    {
+      "source": "Fed",
+      "target": "華許",
+      "value": 4,
+      "label": "人事任命"
+    },
+    {
+      "source": "川普",
+      "target": "華許",
+      "value": 4,
+      "label": "政治影響"
+    },
+    {
+      "source": "川普",
+      "target": "伊朗",
+      "value": 3,
+      "label": "外交政策"
+    },
+    {
+      "source": "川普",
+      "target": "債券",
+      "value": 3,
+      "label": "投資布局"
+    },
+    {
+      "source": "彭淮南",
+      "target": "央行",
+      "value": 5,
+      "label": "領導關係"
+    },
+    {
+      "source": "央行",
+      "target": "利率",
+      "value": 4,
+      "label": "貨幣政策"
+    },
+    {
+      "source": "鴻海",
+      "target": "輝達",
+      "value": 5,
+      "label": "供應鏈"
+    },
+    {
+      "source": "鴻海",
+      "target": "Groq",
+      "value": 4,
+      "label": "商業合作"
+    },
+    {
+      "source": "鴻海",
+      "target": "AI",
+      "value": 5,
+      "label": "產業布局"
+    },
+    {
+      "source": "南亞科",
+      "target": "輝達",
+      "value": 5,
+      "label": "供應鏈"
+    },
+    {
+      "source": "南亞科",
+      "target": "記憶體",
+      "value": 5,
+      "label": "產品技術"
+    },
+    {
+      "source": "南亞科",
+      "target": "毛利率",
+      "value": 4,
+      "label": "營運績效"
+    },
+    {
+      "source": "台積電",
+      "target": "半導體",
+      "value": 5,
+      "label": "產業領導"
+    },
+    {
+      "source": "台積電",
+      "target": "供應鏈",
+      "value": 5,
+      "label": "產業影響"
+    },
+    {
+      "source": "台積電",
+      "target": "AI",
+      "value": 4,
+      "label": "技術支撐"
+    },
+    {
+      "source": "聯發科",
+      "target": "Google",
+      "value": 5,
+      "label": "商業合作"
+    },
+    {
+      "source": "聯發科",
+      "target": "ASIC",
+      "value": 4,
+      "label": "技術開發"
+    },
+    {
+      "source": "聯發科",
+      "target": "供應鏈",
+      "value": 4,
+      "label": "產業鏈位置"
+    },
+    {
+      "source": "輝達",
+      "target": "AI",
+      "value": 5,
+      "label": "技術領導"
+    },
+    {
+      "source": "輝達",
+      "target": "算力",
+      "value": 5,
+      "label": "核心業務"
+    },
+    {
+      "source": "輝達",
+      "target": "供應鏈",
+      "value": 5,
+      "label": "產業影響"
+    },
+    {
+      "source": "DeepSeek",
+      "target": "AI",
+      "value": 5,
+      "label": "技術開發"
+    },
+    {
+      "source": "DeepSeek",
+      "target": "算力",
+      "value": 5,
+      "label": "價格競爭"
+    },
+    {
+      "source": "DeepSeek",
+      "target": "中國",
+      "value": 4,
+      "label": "企業來源"
+    },
+    {
+      "source": "摩爾線程",
+      "target": "輝達",
+      "value": 4,
+      "label": "競爭關係"
+    },
+    {
+      "source": "摩爾線程",
+      "target": "中國",
+      "value": 4,
+      "label": "企業來源"
+    },
+    {
+      "source": "摩爾線程",
+      "target": "AI",
+      "value": 4,
+      "label": "產業布局"
+    },
+    {
+      "source": "SK海力士",
+      "target": "美光",
+      "value": 5,
+      "label": "競爭關係"
+    },
+    {
+      "source": "SK海力士",
+      "target": "記憶體",
+      "value": 5,
+      "label": "產品技術"
+    },
+    {
+      "source": "SK海力士",
+      "target": "美國",
+      "value": 4,
+      "label": "上市計畫"
+    },
+    {
+      "source": "美光",
+      "target": "記憶體",
+      "value": 5,
+      "label": "產品技術"
+    },
+    {
+      "source": "AI",
+      "target": "算力",
+      "value": 5,
+      "label": "技術需求"
+    },
+    {
+      "source": "AI",
+      "target": "半導體",
+      "value": 5,
+      "label": "技術基礎"
+    },
+    {
+      "source": "AI",
+      "target": "資料中心",
+      "value": 4,
+      "label": "應用場景"
+    },
+    {
+      "source": "AI",
+      "target": "SSD",
+      "value": 3,
+      "label": "排擠效應"
+    },
+    {
+      "source": "半導體",
+      "target": "供應鏈",
+      "value": 5,
+      "label": "產業結構"
+    },
+    {
+      "source": "半導體",
+      "target": "台灣",
+      "value": 5,
+      "label": "產業聚落"
+    },
+    {
+      "source": "算力",
+      "target": "資料中心",
+      "value": 5,
+      "label": "基礎設施"
+    },
+    {
+      "source": "算力",
+      "target": "台灣",
+      "value": 4,
+      "label": "產業商機"
+    },
+    {
+      "source": "算力",
+      "target": "高雄",
+      "value": 4,
+      "label": "園區規劃"
+    },
+    {
+      "source": "經濟部",
+      "target": "資料中心",
+      "value": 4,
+      "label": "政策規劃"
+    },
+    {
+      "source": "經濟部",
+      "target": "高雄",
+      "value": 4,
+      "label": "園區支持"
+    },
+    {
+      "source": "經濟部",
+      "target": "離岸風電",
+      "value": 4,
+      "label": "產業政策"
+    },
+    {
+      "source": "生策會",
+      "target": "楊泮池",
+      "value": 5,
+      "label": "領導關係"
+    },
+    {
+      "source": "楊泮池",
+      "target": "生醫產業",
+      "value": 5,
+      "label": "產業推動"
+    },
+    {
+      "source": "中央大學",
+      "target": "熙特爾新能源",
+      "value": 4,
+      "label": "產學合作"
+    },
+    {
+      "source": "精誠資訊",
+      "target": "AI",
+      "value": 3,
+      "label": "IT服務"
+    },
+    {
+      "source": "台灣",
+      "target": "供應鏈",
+      "value": 5,
+      "label": "產業優勢"
+    },
+    {
+      "source": "台灣",
+      "target": "半導體",
+      "value": 5,
+      "label": "產業聚落"
+    },
+    {
+      "source": "美國",
+      "target": "Fed",
+      "value": 5,
+      "label": "金融監管"
+    },
+    {
+      "source": "美國",
+      "target": "川普",
+      "value": 4,
+      "label": "政治領導"
+    },
+    {
+      "source": "Google",
+      "target": "AI",
+      "value": 5,
+      "label": "技術開發"
+    },
+    {
+      "source": "Google",
+      "target": "ASIC",
+      "value": 4,
+      "label": "客製晶片"
+    },
+    {
+      "source": "記憶體",
+      "target": "供應鏈",
+      "value": 4,
+      "label": "產業鏈環節"
+    },
+    {
+      "source": "SSD",
+      "target": "記憶體",
+      "value": 4,
+      "label": "技術關聯"
+    },
+    {
+      "source": "大樹",
+      "target": "生醫產業",
+      "value": 3,
+      "label": "業務拓展"
+    },
+    {
+      "source": "鋼鐵業",
+      "target": "台灣",
+      "value": 3,
+      "label": "產業發展"
+    },
+    {
+      "source": "數位帳戶",
+      "target": "台灣",
+      "value": 3,
+      "label": "金融創新"
+    },
+    {
+      "source": "離岸風電",
+      "target": "台灣",
+      "value": 4,
+      "label": "能源政策"
+    }
+  ],
+  "newsDatabase": {
+    "Fed": [
+      {
+        "title": "Fed 本周開會 將以「鷹眼」緊盯通膨訊號 鮑爾可能暗示降息門檻高",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9465813"
+      },
+      {
+        "title": "緊盯通膨 Fed年底前降息門檻很高",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9465809"
+      },
+      {
+        "title": "全球超級央行周 利率料全數按兵不動",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000129-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美關鍵參議員不再阻撓 華許接掌Fed最大障礙沒了",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000132-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "鮑爾": [
+      {
+        "title": "Fed 本周開會 將以「鷹眼」緊盯通膨訊號 鮑爾可能暗示降息門檻高",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9465813"
+      },
+      {
+        "title": "超級央行周 鮑爾最後談話成焦點",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000422-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "川普": [
+      {
+        "title": "川普取消特使：伊朗想談可打電話",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000133-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "重金布局 川普3月狂掃債券",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000183-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "彭淮南": [
+      {
+        "title": "彭淮南回憶錄／20年總裁 彭淮南：央行獨立性「為所當為」",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9465948"
+      }
+    ],
+    "台積電": [
+      {
+        "title": "台積電先進製程神速擴產 可望憑藉技術優勢「贏者全拿」",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9465862"
+      },
+      {
+        "title": "台積電先進製程持續放量 耗材協力廠營運起飛",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9465866"
+      }
+    ],
+    "鴻海": [
+      {
+        "title": "鴻海 COMPUTEX 2026 秀人工智慧肌肉",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9465870"
+      },
+      {
+        "title": "鴻海 AI PC 業務夯 出貨喊衝",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9465872"
+      },
+      {
+        "title": "鴻海奪輝達推論機櫃大單 獨家供應運算托盤與整櫃組裝",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9465867"
+      },
+      {
+        "title": "鴻海奪輝達推論機櫃大單 獨家供應運算托盤 並承攬 Groq 3 LPX 整櫃組裝業務",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9465867"
+      }
+    ],
+    "輝達": [
+      {
+        "title": "鴻海奪輝達推論機櫃大單 獨家供應運算托盤與整櫃組裝",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9465867"
+      },
+      {
+        "title": "台灣第一家…南亞科打入輝達記憶體供應鏈 毛利率衝七成",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9465844"
+      },
+      {
+        "title": "鴻海奪輝達推論機櫃大單 獨家供應運算托盤 並承攬 Groq 3 LPX 整櫃組裝業務",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9465867"
+      }
+    ],
+    "南亞科": [
+      {
+        "title": "台灣首家！南亞科打入 Vera Rubin 鏈 毛利率叩關七成",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9465874"
+      },
+      {
+        "title": "南亞科多路並進 下半年有成果",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9465875"
+      },
+      {
+        "title": "台灣第一家…南亞科打入輝達記憶體供應鏈 毛利率衝七成",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9465844"
+      }
+    ],
+    "聯發科": [
+      {
+        "title": "聯發科參與Google TPU 8t專案ASIC傳捷報 供應鏈嗨",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000117-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "DeepSeek": [
+      {
+        "title": "DeepSeek 掀AI算力價格戰",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000195-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI競爭白熱化 DeepSeek高階人才頻跳槽",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000197-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "SK海力士": [
+      {
+        "title": "挑戰美光 SK海力士 拚6、7月美國掛牌",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000188-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "美光": [
+      {
+        "title": "挑戰美光 SK海力士 拚6、7月美國掛牌",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000188-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Google": [
+      {
+        "title": "聯發科參與Google TPU 8t專案ASIC傳捷報 供應鏈嗨",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000117-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "摩爾線程": [
+      {
+        "title": "陸版輝達摩爾線程 首季虧轉盈",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000198-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Groq": [
+      {
+        "title": "鴻海奪輝達推論機櫃大單 獨家供應運算托盤與整櫃組裝",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9465867"
+      },
+      {
+        "title": "鴻海奪輝達推論機櫃大單 獨家供應運算托盤 並承攬 Groq 3 LPX 整櫃組裝業務",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9465867"
+      }
+    ],
+    "精誠資訊": [
+      {
+        "title": "精誠資訊 啟動全球IT服務布局",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000236-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "大樹": [
+      {
+        "title": "大樹三面進擊寵物藥",
+        "source": "",
+        "url": "https://udn.com/news/story/7254/9465594"
+      }
+    ],
+    "央行": [
+      {
+        "title": "彭淮南回憶錄／20年總裁 彭淮南：央行獨立性「為所當為」",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9465948"
+      },
+      {
+        "title": "全球超級央行周 利率料全數按兵不動",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000129-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "經濟部": [
+      {
+        "title": "考量用電需求 經濟部：強化資料中心整體規劃與審議機制",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9465799"
+      },
+      {
+        "title": "經長挺高雄設算力園區",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9465802"
+      }
+    ],
+    "生策會": [
+      {
+        "title": "生策會會長楊泮池：把握關鍵十年 走向生醫產業強國",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000147-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "生策會會長楊泮池專訪》缺乏給付機制 技術難成產業",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000151-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "生策會會長楊泮池專訪》高齡健康解決方案 未來產業機會",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000153-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "人物側寫－生策會會長楊泮池專訪》看到問題 一步步解決",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000156-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中央大學": [
+      {
+        "title": "中央大學與熙特爾新能源 成立研發中心",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000219-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "熙特爾新能源": [
+      {
+        "title": "中央大學與熙特爾新能源 成立研發中心",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000219-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "楊泮池": [
+      {
+        "title": "生策會會長楊泮池：把握關鍵十年 走向生醫產業強國",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000147-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "生策會會長楊泮池專訪》缺乏給付機制 技術難成產業",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000151-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "生策會會長楊泮池專訪》高齡健康解決方案 未來產業機會",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000153-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "人物側寫－生策會會長楊泮池專訪》看到問題 一步步解決",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000156-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "華許": [
+      {
+        "title": "美關鍵參議員不再阻撓 華許接掌Fed最大障礙沒了",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000132-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "美國": [
+      {
+        "title": "挑戰美光 SK海力士 拚6、7月美國掛牌",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000188-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美超級財報周 點火AI台鏈",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000114-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台灣": [
+      {
+        "title": "台灣首家！南亞科打入 Vera Rubin 鏈 毛利率叩關七成",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9465874"
+      },
+      {
+        "title": "台灣第一家…南亞科打入輝達記憶體供應鏈 毛利率衝七成",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9465844"
+      },
+      {
+        "title": "美超級財報周 點火AI台鏈",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000114-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "代理式企業時代來了…算力新商機 台廠受惠",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000144-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中國": [
+      {
+        "title": "DeepSeek 掀AI算力價格戰",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000195-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI競爭白熱化 DeepSeek高階人才頻跳槽",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000197-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "陸版輝達摩爾線程 首季虧轉盈",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000198-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "伊朗": [
+      {
+        "title": "川普取消特使：伊朗想談可打電話",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000133-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "高雄": [
+      {
+        "title": "經長挺高雄設算力園區",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9465802"
+      }
+    ],
+    "AI": [
+      {
+        "title": "鴻海 COMPUTEX 2026 秀人工智慧肌肉",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9465870"
+      },
+      {
+        "title": "鴻海 AI PC 業務夯 出貨喊衝",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9465872"
+      },
+      {
+        "title": "美超級財報周 點火AI台鏈",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000114-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI排擠效應擴大 SSD漲勢續燒",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000140-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI驅動半導體擴產潮 三巨頭迎爆發期",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000142-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "代理式企業時代來了…算力新商機 台廠受惠",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000144-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "DeepSeek 掀AI算力價格戰",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000195-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI競爭白熱化 DeepSeek高階人才頻跳槽",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000197-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "開發資本助新創搶AI先機",
+        "source": "",
+        "url": ""
+      }
+    ],
+    "半導體": [
+      {
+        "title": "AI驅動半導體擴產潮 三巨頭迎爆發期",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000142-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "記憶體": [
+      {
+        "title": "台灣第一家…南亞科打入輝達記憶體供應鏈 毛利率衝七成",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9465844"
+      }
+    ],
+    "算力": [
+      {
+        "title": "DeepSeek 掀AI算力價格戰",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000195-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "代理式企業時代來了…算力新商機 台廠受惠",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000144-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "經長挺高雄設算力園區",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9465802"
+      }
+    ],
+    "ASIC": [
+      {
+        "title": "聯發科參與Google TPU 8t專案ASIC傳捷報 供應鏈嗨",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000117-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "SSD": [
+      {
+        "title": "AI排擠效應擴大 SSD漲勢續燒",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000140-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "資料中心": [
+      {
+        "title": "考量用電需求 經濟部：強化資料中心整體規劃與審議機制",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9465799"
+      }
+    ],
+    "離岸風電": [
+      {
+        "title": "離岸風電3-4期 釋4～6GW設置容量",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000120-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "生醫產業": [
+      {
+        "title": "生策會會長楊泮池：把握關鍵十年 走向生醫產業強國",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000147-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "生策會會長楊泮池專訪》缺乏給付機制 技術難成產業",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000151-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "生策會會長楊泮池專訪》高齡健康解決方案 未來產業機會",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000153-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "數位帳戶": [
+      {
+        "title": "數位帳戶十年 走入打詐死胡同",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000440-260114?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "純網銀助攻 延續數位帳戶熱潮",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000443-260114?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "通膨": [
+      {
+        "title": "Fed 本周開會 將以「鷹眼」緊盯通膨訊號 鮑爾可能暗示降息門檻高",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9465813"
+      },
+      {
+        "title": "緊盯通膨 Fed年底前降息門檻很高",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9465809"
+      }
+    ],
+    "降息": [
+      {
+        "title": "Fed 本周開會 將以「鷹眼」緊盯通膨訊號 鮑爾可能暗示降息門檻高",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9465813"
+      },
+      {
+        "title": "緊盯通膨 Fed年底前降息門檻很高",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9465809"
+      }
+    ],
+    "利率": [
+      {
+        "title": "全球超級央行周 利率料全數按兵不動",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000129-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "債券": [
+      {
+        "title": "重金布局 川普3月狂掃債券",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000183-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "供應鏈": [
+      {
+        "title": "台積電先進製程持續放量 耗材協力廠營運起飛",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9465866"
+      },
+      {
+        "title": "台灣第一家…南亞科打入輝達記憶體供應鏈 毛利率衝七成",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9465844"
+      },
+      {
+        "title": "聯發科參與Google TPU 8t專案ASIC傳捷報 供應鏈嗨",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000117-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "毛利率": [
+      {
+        "title": "台灣首家！南亞科打入 Vera Rubin 鏈 毛利率叩關七成",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9465874"
+      },
+      {
+        "title": "台灣第一家…南亞科打入輝達記憶體供應鏈 毛利率衝七成",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9465844"
+      }
+    ],
+    "鋼鐵業": [
+      {
+        "title": "鋼鐵業谷底翻揚 動能續航",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000216-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "鋼鐵業下半年還有三大挑戰",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260427000225-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "Fed 本周開會 將以「鷹眼」緊盯通膨訊號 鮑爾可能暗示降息門檻高 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9465813",
+    "彭淮南回憶錄／20年總裁 彭淮南：央行獨立性「為所當為」 (聯合_產經_股市)": "https://udn.com/news/story/7238/9465948",
+    "緊盯通膨 Fed年底前降息門檻很高 (聯合_產經_股市)": "https://udn.com/news/story/6811/9465809",
+    "全球超級央行周 利率料全數按兵不動 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260427000129-260202?utm_source=iii_news&utm_medium=rss",
+    "美關鍵參議員不再阻撓 華許接掌Fed最大障礙沒了 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260427000132-260202?utm_source=iii_news&utm_medium=rss",
+    "川普取消特使：伊朗想談可打電話 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260427000133-260202?utm_source=iii_news&utm_medium=rss",
+    "重金布局 川普3月狂掃債券 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260427000183-260203?utm_source=iii_news&utm_medium=rss",
+    "超級央行周 鮑爾最後談話成焦點 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260427000422-260110?utm_source=iii_news&utm_medium=rss",
+    "鴻海 COMPUTEX 2026 秀人工智慧肌肉 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9465870",
+    "鴻海 AI PC 業務夯 出貨喊衝 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9465872",
+    "台灣首家！南亞科打入 Vera Rubin 鏈 毛利率叩關七成 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9465874",
+    "南亞科多路並進 下半年有成果 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9465875",
+    "台積電先進製程神速擴產 可望憑藉技術優勢「贏者全拿」 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9465862",
+    "台積電先進製程持續放量 耗材協力廠營運起飛 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9465866",
+    "鴻海奪輝達推論機櫃大單 獨家供應運算托盤與整櫃組裝 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9465867",
+    "台灣第一家…南亞科打入輝達記憶體供應鏈 毛利率衝七成 (聯合_產經_股市)": "https://udn.com/news/story/7240/9465844",
+    "鴻海奪輝達推論機櫃大單 獨家供應運算托盤 並承攬 Groq 3 LPX 整櫃組裝業務 (聯合_產經_股市)": "https://udn.com/news/story/7240/9465867",
+    "創業之星選秀 快來報名／開發資本助新創搶AI先機 (聯合_產經_股市)": "https://udn.com/news/story/7241/9465854",
+    "美超級財報周 點火AI台鏈 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260427000114-260202?utm_source=iii_news&utm_medium=rss",
+    "聯發科參與Google TPU 8t專案ASIC傳捷報 供應鏈嗨 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260427000117-260202?utm_source=iii_news&utm_medium=rss",
+    "電源雙雄法說 本周接力登場 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260427000137-260202?utm_source=iii_news&utm_medium=rss",
+    "AI排擠效應擴大 SSD漲勢續燒 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260427000140-260202?utm_source=iii_news&utm_medium=rss",
+    "AI驅動半導體擴產潮 三巨頭迎爆發期 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260427000142-260202?utm_source=iii_news&utm_medium=rss",
+    "代理式企業時代來了…算力新商機 台廠受惠 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260427000144-260202?utm_source=iii_news&utm_medium=rss",
+    "銅箔也喊漲…HVLP4放量 金居升勢壯 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260427000145-260202?utm_source=iii_news&utm_medium=rss",
+    "挑戰美光 SK海力士 拚6、7月美國掛牌 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260427000188-260203?utm_source=iii_news&utm_medium=rss",
+    "DeepSeek 掀AI算力價格戰 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260427000195-260203?utm_source=iii_news&utm_medium=rss",
+    "AI競爭白熱化 DeepSeek高階人才頻跳槽 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260427000197-260203?utm_source=iii_news&utm_medium=rss",
+    "陸版輝達摩爾線程 首季虧轉盈 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260427000198-260203?utm_source=iii_news&utm_medium=rss",
+    "精誠資訊 啟動全球IT服務布局 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260427000236-260204?utm_source=iii_news&utm_medium=rss",
+    "考量用電需求 經濟部：強化資料中心整體規劃與審議機制 (聯合_產經_股市)": "https://udn.com/news/story/7238/9465799",
+    "數位帳戶十年 走入打詐死胡同 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260427000440-260114?utm_source=iii_news&utm_medium=rss",
+    "純網銀助攻 延續數位帳戶熱潮 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260427000443-260114?utm_source=iii_news&utm_medium=rss",
+    "生策會會長楊泮池：把握關鍵十年 走向生醫產業強國 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260427000147-260202?utm_source=iii_news&utm_medium=rss",
+    "生策會會長楊泮池專訪》缺乏給付機制 技術難成產業 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260427000151-260202?utm_source=iii_news&utm_medium=rss",
+    "生策會會長楊泮池專訪》高齡健康解決方案 未來產業機會 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260427000153-260202?utm_source=iii_news&utm_medium=rss",
+    "人物側寫－生策會會長楊泮池專訪》看到問題 一步步解決 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260427000156-260202?utm_source=iii_news&utm_medium=rss",
+    "大樹三面進擊寵物藥 (聯合_產經_股市)": "https://udn.com/news/story/7254/9465594",
+    "刷卡繳綜所稅 優惠放送 (經濟金融脈動)": "https://money.udn.com/money/story/5613/9465747",
+    "離岸風電3-4期 釋4～6GW設置容量 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260427000120-260202?utm_source=iii_news&utm_medium=rss",
+    "鋼鐵業谷底翻揚 動能續航 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260427000216-260202?utm_source=iii_news&utm_medium=rss",
+    "中央大學與熙特爾新能源 成立研發中心 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260427000219-260202?utm_source=iii_news&utm_medium=rss",
+    "鋼鐵業下半年還有三大挑戰 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260427000225-260202?utm_source=iii_news&utm_medium=rss",
+    "經長挺高雄設算力園區 (聯合_產經_股市)": "https://udn.com/news/story/7238/9465802"
+  }
+}
