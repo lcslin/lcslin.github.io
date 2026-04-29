@@ -1,0 +1,1617 @@
+{
+  "nodes": [
+    {
+      "id": "日銀",
+      "group": "org",
+      "size": 20
+    },
+    {
+      "id": "Fed",
+      "group": "org",
+      "size": 18
+    },
+    {
+      "id": "鮑爾",
+      "group": "person",
+      "size": 12
+    },
+    {
+      "id": "植田和男",
+      "group": "person",
+      "size": 14
+    },
+    {
+      "id": "戴利歐",
+      "group": "person",
+      "size": 10
+    },
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 22
+    },
+    {
+      "id": "日本",
+      "group": "country",
+      "size": 18
+    },
+    {
+      "id": "台灣",
+      "group": "country",
+      "size": 20
+    },
+    {
+      "id": "中國",
+      "group": "country",
+      "size": 18
+    },
+    {
+      "id": "韓國",
+      "group": "country",
+      "size": 15
+    },
+    {
+      "id": "升息",
+      "group": "finance",
+      "size": 18
+    },
+    {
+      "id": "通膨",
+      "group": "finance",
+      "size": 16
+    },
+    {
+      "id": "貨幣政策",
+      "group": "finance",
+      "size": 17
+    },
+    {
+      "id": "301調查",
+      "group": "finance",
+      "size": 16
+    },
+    {
+      "id": "關稅",
+      "group": "finance",
+      "size": 15
+    },
+    {
+      "id": "AI",
+      "group": "tech",
+      "size": 25
+    },
+    {
+      "id": "OpenAI",
+      "group": "company",
+      "size": 20
+    },
+    {
+      "id": "廣達",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "華碩",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "施崇棠",
+      "group": "person",
+      "size": 13
+    },
+    {
+      "id": "記憶體",
+      "group": "tech",
+      "size": 20
+    },
+    {
+      "id": "威剛",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "十銓",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "美光",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "面板",
+      "group": "tech",
+      "size": 17
+    },
+    {
+      "id": "三星",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "群創",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "友達",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "中華電信",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "簡志誠",
+      "group": "person",
+      "size": 11
+    },
+    {
+      "id": "台灣大",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "5G",
+      "group": "tech",
+      "size": 14
+    },
+    {
+      "id": "英特爾",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "18A製程",
+      "group": "tech",
+      "size": 13
+    },
+    {
+      "id": "精測",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "智原",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "緯創",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "仁寶",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "英業達",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "工業富聯",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "半導體",
+      "group": "tech",
+      "size": 19
+    },
+    {
+      "id": "華虹半導體",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "Meta",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "Google",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "TikTok",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "澳洲",
+      "group": "country",
+      "size": 13
+    },
+    {
+      "id": "新聞稅",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "川普",
+      "group": "person",
+      "size": 17
+    },
+    {
+      "id": "賴清德",
+      "group": "person",
+      "size": 13
+    },
+    {
+      "id": "油價",
+      "group": "finance",
+      "size": 18
+    },
+    {
+      "id": "OPEC",
+      "group": "org",
+      "size": 15
+    },
+    {
+      "id": "阿聯",
+      "group": "country",
+      "size": 14
+    },
+    {
+      "id": "伊朗",
+      "group": "country",
+      "size": 14
+    },
+    {
+      "id": "能源",
+      "group": "tech",
+      "size": 16
+    }
+  ],
+  "links": [
+    {
+      "source": "日銀",
+      "target": "升息",
+      "value": 5,
+      "label": "貨幣政策"
+    },
+    {
+      "source": "日銀",
+      "target": "植田和男",
+      "value": 4,
+      "label": "決策主導"
+    },
+    {
+      "source": "日銀",
+      "target": "通膨",
+      "value": 4,
+      "label": "預期上調"
+    },
+    {
+      "source": "日銀",
+      "target": "日本",
+      "value": 5,
+      "label": "央行職能"
+    },
+    {
+      "source": "Fed",
+      "target": "鮑爾",
+      "value": 5,
+      "label": "政策主導"
+    },
+    {
+      "source": "Fed",
+      "target": "升息",
+      "value": 5,
+      "label": "利率決策"
+    },
+    {
+      "source": "Fed",
+      "target": "美國",
+      "value": 5,
+      "label": "央行職能"
+    },
+    {
+      "source": "Fed",
+      "target": "通膨",
+      "value": 4,
+      "label": "抗通膨"
+    },
+    {
+      "source": "戴利歐",
+      "target": "美國",
+      "value": 3,
+      "label": "政策建議"
+    },
+    {
+      "source": "戴利歐",
+      "target": "通膨",
+      "value": 3,
+      "label": "經濟分析"
+    },
+    {
+      "source": "美國",
+      "target": "301調查",
+      "value": 5,
+      "label": "貿易政策"
+    },
+    {
+      "source": "美國",
+      "target": "台灣",
+      "value": 5,
+      "label": "貿易關係"
+    },
+    {
+      "source": "美國",
+      "target": "關稅",
+      "value": 5,
+      "label": "貿易政策"
+    },
+    {
+      "source": "美國",
+      "target": "華虹半導體",
+      "value": 4,
+      "label": "出口管制"
+    },
+    {
+      "source": "美國",
+      "target": "中國",
+      "value": 4,
+      "label": "貿易制裁"
+    },
+    {
+      "source": "301調查",
+      "target": "台灣",
+      "value": 5,
+      "label": "貿易調查"
+    },
+    {
+      "source": "301調查",
+      "target": "關稅",
+      "value": 5,
+      "label": "關稅評估"
+    },
+    {
+      "source": "韓國",
+      "target": "AI",
+      "value": 4,
+      "label": "市場成長"
+    },
+    {
+      "source": "韓國",
+      "target": "半導體",
+      "value": 4,
+      "label": "產業投資"
+    },
+    {
+      "source": "中國",
+      "target": "貨幣政策",
+      "value": 4,
+      "label": "寬鬆政策"
+    },
+    {
+      "source": "中國",
+      "target": "華虹半導體",
+      "value": 4,
+      "label": "產業布局"
+    },
+    {
+      "source": "中國",
+      "target": "三星",
+      "value": 3,
+      "label": "市場退出"
+    },
+    {
+      "source": "AI",
+      "target": "OpenAI",
+      "value": 5,
+      "label": "產業領導"
+    },
+    {
+      "source": "AI",
+      "target": "廣達",
+      "value": 5,
+      "label": "算力供應"
+    },
+    {
+      "source": "AI",
+      "target": "華碩",
+      "value": 4,
+      "label": "戰略布局"
+    },
+    {
+      "source": "AI",
+      "target": "中華電信",
+      "value": 4,
+      "label": "應用發展"
+    },
+    {
+      "source": "AI",
+      "target": "台灣大",
+      "value": 3,
+      "label": "應用發展"
+    },
+    {
+      "source": "AI",
+      "target": "工業富聯",
+      "value": 4,
+      "label": "營收成長"
+    },
+    {
+      "source": "AI",
+      "target": "英業達",
+      "value": 4,
+      "label": "產能擴充"
+    },
+    {
+      "source": "AI",
+      "target": "緯創",
+      "value": 3,
+      "label": "訂單關聯"
+    },
+    {
+      "source": "AI",
+      "target": "仁寶",
+      "value": 3,
+      "label": "需求帶動"
+    },
+    {
+      "source": "OpenAI",
+      "target": "廣達",
+      "value": 5,
+      "label": "算力採購"
+    },
+    {
+      "source": "OpenAI",
+      "target": "緯創",
+      "value": 3,
+      "label": "訂單影響"
+    },
+    {
+      "source": "廣達",
+      "target": "台灣",
+      "value": 4,
+      "label": "供應鏈"
+    },
+    {
+      "source": "華碩",
+      "target": "施崇棠",
+      "value": 5,
+      "label": "經營決策"
+    },
+    {
+      "source": "華碩",
+      "target": "台灣",
+      "value": 4,
+      "label": "產業代表"
+    },
+    {
+      "source": "記憶體",
+      "target": "威剛",
+      "value": 5,
+      "label": "產品供應"
+    },
+    {
+      "source": "記憶體",
+      "target": "十銓",
+      "value": 5,
+      "label": "產品供應"
+    },
+    {
+      "source": "記憶體",
+      "target": "美光",
+      "value": 4,
+      "label": "市場需求"
+    },
+    {
+      "source": "記憶體",
+      "target": "AI",
+      "value": 4,
+      "label": "需求帶動"
+    },
+    {
+      "source": "威剛",
+      "target": "台灣",
+      "value": 4,
+      "label": "產業代表"
+    },
+    {
+      "source": "十銓",
+      "target": "台灣",
+      "value": 4,
+      "label": "產業代表"
+    },
+    {
+      "source": "面板",
+      "target": "三星",
+      "value": 5,
+      "label": "市場退出"
+    },
+    {
+      "source": "面板",
+      "target": "群創",
+      "value": 4,
+      "label": "供應鏈"
+    },
+    {
+      "source": "面板",
+      "target": "友達",
+      "value": 4,
+      "label": "供應鏈"
+    },
+    {
+      "source": "面板",
+      "target": "中國",
+      "value": 4,
+      "label": "市場競爭"
+    },
+    {
+      "source": "三星",
+      "target": "中國",
+      "value": 4,
+      "label": "市場撤出"
+    },
+    {
+      "source": "三星",
+      "target": "群創",
+      "value": 4,
+      "label": "採購影響"
+    },
+    {
+      "source": "三星",
+      "target": "友達",
+      "value": 4,
+      "label": "採購影響"
+    },
+    {
+      "source": "群創",
+      "target": "台灣",
+      "value": 4,
+      "label": "產業代表"
+    },
+    {
+      "source": "友達",
+      "target": "台灣",
+      "value": 4,
+      "label": "產業代表"
+    },
+    {
+      "source": "中華電信",
+      "target": "簡志誠",
+      "value": 5,
+      "label": "經營決策"
+    },
+    {
+      "source": "中華電信",
+      "target": "5G",
+      "value": 4,
+      "label": "基礎建設"
+    },
+    {
+      "source": "中華電信",
+      "target": "台灣",
+      "value": 4,
+      "label": "產業代表"
+    },
+    {
+      "source": "台灣大",
+      "target": "5G",
+      "value": 4,
+      "label": "應用發展"
+    },
+    {
+      "source": "台灣大",
+      "target": "台灣",
+      "value": 4,
+      "label": "產業代表"
+    },
+    {
+      "source": "半導體",
+      "target": "英特爾",
+      "value": 4,
+      "label": "先進製程"
+    },
+    {
+      "source": "半導體",
+      "target": "18A製程",
+      "value": 4,
+      "label": "技術發展"
+    },
+    {
+      "source": "半導體",
+      "target": "華虹半導體",
+      "value": 4,
+      "label": "供應鏈"
+    },
+    {
+      "source": "半導體",
+      "target": "精測",
+      "value": 3,
+      "label": "設備供應"
+    },
+    {
+      "source": "半導體",
+      "target": "智原",
+      "value": 3,
+      "label": "IC設計"
+    },
+    {
+      "source": "英特爾",
+      "target": "18A製程",
+      "value": 5,
+      "label": "製程開發"
+    },
+    {
+      "source": "精測",
+      "target": "台灣",
+      "value": 4,
+      "label": "產業代表"
+    },
+    {
+      "source": "智原",
+      "target": "台灣",
+      "value": 4,
+      "label": "產業代表"
+    },
+    {
+      "source": "英業達",
+      "target": "台灣",
+      "value": 4,
+      "label": "產業代表"
+    },
+    {
+      "source": "緯創",
+      "target": "台灣",
+      "value": 4,
+      "label": "產業代表"
+    },
+    {
+      "source": "仁寶",
+      "target": "台灣",
+      "value": 4,
+      "label": "產業代表"
+    },
+    {
+      "source": "工業富聯",
+      "target": "AI",
+      "value": 4,
+      "label": "業務成長"
+    },
+    {
+      "source": "工業富聯",
+      "target": "中國",
+      "value": 4,
+      "label": "營運基地"
+    },
+    {
+      "source": "Meta",
+      "target": "澳洲",
+      "value": 4,
+      "label": "稅務爭議"
+    },
+    {
+      "source": "Meta",
+      "target": "新聞稅",
+      "value": 5,
+      "label": "課稅對象"
+    },
+    {
+      "source": "Google",
+      "target": "澳洲",
+      "value": 4,
+      "label": "稅務爭議"
+    },
+    {
+      "source": "Google",
+      "target": "新聞稅",
+      "value": 5,
+      "label": "課稅對象"
+    },
+    {
+      "source": "TikTok",
+      "target": "澳洲",
+      "value": 4,
+      "label": "稅務爭議"
+    },
+    {
+      "source": "TikTok",
+      "target": "新聞稅",
+      "value": 5,
+      "label": "課稅對象"
+    },
+    {
+      "source": "川普",
+      "target": "美國",
+      "value": 5,
+      "label": "政策主導"
+    },
+    {
+      "source": "川普",
+      "target": "伊朗",
+      "value": 4,
+      "label": "談判僵局"
+    },
+    {
+      "source": "川普",
+      "target": "油價",
+      "value": 4,
+      "label": "政策影響"
+    },
+    {
+      "source": "川普",
+      "target": "能源",
+      "value": 3,
+      "label": "能源政策"
+    },
+    {
+      "source": "賴清德",
+      "target": "台灣",
+      "value": 5,
+      "label": "政策主導"
+    },
+    {
+      "source": "賴清德",
+      "target": "半導體",
+      "value": 3,
+      "label": "產業支持"
+    },
+    {
+      "source": "油價",
+      "target": "OPEC",
+      "value": 5,
+      "label": "供給影響"
+    },
+    {
+      "source": "油價",
+      "target": "阿聯",
+      "value": 4,
+      "label": "市場變數"
+    },
+    {
+      "source": "油價",
+      "target": "伊朗",
+      "value": 4,
+      "label": "地緣政治"
+    },
+    {
+      "source": "油價",
+      "target": "能源",
+      "value": 5,
+      "label": "價格影響"
+    },
+    {
+      "source": "OPEC",
+      "target": "阿聯",
+      "value": 5,
+      "label": "退出組織"
+    },
+    {
+      "source": "OPEC",
+      "target": "能源",
+      "value": 5,
+      "label": "供給調控"
+    },
+    {
+      "source": "能源",
+      "target": "台灣",
+      "value": 3,
+      "label": "能源韌性"
+    },
+    {
+      "source": "通膨",
+      "target": "能源",
+      "value": 4,
+      "label": "價格推升"
+    }
+  ],
+  "newsDatabase": {
+    "日銀": [
+      {
+        "title": "日銀利率不動 決策有「異見」 6月升息機率大增",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9470403"
+      },
+      {
+        "title": "日銀不升息 立場卻轉鷹",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000158-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "日銀鷹派按兵不動 植田重申升息立場",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000169-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "日央行維持利率 上調通膨預期",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000561-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Fed": [
+      {
+        "title": "Fed會議登場 鮑爾最後一舞 升息看法聚焦",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000165-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "鮑爾": [
+      {
+        "title": "Fed會議登場 鮑爾最後一舞 升息看法聚焦",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000165-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "植田和男": [
+      {
+        "title": "日銀鷹派按兵不動 植田重申升息立場",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000169-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "戴利歐": [
+      {
+        "title": "美陷停滯性通膨…戴利歐籲華許勿倉促降息",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000168-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "美國": [
+      {
+        "title": "美啟動301調查 台美關稅可能7月確定",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9470474"
+      },
+      {
+        "title": "美陷停滯性通膨…戴利歐籲華許勿倉促降息",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000168-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "金融圈看超級央行周：能源價格主導美國雙率動向",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000172-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美301調查 卓揆︰估7月有結果",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1752778"
+      },
+      {
+        "title": "路透：美國命設備商暫停出貨中企華虹半導體",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9470602"
+      },
+      {
+        "title": "川普促風電商轉投資油氣 支付8.8億美元補償",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9470363"
+      },
+      {
+        "title": "美伊達成默契不阻攔 俄富豪遊艇穿越荷莫茲海峽",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9470544"
+      },
+      {
+        "title": "若美墨加協定不順利…車廠：恐撤出美平價車市場",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000247-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "日本": [
+      {
+        "title": "日銀利率不動 決策有「異見」 6月升息機率大增",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9470403"
+      },
+      {
+        "title": "日銀不升息 立場卻轉鷹",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000158-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "日銀鷹派按兵不動 植田重申升息立場",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000169-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "日央行維持利率 上調通膨預期",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000561-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "7年首例 男遊名古屋染麻疹 日列旅遊警示",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000548-260114?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台灣": [
+      {
+        "title": "美啟動301調查 台美關稅可能7月確定",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9470474"
+      },
+      {
+        "title": "美301調查 卓揆︰估7月有結果",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1752778"
+      },
+      {
+        "title": "賴清德親頒總統創新獎：台灣創新實力 從晶片展現",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000161-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中國": [
+      {
+        "title": "中共中央政治局會議 實施適度寬鬆貨幣政策",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000249-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "三星擬退出陸 TV 市場 恐削弱採購雙虎大尺寸面板力道",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9470401"
+      },
+      {
+        "title": "面板雙虎壓力來了…三星擬退出大陸TV市場 採購LCD力道恐受影響",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9470398"
+      },
+      {
+        "title": "路透：美國命設備商暫停出貨中企華虹半導體",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9470602"
+      },
+      {
+        "title": "陸半導體股牛 韓國散戶搶進場",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000260-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "韓國": [
+      {
+        "title": "AI晶片狂潮助攻 韓股市值 超英居全球第八",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000233-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "陸半導體股牛 韓國散戶搶進場",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000260-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "升息": [
+      {
+        "title": "日銀利率不動 決策有「異見」 6月升息機率大增",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9470403"
+      },
+      {
+        "title": "Fed會議登場 鮑爾最後一舞 升息看法聚焦",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000165-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "日銀鷹派按兵不動 植田重申升息立場",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000169-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "通膨": [
+      {
+        "title": "美陷停滯性通膨…戴利歐籲華許勿倉促降息",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000168-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "日央行維持利率 上調通膨預期",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000561-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "貨幣政策": [
+      {
+        "title": "中共中央政治局會議 實施適度寬鬆貨幣政策",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000249-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "301調查": [
+      {
+        "title": "美啟動301調查 台美關稅可能7月確定",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9470474"
+      },
+      {
+        "title": "美301調查 卓揆︰估7月有結果",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1752778"
+      }
+    ],
+    "關稅": [
+      {
+        "title": "美啟動301調查 台美關稅可能7月確定",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9470474"
+      },
+      {
+        "title": "美301調查 卓揆︰估7月有結果",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1752778"
+      }
+    ],
+    "AI": [
+      {
+        "title": "AI晶片狂潮助攻 韓股市值 超英居全球第八",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000233-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "雲端群雄爭霸戰 搶算力也搶用戶",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9470418"
+      },
+      {
+        "title": "致股東報告書 台灣大拓展 AI、5G 應用",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9470364"
+      },
+      {
+        "title": "OpenAI 震撼彈沒動搖台鏈信心 廣達：今年又將高速成長",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9470408"
+      },
+      {
+        "title": "OpenAI 百億美元算力採購恐生變 牽動廣達、緯創等後續訂單",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9470402"
+      },
+      {
+        "title": "獲利疑慮…AI泡沫化？ OpenAI營運爆警訊",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9470400"
+      },
+      {
+        "title": "華碩啟動AI長期布局 施崇棠：確信超越行業表現",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000288-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "MIC談AI Agent：商模走向成果導向銷售",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000289-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "看旺AI基建需求／廣達深化雲端 仁寶重返成長",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1752822"
+      },
+      {
+        "title": "AI帶旺 工業富聯Q1淨利倍增",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000258-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "OpenAI": [
+      {
+        "title": "OpenAI 震撼彈沒動搖台鏈信心 廣達：今年又將高速成長",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9470408"
+      },
+      {
+        "title": "OpenAI 百億美元算力採購恐生變 牽動廣達、緯創等後續訂單",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9470402"
+      },
+      {
+        "title": "獲利疑慮…AI泡沫化？ OpenAI營運爆警訊",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9470400"
+      },
+      {
+        "title": "IPO計畫響警報…OpenAI有內憂 新戶、營收未達標",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000243-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "廣達": [
+      {
+        "title": "OpenAI 震撼彈沒動搖台鏈信心 廣達：今年又將高速成長",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9470408"
+      },
+      {
+        "title": "OpenAI 百億美元算力採購恐生變 牽動廣達、緯創等後續訂單",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9470402"
+      },
+      {
+        "title": "迎AI成長 廣達產能全速運轉",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000282-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "看旺AI基建需求／廣達深化雲端 仁寶重返成長",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1752822"
+      }
+    ],
+    "華碩": [
+      {
+        "title": "華碩啟動三大長期戰略布局 董座施崇棠：今年可達成超越行業的營運成果",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9470325"
+      },
+      {
+        "title": "華碩集團旗下祥碩參與芯鼎私募",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9470328"
+      },
+      {
+        "title": "華碩啟動AI長期布局 施崇棠：確信超越行業表現",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000288-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "施崇棠": [
+      {
+        "title": "華碩啟動三大長期戰略布局 董座施崇棠：今年可達成超越行業的營運成果",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9470325"
+      },
+      {
+        "title": "華碩啟動AI長期布局 施崇棠：確信超越行業表現",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000288-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "記憶體": [
+      {
+        "title": "記憶體模組雙雄獲利爆發 看好報價持續揚升帶動營運向上",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9470322"
+      },
+      {
+        "title": "記憶體晶片需求強勁 供應商可能推訂閱制模式",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9470326"
+      },
+      {
+        "title": "威剛Q1 EPS逾30元完勝去年",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000174-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "記憶體報價只漲不跌 十銓一路賺到2027",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000177-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "記憶體狂潮 美光、Sandisk股價飆",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000240-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "威剛": [
+      {
+        "title": "威剛Q1 EPS逾30元完勝去年",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000174-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "十銓": [
+      {
+        "title": "記憶體報價只漲不跌 十銓一路賺到2027",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000177-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "美光": [
+      {
+        "title": "記憶體狂潮 美光、Sandisk股價飆",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000240-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "面板": [
+      {
+        "title": "三星擬退出陸 TV 市場 恐削弱採購雙虎大尺寸面板力道",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9470401"
+      },
+      {
+        "title": "顯示器紅潮崛起 台日韓難抗衡",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9470414"
+      },
+      {
+        "title": "面板雙虎高階技術轉型 刻不容緩",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9470415"
+      },
+      {
+        "title": "面板雙虎壓力來了…三星擬退出大陸TV市場 採購LCD力道恐受影響",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9470398"
+      }
+    ],
+    "三星": [
+      {
+        "title": "三星擬退出陸 TV 市場 恐削弱採購雙虎大尺寸面板力道",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9470401"
+      },
+      {
+        "title": "面板雙虎壓力來了…三星擬退出大陸TV市場 採購LCD力道恐受影響",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9470398"
+      }
+    ],
+    "群創": [
+      {
+        "title": "三星擬退出陸 TV 市場 恐削弱採購雙虎大尺寸面板力道",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9470401"
+      },
+      {
+        "title": "面板雙虎壓力來了…三星擬退出大陸TV市場 採購LCD力道恐受影響",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9470398"
+      }
+    ],
+    "友達": [
+      {
+        "title": "三星擬退出陸 TV 市場 恐削弱採購雙虎大尺寸面板力道",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9470401"
+      },
+      {
+        "title": "面板雙虎壓力來了…三星擬退出大陸TV市場 採購LCD力道恐受影響",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9470398"
+      }
+    ],
+    "中華電信": [
+      {
+        "title": "致股東報告書 中華電推動永續商機",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9470358"
+      },
+      {
+        "title": "中華電信 寫全光算力網路新章",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000284-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "中華電信董座簡志誠釋前景 聚焦六主軸",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000286-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "簡志誠": [
+      {
+        "title": "中華電信董座簡志誠釋前景 聚焦六主軸",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000286-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台灣大": [
+      {
+        "title": "致股東報告書 台灣大拓展 AI、5G 應用",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9470364"
+      }
+    ],
+    "5G": [
+      {
+        "title": "致股東報告書 台灣大拓展 AI、5G 應用",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9470364"
+      }
+    ],
+    "英特爾": [
+      {
+        "title": "英特爾18A先進製程 客戶點頭",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000179-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "18A製程": [
+      {
+        "title": "英特爾18A先進製程 客戶點頭",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000179-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "精測": [
+      {
+        "title": "精測首季每股賺逾一個股本…達10.43元 創單季新高 年增54.6%",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9470368"
+      }
+    ],
+    "智原": [
+      {
+        "title": "營收結構逐步回歸健康 智原毛利率創13季高",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000182-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "緯創": [
+      {
+        "title": "OpenAI 百億美元算力採購恐生變 牽動廣達、緯創等後續訂單",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9470402"
+      }
+    ],
+    "仁寶": [
+      {
+        "title": "看旺AI基建需求／廣達深化雲端 仁寶重返成長",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1752822"
+      }
+    ],
+    "英業達": [
+      {
+        "title": "英業達 砸近33億急擴產",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000279-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "工業富聯": [
+      {
+        "title": "AI帶旺 工業富聯Q1淨利倍增",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000258-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "半導體": [
+      {
+        "title": "陸半導體股牛 韓國散戶搶進場",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000260-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "全球AI矽光晶片第一股 曦智登港股首日告捷",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000257-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "路透：美國命設備商暫停出貨中企華虹半導體",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9470602"
+      },
+      {
+        "title": "賴清德親頒總統創新獎：台灣創新實力 從晶片展現",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000161-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "華虹半導體": [
+      {
+        "title": "路透：美國命設備商暫停出貨中企華虹半導體",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9470602"
+      }
+    ],
+    "Meta": [
+      {
+        "title": "澳洲喊課2.25%新聞稅 劍指 Meta、TikTok 等科技巨擘",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9470343"
+      },
+      {
+        "title": "劍指Meta、Google、TikTok 澳洲擬向科技巨擘課新聞稅",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9470405"
+      }
+    ],
+    "Google": [
+      {
+        "title": "劍指Meta、Google、TikTok 澳洲擬向科技巨擘課新聞稅",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9470405"
+      }
+    ],
+    "TikTok": [
+      {
+        "title": "澳洲喊課2.25%新聞稅 劍指 Meta、TikTok 等科技巨擘",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9470343"
+      },
+      {
+        "title": "劍指Meta、Google、TikTok 澳洲擬向科技巨擘課新聞稅",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9470405"
+      }
+    ],
+    "澳洲": [
+      {
+        "title": "澳洲喊課2.25%新聞稅 劍指 Meta、TikTok 等科技巨擘",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9470343"
+      },
+      {
+        "title": "劍指Meta、Google、TikTok 澳洲擬向科技巨擘課新聞稅",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9470405"
+      }
+    ],
+    "新聞稅": [
+      {
+        "title": "澳洲喊課2.25%新聞稅 劍指 Meta、TikTok 等科技巨擘",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9470343"
+      },
+      {
+        "title": "劍指Meta、Google、TikTok 澳洲擬向科技巨擘課新聞稅",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9470405"
+      }
+    ],
+    "川普": [
+      {
+        "title": "布蘭特油價站回110美元 外媒：川普不滿意伊朗新的提案 談判仍陷僵局",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9470460"
+      },
+      {
+        "title": "川普促風電商轉投資油氣 支付8.8億美元補償",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9470363"
+      }
+    ],
+    "賴清德": [
+      {
+        "title": "賴清德親頒總統創新獎：台灣創新實力 從晶片展現",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000161-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "油價": [
+      {
+        "title": "布蘭特油價站回110美元 外媒：川普不滿意伊朗新的提案 談判仍陷僵局",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9470460"
+      },
+      {
+        "title": "高油價效應、電池大缺料 和泰：油電車叫缺 兩年難解",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9470338"
+      },
+      {
+        "title": "市場觀望美伊停火談判 國際油價上漲",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9470586"
+      }
+    ],
+    "OPEC": [
+      {
+        "title": "阿聯下月退出 OPEC",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9470462"
+      },
+      {
+        "title": "阿聯退OPEC 原油市場添變數",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000231-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "阿聯": [
+      {
+        "title": "阿聯下月退出 OPEC",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9470462"
+      },
+      {
+        "title": "阿聯退OPEC 原油市場添變數",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000231-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "伊朗": [
+      {
+        "title": "布蘭特油價站回110美元 外媒：川普不滿意伊朗新的提案 談判仍陷僵局",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9470460"
+      },
+      {
+        "title": "美伊達成默契不阻攔 俄富豪遊艇穿越荷莫茲海峽",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9470544"
+      },
+      {
+        "title": "市場觀望美伊停火談判 國際油價上漲",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9470586"
+      }
+    ],
+    "能源": [
+      {
+        "title": "金融圈看超級央行周：能源價格主導美國雙率動向",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000172-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "調降能源稅國家 數量翻倍",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9470394"
+      },
+      {
+        "title": "強化能源韌性系列報導》賴建信：五大關鍵 強化國家能源韌性",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260429000183-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "川普促風電商轉投資油氣 支付8.8億美元補償",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9470363"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "日銀利率不動 決策有「異見」 6月升息機率大增 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9470403",
+    "美啟動301調查 台美關稅可能7月確定 (聯合_產經_股市)": "https://udn.com/news/story/7238/9470474",
+    "日銀不升息 立場卻轉鷹 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260429000158-260202?utm_source=iii_news&utm_medium=rss",
+    "Fed會議登場 鮑爾最後一舞 升息看法聚焦 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260429000165-260202?utm_source=iii_news&utm_medium=rss",
+    "美陷停滯性通膨…戴利歐籲華許勿倉促降息 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260429000168-260202?utm_source=iii_news&utm_medium=rss",
+    "日銀鷹派按兵不動 植田重申升息立場 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260429000169-260202?utm_source=iii_news&utm_medium=rss",
+    "金融圈看超級央行周：能源價格主導美國雙率動向 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260429000172-260202?utm_source=iii_news&utm_medium=rss",
+    "AI晶片狂潮助攻 韓股市值 超英居全球第八 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260429000233-260203?utm_source=iii_news&utm_medium=rss",
+    "緩解經濟壓力 加國設主權財富基金 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260429000236-260203?utm_source=iii_news&utm_medium=rss",
+    "中共中央政治局會議 實施適度寬鬆貨幣政策 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260429000249-260203?utm_source=iii_news&utm_medium=rss",
+    "日央行維持利率 上調通膨預期 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260429000561-260110?utm_source=iii_news&utm_medium=rss",
+    "美301調查 卓揆︰估7月有結果 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1752778",
+    "雲端群雄爭霸戰 搶算力也搶用戶 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9470418",
+    "致股東報告書 中華電推動永續商機 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9470358",
+    "致股東報告書 台灣大拓展 AI、5G 應用 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9470364",
+    "記憶體模組雙雄獲利爆發 看好報價持續揚升帶動營運向上 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9470322",
+    "記憶體晶片需求強勁 供應商可能推訂閱制模式 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9470326",
+    "華碩啟動三大長期戰略布局 董座施崇棠：今年可達成超越行業的營運成果 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9470325",
+    "華碩集團旗下祥碩參與芯鼎私募 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9470328",
+    "三星擬退出陸 TV 市場 恐削弱採購雙虎大尺寸面板力道 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9470401",
+    "顯示器紅潮崛起 台日韓難抗衡 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9470414",
+    "面板雙虎高階技術轉型 刻不容緩 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9470415",
+    "OpenAI 震撼彈沒動搖台鏈信心 廣達：今年又將高速成長 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9470408",
+    "OpenAI 百億美元算力採購恐生變 牽動廣達、緯創等後續訂單 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9470402",
+    "澳洲喊課2.25%新聞稅 劍指 Meta、TikTok 等科技巨擘 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9470343",
+    "面板雙虎壓力來了…三星擬退出大陸TV市場 採購LCD力道恐受影響 (聯合_產經_股市)": "https://udn.com/news/story/7240/9470398",
+    "劍指Meta、Google、TikTok 澳洲擬向科技巨擘課新聞稅 (聯合_產經_股市)": "https://udn.com/news/story/7240/9470405",
+    "獲利疑慮…AI泡沫化？ OpenAI營運爆警訊 (聯合_產經_股市)": "https://udn.com/news/story/7240/9470400",
+    "精測首季每股賺逾一個股本…達10.43元 創單季新高 年增54.6% (聯合_產經_股市)": "https://udn.com/news/story/7240/9470368",
+    "賴清德親頒總統創新獎：台灣創新實力 從晶片展現 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260429000161-260202?utm_source=iii_news&utm_medium=rss",
+    "威剛Q1 EPS逾30元完勝去年 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260429000174-260202?utm_source=iii_news&utm_medium=rss",
+    "記憶體報價只漲不跌 十銓一路賺到2027 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260429000177-260202?utm_source=iii_news&utm_medium=rss",
+    "英特爾18A先進製程 客戶點頭 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260429000179-260202?utm_source=iii_news&utm_medium=rss",
+    "營收結構逐步回歸健康 智原毛利率創13季高 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260429000182-260202?utm_source=iii_news&utm_medium=rss",
+    "記憶體狂潮 美光、Sandisk股價飆 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260429000240-260203?utm_source=iii_news&utm_medium=rss",
+    "IPO計畫響警報…OpenAI有內憂 新戶、營收未達標 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260429000243-260203?utm_source=iii_news&utm_medium=rss",
+    "全球AI矽光晶片第一股 曦智登港股首日告捷 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260429000257-260203?utm_source=iii_news&utm_medium=rss",
+    "AI帶旺 工業富聯Q1淨利倍增 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260429000258-260203?utm_source=iii_news&utm_medium=rss",
+    "陸半導體股牛 韓國散戶搶進場 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260429000260-260203?utm_source=iii_news&utm_medium=rss",
+    "英業達 砸近33億急擴產 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260429000279-260204?utm_source=iii_news&utm_medium=rss",
+    "迎AI成長 廣達產能全速運轉 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260429000282-260204?utm_source=iii_news&utm_medium=rss",
+    "中華電信 寫全光算力網路新章 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260429000284-260204?utm_source=iii_news&utm_medium=rss",
+    "中華電信董座簡志誠釋前景 聚焦六主軸 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260429000286-260204?utm_source=iii_news&utm_medium=rss",
+    "安碁資訊連七年Q1業績 雙位數成長 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260429000287-260204?utm_source=iii_news&utm_medium=rss",
+    "華碩啟動AI長期布局 施崇棠：確信超越行業表現 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260429000288-260204?utm_source=iii_news&utm_medium=rss",
+    "MIC談AI Agent：商模走向成果導向銷售 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260429000289-260204?utm_source=iii_news&utm_medium=rss",
+    "看旺AI基建需求／廣達深化雲端 仁寶重返成長 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1752822",
+    "路透：美國命設備商暫停出貨中企華虹半導體 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9470602",
+    "7年首例 男遊名古屋染麻疹 日列旅遊警示 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260429000548-260114?utm_source=iii_news&utm_medium=rss",
+    "小北百貨展店衝250家 明年啟動IPO (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260429000204-260202?utm_source=iii_news&utm_medium=rss",
+    "布蘭特油價站回110美元 外媒：川普不滿意伊朗新的提案 談判仍陷僵局 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9470460",
+    "阿聯下月退出 OPEC (經濟國際焦點)": "https://money.udn.com/money/story/5599/9470462",
+    "高油價效應、電池大缺料 和泰：油電車叫缺 兩年難解 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9470338",
+    "川普促風電商轉投資油氣 支付8.8億美元補償 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9470363",
+    "調降能源稅國家 數量翻倍 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9470394",
+    "美伊達成默契不阻攔 俄富豪遊艇穿越荷莫茲海峽 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9470544",
+    "市場觀望美伊停火談判 國際油價上漲 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9470586",
+    "強化能源韌性系列報導》賴建信：五大關鍵 強化國家能源韌性 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260429000183-260202?utm_source=iii_news&utm_medium=rss",
+    "阿聯退OPEC 原油市場添變數 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260429000231-260203?utm_source=iii_news&utm_medium=rss",
+    "若美墨加協定不順利…車廠：恐撤出美平價車市場 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260429000247-260203?utm_source=iii_news&utm_medium=rss"
+  }
+}
