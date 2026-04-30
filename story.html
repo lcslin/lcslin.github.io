@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>機器自省論 — DigiTIME 低機時代</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Noto+Serif+TC:wght@200;300;400;600;900&family=Noto+Sans+TC:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black:  #080808;
+      --ink:    #181818;
+      --warm:   #303030;
+      --mid:    #6e6e6e;
+      --pale:   #b0aaa2;
+      --rule:   #dedad4;
+      --paper:  #f7f4ef;
+      --cream:  #faf8f4;
+      --white:  #ffffff;
+      --gold:   #8b7355;
+      --col-gap: 72px;
+    }
+
+    html { font-size: 16px; scroll-behavior: smooth; }
+
+    body {
+      background: var(--white);
+      color: var(--ink);
+      font-family: 'Noto Serif TC', serif;
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    /* ── MASTHEAD ──────────────────────────────────────── */
+    .masthead {
+      border-bottom: 2px solid var(--black);
+      padding: 16px 56px;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      background: var(--white);
+      z-index: 100;
+    }
+
+    .masthead__brand {
+      font-family: 'Playfair Display', serif;
+      font-size: .95rem;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--black);
+      text-decoration: none;
+    }
+
+    .masthead__brand sup {
+      font-size: .5em;
+      letter-spacing: .05em;
+      vertical-align: super;
+      font-weight: 400;
+      color: var(--gold);
+    }
+
+    .masthead__nav {
+      display: flex;
+      gap: 32px;
+    }
+
+    .masthead__nav a {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: .6rem;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+      color: var(--mid);
+      text-decoration: none;
+    }
+
+    .masthead__nav a:hover { color: var(--black); }
+
+    /* ── HERO ──────────────────────────────────────────── */
+    .hero {
+      background: var(--black);
+      color: var(--white);
+      padding: 56px 56px 48px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--col-gap);
+      align-items: end;
+    }
+
+    .hero__left {}
+
+    .hero__eyebrow {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: .58rem;
+      letter-spacing: .32em;
+      text-transform: uppercase;
+      color: var(--pale);
+      margin-bottom: 20px;
+    }
+
+    .hero__title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 3.8vw, 3.4rem);
+      font-weight: 900;
+      line-height: 1.1;
+      letter-spacing: -.015em;
+    }
+
+    .hero__title em {
+      font-style: italic;
+      font-weight: 400;
+      display: block;
+      font-size: .7em;
+      opacity: .72;
+      margin-top: .2em;
+    }
+
+    .hero__right {
+      padding-bottom: 4px;
+      border-left: 1px solid rgba(255,255,255,.15);
+      padding-left: var(--col-gap);
+    }
+
+    .hero__subtitle {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 1rem;
+      font-weight: 200;
+      line-height: 2;
+      color: rgba(255,255,255,.68);
+      margin-bottom: 36px;
+    }
+
+    .hero__meta {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: .58rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--pale);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .hero__meta-item::before {
+      content: '—  ';
+      opacity: .4;
+    }
+
+    /* ── PAGE WRAP ─────────────────────────────────────── */
+    .page-outer {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 56px;
+    }
+
+    /* ── INTRO ─────────────────────────────────────────── */
+    .intro {
+      padding: 80px 0 72px;
+      border-bottom: 1px solid var(--rule);
+      max-width: 680px;
+    }
+
+    .intro__lead {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 1.2rem;
+      font-weight: 300;
+      line-height: 2.1;
+      color: var(--warm);
+    }
+
+    .intro__lead::first-letter {
+      font-family: 'Playfair Display', serif;
+      font-size: 5.8rem;
+      font-weight: 900;
+      float: left;
+      line-height: .76;
+      margin: .1em .14em 0 0;
+      color: var(--black);
+    }
+
+    /* ── TWO-COLUMN BODY ───────────────────────────────── */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: var(--col-gap);
+      padding: 72px 0 0;
+    }
+
+    /* ── MAIN COLUMN ───────────────────────────────────── */
+    .col-main {}
+
+    .body-section {
+      padding: 0 0 72px;
+    }
+
+    .body-section + .body-section {
+      border-top: 1px solid var(--rule);
+      padding-top: 64px;
+    }
+
+    .section-label {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: .58rem;
+      letter-spacing: .36em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 18px;
+    }
+
+    h2.section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--black);
+      margin-bottom: 32px;
+    }
+
+    .col-main p {
+      font-family: 'Noto Serif TC', serif;
+      font-size: .97rem;
+      line-height: 2.15;
+      color: var(--warm);
+      margin-bottom: 1.5em;
+    }
+
+    .col-main p:last-child { margin-bottom: 0; }
+
+    /* ── SIDE COLUMN ───────────────────────────────────── */
+    .col-side {
+      padding-top: 8px;
+      border-left: 1px solid var(--rule);
+      padding-left: var(--col-gap);
+      display: flex;
+      flex-direction: column;
+      gap: 56px;
+    }
+
+    /* ── PULL QUOTE (side) ─────────────────────────────── */
+    .pull-quote {
+      padding-top: 24px;
+      border-top: 2px solid var(--black);
+    }
+
+    .pull-quote__text {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.65;
+      color: var(--black);
+      margin-bottom: 16px;
+    }
+
+    .pull-quote__attr {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: .58rem;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+      color: var(--mid);
+    }
+
+    /* ── FACT BOX ──────────────────────────────────────── */
+    .fact-box {
+      background: var(--paper);
+      padding: 28px;
+      border-top: 2px solid var(--black);
+    }
+
+    .fact-box__number {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.8rem;
+      font-weight: 900;
+      line-height: 1;
+      color: var(--black);
+      margin-bottom: 10px;
+    }
+
+    .fact-box__desc {
+      font-family: 'Noto Serif TC', serif;
+      font-size: .82rem;
+      line-height: 1.9;
+      color: var(--mid);
+    }
+
+    /* ── PIPELINE DIAGRAM (side) ───────────────────────── */
+    .diagram {}
+
+    .diagram__title {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: .58rem;
+      letter-spacing: .3em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 28px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .pipeline { display: flex; flex-direction: column; }
+
+    .pipeline-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .pipeline-step__connector {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-shrink: 0;
+      width: 24px;
+    }
+
+    .pipeline-step__dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--black);
+      flex-shrink: 0;
+      margin-top: 6px;
+    }
+
+    .pipeline-step:not(:last-child) .pipeline-step__connector::after {
+      content: '';
+      flex: 1;
+      width: 1px;
+      background: var(--rule);
+      min-height: 28px;
+      margin-top: 4px;
+    }
+
+    .pipeline-step__body { padding-bottom: 22px; }
+    .pipeline-step:last-child .pipeline-step__body { padding-bottom: 0; }
+
+    .pipeline-step__label {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: .6rem;
+      font-weight: 500;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 3px;
+    }
+
+    .pipeline-step__desc {
+      font-family: 'Noto Serif TC', serif;
+      font-size: .82rem;
+      line-height: 1.75;
+      color: var(--warm);
+    }
+
+    /* ── CODE COMPARE (main col, full width) ───────────── */
+    .code-compare {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+      margin: 40px 0;
+      background: var(--rule);
+    }
+
+    .code-panel {
+      background: var(--cream);
+      padding: 24px 28px;
+    }
+
+    .code-panel__label {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: .58rem;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .code-panel--after .code-panel__label { color: var(--gold); }
+
+    pre {
+      font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+      font-size: .76rem;
+      line-height: 1.8;
+      color: var(--ink);
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+
+    .del { color: #a33; text-decoration: line-through; opacity: .7; }
+    .ins { color: #4a7c4a; }
+
+    /* ── END ORNAMENT ──────────────────────────────────── */
+    .end-ornament {
+      padding: 80px 0 96px;
+      border-top: 1px solid var(--rule);
+    }
+
+    .end-ornament__inner {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 36px;
+    }
+
+    .end-ornament__inner::before,
+    .end-ornament__inner::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--rule);
+    }
+
+    .end-ornament__diamond {
+      font-size: .6rem;
+      color: var(--pale);
+      letter-spacing: .4em;
+    }
+
+    .tag-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .tag {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: .58rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--mid);
+      border: 1px solid var(--rule);
+      padding: 6px 14px;
+    }
+
+    /* ── FOOTER ────────────────────────────────────────── */
+    footer {
+      border-top: 2px solid var(--black);
+      padding: 24px 56px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: .58rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--mid);
+    }
+
+    /* ── RESPONSIVE ────────────────────────────────────── */
+    @media (max-width: 900px) {
+      :root { --col-gap: 40px; }
+
+      .masthead { padding: 16px 28px; }
+      .masthead__nav { display: none; }
+
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 44px 28px 40px;
+        gap: 32px;
+      }
+
+      .hero__right {
+        border-left: none;
+        border-top: 1px solid rgba(255,255,255,.15);
+        padding-left: 0;
+        padding-top: 28px;
+      }
+
+      .page-outer { padding: 0 28px; }
+
+      .two-col {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .col-side {
+        border-left: none;
+        padding-left: 0;
+        border-top: 1px solid var(--rule);
+        padding-top: 56px;
+        margin-top: 8px;
+      }
+
+      .code-compare { grid-template-columns: 1fr; }
+
+      footer { padding: 24px 28px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <header class="masthead">
+    <a class="masthead__brand" href="#">DigiTIME<sup>低機時代</sup></a>
+    <nav class="masthead__nav">
+      <a href="#">人工神機</a>
+      <a href="#">工程新道</a>
+      <a href="#">觀點</a>
+      <a href="#">訂閱</a>
+    </nav>
+  </header>
+
+  <!-- HERO (two-column, compact) -->
+  <section class="hero">
+    <div class="hero__left">
+      <p class="hero__eyebrow">人工神機 &ensp;·&ensp; 工程新道 &ensp;·&ensp; 丙午年</p>
+      <h1 class="hero__title">
+        機器自省論
+        <em>兩器相詢，一稿往返</em>
+      </h1>
+    </div>
+    <div class="hero__right">
+      <p class="hero__subtitle">
+        兩器相詢，往返一稿，程式遂精——此非人力所為。一場令 Claude 與 Codex 互相問答之實驗，正悄然改變程式碼誕生之道。
+      </p>
+      <div class="hero__meta">
+        <span class="hero__meta-item">Jason CS Lin 撰</span>
+        <span class="hero__meta-item">丙午年四月三十日</span>
+        <span class="hero__meta-item">約六分鐘閱畢</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLE -->
+  <div class="page-outer">
+
+    <!-- INTRO -->
+    <section class="intro">
+      <p class="intro__lead">丙午之秋，有人授命於機，令謄一程式，藏諸磁碟。此後無人復命，兩器自相問答，頃刻間交還一份較原稿潔凈數倍之作。全程不逾片刻，人未嘗涉其間。</p>
+    </section>
+
+    <!-- TWO-COL BODY -->
+    <div class="two-col">
+
+      <!-- ── LEFT: MAIN TEXT ── -->
+      <main class="col-main">
+
+        <section class="body-section">
+          <p class="section-label">緣起</p>
+          <h2 class="section-title">兩器並立，各司其職</h2>
+          <p>Anthropic 之 Claude，與 OpenAI 之 Codex，各擅其職，久行於工程師之案牘間。前者善解語意，能生程式；後者嚴於稽查，以精確著稱。往昔二者各行其是——工程師先令 Claude 作程式，再持其稿就 Codex 審之，閱所評而決取捨。中間一環，仍賴人手。</p>
+          <p>今有人欲去此一環。</p>
+        </section>
+
+        <section class="body-section">
+          <p class="section-label">機制</p>
+          <h2 class="section-title">封鎖一紙，循環自止</h2>
+          <p>此機制之核心，出人意外之簡：一微小之文字檔而已。</p>
+          <p>每逢 Claude 寫畢，有一鉤子（hook）暗自發動，將最新程式送入 Codex 審閱。審畢，以中文呈現意見，末附一令：「請依所評修正，僅限一次。」</p>
+          <p>系統同時於磁碟留一封鎖檔，記「此程式正在修正循環中」。待 Claude 修畢、再度寫入，鉤子復起，見封鎖檔在，乃行最終審查，繼而悄然刪之——宣告循環告終，不復催修。</p>
+        </section>
+
+        <section class="body-section">
+          <p class="section-label">試驗</p>
+          <h2 class="section-title">質數之程，故意為劣</h2>
+          <p>為驗此流水線，試者故意寫就一段多有瑕疵之質數程式：未用之引入、效能不彰之迴圈、冗餘之比較式、裸露之全域副作用——皆程式習見之積病。</p>
+
+          <div class="code-compare">
+            <div class="code-panel">
+              <p class="code-panel__label">原稿 — 積病諸多</p>
+              <pre><span class="del">import math</span>
+
+data = []
+
+def check(n):
+    if n == 1:
+        return False
+    for i in range(2, <span class="del">n</span>):
+        if n % i == 0:
+            return False
+    return True
+
+for x in range(0, 100):
+    r = check(x)
+    if <span class="del">r == True</span>:
+        data.append(x)
+
+print(data)</pre>
+            </div>
+            <div class="code-panel code-panel--after">
+              <p class="code-panel__label">改後 — Codex 審畢</p>
+              <pre><span class="ins">import math</span>
+
+
+def <span class="ins">is_prime</span>(n: int) -> bool:
+    if n <span class="ins">&lt; 2</span>:
+        return False
+    for i in range(2, <span class="ins">math.isqrt(n) + 1</span>):
+        if n % i == 0:
+            return False
+    return True
+
+
+<span class="ins">if __name__ == "__main__":</span>
+    primes = [x for x in range(100)
+              if is_prime(x)]
+    print(primes)</pre>
+            </div>
+          </div>
+
+          <p>Codex 審評，一針見血。演算法效能自 O(n) 化為 O(√n)；函式命名由模糊之 <code>check</code> 易為 <code>is_prime</code>；多餘引入得以正用；全域執行碼納入保護之中。</p>
+        </section>
+
+        <section class="body-section">
+          <p class="section-label">觀察</p>
+          <h2 class="section-title">不為之道，重於所為</h2>
+          <p>此流水線最可觀者，或非其所為，而在其刻意不為之處。</p>
+          <p>系統設計，最多僅行一輪自動修正。縱第二次 Codex 審查仍有所見，亦不自行繼續，而是將控制之權還諸工程師。此硬性終止之設計，乃對機器能力邊界之清醒自知：明確之事委諸機器，需判斷之事歸於人類。</p>
+          <p>技術上，此整合之實作成本極低：不足五十行之 Shell Script、一份 JSON 設定、一個暫存之文字檔。無獨立伺服器，無複雜串接，全行於工程師之本機。此零基礎設施之特性，令其幾乎可由任何已用 Claude Code 之工程師，以分鐘為單位部署之。</p>
+        </section>
+
+        <section class="body-section">
+          <p class="section-label">展望</p>
+          <h2 class="section-title">此後之問</h2>
+          <p>生成與審查既皆可自動，工程師之職責正悄然位移。日常之程式品質守門，既可外包於機器；人之心力，遂得釋放，以謀更難自動化之事——架構之決斷、用者之需求，以及究竟欲造何物。</p>
+          <p>此實驗規模雖小，所問卻大：當諸機器開始彼此問答，而非獨與人類周旋，吾人對「軟體開發」之想像，是否亦需一番自省？</p>
+        </section>
+
+        <div class="end-ornament">
+          <div class="end-ornament__inner">
+            <span class="end-ornament__diamond">◆ ◆ ◆</span>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Claude Code</span>
+            <span class="tag">Codex</span>
+            <span class="tag">自動審查</span>
+            <span class="tag">AI 工作流</span>
+            <span class="tag">開發者工具</span>
+          </div>
+        </div>
+
+      </main><!-- /col-main -->
+
+      <!-- ── RIGHT: SIDEBAR ── -->
+      <aside class="col-side">
+
+        <div class="pull-quote">
+          <p class="pull-quote__text">
+            「吾等之意，非令機器取代工程師之判斷，乃令兩器先除顯然之病，工程師再介入，以決真正需人腦之事。」
+          </p>
+          <p class="pull-quote__attr">— 實驗設計說明</p>
+        </div>
+
+        <div class="fact-box">
+          <p class="fact-box__number">2</p>
+          <p class="fact-box__desc">整個自動修正循環僅含兩輪——初審、一次修正、終審。逾二輪者，刻意棄之，以免系統陷入無謂之自我修正。</p>
+        </div>
+
+        <div class="diagram">
+          <p class="diagram__title">自動修正四步</p>
+          <div class="pipeline">
+            <div class="pipeline-step">
+              <div class="pipeline-step__connector"><div class="pipeline-step__dot"></div></div>
+              <div class="pipeline-step__body">
+                <p class="pipeline-step__label">一　謄寫</p>
+                <p class="pipeline-step__desc">Claude 生程式，藏諸磁碟</p>
+              </div>
+            </div>
+            <div class="pipeline-step">
+              <div class="pipeline-step__connector"><div class="pipeline-step__dot"></div></div>
+              <div class="pipeline-step__body">
+                <p class="pipeline-step__label">二　初審</p>
+                <p class="pipeline-step__desc">鉤子發動，Codex 評其正確、安全、可讀，建封鎖檔</p>
+              </div>
+            </div>
+            <div class="pipeline-step">
+              <div class="pipeline-step__connector"><div class="pipeline-step__dot"></div></div>
+              <div class="pipeline-step__body">
+                <p class="pipeline-step__label">三　修正</p>
+                <p class="pipeline-step__desc">Claude 閱評，自行修正，僅此一次</p>
+              </div>
+            </div>
+            <div class="pipeline-step">
+              <div class="pipeline-step__connector"><div class="pipeline-step__dot"></div></div>
+              <div class="pipeline-step__body">
+                <p class="pipeline-step__label">四　終審</p>
+                <p class="pipeline-step__desc">鉤子再起，行最終審查，刪封鎖檔，循環告終</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pull-quote">
+          <p class="pull-quote__text">
+            令兩器相互問答之意，非在打造永不停歇之自動機器，而在建立一道篩網，先摘低垂之果，再讓人手介入。
+          </p>
+        </div>
+
+      </aside><!-- /col-side -->
+
+    </div><!-- /two-col -->
+
+  </div><!-- /page-outer -->
+
+  <footer>
+    <span>© 丙午年 DigiTIME 低機時代</span>
+    <span>人工神機 &nbsp;·&nbsp; 工程新道</span>
+  </footer>
+
+</body>
+</html>
