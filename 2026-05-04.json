@@ -1,0 +1,1016 @@
+{
+  "nodes": [
+    {
+      "id": "台積電",
+      "group": "company",
+      "size": 25
+    },
+    {
+      "id": "川普",
+      "group": "person",
+      "size": 18
+    },
+    {
+      "id": "央行",
+      "group": "org",
+      "size": 20
+    },
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 22
+    },
+    {
+      "id": "中國",
+      "group": "country",
+      "size": 16
+    },
+    {
+      "id": "越南",
+      "group": "country",
+      "size": 10
+    },
+    {
+      "id": "英特爾",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "輝達",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "聯發科",
+      "group": "company",
+      "size": 17
+    },
+    {
+      "id": "鴻海",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "漢唐",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "帆宣",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "聯電",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "創意",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "長榮",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "陽明",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "萬海",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "台塑化",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "台塑四寶",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "中鋼",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "台泥",
+      "group": "company",
+      "size": 8
+    },
+    {
+      "id": "南亞科",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "LG電子",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "匯率",
+      "group": "finance",
+      "size": 18
+    },
+    {
+      "id": "通膨",
+      "group": "finance",
+      "size": 15
+    },
+    {
+      "id": "新台幣",
+      "group": "finance",
+      "size": 16
+    },
+    {
+      "id": "國家融保專案",
+      "group": "finance",
+      "size": 14
+    },
+    {
+      "id": "PCE",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "先進封裝",
+      "group": "tech",
+      "size": 19
+    },
+    {
+      "id": "埃米製程",
+      "group": "tech",
+      "size": 17
+    },
+    {
+      "id": "AI",
+      "group": "tech",
+      "size": 20
+    },
+    {
+      "id": "物理AI",
+      "group": "tech",
+      "size": 12
+    },
+    {
+      "id": "TPU",
+      "group": "tech",
+      "size": 13
+    },
+    {
+      "id": "ASIC",
+      "group": "tech",
+      "size": 12
+    },
+    {
+      "id": "低軌衛星",
+      "group": "tech",
+      "size": 10
+    },
+    {
+      "id": "龔明鑫",
+      "group": "person",
+      "size": 10
+    },
+    {
+      "id": "台灣",
+      "group": "country",
+      "size": 19
+    },
+    {
+      "id": "OPEC+",
+      "group": "org",
+      "size": 13
+    },
+    {
+      "id": "伊朗",
+      "group": "country",
+      "size": 12
+    },
+    {
+      "id": "經濟部",
+      "group": "org",
+      "size": 9
+    },
+    {
+      "id": "衛福部",
+      "group": "org",
+      "size": 8
+    },
+    {
+      "id": "勞保",
+      "group": "finance",
+      "size": 9
+    },
+    {
+      "id": "貿易",
+      "group": "finance",
+      "size": 11
+    },
+    {
+      "id": "原油",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "雲端",
+      "group": "tech",
+      "size": 11
+    },
+    {
+      "id": "貨櫃運價",
+      "group": "finance",
+      "size": 12
+    }
+  ],
+  "links": [
+    {
+      "source": "川普",
+      "target": "中國",
+      "value": 4,
+      "label": "風險管理"
+    },
+    {
+      "source": "川普",
+      "target": "台灣",
+      "value": 5,
+      "label": "政策影響"
+    },
+    {
+      "source": "央行",
+      "target": "新台幣",
+      "value": 5,
+      "label": "匯率穩定"
+    },
+    {
+      "source": "央行",
+      "target": "匯率",
+      "value": 5,
+      "label": "政策管理"
+    },
+    {
+      "source": "美國",
+      "target": "匯率",
+      "value": 4,
+      "label": "監測報告"
+    },
+    {
+      "source": "美國",
+      "target": "台灣",
+      "value": 4,
+      "label": "匯率觀察"
+    },
+    {
+      "source": "美國",
+      "target": "PCE",
+      "value": 4,
+      "label": "通膨數據"
+    },
+    {
+      "source": "美國",
+      "target": "通膨",
+      "value": 4,
+      "label": "經濟指標"
+    },
+    {
+      "source": "越南",
+      "target": "通膨",
+      "value": 3,
+      "label": "物價上漲"
+    },
+    {
+      "source": "台積電",
+      "target": "埃米製程",
+      "value": 5,
+      "label": "技術開發"
+    },
+    {
+      "source": "台積電",
+      "target": "漢唐",
+      "value": 5,
+      "label": "建廠商機"
+    },
+    {
+      "source": "台積電",
+      "target": "帆宣",
+      "value": 5,
+      "label": "建廠商機"
+    },
+    {
+      "source": "台積電",
+      "target": "台灣",
+      "value": 5,
+      "label": "投資建廠"
+    },
+    {
+      "source": "台積電",
+      "target": "先進封裝",
+      "value": 4,
+      "label": "技術競爭"
+    },
+    {
+      "source": "英特爾",
+      "target": "先進封裝",
+      "value": 5,
+      "label": "技術突破"
+    },
+    {
+      "source": "英特爾",
+      "target": "台積電",
+      "value": 5,
+      "label": "競爭搶單"
+    },
+    {
+      "source": "英特爾",
+      "target": "聯電",
+      "value": 4,
+      "label": "供應鏈"
+    },
+    {
+      "source": "輝達",
+      "target": "物理AI",
+      "value": 5,
+      "label": "技術開發"
+    },
+    {
+      "source": "輝達",
+      "target": "AI",
+      "value": 5,
+      "label": "產業領導"
+    },
+    {
+      "source": "輝達",
+      "target": "LG電子",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "輝達",
+      "target": "南亞科",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "聯發科",
+      "target": "TPU",
+      "value": 4,
+      "label": "產品商機"
+    },
+    {
+      "source": "聯發科",
+      "target": "ASIC",
+      "value": 4,
+      "label": "先進製程"
+    },
+    {
+      "source": "聯發科",
+      "target": "AI",
+      "value": 4,
+      "label": "技術應用"
+    },
+    {
+      "source": "創意",
+      "target": "ASIC",
+      "value": 4,
+      "label": "先進製程"
+    },
+    {
+      "source": "鴻海",
+      "target": "低軌衛星",
+      "value": 4,
+      "label": "技術布局"
+    },
+    {
+      "source": "國家融保專案",
+      "target": "台灣",
+      "value": 4,
+      "label": "金融政策"
+    },
+    {
+      "source": "龔明鑫",
+      "target": "貿易",
+      "value": 3,
+      "label": "協定維護"
+    },
+    {
+      "source": "龔明鑫",
+      "target": "台灣",
+      "value": 3,
+      "label": "政策推動"
+    },
+    {
+      "source": "長榮",
+      "target": "貨櫃運價",
+      "value": 4,
+      "label": "營收影響"
+    },
+    {
+      "source": "陽明",
+      "target": "貨櫃運價",
+      "value": 4,
+      "label": "營收影響"
+    },
+    {
+      "source": "萬海",
+      "target": "貨櫃運價",
+      "value": 4,
+      "label": "營收影響"
+    },
+    {
+      "source": "台塑化",
+      "target": "台塑四寶",
+      "value": 4,
+      "label": "集團關係"
+    },
+    {
+      "source": "中鋼",
+      "target": "中國",
+      "value": 3,
+      "label": "市場影響"
+    },
+    {
+      "source": "OPEC+",
+      "target": "原油",
+      "value": 5,
+      "label": "產量調控"
+    },
+    {
+      "source": "伊朗",
+      "target": "原油",
+      "value": 4,
+      "label": "停火影響"
+    },
+    {
+      "source": "經濟部",
+      "target": "台灣",
+      "value": 3,
+      "label": "能源政策"
+    },
+    {
+      "source": "AI",
+      "target": "先進封裝",
+      "value": 4,
+      "label": "技術需求"
+    },
+    {
+      "source": "AI",
+      "target": "雲端",
+      "value": 4,
+      "label": "產業應用"
+    },
+    {
+      "source": "先進封裝",
+      "target": "埃米製程",
+      "value": 4,
+      "label": "技術關聯"
+    },
+    {
+      "source": "新台幣",
+      "target": "匯率",
+      "value": 5,
+      "label": "市場波動"
+    },
+    {
+      "source": "通膨",
+      "target": "PCE",
+      "value": 4,
+      "label": "指標關聯"
+    }
+  ],
+  "newsDatabase": {
+    "越南": [
+      {
+        "title": "越南 CPI 增幅寫六年最大",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9479491"
+      }
+    ],
+    "川普": [
+      {
+        "title": "陸學者看川習會： 川普為風險管理 北京重點在台灣",
+        "source": "",
+        "url": "https://udn.com/news/story/6809/9479501"
+      }
+    ],
+    "中國": [
+      {
+        "title": "陸學者看川習會： 川普為風險管理 北京重點在台灣",
+        "source": "",
+        "url": "https://udn.com/news/story/6809/9479501"
+      },
+      {
+        "title": "大陸庫存去化、政策加碼、需求韌性支撐 中鋼新一波漲價動能有影",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9479455"
+      }
+    ],
+    "台灣": [
+      {
+        "title": "陸學者看川習會： 川普為風險管理 北京重點在台灣",
+        "source": "",
+        "url": "https://udn.com/news/story/6809/9479501"
+      },
+      {
+        "title": "續列匯率操縱國觀察名單機會高…央行避踩美第三道紅線",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000190-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "維持對等貿易協定成果 龔明鑫：有更多優惠會爭取",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9479691"
+      },
+      {
+        "title": "台積電傳龍潭建埃米廠 舊案復活啟動6,000億元大投資",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9479484"
+      }
+    ],
+    "國家融保專案": [
+      {
+        "title": "國家融保專案 最快5月啟動",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000152-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "最快5月啟用 2500億美元國家融保專案",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000473-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "美國": [
+      {
+        "title": "美財部匯率報告 恐延至H2公布",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000187-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "續列匯率操縱國觀察名單機會高…央行避踩美第三道紅線",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000190-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美國最新PCE數據是「壞消息」...古爾斯比：通膨回落再降息",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000211-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "匯率": [
+      {
+        "title": "美財部匯率報告 恐延至H2公布",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000187-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "續列匯率操縱國觀察名單機會高…央行避踩美第三道紅線",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000190-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "央行": [
+      {
+        "title": "續列匯率操縱國觀察名單機會高…央行避踩美第三道紅線",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000190-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "「暴力升值」滿周年 央行三招力穩新台幣",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000231-260205?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "PCE": [
+      {
+        "title": "美國最新PCE數據是「壞消息」...古爾斯比：通膨回落再降息",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000211-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "通膨": [
+      {
+        "title": "越南 CPI 增幅寫六年最大",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9479491"
+      },
+      {
+        "title": "美國最新PCE數據是「壞消息」...古爾斯比：通膨回落再降息",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000211-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "新台幣": [
+      {
+        "title": "「暴力升值」滿周年 央行三招力穩新台幣",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000231-260205?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "龔明鑫": [
+      {
+        "title": "維持對等貿易協定成果 龔明鑫：有更多優惠會爭取",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9479691"
+      }
+    ],
+    "貿易": [
+      {
+        "title": "維持對等貿易協定成果 龔明鑫：有更多優惠會爭取",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9479691"
+      }
+    ],
+    "台積電": [
+      {
+        "title": "台積電傳龍潭建埃米廠 舊案復活啟動6,000億元大投資",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9479484"
+      },
+      {
+        "title": "英特爾衝先進封裝搶單台積 業界傳後段良率提升至九成",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9479514"
+      },
+      {
+        "title": "台積電龍潭建廠 漢唐、帆宣迎千億商機",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9479519"
+      },
+      {
+        "title": "龍科三期大復活…台積傳要在龍潭蓋埃米廠 漢唐、帆宣迎千億建廠大單",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9479520"
+      },
+      {
+        "title": "龍科3期擴建復活 傳台積電埃米級製程進駐",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9479408"
+      }
+    ],
+    "埃米製程": [
+      {
+        "title": "台積電傳龍潭建埃米廠 舊案復活啟動6,000億元大投資",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9479484"
+      },
+      {
+        "title": "龍科三期大復活…台積傳要在龍潭蓋埃米廠 漢唐、帆宣迎千億建廠大單",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9479520"
+      },
+      {
+        "title": "龍科3期擴建復活 傳台積電埃米級製程進駐",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9479408"
+      }
+    ],
+    "輝達": [
+      {
+        "title": "輝達攻物理 AI 亞系鏈沾光 LG電子、南亞科等企業營收爆發",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9479490"
+      }
+    ],
+    "物理AI": [
+      {
+        "title": "輝達攻物理 AI 亞系鏈沾光 LG電子、南亞科等企業營收爆發",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9479490"
+      }
+    ],
+    "AI": [
+      {
+        "title": "輝達攻物理 AI 亞系鏈沾光 LG電子、南亞科等企業營收爆發",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9479490"
+      },
+      {
+        "title": "AI對抗「癌王」　人工智慧可望提前數年揪出胰臟癌蹤跡",
+        "source": "",
+        "url": "https://www.chinatimes.com/realtimenews/20260504000046-260408?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "LG電子": [
+      {
+        "title": "輝達攻物理 AI 亞系鏈沾光 LG電子、南亞科等企業營收爆發",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9479490"
+      }
+    ],
+    "南亞科": [
+      {
+        "title": "輝達攻物理 AI 亞系鏈沾光 LG電子、南亞科等企業營收爆發",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9479490"
+      }
+    ],
+    "英特爾": [
+      {
+        "title": "英特爾衝先進封裝搶單台積 業界傳後段良率提升至九成",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9479514"
+      },
+      {
+        "title": "英特爾先進封裝傳大躍進 協力廠聯電 出貨暢旺",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9479516"
+      }
+    ],
+    "先進封裝": [
+      {
+        "title": "英特爾衝先進封裝搶單台積 業界傳後段良率提升至九成",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9479514"
+      },
+      {
+        "title": "英特爾先進封裝傳大躍進 協力廠聯電 出貨暢旺",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9479516"
+      },
+      {
+        "title": "三大封測廠 資本支出創高",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000168-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "三大封測廠資本支出衝高 設備、廠務系統廠沾光",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000171-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "聯電": [
+      {
+        "title": "英特爾先進封裝傳大躍進 協力廠聯電 出貨暢旺",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9479516"
+      }
+    ],
+    "漢唐": [
+      {
+        "title": "台積電龍潭建廠 漢唐、帆宣迎千億商機",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9479519"
+      },
+      {
+        "title": "龍科三期大復活…台積傳要在龍潭蓋埃米廠 漢唐、帆宣迎千億建廠大單",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9479520"
+      }
+    ],
+    "帆宣": [
+      {
+        "title": "台積電龍潭建廠 漢唐、帆宣迎千億商機",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9479519"
+      },
+      {
+        "title": "龍科三期大復活…台積傳要在龍潭蓋埃米廠 漢唐、帆宣迎千億建廠大單",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9479520"
+      }
+    ],
+    "聯發科": [
+      {
+        "title": "TPU龐大商機 外資聯發科目標價喊5,000元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000149-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "ASIC衝刺先進製程 聯發科、創意多點開花",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000172-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "TPU": [
+      {
+        "title": "TPU龐大商機 外資聯發科目標價喊5,000元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000149-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "鴻海": [
+      {
+        "title": "鴻海第二代低軌衛星升空",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000165-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "低軌衛星": [
+      {
+        "title": "鴻海第二代低軌衛星升空",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000165-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "ASIC": [
+      {
+        "title": "ASIC衝刺先進製程 聯發科、創意多點開花",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000172-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "創意": [
+      {
+        "title": "ASIC衝刺先進製程 聯發科、創意多點開花",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000172-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "雲端": [
+      {
+        "title": "創高 雲端4雄資本支出7250億美元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000471-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台泥": [
+      {
+        "title": "台泥80周年 許願「重塑文明」",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9479370"
+      }
+    ],
+    "長榮": [
+      {
+        "title": "貨櫃輪運價 5月兩波漲勢 長榮、陽明、萬海營收有望回升",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9479529"
+      },
+      {
+        "title": "貨櫃三雄運力規劃 投資人關注",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9479535"
+      }
+    ],
+    "陽明": [
+      {
+        "title": "貨櫃輪運價 5月兩波漲勢 長榮、陽明、萬海營收有望回升",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9479529"
+      },
+      {
+        "title": "貨櫃三雄運力規劃 投資人關注",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9479535"
+      }
+    ],
+    "萬海": [
+      {
+        "title": "貨櫃輪運價 5月兩波漲勢 長榮、陽明、萬海營收有望回升",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9479529"
+      },
+      {
+        "title": "貨櫃三雄運力規劃 投資人關注",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9479535"
+      }
+    ],
+    "貨櫃運價": [
+      {
+        "title": "貨櫃輪運價 5月兩波漲勢 長榮、陽明、萬海營收有望回升",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9479529"
+      }
+    ],
+    "台塑化": [
+      {
+        "title": "台塑化5、6月供料回穩",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000161-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "本業、轉投資雙雙挹注 台塑四寶Q2營運走堅",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000164-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台塑四寶": [
+      {
+        "title": "本業、轉投資雙雙挹注 台塑四寶Q2營運走堅",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000164-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "勞保": [
+      {
+        "title": "退休好生活》收入不固定 勞保採近3月平均",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000487-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中鋼": [
+      {
+        "title": "大陸庫存去化、政策加碼、需求韌性支撐 中鋼新一波漲價動能有影",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9479455"
+      },
+      {
+        "title": "鋼廠本季財報值得期待",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9479459"
+      }
+    ],
+    "OPEC+": [
+      {
+        "title": "OPEC+ 下月象徵性增產",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9479531"
+      },
+      {
+        "title": "OPEC＋連三月調升原油產量",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000157-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "原油": [
+      {
+        "title": "OPEC+ 下月象徵性增產",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9479531"
+      },
+      {
+        "title": "OPEC＋連三月調升原油產量",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000157-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "伊朗": [
+      {
+        "title": "傳伊朗提三階段14點方案 目標30天內停火過渡到終戰",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9479647"
+      },
+      {
+        "title": "伊朗提14點方案 30天內重啟荷姆茲",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000160-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "經濟部": [
+      {
+        "title": "傳經部急購核燃料 學者：核二也須跟上",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000477-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "衛福部": [
+      {
+        "title": "衛福部預告 牙醫醫院須設4專科",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260504000456-260114?utm_source=iii_news&utm_medium=rss"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "越南 CPI 增幅寫六年最大 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9479491",
+    "陸學者看川習會： 川普為風險管理 北京重點在台灣 (聯合_產經_股市)": "https://udn.com/news/story/6809/9479501",
+    "國家融保專案 最快5月啟動 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260504000152-260202?utm_source=iii_news&utm_medium=rss",
+    "美財部匯率報告 恐延至H2公布 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260504000187-260202?utm_source=iii_news&utm_medium=rss",
+    "續列匯率操縱國觀察名單機會高…央行避踩美第三道紅線 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260504000190-260202?utm_source=iii_news&utm_medium=rss",
+    "美國最新PCE數據是「壞消息」...古爾斯比：通膨回落再降息 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260504000211-260203?utm_source=iii_news&utm_medium=rss",
+    "「暴力升值」滿周年 央行三招力穩新台幣 (工商金融稅務)": "https://www.chinatimes.com/newspapers/20260504000231-260205?utm_source=iii_news&utm_medium=rss",
+    "維持對等貿易協定成果 龔明鑫：有更多優惠會爭取 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9479691",
+    "台積電傳龍潭建埃米廠 舊案復活啟動6,000億元大投資 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9479484",
+    "輝達攻物理 AI 亞系鏈沾光 LG電子、南亞科等企業營收爆發 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9479490",
+    "英特爾衝先進封裝搶單台積 業界傳後段良率提升至九成 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9479514",
+    "英特爾先進封裝傳大躍進 協力廠聯電 出貨暢旺 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9479516",
+    "台積電龍潭建廠 漢唐、帆宣迎千億商機 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9479519",
+    "龍科三期大復活…台積傳要在龍潭蓋埃米廠 漢唐、帆宣迎千億建廠大單 (聯合_產經_股市)": "https://udn.com/news/story/7240/9479520",
+    "龍科3期擴建復活 傳台積電埃米級製程進駐 (聯合_產經_股市)": "https://udn.com/news/story/7238/9479408",
+    "TPU龐大商機 外資聯發科目標價喊5,000元 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260504000149-260202?utm_source=iii_news&utm_medium=rss",
+    "鴻海第二代低軌衛星升空 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260504000165-260202?utm_source=iii_news&utm_medium=rss",
+    "三大封測廠 資本支出創高 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260504000168-260202?utm_source=iii_news&utm_medium=rss",
+    "三大封測廠資本支出衝高 設備、廠務系統廠沾光 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260504000171-260202?utm_source=iii_news&utm_medium=rss",
+    "ASIC衝刺先進製程 聯發科、創意多點開花 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260504000172-260202?utm_source=iii_news&utm_medium=rss",
+    "智慧經營／大東電董事長林志明 務實布局「大電力」版圖 (聯合_產經_股市)": "https://udn.com/news/story/7241/9479301",
+    "創高 雲端4雄資本支出7250億美元 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260504000471-260110?utm_source=iii_news&utm_medium=rss",
+    "最快5月啟用 2500億美元國家融保專案 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260504000473-260110?utm_source=iii_news&utm_medium=rss",
+    "AI對抗「癌王」　人工智慧可望提前數年揪出胰臟癌蹤跡 (中時國際新聞)": "https://www.chinatimes.com/realtimenews/20260504000046-260408?utm_source=iii_news&utm_medium=rss",
+    "奇技生命科技 榮獲國家新創獎 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260504000348-260204?utm_source=iii_news&utm_medium=rss",
+    "2026醫療健康照護展 開放預先參觀登記 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260504000350-260204?utm_source=iii_news&utm_medium=rss",
+    "衛福部預告 牙醫醫院須設4專科 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260504000456-260114?utm_source=iii_news&utm_medium=rss",
+    "台泥80周年 許願「重塑文明」 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9479370",
+    "貨櫃輪運價 5月兩波漲勢 長榮、陽明、萬海營收有望回升 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9479529",
+    "貨櫃三雄運力規劃 投資人關注 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9479535",
+    "台塑化5、6月供料回穩 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260504000161-260202?utm_source=iii_news&utm_medium=rss",
+    "本業、轉投資雙雙挹注 台塑四寶Q2營運走堅 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260504000164-260202?utm_source=iii_news&utm_medium=rss",
+    "女性勞參率達52.4％ 成長遇瓶頸 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260504000468-260110?utm_source=iii_news&utm_medium=rss",
+    "兩大因素 9成婦女被迫調整職涯 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260504000475-260110?utm_source=iii_news&utm_medium=rss",
+    "退休好生活》收入不固定 勞保採近3月平均 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260504000487-260110?utm_source=iii_news&utm_medium=rss",
+    "大陸庫存去化、政策加碼、需求韌性支撐 中鋼新一波漲價動能有影 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9479455",
+    "鋼廠本季財報值得期待 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9479459",
+    "OPEC+ 下月象徵性增產 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9479531",
+    "傳伊朗提三階段14點方案 目標30天內停火過渡到終戰 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9479647",
+    "OPEC＋連三月調升原油產量 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260504000157-260202?utm_source=iii_news&utm_medium=rss",
+    "伊朗提14點方案 30天內重啟荷姆茲 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260504000160-260202?utm_source=iii_news&utm_medium=rss",
+    "傳經部急購核燃料 學者：核二也須跟上 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260504000477-260110?utm_source=iii_news&utm_medium=rss"
+  }
+}
