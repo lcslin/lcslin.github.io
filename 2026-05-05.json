@@ -1,0 +1,1263 @@
+{
+  "nodes": [
+    {
+      "id": "台積電",
+      "group": "company",
+      "size": 20
+    },
+    {
+      "id": "輝達",
+      "group": "company",
+      "size": 22
+    },
+    {
+      "id": "黃仁勳",
+      "group": "person",
+      "size": 18
+    },
+    {
+      "id": "鴻海",
+      "group": "company",
+      "size": 17
+    },
+    {
+      "id": "廣宇",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "大立光",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "亞光",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "廣達",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "緯創",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "穎崴",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "中華電",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "遠傳",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "南亞科",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "欣興",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "光聖",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "中鋼",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "台泥",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "美光",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "SK海力士",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "應材",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "阿里",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "Meta",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "GameStop",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "eBay",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "軟銀",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "Anthropic",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "台灣",
+      "group": "country",
+      "size": 25
+    },
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 18
+    },
+    {
+      "id": "日本",
+      "group": "country",
+      "size": 15
+    },
+    {
+      "id": "韓國",
+      "group": "country",
+      "size": 14
+    },
+    {
+      "id": "歐盟",
+      "group": "country",
+      "size": 13
+    },
+    {
+      "id": "中國",
+      "group": "country",
+      "size": 16
+    },
+    {
+      "id": "AI",
+      "group": "tech",
+      "size": 23
+    },
+    {
+      "id": "機器人",
+      "group": "tech",
+      "size": 19
+    },
+    {
+      "id": "半導體",
+      "group": "tech",
+      "size": 21
+    },
+    {
+      "id": "低軌衛星",
+      "group": "tech",
+      "size": 14
+    },
+    {
+      "id": "先進封裝",
+      "group": "tech",
+      "size": 12
+    },
+    {
+      "id": "CPO",
+      "group": "tech",
+      "size": 11
+    },
+    {
+      "id": "電動車",
+      "group": "tech",
+      "size": 12
+    },
+    {
+      "id": "太陽能",
+      "group": "tech",
+      "size": 10
+    },
+    {
+      "id": "核能",
+      "group": "tech",
+      "size": 11
+    },
+    {
+      "id": "PMI",
+      "group": "finance",
+      "size": 17
+    },
+    {
+      "id": "台股",
+      "group": "finance",
+      "size": 18
+    },
+    {
+      "id": "比特幣",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "新台幣",
+      "group": "finance",
+      "size": 11
+    },
+    {
+      "id": "Fed",
+      "group": "org",
+      "size": 13
+    },
+    {
+      "id": "亞銀",
+      "group": "org",
+      "size": 11
+    },
+    {
+      "id": "FCC",
+      "group": "org",
+      "size": 10
+    },
+    {
+      "id": "勞動基金",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "政府基金",
+      "group": "finance",
+      "size": 13
+    },
+    {
+      "id": "CSP",
+      "group": "tech",
+      "size": 14
+    }
+  ],
+  "links": [
+    {
+      "source": "黃仁勳",
+      "target": "機器人",
+      "value": 5,
+      "label": "產業布局"
+    },
+    {
+      "source": "黃仁勳",
+      "target": "輝達",
+      "value": 5,
+      "label": "企業領導"
+    },
+    {
+      "source": "輝達",
+      "target": "機器人",
+      "value": 5,
+      "label": "技術開發"
+    },
+    {
+      "source": "鴻海",
+      "target": "機器人",
+      "value": 4,
+      "label": "供應鏈"
+    },
+    {
+      "source": "廣宇",
+      "target": "機器人",
+      "value": 4,
+      "label": "供應鏈"
+    },
+    {
+      "source": "大立光",
+      "target": "機器人",
+      "value": 4,
+      "label": "感測器供應"
+    },
+    {
+      "source": "亞光",
+      "target": "機器人",
+      "value": 4,
+      "label": "感測器供應"
+    },
+    {
+      "source": "鴻海",
+      "target": "輝達",
+      "value": 4,
+      "label": "商業合作"
+    },
+    {
+      "source": "廣宇",
+      "target": "鴻海",
+      "value": 4,
+      "label": "集團關係"
+    },
+    {
+      "source": "輝達",
+      "target": "CPO",
+      "value": 4,
+      "label": "技術開發"
+    },
+    {
+      "source": "台積電",
+      "target": "半導體",
+      "value": 5,
+      "label": "產業領導"
+    },
+    {
+      "source": "台積電",
+      "target": "台灣",
+      "value": 5,
+      "label": "投資擴產"
+    },
+    {
+      "source": "台股",
+      "target": "半導體",
+      "value": 5,
+      "label": "市場表現"
+    },
+    {
+      "source": "台股",
+      "target": "台灣",
+      "value": 5,
+      "label": "經濟指標"
+    },
+    {
+      "source": "CSP",
+      "target": "AI",
+      "value": 5,
+      "label": "投資擴張"
+    },
+    {
+      "source": "廣達",
+      "target": "CSP",
+      "value": 4,
+      "label": "供應鏈"
+    },
+    {
+      "source": "緯創",
+      "target": "CSP",
+      "value": 4,
+      "label": "供應鏈"
+    },
+    {
+      "source": "南亞科",
+      "target": "AI",
+      "value": 4,
+      "label": "記憶體供應"
+    },
+    {
+      "source": "美光",
+      "target": "AI",
+      "value": 4,
+      "label": "技術發展"
+    },
+    {
+      "source": "SK海力士",
+      "target": "AI",
+      "value": 4,
+      "label": "記憶體供應"
+    },
+    {
+      "source": "穎崴",
+      "target": "半導體",
+      "value": 4,
+      "label": "設備供應"
+    },
+    {
+      "source": "欣興",
+      "target": "半導體",
+      "value": 4,
+      "label": "載板供應"
+    },
+    {
+      "source": "應材",
+      "target": "先進封裝",
+      "value": 4,
+      "label": "併購擴張"
+    },
+    {
+      "source": "光聖",
+      "target": "半導體",
+      "value": 3,
+      "label": "產業成長"
+    },
+    {
+      "source": "FCC",
+      "target": "低軌衛星",
+      "value": 4,
+      "label": "政策鬆綁"
+    },
+    {
+      "source": "低軌衛星",
+      "target": "半導體",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "Meta",
+      "target": "機器人",
+      "value": 4,
+      "label": "技術併購"
+    },
+    {
+      "source": "GameStop",
+      "target": "eBay",
+      "value": 5,
+      "label": "併購意向"
+    },
+    {
+      "source": "軟銀",
+      "target": "韓國",
+      "value": 3,
+      "label": "產業合作"
+    },
+    {
+      "source": "Anthropic",
+      "target": "AI",
+      "value": 4,
+      "label": "晶片採購"
+    },
+    {
+      "source": "阿里",
+      "target": "AI",
+      "value": 4,
+      "label": "技術應用"
+    },
+    {
+      "source": "阿里",
+      "target": "台灣",
+      "value": 3,
+      "label": "商業拓展"
+    },
+    {
+      "source": "中華電",
+      "target": "台灣",
+      "value": 4,
+      "label": "ESG典範"
+    },
+    {
+      "source": "遠傳",
+      "target": "台灣",
+      "value": 4,
+      "label": "永續領先"
+    },
+    {
+      "source": "PMI",
+      "target": "台灣",
+      "value": 5,
+      "label": "經濟指標"
+    },
+    {
+      "source": "PMI",
+      "target": "韓國",
+      "value": 3,
+      "label": "經濟指標"
+    },
+    {
+      "source": "PMI",
+      "target": "歐盟",
+      "value": 3,
+      "label": "經濟指標"
+    },
+    {
+      "source": "政府基金",
+      "target": "台股",
+      "value": 5,
+      "label": "投資收益"
+    },
+    {
+      "source": "勞動基金",
+      "target": "台股",
+      "value": 4,
+      "label": "投資波動"
+    },
+    {
+      "source": "Fed",
+      "target": "美國",
+      "value": 5,
+      "label": "貨幣政策"
+    },
+    {
+      "source": "美國",
+      "target": "台灣",
+      "value": 4,
+      "label": "對等關稅"
+    },
+    {
+      "source": "亞銀",
+      "target": "台灣",
+      "value": 3,
+      "label": "經濟展望"
+    },
+    {
+      "source": "日本",
+      "target": "新台幣",
+      "value": 3,
+      "label": "匯率干預"
+    },
+    {
+      "source": "比特幣",
+      "target": "台股",
+      "value": 3,
+      "label": "市場情緒"
+    },
+    {
+      "source": "中鋼",
+      "target": "台灣",
+      "value": 3,
+      "label": "產業表現"
+    },
+    {
+      "source": "台泥",
+      "target": "台灣",
+      "value": 3,
+      "label": "低碳轉型"
+    },
+    {
+      "source": "歐盟",
+      "target": "太陽能",
+      "value": 4,
+      "label": "政策管制"
+    },
+    {
+      "source": "歐盟",
+      "target": "中國",
+      "value": 4,
+      "label": "貿易限制"
+    },
+    {
+      "source": "日本",
+      "target": "中國",
+      "value": 3,
+      "label": "稀土關切"
+    },
+    {
+      "source": "台灣",
+      "target": "核能",
+      "value": 3,
+      "label": "能源政策"
+    },
+    {
+      "source": "台灣",
+      "target": "美國",
+      "value": 3,
+      "label": "核能取經"
+    },
+    {
+      "source": "中國",
+      "target": "電動車",
+      "value": 3,
+      "label": "市場價格"
+    },
+    {
+      "source": "輝達",
+      "target": "AI",
+      "value": 5,
+      "label": "技術領導"
+    },
+    {
+      "source": "台灣",
+      "target": "AI",
+      "value": 5,
+      "label": "供應鏈樞紐"
+    },
+    {
+      "source": "台灣",
+      "target": "半導體",
+      "value": 5,
+      "label": "產業聚落"
+    },
+    {
+      "source": "半導體",
+      "target": "AI",
+      "value": 5,
+      "label": "技術支撐"
+    }
+  ],
+  "newsDatabase": {
+    "台積電": [
+      {
+        "title": "消息是真的 台積將進駐龍科三期",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9481680"
+      },
+      {
+        "title": "龍科三期復活 張善政：大家都猜得到業者是哪一家",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9481591"
+      },
+      {
+        "title": "半導體三本柱 帶飛台股",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000149-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "輝達": [
+      {
+        "title": "黃仁勳點火機器人 鴻家軍衝 鴻海、廣宇、鴻準等有望搶第一手商機",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9481661"
+      },
+      {
+        "title": "輝達CPO傳提前上路 台鏈拉炮",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000180-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "能率、佳能躋身輝達機器人第一梯隊",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9481667"
+      }
+    ],
+    "黃仁勳": [
+      {
+        "title": "黃仁勳點火機器人 鴻家軍衝 鴻海、廣宇、鴻準等有望搶第一手商機",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9481661"
+      },
+      {
+        "title": "黃仁勳點火機器人 大立光、亞光扮感測要角",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9481664"
+      },
+      {
+        "title": "黃仁勳喊機器人三年內成主流…鴻家軍領頭衝 廣宇躍集團戰略關鍵執行者",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9481705"
+      }
+    ],
+    "鴻海": [
+      {
+        "title": "黃仁勳點火機器人 鴻家軍衝 鴻海、廣宇、鴻準等有望搶第一手商機",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9481661"
+      },
+      {
+        "title": "黃仁勳喊機器人三年內成主流…鴻家軍領頭衝 廣宇躍集團戰略關鍵執行者",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9481705"
+      }
+    ],
+    "廣宇": [
+      {
+        "title": "黃仁勳點火機器人 鴻家軍衝 鴻海、廣宇、鴻準等有望搶第一手商機",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9481661"
+      },
+      {
+        "title": "黃仁勳喊機器人三年內成主流…鴻家軍領頭衝 廣宇躍集團戰略關鍵執行者",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9481705"
+      }
+    ],
+    "大立光": [
+      {
+        "title": "黃仁勳點火機器人 大立光、亞光扮感測要角",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9481664"
+      }
+    ],
+    "亞光": [
+      {
+        "title": "黃仁勳點火機器人 大立光、亞光扮感測要角",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9481664"
+      }
+    ],
+    "廣達": [
+      {
+        "title": "五大 CSP 投資 明年逾兆美元 帶旺廣達、緯創等接單動能",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9481677"
+      }
+    ],
+    "緯創": [
+      {
+        "title": "五大 CSP 投資 明年逾兆美元 帶旺廣達、緯創等接單動能",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9481677"
+      }
+    ],
+    "穎崴": [
+      {
+        "title": "股后穎崴Q1每股賺19.54元 在手訂單充裕、新產能開出 業績逐季揚",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9481687"
+      }
+    ],
+    "中華電": [
+      {
+        "title": "道瓊永續評比 中華電 樹立 ESG 典範",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9481656"
+      },
+      {
+        "title": "道瓊領先指數14項指標滿分 中華電信 居大型電信業之冠",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000266-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "遠傳": [
+      {
+        "title": "道瓊永續評比 遠傳 17項指標拿第一",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9481653"
+      },
+      {
+        "title": "DJBIC世界指數三連霸 遠傳 再奪全球電信永續第一",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000268-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "南亞科": [
+      {
+        "title": "南亞科4月績昂 年增7倍 前四月營收超越去年全年",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000190-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "欣興": [
+      {
+        "title": "欣興擴產 砸19.57億採購設備",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000263-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "光聖": [
+      {
+        "title": "三趨勢催動 光聖迎高成長周期",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000183-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中鋼": [
+      {
+        "title": "中鋼4月出貨量 27個月新高",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000196-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "亞洲鋼價向上 中鋼6月開漲盤機率高",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000199-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台泥": [
+      {
+        "title": "台泥低碳水泥 打進璞真建設案場",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9481523"
+      }
+    ],
+    "美光": [
+      {
+        "title": "美光CEO：AI發展才剛起步",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000230-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "SK海力士": [
+      {
+        "title": "SK海力士 市值飆破千兆韓元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000232-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "應材": [
+      {
+        "title": "應材收購NEXX先進封裝業務",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000237-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "阿里": [
+      {
+        "title": "阿里國際站 用AI助台企",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000239-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "Alibaba.com三步驟 培育年營收百萬美元外貿商",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000242-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "Alibaba.com台灣總經理廖羿琦 藉閱讀驅動組織判斷力",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000244-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Meta": [
+      {
+        "title": "收購ARI機器人團隊 Meta搶先「機」 概念股進補",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000189-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "GameStop": [
+      {
+        "title": "GameStop蛇吞象 擬收購eBay",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000235-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "GameStop 出價560億美元現金加股票 有意收購 eBay",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9481665"
+      }
+    ],
+    "eBay": [
+      {
+        "title": "GameStop蛇吞象 擬收購eBay",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000235-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "GameStop 出價560億美元現金加股票 有意收購 eBay",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9481665"
+      }
+    ],
+    "軟銀": [
+      {
+        "title": "軟銀攜韓企 攻鋅鹵素電池",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9481668"
+      }
+    ],
+    "Anthropic": [
+      {
+        "title": "Anthropic 擬買 AI 推論晶片 與英國新創 Fractile 洽談採購事宜",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9481651"
+      }
+    ],
+    "台灣": [
+      {
+        "title": "台、韓、歐製造業 PMI 攀高 反映中東戰爭影響 業者提前拉貨效應",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9481600"
+      },
+      {
+        "title": "4月製造業PMI連7月擴張 學者示警：集中單一產業",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9481718"
+      },
+      {
+        "title": "台4月PMI60.3 擴張逾4年半最快",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000154-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "經長談台美對等關稅後續》維持談判結果 是雙方共識",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000167-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台股收上4萬點 秀十大驚奇",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000168-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "外資對作 新台幣升幅收斂",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000253-260205?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "消息是真的 台積將進駐龍科三期",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9481680"
+      },
+      {
+        "title": "龍科三期復活 張善政：大家都猜得到業者是哪一家",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9481591"
+      },
+      {
+        "title": "核能台灣隊 赴美國取「核電」經",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000160-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "強化能源韌性系列報導》卓榮泰：全盤考量 完成二次能源轉型目標",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000178-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "美國": [
+      {
+        "title": "經長談台美對等關稅後續》維持談判結果 是雙方共識",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000167-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "Fed官員：美伊戰爭抑制降息空間",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000224-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "核能台灣隊 赴美國取「核電」經",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000160-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "日本": [
+      {
+        "title": "守160防線 高盛估日砸5兆日圓阻貶",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000157-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "日澳峰會強化經濟安全合作 關切北京掌控稀土",
+        "source": "",
+        "url": "https://udn.com/news/story/6809/9481611"
+      }
+    ],
+    "韓國": [
+      {
+        "title": "台、韓、歐製造業 PMI 攀高 反映中東戰爭影響 業者提前拉貨效應",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9481600"
+      },
+      {
+        "title": "軟銀攜韓企 攻鋅鹵素電池",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9481668"
+      },
+      {
+        "title": "SK海力士 市值飆破千兆韓元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000232-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "歐盟": [
+      {
+        "title": "台、韓、歐製造業 PMI 攀高 反映中東戰爭影響 業者提前拉貨效應",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9481600"
+      },
+      {
+        "title": "歐盟禁資助中國製太陽能逆變器 憂威脅電網",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9481787"
+      }
+    ],
+    "中國": [
+      {
+        "title": "歐盟禁資助中國製太陽能逆變器 憂威脅電網",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9481787"
+      },
+      {
+        "title": "日澳峰會強化經濟安全合作 關切北京掌控稀土",
+        "source": "",
+        "url": "https://udn.com/news/story/6809/9481611"
+      },
+      {
+        "title": "陸電動車喊漲 催出提前下單潮",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000250-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "AI": [
+      {
+        "title": "五大 CSP 投資 明年逾兆美元 帶旺廣達、緯創等接單動能",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9481677"
+      },
+      {
+        "title": "Anthropic 擬買 AI 推論晶片 與英國新創 Fractile 洽談採購事宜",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9481651"
+      },
+      {
+        "title": "阿里國際站 用AI助台企",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000239-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美光CEO：AI發展才剛起步",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000230-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "進駐沙崙AI園區 攸泰設無人載具研發基地",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000271-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "機器人": [
+      {
+        "title": "黃仁勳點火機器人 鴻家軍衝 鴻海、廣宇、鴻準等有望搶第一手商機",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9481661"
+      },
+      {
+        "title": "黃仁勳點火機器人 大立光、亞光扮感測要角",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9481664"
+      },
+      {
+        "title": "能率、佳能躋身輝達機器人第一梯隊",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9481667"
+      },
+      {
+        "title": "黃仁勳喊機器人三年內成主流…鴻家軍領頭衝 廣宇躍集團戰略關鍵執行者",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9481705"
+      },
+      {
+        "title": "收購ARI機器人團隊 Meta搶先「機」 概念股進補",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000189-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "半導體": [
+      {
+        "title": "半導體三本柱 帶飛台股",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000149-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "低軌衛星夯 半導體鏈卡位",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000187-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "低軌衛星": [
+      {
+        "title": "FCC鬆綁 低軌衛星商機升溫",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000184-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "低軌衛星夯 半導體鏈卡位",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000187-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "先進封裝": [
+      {
+        "title": "應材收購NEXX先進封裝業務",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000237-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "CPO": [
+      {
+        "title": "輝達CPO傳提前上路 台鏈拉炮",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000180-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "電動車": [
+      {
+        "title": "陸電動車喊漲 催出提前下單潮",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000250-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "太陽能": [
+      {
+        "title": "歐盟禁資助中國製太陽能逆變器 憂威脅電網",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9481787"
+      }
+    ],
+    "核能": [
+      {
+        "title": "核能台灣隊 赴美國取「核電」經",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000160-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "強化能源韌性系列報導》卓榮泰：全盤考量 完成二次能源轉型目標",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000178-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "PMI": [
+      {
+        "title": "台、韓、歐製造業 PMI 攀高 反映中東戰爭影響 業者提前拉貨效應",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9481600"
+      },
+      {
+        "title": "4月製造業PMI連7月擴張 學者示警：集中單一產業",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9481718"
+      },
+      {
+        "title": "台4月PMI60.3 擴張逾4年半最快",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000154-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "製造業PMI亮麗的背後...電子真風光 傳產仍憔悴",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000166-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台股": [
+      {
+        "title": "台股收上4萬點 秀十大驚奇",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000168-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "半導體三本柱 帶飛台股",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000149-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "坐雲霄飛車 勞動基金3月虧爆 4月賺爛",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000505-260114?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "比特幣": [
+      {
+        "title": "市場多頭情緒復甦 比特幣一度衝上8萬美元",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9481674"
+      }
+    ],
+    "新台幣": [
+      {
+        "title": "外資對作 新台幣升幅收斂",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000253-260205?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Fed": [
+      {
+        "title": "Fed官員：美伊戰爭抑制降息空間",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000224-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "亞銀": [
+      {
+        "title": "亞銀下調亞洲經濟成長展望",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000221-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "FCC": [
+      {
+        "title": "FCC鬆綁 低軌衛星商機升溫",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000184-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "勞動基金": [
+      {
+        "title": "坐雲霄飛車 勞動基金3月虧爆 4月賺爛",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000505-260114?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "政府基金": [
+      {
+        "title": "三大政府基金 Q1暴賺近5,300億",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000173-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "CSP": [
+      {
+        "title": "五大 CSP 投資 明年逾兆美元 帶旺廣達、緯創等接單動能",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9481677"
+      },
+      {
+        "title": "雲端4雄去輝達化 台廠受惠",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260505000499-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "台、韓、歐製造業 PMI 攀高 反映中東戰爭影響 業者提前拉貨效應 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9481600",
+    "4月製造業PMI連7月擴張 學者示警：集中單一產業 (聯合_產經_股市)": "https://udn.com/news/story/7238/9481718",
+    "台4月PMI60.3 擴張逾4年半最快 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260505000154-260202?utm_source=iii_news&utm_medium=rss",
+    "守160防線 高盛估日砸5兆日圓阻貶 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260505000157-260202?utm_source=iii_news&utm_medium=rss",
+    "製造業PMI亮麗的背後...電子真風光 傳產仍憔悴 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260505000166-260202?utm_source=iii_news&utm_medium=rss",
+    "經長談台美對等關稅後續》維持談判結果 是雙方共識 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260505000167-260202?utm_source=iii_news&utm_medium=rss",
+    "台股收上4萬點 秀十大驚奇 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260505000168-260202?utm_source=iii_news&utm_medium=rss",
+    "三大政府基金 Q1暴賺近5,300億 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260505000173-260202?utm_source=iii_news&utm_medium=rss",
+    "亞銀下調亞洲經濟成長展望 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260505000221-260203?utm_source=iii_news&utm_medium=rss",
+    "Fed官員：美伊戰爭抑制降息空間 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260505000224-260203?utm_source=iii_news&utm_medium=rss",
+    "外資對作 新台幣升幅收斂 (工商金融稅務)": "https://www.chinatimes.com/newspapers/20260505000253-260205?utm_source=iii_news&utm_medium=rss",
+    "黃仁勳點火機器人 鴻家軍衝 鴻海、廣宇、鴻準等有望搶第一手商機 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9481661",
+    "黃仁勳點火機器人 大立光、亞光扮感測要角 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9481664",
+    "能率、佳能躋身輝達機器人第一梯隊 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9481667",
+    "五大 CSP 投資 明年逾兆美元 帶旺廣達、緯創等接單動能 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9481677",
+    "消息是真的 台積將進駐龍科三期 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9481680",
+    "股后穎崴Q1每股賺19.54元 在手訂單充裕、新產能開出 業績逐季揚 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9481687",
+    "道瓊永續評比 中華電 樹立 ESG 典範 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9481656",
+    "道瓊永續評比 遠傳 17項指標拿第一 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9481653",
+    "市場多頭情緒復甦 比特幣一度衝上8萬美元 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9481674",
+    "Anthropic 擬買 AI 推論晶片 與英國新創 Fractile 洽談採購事宜 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9481651",
+    "GameStop 出價560億美元現金加股票 有意收購 eBay (經濟國際焦點)": "https://money.udn.com/money/story/5599/9481665",
+    "軟銀攜韓企 攻鋅鹵素電池 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9481668",
+    "黃仁勳喊機器人三年內成主流…鴻家軍領頭衝 廣宇躍集團戰略關鍵執行者 (聯合_產經_股市)": "https://udn.com/news/story/7240/9481705",
+    "龍科三期復活 張善政：大家都猜得到業者是哪一家 (聯合_產經_股市)": "https://udn.com/news/story/7240/9481591",
+    "半導體三本柱 帶飛台股 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260505000149-260202?utm_source=iii_news&utm_medium=rss",
+    "輝達CPO傳提前上路 台鏈拉炮 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260505000180-260202?utm_source=iii_news&utm_medium=rss",
+    "三趨勢催動 光聖迎高成長周期 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260505000183-260202?utm_source=iii_news&utm_medium=rss",
+    "FCC鬆綁 低軌衛星商機升溫 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260505000184-260202?utm_source=iii_news&utm_medium=rss",
+    "低軌衛星夯 半導體鏈卡位 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260505000187-260202?utm_source=iii_news&utm_medium=rss",
+    "收購ARI機器人團隊 Meta搶先「機」 概念股進補 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260505000189-260202?utm_source=iii_news&utm_medium=rss",
+    "南亞科4月績昂 年增7倍 前四月營收超越去年全年 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260505000190-260202?utm_source=iii_news&utm_medium=rss",
+    "美光CEO：AI發展才剛起步 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260505000230-260203?utm_source=iii_news&utm_medium=rss",
+    "SK海力士 市值飆破千兆韓元 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260505000232-260203?utm_source=iii_news&utm_medium=rss",
+    "GameStop蛇吞象 擬收購eBay (工商全球財經)": "https://www.chinatimes.com/newspapers/20260505000235-260203?utm_source=iii_news&utm_medium=rss",
+    "應材收購NEXX先進封裝業務 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260505000237-260203?utm_source=iii_news&utm_medium=rss",
+    "阿里國際站 用AI助台企 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260505000239-260203?utm_source=iii_news&utm_medium=rss",
+    "Alibaba.com三步驟 培育年營收百萬美元外貿商 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260505000242-260203?utm_source=iii_news&utm_medium=rss",
+    "Alibaba.com台灣總經理廖羿琦 藉閱讀驅動組織判斷力 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260505000244-260203?utm_source=iii_news&utm_medium=rss",
+    "欣興擴產 砸19.57億採購設備 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260505000263-260204?utm_source=iii_news&utm_medium=rss",
+    "道瓊領先指數14項指標滿分 中華電信 居大型電信業之冠 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260505000266-260204?utm_source=iii_news&utm_medium=rss",
+    "DJBIC世界指數三連霸 遠傳 再奪全球電信永續第一 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260505000268-260204?utm_source=iii_news&utm_medium=rss",
+    "富世達 連三季賺逾一個股本 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260505000270-260204?utm_source=iii_news&utm_medium=rss",
+    "進駐沙崙AI園區 攸泰設無人載具研發基地 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260505000271-260204?utm_source=iii_news&utm_medium=rss",
+    "村田實施大規模庫藏股 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260505000272-260204?utm_source=iii_news&utm_medium=rss",
+    "雲端4雄去輝達化 台廠受惠 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260505000499-260110?utm_source=iii_news&utm_medium=rss",
+    "航空三雄燃油附加費 凍漲 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9481612",
+    "台泥低碳水泥 打進璞真建設案場 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9481523",
+    "坐雲霄飛車 勞動基金3月虧爆 4月賺爛 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260505000505-260114?utm_source=iii_news&utm_medium=rss",
+    "國籍航空燃油附加費不調漲「長程117美元」業者自行吸收成本占比微增 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9481889",
+    "歐盟禁資助中國製太陽能逆變器 憂威脅電網 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9481787",
+    "日澳峰會強化經濟安全合作 關切北京掌控稀土 (聯合_產經_股市)": "https://udn.com/news/story/6809/9481611",
+    "核能台灣隊 赴美國取「核電」經 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260505000160-260202?utm_source=iii_news&utm_medium=rss",
+    "強化能源韌性系列報導》卓榮泰：全盤考量 完成二次能源轉型目標 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260505000178-260202?utm_source=iii_news&utm_medium=rss",
+    "中鋼4月出貨量 27個月新高 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260505000196-260202?utm_source=iii_news&utm_medium=rss",
+    "亞洲鋼價向上 中鋼6月開漲盤機率高 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260505000199-260202?utm_source=iii_news&utm_medium=rss",
+    "恆利能源多案齊發 推進小水力發電 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260505000403-260202?utm_source=iii_news&utm_medium=rss",
+    "豐澕環科 推低溫自持力熱裂解爐 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260505000405-260202?utm_source=iii_news&utm_medium=rss",
+    "源達機電 進軍德國水資源展 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260505000407-260202?utm_source=iii_news&utm_medium=rss",
+    "陸電動車喊漲 催出提前下單潮 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260505000250-260203?utm_source=iii_news&utm_medium=rss"
+  }
+}
