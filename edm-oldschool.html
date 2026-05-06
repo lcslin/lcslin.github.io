@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>老派EDM沒有神器</title>
+    
+    <!-- 引入 CDN 函式庫 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.8.3/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.10.0/localforage.min.js"></script>
+    
+    <!-- Webfonts (Vogue Aesthetic) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700;900&family=Helvetica+Neue:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Vogue Style UI */
+        :root {
+            --primary: #111111;
+            --bg-color: #faf9f7;
+            --sidebar-bg: #ffffff;
+            --text-main: #222222;
+            --font-ui: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            --font-heading: 'Noto Serif TC', PMingLiU, serif;
+        }
+        
+        * { box-sizing: border-box; }
+        
+        body { 
+            margin: 0; display: flex; height: 100vh; 
+            background-color: var(--bg-color); color: var(--text-main); 
+            font-family: var(--font-ui);
+        }
+        
+        h1, h2, h3, .heading-font {
+            font-family: var(--font-heading);
+            font-weight: 900;
+            color: var(--primary);
+            letter-spacing: 1px;
+            margin: 0;
+        }
+        
+        /* Sidebar */
+        #sidebar {
+            width: 320px;
+            background: var(--sidebar-bg);
+            padding: 40px 30px;
+            border-right: 1px solid #eaeaea;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            z-index: 10;
+        }
+        
+        #sidebar h2 { font-size: 1.6rem; line-height: 1.3; border-bottom: 3px solid var(--primary); padding-bottom: 15px; margin-bottom: 30px;}
+        #sidebar h3 { font-size: 0.95rem; font-family: var(--font-ui); text-transform: uppercase; letter-spacing: 2px; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 15px;}
+        
+        /* Buttons */
+        button {
+            background-color: transparent;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+            border-radius: 0;
+            padding: 12px 15px;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: var(--font-heading);
+            letter-spacing: 1px;
+            width: 100%;
+            text-align: center;
+        }
+        button:hover { background-color: var(--primary); color: #ffffff; }
+        button.action-btn { background-color: var(--primary); color: #ffffff; border: 1px solid var(--primary); }
+        button.action-btn:hover { background-color: #ffffff; color: var(--primary); }
+        
+        .template-btn { text-align: left; margin-bottom: 10px; font-family: var(--font-ui); letter-spacing: normal;}
+        
+        #saved-list { display: flex; flex-direction: column; gap: 8px; }
+        .saved-item { 
+            display: flex; justify-content: space-between; align-items: center;
+            border: 1px solid #ccc; padding: 8px 12px; font-size: 13px;
+            transition: all 0.2s; cursor: pointer;
+        }
+        .saved-item:hover { border-color: var(--primary); }
+        .saved-item span { flex-grow: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .del-draft-btn { 
+            width: auto; padding: 2px 6px; border: none; font-size: 11px; margin-left: 10px; color: #999;
+        }
+        .del-draft-btn:hover { background: transparent; color: red; }
+        
+        /* Main Area */
+        #main-area {
+            flex-grow: 1; display: flex; flex-direction: column;
+            align-items: center; padding: 40px 20px; overflow-y: auto; position: relative;
+        }
+        
+        /* Metadata Header */
+        .meta-header {
+            width: 100%; max-width: 600px; background: #fff; padding: 25px 30px;
+            margin-bottom: 30px; display: flex; flex-wrap: wrap; gap: 20px;
+            align-items: flex-end; border: 1px solid var(--primary);
+        }
+        .meta-row { flex-grow: 1; display: flex; flex-direction: column; gap: 8px; min-width: 200px; }
+        .meta-row label { font-family: var(--font-heading); font-size: 13px; color: var(--primary); letter-spacing: 1px;}
+        .meta-row input {
+            border: none; border-bottom: 1px solid #ccc; padding: 8px 0; font-size: 15px; 
+            font-family: var(--font-ui); background: transparent; outline: none; transition: border-color 0.3s;
+        }
+        .meta-row input:focus { border-bottom: 2px solid var(--primary); }
+        
+        /* Canvas */
+        #canvas-wrapper {
+            background: #ffffff; box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+            width: 100%; max-width: 600px; min-height: 800px; position: relative; border: 1px solid #eaeaea;
+        }
+        
+        #edm-canvas { width: 100%; min-height: 600px; }
+        
+        .empty-state {
+            display: flex; justify-content: center; align-items: center;
+            height: 100%; color: #999; font-size: 14px; text-align: center; padding: 60px;
+            font-family: var(--font-heading); letter-spacing: 2px; line-height: 1.8;
+        }
+
+        /* Editor states */
+        .editable-text:hover { outline: 1px dashed rgba(17,17,17,0.3); outline-offset: 4px; cursor: text; }
+        .editable-img { cursor: pointer; transition: opacity 0.3s; }
+        .editable-img:hover { opacity: 0.8; }
+        
+        /* Image Floating Bar */
+        #img-float-bar {
+            display: none; position: absolute; z-index: 100;
+            background: var(--primary); padding: 5px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transform: translate(-50%, -120%); white-space: nowrap;
+        }
+        #img-float-bar button { border: none; color: #fff; padding: 8px 12px; font-size: 12px; width: auto; font-family: var(--font-ui); text-transform: none; letter-spacing: 0;}
+        #img-float-bar button:hover { background: #333; }
+        
+        /* Block Controls (Right side of active block) */
+        .edm-block { position: relative; transition: outline 0.2s; }
+        .edm-block.active-block { outline: 1px solid var(--primary); outline-offset: -1px; z-index: 50;}
+        
+        #block-float-bar {
+            display: none; position: absolute; z-index: 90;
+            right: -40px; top: 0; width: 35px; background: #fff; border: 1px solid var(--primary);
+            flex-direction: column;
+        }
+        #block-float-bar button { padding: 10px 0; font-size: 12px; border: none; border-bottom: 1px solid #eee; width: 100%;}
+        #block-float-bar button:last-child { border-bottom: none; }
+        #block-float-bar button:hover { background: var(--primary); color: #fff; }
+
+        /* Add Block System */
+        #add-block-container { text-align: center; padding: 20px; background: #fbfbfb; border-top: 1px dashed #ccc; }
+        #btn-add-block { width: auto; padding: 10px 30px; }
+
+        #modal-add-block {
+            display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(255,255,255,0.9); z-index: 200; justify-content: center; align-items: center;
+        }
+        .modal-content {
+            background: #fff; padding: 40px; width: 600px; max-width: 90%; border: 1px solid var(--primary);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .block-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 25px; }
+        .close-modal { margin-top: 30px; }
+
+    </style>
+</head>
+<body>
+
+    <div id="sidebar">
+        <h2>老派EDM<br>沒有神器</h2>
+        
+        <div class="control-group">
+            <h3>基礎版型範本</h3>
+            <button class="template-btn" data-type="tech">科技創新論壇</button>
+            <button class="template-btn" data-type="trade">國際拓銷團</button>
+            <button class="template-btn" data-type="expo">專業展覽</button>
+        </div>
+        
+        <div class="control-group" style="flex-grow: 1;">
+            <h3>所有編輯，只留存於您的瀏覽器中</h3>
+            <div id="saved-list">
+                <!-- Drafts will be injected here -->
+            </div>
+        </div>
+        
+        <div style="margin-top: 20px;">
+            <p style="font-size: 13px; color: #555; line-height: 1.5; margin: 0 0 10px 0;">請打包下載，再上傳到 EDM 系統的「行銷範本」功能中，進行後續使用。</p>
+            <button class="action-btn" id="btn-export">匯出EDM封包</button>
+        </div>
+
+        <div style="margin-top: 30px; font-size: 12px; color: #666; border-top: 1px dashed #ccc; padding-top: 15px; line-height: 1.6; text-align: left;">
+            作為 EDM 系統補強，相關問題請 <a href="msteams://teams.microsoft.com/l/chat/0/0?users=cslin@taitra.org.tw" style="color: var(--primary); font-weight: bold; text-decoration: underline;">按此處</a> 聯繫作者。
+        </div>
+    </div>
+
+    <div id="main-area">
+        
+        <div class="meta-header">
+            <div class="meta-row">
+                <label>信件主旨</label>
+                <input type="text" id="meta-subject" placeholder="輸入信件主旨與預覽摘要...">
+            </div>
+            <div>
+                <button id="btn-save" class="action-btn" style="padding: 10px 25px;">儲存</button>
+            </div>
+        </div>
+
+        <div id="canvas-wrapper">
+            <div id="edm-canvas">
+                <div class="empty-state">
+                    尚未建立內容。<br>請從左側選擇版型範本，或建立全新區塊。
+                </div>
+            </div>
+            
+            <div id="add-block-container">
+                <button id="btn-add-block">新增區塊</button>
+            </div>
+
+            <!-- Block Management Controls -->
+            <div id="block-float-bar">
+                <button id="btn-move-up" title="上移">↑</button>
+                <button id="btn-move-down" title="下移">↓</button>
+                <button id="btn-delete-block" title="刪除區塊" style="color: red;">×</button>
+            </div>
+
+            <!-- Image Replacement Float -->
+            <div id="img-float-bar">
+                <button id="btn-replace-img">更換圖片 (或貼上)</button>
+            </div>
+            <input type="file" id="hidden-image-upload" style="display:none;" accept=".png, .jpg, .jpeg, .gif">
+        </div>
+    </div>
+
+    <!-- Modal for adding blocks -->
+    <div id="modal-add-block">
+        <div class="modal-content">
+            <h3 class="heading-font" style="font-size: 20px; border-bottom: 1px solid #111; padding-bottom: 15px;">選擇要插入的區塊</h3>
+            <div class="block-grid">
+                <button class="insert-block-btn" data-block="header">大標題區塊</button>
+                <button class="insert-block-btn" data-block="hero">滿版主視覺</button>
+                <button class="insert-block-btn" data-block="text">純文字段落</button>
+                <button class="insert-block-btn" data-block="split">雙欄圖文</button>
+                <button class="insert-block-btn" data-block="button">行動呼籲按鈕</button>
+                <button class="insert-block-btn" data-block="spacer">空白間距</button>
+            </div>
+            <button class="close-modal" onclick="document.getElementById('modal-add-block').style.display='none'">取消</button>
+        </div>
+    </div>
+
+    <script>
+        // --- Block Components Library ---
+        const blockLibrary = {
+            header: `
+                <table class="edm-block" width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td align="center" style="padding: 40px 30px 20px 30px;">
+                            <h1 class="editable-text" style="color: #111111; font-size: 28px; margin: 0; font-family: 'Noto Serif TC', serif; font-weight: 900;">活動主標題</h1>
+                            <p class="editable-text" style="color: #666666; font-size: 14px; margin: 10px 0 0 0; letter-spacing: 1px; text-transform: uppercase;">副標題 / 日期</p>
+                        </td>
+                    </tr>
+                </table>
+            `,
+            hero: `
+                <table class="edm-block" width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td>
+                            <img class="editable-img" src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="主視覺" width="600" style="display: block; border: 0; width: 100%; max-width: 600px; height: auto;">
+                        </td>
+                    </tr>
+                </table>
+            `,
+            text: `
+                <table class="edm-block" width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td style="padding: 20px 40px;">
+                            <h2 class="editable-text" style="color: #111111; font-size: 20px; margin: 0 0 15px 0; font-family: 'Noto Serif TC', serif;">段落標題</h2>
+                            <p class="editable-text" style="color: #444444; font-size: 15px; line-height: 1.8; margin: 0;">請在此輸入詳細內文。這是一個標準的文字區塊，適合用來敘述活動詳情、產品介紹或策展論述。</p>
+                        </td>
+                    </tr>
+                </table>
+            `,
+            button: `
+                <table class="edm-block" width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td align="center" style="padding: 20px 40px 40px 40px;">
+                            <table border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td align="center" style="border: 1px solid #111111;">
+                                        <a href="#" class="editable-text" target="_blank" style="font-size: 13px; font-weight: bold; color: #111111; background-color: transparent; text-decoration: none; padding: 15px 30px; display: inline-block; letter-spacing: 1px; text-transform: uppercase;">行動呼籲</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            `,
+            split: `
+                <table class="edm-block" width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td style="padding: 20px 40px;">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td width="45%" valign="top">
+                                        <img class="editable-img" src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=260&q=80" alt="圖片" width="100%" style="display: block; border: 0;">
+                                    </td>
+                                    <td width="5%"></td>
+                                    <td width="50%" valign="top">
+                                        <h3 class="editable-text" style="color: #111111; font-size: 18px; margin: 0 0 10px 0; font-family: 'Noto Serif TC', serif;">雙欄排版</h3>
+                                        <p class="editable-text" style="color: #555555; font-size: 14px; line-height: 1.6; margin: 0;">圖文並茂的區塊，適合介紹重點講者或核心特色。</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            `,
+            spacer: `
+                <table class="edm-block" width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr><td height="40" style="font-size: 0; line-height: 0;">&nbsp;</td></tr>
+                </table>
+            `
+        };
+
+        const templates = {
+            tech: blockLibrary.header + blockLibrary.hero + blockLibrary.text + blockLibrary.split + blockLibrary.button,
+            trade: blockLibrary.hero + blockLibrary.header + blockLibrary.split + blockLibrary.button,
+            expo: blockLibrary.hero + blockLibrary.header + blockLibrary.text + blockLibrary.button
+        };
+
+        const canvas = document.getElementById('edm-canvas');
+        const wrapper = document.getElementById('canvas-wrapper');
+        const floatBar = document.getElementById('img-float-bar');
+        const blockFloatBar = document.getElementById('block-float-bar');
+        const hiddenImageUpload = document.getElementById('hidden-image-upload');
+        const savedListContainer = document.getElementById('saved-list');
+        
+        let selectedImageElement = null;
+        let activeBlock = null;
+
+        // --- Initialization & LocalForage ---
+        document.addEventListener('DOMContentLoaded', loadSavedList);
+
+        async function loadSavedList() {
+            savedListContainer.innerHTML = '';
+            try {
+                const keys = await localforage.keys();
+                const drafts = keys.filter(k => k.startsWith('edm_draft_'));
+                
+                if (drafts.length === 0) {
+                    savedListContainer.innerHTML = '<span style="color:#999; font-size: 13px;">尚無儲存草稿</span>';
+                    return;
+                }
+
+                // Sort drafts by newest first (parsing timestamp from key)
+                drafts.sort((a, b) => b.split('_')[2] - a.split('_')[2]);
+
+                for (let key of drafts) {
+                    const data = await localforage.getItem(key);
+                    const div = document.createElement('div');
+                    div.className = 'saved-item';
+                    
+                    const span = document.createElement('span');
+                    span.textContent = data.subject && data.subject !== '未命名草稿' ? data.subject : data.dateStr;
+                    span.onclick = () => loadDraft(data);
+                    
+                    const delBtn = document.createElement('button');
+                    delBtn.className = 'del-draft-btn';
+                    delBtn.textContent = '刪除';
+                    delBtn.onclick = async (e) => {
+                        e.stopPropagation();
+                        if(confirm('確定要刪除此草稿嗎？')) {
+                            await localforage.removeItem(key);
+                            loadSavedList();
+                        }
+                    };
+                    
+                    div.appendChild(span);
+                    div.appendChild(delBtn);
+                    savedListContainer.appendChild(div);
+                }
+            } catch(e) { console.error(e); }
+        }
+
+        document.getElementById('btn-save').addEventListener('click', async () => {
+            if (canvas.querySelector('.empty-state')) {
+                alert('沒有可儲存的內容！'); return;
+            }
+            try {
+                // Remove active states before saving
+                clearImageSelection();
+                clearBlockSelection();
+                tinymce.triggerSave();
+
+                const clone = canvas.cloneNode(true);
+                // Clean tinymce classes for clean save
+                clone.querySelectorAll('.editable-text').forEach(el => {
+                    el.classList.remove('mce-content-body', 'mce-edit-focus');
+                    if(el.id && el.id.startsWith('mce_')) el.removeAttribute('id');
+                });
+
+                const subject = document.getElementById('meta-subject').value || '未命名草稿';
+                const key = 'edm_draft_' + new Date().getTime();
+                const data = {
+                    html: clone.innerHTML,
+                    subject: subject,
+                    dateStr: new Date().toLocaleString()
+                };
+                await localforage.setItem(key, data);
+                alert('草稿已儲存！');
+                loadSavedList();
+            } catch (err) { alert('儲存失敗：' + err); }
+        });
+
+        function loadDraft(data) {
+            tinymce.remove();
+            canvas.innerHTML = data.html;
+            document.getElementById('meta-subject').value = data.subject && data.subject !== '未命名草稿' ? data.subject : '';
+            setupEditor();
+        }
+
+        // --- Template Loading ---
+        document.querySelectorAll('.template-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const type = e.target.getAttribute('data-type');
+                if (templates[type]) {
+                    tinymce.remove();
+                    canvas.innerHTML = templates[type];
+                    setupEditor();
+                }
+            });
+        });
+
+        // --- Editor Setup (TinyMCE & Event Listeners) ---
+        function setupEditor() {
+            tinymce.init({
+                selector: '.editable-text',
+                inline: true,
+                menubar: false,
+                plugins: 'link lists paste image',
+                toolbar: 'undo redo | bold italic | forecolor backcolor | alignleft aligncenter | link image',
+                paste_data_images: true,
+                valid_elements: '+*[*]',
+                setup: function(editor) {
+                    editor.on('click', function(e) { if (e.target.tagName === 'A') e.preventDefault(); });
+                },
+                file_picker_callback: function (cb, value, meta) {
+                    if (meta.filetype === 'image') {
+                        const input = document.createElement('input');
+                        input.setAttribute('type', 'file'); input.setAttribute('accept', 'image/*');
+                        input.onchange = function () {
+                            const file = this.files[0];
+                            const reader = new FileReader();
+                            reader.onload = function () { cb(reader.result, { title: file.name }); };
+                            reader.readAsDataURL(file);
+                        };
+                        input.click();
+                    }
+                }
+            });
+
+            setupEventListeners();
+        }
+
+        function setupEventListeners() {
+            // Images
+            canvas.querySelectorAll('.editable-img').forEach(img => {
+                img.removeEventListener('click', handleImageClick);
+                img.addEventListener('click', handleImageClick);
+            });
+
+            // Blocks (for ordering/deleting)
+            canvas.querySelectorAll('.edm-block').forEach(block => {
+                block.removeEventListener('click', handleBlockClick);
+                block.addEventListener('click', handleBlockClick);
+            });
+        }
+
+        // --- Block Management ---
+        document.getElementById('btn-add-block').addEventListener('click', () => {
+            if (canvas.querySelector('.empty-state')) canvas.innerHTML = '';
+            document.getElementById('modal-add-block').style.display = 'flex';
+        });
+
+        document.querySelectorAll('.insert-block-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const type = e.target.getAttribute('data-block');
+                const html = blockLibrary[type];
+                canvas.insertAdjacentHTML('beforeend', html);
+                document.getElementById('modal-add-block').style.display = 'none';
+                
+                // Re-init tinymce for new elements
+                tinymce.remove();
+                setupEditor();
+            });
+        });
+
+        function handleBlockClick(e) {
+            e.stopPropagation();
+            clearBlockSelection();
+            activeBlock = e.currentTarget;
+            activeBlock.classList.add('active-block');
+            
+            const rect = activeBlock.getBoundingClientRect();
+            const wrapperRect = wrapper.getBoundingClientRect();
+            
+            blockFloatBar.style.display = 'flex';
+            blockFloatBar.style.top = (rect.top - wrapperRect.top + wrapper.scrollTop) + 'px';
+        }
+
+        function clearBlockSelection() {
+            if (activeBlock) activeBlock.classList.remove('active-block');
+            activeBlock = null;
+            blockFloatBar.style.display = 'none';
+        }
+
+        document.getElementById('btn-move-up').addEventListener('click', () => {
+            if (activeBlock && activeBlock.previousElementSibling) {
+                activeBlock.parentNode.insertBefore(activeBlock, activeBlock.previousElementSibling);
+                handleBlockClick({currentTarget: activeBlock, stopPropagation: ()=>{}}); // re-position
+            }
+        });
+        
+        document.getElementById('btn-move-down').addEventListener('click', () => {
+            if (activeBlock && activeBlock.nextElementSibling) {
+                activeBlock.parentNode.insertBefore(activeBlock.nextElementSibling, activeBlock);
+                handleBlockClick({currentTarget: activeBlock, stopPropagation: ()=>{}}); // re-position
+            }
+        });
+
+        document.getElementById('btn-delete-block').addEventListener('click', () => {
+            if (activeBlock) {
+                activeBlock.remove();
+                clearBlockSelection();
+                if (canvas.children.length === 0) {
+                    canvas.innerHTML = '<div class="empty-state">尚未建立內容。<br>請從左側選擇版型範本，或建立全新區塊。</div>';
+                }
+            }
+        });
+
+        // --- Image Replacement ---
+        function handleImageClick(e) {
+            e.stopPropagation();
+            clearImageSelection();
+            selectedImageElement = e.target;
+            
+            const imgRect = selectedImageElement.getBoundingClientRect();
+            const wrapperRect = wrapper.getBoundingClientRect();
+            
+            floatBar.style.display = 'block';
+            floatBar.style.left = (imgRect.left - wrapperRect.left + (imgRect.width / 2)) + 'px';
+            floatBar.style.top = (imgRect.top - wrapperRect.top + wrapper.scrollTop) + 'px';
+        }
+
+        function clearImageSelection() {
+            selectedImageElement = null;
+            floatBar.style.display = 'none';
+        }
+
+        document.getElementById('btn-replace-img').addEventListener('click', () => hiddenImageUpload.click());
+
+        hiddenImageUpload.addEventListener('change', function(e) {
+            processImageFile(e.target.files[0]);
+            this.value = '';
+        });
+
+        document.addEventListener('paste', function(e) {
+            if (!selectedImageElement) return;
+            const items = (e.clipboardData || e.originalEvent.clipboardData).items;
+            for (let index in items) {
+                const item = items[index];
+                if (item.kind === 'file' && item.type.startsWith('image/')) {
+                    e.preventDefault();
+                    processImageFile(item.getAsFile());
+                    return;
+                }
+            }
+        });
+
+        function processImageFile(file) {
+            if (!file) return;
+            if (!file.type.match('image.*')) { alert('請選擇圖片檔案'); return; }
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                if (selectedImageElement) {
+                    selectedImageElement.src = event.target.result;
+                    selectedImageElement.style.opacity = '0.5';
+                    setTimeout(() => { selectedImageElement.style.opacity = '1'; }, 200);
+                    clearImageSelection();
+                }
+            };
+            reader.readAsDataURL(file);
+        }
+
+        // Global click clears
+        document.addEventListener('click', (e) => {
+            if(!e.target.closest('.editable-img') && !floatBar.contains(e.target)) clearImageSelection();
+            if(!e.target.closest('.edm-block') && !blockFloatBar.contains(e.target) && !e.target.closest('#add-block-container')) clearBlockSelection();
+        });
+
+        // --- Export ZIP ---
+        document.getElementById('btn-export').addEventListener('click', async () => {
+            if (canvas.querySelector('.empty-state')) { alert('請先建立內容！'); return; }
+
+            const subject = document.getElementById('meta-subject').value || '未命名 EDM';
+            const title = subject;
+
+            tinymce.remove();
+            clearImageSelection();
+            clearBlockSelection();
+            
+            const clone = canvas.cloneNode(true);
+            clone.querySelectorAll('.editable-text').forEach(el => {
+                el.removeAttribute('contenteditable');
+                el.removeAttribute('spellcheck');
+                el.classList.remove('editable-text', 'mce-content-body', 'mce-edit-focus');
+                if(el.id && el.id.startsWith('mce_')) el.removeAttribute('id');
+            });
+            clone.querySelectorAll('.editable-img').forEach(el => el.classList.remove('editable-img'));
+            clone.querySelectorAll('.edm-block').forEach(el => el.classList.remove('edm-block'));
+
+            const zip = new JSZip();
+            const imgFolder = zip.folder("images");
+            let imgCount = 1;
+
+            const allImages = clone.querySelectorAll('img');
+            allImages.forEach(img => {
+                const src = img.getAttribute('src');
+                if (src && src.startsWith('data:image/')) {
+                    const parts = src.split(',');
+                    const meta = parts[0].match(/:(.*?);/);
+                    const ext = meta ? meta[1].split('/')[1] : 'png';
+                    const base64Data = parts[1];
+                    const fileName = `img_${String(imgCount).padStart(2, '0')}.${ext}`;
+                    
+                    imgFolder.file(fileName, base64Data, {base64: true});
+                    img.setAttribute('src', `images/${fileName}`);
+                    imgCount++;
+                }
+            });
+
+            const preheaderHTML = subject ? `\n    <div style="display:none;font-size:1px;color:#333333;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">${subject}</div>` : '';
+            
+            const finalHTML = `<!DOCTYPE html>
+<html lang="zh-TW" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>${title}</title>
+    <style type="text/css">
+        body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+        table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+        img { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+        table { border-collapse: collapse !important; }
+        body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
+    </style>
+</head>
+<body style="margin: 0; padding: 0; background-color: #faf9f7;">${preheaderHTML}
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #faf9f7; font-family: Helvetica, Arial, sans-serif;">
+        <tr>
+            <td align="center" style="padding: 40px 10px;">
+                <table width="600" border="0" cellspacing="0" cellpadding="0" style="background-color: #ffffff;">
+                    <tr><td>
+                        ${clone.innerHTML}
+                    </td></tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>`;
+
+            zip.file("edm.html", finalHTML);
+
+            try {
+                const content = await zip.generateAsync({type: "blob"});
+                saveAs(content, `EDM_Package_${new Date().getTime()}.zip`);
+            } catch (err) { alert('打包 ZIP 時發生錯誤：' + err); }
+
+            setupEditor();
+        });
+
+    </script>
+</body>
+</html>
