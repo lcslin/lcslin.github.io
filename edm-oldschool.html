@@ -182,13 +182,14 @@
 <body>
 
     <div id="sidebar">
-        <h2>老派EDM<br>沒有神器</h2>
+        <h2>老派 EDM 沒有神器<br><span style="font-size: 0.45em; color: #999; font-family: var(--font-ui); font-weight: normal; letter-spacing: 0;">Design for EDM OG, the Oldschool Edition</span></h2>
         
         <div class="control-group">
             <h3>基礎版型範本</h3>
-            <button class="template-btn" data-type="tech">科技創新論壇</button>
-            <button class="template-btn" data-type="trade">國際拓銷團</button>
-            <button class="template-btn" data-type="expo">專業展覽</button>
+            <button class="template-btn" data-type="seminar">研討會/論壇</button>
+            <button class="template-btn" data-type="mission">拓銷團</button>
+            <button class="template-btn" data-type="expo">展覽</button>
+            <button class="template-btn" data-type="course">訓練課程</button>
         </div>
         
         <div class="control-group" style="flex-grow: 1;">
@@ -336,10 +337,21 @@
             `
         };
 
+        const getHero = (src, alt) => `
+                <table class="edm-block" width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td>
+                            <img class="editable-img" src="${src}" alt="${alt}" width="600" style="display: block; border: 0; width: 100%; max-width: 600px; height: auto;">
+                        </td>
+                    </tr>
+                </table>
+        `;
+
         const templates = {
-            tech: blockLibrary.header + blockLibrary.hero + blockLibrary.text + blockLibrary.split + blockLibrary.button,
-            trade: blockLibrary.hero + blockLibrary.header + blockLibrary.split + blockLibrary.button,
-            expo: blockLibrary.hero + blockLibrary.header + blockLibrary.text + blockLibrary.button
+            seminar: blockLibrary.header + getHero('https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', '研討會論壇主視覺') + blockLibrary.text + blockLibrary.split + blockLibrary.button,
+            mission: getHero('https://images.unsplash.com/photo-1533900298318-6b8da08a523e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', '傳統市場拓銷團') + blockLibrary.header + blockLibrary.split + blockLibrary.button,
+            expo: getHero('https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', '扣件工具機專業展') + blockLibrary.header + blockLibrary.text + blockLibrary.button,
+            course: blockLibrary.header + getHero('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', '訓練課程主視覺') + blockLibrary.text + blockLibrary.split + blockLibrary.button
         };
 
         const canvas = document.getElementById('edm-canvas');
