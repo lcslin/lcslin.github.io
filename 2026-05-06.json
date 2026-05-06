@@ -1,0 +1,1399 @@
+{
+  "nodes": [
+    {
+      "id": "川普",
+      "group": "person",
+      "size": 18
+    },
+    {
+      "id": "台積電",
+      "group": "company",
+      "size": 25
+    },
+    {
+      "id": "鴻海",
+      "group": "company",
+      "size": 20
+    },
+    {
+      "id": "蘋果",
+      "group": "company",
+      "size": 22
+    },
+    {
+      "id": "英特爾",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "OpenAI",
+      "group": "company",
+      "size": 19
+    },
+    {
+      "id": "聯發科",
+      "group": "company",
+      "size": 17
+    },
+    {
+      "id": "信驊",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "大立光",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "華邦電",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "世界先進",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "聯詠",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "環球晶",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "三星",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "Anthropic",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "微軟",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "亞馬遜",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "黃仁勳",
+      "group": "person",
+      "size": 13
+    },
+    {
+      "id": "Palantir",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "小米",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "FedEx",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "UPS",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "Cerebras",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 24
+    },
+    {
+      "id": "澳洲",
+      "group": "country",
+      "size": 14
+    },
+    {
+      "id": "中國",
+      "group": "country",
+      "size": 17
+    },
+    {
+      "id": "台灣",
+      "group": "country",
+      "size": 20
+    },
+    {
+      "id": "伊朗",
+      "group": "country",
+      "size": 12
+    },
+    {
+      "id": "AI",
+      "group": "tech",
+      "size": 23
+    },
+    {
+      "id": "記憶體",
+      "group": "tech",
+      "size": 18
+    },
+    {
+      "id": "晶片",
+      "group": "tech",
+      "size": 20
+    },
+    {
+      "id": "先進製程",
+      "group": "tech",
+      "size": 19
+    },
+    {
+      "id": "BMC",
+      "group": "tech",
+      "size": 13
+    },
+    {
+      "id": "NAND",
+      "group": "tech",
+      "size": 13
+    },
+    {
+      "id": "CoWoS",
+      "group": "tech",
+      "size": 12
+    },
+    {
+      "id": "美債",
+      "group": "finance",
+      "size": 17
+    },
+    {
+      "id": "油價",
+      "group": "finance",
+      "size": 19
+    },
+    {
+      "id": "通膨",
+      "group": "finance",
+      "size": 16
+    },
+    {
+      "id": "貿易逆差",
+      "group": "finance",
+      "size": 13
+    },
+    {
+      "id": "台幣",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "人民幣",
+      "group": "finance",
+      "size": 11
+    },
+    {
+      "id": "日圓",
+      "group": "finance",
+      "size": 11
+    },
+    {
+      "id": "Fed",
+      "group": "org",
+      "size": 15
+    },
+    {
+      "id": "澳洲央行",
+      "group": "org",
+      "size": 14
+    },
+    {
+      "id": "國發會",
+      "group": "org",
+      "size": 11
+    },
+    {
+      "id": "龔明鑫",
+      "group": "person",
+      "size": 11
+    },
+    {
+      "id": "高盛",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "巴克萊",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "穆迪",
+      "group": "company",
+      "size": 9
+    },
+    {
+      "id": "Spirit Airlines",
+      "group": "company",
+      "size": 8
+    }
+  ],
+  "links": [
+    {
+      "source": "油價",
+      "target": "美債",
+      "value": 4,
+      "label": "推升殖利率"
+    },
+    {
+      "source": "美國",
+      "target": "貿易逆差",
+      "value": 3,
+      "label": "經濟狀況"
+    },
+    {
+      "source": "澳洲央行",
+      "target": "通膨",
+      "value": 4,
+      "label": "抑制目標"
+    },
+    {
+      "source": "川普",
+      "target": "伊朗",
+      "value": 3,
+      "label": "政治對峙"
+    },
+    {
+      "source": "美債",
+      "target": "台幣",
+      "value": 3,
+      "label": "匯率影響"
+    },
+    {
+      "source": "人民幣",
+      "target": "日圓",
+      "value": 2,
+      "label": "匯率走勢"
+    },
+    {
+      "source": "油價",
+      "target": "Fed",
+      "value": 4,
+      "label": "影響政策"
+    },
+    {
+      "source": "巴克萊",
+      "target": "Fed",
+      "value": 3,
+      "label": "預測分析"
+    },
+    {
+      "source": "龔明鑫",
+      "target": "美國",
+      "value": 3,
+      "label": "產業合作"
+    },
+    {
+      "source": "龔明鑫",
+      "target": "台灣",
+      "value": 3,
+      "label": "政策推動"
+    },
+    {
+      "source": "國發會",
+      "target": "台灣",
+      "value": 3,
+      "label": "投資輔導"
+    },
+    {
+      "source": "鴻海",
+      "target": "AI",
+      "value": 5,
+      "label": "業務爆發"
+    },
+    {
+      "source": "大立光",
+      "target": "蘋果",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "記憶體",
+      "target": "蘋果",
+      "value": 4,
+      "label": "缺貨漲價"
+    },
+    {
+      "source": "英特爾",
+      "target": "蘋果",
+      "value": 4,
+      "label": "晶片合作"
+    },
+    {
+      "source": "台積電",
+      "target": "先進製程",
+      "value": 5,
+      "label": "技術領先"
+    },
+    {
+      "source": "台積電",
+      "target": "蘋果",
+      "value": 5,
+      "label": "產能吃緊"
+    },
+    {
+      "source": "OpenAI",
+      "target": "聯發科",
+      "value": 4,
+      "label": "處理器訂單"
+    },
+    {
+      "source": "信驊",
+      "target": "BMC",
+      "value": 5,
+      "label": "需求強勁"
+    },
+    {
+      "source": "Anthropic",
+      "target": "OpenAI",
+      "value": 4,
+      "label": "AI競爭"
+    },
+    {
+      "source": "Anthropic",
+      "target": "NAND",
+      "value": 3,
+      "label": "需求推動"
+    },
+    {
+      "source": "OpenAI",
+      "target": "NAND",
+      "value": 3,
+      "label": "需求推動"
+    },
+    {
+      "source": "三星",
+      "target": "蘋果",
+      "value": 3,
+      "label": "代工選項"
+    },
+    {
+      "source": "川普",
+      "target": "AI",
+      "value": 4,
+      "label": "政策監管"
+    },
+    {
+      "source": "華邦電",
+      "target": "記憶體",
+      "value": 3,
+      "label": "產能擴充"
+    },
+    {
+      "source": "世界先進",
+      "target": "CoWoS",
+      "value": 4,
+      "label": "供應鏈"
+    },
+    {
+      "source": "黃仁勳",
+      "target": "中國",
+      "value": 3,
+      "label": "晶片解禁"
+    },
+    {
+      "source": "Palantir",
+      "target": "AI",
+      "value": 4,
+      "label": "營收成長"
+    },
+    {
+      "source": "Cerebras",
+      "target": "AI",
+      "value": 3,
+      "label": "IPO計畫"
+    },
+    {
+      "source": "聯詠",
+      "target": "晶片",
+      "value": 3,
+      "label": "產業復甦"
+    },
+    {
+      "source": "環球晶",
+      "target": "晶片",
+      "value": 3,
+      "label": "價格調升"
+    },
+    {
+      "source": "微軟",
+      "target": "AI",
+      "value": 3,
+      "label": "工業應用"
+    },
+    {
+      "source": "亞馬遜",
+      "target": "FedEx",
+      "value": 4,
+      "label": "市場衝擊"
+    },
+    {
+      "source": "亞馬遜",
+      "target": "UPS",
+      "value": 4,
+      "label": "市場衝擊"
+    },
+    {
+      "source": "小米",
+      "target": "中國",
+      "value": 2,
+      "label": "產品策略"
+    },
+    {
+      "source": "穆迪",
+      "target": "美國",
+      "value": 2,
+      "label": "信評服務"
+    },
+    {
+      "source": "高盛",
+      "target": "油價",
+      "value": 4,
+      "label": "庫存警示"
+    },
+    {
+      "source": "高盛",
+      "target": "台灣",
+      "value": 3,
+      "label": "能源風險"
+    },
+    {
+      "source": "油價",
+      "target": "伊朗",
+      "value": 3,
+      "label": "地緣政治"
+    },
+    {
+      "source": "台積電",
+      "target": "台灣",
+      "value": 5,
+      "label": "投資建廠"
+    },
+    {
+      "source": "鴻海",
+      "target": "台灣",
+      "value": 4,
+      "label": "營收貢獻"
+    },
+    {
+      "source": "信驊",
+      "target": "台灣",
+      "value": 3,
+      "label": "股王表現"
+    },
+    {
+      "source": "記憶體",
+      "target": "AI",
+      "value": 4,
+      "label": "需求驅動"
+    },
+    {
+      "source": "晶片",
+      "target": "AI",
+      "value": 5,
+      "label": "算力支撐"
+    },
+    {
+      "source": "先進製程",
+      "target": "晶片",
+      "value": 5,
+      "label": "技術演進"
+    },
+    {
+      "source": "通膨",
+      "target": "油價",
+      "value": 4,
+      "label": "成本推升"
+    },
+    {
+      "source": "Fed",
+      "target": "通膨",
+      "value": 4,
+      "label": "貨幣政策"
+    },
+    {
+      "source": "澳洲央行",
+      "target": "澳洲",
+      "value": 4,
+      "label": "升息決策"
+    },
+    {
+      "source": "台積電",
+      "target": "英特爾",
+      "value": 3,
+      "label": "競爭關係"
+    },
+    {
+      "source": "台積電",
+      "target": "三星",
+      "value": 3,
+      "label": "競爭關係"
+    },
+    {
+      "source": "蘋果",
+      "target": "台灣",
+      "value": 4,
+      "label": "供應鏈"
+    },
+    {
+      "source": "OpenAI",
+      "target": "美國",
+      "value": 3,
+      "label": "政策審查"
+    },
+    {
+      "source": "Anthropic",
+      "target": "美國",
+      "value": 3,
+      "label": "企業合作"
+    },
+    {
+      "source": "美債",
+      "target": "通膨",
+      "value": 4,
+      "label": "利率聯動"
+    },
+    {
+      "source": "美國",
+      "target": "中國",
+      "value": 3,
+      "label": "貿易關係"
+    },
+    {
+      "source": "黃仁勳",
+      "target": "晶片",
+      "value": 3,
+      "label": "產業影響"
+    },
+    {
+      "source": "台幣",
+      "target": "台灣",
+      "value": 3,
+      "label": "匯率走勢"
+    },
+    {
+      "source": "人民幣",
+      "target": "中國",
+      "value": 3,
+      "label": "匯率政策"
+    },
+    {
+      "source": "CoWoS",
+      "target": "先進製程",
+      "value": 4,
+      "label": "封裝技術"
+    },
+    {
+      "source": "BMC",
+      "target": "AI",
+      "value": 4,
+      "label": "伺服器需求"
+    },
+    {
+      "source": "NAND",
+      "target": "記憶體",
+      "value": 4,
+      "label": "產品類別"
+    },
+    {
+      "source": "Spirit Airlines",
+      "target": "美國",
+      "value": 2,
+      "label": "航空市場"
+    },
+    {
+      "source": "華邦電",
+      "target": "台灣",
+      "value": 2,
+      "label": "投資擴產"
+    },
+    {
+      "source": "世界先進",
+      "target": "台灣",
+      "value": 3,
+      "label": "產能提升"
+    },
+    {
+      "source": "聯詠",
+      "target": "台灣",
+      "value": 2,
+      "label": "業績復甦"
+    },
+    {
+      "source": "環球晶",
+      "target": "台灣",
+      "value": 2,
+      "label": "半導體材料"
+    },
+    {
+      "source": "大立光",
+      "target": "台灣",
+      "value": 2,
+      "label": "光學龍頭"
+    },
+    {
+      "source": "聯發科",
+      "target": "台灣",
+      "value": 3,
+      "label": "晶片設計"
+    },
+    {
+      "source": "亞馬遜",
+      "target": "美國",
+      "value": 3,
+      "label": "物流布局"
+    },
+    {
+      "source": "FedEx",
+      "target": "美國",
+      "value": 2,
+      "label": "物流服務"
+    },
+    {
+      "source": "UPS",
+      "target": "美國",
+      "value": 2,
+      "label": "物流服務"
+    },
+    {
+      "source": "Palantir",
+      "target": "美國",
+      "value": 2,
+      "label": "企業軟體"
+    },
+    {
+      "source": "Cerebras",
+      "target": "美國",
+      "value": 2,
+      "label": "AI晶片"
+    },
+    {
+      "source": "微軟",
+      "target": "美國",
+      "value": 2,
+      "label": "科技巨頭"
+    },
+    {
+      "source": "英特爾",
+      "target": "美國",
+      "value": 3,
+      "label": "本土晶片"
+    },
+    {
+      "source": "三星",
+      "target": "中國",
+      "value": 2,
+      "label": "市場布局"
+    },
+    {
+      "source": "小米",
+      "target": "台灣",
+      "value": 1,
+      "label": "產品供應"
+    }
+  ],
+  "newsDatabase": {
+    "川普": [
+      {
+        "title": "川普陷抉擇 恐數日內再攻伊",
+        "source": "",
+        "url": "https://udn.com/news/story/124061/9484141"
+      },
+      {
+        "title": "川普政府轉向擴大干預 討論預先審查AI新模型",
+        "source": "",
+        "url": "https://udn.com/news/story/6813/9484167"
+      },
+      {
+        "title": "川普AI政策大轉彎 美擬推新模型審查制度",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000231-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台積電": [
+      {
+        "title": "台積電中科1.4奈米建廠 進度超預期",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9484132"
+      },
+      {
+        "title": "台積電砸千億 中科廠大升級 15A廠成熟製程擬轉成4奈米",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9484129"
+      },
+      {
+        "title": "產能吃緊 台積蘋果訂單傳外溢",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9484117"
+      }
+    ],
+    "鴻海": [
+      {
+        "title": "鴻海營收衝出最強4月 前四月同步攀峰 法人看好今年逐季走揚",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9484039"
+      },
+      {
+        "title": "AI 業務爆發 鴻海業績戰新高",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9484045"
+      },
+      {
+        "title": "雲端動能強 鴻海前四月營收創同期新高",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000180-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "蘋果": [
+      {
+        "title": "記憶體缺貨飆漲 蘋果產品漲價訊號亮了",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9484047"
+      },
+      {
+        "title": "傳與蘋果談生產晶片　英特爾股價勁揚14%創新高",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9484266"
+      },
+      {
+        "title": "產能吃緊 台積蘋果訂單傳外溢",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9484117"
+      },
+      {
+        "title": "第二來源啟動 蘋果晶圓代工再＋1",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000174-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "布局非台積 傳蘋果找英特爾三星",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000545-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "英特爾": [
+      {
+        "title": "傳與蘋果談生產晶片　英特爾股價勁揚14%創新高",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9484266"
+      },
+      {
+        "title": "布局非台積 傳蘋果找英特爾三星",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000545-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "OpenAI": [
+      {
+        "title": "OpenAI 攻手機 聯發科有望獨拿處理器訂單 最快明年上半年量產",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9484146"
+      },
+      {
+        "title": "Anthropic、OpenAI 砸重金揪華爾街巨頭養企業龍蝦 新一波 NAND 需求爆發",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9484268"
+      },
+      {
+        "title": "Anthropic、OpenAI揪華爾街巨頭養企業龍蝦 新一波NAND需求爆發",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9484268"
+      }
+    ],
+    "聯發科": [
+      {
+        "title": "OpenAI 攻手機 聯發科有望獨拿處理器訂單 最快明年上半年量產",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9484146"
+      }
+    ],
+    "信驊": [
+      {
+        "title": "「股王」信驊Q1獲利創高 外資唱旺 BMC 需求 業績將續走強",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9484162"
+      },
+      {
+        "title": "BMC需求爆發 信驊首季EPS 37.41元攀峰",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000182-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "股王信驊 Q1每股大賺37.41元",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1753705"
+      }
+    ],
+    "大立光": [
+      {
+        "title": "大立光4月營收下滑1% 比預期好 預計Q3產能滿載",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9484042"
+      }
+    ],
+    "華邦電": [
+      {
+        "title": "華邦電加碼投資 衝CUBE產能",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000177-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "世界先進": [
+      {
+        "title": "成熟製程回溫 世界先進Q2動能轉強",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000185-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "打入CoWoS供應鏈 世界先進 看旺第2季",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1753704"
+      },
+      {
+        "title": "世界第2季毛利率將重返30%",
+        "source": "",
+        "url": "https://udn.com/news/story/7253/9483747"
+      }
+    ],
+    "聯詠": [
+      {
+        "title": "聯詠拚復甦 首季EPS 6.19元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000274-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "環球晶": [
+      {
+        "title": "AI推動 環球晶：H2售價調升",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000272-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "三星": [
+      {
+        "title": "1分鐘看世界／三星電子錢景看俏 為南韓未成年人獲贈最多的股票",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9484136"
+      },
+      {
+        "title": "布局非台積 傳蘋果找英特爾三星",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000545-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Anthropic": [
+      {
+        "title": "Anthropic、OpenAI 砸重金揪華爾街巨頭養企業龍蝦 新一波 NAND 需求爆發",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9484268"
+      },
+      {
+        "title": "Anthropic、OpenAI揪華爾街巨頭養企業龍蝦 新一波NAND需求爆發",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9484268"
+      }
+    ],
+    "微軟": [
+      {
+        "title": "喜樂比助微軟 導入第一線工業作業場域",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000300-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "亞馬遜": [
+      {
+        "title": "亞馬遜物流一條龍 震撼市場 衝擊 FedEx、UPS 股價重挫",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9484079"
+      }
+    ],
+    "黃仁勳": [
+      {
+        "title": "黃仁勳喊話 盼晶片售陸解禁",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000242-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Palantir": [
+      {
+        "title": "Palantir Q1營收年增85％ 上市來最大增幅",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000236-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "小米": [
+      {
+        "title": "小米小尺寸折疊機 傳停產",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000253-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "FedEx": [
+      {
+        "title": "亞馬遜物流一條龍 震撼市場 衝擊 FedEx、UPS 股價重挫",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9484079"
+      }
+    ],
+    "UPS": [
+      {
+        "title": "亞馬遜物流一條龍 震撼市場 衝擊 FedEx、UPS 股價重挫",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9484079"
+      }
+    ],
+    "Cerebras": [
+      {
+        "title": "Cerebras拚上市 估值看266億美元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000233-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "美國": [
+      {
+        "title": "油價飆漲、政府舉債效應 美30年公債殖利率衝上5%",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9484106"
+      },
+      {
+        "title": "美3月貿易逆差持續擴大",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9484057"
+      },
+      {
+        "title": "內需穩 美國3月貿赤攀今年新高",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000227-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "龔明鑫探路 美台產業聚落有譜",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000202-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美國廉航Spirit Airlines倒閉 美機票看漲",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000240-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "澳洲": [
+      {
+        "title": "澳洲央行放鷹 利率連三升 展現抑制通膨決心 上調至4.35%",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9484050"
+      },
+      {
+        "title": "抑制通膨 澳央連三升息抑制通膨 澳元不升反貶",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000229-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中國": [
+      {
+        "title": "黃仁勳喊話 盼晶片售陸解禁",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000242-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "陸科創板7成PCB企業 Q1營收、獲利雙增",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000249-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "反內捲成效有限 陸太陽能龍頭企業連虧十季",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000251-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台灣": [
+      {
+        "title": "卓揆：研擬中小微轉型條例",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000156-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台幣橫盤 31.6元成短期支撐價",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000164-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "國發會：七大百億基金 聚焦投資輔導",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000193-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "龔明鑫探路 美台產業聚落有譜",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000202-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台灣參加SelectUSA Tech 成績冠全球",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000205-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "高盛示警全球輕油、航空燃油、液化石油氣庫存加速下滑 台灣油品匱乏風險高",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9484080"
+      },
+      {
+        "title": "高盛憂台灣能源短缺 經部駁斥",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000224-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "伊朗": [
+      {
+        "title": "川普陷抉擇 恐數日內再攻伊",
+        "source": "",
+        "url": "https://udn.com/news/story/124061/9484141"
+      },
+      {
+        "title": "中東停火得以維持　國際油價下跌",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9484322"
+      }
+    ],
+    "AI": [
+      {
+        "title": "AI 業務爆發 鴻海業績戰新高",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9484045"
+      },
+      {
+        "title": "川普政府轉向擴大干預 討論預先審查AI新模型",
+        "source": "",
+        "url": "https://udn.com/news/story/6813/9484167"
+      },
+      {
+        "title": "川普AI政策大轉彎 美擬推新模型審查制度",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000231-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI推動 環球晶：H2售價調升",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000272-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "記憶體": [
+      {
+        "title": "記憶體缺貨飆漲 蘋果產品漲價訊號亮了",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9484047"
+      },
+      {
+        "title": "陳沛銘：Q2記憶體續漲 漲幅不會小於Q1",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000183-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "公股銀：記憶體業面臨四挑戰",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000265-260205?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "晶片": [
+      {
+        "title": "傳與蘋果談生產晶片　英特爾股價勁揚14%創新高",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9484266"
+      },
+      {
+        "title": "黃仁勳喊話 盼晶片售陸解禁",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000242-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "先進製程": [
+      {
+        "title": "台積電中科1.4奈米建廠 進度超預期",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9484132"
+      },
+      {
+        "title": "台積電砸千億 中科廠大升級 15A廠成熟製程擬轉成4奈米",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9484129"
+      },
+      {
+        "title": "成熟製程回溫 世界先進Q2動能轉強",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000185-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "BMC": [
+      {
+        "title": "「股王」信驊Q1獲利創高 外資唱旺 BMC 需求 業績將續走強",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9484162"
+      },
+      {
+        "title": "BMC需求爆發 信驊首季EPS 37.41元攀峰",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000182-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "NAND": [
+      {
+        "title": "Anthropic、OpenAI 砸重金揪華爾街巨頭養企業龍蝦 新一波 NAND 需求爆發",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9484268"
+      },
+      {
+        "title": "Anthropic、OpenAI揪華爾街巨頭養企業龍蝦 新一波NAND需求爆發",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9484268"
+      }
+    ],
+    "CoWoS": [
+      {
+        "title": "打入CoWoS供應鏈 世界先進 看旺第2季",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1753704"
+      }
+    ],
+    "美債": [
+      {
+        "title": "油價飆漲、政府舉債效應 美30年公債殖利率衝上5%",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9484106"
+      },
+      {
+        "title": "美債息狂飆 市場拉警報",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000151-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "油價": [
+      {
+        "title": "油價飆漲、政府舉債效應 美30年公債殖利率衝上5%",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9484106"
+      },
+      {
+        "title": "巴克萊：油價飆 Fed今年降息無望",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000170-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "高盛示警全球輕油、航空燃油、液化石油氣庫存加速下滑 台灣油品匱乏風險高",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9484080"
+      },
+      {
+        "title": "中東停火得以維持　國際油價下跌",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9484322"
+      }
+    ],
+    "通膨": [
+      {
+        "title": "澳洲央行放鷹 利率連三升 展現抑制通膨決心 上調至4.35%",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9484050"
+      },
+      {
+        "title": "抑制通膨 澳央連三升息抑制通膨 澳元不升反貶",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000229-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "貿易逆差": [
+      {
+        "title": "美3月貿易逆差持續擴大",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9484057"
+      },
+      {
+        "title": "內需穩 美國3月貿赤攀今年新高",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000227-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台幣": [
+      {
+        "title": "台幣橫盤 31.6元成短期支撐價",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000164-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "人民幣": [
+      {
+        "title": "行庫點評亞幣：人民幣偏升 日圓續弱",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000167-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "日圓": [
+      {
+        "title": "行庫點評亞幣：人民幣偏升 日圓續弱",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000167-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Fed": [
+      {
+        "title": "巴克萊：油價飆 Fed今年降息無望",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000170-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "澳洲央行": [
+      {
+        "title": "澳洲央行放鷹 利率連三升 展現抑制通膨決心 上調至4.35%",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9484050"
+      },
+      {
+        "title": "抑制通膨 澳央連三升息抑制通膨 澳元不升反貶",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000229-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "國發會": [
+      {
+        "title": "國發會：七大百億基金 聚焦投資輔導",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000193-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "龔明鑫": [
+      {
+        "title": "龔明鑫探路 美台產業聚落有譜",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000202-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "高盛": [
+      {
+        "title": "高盛示警全球輕油、航空燃油、液化石油氣庫存加速下滑 台灣油品匱乏風險高",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9484080"
+      },
+      {
+        "title": "高盛憂台灣能源短缺 經部駁斥",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000224-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "巴克萊": [
+      {
+        "title": "巴克萊：油價飆 Fed今年降息無望",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000170-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "穆迪": [
+      {
+        "title": "穆迪擬推穩定幣信評",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9484056"
+      }
+    ],
+    "Spirit Airlines": [
+      {
+        "title": "美國廉航Spirit Airlines倒閉 美機票看漲",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260506000240-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "油價飆漲、政府舉債效應 美30年公債殖利率衝上5% (經濟國際焦點)": "https://money.udn.com/money/story/5599/9484106",
+    "美3月貿易逆差持續擴大 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9484057",
+    "澳洲央行放鷹 利率連三升 展現抑制通膨決心 上調至4.35% (經濟國際焦點)": "https://money.udn.com/money/story/5599/9484050",
+    "川普陷抉擇 恐數日內再攻伊 (聯合_產經_股市)": "https://udn.com/news/story/124061/9484141",
+    "美債息狂飆 市場拉警報 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260506000151-260202?utm_source=iii_news&utm_medium=rss",
+    "卓揆：研擬中小微轉型條例 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260506000156-260202?utm_source=iii_news&utm_medium=rss",
+    "台幣橫盤 31.6元成短期支撐價 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260506000164-260202?utm_source=iii_news&utm_medium=rss",
+    "行庫點評亞幣：人民幣偏升 日圓續弱 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260506000167-260202?utm_source=iii_news&utm_medium=rss",
+    "巴克萊：油價飆 Fed今年降息無望 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260506000170-260202?utm_source=iii_news&utm_medium=rss",
+    "國發會：七大百億基金 聚焦投資輔導 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260506000193-260202?utm_source=iii_news&utm_medium=rss",
+    "龔明鑫探路 美台產業聚落有譜 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260506000202-260202?utm_source=iii_news&utm_medium=rss",
+    "牛津經濟研究院：原物料成本狂飆 下調今年全球GDP成長率至2.4％ (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260506000209-260202?utm_source=iii_news&utm_medium=rss",
+    "內需穩 美國3月貿赤攀今年新高 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260506000227-260203?utm_source=iii_news&utm_medium=rss",
+    "抑制通膨 澳央連三升息抑制通膨 澳元不升反貶 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260506000229-260203?utm_source=iii_news&utm_medium=rss",
+    "鴻海營收衝出最強4月 前四月同步攀峰 法人看好今年逐季走揚 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9484039",
+    "AI 業務爆發 鴻海業績戰新高 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9484045",
+    "大立光4月營收下滑1% 比預期好 預計Q3產能滿載 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9484042",
+    "記憶體缺貨飆漲 蘋果產品漲價訊號亮了 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9484047",
+    "傳與蘋果談生產晶片　英特爾股價勁揚14%創新高 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9484266",
+    "台積電中科1.4奈米建廠 進度超預期 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9484132",
+    "OpenAI 攻手機 聯發科有望獨拿處理器訂單 最快明年上半年量產 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9484146",
+    "「股王」信驊Q1獲利創高 外資唱旺 BMC 需求 業績將續走強 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9484162",
+    "Anthropic、OpenAI 砸重金揪華爾街巨頭養企業龍蝦 新一波 NAND 需求爆發 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9484268",
+    "台積電砸千億 中科廠大升級 15A廠成熟製程擬轉成4奈米 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9484129",
+    "穆迪擬推穩定幣信評 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9484056",
+    "1分鐘看世界／三星電子錢景看俏 為南韓未成年人獲贈最多的股票 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9484136",
+    "Anthropic、OpenAI揪華爾街巨頭養企業龍蝦 新一波NAND需求爆發 (聯合_產經_股市)": "https://udn.com/news/story/7240/9484268",
+    "產能吃緊 台積蘋果訂單傳外溢 (聯合_產經_股市)": "https://udn.com/news/story/7238/9484117",
+    "川普政府轉向擴大干預 討論預先審查AI新模型 (聯合_產經_股市)": "https://udn.com/news/story/6813/9484167",
+    "第二來源啟動 蘋果晶圓代工再＋1 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260506000174-260202?utm_source=iii_news&utm_medium=rss",
+    "華邦電加碼投資 衝CUBE產能 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260506000177-260202?utm_source=iii_news&utm_medium=rss",
+    "雲端動能強 鴻海前四月營收創同期新高 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260506000180-260202?utm_source=iii_news&utm_medium=rss",
+    "BMC需求爆發 信驊首季EPS 37.41元攀峰 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260506000182-260202?utm_source=iii_news&utm_medium=rss",
+    "陳沛銘：Q2記憶體續漲 漲幅不會小於Q1 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260506000183-260202?utm_source=iii_news&utm_medium=rss",
+    "成熟製程回溫 世界先進Q2動能轉強 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260506000185-260202?utm_source=iii_news&utm_medium=rss",
+    "川普AI政策大轉彎 美擬推新模型審查制度 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260506000231-260203?utm_source=iii_news&utm_medium=rss",
+    "Cerebras拚上市 估值看266億美元 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260506000233-260203?utm_source=iii_news&utm_medium=rss",
+    "Palantir Q1營收年增85％ 上市來最大增幅 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260506000236-260203?utm_source=iii_news&utm_medium=rss",
+    "黃仁勳喊話 盼晶片售陸解禁 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260506000242-260203?utm_source=iii_news&utm_medium=rss",
+    "陸科創板7成PCB企業 Q1營收、獲利雙增 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260506000249-260203?utm_source=iii_news&utm_medium=rss",
+    "小米小尺寸折疊機 傳停產 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260506000253-260203?utm_source=iii_news&utm_medium=rss",
+    "公股銀：記憶體業面臨四挑戰 (工商金融稅務)": "https://www.chinatimes.com/newspapers/20260506000265-260205?utm_source=iii_news&utm_medium=rss",
+    "電池模組三雄 4月營收燒 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260506000269-260204?utm_source=iii_news&utm_medium=rss",
+    "AI推動 環球晶：H2售價調升 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260506000272-260204?utm_source=iii_news&utm_medium=rss",
+    "聯詠拚復甦 首季EPS 6.19元 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260506000274-260204?utm_source=iii_news&utm_medium=rss",
+    "5月大尺寸面板 價格轉持平 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260506000275-260204?utm_source=iii_news&utm_medium=rss",
+    "IMA攜夥設開源台灣館 COMPUTEX亮相 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260506000276-260204?utm_source=iii_news&utm_medium=rss",
+    "富世達 營運有望季季高 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260506000277-260204?utm_source=iii_news&utm_medium=rss",
+    "撼訊Q1獲利 近四年新高 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260506000279-260204?utm_source=iii_news&utm_medium=rss",
+    "喜樂比助微軟 導入第一線工業作業場域 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260506000300-260204?utm_source=iii_news&utm_medium=rss",
+    "亞馬遜物流一條龍 震撼市場 衝擊 FedEx、UPS 股價重挫 (聯合_產經_股市)": "https://udn.com/news/story/6811/9484079",
+    "布局非台積 傳蘋果找英特爾三星 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260506000545-260110?utm_source=iii_news&utm_medium=rss",
+    "股王信驊 Q1每股大賺37.41元 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1753705",
+    "打入CoWoS供應鏈 世界先進 看旺第2季 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1753704",
+    "CCL 三雄4月營收攀峰 (聯合_產經_股市)": "https://udn.com/news/story/7253/9483721",
+    "世界第2季毛利率將重返30% (聯合_產經_股市)": "https://udn.com/news/story/7253/9483747",
+    "樂迦強攻病毒檢測數位化 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9484078",
+    "台灣參加SelectUSA Tech 成績冠全球 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260506000205-260202?utm_source=iii_news&utm_medium=rss",
+    "瑞光生醫 自主研發腦健康科技 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260506000298-260204?utm_source=iii_news&utm_medium=rss",
+    "腸病毒進入好發季 D68型恐流行 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260506000558-260114?utm_source=iii_news&utm_medium=rss",
+    "張榮發基金會提「死因贈與」訴訟 長榮張家爭產官司添變數 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9484037",
+    "百年信託有譜了 家族傳承不再重複課稅 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260506000198-260202?utm_source=iii_news&utm_medium=rss",
+    "美國廉航Spirit Airlines倒閉 美機票看漲 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260506000240-260203?utm_source=iii_news&utm_medium=rss",
+    "北市育兒減工時 民團盼中央跟進 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260506000554-260114?utm_source=iii_news&utm_medium=rss",
+    "被北市搶先？勞部育兒政策喊卡 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260506000556-260114?utm_source=iii_news&utm_medium=rss",
+    "高盛示警全球輕油、航空燃油、液化石油氣庫存加速下滑 台灣油品匱乏風險高 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9484080",
+    "地緣風險 富豪投資轉向 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9484064",
+    "核三自我安全檢查 5月啟動 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260506000199-260202?utm_source=iii_news&utm_medium=rss",
+    "高盛憂台灣能源短缺 經部駁斥 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260506000224-260203?utm_source=iii_news&utm_medium=rss",
+    "反內捲成效有限 陸太陽能龍頭企業連虧十季 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260506000251-260203?utm_source=iii_news&utm_medium=rss",
+    "中東停火得以維持　國際油價下跌 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9484322",
+    "核四燃料棒外運 浪費近40億 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260506000550-260110?utm_source=iii_news&utm_medium=rss"
+  }
+}
