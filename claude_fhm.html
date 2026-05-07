@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>克勞德誌 | Claude CLI 紳士大賞 - 2026 珍藏版</title>
-    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+TC:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&family=Noto+Serif+TC:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary: #e60012;
@@ -38,6 +38,7 @@
             left: 50%;
             transform: translate(-50%, -50%) rotate(-15deg);
             pointer-events: none;
+            font-family: 'Noto Sans TC', sans-serif;
         }
 
         header {
@@ -53,28 +54,32 @@
         }
 
         .mag-title {
-            font-family: 'Ma Shan Zheng', cursive;
+            font-family: 'Noto Serif TC', serif;
+            font-weight: 900;
             font-size: 15vw;
             margin: 0;
             color: var(--primary);
             line-height: 0.8;
             filter: drop-shadow(10px 10px 0px var(--white));
             animation: glitch 1s infinite alternate;
+            letter-spacing: -5px;
         }
 
         @keyframes glitch {
             from { transform: skewX(0deg); }
-            to { transform: skewX(2deg); }
+            to { transform: skewX(1deg); }
         }
 
         .mag-subtitle {
-            font-size: 2rem;
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 1.8rem;
             font-weight: 900;
             background: var(--white);
             color: var(--black);
             padding: 5px 20px;
             margin-top: 20px;
-            letter-spacing: 15px;
+            letter-spacing: 12px;
+            text-transform: uppercase;
         }
 
         /* 主要佈局 */
@@ -94,17 +99,19 @@
         }
 
         .drop-cap::first-letter {
-            font-family: 'Ma Shan Zheng', cursive;
+            font-family: 'Noto Serif TC', serif;
+            font-weight: 900;
             float: left;
             font-size: 8rem;
-            line-height: 1;
-            padding: 10px;
+            line-height: 0.85;
+            padding: 10px 15px 0 0;
             margin-right: 15px;
             color: var(--primary);
-            border: 2px solid var(--primary);
+            border-bottom: 10px solid var(--primary);
         }
 
         .section-tag {
+            font-family: 'Noto Sans TC', sans-serif;
             background: var(--primary);
             color: var(--white);
             display: inline-block;
@@ -112,24 +119,28 @@
             font-weight: 900;
             margin-bottom: 20px;
             text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         h2.headline {
-            font-family: 'Ma Shan Zheng', cursive;
-            font-size: 5rem;
+            font-family: 'Noto Sans TC', sans-serif;
+            font-weight: 900;
+            font-size: 4.5rem;
             color: var(--white);
             margin: 10px 0 30px;
             line-height: 1.1;
-            border-bottom: 5px solid var(--primary);
+            border-bottom: 8px solid var(--primary);
             display: inline-block;
+            letter-spacing: -2px;
         }
 
         .content-text {
-            font-size: 1.4rem;
-            color: #ddd;
+            font-size: 1.25rem;
+            color: #ccc;
             column-count: 2;
             column-gap: 40px;
             text-align: justify;
+            font-weight: 400;
         }
 
         .code-display {
@@ -155,11 +166,13 @@
         }
 
         .sidebar-title {
-            font-family: 'Ma Shan Zheng', cursive;
-            font-size: 2.5rem;
+            font-family: 'Noto Sans TC', sans-serif;
+            font-weight: 900;
+            font-size: 2.2rem;
             color: var(--primary);
             margin-bottom: 20px;
-            border-bottom: 2px solid var(--primary);
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 5px;
         }
 
         .top-list {
@@ -175,11 +188,13 @@
         }
 
         .rank-num {
+            font-family: 'Noto Sans TC', sans-serif;
             font-size: 2rem;
             font-weight: 900;
             color: var(--primary);
             margin-right: 20px;
             font-style: italic;
+            line-height: 1;
         }
 
         /* 特別企劃：風林火山 */
@@ -192,20 +207,24 @@
 
         .tactic-card {
             background: var(--gray);
-            padding: 20px;
+            padding: 25px;
             border: 1px solid #333;
             transition: 0.3s;
         }
 
         .tactic-card:hover {
             border-color: var(--primary);
-            transform: translateY(-10px);
+            transform: translateY(-5px);
+            background: #222;
         }
 
         .tactic-name {
-            font-family: 'Ma Shan Zheng', cursive;
+            font-family: 'Noto Serif TC', serif;
+            font-weight: 900;
             font-size: 2.5rem;
             color: var(--accent);
+            margin-bottom: 10px;
+            display: block;
         }
 
         /* 頁腳 */
@@ -214,13 +233,16 @@
             color: var(--black);
             padding: 80px 20px;
             text-align: center;
+            font-family: 'Noto Sans TC', sans-serif;
             font-weight: 900;
         }
 
         .footer-logo {
-            font-family: 'Ma Shan Zheng', cursive;
-            font-size: 4rem;
+            font-family: 'Noto Serif TC', serif;
+            font-weight: 900;
+            font-size: 4.5rem;
             margin-bottom: 20px;
+            letter-spacing: -2px;
         }
 
         @media (max-width: 1000px) {
