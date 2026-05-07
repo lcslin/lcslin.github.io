@@ -1,0 +1,1340 @@
+{
+  "nodes": [
+    {
+      "id": "川普",
+      "group": "person",
+      "size": 20
+    },
+    {
+      "id": "台積電",
+      "group": "company",
+      "size": 25
+    },
+    {
+      "id": "超微",
+      "group": "company",
+      "size": 22
+    },
+    {
+      "id": "蘇姿丰",
+      "group": "person",
+      "size": 18
+    },
+    {
+      "id": "聯發科",
+      "group": "company",
+      "size": 20
+    },
+    {
+      "id": "三星",
+      "group": "company",
+      "size": 19
+    },
+    {
+      "id": "Google",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "聯電",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "輝達",
+      "group": "company",
+      "size": 17
+    },
+    {
+      "id": "SpaceX",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 24
+    },
+    {
+      "id": "中國",
+      "group": "country",
+      "size": 20
+    },
+    {
+      "id": "台灣",
+      "group": "country",
+      "size": 22
+    },
+    {
+      "id": "伊朗",
+      "group": "country",
+      "size": 19
+    },
+    {
+      "id": "日本",
+      "group": "country",
+      "size": 12
+    },
+    {
+      "id": "AI",
+      "group": "tech",
+      "size": 23
+    },
+    {
+      "id": "伺服器",
+      "group": "tech",
+      "size": 20
+    },
+    {
+      "id": "晶片",
+      "group": "tech",
+      "size": 21
+    },
+    {
+      "id": "半導體",
+      "group": "tech",
+      "size": 19
+    },
+    {
+      "id": "CPU",
+      "group": "tech",
+      "size": 15
+    },
+    {
+      "id": "外資",
+      "group": "finance",
+      "size": 18
+    },
+    {
+      "id": "台股",
+      "group": "finance",
+      "size": 17
+    },
+    {
+      "id": "外匯存底",
+      "group": "finance",
+      "size": 14
+    },
+    {
+      "id": "關稅",
+      "group": "finance",
+      "size": 16
+    },
+    {
+      "id": "301調查",
+      "group": "finance",
+      "size": 15
+    },
+    {
+      "id": "金管會",
+      "group": "org",
+      "size": 14
+    },
+    {
+      "id": "油價",
+      "group": "finance",
+      "size": 16
+    },
+    {
+      "id": "電力",
+      "group": "tech",
+      "size": 15
+    },
+    {
+      "id": "核四",
+      "group": "tech",
+      "size": 13
+    },
+    {
+      "id": "台電",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "群聯",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "健策",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "力積電",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "英特爾",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "威剛",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "Anthropic",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "DeepSeek",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "momo",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "康寧",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "穩定幣",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "比特幣",
+      "group": "finance",
+      "size": 10
+    },
+    {
+      "id": "航空貨運",
+      "group": "tech",
+      "size": 11
+    },
+    {
+      "id": "G7",
+      "group": "org",
+      "size": 11
+    },
+    {
+      "id": "稀土",
+      "group": "finance",
+      "size": 10
+    },
+    {
+      "id": "新台幣",
+      "group": "finance",
+      "size": 10
+    },
+    {
+      "id": "日圓",
+      "group": "finance",
+      "size": 10
+    }
+  ],
+  "links": [
+    {
+      "source": "川普",
+      "target": "中國",
+      "value": 5,
+      "label": "外交訪問"
+    },
+    {
+      "source": "川普",
+      "target": "台灣",
+      "value": 4,
+      "label": "政策影響"
+    },
+    {
+      "source": "川普",
+      "target": "伊朗",
+      "value": 5,
+      "label": "和平協議"
+    },
+    {
+      "source": "台積電",
+      "target": "美國",
+      "value": 5,
+      "label": "投資擴張"
+    },
+    {
+      "source": "台積電",
+      "target": "晶片",
+      "value": 5,
+      "label": "製造生產"
+    },
+    {
+      "source": "台積電",
+      "target": "Google",
+      "value": 4,
+      "label": "供應鏈"
+    },
+    {
+      "source": "超微",
+      "target": "伺服器",
+      "value": 5,
+      "label": "產品銷售"
+    },
+    {
+      "source": "超微",
+      "target": "CPU",
+      "value": 5,
+      "label": "產品研發"
+    },
+    {
+      "source": "超微",
+      "target": "蘇姿丰",
+      "value": 5,
+      "label": "企業領導"
+    },
+    {
+      "source": "超微",
+      "target": "群聯",
+      "value": 4,
+      "label": "供應鏈"
+    },
+    {
+      "source": "超微",
+      "target": "健策",
+      "value": 4,
+      "label": "供應鏈"
+    },
+    {
+      "source": "蘇姿丰",
+      "target": "伺服器",
+      "value": 4,
+      "label": "市場展望"
+    },
+    {
+      "source": "聯發科",
+      "target": "台股",
+      "value": 4,
+      "label": "處置股"
+    },
+    {
+      "source": "聯發科",
+      "target": "晶片",
+      "value": 4,
+      "label": "產品製造"
+    },
+    {
+      "source": "三星",
+      "target": "台積電",
+      "value": 3,
+      "label": "市場競爭"
+    },
+    {
+      "source": "三星",
+      "target": "中國",
+      "value": 4,
+      "label": "市場退出"
+    },
+    {
+      "source": "Google",
+      "target": "晶片",
+      "value": 5,
+      "label": "採購訂單"
+    },
+    {
+      "source": "Google",
+      "target": "聯發科",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "Google",
+      "target": "Anthropic",
+      "value": 4,
+      "label": "晶片供應"
+    },
+    {
+      "source": "聯電",
+      "target": "半導體",
+      "value": 5,
+      "label": "研發製造"
+    },
+    {
+      "source": "聯電",
+      "target": "台股",
+      "value": 4,
+      "label": "股價表現"
+    },
+    {
+      "source": "輝達",
+      "target": "康寧",
+      "value": 4,
+      "label": "合資建廠"
+    },
+    {
+      "source": "SpaceX",
+      "target": "晶片",
+      "value": 5,
+      "label": "建廠投資"
+    },
+    {
+      "source": "SpaceX",
+      "target": "美國",
+      "value": 4,
+      "label": "投資設廠"
+    },
+    {
+      "source": "美國",
+      "target": "關稅",
+      "value": 5,
+      "label": "貿易政策"
+    },
+    {
+      "source": "美國",
+      "target": "台灣",
+      "value": 5,
+      "label": "貿易談判"
+    },
+    {
+      "source": "美國",
+      "target": "301調查",
+      "value": 5,
+      "label": "貿易調查"
+    },
+    {
+      "source": "美國",
+      "target": "伊朗",
+      "value": 5,
+      "label": "和平談判"
+    },
+    {
+      "source": "中國",
+      "target": "301調查",
+      "value": 4,
+      "label": "貿易調查"
+    },
+    {
+      "source": "中國",
+      "target": "稀土",
+      "value": 4,
+      "label": "出口管制"
+    },
+    {
+      "source": "中國",
+      "target": "G7",
+      "value": 4,
+      "label": "貿易批評"
+    },
+    {
+      "source": "台灣",
+      "target": "301調查",
+      "value": 4,
+      "label": "貿易調查"
+    },
+    {
+      "source": "台灣",
+      "target": "外資",
+      "value": 5,
+      "label": "資金流入"
+    },
+    {
+      "source": "台灣",
+      "target": "外匯存底",
+      "value": 5,
+      "label": "金融狀態"
+    },
+    {
+      "source": "台灣",
+      "target": "關稅",
+      "value": 4,
+      "label": "貿易談判"
+    },
+    {
+      "source": "日本",
+      "target": "301調查",
+      "value": 3,
+      "label": "貿易調查"
+    },
+    {
+      "source": "日本",
+      "target": "日圓",
+      "value": 4,
+      "label": "匯率干預"
+    },
+    {
+      "source": "伊朗",
+      "target": "油價",
+      "value": 5,
+      "label": "地緣影響"
+    },
+    {
+      "source": "AI",
+      "target": "伺服器",
+      "value": 5,
+      "label": "技術應用"
+    },
+    {
+      "source": "AI",
+      "target": "晶片",
+      "value": 5,
+      "label": "技術需求"
+    },
+    {
+      "source": "AI",
+      "target": "電力",
+      "value": 4,
+      "label": "能源需求"
+    },
+    {
+      "source": "AI",
+      "target": "金管會",
+      "value": 4,
+      "label": "監理架構"
+    },
+    {
+      "source": "伺服器",
+      "target": "晶片",
+      "value": 5,
+      "label": "供應鏈"
+    },
+    {
+      "source": "半導體",
+      "target": "晶片",
+      "value": 5,
+      "label": "產業關聯"
+    },
+    {
+      "source": "外資",
+      "target": "台股",
+      "value": 5,
+      "label": "資金流向"
+    },
+    {
+      "source": "外資",
+      "target": "新台幣",
+      "value": 4,
+      "label": "匯率影響"
+    },
+    {
+      "source": "力積電",
+      "target": "英特爾",
+      "value": 4,
+      "label": "供應鏈"
+    },
+    {
+      "source": "力積電",
+      "target": "半導體",
+      "value": 4,
+      "label": "產業製造"
+    },
+    {
+      "source": "威剛",
+      "target": "台股",
+      "value": 3,
+      "label": "庫藏股"
+    },
+    {
+      "source": "Anthropic",
+      "target": "Google",
+      "value": 5,
+      "label": "晶片採購"
+    },
+    {
+      "source": "Anthropic",
+      "target": "晶片",
+      "value": 4,
+      "label": "技術採購"
+    },
+    {
+      "source": "DeepSeek",
+      "target": "AI",
+      "value": 4,
+      "label": "技術研發"
+    },
+    {
+      "source": "DeepSeek",
+      "target": "中國",
+      "value": 3,
+      "label": "投資來源"
+    },
+    {
+      "source": "核四",
+      "target": "台電",
+      "value": 5,
+      "label": "燃料處理"
+    },
+    {
+      "source": "核四",
+      "target": "電力",
+      "value": 4,
+      "label": "能源政策"
+    },
+    {
+      "source": "電力",
+      "target": "台電",
+      "value": 4,
+      "label": "電網建設"
+    },
+    {
+      "source": "油價",
+      "target": "航空貨運",
+      "value": 4,
+      "label": "成本影響"
+    },
+    {
+      "source": "航空貨運",
+      "target": "伊朗",
+      "value": 3,
+      "label": "運輸需求"
+    },
+    {
+      "source": "G7",
+      "target": "稀土",
+      "value": 4,
+      "label": "貿易政策"
+    },
+    {
+      "source": "金管會",
+      "target": "穩定幣",
+      "value": 4,
+      "label": "金融監理"
+    },
+    {
+      "source": "金管會",
+      "target": "台灣",
+      "value": 3,
+      "label": "金融政策"
+    }
+  ],
+  "newsDatabase": {
+    "川普": [
+      {
+        "title": "美國總統川普下周即將出訪大陸 國務卿：川習會將談台灣議題",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9486725"
+      },
+      {
+        "title": "川普：伊朗盼達成協議　美國將從德黑蘭取得濃縮鈾",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9486897"
+      },
+      {
+        "title": "美伊傳將達成「終戰備忘錄」　川普：美將取得伊朗濃縮鈾",
+        "source": "",
+        "url": "https://www.chinatimes.com/realtimenews/20260507000929-260408?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台積電": [
+      {
+        "title": "台積電共同營運長侯永清一句話引發想像空間 投資美國可能再加碼",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9486702"
+      },
+      {
+        "title": "Google 奪6兆大單 TPU 晶片、伺服器出貨強勁 台積、聯發科等受惠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9486705"
+      },
+      {
+        "title": "台積鬆口 美國布局再升級",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000241-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "傳台積加碼美國 上看2500億美元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000556-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "超微": [
+      {
+        "title": "超微財報驚喜不斷 CEO 蘇姿丰看旺伺服器 CPU 後市 群聯、健策等將受惠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9486717"
+      },
+      {
+        "title": "超微示警 PC、遊戲機 出貨不妙",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9486721"
+      },
+      {
+        "title": "美超微績優 協力廠樂",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9486726"
+      },
+      {
+        "title": "超微強勁財報帶動晶片股　美股收紅標普那指創新高",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9486916"
+      }
+    ],
+    "蘇姿丰": [
+      {
+        "title": "超微財報驚喜不斷 CEO 蘇姿丰看旺伺服器 CPU 後市 群聯、健策等將受惠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9486717"
+      },
+      {
+        "title": "蘇姿丰：伺服器CPU成長爆發",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000244-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "聯發科": [
+      {
+        "title": "Google 奪6兆大單 TPU 晶片、伺服器出貨強勁 台積、聯發科等受惠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9486705"
+      },
+      {
+        "title": "聯發科7日起5分鐘撮合一次　台股最大市值處置股",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9486874"
+      },
+      {
+        "title": "聯發科「關禁閉」 列處置股",
+        "source": "",
+        "url": "https://udn.com/news/story/7251/9486723"
+      }
+    ],
+    "三星": [
+      {
+        "title": "三星市值飆上1兆美元 繼台積之後 亞洲第二家",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9486686"
+      },
+      {
+        "title": "三星市值 晉升1兆美元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000274-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "不敵競爭 三星退出陸家電市場",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000289-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "三星電子決退出中國家電市場　續銷售手機與晶片",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9486926"
+      }
+    ],
+    "Google": [
+      {
+        "title": "Google 奪6兆大單 TPU 晶片、伺服器出貨強勁 台積、聯發科等受惠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9486705"
+      },
+      {
+        "title": "Anthropic砸2,000億美元 採購Google自研晶片 台廠同步受惠",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000247-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "聯電": [
+      {
+        "title": "聯電大進擊 12項研發並進 股價衝上26年新高",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9486678"
+      }
+    ],
+    "輝達": [
+      {
+        "title": "布局CPO 輝達揪康寧蓋3座光纖廠",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000272-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "SpaceX": [
+      {
+        "title": "SpaceX擬斥550億美元 在德州建Terafab晶片廠",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000276-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "SpaceX 砸550億美元德州建廠  Terafab 計畫跨出關鍵一步",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9486689"
+      }
+    ],
+    "美國": [
+      {
+        "title": "美國總統川普下周即將出訪大陸 國務卿：川習會將談台灣議題",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9486725"
+      },
+      {
+        "title": "美國小非農就業優於預期 4月民間企業增聘10.9萬人 逾一年來最多",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9486586"
+      },
+      {
+        "title": "美4月小非農就業 優預期",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000269-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台積電共同營運長侯永清一句話引發想像空間 投資美國可能再加碼",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9486702"
+      },
+      {
+        "title": "媒體報導稱美國認為接近與伊朗達成協議 油價一度跌破100美元",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9486720"
+      }
+    ],
+    "中國": [
+      {
+        "title": "美國總統川普下周即將出訪大陸 國務卿：川習會將談台灣議題",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9486725"
+      },
+      {
+        "title": "經貿摩擦 在美陸企73%去年無新投資",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9486810"
+      },
+      {
+        "title": "美「301調查」展開馬拉松聽證 審議中、日、台等16國產能過剩",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000263-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "不敵競爭 三星退出陸家電市場",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000289-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "三星電子決退出中國家電市場　續銷售手機與晶片",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9486926"
+      },
+      {
+        "title": "G7貿易部長批稀土出口管制　劍指中國經濟脅迫",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9486870"
+      }
+    ],
+    "台灣": [
+      {
+        "title": "美國總統川普下周即將出訪大陸 國務卿：川習會將談台灣議題",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9486725"
+      },
+      {
+        "title": "看好台股…外資４月淨匯入8360億 創紀錄",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9486628"
+      },
+      {
+        "title": "外資淨匯入8,359億元 寫最強4月",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000248-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "李淳：台美關稅 料循談判結果",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000260-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美「301調查」展開馬拉松聽證 審議中、日、台等16國產能過剩",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000263-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "非美元穩定幣迎成長契機 外銀看好台灣2優勢",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000258-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "伊朗": [
+      {
+        "title": "美伊傳將達成終戰備忘錄　伊朗：正檢視美方新提案",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9486884"
+      },
+      {
+        "title": "媒體報導稱美國認為接近與伊朗達成協議 油價一度跌破100美元",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9486720"
+      },
+      {
+        "title": "川普：伊朗盼達成協議　美國將從德黑蘭取得濃縮鈾",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9486897"
+      },
+      {
+        "title": "伊朗評估美國終戰提案　國際油價大跌",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9486919"
+      },
+      {
+        "title": "美伊傳將達成「終戰備忘錄」　川普：美將取得伊朗濃縮鈾",
+        "source": "",
+        "url": "https://www.chinatimes.com/realtimenews/20260507000929-260408?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "日本": [
+      {
+        "title": "美「301調查」展開馬拉松聽證 審議中、日、台等16國產能過剩",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000263-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "日圓急升 市場疑官方干預",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000277-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "AI": [
+      {
+        "title": "金管會推動金融科技 規劃三大監理方向 建立「AI 管 AI」新架構",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9486677"
+      },
+      {
+        "title": "學者憂 AI賺的代價由傳產支付",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9486635"
+      },
+      {
+        "title": "金管會推動金融科技 規劃三大監理方向 建立「AI管AI」新架構",
+        "source": "",
+        "url": "https://udn.com/news/story/7239/9486677"
+      },
+      {
+        "title": "諾貝爾經濟學獎得主郝伊特專訪／AI 生產力高 但不可靠",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9486640"
+      },
+      {
+        "title": "AI伺服器、半導體業務成長強勁 聯強4月、前四月營收齊攀峰",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000309-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI 伺服器出貨潮全面啟動 物流業沾光 業績跟著旺",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9486670"
+      },
+      {
+        "title": "電力成競爭力 產官學齊探AI用電解方",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000552-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "伺服器": [
+      {
+        "title": "超微財報驚喜不斷 CEO 蘇姿丰看旺伺服器 CPU 後市 群聯、健策等將受惠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9486717"
+      },
+      {
+        "title": "Google 奪6兆大單 TPU 晶片、伺服器出貨強勁 台積、聯發科等受惠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9486705"
+      },
+      {
+        "title": "蘇姿丰：伺服器CPU成長爆發",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000244-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI伺服器、半導體業務成長強勁 聯強4月、前四月營收齊攀峰",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000309-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI 伺服器出貨潮全面啟動 物流業沾光 業績跟著旺",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9486670"
+      }
+    ],
+    "晶片": [
+      {
+        "title": "Google 奪6兆大單 TPU 晶片、伺服器出貨強勁 台積、聯發科等受惠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9486705"
+      },
+      {
+        "title": "超微強勁財報帶動晶片股　美股收紅標普那指創新高",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9486916"
+      },
+      {
+        "title": "Anthropic砸2,000億美元 採購Google自研晶片 台廠同步受惠",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000247-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "SpaceX擬斥550億美元 在德州建Terafab晶片廠",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000276-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "三星電子決退出中國家電市場　續銷售手機與晶片",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9486926"
+      },
+      {
+        "title": "SpaceX 砸550億美元德州建廠  Terafab 計畫跨出關鍵一步",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9486689"
+      }
+    ],
+    "半導體": [
+      {
+        "title": "AI伺服器、半導體業務成長強勁 聯強4月、前四月營收齊攀峰",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000309-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "CPU": [
+      {
+        "title": "超微財報驚喜不斷 CEO 蘇姿丰看旺伺服器 CPU 後市 群聯、健策等將受惠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9486717"
+      },
+      {
+        "title": "蘇姿丰：伺服器CPU成長爆發",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000244-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "外資": [
+      {
+        "title": "看好台股…外資４月淨匯入8360億 創紀錄",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9486628"
+      },
+      {
+        "title": "外資淨匯入8,359億元 寫最強4月",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000248-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台股": [
+      {
+        "title": "看好台股…外資４月淨匯入8360億 創紀錄",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9486628"
+      },
+      {
+        "title": "聯發科7日起5分鐘撮合一次　台股最大市值處置股",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9486874"
+      },
+      {
+        "title": "聯發科「關禁閉」 列處置股",
+        "source": "",
+        "url": "https://udn.com/news/story/7251/9486723"
+      }
+    ],
+    "外匯存底": [
+      {
+        "title": "外匯存底重回6,000億美元",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9486660"
+      },
+      {
+        "title": "4月外匯存底 重返6千億美元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000291-260205?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "關稅": [
+      {
+        "title": "李淳：台美關稅 料循談判結果",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000260-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "301調查": [
+      {
+        "title": "美「301調查」展開馬拉松聽證 審議中、日、台等16國產能過剩",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000263-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "金管會": [
+      {
+        "title": "金管會推動金融科技 規劃三大監理方向 建立「AI 管 AI」新架構",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9486677"
+      },
+      {
+        "title": "彭金隆談穩定幣上路 差兩步",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000255-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "金管會推動金融科技 規劃三大監理方向 建立「AI管AI」新架構",
+        "source": "",
+        "url": "https://udn.com/news/story/7239/9486677"
+      }
+    ],
+    "油價": [
+      {
+        "title": "媒體報導稱美國認為接近與伊朗達成協議 油價一度跌破100美元",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9486720"
+      },
+      {
+        "title": "推演中東戰事最糟糕劇本 油價干擾 全球貿易大幅趨緩",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9486588"
+      },
+      {
+        "title": "伊朗評估美國終戰提案　國際油價大跌",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9486919"
+      }
+    ],
+    "電力": [
+      {
+        "title": "電力成競爭力 產官學齊探AI用電解方",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000552-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "2026台灣能源高峰論壇》卓揆祭3方針 強化能源國安",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000195-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "核四": [
+      {
+        "title": "核四燃料棒爭議…台電釋疑",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000268-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "前台電董座：核四燃料棒可給核二三 省40億",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000548-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台電": [
+      {
+        "title": "核四燃料棒爭議…台電釋疑",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000268-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "前台電董座：核四燃料棒可給核二三 省40億",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000548-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "群聯": [
+      {
+        "title": "超微財報驚喜不斷 CEO 蘇姿丰看旺伺服器 CPU 後市 群聯、健策等將受惠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9486717"
+      }
+    ],
+    "健策": [
+      {
+        "title": "超微財報驚喜不斷 CEO 蘇姿丰看旺伺服器 CPU 後市 群聯、健策等將受惠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9486717"
+      }
+    ],
+    "力積電": [
+      {
+        "title": "力積電打入英特爾鏈",
+        "source": "",
+        "url": "https://udn.com/news/story/7253/9486295"
+      }
+    ],
+    "英特爾": [
+      {
+        "title": "力積電打入英特爾鏈",
+        "source": "",
+        "url": "https://udn.com/news/story/7253/9486295"
+      }
+    ],
+    "威剛": [
+      {
+        "title": "威剛喊買回4,000張庫藏股",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9486671"
+      },
+      {
+        "title": "威剛：記憶體缺貨到2027年 在手庫存突破400億元",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9486668"
+      }
+    ],
+    "Anthropic": [
+      {
+        "title": "Anthropic砸2,000億美元 採購Google自研晶片 台廠同步受惠",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000247-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "DeepSeek": [
+      {
+        "title": "大基金領投 DeepSeek估值看500億美元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000290-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "momo": [
+      {
+        "title": "momo 第1季每股賺2.43元",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9486648"
+      },
+      {
+        "title": "momo第1季每股賺2.43元",
+        "source": "",
+        "url": "https://udn.com/news/story/7252/9486648"
+      }
+    ],
+    "康寧": [
+      {
+        "title": "布局CPO 輝達揪康寧蓋3座光纖廠",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000272-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "穩定幣": [
+      {
+        "title": "彭金隆談穩定幣上路 差兩步",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000255-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "非美元穩定幣迎成長契機 外銀看好台灣2優勢",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000258-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "比特幣": [
+      {
+        "title": "囤幣大戶虧損扛不住了  Strategy 暗示出脫比特幣",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9486692"
+      }
+    ],
+    "航空貨運": [
+      {
+        "title": "美伊戰爭催動運輸鏈「海轉空」效應 航空貨運出現「疫情時期價格」",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9486666"
+      },
+      {
+        "title": "美伊戰爭催動運輸鏈「海轉空」 航空貨運出現「疫情時期價格」",
+        "source": "",
+        "url": "https://udn.com/news/story/7241/9486666"
+      }
+    ],
+    "G7": [
+      {
+        "title": "G7貿易部長批稀土出口管制　劍指中國經濟脅迫",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9486870"
+      }
+    ],
+    "稀土": [
+      {
+        "title": "G7貿易部長批稀土出口管制　劍指中國經濟脅迫",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9486870"
+      }
+    ],
+    "新台幣": [
+      {
+        "title": "學者看新台幣風險 緩升預期大於急漲",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000301-260205?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "日圓": [
+      {
+        "title": "日圓急升 市場疑官方干預",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260507000277-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "美國總統川普下周即將出訪大陸 國務卿：川習會將談台灣議題 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9486725",
+    "外匯存底重回6,000億美元 (經濟金融脈動)": "https://money.udn.com/money/story/5613/9486660",
+    "美伊傳將達成終戰備忘錄　伊朗：正檢視美方新提案 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9486884",
+    "美國小非農就業優於預期 4月民間企業增聘10.9萬人 逾一年來最多 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9486586",
+    "看好台股…外資４月淨匯入8360億 創紀錄 (聯合_產經_股市)": "https://udn.com/news/story/7238/9486628",
+    "經貿摩擦 在美陸企73%去年無新投資 (聯合_產經_股市)": "https://udn.com/news/story/6811/9486810",
+    "外資淨匯入8,359億元 寫最強4月 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260507000248-260202?utm_source=iii_news&utm_medium=rss",
+    "李淳：台美關稅 料循談判結果 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260507000260-260202?utm_source=iii_news&utm_medium=rss",
+    "美「301調查」展開馬拉松聽證 審議中、日、台等16國產能過剩 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260507000263-260202?utm_source=iii_news&utm_medium=rss",
+    "網紅不分大小 都要課稅 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260507000265-260202?utm_source=iii_news&utm_medium=rss",
+    "美4月小非農就業 優預期 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260507000269-260203?utm_source=iii_news&utm_medium=rss",
+    "日圓急升 市場疑官方干預 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260507000277-260203?utm_source=iii_news&utm_medium=rss",
+    "4月外匯存底 重返6千億美元 (工商金融稅務)": "https://www.chinatimes.com/newspapers/20260507000291-260205?utm_source=iii_news&utm_medium=rss",
+    "學者看新台幣風險 緩升預期大於急漲 (工商金融稅務)": "https://www.chinatimes.com/newspapers/20260507000301-260205?utm_source=iii_news&utm_medium=rss",
+    "台積電共同營運長侯永清一句話引發想像空間 投資美國可能再加碼 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9486702",
+    "超微財報驚喜不斷 CEO 蘇姿丰看旺伺服器 CPU 後市 群聯、健策等將受惠 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9486717",
+    "超微示警 PC、遊戲機 出貨不妙 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9486721",
+    "美超微績優 協力廠樂 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9486726",
+    "金管會推動金融科技 規劃三大監理方向 建立「AI 管 AI」新架構 (經濟金融脈動)": "https://money.udn.com/money/story/5613/9486677",
+    "Google 奪6兆大單 TPU 晶片、伺服器出貨強勁 台積、聯發科等受惠 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9486705",
+    "聯電大進擊 12項研發並進 股價衝上26年新高 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9486678",
+    "穎崴營收 寫歷年最佳4月 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9486683",
+    "青雲第1季 EPS 43.05元 季增37倍 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9486685",
+    "雙鴻第1季 EPS 12.61元 淡季飆高 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9486687",
+    "申讓公告引發誤解 南亞：未加碼調節南電股 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9486691",
+    "聯發科7日起5分鐘撮合一次　台股最大市值處置股 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9486874",
+    "momo 第1季每股賺2.43元 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9486648",
+    "三星市值飆上1兆美元 繼台積之後 亞洲第二家 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9486686",
+    "1分鐘看世界／克羅埃西亞無人自駕小黃上路 歐洲第一例 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9486699",
+    "超微強勁財報帶動晶片股　美股收紅標普那指創新高 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9486916",
+    "學者憂 AI賺的代價由傳產支付 (聯合_產經_股市)": "https://udn.com/news/story/7238/9486635",
+    "聯發科「關禁閉」 列處置股 (聯合_產經_股市)": "https://udn.com/news/story/7251/9486723",
+    "AIx璞玉論壇 18日登場 (聯合_產經_股市)": "https://udn.com/news/story/7253/9486374",
+    "力積電打入英特爾鏈 (聯合_產經_股市)": "https://udn.com/news/story/7253/9486295",
+    "威剛喊買回4,000張庫藏股 (聯合_產經_股市)": "https://udn.com/news/story/7240/9486671",
+    "威剛：記憶體缺貨到2027年 在手庫存突破400億元 (聯合_產經_股市)": "https://udn.com/news/story/7240/9486668",
+    "諾貝爾經濟學獎得主郝伊特專訪／AI 生產力高 但不可靠 (聯合_產經_股市)": "https://udn.com/news/story/7238/9486640",
+    "台積鬆口 美國布局再升級 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260507000241-260202?utm_source=iii_news&utm_medium=rss",
+    "蘇姿丰：伺服器CPU成長爆發 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260507000244-260202?utm_source=iii_news&utm_medium=rss",
+    "Anthropic砸2,000億美元 採購Google自研晶片 台廠同步受惠 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260507000247-260202?utm_source=iii_news&utm_medium=rss",
+    "彭金隆談穩定幣上路 差兩步 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260507000255-260202?utm_source=iii_news&utm_medium=rss",
+    "非美元穩定幣迎成長契機 外銀看好台灣2優勢 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260507000258-260202?utm_source=iii_news&utm_medium=rss",
+    "布局CPO 輝達揪康寧蓋3座光纖廠 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260507000272-260203?utm_source=iii_news&utm_medium=rss",
+    "三星市值 晉升1兆美元 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260507000274-260203?utm_source=iii_news&utm_medium=rss",
+    "SpaceX擬斥550億美元 在德州建Terafab晶片廠 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260507000276-260203?utm_source=iii_news&utm_medium=rss",
+    "AI電源供應器夯 陸系MCU接單旺 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260507000286-260203?utm_source=iii_news&utm_medium=rss",
+    "不敵競爭 三星退出陸家電市場 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260507000289-260203?utm_source=iii_news&utm_medium=rss",
+    "大基金領投 DeepSeek估值看500億美元 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260507000290-260203?utm_source=iii_news&utm_medium=rss",
+    "華擎Q1獲利 年、季雙增 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260507000303-260204?utm_source=iii_news&utm_medium=rss",
+    "宜鼎3月EPS 衝上28.1元 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260507000306-260204?utm_source=iii_news&utm_medium=rss",
+    "AI伺服器、半導體業務成長強勁 聯強4月、前四月營收齊攀峰 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260507000309-260204?utm_source=iii_news&utm_medium=rss",
+    "奇鋐、雙鴻 前四月業績年增暴衝 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260507000311-260204?utm_source=iii_news&utm_medium=rss",
+    "本業穩增 精誠寫最強Q1 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260507000313-260204?utm_source=iii_news&utm_medium=rss",
+    "松翰第一季EPS 0.48元 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260507000314-260204?utm_source=iii_news&utm_medium=rss",
+    "三星電子決退出中國家電市場　續銷售手機與晶片 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9486926",
+    "momo第1季每股賺2.43元 (聯合_產經_股市)": "https://udn.com/news/story/7252/9486648",
+    "禾伸堂第1季每股純益2.86元 (聯合_產經_股市)": "https://udn.com/news/story/7253/9486345",
+    "傳台積加碼美國 上看2500億美元 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260507000556-260110?utm_source=iii_news&utm_medium=rss",
+    "金管會推動金融科技 規劃三大監理方向 建立「AI管AI」新架構 (聯合_產經_股市)": "https://udn.com/news/story/7239/9486677",
+    "研華第2季營運將創高 (聯合_產經_股市)": "https://udn.com/news/story/7253/9486308",
+    "Lumentum 不夠力 光通訊股挫 (聯合_產經_股市)": "https://udn.com/news/story/7253/9486313",
+    "英業達4月合併營收月減3.2% 同期最佳 (聯合_產經_股市)": "https://udn.com/news/story/7253/9486340",
+    "SpaceX 砸550億美元德州建廠  Terafab 計畫跨出關鍵一步 (聯合_產經_股市)": "https://udn.com/news/story/6811/9486689",
+    "囤幣大戶虧損扛不住了  Strategy 暗示出脫比特幣 (聯合_產經_股市)": "https://udn.com/news/story/6811/9486692",
+    "護病比採月平均 工會轟掉包 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260507000535-260114?utm_source=iii_news&utm_medium=rss",
+    "美伊戰爭催動運輸鏈「海轉空」效應 航空貨運出現「疫情時期價格」 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9486666",
+    "AI 伺服器出貨潮全面啟動 物流業沾光 業績跟著旺 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9486670",
+    "開放外傭衝擊家事服務 勞動部砸近億補貼本勞 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260507000541-260114?utm_source=iii_news&utm_medium=rss",
+    "托盟籲修法 育兒減工時不減薪 延長至6歲 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260507000545-260114?utm_source=iii_news&utm_medium=rss",
+    "美伊戰爭催動運輸鏈「海轉空」 航空貨運出現「疫情時期價格」 (聯合_產經_股市)": "https://udn.com/news/story/7241/9486666",
+    "G7貿易部長批稀土出口管制　劍指中國經濟脅迫 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9486870",
+    "媒體報導稱美國認為接近與伊朗達成協議 油價一度跌破100美元 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9486720",
+    "推演中東戰事最糟糕劇本 油價干擾 全球貿易大幅趨緩 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9486588",
+    "大馬拉高電動車進口限制 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9486695",
+    "川普：伊朗盼達成協議　美國將從德黑蘭取得濃縮鈾 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9486897",
+    "2026台灣能源高峰論壇》卓揆祭3方針 強化能源國安 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260507000195-260202?utm_source=iii_news&utm_medium=rss",
+    "核四燃料棒爭議…台電釋疑 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260507000268-260202?utm_source=iii_news&utm_medium=rss",
+    "伊朗評估美國終戰提案　國際油價大跌 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9486919",
+    "前台電董座：核四燃料棒可給核二三 省40億 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260507000548-260110?utm_source=iii_news&utm_medium=rss",
+    "電力成競爭力 產官學齊探AI用電解方 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260507000552-260110?utm_source=iii_news&utm_medium=rss",
+    "卓稱加速強韌電網 二次能源轉型 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260507000554-260110?utm_source=iii_news&utm_medium=rss",
+    "美伊傳將達成「終戰備忘錄」　川普：美將取得伊朗濃縮鈾 (中時國際新聞)": "https://www.chinatimes.com/realtimenews/20260507000929-260408?utm_source=iii_news&utm_medium=rss"
+  }
+}
