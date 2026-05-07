@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>克勞德誌 | Claude CLI 紳士大賞 - 2026 珍藏版</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+TC:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #e60012;
+            --black: #050505;
+            --white: #ffffff;
+            --gray: #1a1a1a;
+            --accent: #ffd700;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            background-color: var(--black);
+            color: var(--white);
+            font-family: 'Noto Serif TC', serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* 雜誌封面與背景效果 */
+        .bg-text {
+            position: fixed;
+            font-size: 25vw;
+            font-weight: 900;
+            color: rgba(255, 255, 255, 0.03);
+            z-index: -1;
+            white-space: nowrap;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-15deg);
+            pointer-events: none;
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            padding: 10%;
+            background: linear-gradient(to top, var(--black), transparent), 
+                        url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2070') center/cover;
+            border-bottom: 15px solid var(--primary);
+        }
+
+        .mag-title {
+            font-family: 'Ma Shan Zheng', cursive;
+            font-size: 15vw;
+            margin: 0;
+            color: var(--primary);
+            line-height: 0.8;
+            filter: drop-shadow(10px 10px 0px var(--white));
+            animation: glitch 1s infinite alternate;
+        }
+
+        @keyframes glitch {
+            from { transform: skewX(0deg); }
+            to { transform: skewX(2deg); }
+        }
+
+        .mag-subtitle {
+            font-size: 2rem;
+            font-weight: 900;
+            background: var(--white);
+            color: var(--black);
+            padding: 5px 20px;
+            margin-top: 20px;
+            letter-spacing: 15px;
+        }
+
+        /* 主要佈局 */
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 100px 20px;
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 60px;
+        }
+
+        /* 文章樣式 */
+        .article {
+            margin-bottom: 120px;
+            position: relative;
+        }
+
+        .drop-cap::first-letter {
+            font-family: 'Ma Shan Zheng', cursive;
+            float: left;
+            font-size: 8rem;
+            line-height: 1;
+            padding: 10px;
+            margin-right: 15px;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .section-tag {
+            background: var(--primary);
+            color: var(--white);
+            display: inline-block;
+            padding: 5px 15px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        h2.headline {
+            font-family: 'Ma Shan Zheng', cursive;
+            font-size: 5rem;
+            color: var(--white);
+            margin: 10px 0 30px;
+            line-height: 1.1;
+            border-bottom: 5px solid var(--primary);
+            display: inline-block;
+        }
+
+        .content-text {
+            font-size: 1.4rem;
+            color: #ddd;
+            column-count: 2;
+            column-gap: 40px;
+            text-align: justify;
+        }
+
+        .code-display {
+            grid-column: 1 / -1;
+            background: #111;
+            padding: 30px;
+            border-left: 5px solid var(--accent);
+            margin: 40px 0;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.2rem;
+            color: var(--accent);
+            box-shadow: 10px 10px 0px var(--primary);
+        }
+
+        /* 側邊欄樣式 */
+        aside {
+            border-left: 1px solid #333;
+            padding-left: 40px;
+        }
+
+        .sidebar-item {
+            margin-bottom: 60px;
+        }
+
+        .sidebar-title {
+            font-family: 'Ma Shan Zheng', cursive;
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .top-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .top-list li {
+            padding: 15px 0;
+            border-bottom: 1px solid #222;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .rank-num {
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--primary);
+            margin-right: 20px;
+            font-style: italic;
+        }
+
+        /* 特別企劃：風林火山 */
+        .tactic-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .tactic-card {
+            background: var(--gray);
+            padding: 20px;
+            border: 1px solid #333;
+            transition: 0.3s;
+        }
+
+        .tactic-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-10px);
+        }
+
+        .tactic-name {
+            font-family: 'Ma Shan Zheng', cursive;
+            font-size: 2.5rem;
+            color: var(--accent);
+        }
+
+        /* 頁腳 */
+        footer {
+            background: var(--primary);
+            color: var(--black);
+            padding: 80px 20px;
+            text-align: center;
+            font-weight: 900;
+        }
+
+        .footer-logo {
+            font-family: 'Ma Shan Zheng', cursive;
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 1000px) {
+            .container { grid-template-columns: 1fr; }
+            .content-text { column-count: 1; }
+            aside { border-left: none; padding-left: 0; border-top: 1px solid #333; padding-top: 40px; }
+            .mag-title { font-size: 20vw; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-text">CLAUDE CODE</div>
+
+    <header>
+        <h1 class="mag-title">克勞德</h1>
+        <div class="mag-subtitle">貳零貳陸 · 肆月 · 創刊號</div>
+        <p style="font-size: 1.5rem; margin-top: 20px; letter-spacing: 5px;">機巧與靈魂的終極對話</p>
+    </header>
+
+    <div class="container">
+        <main>
+            <article class="article">
+                <div class="section-tag">封面故事 COVER STORY</div>
+                <h2 class="headline">雲端大閱兵：Ultrareview 震撼登場</h2>
+                <p class="content-text drop-cap">
+                    余嘗聞天下代碼，繁若星辰，亂如麻絲。然〈Ultrareview〉之出，如紅日昇於東海，群星隱匿。此非凡間之工具，乃集結雲端眾幕僚，於縹緲之間共審汝之筆墨。凡有邏輯之疏漏、性能之瓶頸，皆難逃其法眼。士子立於堂下，唯需一令，則萬千靈使奔馳而去，歸時已然改頭換面，精妙絕倫。
+                </p>
+                <div class="code-display">
+                    # 召喚雲端眾神進行審閱<br>
+                    claude ultrareview --target master
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="section-tag">特邀專欄 SPECIAL COLUMN</div>
+                <h2 class="headline">裸衣出戰：論 Bare Mode 之純粹</h2>
+                <p class="content-text">
+                    古之劍客，解衣磅礴，不為外物所累。〈Bare Mode〉亦然。去其繁瑣之鉤子（Hooks），忘其 LSP 之幻象，甚至連身分之證明（Keychain）亦可拋卻。於此模式下，克勞德回歸原始之靈氣，僅以 ANTHROPIC_API_KEY 為媒，於極簡之中求極致。此乃大象希聲，大巧若拙之境。
+                </p>
+                <div class="code-display">
+                    # 拋卻繁雜，直取本質<br>
+                    claude --bare
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="section-tag">技術美學 TECH AESTHETIC</div>
+                <h2 class="headline">僭越之禁：Dangerously Skip Permissions</h2>
+                <p class="content-text">
+                    權力，乃雙刃之劍。〈Dangerously Skip Permissions〉使汝跨越一切繁文縟節，無需點頭示意，直取乾坤。然君子當慎其獨，非萬不得已，不可輕啟此門。一旦啟動，如脫韁之野馬，若無深厚功力，恐反傷其身。
+                </p>
+                <div class="code-display">
+                    # 慎用！此乃禁忌之術<br>
+                    claude --dangerously-skip-permissions
+                </div>
+            </article>
+
+            <div class="section-tag">機略秘術 TACTICS</div>
+            <div class="tactic-grid">
+                <div class="tactic-card">
+                    <div class="tactic-name">其疾如風</div>
+                    <p>使用 <span style="color:var(--primary)">--print</span>。迅捷如雷，答完即退，不留半點殘影。</p>
+                </div>
+                <div class="tactic-card">
+                    <div class="tactic-name">其徐如林</div>
+                    <p>使用 <span style="color:var(--primary)">--continue</span>。延續前緣，如林之靜謐，步步為營。</p>
+                </div>
+                <div class="tactic-card">
+                    <div class="tactic-name">侵掠如火</div>
+                    <p>使用 <span style="color:var(--primary)">--effort max</span>。傾盡全力，如烈火燎原，焚盡一切 Bug。</p>
+                </div>
+                <div class="tactic-card">
+                    <div class="tactic-name">不動如山</div>
+                    <p>使用 <span style="color:var(--primary)">--no-persistence</span>。潔身自好，過往不存，唯留清白。</p>
+                </div>
+            </div>
+        </main>
+
+        <aside>
+            <div class="sidebar-item">
+                <div class="sidebar-title">醫官巡檢</div>
+                <p style="font-size: 0.9rem; color: #888;">〈Doctor〉診斷全系統經脈，若有阻塞，一呼即應。</p>
+                <div style="background:#222; padding:10px; font-family:monospace; font-size:0.8rem;">claude doctor</div>
+            </div>
+
+            <div class="sidebar-item">
+                <div class="sidebar-title">紳士必讀 TOP 5</div>
+                <ul class="top-list">
+                    <li><div class="rank-num">01</div><div><b>色目融入</b><br>Chrome 之影隨行</div></li>
+                    <li><div class="rank-num">02</div><div><b>幕僚群英</b><br>養士三千供策遣</div></li>
+                    <li><div class="rank-num">03</div><div><b>授印儀式</b><br>Token 獲取長生契</div></li>
+                    <li><div class="rank-num">04</div><div><b>一身化十</b><br>Tmux 坐鎮多重天</div></li>
+                    <li><div class="rank-num">05</div><div><b>萬物之靈</b><br>MCP 擴充無限界</div></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-item" style="background:var(--primary); padding:20px; color:var(--black);">
+                <div class="sidebar-title" style="color:var(--black); border-bottom-color:var(--black);">編輯部公告</div>
+                <p>「代碼無情，人有情。克勞德，與君共勉。」</p>
+                <p style="font-size:0.8rem;">— 總編：機巧散人</p>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-logo">克勞德</div>
+        <p>ANTHROPIC NEITHER SPONSORS NOR ENDORSES THIS GENTLEMAN'S MAGAZINE.</p>
+        <p>ALL RIGHTS RESERVED BY IMAGINATION. 2026</p>
+    </footer>
+
+</body>
+</html>
