@@ -1,0 +1,1458 @@
+{
+  "nodes": [
+    {
+      "id": "川普",
+      "group": "person",
+      "size": 25
+    },
+    {
+      "id": "習近平",
+      "group": "person",
+      "size": 22
+    },
+    {
+      "id": "彭淮南",
+      "group": "person",
+      "size": 18
+    },
+    {
+      "id": "黃仁勳",
+      "group": "person",
+      "size": 16
+    },
+    {
+      "id": "林佳龍",
+      "group": "person",
+      "size": 12
+    },
+    {
+      "id": "葉俊顯",
+      "group": "person",
+      "size": 11
+    },
+    {
+      "id": "張忠謀",
+      "group": "person",
+      "size": 13
+    },
+    {
+      "id": "台積電",
+      "group": "company",
+      "size": 25
+    },
+    {
+      "id": "鴻海",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "軟銀",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "輝達",
+      "group": "company",
+      "size": 20
+    },
+    {
+      "id": "英特爾",
+      "group": "company",
+      "size": 17
+    },
+    {
+      "id": "聯發科",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "群創",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "中芯國際",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "立訊精密",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "任天堂",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "Alphabet",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "亞馬遜",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "Cerebras",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "台灣",
+      "group": "country",
+      "size": 22
+    },
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 22
+    },
+    {
+      "id": "中國",
+      "group": "country",
+      "size": 20
+    },
+    {
+      "id": "伊朗",
+      "group": "country",
+      "size": 18
+    },
+    {
+      "id": "南韓",
+      "group": "country",
+      "size": 14
+    },
+    {
+      "id": "法國",
+      "group": "country",
+      "size": 9
+    },
+    {
+      "id": "日本",
+      "group": "country",
+      "size": 10
+    },
+    {
+      "id": "AI",
+      "group": "tech",
+      "size": 25
+    },
+    {
+      "id": "CoWoS先進封裝",
+      "group": "tech",
+      "size": 18
+    },
+    {
+      "id": "Micro LED",
+      "group": "tech",
+      "size": 11
+    },
+    {
+      "id": "微控制器",
+      "group": "tech",
+      "size": 9
+    },
+    {
+      "id": "人形機器人",
+      "group": "tech",
+      "size": 11
+    },
+    {
+      "id": "2奈米製程",
+      "group": "tech",
+      "size": 13
+    },
+    {
+      "id": "MLCC",
+      "group": "tech",
+      "size": 9
+    },
+    {
+      "id": "高盛",
+      "group": "org",
+      "size": 13
+    },
+    {
+      "id": "Fed",
+      "group": "org",
+      "size": 12
+    },
+    {
+      "id": "央行",
+      "group": "org",
+      "size": 14
+    },
+    {
+      "id": "國發會",
+      "group": "org",
+      "size": 10
+    },
+    {
+      "id": "大摩",
+      "group": "org",
+      "size": 9
+    },
+    {
+      "id": "PIMCO",
+      "group": "org",
+      "size": 9
+    },
+    {
+      "id": "升息壓力",
+      "group": "finance",
+      "size": 14
+    },
+    {
+      "id": "台幣匯率",
+      "group": "finance",
+      "size": 15
+    },
+    {
+      "id": "人民幣",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "油價",
+      "group": "finance",
+      "size": 14
+    },
+    {
+      "id": "貿易談判",
+      "group": "finance",
+      "size": 14
+    },
+    {
+      "id": "IPO",
+      "group": "finance",
+      "size": 9
+    },
+    {
+      "id": "南科",
+      "group": "org",
+      "size": 10
+    }
+  ],
+  "links": [
+    {
+      "source": "川普",
+      "target": "習近平",
+      "value": 5,
+      "label": "川習會談判"
+    },
+    {
+      "source": "川普",
+      "target": "伊朗",
+      "value": 5,
+      "label": "和談僵局"
+    },
+    {
+      "source": "川普",
+      "target": "台灣",
+      "value": 4,
+      "label": "政策影響"
+    },
+    {
+      "source": "川普",
+      "target": "貿易談判",
+      "value": 4,
+      "label": "主導談判"
+    },
+    {
+      "source": "習近平",
+      "target": "中國",
+      "value": 5,
+      "label": "國家領導"
+    },
+    {
+      "source": "習近平",
+      "target": "貿易談判",
+      "value": 4,
+      "label": "參與談判"
+    },
+    {
+      "source": "川普",
+      "target": "美國",
+      "value": 5,
+      "label": "國家領導"
+    },
+    {
+      "source": "美國",
+      "target": "伊朗",
+      "value": 5,
+      "label": "外交衝突"
+    },
+    {
+      "source": "美國",
+      "target": "中國",
+      "value": 5,
+      "label": "地緣博弈"
+    },
+    {
+      "source": "美國",
+      "target": "台灣",
+      "value": 4,
+      "label": "政策關聯"
+    },
+    {
+      "source": "中國",
+      "target": "伊朗",
+      "value": 3,
+      "label": "石油貿易"
+    },
+    {
+      "source": "中國",
+      "target": "歐洲",
+      "value": 2,
+      "label": "外交拉攏"
+    },
+    {
+      "source": "伊朗",
+      "target": "油價",
+      "value": 4,
+      "label": "地緣衝突影響"
+    },
+    {
+      "source": "高盛",
+      "target": "升息壓力",
+      "value": 4,
+      "label": "分析預測"
+    },
+    {
+      "source": "高盛",
+      "target": "台灣",
+      "value": 3,
+      "label": "市場評估"
+    },
+    {
+      "source": "高盛",
+      "target": "南韓",
+      "value": 3,
+      "label": "市場評估"
+    },
+    {
+      "source": "升息壓力",
+      "target": "台幣匯率",
+      "value": 4,
+      "label": "貨幣政策"
+    },
+    {
+      "source": "央行",
+      "target": "台幣匯率",
+      "value": 5,
+      "label": "貨幣管控"
+    },
+    {
+      "source": "央行",
+      "target": "升息壓力",
+      "value": 4,
+      "label": "政策調整"
+    },
+    {
+      "source": "彭淮南",
+      "target": "台幣匯率",
+      "value": 5,
+      "label": "政策主導"
+    },
+    {
+      "source": "彭淮南",
+      "target": "央行",
+      "value": 5,
+      "label": "前任首長"
+    },
+    {
+      "source": "彭淮南",
+      "target": "張忠謀",
+      "value": 3,
+      "label": "匯率交火"
+    },
+    {
+      "source": "張忠謀",
+      "target": "台積電",
+      "value": 4,
+      "label": "創辦人"
+    },
+    {
+      "source": "葉俊顯",
+      "target": "國發會",
+      "value": 4,
+      "label": "機構首長"
+    },
+    {
+      "source": "葉俊顯",
+      "target": "台積電",
+      "value": 3,
+      "label": "政策關注"
+    },
+    {
+      "source": "台積電",
+      "target": "CoWoS先進封裝",
+      "value": 5,
+      "label": "核心技術"
+    },
+    {
+      "source": "台積電",
+      "target": "2奈米製程",
+      "value": 5,
+      "label": "技術研發"
+    },
+    {
+      "source": "台積電",
+      "target": "南科",
+      "value": 4,
+      "label": "廠區建設"
+    },
+    {
+      "source": "台積電",
+      "target": "美國",
+      "value": 4,
+      "label": "海外設廠"
+    },
+    {
+      "source": "台積電",
+      "target": "AI",
+      "value": 4,
+      "label": "晶片供應"
+    },
+    {
+      "source": "英特爾",
+      "target": "CoWoS先進封裝",
+      "value": 4,
+      "label": "搶佔訂單"
+    },
+    {
+      "source": "英特爾",
+      "target": "輝達",
+      "value": 3,
+      "label": "策略合作"
+    },
+    {
+      "source": "英特爾",
+      "target": "台積電",
+      "value": 4,
+      "label": "封裝競合"
+    },
+    {
+      "source": "輝達",
+      "target": "AI",
+      "value": 5,
+      "label": "核心產品"
+    },
+    {
+      "source": "輝達",
+      "target": "黃仁勳",
+      "value": 5,
+      "label": "企業領導"
+    },
+    {
+      "source": "黃仁勳",
+      "target": "AI",
+      "value": 4,
+      "label": "倡導應用"
+    },
+    {
+      "source": "聯發科",
+      "target": "AI",
+      "value": 4,
+      "label": "ASIC布局"
+    },
+    {
+      "source": "聯發科",
+      "target": "CoWoS先進封裝",
+      "value": 3,
+      "label": "封裝技術"
+    },
+    {
+      "source": "軟銀",
+      "target": "AI",
+      "value": 5,
+      "label": "AI基建投資"
+    },
+    {
+      "source": "軟銀",
+      "target": "鴻海",
+      "value": 4,
+      "label": "策略合作"
+    },
+    {
+      "source": "軟銀",
+      "target": "法國",
+      "value": 3,
+      "label": "AI投資"
+    },
+    {
+      "source": "軟銀",
+      "target": "日本",
+      "value": 3,
+      "label": "電池製造"
+    },
+    {
+      "source": "軟銀",
+      "target": "美國",
+      "value": 3,
+      "label": "商機佈局"
+    },
+    {
+      "source": "鴻海",
+      "target": "日本",
+      "value": 3,
+      "label": "海外布局"
+    },
+    {
+      "source": "鴻海",
+      "target": "美國",
+      "value": 3,
+      "label": "商機佈局"
+    },
+    {
+      "source": "Alphabet",
+      "target": "AI",
+      "value": 4,
+      "label": "AI基建"
+    },
+    {
+      "source": "亞馬遜",
+      "target": "AI",
+      "value": 4,
+      "label": "AI基建"
+    },
+    {
+      "source": "Alphabet",
+      "target": "亞馬遜",
+      "value": 3,
+      "label": "同步發債"
+    },
+    {
+      "source": "Cerebras",
+      "target": "AI",
+      "value": 3,
+      "label": "AI晶片新創"
+    },
+    {
+      "source": "Cerebras",
+      "target": "IPO",
+      "value": 3,
+      "label": "上市募資"
+    },
+    {
+      "source": "中芯國際",
+      "target": "中國",
+      "value": 4,
+      "label": "本土半導體"
+    },
+    {
+      "source": "立訊精密",
+      "target": "中國",
+      "value": 3,
+      "label": "中國企業"
+    },
+    {
+      "source": "任天堂",
+      "target": "鴻海",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "Fed",
+      "target": "升息壓力",
+      "value": 4,
+      "label": "貨幣政策"
+    },
+    {
+      "source": "PIMCO",
+      "target": "Fed",
+      "value": 3,
+      "label": "政策示警"
+    },
+    {
+      "source": "大摩",
+      "target": "人形機器人",
+      "value": 3,
+      "label": "產業分析"
+    },
+    {
+      "source": "人民幣",
+      "target": "中國",
+      "value": 4,
+      "label": "貨幣升值"
+    },
+    {
+      "source": "人民幣",
+      "target": "貿易談判",
+      "value": 3,
+      "label": "匯率連動"
+    },
+    {
+      "source": "油價",
+      "target": "美國",
+      "value": 3,
+      "label": "市場影響"
+    },
+    {
+      "source": "南韓",
+      "target": "升息壓力",
+      "value": 3,
+      "label": "貨幣政策"
+    },
+    {
+      "source": "台灣",
+      "target": "台幣匯率",
+      "value": 4,
+      "label": "匯率走勢"
+    },
+    {
+      "source": "台灣",
+      "target": "AI",
+      "value": 4,
+      "label": "產業受惠"
+    },
+    {
+      "source": "林佳龍",
+      "target": "貿易談判",
+      "value": 3,
+      "label": "政策回應"
+    },
+    {
+      "source": "Micro LED",
+      "target": "AI",
+      "value": 2,
+      "label": "科技應用"
+    },
+    {
+      "source": "MLCC",
+      "target": "中國",
+      "value": 2,
+      "label": "國產替代"
+    },
+    {
+      "source": "群創",
+      "target": "台灣",
+      "value": 3,
+      "label": "本土企業"
+    },
+    {
+      "source": "南科",
+      "target": "台灣",
+      "value": 3,
+      "label": "科學園區"
+    }
+  ],
+  "newsDatabase": {
+    "川普": [
+      {
+        "title": "「川習會」時間敲定 川普訪陸二天一夜變三天兩夜",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9496266"
+      },
+      {
+        "title": "美伊戰爭陷僵局 川普難強勢面對習近平",
+        "source": "",
+        "url": "https://udn.com/news/story/124870/9496274"
+      },
+      {
+        "title": "川習博弈 林佳龍：我方關心但不過度擔心",
+        "source": "",
+        "url": "https://udn.com/news/story/124870/9496354"
+      },
+      {
+        "title": "川習會14日登場 美不希望因台灣議題拖慢談判",
+        "source": "",
+        "url": "https://udn.com/news/story/124870/9496356"
+      },
+      {
+        "title": "和談卡關 伊朗堅持索賠 川普拒讓步",
+        "source": "",
+        "url": "https://udn.com/news/story/124061/9496223"
+      },
+      {
+        "title": "川普駁回伊朗要求　稱停火脆弱「依靠維生系統」撐著",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9496426"
+      },
+      {
+        "title": "川普稱美國與伊朗停火岌岌可危　國際油價揚升",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9496448"
+      }
+    ],
+    "習近平": [
+      {
+        "title": "「川習會」時間敲定 川普訪陸二天一夜變三天兩夜",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9496266"
+      },
+      {
+        "title": "美伊戰爭陷僵局 川普難強勢面對習近平",
+        "source": "",
+        "url": "https://udn.com/news/story/124870/9496274"
+      },
+      {
+        "title": "川習博弈 林佳龍：我方關心但不過度擔心",
+        "source": "",
+        "url": "https://udn.com/news/story/124870/9496354"
+      },
+      {
+        "title": "川習會14日登場 美不希望因台灣議題拖慢談判",
+        "source": "",
+        "url": "https://udn.com/news/story/124870/9496356"
+      },
+      {
+        "title": "陸學者談川習會：台灣問題絕不讓步",
+        "source": "",
+        "url": "https://udn.com/news/story/124870/9496358"
+      },
+      {
+        "title": "習川會將登場》滬指創11年高 人民幣升",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000153-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "彭淮南": [
+      {
+        "title": "維持紀律…彭淮南：勇敢打炒匯 不能怕",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9496378"
+      },
+      {
+        "title": "匯率升貶 彭與張忠謀5年交火",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9496383"
+      }
+    ],
+    "黃仁勳": [
+      {
+        "title": "輝達 CEO 黃仁勳勉勵卡內基美隆大學畢業生：善用 AI 不怕被取代",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9496201"
+      }
+    ],
+    "林佳龍": [
+      {
+        "title": "川習博弈 林佳龍：我方關心但不過度擔心",
+        "source": "",
+        "url": "https://udn.com/news/story/124870/9496354"
+      }
+    ],
+    "葉俊顯": [
+      {
+        "title": "國發會主委葉俊顯：台積電美國廠進度超預期",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000168-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "張忠謀": [
+      {
+        "title": "匯率升貶 彭與張忠謀5年交火",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9496383"
+      }
+    ],
+    "台積電": [
+      {
+        "title": "台積電產能塞爆 甜蜜的負擔",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9496263"
+      },
+      {
+        "title": "南科整地 迎台積2奈米廠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9496192"
+      },
+      {
+        "title": "台積電 CoWoS 供不應求 英特爾再傳分食先進封裝訂單",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9496256"
+      },
+      {
+        "title": "台積CoWoS吃緊！英特爾、三星 趁機分杯羹",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000220-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "國發會主委葉俊顯：台積電美國廠進度超預期",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000168-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "鴻海": [
+      {
+        "title": "軟銀為 AI 蓄電 堺工廠導入電池製造 助攻鴻海日本布局",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9496259"
+      },
+      {
+        "title": "軟銀、鴻海複製經驗 搶美國商機",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9496265"
+      },
+      {
+        "title": "任天堂下修財測、銷售 鴻準、偉詮電、旺宏等台鏈壓力大",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9496287"
+      }
+    ],
+    "軟銀": [
+      {
+        "title": "軟銀為 AI 蓄電 堺工廠導入電池製造 助攻鴻海日本布局",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9496259"
+      },
+      {
+        "title": "軟銀、鴻海複製經驗 搶美國商機",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9496265"
+      },
+      {
+        "title": "軟銀擬投資法國 AI 基建",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9496237"
+      },
+      {
+        "title": "AI基建需求大 軟銀攜韓廠攻電池",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000225-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "輝達": [
+      {
+        "title": "輝達 CEO 黃仁勳勉勵卡內基美隆大學畢業生：善用 AI 不怕被取代",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9496201"
+      },
+      {
+        "title": "英特爾攜手輝達 概念股樂",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000139-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI 太燒錢 科技雙雄搶發非美元債 善用不同幣別取得低成本資金",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9496197"
+      }
+    ],
+    "英特爾": [
+      {
+        "title": "英特爾攜手輝達 概念股樂",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000139-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台積電 CoWoS 供不應求 英特爾再傳分食先進封裝訂單",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9496256"
+      },
+      {
+        "title": "台積CoWoS吃緊！英特爾、三星 趁機分杯羹",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000220-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "聯發科": [
+      {
+        "title": "加速AI ASIC布局 聯發科EMIB、CoWoS封裝並進",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000163-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "群創": [
+      {
+        "title": "群創上季轉盈繳出「三率三升」佳績 每股賺0.2元",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9496261"
+      },
+      {
+        "title": "獲利速報》群創首季EPS0.2元 全年獲利可期 新普首季EPS6.83元 估Q2優於Q1",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1754461"
+      }
+    ],
+    "中芯國際": [
+      {
+        "title": "中芯國際買回中芯北方股權",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000239-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "立訊精密": [
+      {
+        "title": "立訊精密 擬收購京西國際",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000240-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "任天堂": [
+      {
+        "title": "任天堂下修財測、銷售 鴻準、偉詮電、旺宏等台鏈壓力大",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9496287"
+      },
+      {
+        "title": "掌機漲價潮 衝擊買氣",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9496288"
+      }
+    ],
+    "Alphabet": [
+      {
+        "title": "Alphabet、亞馬遜 狂發債",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000223-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI 太燒錢 科技雙雄搶發非美元債 善用不同幣別取得低成本資金",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9496197"
+      }
+    ],
+    "亞馬遜": [
+      {
+        "title": "Alphabet、亞馬遜 狂發債",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000223-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI 太燒錢 科技雙雄搶發非美元債 善用不同幣別取得低成本資金",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9496197"
+      }
+    ],
+    "Cerebras": [
+      {
+        "title": "AI晶片新創Cerebras 將大幅上調IPO定價",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000227-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台灣": [
+      {
+        "title": "高盛：台韓有升息壓力",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9496234"
+      },
+      {
+        "title": "川習會14日登場 美不希望因台灣議題拖慢談判",
+        "source": "",
+        "url": "https://udn.com/news/story/124870/9496356"
+      },
+      {
+        "title": "陸學者談川習會：台灣問題絕不讓步",
+        "source": "",
+        "url": "https://udn.com/news/story/124870/9496358"
+      },
+      {
+        "title": "台幣重回升值走勢 拚返31.3元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000180-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台灣機械受惠AI、半導體產業持續暢旺 出口連15個月正成長",
+        "source": "",
+        "url": "https://udn.com/news/story/7241/9496280"
+      },
+      {
+        "title": "「台灣模式」在美設聚落 鎖定3地點",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000539-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "美國": [
+      {
+        "title": "美想掌控拉美 北京拉攏歐洲",
+        "source": "",
+        "url": "https://udn.com/news/story/124870/9496286"
+      },
+      {
+        "title": "談判生變！美國不接受伊朗方案 市場避險情緒升溫",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9496262"
+      },
+      {
+        "title": "川習會14日登場 美不希望因台灣議題拖慢談判",
+        "source": "",
+        "url": "https://udn.com/news/story/124870/9496356"
+      },
+      {
+        "title": "軟銀、鴻海複製經驗 搶美國商機",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9496265"
+      },
+      {
+        "title": "協助伊朗石油銷運中國　美制裁3名個人與9家企業",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9496453"
+      },
+      {
+        "title": "「台灣模式」在美設聚落 鎖定3地點",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000539-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中國": [
+      {
+        "title": "「川習會」時間敲定 川普訪陸二天一夜變三天兩夜",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9496266"
+      },
+      {
+        "title": "美想掌控拉美 北京拉攏歐洲",
+        "source": "",
+        "url": "https://udn.com/news/story/124870/9496286"
+      },
+      {
+        "title": "陸4月CPI年增1.2％ 超預期",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000229-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "習川會將登場》滬指創11年高 人民幣升",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000153-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "協助伊朗石油銷運中國　美制裁3名個人與9家企業",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9496453"
+      },
+      {
+        "title": "大摩：陸人形機器人吸引全球46％風投資金",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000236-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "MLCC唱旺 陸國產替代現商機",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000233-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "煉油民企虧損加劇 盼陸發改委允許減產",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000232-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "伊朗": [
+      {
+        "title": "談判生變！美國不接受伊朗方案 市場避險情緒升溫",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9496262"
+      },
+      {
+        "title": "美伊戰爭陷僵局 川普難強勢面對習近平",
+        "source": "",
+        "url": "https://udn.com/news/story/124870/9496274"
+      },
+      {
+        "title": "和談卡關 伊朗堅持索賠 川普拒讓步",
+        "source": "",
+        "url": "https://udn.com/news/story/124061/9496223"
+      },
+      {
+        "title": "川普駁回伊朗要求　稱停火脆弱「依靠維生系統」撐著",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9496426"
+      },
+      {
+        "title": "協助伊朗石油銷運中國　美制裁3名個人與9家企業",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9496453"
+      },
+      {
+        "title": "川普稱美國與伊朗停火岌岌可危　國際油價揚升",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9496448"
+      },
+      {
+        "title": "美伊和談又崩了…油價漲勢再起",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000217-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "南韓": [
+      {
+        "title": "高盛：台韓有升息壓力",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9496234"
+      },
+      {
+        "title": "高盛：經常帳盈餘新高 台韓今年必須升息",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000142-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "南韓股市創高 後市還有戲 樂觀情境上看萬點",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9496239"
+      },
+      {
+        "title": "AI基建需求大 軟銀攜韓廠攻電池",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000225-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "法國": [
+      {
+        "title": "軟銀擬投資法國 AI 基建",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9496237"
+      }
+    ],
+    "日本": [
+      {
+        "title": "軟銀為 AI 蓄電 堺工廠導入電池製造 助攻鴻海日本布局",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9496259"
+      },
+      {
+        "title": "是方攜手北海道石狩再生能源資料中心 打造亞洲AI算力走廊",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000258-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "AI": [
+      {
+        "title": "台積電產能塞爆 甜蜜的負擔",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9496263"
+      },
+      {
+        "title": "軟銀為 AI 蓄電 堺工廠導入電池製造 助攻鴻海日本布局",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9496259"
+      },
+      {
+        "title": "軟銀擬投資法國 AI 基建",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9496237"
+      },
+      {
+        "title": "AI 太燒錢 科技雙雄搶發非美元債 善用不同幣別取得低成本資金",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9496197"
+      },
+      {
+        "title": "輝達 CEO 黃仁勳勉勵卡內基美隆大學畢業生：善用 AI 不怕被取代",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9496201"
+      },
+      {
+        "title": "企業設置人工智慧長",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9496206"
+      },
+      {
+        "title": "台灣機械受惠AI、半導體產業持續暢旺 出口連15個月正成長",
+        "source": "",
+        "url": "https://udn.com/news/story/7241/9496280"
+      },
+      {
+        "title": "加速AI ASIC布局 聯發科EMIB、CoWoS封裝並進",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000163-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI基建需求大 軟銀攜韓廠攻電池",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000225-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI晶片新創Cerebras 將大幅上調IPO定價",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000227-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI應用給力 麗臺營運穩成長",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000257-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "是方攜手北海道石狩再生能源資料中心 打造亞洲AI算力走廊",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000258-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "達航大啖AI商機 獲利動能強勁",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000444-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "CoWoS先進封裝": [
+      {
+        "title": "台積電 CoWoS 供不應求 英特爾再傳分食先進封裝訂單",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9496256"
+      },
+      {
+        "title": "台積CoWoS吃緊！英特爾、三星 趁機分杯羹",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000220-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "加速AI ASIC布局 聯發科EMIB、CoWoS封裝並進",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000163-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Micro LED": [
+      {
+        "title": "Micro LED CPO模組 2030產值上看8.48億美元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000166-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "2030年全 球Micro LED CPO模組產值衝266億",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1754457"
+      }
+    ],
+    "微控制器": [
+      {
+        "title": "微控制器 下一個焦點",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9496186"
+      }
+    ],
+    "人形機器人": [
+      {
+        "title": "大摩：陸人形機器人吸引全球46％風投資金",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000236-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "2奈米製程": [
+      {
+        "title": "南科整地 迎台積2奈米廠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9496192"
+      }
+    ],
+    "MLCC": [
+      {
+        "title": "MLCC唱旺 陸國產替代現商機",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000233-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "高盛": [
+      {
+        "title": "高盛：台韓有升息壓力",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9496234"
+      },
+      {
+        "title": "高盛：經常帳盈餘新高 台韓今年必須升息",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000142-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Fed": [
+      {
+        "title": "華許接任Fed主席在即…PIMCO示警 現在降息恐適得其反",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000214-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "央行": [
+      {
+        "title": "央行︰視物價數據調整貨幣政策",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1754499"
+      },
+      {
+        "title": "高盛：經常帳盈餘新高 台韓今年必須升息",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000142-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "國發會": [
+      {
+        "title": "國發會主委葉俊顯：台積電美國廠進度超預期",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000168-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "亞資中心快周歲 7月秀成果",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000169-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "大摩": [
+      {
+        "title": "大摩：陸人形機器人吸引全球46％風投資金",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000236-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "PIMCO": [
+      {
+        "title": "華許接任Fed主席在即…PIMCO示警 現在降息恐適得其反",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000214-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "升息壓力": [
+      {
+        "title": "高盛：台韓有升息壓力",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9496234"
+      },
+      {
+        "title": "高盛：經常帳盈餘新高 台韓今年必須升息",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000142-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "央行︰視物價數據調整貨幣政策",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1754499"
+      }
+    ],
+    "台幣匯率": [
+      {
+        "title": "維持紀律…彭淮南：勇敢打炒匯 不能怕",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9496378"
+      },
+      {
+        "title": "匯率升貶 彭與張忠謀5年交火",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9496383"
+      },
+      {
+        "title": "台幣重回升值走勢 拚返31.3元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000180-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "人民幣": [
+      {
+        "title": "習川會將登場》滬指創11年高 人民幣升",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000153-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "油價": [
+      {
+        "title": "川普稱美國與伊朗停火岌岌可危　國際油價揚升",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9496448"
+      },
+      {
+        "title": "美伊和談又崩了…油價漲勢再起",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000217-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "布局Q4油氣 中油董：最緊張時刻已過",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1754496"
+      }
+    ],
+    "貿易談判": [
+      {
+        "title": "「川習會」時間敲定 川普訪陸二天一夜變三天兩夜",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9496266"
+      },
+      {
+        "title": "川習會14日登場 美不希望因台灣議題拖慢談判",
+        "source": "",
+        "url": "https://udn.com/news/story/124870/9496356"
+      },
+      {
+        "title": "和談卡關 伊朗堅持索賠 川普拒讓步",
+        "source": "",
+        "url": "https://udn.com/news/story/124061/9496223"
+      },
+      {
+        "title": "談判生變！美國不接受伊朗方案 市場避險情緒升溫",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9496262"
+      }
+    ],
+    "IPO": [
+      {
+        "title": "AI晶片新創Cerebras 將大幅上調IPO定價",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260512000227-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "南科": [
+      {
+        "title": "南科整地 迎台積2奈米廠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9496192"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "高盛：台韓有升息壓力 (經濟金融脈動)": "https://money.udn.com/money/story/5613/9496234",
+    "談判生變！美國不接受伊朗方案 市場避險情緒升溫 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9496262",
+    "「川習會」時間敲定 川普訪陸二天一夜變三天兩夜 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9496266",
+    "維持紀律…彭淮南：勇敢打炒匯 不能怕 (聯合_產經_股市)": "https://udn.com/news/story/7238/9496378",
+    "匯率升貶 彭與張忠謀5年交火 (聯合_產經_股市)": "https://udn.com/news/story/7238/9496383",
+    "美想掌控拉美 北京拉攏歐洲 (聯合_產經_股市)": "https://udn.com/news/story/124870/9496286",
+    "美伊戰爭陷僵局 川普難強勢面對習近平 (聯合_產經_股市)": "https://udn.com/news/story/124870/9496274",
+    "川習博弈 林佳龍：我方關心但不過度擔心 (聯合_產經_股市)": "https://udn.com/news/story/124870/9496354",
+    "川習會14日登場 美不希望因台灣議題拖慢談判 (聯合_產經_股市)": "https://udn.com/news/story/124870/9496356",
+    "和談卡關 伊朗堅持索賠 川普拒讓步 (聯合_產經_股市)": "https://udn.com/news/story/124061/9496223",
+    "陸學者談川習會：台灣問題絕不讓步 (聯合_產經_股市)": "https://udn.com/news/story/124870/9496358",
+    "高盛：經常帳盈餘新高 台韓今年必須升息 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260512000142-260202?utm_source=iii_news&utm_medium=rss",
+    "習川會將登場》滬指創11年高 人民幣升 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260512000153-260202?utm_source=iii_news&utm_medium=rss",
+    "台幣重回升值走勢 拚返31.3元 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260512000180-260202?utm_source=iii_news&utm_medium=rss",
+    "華許接任Fed主席在即…PIMCO示警 現在降息恐適得其反 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260512000214-260203?utm_source=iii_news&utm_medium=rss",
+    "陸4月CPI年增1.2％ 超預期 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260512000229-260203?utm_source=iii_news&utm_medium=rss",
+    "央行︰視物價數據調整貨幣政策 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1754499",
+    "任天堂下修財測、銷售 鴻準、偉詮電、旺宏等台鏈壓力大 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9496287",
+    "掌機漲價潮 衝擊買氣 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9496288",
+    "台積電產能塞爆 甜蜜的負擔 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9496263",
+    "軟銀為 AI 蓄電 堺工廠導入電池製造 助攻鴻海日本布局 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9496259",
+    "軟銀、鴻海複製經驗 搶美國商機 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9496265",
+    "群創上季轉盈繳出「三率三升」佳績 每股賺0.2元 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9496261",
+    "南科整地 迎台積2奈米廠 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9496192",
+    "微控制器 下一個焦點 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9496186",
+    "台玻首季轉盈 啟動接班 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9496193",
+    "台積電 CoWoS 供不應求 英特爾再傳分食先進封裝訂單 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9496256",
+    "軟銀擬投資法國 AI 基建 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9496237",
+    "AI 太燒錢 科技雙雄搶發非美元債 善用不同幣別取得低成本資金 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9496197",
+    "輝達 CEO 黃仁勳勉勵卡內基美隆大學畢業生：善用 AI 不怕被取代 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9496201",
+    "企業設置人工智慧長 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9496206",
+    "南韓股市創高 後市還有戲 樂觀情境上看萬點 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9496239",
+    "台灣機械受惠AI、半導體產業持續暢旺 出口連15個月正成長 (聯合_產經_股市)": "https://udn.com/news/story/7241/9496280",
+    "英特爾攜手輝達 概念股樂 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260512000139-260202?utm_source=iii_news&utm_medium=rss",
+    "漲價、迎轉單 功率元件廠雙喜臨門 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260512000159-260202?utm_source=iii_news&utm_medium=rss",
+    "合晶8吋晶圓吃緊、SOI成新動能 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260512000162-260202?utm_source=iii_news&utm_medium=rss",
+    "加速AI ASIC布局 聯發科EMIB、CoWoS封裝並進 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260512000163-260202?utm_source=iii_news&utm_medium=rss",
+    "Micro LED CPO模組 2030產值上看8.48億美元 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260512000166-260202?utm_source=iii_news&utm_medium=rss",
+    "國發會主委葉俊顯：台積電美國廠進度超預期 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260512000168-260202?utm_source=iii_news&utm_medium=rss",
+    "亞資中心快周歲 7月秀成果 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260512000169-260202?utm_source=iii_news&utm_medium=rss",
+    "虛擬資產立法 法制局提6建議 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260512000173-260202?utm_source=iii_news&utm_medium=rss",
+    "台積CoWoS吃緊！英特爾、三星 趁機分杯羹 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260512000220-260203?utm_source=iii_news&utm_medium=rss",
+    "Alphabet、亞馬遜 狂發債 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260512000223-260203?utm_source=iii_news&utm_medium=rss",
+    "AI基建需求大 軟銀攜韓廠攻電池 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260512000225-260203?utm_source=iii_news&utm_medium=rss",
+    "AI晶片新創Cerebras 將大幅上調IPO定價 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260512000227-260203?utm_source=iii_news&utm_medium=rss",
+    "MLCC唱旺 陸國產替代現商機 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260512000233-260203?utm_source=iii_news&utm_medium=rss",
+    "大摩：陸人形機器人吸引全球46％風投資金 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260512000236-260203?utm_source=iii_news&utm_medium=rss",
+    "中芯國際買回中芯北方股權 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260512000239-260203?utm_source=iii_news&utm_medium=rss",
+    "立訊精密 擬收購京西國際 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260512000240-260203?utm_source=iii_news&utm_medium=rss",
+    "電信三雄 4月獲利仙拚仙 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260512000251-260204?utm_source=iii_news&utm_medium=rss",
+    "AI應用給力 麗臺營運穩成長 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260512000257-260204?utm_source=iii_news&utm_medium=rss",
+    "是方攜手北海道石狩再生能源資料中心 打造亞洲AI算力走廊 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260512000258-260204?utm_source=iii_news&utm_medium=rss",
+    "達航大啖AI商機 獲利動能強勁 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260512000444-260204?utm_source=iii_news&utm_medium=rss",
+    "「台灣模式」在美設聚落 鎖定3地點 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260512000539-260110?utm_source=iii_news&utm_medium=rss",
+    "2030年全 球Micro LED CPO模組產值衝266億 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1754457",
+    "獲利速報》群創首季EPS0.2元 全年獲利可期 新普首季EPS6.83元 估Q2優於Q1 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1754461",
+    "禾榮科攜手北榮 推動頭頸癌臨床研究 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260512000262-260204?utm_source=iii_news&utm_medium=rss",
+    "彭金隆：爭取TISA稅負優惠 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260512000172-260202?utm_source=iii_news&utm_medium=rss",
+    "國際煤炭出貨、運價攀升 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9496235",
+    "川普駁回伊朗要求　稱停火脆弱「依靠維生系統」撐著 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9496426",
+    "協助伊朗石油銷運中國　美制裁3名個人與9家企業 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9496453",
+    "川普稱美國與伊朗停火岌岌可危　國際油價揚升 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9496448",
+    "中鋼Q2轉盈成市場共識 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260512000187-260202?utm_source=iii_news&utm_medium=rss",
+    "美伊和談又崩了…油價漲勢再起 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260512000217-260203?utm_source=iii_news&utm_medium=rss",
+    "煉油民企虧損加劇 盼陸發改委允許減產 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260512000232-260203?utm_source=iii_news&utm_medium=rss",
+    "汰煤權還地方 最快118年缺電 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260512000515-260114?utm_source=iii_news&utm_medium=rss",
+    "布局Q4油氣 中油董：最緊張時刻已過 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1754496"
+  }
+}
