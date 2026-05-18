@@ -1,0 +1,1206 @@
+{
+  "nodes": [
+    {
+      "id": "川普",
+      "group": "person",
+      "size": 20
+    },
+    {
+      "id": "華許",
+      "group": "person",
+      "size": 20
+    },
+    {
+      "id": "Fed",
+      "group": "org",
+      "size": 22
+    },
+    {
+      "id": "台積電",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "輝達",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "Google",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "Gemini",
+      "group": "tech",
+      "size": 15
+    },
+    {
+      "id": "SK海力士",
+      "group": "company",
+      "size": 17
+    },
+    {
+      "id": "三星電子",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "ASML",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "塔塔",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "鴻海",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "廣達",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "SpaceX",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "貝萊德",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "小米",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "蘋果",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "華為",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "長鑫存儲",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "中微",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "英特爾",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "TPK",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "正達",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "東捷",
+      "group": "company",
+      "size": 9
+    },
+    {
+      "id": "友威科",
+      "group": "company",
+      "size": 9
+    },
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 18
+    },
+    {
+      "id": "日本",
+      "group": "country",
+      "size": 14
+    },
+    {
+      "id": "中國",
+      "group": "country",
+      "size": 17
+    },
+    {
+      "id": "台灣",
+      "group": "country",
+      "size": 17
+    },
+    {
+      "id": "印度",
+      "group": "country",
+      "size": 13
+    },
+    {
+      "id": "韓國",
+      "group": "country",
+      "size": 12
+    },
+    {
+      "id": "面板級封裝",
+      "group": "tech",
+      "size": 14
+    },
+    {
+      "id": "玻璃基板",
+      "group": "tech",
+      "size": 12
+    },
+    {
+      "id": "AR眼鏡",
+      "group": "tech",
+      "size": 13
+    },
+    {
+      "id": "ABF載板",
+      "group": "tech",
+      "size": 11
+    },
+    {
+      "id": "DRAM",
+      "group": "tech",
+      "size": 12
+    },
+    {
+      "id": "6G",
+      "group": "tech",
+      "size": 10
+    },
+    {
+      "id": "伺服器",
+      "group": "tech",
+      "size": 13
+    },
+    {
+      "id": "降息",
+      "group": "finance",
+      "size": 14
+    },
+    {
+      "id": "日圓",
+      "group": "finance",
+      "size": 13
+    },
+    {
+      "id": "海運",
+      "group": "finance",
+      "size": 13
+    },
+    {
+      "id": "石油",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "基建投資",
+      "group": "finance",
+      "size": 13
+    },
+    {
+      "id": "台海和平",
+      "group": "finance",
+      "size": 11
+    },
+    {
+      "id": "稀土",
+      "group": "tech",
+      "size": 10
+    },
+    {
+      "id": "賴清德",
+      "group": "person",
+      "size": 13
+    },
+    {
+      "id": "習近平",
+      "group": "person",
+      "size": 13
+    },
+    {
+      "id": "盧偉冰",
+      "group": "person",
+      "size": 9
+    }
+  ],
+  "links": [
+    {
+      "source": "華許",
+      "target": "Fed",
+      "value": 5,
+      "label": "接任主席"
+    },
+    {
+      "source": "川普",
+      "target": "Fed",
+      "value": 4,
+      "label": "政策影響"
+    },
+    {
+      "source": "Fed",
+      "target": "降息",
+      "value": 5,
+      "label": "貨幣政策"
+    },
+    {
+      "source": "川普",
+      "target": "台灣",
+      "value": 4,
+      "label": "軍售延宕"
+    },
+    {
+      "source": "川普",
+      "target": "中國",
+      "value": 4,
+      "label": "經貿談判"
+    },
+    {
+      "source": "川普",
+      "target": "美國",
+      "value": 5,
+      "label": "執政決策"
+    },
+    {
+      "source": "習近平",
+      "target": "川普",
+      "value": 4,
+      "label": "習川會"
+    },
+    {
+      "source": "賴清德",
+      "target": "台海和平",
+      "value": 4,
+      "label": "政策聲明"
+    },
+    {
+      "source": "習近平",
+      "target": "台海和平",
+      "value": 3,
+      "label": "兩岸關係"
+    },
+    {
+      "source": "台灣",
+      "target": "台海和平",
+      "value": 4,
+      "label": "主權立場"
+    },
+    {
+      "source": "美國",
+      "target": "台灣",
+      "value": 4,
+      "label": "軍售關係"
+    },
+    {
+      "source": "美國",
+      "target": "日本",
+      "value": 3,
+      "label": "資金流向"
+    },
+    {
+      "source": "日圓",
+      "target": "日本",
+      "value": 4,
+      "label": "匯率走強"
+    },
+    {
+      "source": "降息",
+      "target": "日圓",
+      "value": 3,
+      "label": "資金回流"
+    },
+    {
+      "source": "美國",
+      "target": "中國",
+      "value": 3,
+      "label": "諜戰對立"
+    },
+    {
+      "source": "中國",
+      "target": "稀土",
+      "value": 4,
+      "label": "戰略資源"
+    },
+    {
+      "source": "中國",
+      "target": "AI",
+      "value": 3,
+      "label": "技術競爭"
+    },
+    {
+      "source": "Google",
+      "target": "Gemini",
+      "value": 5,
+      "label": "產品發布"
+    },
+    {
+      "source": "Google",
+      "target": "AR眼鏡",
+      "value": 4,
+      "label": "新品發表"
+    },
+    {
+      "source": "Gemini",
+      "target": "鴻海",
+      "value": 3,
+      "label": "基建商機"
+    },
+    {
+      "source": "Gemini",
+      "target": "廣達",
+      "value": 3,
+      "label": "基建商機"
+    },
+    {
+      "source": "Google",
+      "target": "台灣",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "SK海力士",
+      "target": "玻璃基板",
+      "value": 4,
+      "label": "新技術投入"
+    },
+    {
+      "source": "SK海力士",
+      "target": "面板級封裝",
+      "value": 4,
+      "label": "技術佈局"
+    },
+    {
+      "source": "SK海力士",
+      "target": "正達",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "SK海力士",
+      "target": "TPK",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "SK海力士",
+      "target": "長鑫存儲",
+      "value": 3,
+      "label": "市場競爭"
+    },
+    {
+      "source": "三星電子",
+      "target": "韓國",
+      "value": 4,
+      "label": "勞資談判"
+    },
+    {
+      "source": "三星電子",
+      "target": "長鑫存儲",
+      "value": 3,
+      "label": "市場競爭"
+    },
+    {
+      "source": "長鑫存儲",
+      "target": "DRAM",
+      "value": 5,
+      "label": "量產擴張"
+    },
+    {
+      "source": "DRAM",
+      "target": "盧偉冰",
+      "value": 3,
+      "label": "漲價預判"
+    },
+    {
+      "source": "小米",
+      "target": "盧偉冰",
+      "value": 4,
+      "label": "企業高管"
+    },
+    {
+      "source": "小米",
+      "target": "蘋果",
+      "value": 3,
+      "label": "價格競爭"
+    },
+    {
+      "source": "小米",
+      "target": "華為",
+      "value": 3,
+      "label": "價格競爭"
+    },
+    {
+      "source": "塔塔",
+      "target": "ASML",
+      "value": 5,
+      "label": "商業合作"
+    },
+    {
+      "source": "塔塔",
+      "target": "印度",
+      "value": 4,
+      "label": "建廠投資"
+    },
+    {
+      "source": "ASML",
+      "target": "印度",
+      "value": 4,
+      "label": "半導體布局"
+    },
+    {
+      "source": "台積電",
+      "target": "英特爾",
+      "value": 4,
+      "label": "技術競爭"
+    },
+    {
+      "source": "台積電",
+      "target": "面板級封裝",
+      "value": 4,
+      "label": "封裝優勢"
+    },
+    {
+      "source": "台積電",
+      "target": "台灣",
+      "value": 4,
+      "label": "本土企業"
+    },
+    {
+      "source": "輝達",
+      "target": "伺服器",
+      "value": 4,
+      "label": "需求驅動"
+    },
+    {
+      "source": "輝達",
+      "target": "美國",
+      "value": 3,
+      "label": "財報表現"
+    },
+    {
+      "source": "伺服器",
+      "target": "台灣",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "ABF載板",
+      "target": "面板級封裝",
+      "value": 4,
+      "label": "技術整合"
+    },
+    {
+      "source": "東捷",
+      "target": "面板級封裝",
+      "value": 3,
+      "label": "設備供應"
+    },
+    {
+      "source": "友威科",
+      "target": "面板級封裝",
+      "value": 3,
+      "label": "設備供應"
+    },
+    {
+      "source": "中微",
+      "target": "面板級封裝",
+      "value": 3,
+      "label": "市占擴張"
+    },
+    {
+      "source": "中微",
+      "target": "中國",
+      "value": 3,
+      "label": "本土企業"
+    },
+    {
+      "source": "SpaceX",
+      "target": "貝萊德",
+      "value": 4,
+      "label": "IPO投資"
+    },
+    {
+      "source": "AR眼鏡",
+      "target": "台灣",
+      "value": 3,
+      "label": "供應鏈商機"
+    },
+    {
+      "source": "6G",
+      "target": "中國",
+      "value": 3,
+      "label": "技術研發"
+    },
+    {
+      "source": "海運",
+      "target": "中東",
+      "value": 3,
+      "label": "航運中斷"
+    },
+    {
+      "source": "石油",
+      "target": "中東",
+      "value": 4,
+      "label": "供應風險"
+    },
+    {
+      "source": "基建投資",
+      "target": "亞太",
+      "value": 3,
+      "label": "區域布局"
+    },
+    {
+      "source": "基建投資",
+      "target": "台灣",
+      "value": 3,
+      "label": "經建政策"
+    },
+    {
+      "source": "中國",
+      "target": "工具機",
+      "value": 3,
+      "label": "十五五規劃"
+    },
+    {
+      "source": "台灣",
+      "target": "工具機",
+      "value": 3,
+      "label": "登陸投資"
+    },
+    {
+      "source": "韓國",
+      "target": "降息",
+      "value": 2,
+      "label": "救經濟手段"
+    }
+  ],
+  "newsDatabase": {
+    "川普": [
+      {
+        "title": "川普訪陸團變陣 折射經貿現實",
+        "source": "",
+        "url": "https://udn.com/news/story/124870/9508789"
+      },
+      {
+        "title": "美140億美元對台軍售 川普恐延宕",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000206-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "習川會後首度回應 賴總統提5點說明：台海和平絕不被交易",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000134-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "華許": [
+      {
+        "title": "華許最快本周接掌 Fed",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9508719"
+      },
+      {
+        "title": "華許時代來了！聯準會迎新局 央行提4重點",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000138-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "華許上任三把火 6月例會亮底牌",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000146-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Fed": [
+      {
+        "title": "華許最快本周接掌 Fed",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9508719"
+      },
+      {
+        "title": "華許時代來了！聯準會迎新局 央行提4重點",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000138-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "Fed偏鷹派 降息循環延後成定局",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000144-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "華許上任三把火 6月例會亮底牌",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000146-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台積電": [
+      {
+        "title": "花旗：台積封裝和製程優勢 英特爾難撼動",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000197-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "輝達": [
+      {
+        "title": "輝達Q1財報 華爾街叫好",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000129-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Google": [
+      {
+        "title": "最強 Gemini 來了 XR 智慧眼鏡跟著露臉",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9508745"
+      },
+      {
+        "title": "Google 開發者大會最強 Gemini 來了 鴻海、廣達等迎基建商機",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9508743"
+      },
+      {
+        "title": "谷歌I／O秀新品 台鏈啖商機",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000147-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Gemini": [
+      {
+        "title": "最強 Gemini 來了 XR 智慧眼鏡跟著露臉",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9508745"
+      },
+      {
+        "title": "Google 開發者大會最強 Gemini 來了 鴻海、廣達等迎基建商機",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9508743"
+      }
+    ],
+    "SK海力士": [
+      {
+        "title": "SK 海力士集團投入玻璃基板領域 正達、TPK 也有好處",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9508737"
+      },
+      {
+        "title": "SK 海力士集團押寶新技術 面板級封裝鐵三角成形",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9508733"
+      },
+      {
+        "title": "長鑫存儲 DDR5 規模化量產 與 SK 海力士、三星並列第一梯隊",
+        "source": "",
+        "url": ""
+      }
+    ],
+    "三星電子": [
+      {
+        "title": "三星電子勞資今再談判 國務總理表態必要時動用緊急仲裁",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9508681"
+      },
+      {
+        "title": "長鑫存儲 DDR5 規模化量產 與 SK 海力士、三星並列第一梯隊",
+        "source": "",
+        "url": ""
+      }
+    ],
+    "ASML": [
+      {
+        "title": "塔塔揪 ASML 印度蓋半導體廠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9508680"
+      },
+      {
+        "title": "塔塔揪艾司摩爾開先鋒 打造印度前段製程晶圓廠",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000155-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "塔塔": [
+      {
+        "title": "塔塔揪 ASML 印度蓋半導體廠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9508680"
+      },
+      {
+        "title": "塔塔揪艾司摩爾開先鋒 打造印度前段製程晶圓廠",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000155-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "鴻海": [
+      {
+        "title": "Google 開發者大會最強 Gemini 來了 鴻海、廣達等迎基建商機",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9508743"
+      }
+    ],
+    "廣達": [
+      {
+        "title": "Google 開發者大會最強 Gemini 來了 鴻海、廣達等迎基建商機",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9508743"
+      }
+    ],
+    "SpaceX": [
+      {
+        "title": "SpaceX IPO 貝萊德擬砸重金參與",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000195-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "貝萊德": [
+      {
+        "title": "SpaceX IPO 貝萊德擬砸重金參與",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000195-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "小米": [
+      {
+        "title": "618再掀價格戰 小米、蘋果、華為先後降價",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000208-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "小米總裁盧偉冰：國產旗艦手機會變貴 預判 DRAM 至少漲到明年底",
+        "source": "",
+        "url": "https://udn.com/news/story/7253/9508777"
+      }
+    ],
+    "蘋果": [
+      {
+        "title": "618再掀價格戰 小米、蘋果、華為先後降價",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000208-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "華為": [
+      {
+        "title": "618再掀價格戰 小米、蘋果、華為先後降價",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000208-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "長鑫存儲": [
+      {
+        "title": "記憶體熱 長鑫Q1營收增七倍",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000201-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "長鑫存儲 DDR5 規模化量產 與 SK 海力士、三星並列第一梯隊",
+        "source": "",
+        "url": ""
+      }
+    ],
+    "中微": [
+      {
+        "title": "中微蝕刻機 先進封裝市占衝刺七成",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000204-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "英特爾": [
+      {
+        "title": "花旗：台積封裝和製程優勢 英特爾難撼動",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000197-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "TPK": [
+      {
+        "title": "SK 海力士集團投入玻璃基板領域 正達、TPK 也有好處",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9508737"
+      }
+    ],
+    "正達": [
+      {
+        "title": "SK 海力士集團投入玻璃基板領域 正達、TPK 也有好處",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9508737"
+      }
+    ],
+    "東捷": [
+      {
+        "title": "國際大廠在面板級封裝部署重兵 東捷、友威科神助攻",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9508736"
+      }
+    ],
+    "友威科": [
+      {
+        "title": "國際大廠在面板級封裝部署重兵 東捷、友威科神助攻",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9508736"
+      }
+    ],
+    "美國": [
+      {
+        "title": "美140億美元對台軍售 川普恐延宕",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000206-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "諜戰升溫 陸稱稀土、AI遭竊密 美英反控 北京才是最大間諜",
+        "source": "",
+        "url": "https://udn.com/news/story/6809/9508787"
+      },
+      {
+        "title": "輝達Q1財報 華爾街叫好",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000129-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "日本": [
+      {
+        "title": "日債市有望迎錢潮回流 投資機構押注資金將撤出美債 推升日圓走強",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9508716"
+      }
+    ],
+    "中國": [
+      {
+        "title": "川普訪陸團變陣 折射經貿現實",
+        "source": "",
+        "url": "https://udn.com/news/story/124870/9508789"
+      },
+      {
+        "title": "諜戰升溫 陸稱稀土、AI遭竊密 美英反控 北京才是最大間諜",
+        "source": "",
+        "url": "https://udn.com/news/story/6809/9508787"
+      },
+      {
+        "title": "陸十五五規劃磁吸效應 台工具機業 醞釀登陸投資潮",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000174-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "陸燃油車求生掀降價潮 減幅近三成 新車不到30萬元",
+        "source": "",
+        "url": "https://udn.com/news/story/7253/9508778"
+      },
+      {
+        "title": "陸研發超寬頻光子晶片 舖路 6G 與衛星通訊",
+        "source": "",
+        "url": ""
+      }
+    ],
+    "台灣": [
+      {
+        "title": "美140億美元對台軍售 川普恐延宕",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000206-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "習川會後首度回應 賴總統提5點說明：台海和平絕不被交易",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000134-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "谷歌I／O秀新品 台鏈啖商機",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000147-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "智慧眼鏡群雄並起 台系廠進補",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000150-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "印度": [
+      {
+        "title": "塔塔揪 ASML 印度蓋半導體廠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9508680"
+      },
+      {
+        "title": "塔塔揪艾司摩爾開先鋒 打造印度前段製程晶圓廠",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000155-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "韓國": [
+      {
+        "title": "韓救經濟「心臟」 擬祭出終極手段",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9508810"
+      },
+      {
+        "title": "三星電子勞資今再談判 國務總理表態必要時動用緊急仲裁",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9508681"
+      }
+    ],
+    "面板級封裝": [
+      {
+        "title": "國際大廠在面板級封裝部署重兵 東捷、友威科神助攻",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9508736"
+      },
+      {
+        "title": "SK 海力士集團押寶新技術 面板級封裝鐵三角成形",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9508733"
+      },
+      {
+        "title": "中微蝕刻機 先進封裝市占衝刺七成",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000204-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "玻璃基板": [
+      {
+        "title": "SK 海力士集團投入玻璃基板領域 正達、TPK 也有好處",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9508737"
+      }
+    ],
+    "AR眼鏡": [
+      {
+        "title": "最強 Gemini 來了 XR 智慧眼鏡跟著露臉",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9508745"
+      },
+      {
+        "title": "智慧眼鏡群雄並起 台系廠進補",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000150-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "兩岸靚人物／雷鳥創新創辦人李宏偉 精益創業 押注AR眼鏡",
+        "source": "",
+        "url": "https://udn.com/news/story/7241/9508590"
+      }
+    ],
+    "ABF載板": [
+      {
+        "title": "ABF載板迎CPO整合戰場",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000132-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "DRAM": [
+      {
+        "title": "小米總裁盧偉冰：國產旗艦手機會變貴 預判 DRAM 至少漲到明年底",
+        "source": "",
+        "url": "https://udn.com/news/story/7253/9508777"
+      },
+      {
+        "title": "長鑫存儲 DDR5 規模化量產 與 SK 海力士、三星並列第一梯隊",
+        "source": "",
+        "url": ""
+      }
+    ],
+    "6G": [
+      {
+        "title": "陸研發超寬頻光子晶片 舖路 6G 與衛星通訊",
+        "source": "",
+        "url": ""
+      }
+    ],
+    "伺服器": [
+      {
+        "title": "全球伺服器Q2出貨量 估創新高",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000235-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "降息": [
+      {
+        "title": "Fed偏鷹派 降息循環延後成定局",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000144-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "華許上任三把火 6月例會亮底牌",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000146-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "日圓": [
+      {
+        "title": "日債市有望迎錢潮回流 投資機構押注資金將撤出美債 推升日圓走強",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9508716"
+      }
+    ],
+    "海運": [
+      {
+        "title": "中東貨櫃海運價創新高 較美伊戰爭前增逾三倍",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9508717"
+      },
+      {
+        "title": "散裝運力吃緊 運價反彈",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9508728"
+      },
+      {
+        "title": "散裝船市場供需波動加劇 慧洋、裕民、台航、新興受惠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9508729"
+      }
+    ],
+    "石油": [
+      {
+        "title": "全球石油庫存月底探新低 荷莫茲不解封 油價恐拋物線式飆漲",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9508718"
+      }
+    ],
+    "基建投資": [
+      {
+        "title": "全球基建投資 未來25年砸151兆美元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000178-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "基建商機爆發 PwC：亞太扮演關鍵角色",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000180-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台海和平": [
+      {
+        "title": "習川會後首度回應 賴總統提5點說明：台海和平絕不被交易",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000134-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "稀土": [
+      {
+        "title": "諜戰升溫 陸稱稀土、AI遭竊密 美英反控 北京才是最大間諜",
+        "source": "",
+        "url": "https://udn.com/news/story/6809/9508787"
+      }
+    ],
+    "賴清德": [
+      {
+        "title": "習川會後首度回應 賴總統提5點說明：台海和平絕不被交易",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000134-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "習近平": [
+      {
+        "title": "習川會後首度回應 賴總統提5點說明：台海和平絕不被交易",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000134-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "川普訪陸團變陣 折射經貿現實",
+        "source": "",
+        "url": "https://udn.com/news/story/124870/9508789"
+      }
+    ],
+    "盧偉冰": [
+      {
+        "title": "小米總裁盧偉冰：國產旗艦手機會變貴 預判 DRAM 至少漲到明年底",
+        "source": "",
+        "url": "https://udn.com/news/story/7253/9508777"
+      }
+    ],
+    "工具機": [
+      {
+        "title": "陸十五五規劃磁吸效應 台工具機業 醞釀登陸投資潮",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000174-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "工具機業Q1多虧損 Q2有望好轉",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000177-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "亞太": [
+      {
+        "title": "基建商機爆發 PwC：亞太扮演關鍵角色",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260518000180-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中東": [
+      {
+        "title": "中東貨櫃海運價創新高 較美伊戰爭前增逾三倍",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9508717"
+      },
+      {
+        "title": "全球石油庫存月底探新低 荷莫茲不解封 油價恐拋物線式飆漲",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9508718"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "日債市有望迎錢潮回流 投資機構押注資金將撤出美債 推升日圓走強 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9508716",
+    "華許最快本周接掌 Fed (經濟國際焦點)": "https://money.udn.com/money/story/5599/9508719",
+    "川普訪陸團變陣 折射經貿現實 (聯合_產經_股市)": "https://udn.com/news/story/124870/9508789",
+    "韓救經濟「心臟」 擬祭出終極手段 (聯合_產經_股市)": "https://udn.com/news/story/6811/9508810",
+    "習川會後首度回應 賴總統提5點說明：台海和平絕不被交易 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260518000134-260202?utm_source=iii_news&utm_medium=rss",
+    "華許時代來了！聯準會迎新局 央行提4重點 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260518000138-260202?utm_source=iii_news&utm_medium=rss",
+    "Fed偏鷹派 降息循環延後成定局 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260518000144-260202?utm_source=iii_news&utm_medium=rss",
+    "華許上任三把火 6月例會亮底牌 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260518000146-260202?utm_source=iii_news&utm_medium=rss",
+    "全球基建投資 未來25年砸151兆美元 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260518000178-260202?utm_source=iii_news&utm_medium=rss",
+    "美140億美元對台軍售 川普恐延宕 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260518000206-260203?utm_source=iii_news&utm_medium=rss",
+    "三星電子勞資今再談判 國務總理表態必要時動用緊急仲裁 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9508681",
+    "塔塔揪 ASML 印度蓋半導體廠 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9508680",
+    "最強 Gemini 來了 XR 智慧眼鏡跟著露臉 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9508745",
+    "國際大廠在面板級封裝部署重兵 東捷、友威科神助攻 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9508736",
+    "SK 海力士集團投入玻璃基板領域 正達、TPK 也有好處 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9508737",
+    "Google 開發者大會最強 Gemini 來了 鴻海、廣達等迎基建商機 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9508743",
+    "SK 海力士集團押寶新技術 面板級封裝鐵三角成形 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9508733",
+    "諜戰升溫 陸稱稀土、AI遭竊密 美英反控 北京才是最大間諜 (聯合_產經_股市)": "https://udn.com/news/story/6809/9508787",
+    "輝達Q1財報 華爾街叫好 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260518000129-260202?utm_source=iii_news&utm_medium=rss",
+    "ABF載板迎CPO整合戰場 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260518000132-260202?utm_source=iii_news&utm_medium=rss",
+    "谷歌I／O秀新品 台鏈啖商機 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260518000147-260202?utm_source=iii_news&utm_medium=rss",
+    "智慧眼鏡群雄並起 台系廠進補 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260518000150-260202?utm_source=iii_news&utm_medium=rss",
+    "塔塔揪艾司摩爾開先鋒 打造印度前段製程晶圓廠 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260518000155-260202?utm_source=iii_news&utm_medium=rss",
+    "全球伺服器Q2出貨量 估創新高 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260518000235-260202?utm_source=iii_news&utm_medium=rss",
+    "PCB GPT問世 PCB產業邁大步 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260518000236-260202?utm_source=iii_news&utm_medium=rss",
+    "SpaceX IPO 貝萊德擬砸重金參與 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260518000195-260203?utm_source=iii_news&utm_medium=rss",
+    "花旗：台積封裝和製程優勢 英特爾難撼動 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260518000197-260203?utm_source=iii_news&utm_medium=rss",
+    "記憶體熱 長鑫Q1營收增七倍 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260518000201-260203?utm_source=iii_news&utm_medium=rss",
+    "中微蝕刻機 先進封裝市占衝刺七成 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260518000204-260203?utm_source=iii_news&utm_medium=rss",
+    "618再掀價格戰 小米、蘋果、華為先後降價 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260518000208-260203?utm_source=iii_news&utm_medium=rss",
+    "兩岸靚人物／雷鳥創新創辦人李宏偉 精益創業 押注AR眼鏡 (聯合_產經_股市)": "https://udn.com/news/story/7241/9508590",
+    "小米總裁盧偉冰：國產旗艦手機會變貴 預判 DRAM 至少漲到明年底 (聯合_產經_股市)": "https://udn.com/news/story/7253/9508777",
+    "陸研發超寬頻光子晶片  舖路 6G 與衛星通訊 (聯合_產經_股市)": "https://udn.com/news/story/7253/9508780",
+    "長鑫存儲 DDR5 規模化量產  與 SK 海力士、三星並列第一梯隊 (聯合_產經_股市)": "https://udn.com/news/story/7253/9508774",
+    "1分鐘看世界／非洲兩國爆發伊波拉疫情 WHO 列公衛緊急事件 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9508621",
+    "台寶 攻CAR-Treg百億美元商機 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260518000234-260202?utm_source=iii_news&utm_medium=rss",
+    "20歲像80歲 早老症罕病納健保 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260518000477-260114?utm_source=iii_news&utm_medium=rss",
+    "中東貨櫃海運價創新高 較美伊戰爭前增逾三倍 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9508717",
+    "散裝運力吃緊 運價反彈 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9508728",
+    "散裝船市場供需波動加劇 慧洋、裕民、台航、新興受惠 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9508729",
+    "戰爭衝擊聚酯纖維供應 快時尚業者成本壓力大 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260518000199-260203?utm_source=iii_news&utm_medium=rss",
+    "外銀續瘦身 重拾財管業務 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260518000485-260110?utm_source=iii_news&utm_medium=rss",
+    "全球石油庫存月底探新低 荷莫茲不解封 油價恐拋物線式飆漲 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9508718",
+    "經部5,500億治水 四箭齊發 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260518000169-260202?utm_source=iii_news&utm_medium=rss",
+    "陸十五五規劃磁吸效應 台工具機業 醞釀登陸投資潮 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260518000174-260202?utm_source=iii_news&utm_medium=rss",
+    "工具機業Q1多虧損 Q2有望好轉 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260518000177-260202?utm_source=iii_news&utm_medium=rss",
+    "基建商機爆發 PwC：亞太扮演關鍵角色 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260518000180-260202?utm_source=iii_news&utm_medium=rss",
+    "貝克歐 聚焦智慧節能與低碳製造 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260518000336-260204?utm_source=iii_news&utm_medium=rss",
+    "陸燃油車求生掀降價潮 減幅近三成 新車不到30萬元 (聯合_產經_股市)": "https://udn.com/news/story/7253/9508778",
+    "非核家園周年 環團批核三重啟 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260518000483-260110?utm_source=iii_news&utm_medium=rss",
+    "夏季夜間供電不穩 學者駁不缺電說 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260518000489-260110?utm_source=iii_news&utm_medium=rss"
+  }
+}
