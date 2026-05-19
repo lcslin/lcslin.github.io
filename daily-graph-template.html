@@ -162,27 +162,36 @@
             margin-bottom: 8px;
         }
 
-        select, input[type="text"] {
+        .date-btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            margin-top: 4px;
+        }
+        .date-btn {
             width: 100%;
-            box-sizing: border-box;
             padding: 8px 10px;
             background: #0F0F0F;
-            color: var(--text-color);
+            color: var(--text-secondary);
             border: 1px solid var(--border-visible);
-            border-bottom-color: var(--accent-color);
-            margin-top: 4px;
-            margin-bottom: 0;
+            border-left: 3px solid transparent;
+            cursor: pointer;
+            font-size: 0.82rem;
             font-family: inherit;
-            font-size: 0.85rem;
-            outline: none;
+            text-align: left;
+            transition: all 0.2s;
         }
-        select:hover, input[type="text"]:hover {
+        .date-btn:hover {
+            background: #1A1A1A;
+            color: var(--text-color);
             border-color: var(--border-active);
-            background: #141414;
         }
-        select:focus, input[type="text"]:focus {
-            border-color: var(--accent-color);
+        .date-btn.active {
             background: #141414;
+            color: var(--accent-color);
+            border-left-color: var(--accent-color);
+            border-color: var(--border-visible);
+            font-weight: 500;
         }
 
         #keyword-list {
@@ -366,9 +375,7 @@
         <p>連線：實體關係 (點擊查看類型)</p>
 
         <div class="section-label">資料日期</div>
-        <select id="date-selector">
-            <option value="" disabled selected>選擇日期...</option>
-        </select>
+        <div class="date-btn-group" id="date-selector"></div>
 
         <div class="section-label">搜尋標題</div>
         <input type="text" id="search-input" placeholder="輸入關鍵字...">
@@ -413,7 +420,11 @@
             return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
         })() : TARGET_DATE_RAW;
 
-        // 2. Embedded Data (replaced by build; fallback when opening template directly)
+        // 2. Recent Dates (replaced by build)
+        const RECENT_DATES_RAW = __RECENT_DATES__;
+        const RECENT_DATES = Array.isArray(RECENT_DATES_RAW) ? RECENT_DATES_RAW : [TARGET_DATE];
+
+        // 3. Embedded Data (replaced by build; fallback when opening template directly)
         let EMBEDDED_DATA;
         try {
             EMBEDDED_DATA = __EMBEDDED_DATA__;
@@ -918,34 +929,6 @@
             return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
         }
 
-        // --- Fetch Logic ---
-
-        function getPreviousDate(dateStr, days) {
-            const date = new Date(dateStr);
-            date.setDate(date.getDate() - days);
-            return date.toISOString().split('T')[0];
-        }
-
-        async function fetchHistory() {
-            // Check previous 3 days
-            for (let i = 1; i <= 3; i++) {
-                const prevDate = getPreviousDate(TARGET_DATE, i);
-                const filename = prevDate + ".json";
-                try {
-                    const response = await fetch(filename);
-                    if (response.ok) {
-                        const json = await response.json();
-                        dataStore[prevDate] = json;
-                        // Refresh selector
-                        populateSelector();
-                    }
-                } catch (e) {
-                    // Ignore fetch errors (likely local file system or missing file)
-                    console.log(`Skipping ${filename}: ${e}`);
-                }
-            }
-        }
-
         // Init Logic
         function init() {
             // On narrow viewport (e.g. mobile), start with left panel hidden so graph is full-screen
@@ -957,28 +940,19 @@
 
             // Load embedded default
             loadGraphData(TARGET_DATE);
-
-            // Try to fetch history (if on server)
-            fetchHistory();
         }
 
         function populateSelector() {
-            // Clear existing options
-            dateSelector.innerHTML = '<option value="" disabled>選擇日期...</option>';
+            dateSelector.innerHTML = '';
             
-            const sortedDates = Object.keys(dataStore).sort().reverse();
-            sortedDates.forEach(date => {
-                const option = document.createElement('option');
-                option.value = date;
-                option.textContent = date;
-                if (date === dateSelector.value) option.selected = true;
-                dateSelector.appendChild(option);
+            RECENT_DATES.forEach(date => {
+                const btn = document.createElement('button');
+                btn.className = 'date-btn';
+                if (date === TARGET_DATE) btn.classList.add('active');
+                btn.textContent = date;
+                btn.onclick = () => loadGraphData(date);
+                dateSelector.appendChild(btn);
             });
-            
-            // If nothing selected, select first
-            if (!dateSelector.value && sortedDates.length > 0) {
-                dateSelector.value = sortedDates[0];
-            }
         }
         
         function populateKeywords(links, nodes) {
@@ -1017,7 +991,27 @@
             triggerRenderUpdate();
         }
 
-        function loadGraphData(dateKey) {
+        async function loadGraphData(dateKey) {
+            // Fetch if not in store
+            if (!dataStore[dateKey]) {
+                loading.style.display = 'block';
+                try {
+                    const response = await fetch(`${dateKey}.json`);
+                    if (response.ok) {
+                        dataStore[dateKey] = await response.json();
+                    } else {
+                        showToast('錯誤', `無法載入 ${dateKey} 的資料`);
+                        return;
+                    }
+                } catch (e) {
+                    console.error(e);
+                    showToast('錯誤', '網路請求失敗');
+                    return;
+                } finally {
+                    loading.style.display = 'none';
+                }
+            }
+
             const graphData = dataStore[dateKey];
             if (graphData) {
                 currentGraphData = graphData;
@@ -1039,7 +1033,11 @@
                 fitGraphToViewport(0);
                 updateGraphSizeReadout();
                 populateKeywords(graphData.links, graphData.nodes);
-                dateSelector.value = dateKey;
+                
+                // Update button active state
+                document.querySelectorAll('.date-btn').forEach(btn => {
+                    btn.classList.toggle('active', btn.textContent === dateKey);
+                });
             }
         }
 
@@ -1048,7 +1046,6 @@
             if (btn) switchLayout(btn.dataset.layout);
         });
 
-        dateSelector.addEventListener('change', (e) => loadGraphData(e.target.value));
         searchInput.addEventListener('input', (e) => {
             searchText = e.target.value;
             updateHighlights();
