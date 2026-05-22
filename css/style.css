@@ -1,0 +1,150 @@
+/* Vogue Style UI */
+        :root {
+            --primary: #111111;
+            --bg-color: #faf9f7;
+            --sidebar-bg: #ffffff;
+            --text-main: #222222;
+            --font-ui: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            --font-heading: 'Noto Serif TC', PMingLiU, serif;
+        }
+        
+        * { box-sizing: border-box; }
+        
+        body { 
+            margin: 0; display: flex; height: 100vh; 
+            background-color: var(--bg-color); color: var(--text-main); 
+            font-family: var(--font-ui);
+        }
+        
+        h1, h2, h3, .heading-font {
+            font-family: var(--font-heading);
+            font-weight: 900;
+            color: var(--primary);
+            letter-spacing: 1px;
+            margin: 0;
+        }
+        
+        /* Sidebar */
+        #sidebar {
+            width: 320px;
+            background: var(--sidebar-bg);
+            padding: 40px 30px;
+            border-right: 1px solid #eaeaea;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            z-index: 10;
+        }
+        
+        #sidebar h2 { font-size: 1.6rem; line-height: 1.3; border-bottom: 3px solid var(--primary); padding-bottom: 15px; margin-bottom: 30px;}
+        #sidebar h3 { font-size: 0.95rem; font-family: var(--font-ui); text-transform: uppercase; letter-spacing: 2px; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 15px;}
+        
+        /* Buttons */
+        button {
+            background-color: transparent;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+            border-radius: 0;
+            padding: 12px 15px;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: var(--font-heading);
+            letter-spacing: 1px;
+            width: 100%;
+            text-align: center;
+        }
+        button:hover { background-color: var(--primary); color: #ffffff; }
+        button.action-btn { background-color: var(--primary); color: #ffffff; border: 1px solid var(--primary); }
+        button.action-btn:hover { background-color: #ffffff; color: var(--primary); }
+        
+        .template-btn { text-align: left; margin-bottom: 10px; font-family: var(--font-ui); letter-spacing: normal;}
+        
+        #saved-list { display: flex; flex-direction: column; gap: 8px; }
+        .saved-item { 
+            display: flex; justify-content: space-between; align-items: center;
+            border: 1px solid #ccc; padding: 8px 12px; font-size: 13px;
+            transition: all 0.2s; cursor: pointer;
+        }
+        .saved-item:hover { border-color: var(--primary); }
+        .saved-item span { flex-grow: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .del-draft-btn { 
+            width: auto; padding: 2px 6px; border: none; font-size: 11px; margin-left: 10px; color: #999;
+        }
+        .del-draft-btn:hover { background: transparent; color: red; }
+        
+        /* Main Area */
+        #main-area {
+            flex-grow: 1; display: flex; flex-direction: column;
+            align-items: center; padding: 40px 20px; overflow-y: auto; position: relative;
+        }
+        
+        /* Metadata Header */
+        .meta-header {
+            width: 100%; max-width: 600px; background: #fff; padding: 25px 30px;
+            margin-bottom: 30px; display: flex; flex-wrap: wrap; gap: 20px;
+            align-items: flex-end; border: 1px solid var(--primary);
+        }
+        .meta-row { flex-grow: 1; display: flex; flex-direction: column; gap: 8px; min-width: 200px; }
+        .meta-row label { font-family: var(--font-heading); font-size: 13px; color: var(--primary); letter-spacing: 1px;}
+        .meta-row input {
+            border: none; border-bottom: 1px solid #ccc; padding: 8px 0; font-size: 15px; 
+            font-family: var(--font-ui); background: transparent; outline: none; transition: border-color 0.3s;
+        }
+        .meta-row input:focus { border-bottom: 2px solid var(--primary); }
+        
+        /* Canvas */
+        #canvas-wrapper {
+            background: #ffffff; box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+            width: 100%; max-width: 600px; min-height: 800px; position: relative; border: 1px solid #eaeaea;
+        }
+        
+        #edm-canvas { width: 100%; min-height: 600px; }
+        
+        .empty-state {
+            display: flex; justify-content: center; align-items: center;
+            height: 100%; color: #999; font-size: 14px; text-align: center; padding: 60px;
+            font-family: var(--font-heading); letter-spacing: 2px; line-height: 1.8;
+        }
+
+        /* Editor states */
+        .editable-text:hover { outline: 1px dashed rgba(17,17,17,0.3); outline-offset: 4px; cursor: text; }
+        .editable-img { cursor: pointer; transition: opacity 0.3s; }
+        .editable-img:hover { opacity: 0.8; }
+        
+        /* Image Floating Bar */
+        #img-float-bar {
+            display: none; position: absolute; z-index: 100;
+            background: var(--primary); padding: 5px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transform: translate(-50%, -120%); white-space: nowrap;
+        }
+        #img-float-bar button { border: none; color: #fff; padding: 8px 12px; font-size: 12px; width: auto; font-family: var(--font-ui); text-transform: none; letter-spacing: 0;}
+        #img-float-bar button:hover { background: #333; }
+        
+        /* Block Controls (Right side of active block) */
+        .edm-block { position: relative; transition: outline 0.2s; }
+        .edm-block.active-block { outline: 1px solid var(--primary); outline-offset: -1px; z-index: 50;}
+        
+        #block-float-bar {
+            display: none; position: absolute; z-index: 90;
+            right: -40px; top: 0; width: 35px; background: #fff; border: 1px solid var(--primary);
+            flex-direction: column;
+        }
+        #block-float-bar button { padding: 10px 0; font-size: 12px; border: none; border-bottom: 1px solid #eee; width: 100%;}
+        #block-float-bar button:last-child { border-bottom: none; }
+        #block-float-bar button:hover { background: var(--primary); color: #fff; }
+
+        /* Add Block System */
+        #add-block-container { text-align: center; padding: 20px; background: #fbfbfb; border-top: 1px dashed #ccc; }
+        #btn-add-block { width: auto; padding: 10px 30px; }
+
+        #modal-add-block {
+            display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(255,255,255,0.9); z-index: 200; justify-content: center; align-items: center;
+        }
+        .modal-content {
+            background: #fff; padding: 40px; width: 600px; max-width: 90%; border: 1px solid var(--primary);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .block-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 25px; }
+        .close-modal { margin-top: 30px; }
