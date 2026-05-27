@@ -109,17 +109,20 @@
 
         /* Editor states */
         .editable-text:hover { outline: 1px dashed rgba(17,17,17,0.3); outline-offset: 4px; cursor: text; }
-        .editable-img { cursor: pointer; transition: opacity 0.3s; }
-        .editable-img:hover { opacity: 0.8; }
-        
+        .editable-img { cursor: pointer; transition: filter 0.2s; }
+        .editable-img:hover { filter: brightness(0.85); }
+        .editable-img.img-selected { filter: brightness(0.35); }
+
         /* Image Floating Bar */
         #img-float-bar {
             display: none; position: absolute; z-index: 100;
-            background: var(--primary); padding: 5px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            transform: translate(-50%, -120%); white-space: nowrap;
+            background: var(--primary); padding: 4px; box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+            transform: translate(-50%, -50%); white-space: nowrap;
+            flex-direction: row;
         }
-        #img-float-bar button { border: none; color: #fff; padding: 8px 12px; font-size: 12px; width: auto; font-family: var(--font-ui); text-transform: none; letter-spacing: 0;}
-        #img-float-bar button:hover { background: #333; }
+        #img-float-bar button { border: none; border-right: 1px solid rgba(255,255,255,0.2); color: #fff; padding: 10px 14px; font-size: 12px; width: auto; font-family: var(--font-ui); text-transform: none; letter-spacing: 0;}
+        #img-float-bar button:last-child { border-right: none; }
+        #img-float-bar button:hover { background: #444; }
         
         /* Block Controls (Right side of active block) */
         .edm-block { position: relative; transition: outline 0.2s; }
