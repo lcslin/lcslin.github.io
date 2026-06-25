@@ -1,0 +1,1360 @@
+{
+  "nodes": [
+    {
+      "id": "台積電",
+      "group": "company",
+      "size": 22
+    },
+    {
+      "id": "日月光",
+      "group": "company",
+      "size": 22
+    },
+    {
+      "id": "大立光",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "聯發科",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "鴻海",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "夏普",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "三星",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "AMD",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "高通",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "字節跳動",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "輝達",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "高盛",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "南電",
+      "group": "company",
+      "size": 9
+    },
+    {
+      "id": "酷澎",
+      "group": "company",
+      "size": 9
+    },
+    {
+      "id": "台塑四寶",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "遊戲橘子",
+      "group": "company",
+      "size": 8
+    },
+    {
+      "id": "伊雲谷",
+      "group": "company",
+      "size": 8
+    },
+    {
+      "id": "AWS",
+      "group": "company",
+      "size": 9
+    },
+    {
+      "id": "AAOI",
+      "group": "company",
+      "size": 8
+    },
+    {
+      "id": "Fed",
+      "group": "org",
+      "size": 20
+    },
+    {
+      "id": "日本銀行",
+      "group": "org",
+      "size": 14
+    },
+    {
+      "id": "台灣央行",
+      "group": "org",
+      "size": 15
+    },
+    {
+      "id": "國網中心",
+      "group": "org",
+      "size": 10
+    },
+    {
+      "id": "歐盟",
+      "group": "org",
+      "size": 14
+    },
+    {
+      "id": "川普",
+      "group": "person",
+      "size": 18
+    },
+    {
+      "id": "蔡明介",
+      "group": "person",
+      "size": 14
+    },
+    {
+      "id": "吳田玉",
+      "group": "person",
+      "size": 11
+    },
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 22
+    },
+    {
+      "id": "中國",
+      "group": "country",
+      "size": 20
+    },
+    {
+      "id": "台灣",
+      "group": "country",
+      "size": 20
+    },
+    {
+      "id": "日本",
+      "group": "country",
+      "size": 13
+    },
+    {
+      "id": "肯亞",
+      "group": "country",
+      "size": 9
+    },
+    {
+      "id": "伊朗",
+      "group": "country",
+      "size": 10
+    },
+    {
+      "id": "韓國",
+      "group": "country",
+      "size": 12
+    },
+    {
+      "id": "AI",
+      "group": "tech",
+      "size": 22
+    },
+    {
+      "id": "半導體",
+      "group": "tech",
+      "size": 20
+    },
+    {
+      "id": "超級電腦",
+      "group": "tech",
+      "size": 16
+    },
+    {
+      "id": "光通訊",
+      "group": "tech",
+      "size": 12
+    },
+    {
+      "id": "CPO",
+      "group": "tech",
+      "size": 10
+    },
+    {
+      "id": "機器人",
+      "group": "tech",
+      "size": 11
+    },
+    {
+      "id": "太空運算",
+      "group": "tech",
+      "size": 11
+    },
+    {
+      "id": "核電",
+      "group": "tech",
+      "size": 10
+    },
+    {
+      "id": "矽盛世",
+      "group": "finance",
+      "size": 13
+    },
+    {
+      "id": "台幣",
+      "group": "finance",
+      "size": 16
+    },
+    {
+      "id": "布倫特原油",
+      "group": "finance",
+      "size": 13
+    },
+    {
+      "id": "人民幣",
+      "group": "finance",
+      "size": 10
+    },
+    {
+      "id": "升息",
+      "group": "finance",
+      "size": 15
+    },
+    {
+      "id": "外資",
+      "group": "finance",
+      "size": 15
+    },
+    {
+      "id": "荷莫茲海峽",
+      "group": "finance",
+      "size": 10
+    },
+    {
+      "id": "AI供應鏈",
+      "group": "finance",
+      "size": 12
+    }
+  ],
+  "links": [
+    {
+      "source": "Fed",
+      "target": "升息",
+      "value": 5,
+      "label": "政策決議"
+    },
+    {
+      "source": "Fed",
+      "target": "美國",
+      "value": 4,
+      "label": "貨幣政策"
+    },
+    {
+      "source": "高盛",
+      "target": "Fed",
+      "value": 3,
+      "label": "預測分析"
+    },
+    {
+      "source": "日本銀行",
+      "target": "升息",
+      "value": 4,
+      "label": "政策方向"
+    },
+    {
+      "source": "日本銀行",
+      "target": "日本",
+      "value": 4,
+      "label": "央行政策"
+    },
+    {
+      "source": "升息",
+      "target": "台幣",
+      "value": 4,
+      "label": "匯率影響"
+    },
+    {
+      "source": "台灣央行",
+      "target": "台幣",
+      "value": 5,
+      "label": "匯率防線"
+    },
+    {
+      "source": "外資",
+      "target": "台幣",
+      "value": 5,
+      "label": "資金外流"
+    },
+    {
+      "source": "外資",
+      "target": "台灣",
+      "value": 4,
+      "label": "資金撤出"
+    },
+    {
+      "source": "川普",
+      "target": "伊朗",
+      "value": 4,
+      "label": "外交關係"
+    },
+    {
+      "source": "川普",
+      "target": "荷莫茲海峽",
+      "value": 3,
+      "label": "外交談判"
+    },
+    {
+      "source": "川普",
+      "target": "美國",
+      "value": 5,
+      "label": "施政影響"
+    },
+    {
+      "source": "荷莫茲海峽",
+      "target": "布倫特原油",
+      "value": 4,
+      "label": "供應影響"
+    },
+    {
+      "source": "伊朗",
+      "target": "布倫特原油",
+      "value": 3,
+      "label": "市場影響"
+    },
+    {
+      "source": "台積電",
+      "target": "半導體",
+      "value": 5,
+      "label": "核心業務"
+    },
+    {
+      "source": "台積電",
+      "target": "台灣",
+      "value": 5,
+      "label": "供應鏈"
+    },
+    {
+      "source": "台積電",
+      "target": "AI",
+      "value": 4,
+      "label": "晶片供應"
+    },
+    {
+      "source": "大立光",
+      "target": "CPO",
+      "value": 4,
+      "label": "業務布局"
+    },
+    {
+      "source": "大立光",
+      "target": "光通訊",
+      "value": 4,
+      "label": "產品布局"
+    },
+    {
+      "source": "聯發科",
+      "target": "AI",
+      "value": 4,
+      "label": "研發投入"
+    },
+    {
+      "source": "蔡明介",
+      "target": "聯發科",
+      "value": 5,
+      "label": "公司領導"
+    },
+    {
+      "source": "蔡明介",
+      "target": "太空運算",
+      "value": 4,
+      "label": "前瞻布局"
+    },
+    {
+      "source": "蔡明介",
+      "target": "AI",
+      "value": 3,
+      "label": "策略展望"
+    },
+    {
+      "source": "日月光",
+      "target": "半導體",
+      "value": 5,
+      "label": "封裝製造"
+    },
+    {
+      "source": "日月光",
+      "target": "美國",
+      "value": 3,
+      "label": "海外布局"
+    },
+    {
+      "source": "吳田玉",
+      "target": "日月光",
+      "value": 5,
+      "label": "公司發言"
+    },
+    {
+      "source": "鴻海",
+      "target": "夏普",
+      "value": 4,
+      "label": "商業合作"
+    },
+    {
+      "source": "鴻海",
+      "target": "AI",
+      "value": 3,
+      "label": "研發合作"
+    },
+    {
+      "source": "三星",
+      "target": "韓國",
+      "value": 4,
+      "label": "本國企業"
+    },
+    {
+      "source": "三星",
+      "target": "半導體",
+      "value": 4,
+      "label": "核心業務"
+    },
+    {
+      "source": "韓國",
+      "target": "半導體",
+      "value": 4,
+      "label": "產業聚落"
+    },
+    {
+      "source": "AMD",
+      "target": "光通訊",
+      "value": 4,
+      "label": "需求拉動"
+    },
+    {
+      "source": "AMD",
+      "target": "AAOI",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "字節跳動",
+      "target": "高通",
+      "value": 4,
+      "label": "晶片合作"
+    },
+    {
+      "source": "字節跳動",
+      "target": "AI",
+      "value": 4,
+      "label": "AI應用"
+    },
+    {
+      "source": "字節跳動",
+      "target": "中國",
+      "value": 3,
+      "label": "本國企業"
+    },
+    {
+      "source": "輝達",
+      "target": "AI",
+      "value": 5,
+      "label": "核心產品"
+    },
+    {
+      "source": "輝達",
+      "target": "中國",
+      "value": 4,
+      "label": "晶片需求"
+    },
+    {
+      "source": "中國",
+      "target": "AI",
+      "value": 5,
+      "label": "技術競爭"
+    },
+    {
+      "source": "中國",
+      "target": "超級電腦",
+      "value": 5,
+      "label": "技術競爭"
+    },
+    {
+      "source": "台灣",
+      "target": "超級電腦",
+      "value": 4,
+      "label": "算力能量"
+    },
+    {
+      "source": "國網中心",
+      "target": "超級電腦",
+      "value": 4,
+      "label": "建置運營"
+    },
+    {
+      "source": "國網中心",
+      "target": "台灣",
+      "value": 3,
+      "label": "政府機構"
+    },
+    {
+      "source": "美國",
+      "target": "超級電腦",
+      "value": 4,
+      "label": "技術競爭"
+    },
+    {
+      "source": "美國",
+      "target": "矽盛世",
+      "value": 5,
+      "label": "主導倡議"
+    },
+    {
+      "source": "歐盟",
+      "target": "矽盛世",
+      "value": 4,
+      "label": "加入陣營"
+    },
+    {
+      "source": "歐盟",
+      "target": "AI供應鏈",
+      "value": 4,
+      "label": "減少依賴"
+    },
+    {
+      "source": "AI供應鏈",
+      "target": "中國",
+      "value": 4,
+      "label": "供應依賴"
+    },
+    {
+      "source": "矽盛世",
+      "target": "半導體",
+      "value": 4,
+      "label": "產業戰略"
+    },
+    {
+      "source": "矽盛世",
+      "target": "AI",
+      "value": 4,
+      "label": "產業戰略"
+    },
+    {
+      "source": "肯亞",
+      "target": "中國",
+      "value": 4,
+      "label": "貸款債務"
+    },
+    {
+      "source": "肯亞",
+      "target": "人民幣",
+      "value": 3,
+      "label": "債務計價"
+    },
+    {
+      "source": "中國",
+      "target": "人民幣",
+      "value": 3,
+      "label": "貨幣推廣"
+    },
+    {
+      "source": "機器人",
+      "target": "中國",
+      "value": 3,
+      "label": "技術競爭"
+    },
+    {
+      "source": "機器人",
+      "target": "美國",
+      "value": 3,
+      "label": "技術競爭"
+    },
+    {
+      "source": "AI",
+      "target": "半導體",
+      "value": 5,
+      "label": "需求驅動"
+    },
+    {
+      "source": "AI",
+      "target": "AI供應鏈",
+      "value": 4,
+      "label": "供應依賴"
+    },
+    {
+      "source": "光通訊",
+      "target": "CPO",
+      "value": 3,
+      "label": "技術關聯"
+    },
+    {
+      "source": "南電",
+      "target": "半導體",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "酷澎",
+      "target": "台灣",
+      "value": 3,
+      "label": "跨境電商"
+    },
+    {
+      "source": "台塑四寶",
+      "target": "台灣",
+      "value": 3,
+      "label": "本國企業"
+    },
+    {
+      "source": "AWS",
+      "target": "伊雲谷",
+      "value": 4,
+      "label": "合作認證"
+    },
+    {
+      "source": "AWS",
+      "target": "AI",
+      "value": 3,
+      "label": "雲端AI服務"
+    },
+    {
+      "source": "美國",
+      "target": "核電",
+      "value": 4,
+      "label": "能源政策"
+    },
+    {
+      "source": "中國",
+      "target": "核電",
+      "value": 3,
+      "label": "能源政策"
+    },
+    {
+      "source": "布倫特原油",
+      "target": "歐盟",
+      "value": 3,
+      "label": "市場影響"
+    },
+    {
+      "source": "台灣",
+      "target": "半導體",
+      "value": 5,
+      "label": "核心優勢"
+    },
+    {
+      "source": "太空運算",
+      "target": "AI",
+      "value": 3,
+      "label": "技術融合"
+    },
+    {
+      "source": "高通",
+      "target": "半導體",
+      "value": 3,
+      "label": "晶片設計"
+    },
+    {
+      "source": "升息",
+      "target": "外資",
+      "value": 3,
+      "label": "資金移動"
+    }
+  ],
+  "newsDatabase": {
+    "台積電": [
+      {
+        "title": "CRIF 5,000大企業經營績效 台積首度奪下三冠王",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9586577"
+      },
+      {
+        "title": "三大優勢…半導體全球供應鏈 非台不可",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9586727"
+      },
+      {
+        "title": "AI伺服器暢旺 台鏈閃星光",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000358-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "日月光": [
+      {
+        "title": "日月光擴產 15座廠齊動工 營運長吳田玉：產能嚴重供不應求",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9586704"
+      },
+      {
+        "title": "日月光投控營運長吳田玉暗示 漲價是必然趨勢",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9586717"
+      },
+      {
+        "title": "日月光面板級封裝 年底投產",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000249-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "布局美國 日月光不會缺席",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000252-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "日月光投控：漲價有必要",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1760141"
+      }
+    ],
+    "大立光": [
+      {
+        "title": "大立光買地攻 CPO 起手式 將斥資逾6億元購入台中千坪土地",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9586710"
+      },
+      {
+        "title": "大立光今年資本支出估百億元",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9586720"
+      }
+    ],
+    "聯發科": [
+      {
+        "title": "聯發科前瞻研發中心 看見成果",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9586713"
+      },
+      {
+        "title": "蔡明介揭示太空運算新世代 或許正迎來下一次的「史普尼克時刻」",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9586703"
+      },
+      {
+        "title": "蔡明介：太空運算成新戰場",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000257-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "鴻海": [
+      {
+        "title": "鴻海、夏普簽MOU 深化研發",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000260-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "夏普": [
+      {
+        "title": "鴻海、夏普簽MOU 深化研發",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000260-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "三星": [
+      {
+        "title": "三星擬砸90兆韓元 買回庫藏股",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000327-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "晶片需求增 韓擬建第二生產聚落",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9586731"
+      }
+    ],
+    "AMD": [
+      {
+        "title": "AMD搶光通訊產能 AAOI鏈迎急單",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000253-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "高通": [
+      {
+        "title": "字節傳找高通 合作客製化晶片",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000339-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "字節跳動": [
+      {
+        "title": "字節傳找高通 合作客製化晶片",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000339-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "輝達": [
+      {
+        "title": "陸黑市瘋搶輝達晶片 價格翻倍",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000341-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "高盛": [
+      {
+        "title": "高盛：Fed 7月升息機率不小",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000230-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "南電": [
+      {
+        "title": "產品組合優化、漲價效益延續帶動 南電下半年營運動能續強",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000361-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "酷澎": [
+      {
+        "title": "酷澎跨境購物 免預收關稅",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9586650"
+      }
+    ],
+    "台塑四寶": [
+      {
+        "title": "台塑四寶下半年營運 迎「供應回穩」與「轉型升級」兩大利多",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9586658"
+      }
+    ],
+    "遊戲橘子": [
+      {
+        "title": "遊戲橘子董座：雙軌布局遊戲、AI",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000364-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "伊雲谷": [
+      {
+        "title": "伊雲谷獲AWS代理AI服務認證",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000367-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "AWS": [
+      {
+        "title": "伊雲谷獲AWS代理AI服務認證",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000367-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "AAOI": [
+      {
+        "title": "AMD搶光通訊產能 AAOI鏈迎急單",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000253-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Fed": [
+      {
+        "title": "Fed 轉鷹 專家推演三情境",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9586597"
+      },
+      {
+        "title": "高盛：Fed 7月升息機率不小",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000230-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "五銀行看經濟 四個變因",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9586596"
+      }
+    ],
+    "日本銀行": [
+      {
+        "title": "日銀唱鷹 籲持續升息靠攏中性利率",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000226-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "公股銀：日圓看升 美元修正",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000348-260205?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台灣央行": [
+      {
+        "title": "32元…央行重要防線",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9586608"
+      },
+      {
+        "title": "外資出逃 台幣重貶1.26角 失守31.7元探二個月低點",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9586599"
+      }
+    ],
+    "國網中心": [
+      {
+        "title": "國網中心建置超級電腦 「晶創26」登全球Top500第33名",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9586778"
+      }
+    ],
+    "歐盟": [
+      {
+        "title": "歐盟加入美國主導「矽盛世」倡議　降低對中國AI供應鏈依賴",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9586823"
+      },
+      {
+        "title": "布倫特原油跌破每桶75美元　歐股反彈多收紅",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9586801"
+      }
+    ],
+    "川普": [
+      {
+        "title": "川普：伊朗通知美國 荷莫茲不收費",
+        "source": "",
+        "url": "https://udn.com/news/story/6809/9586718"
+      },
+      {
+        "title": "36國民調：76％對川普缺乏信心",
+        "source": "",
+        "url": "https://udn.com/news/story/6809/9586723"
+      }
+    ],
+    "蔡明介": [
+      {
+        "title": "蔡明介揭示太空運算新世代 或許正迎來下一次的「史普尼克時刻」",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9586703"
+      },
+      {
+        "title": "蔡明介：太空運算成新戰場",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000257-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "吳田玉": [
+      {
+        "title": "日月光擴產 15座廠齊動工 營運長吳田玉：產能嚴重供不應求",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9586704"
+      },
+      {
+        "title": "日月光投控營運長吳田玉暗示 漲價是必然趨勢",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9586717"
+      }
+    ],
+    "美國": [
+      {
+        "title": "美主導矽盛世 24國入隊",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000324-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美將蓋10座核電廠 規模30年來最大",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000331-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "歐盟加入美國主導「矽盛世」倡議　降低對中國AI供應鏈依賴",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9586823"
+      },
+      {
+        "title": "機器人成中美角逐新戰場",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000329-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "布局美國 日月光不會缺席",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000252-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中國": [
+      {
+        "title": "陸AI模型獲評世界第1 並列美巨頭衝擊矽谷",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9586733"
+      },
+      {
+        "title": "超越美國 陸「靈晟」奪全球超級電腦榜首",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9586722"
+      },
+      {
+        "title": "陸黑市瘋搶輝達晶片 價格翻倍",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000341-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "陸火力發電 今年不減反增",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000333-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "大缺貨 陸MLCC報價波動劇烈",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000336-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "肯亞欠中國貸款 改計人民幣",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000342-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "機器人成中美角逐新戰場",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000329-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台灣": [
+      {
+        "title": "台灣11套超級電腦進榜 TOP500 Nano4穩居最強",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9586730"
+      },
+      {
+        "title": "三大優勢…半導體全球供應鏈 非台不可",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9586727"
+      },
+      {
+        "title": "5月工業生產連27紅 6月更旺",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000221-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI伺服器暢旺 台鏈閃星光",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000358-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "日本": [
+      {
+        "title": "日銀唱鷹 籲持續升息靠攏中性利率",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000226-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "公股銀：日圓看升 美元修正",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000348-260205?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "肯亞": [
+      {
+        "title": "肯亞欠中國貸款 改計人民幣",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000342-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "伊朗": [
+      {
+        "title": "川普：伊朗通知美國 荷莫茲不收費",
+        "source": "",
+        "url": "https://udn.com/news/story/6809/9586718"
+      }
+    ],
+    "韓國": [
+      {
+        "title": "晶片需求增 韓擬建第二生產聚落",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9586731"
+      },
+      {
+        "title": "三星擬砸90兆韓元 買回庫藏股",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000327-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "AI": [
+      {
+        "title": "AI伺服器暢旺 台鏈閃星光",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000358-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "陸AI模型獲評世界第1 並列美巨頭衝擊矽谷",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9586733"
+      },
+      {
+        "title": "AI算力爆發 工業生產連27紅",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000602-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "歐盟加入美國主導「矽盛世」倡議　降低對中國AI供應鏈依賴",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9586823"
+      },
+      {
+        "title": "遊戲橘子董座：雙軌布局遊戲、AI",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000364-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "伊雲谷獲AWS代理AI服務認證",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000367-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "半導體": [
+      {
+        "title": "三大優勢…半導體全球供應鏈 非台不可",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9586727"
+      },
+      {
+        "title": "晶片需求增 韓擬建第二生產聚落",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9586731"
+      },
+      {
+        "title": "5月工業生產連27紅 6月更旺",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000221-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "超級電腦": [
+      {
+        "title": "台灣11套超級電腦進榜 TOP500 Nano4穩居最強",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9586730"
+      },
+      {
+        "title": "超越美國 陸「靈晟」奪全球超級電腦榜首",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9586722"
+      },
+      {
+        "title": "TOP500入榜全球超級電腦 專家：我算力已屬前段",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9586726"
+      },
+      {
+        "title": "國網中心建置超級電腦 「晶創26」登全球Top500第33名",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9586778"
+      }
+    ],
+    "光通訊": [
+      {
+        "title": "AMD搶光通訊產能 AAOI鏈迎急單",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000253-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "光模組需求熱 PCB鏈啖商機",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000256-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "CPO": [
+      {
+        "title": "大立光買地攻 CPO 起手式 將斥資逾6億元購入台中千坪土地",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9586710"
+      }
+    ],
+    "機器人": [
+      {
+        "title": "機器人成中美角逐新戰場",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000329-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "太空運算": [
+      {
+        "title": "蔡明介揭示太空運算新世代 或許正迎來下一次的「史普尼克時刻」",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9586703"
+      },
+      {
+        "title": "蔡明介：太空運算成新戰場",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000257-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "核電": [
+      {
+        "title": "美將蓋10座核電廠 規模30年來最大",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000331-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "陸火力發電 今年不減反增",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000333-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "矽盛世": [
+      {
+        "title": "美主導矽盛世 24國入隊",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000324-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "歐盟加入美國主導「矽盛世」倡議　降低對中國AI供應鏈依賴",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9586823"
+      }
+    ],
+    "台幣": [
+      {
+        "title": "外資出逃 台幣重貶1.26角 失守31.7元探二個月低點",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9586599"
+      },
+      {
+        "title": "32元…央行重要防線",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9586608"
+      },
+      {
+        "title": "股匯雙殺 台幣爆第七巨量",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000218-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "布倫特原油": [
+      {
+        "title": "布倫特原油跌破每桶75美元　歐股反彈多收紅",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9586801"
+      },
+      {
+        "title": "荷姆茲復航 布油跌破74美元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000315-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "人民幣": [
+      {
+        "title": "肯亞欠中國貸款 改計人民幣",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000342-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "升息": [
+      {
+        "title": "Fed 轉鷹 專家推演三情境",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9586597"
+      },
+      {
+        "title": "日銀唱鷹 籲持續升息靠攏中性利率",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000226-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "高盛：Fed 7月升息機率不小",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000230-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "外資": [
+      {
+        "title": "外資出逃 台幣重貶1.26角 失守31.7元探二個月低點",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9586599"
+      },
+      {
+        "title": "史上新高 外資大逃殺 賣超1774億",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000600-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "股匯雙殺 台幣爆第七巨量",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000218-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "荷莫茲海峽": [
+      {
+        "title": "川普：伊朗通知美國 荷莫茲不收費",
+        "source": "",
+        "url": "https://udn.com/news/story/6809/9586718"
+      },
+      {
+        "title": "荷姆茲復航 布油跌破74美元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260625000315-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "AI供應鏈": [
+      {
+        "title": "歐盟加入美國主導「矽盛世」倡議　降低對中國AI供應鏈依賴",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9586823"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "布倫特原油跌破每桶75美元　歐股反彈多收紅 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9586801",
+    "Fed 轉鷹 專家推演三情境 (經濟金融脈動)": "https://money.udn.com/money/story/5613/9586597",
+    "五銀行看經濟 四個變因 (經濟金融脈動)": "https://money.udn.com/money/story/5613/9586596",
+    "外資出逃 台幣重貶1.26角 失守31.7元探二個月低點 (經濟金融脈動)": "https://money.udn.com/money/story/5613/9586599",
+    "32元…央行重要防線 (經濟金融脈動)": "https://money.udn.com/money/story/5613/9586608",
+    "36國民調：76％對川普缺乏信心 (聯合_產經_股市)": "https://udn.com/news/story/6809/9586723",
+    "川普：伊朗通知美國 荷莫茲不收費 (聯合_產經_股市)": "https://udn.com/news/story/6809/9586718",
+    "股匯雙殺 台幣爆第七巨量 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260625000218-260202?utm_source=iii_news&utm_medium=rss",
+    "5月工業生產連27紅 6月更旺 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260625000221-260202?utm_source=iii_news&utm_medium=rss",
+    "日銀唱鷹 籲持續升息靠攏中性利率 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260625000226-260202?utm_source=iii_news&utm_medium=rss",
+    "高盛：Fed 7月升息機率不小 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260625000230-260202?utm_source=iii_news&utm_medium=rss",
+    "新聞分析－企業匯率避險 慎防熱錢回馬槍 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260625000234-260202?utm_source=iii_news&utm_medium=rss",
+    "荷姆茲復航 布油跌破74美元 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260625000315-260203?utm_source=iii_news&utm_medium=rss",
+    "肯亞欠中國貸款 改計人民幣 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260625000342-260203?utm_source=iii_news&utm_medium=rss",
+    "公股銀：日圓看升 美元修正 (工商金融稅務)": "https://www.chinatimes.com/newspapers/20260625000348-260205?utm_source=iii_news&utm_medium=rss",
+    "史上新高 外資大逃殺 賣超1774億 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260625000600-260110?utm_source=iii_news&utm_medium=rss",
+    "大立光買地攻 CPO 起手式 將斥資逾6億元購入台中千坪土地 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9586710",
+    "大立光今年資本支出估百億元 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9586720",
+    "CRIF 5,000大企業經營績效 台積首度奪下三冠王 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9586577",
+    "蔡明介揭示太空運算新世代 或許正迎來下一次的「史普尼克時刻」 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9586703",
+    "聯發科前瞻研發中心 看見成果 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9586713",
+    "日月光擴產 15座廠齊動工 營運長吳田玉：產能嚴重供不應求 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9586704",
+    "日月光投控營運長吳田玉暗示 漲價是必然趨勢 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9586717",
+    "酷澎跨境購物 免預收關稅 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9586650",
+    "歐盟加入美國主導「矽盛世」倡議　降低對中國AI供應鏈依賴 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9586823",
+    "台灣11套超級電腦進榜 TOP500 Nano4穩居最強 (聯合_產經_股市)": "https://udn.com/news/story/7240/9586730",
+    "超越美國 陸「靈晟」奪全球超級電腦榜首 (聯合_產經_股市)": "https://udn.com/news/story/7240/9586722",
+    "三大優勢…半導體全球供應鏈 非台不可 (聯合_產經_股市)": "https://udn.com/news/story/7240/9586727",
+    "TOP500入榜全球超級電腦 專家：我算力已屬前段 (聯合_產經_股市)": "https://udn.com/news/story/7240/9586726",
+    "陸AI模型獲評世界第1 並列美巨頭衝擊矽谷 (聯合_產經_股市)": "https://udn.com/news/story/7240/9586733",
+    "國網中心建置超級電腦 「晶創26」登全球Top500第33名 (聯合_產經_股市)": "https://udn.com/news/story/7240/9586778",
+    "日月光面板級封裝 年底投產 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260625000249-260202?utm_source=iii_news&utm_medium=rss",
+    "布局美國 日月光不會缺席 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260625000252-260202?utm_source=iii_news&utm_medium=rss",
+    "AMD搶光通訊產能 AAOI鏈迎急單 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260625000253-260202?utm_source=iii_news&utm_medium=rss",
+    "光模組需求熱 PCB鏈啖商機 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260625000256-260202?utm_source=iii_news&utm_medium=rss",
+    "蔡明介：太空運算成新戰場 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260625000257-260202?utm_source=iii_news&utm_medium=rss",
+    "鴻海、夏普簽MOU 深化研發 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260625000260-260202?utm_source=iii_news&utm_medium=rss",
+    "美主導矽盛世 24國入隊 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260625000324-260203?utm_source=iii_news&utm_medium=rss",
+    "三星擬砸90兆韓元 買回庫藏股 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260625000327-260203?utm_source=iii_news&utm_medium=rss",
+    "機器人成中美角逐新戰場 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260625000329-260203?utm_source=iii_news&utm_medium=rss",
+    "大缺貨 陸MLCC報價波動劇烈 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260625000336-260203?utm_source=iii_news&utm_medium=rss",
+    "字節傳找高通 合作客製化晶片 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260625000339-260203?utm_source=iii_news&utm_medium=rss",
+    "陸黑市瘋搶輝達晶片 價格翻倍 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260625000341-260203?utm_source=iii_news&utm_medium=rss",
+    "AI伺服器暢旺 台鏈閃星光 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260625000358-260204?utm_source=iii_news&utm_medium=rss",
+    "產品組合優化、漲價效益延續帶動 南電下半年營運動能續強 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260625000361-260204?utm_source=iii_news&utm_medium=rss",
+    "遊戲橘子董座：雙軌布局遊戲、AI (工商產業科技)": "https://www.chinatimes.com/newspapers/20260625000364-260204?utm_source=iii_news&utm_medium=rss",
+    "伊雲谷獲AWS代理AI服務認證 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260625000367-260204?utm_source=iii_news&utm_medium=rss",
+    "元瀚材料OCA 打入終端產品 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260625000368-260204?utm_source=iii_news&utm_medium=rss",
+    "日月光投控：漲價有必要 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1760141",
+    "晶片需求增 韓擬建第二生產聚落 (聯合_產經_股市)": "https://udn.com/news/story/7240/9586731",
+    "AI算力爆發 工業生產連27紅 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260625000602-260110?utm_source=iii_news&utm_medium=rss",
+    "明年健保支出破兆 醫界促採高推估 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260625000588-260114?utm_source=iii_news&utm_medium=rss",
+    "台塑四寶下半年營運 迎「供應回穩」與「轉型升級」兩大利多 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9586658",
+    "美將蓋10座核電廠 規模30年來最大 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260625000331-260203?utm_source=iii_news&utm_medium=rss",
+    "陸火力發電 今年不減反增 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260625000333-260203?utm_source=iii_news&utm_medium=rss"
+  }
+}
