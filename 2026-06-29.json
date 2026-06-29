@@ -1,0 +1,1314 @@
+{
+  "nodes": [
+    {
+      "id": "台積電",
+      "group": "company",
+      "size": 25
+    },
+    {
+      "id": "三星",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "SK集團",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "輝達",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "蘋果",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "谷歌",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "Meta",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "雙鴻",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "華邦電",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "南亞科",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "威剛",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "國碩",
+      "group": "company",
+      "size": 8
+    },
+    {
+      "id": "榮星",
+      "group": "company",
+      "size": 8
+    },
+    {
+      "id": "DeepSeek",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "Nearfield",
+      "group": "company",
+      "size": 8
+    },
+    {
+      "id": "泰合",
+      "group": "company",
+      "size": 7
+    },
+    {
+      "id": "長聖",
+      "group": "company",
+      "size": 7
+    },
+    {
+      "id": "中衛",
+      "group": "company",
+      "size": 7
+    },
+    {
+      "id": "華新醫材",
+      "group": "company",
+      "size": 7
+    },
+    {
+      "id": "川普",
+      "group": "person",
+      "size": 16
+    },
+    {
+      "id": "馬斯克",
+      "group": "person",
+      "size": 16
+    },
+    {
+      "id": "庫克",
+      "group": "person",
+      "size": 11
+    },
+    {
+      "id": "李在明",
+      "group": "person",
+      "size": 14
+    },
+    {
+      "id": "林育申",
+      "group": "person",
+      "size": 8
+    },
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 20
+    },
+    {
+      "id": "伊朗",
+      "group": "country",
+      "size": 16
+    },
+    {
+      "id": "日本",
+      "group": "country",
+      "size": 13
+    },
+    {
+      "id": "南韓",
+      "group": "country",
+      "size": 14
+    },
+    {
+      "id": "中國",
+      "group": "country",
+      "size": 13
+    },
+    {
+      "id": "台灣",
+      "group": "country",
+      "size": 18
+    },
+    {
+      "id": "歐洲",
+      "group": "country",
+      "size": 10
+    },
+    {
+      "id": "AI",
+      "group": "tech",
+      "size": 25
+    },
+    {
+      "id": "記憶體",
+      "group": "tech",
+      "size": 22
+    },
+    {
+      "id": "晶片",
+      "group": "tech",
+      "size": 18
+    },
+    {
+      "id": "智慧眼鏡",
+      "group": "tech",
+      "size": 9
+    },
+    {
+      "id": "虛擬資產",
+      "group": "tech",
+      "size": 9
+    },
+    {
+      "id": "2奈米製程",
+      "group": "tech",
+      "size": 12
+    },
+    {
+      "id": "乙太網路交換器",
+      "group": "tech",
+      "size": 9
+    },
+    {
+      "id": "陶瓷基板",
+      "group": "tech",
+      "size": 8
+    },
+    {
+      "id": "瑞銀",
+      "group": "org",
+      "size": 10
+    },
+    {
+      "id": "BIS",
+      "group": "org",
+      "size": 10
+    },
+    {
+      "id": "歐洲央行",
+      "group": "org",
+      "size": 10
+    },
+    {
+      "id": "摩根士丹利",
+      "group": "org",
+      "size": 10
+    },
+    {
+      "id": "衛福部",
+      "group": "org",
+      "size": 8
+    },
+    {
+      "id": "財政部",
+      "group": "org",
+      "size": 9
+    },
+    {
+      "id": "停滯性通膨",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "AI泡沫",
+      "group": "finance",
+      "size": 11
+    },
+    {
+      "id": "台版晶片法",
+      "group": "finance",
+      "size": 11
+    },
+    {
+      "id": "記憶體缺貨",
+      "group": "finance",
+      "size": 14
+    },
+    {
+      "id": "遺產稅",
+      "group": "finance",
+      "size": 10
+    }
+  ],
+  "links": [
+    {
+      "source": "川普",
+      "target": "伊朗",
+      "value": 5,
+      "label": "軍事衝突"
+    },
+    {
+      "source": "美國",
+      "target": "伊朗",
+      "value": 5,
+      "label": "停火協議"
+    },
+    {
+      "source": "川普",
+      "target": "美國",
+      "value": 4,
+      "label": "政策主導"
+    },
+    {
+      "source": "瑞銀",
+      "target": "停滯性通膨",
+      "value": 4,
+      "label": "風險預警"
+    },
+    {
+      "source": "BIS",
+      "target": "AI泡沫",
+      "value": 4,
+      "label": "風險預警"
+    },
+    {
+      "source": "AI泡沫",
+      "target": "AI",
+      "value": 4,
+      "label": "市場風險"
+    },
+    {
+      "source": "歐洲央行",
+      "target": "歐洲",
+      "value": 3,
+      "label": "貨幣政策"
+    },
+    {
+      "source": "停滯性通膨",
+      "target": "美國",
+      "value": 3,
+      "label": "經濟影響"
+    },
+    {
+      "source": "台積電",
+      "target": "AI",
+      "value": 5,
+      "label": "技術供應"
+    },
+    {
+      "source": "台積電",
+      "target": "2奈米製程",
+      "value": 5,
+      "label": "研發製造"
+    },
+    {
+      "source": "台積電",
+      "target": "記憶體",
+      "value": 4,
+      "label": "供應鏈整合"
+    },
+    {
+      "source": "台積電",
+      "target": "華邦電",
+      "value": 4,
+      "label": "供應鏈合作"
+    },
+    {
+      "source": "台積電",
+      "target": "台版晶片法",
+      "value": 4,
+      "label": "政策受益"
+    },
+    {
+      "source": "台積電",
+      "target": "台灣",
+      "value": 5,
+      "label": "本土產業"
+    },
+    {
+      "source": "2奈米製程",
+      "target": "AI",
+      "value": 4,
+      "label": "技術應用"
+    },
+    {
+      "source": "蘋果",
+      "target": "AI",
+      "value": 4,
+      "label": "產品整合"
+    },
+    {
+      "source": "蘋果",
+      "target": "記憶體",
+      "value": 4,
+      "label": "需求拉動"
+    },
+    {
+      "source": "蘋果",
+      "target": "台積電",
+      "value": 5,
+      "label": "供應鏈"
+    },
+    {
+      "source": "馬斯克",
+      "target": "記憶體",
+      "value": 4,
+      "label": "市場評論"
+    },
+    {
+      "source": "馬斯克",
+      "target": "記憶體缺貨",
+      "value": 4,
+      "label": "公開示警"
+    },
+    {
+      "source": "庫克",
+      "target": "記憶體缺貨",
+      "value": 3,
+      "label": "公開示警"
+    },
+    {
+      "source": "馬斯克",
+      "target": "庫克",
+      "value": 3,
+      "label": "言論附和"
+    },
+    {
+      "source": "記憶體缺貨",
+      "target": "記憶體",
+      "value": 5,
+      "label": "供需失衡"
+    },
+    {
+      "source": "記憶體缺貨",
+      "target": "南亞科",
+      "value": 4,
+      "label": "市場熱絡"
+    },
+    {
+      "source": "記憶體缺貨",
+      "target": "威剛",
+      "value": 4,
+      "label": "市場熱絡"
+    },
+    {
+      "source": "記憶體缺貨",
+      "target": "華邦電",
+      "value": 4,
+      "label": "供貨受益"
+    },
+    {
+      "source": "摩根士丹利",
+      "target": "記憶體",
+      "value": 4,
+      "label": "目標價調升"
+    },
+    {
+      "source": "AI",
+      "target": "記憶體",
+      "value": 5,
+      "label": "需求驅動"
+    },
+    {
+      "source": "三星",
+      "target": "南韓",
+      "value": 4,
+      "label": "本土企業"
+    },
+    {
+      "source": "SK集團",
+      "target": "南韓",
+      "value": 4,
+      "label": "本土企業"
+    },
+    {
+      "source": "李在明",
+      "target": "南韓",
+      "value": 4,
+      "label": "政策主導"
+    },
+    {
+      "source": "李在明",
+      "target": "三星",
+      "value": 4,
+      "label": "超級計畫"
+    },
+    {
+      "source": "李在明",
+      "target": "SK集團",
+      "value": 4,
+      "label": "超級計畫"
+    },
+    {
+      "source": "李在明",
+      "target": "晶片",
+      "value": 4,
+      "label": "產業布局"
+    },
+    {
+      "source": "三星",
+      "target": "記憶體",
+      "value": 4,
+      "label": "生產供應"
+    },
+    {
+      "source": "輝達",
+      "target": "乙太網路交換器",
+      "value": 4,
+      "label": "產品領導"
+    },
+    {
+      "source": "輝達",
+      "target": "AI",
+      "value": 5,
+      "label": "核心技術"
+    },
+    {
+      "source": "谷歌",
+      "target": "Meta",
+      "value": 3,
+      "label": "算力競爭"
+    },
+    {
+      "source": "谷歌",
+      "target": "AI",
+      "value": 4,
+      "label": "算力限制"
+    },
+    {
+      "source": "DeepSeek",
+      "target": "AI",
+      "value": 4,
+      "label": "模型更新"
+    },
+    {
+      "source": "DeepSeek",
+      "target": "中國",
+      "value": 3,
+      "label": "技術研發"
+    },
+    {
+      "source": "Nearfield",
+      "target": "AI",
+      "value": 3,
+      "label": "商機融資"
+    },
+    {
+      "source": "日本",
+      "target": "台灣",
+      "value": 4,
+      "label": "數位迴廊合作"
+    },
+    {
+      "source": "日本",
+      "target": "晶片",
+      "value": 3,
+      "label": "經濟安全"
+    },
+    {
+      "source": "榮星",
+      "target": "陶瓷基板",
+      "value": 4,
+      "label": "商業合作"
+    },
+    {
+      "source": "榮星",
+      "target": "日本",
+      "value": 3,
+      "label": "跨國合作"
+    },
+    {
+      "source": "雙鴻",
+      "target": "AI",
+      "value": 3,
+      "label": "商業布局"
+    },
+    {
+      "source": "林育申",
+      "target": "雙鴻",
+      "value": 4,
+      "label": "經營領導"
+    },
+    {
+      "source": "台版晶片法",
+      "target": "台灣",
+      "value": 4,
+      "label": "產業政策"
+    },
+    {
+      "source": "台版晶片法",
+      "target": "晶片",
+      "value": 4,
+      "label": "減稅激勵"
+    },
+    {
+      "source": "財政部",
+      "target": "台版晶片法",
+      "value": 3,
+      "label": "政策評估"
+    },
+    {
+      "source": "財政部",
+      "target": "遺產稅",
+      "value": 4,
+      "label": "稅務管理"
+    },
+    {
+      "source": "遺產稅",
+      "target": "台灣",
+      "value": 3,
+      "label": "財稅政策"
+    },
+    {
+      "source": "虛擬資產",
+      "target": "AI",
+      "value": 3,
+      "label": "科技趨勢"
+    },
+    {
+      "source": "智慧眼鏡",
+      "target": "AI",
+      "value": 3,
+      "label": "應用場景"
+    },
+    {
+      "source": "衛福部",
+      "target": "台灣",
+      "value": 3,
+      "label": "醫療政策"
+    },
+    {
+      "source": "泰合",
+      "target": "歐洲",
+      "value": 3,
+      "label": "市場拓展"
+    },
+    {
+      "source": "泰合",
+      "target": "美國",
+      "value": 3,
+      "label": "市場拓展"
+    },
+    {
+      "source": "長聖",
+      "target": "台灣",
+      "value": 3,
+      "label": "生技研發"
+    },
+    {
+      "source": "中衛",
+      "target": "華新醫材",
+      "value": 3,
+      "label": "業務拓展"
+    },
+    {
+      "source": "中國",
+      "target": "晶片",
+      "value": 3,
+      "label": "產業競爭"
+    },
+    {
+      "source": "中國",
+      "target": "AI",
+      "value": 3,
+      "label": "技術競爭"
+    },
+    {
+      "source": "AI",
+      "target": "晶片",
+      "value": 5,
+      "label": "技術依存"
+    },
+    {
+      "source": "停滯性通膨",
+      "target": "歐洲",
+      "value": 3,
+      "label": "經濟風險"
+    },
+    {
+      "source": "乙太網路交換器",
+      "target": "晶片",
+      "value": 3,
+      "label": "硬體依存"
+    },
+    {
+      "source": "國碩",
+      "target": "台灣",
+      "value": 3,
+      "label": "本土企業"
+    }
+  ],
+  "newsDatabase": {
+    "台積電": [
+      {
+        "title": "台積電加速打造本土 DRAM 鏈 華邦助陣供貨記憶體晶圓",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9594197"
+      },
+      {
+        "title": "7／16法說 台積Q2毛利率挑戰7成",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000145-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台積2奈米 成AI手機決勝點",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000172-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台積7／16法說 牽動台股後市",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000497-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "三星": [
+      {
+        "title": "三星、SK 集團啟動大投資 李在明今宣布三大超級計畫 拚當高科技霸主",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9594242"
+      },
+      {
+        "title": "晶片布局 李在明端3大超級計畫",
+        "source": "",
+        "url": "https://udn.com/news/story/6809/9594142"
+      }
+    ],
+    "SK集團": [
+      {
+        "title": "三星、SK 集團啟動大投資 李在明今宣布三大超級計畫 拚當高科技霸主",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9594242"
+      },
+      {
+        "title": "晶片布局 李在明端3大超級計畫",
+        "source": "",
+        "url": "https://udn.com/news/story/6809/9594142"
+      }
+    ],
+    "輝達": [
+      {
+        "title": "輝達乙太網路交換器 躍升龍頭",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000216-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "蘋果": [
+      {
+        "title": "i18記憶體搭載量可能變多 因應 Apple Intelligence 升級需求",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9594213"
+      },
+      {
+        "title": "iPhone遺失！蘋果示警2事勿急著做：小心把手機送詐團",
+        "source": "",
+        "url": "https://www.chinatimes.com/realtimenews/20260629000794-260412?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "Mac、iPad跳漲 逼補差價掀波",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000489-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "谷歌": [
+      {
+        "title": "算力吃緊 谷歌限制Meta使用AI模型",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000218-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Meta": [
+      {
+        "title": "算力吃緊 谷歌限制Meta使用AI模型",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000218-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "雙鴻": [
+      {
+        "title": "智慧經營／雙鴻董事長林育申 資源效率決勝 AI 戰場",
+        "source": "",
+        "url": "https://udn.com/news/story/7241/9593996"
+      }
+    ],
+    "華邦電": [
+      {
+        "title": "台積電加速打造本土 DRAM 鏈 華邦助陣供貨記憶體晶圓",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9594197"
+      }
+    ],
+    "南亞科": [
+      {
+        "title": "馬斯克搶記憶體直言價格飆漲程度「前所未見」南亞科、威剛等炙手可熱",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9594208"
+      }
+    ],
+    "威剛": [
+      {
+        "title": "馬斯克搶記憶體直言價格飆漲程度「前所未見」南亞科、威剛等炙手可熱",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9594208"
+      }
+    ],
+    "國碩": [
+      {
+        "title": "國碩強攻三大商機",
+        "source": "",
+        "url": "https://udn.com/news/story/7253/9593952"
+      }
+    ],
+    "榮星": [
+      {
+        "title": "榮星攜日商 攻陶瓷基板",
+        "source": "",
+        "url": "https://udn.com/news/story/7253/9594035"
+      }
+    ],
+    "DeepSeek": [
+      {
+        "title": "DeepSeek模型更新 推理速度最高提升85％",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000228-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Nearfield": [
+      {
+        "title": "搶AI商機 Nearfield完成3.8億美元融資",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000373-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "泰合": [
+      {
+        "title": "泰合血栓藥拚賣向歐美",
+        "source": "",
+        "url": "https://udn.com/news/story/7254/9594050"
+      }
+    ],
+    "長聖": [
+      {
+        "title": "長聖新藥推進臨床二期",
+        "source": "",
+        "url": "https://udn.com/news/story/7254/9594051"
+      }
+    ],
+    "中衛": [
+      {
+        "title": "中衛、華新醫材 跨足新事業",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000252-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "華新醫材": [
+      {
+        "title": "中衛、華新醫材 跨足新事業",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000252-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "川普": [
+      {
+        "title": "美伊又打了考驗停火協議 川普警告若被迫重啟戰爭 伊朗將「不復存在」",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9594153"
+      },
+      {
+        "title": "美伊MOU 一個協議各自表述",
+        "source": "",
+        "url": "https://udn.com/news/story/124061/9594139"
+      }
+    ],
+    "馬斯克": [
+      {
+        "title": "馬斯克搶記憶體直言價格飆漲程度「前所未見」南亞科、威剛等炙手可熱",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9594208"
+      },
+      {
+        "title": "馬斯克附和庫克言論 記憶體短缺情況…前所未見",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000166-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "庫克": [
+      {
+        "title": "馬斯克附和庫克言論 記憶體短缺情況…前所未見",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000166-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "李在明": [
+      {
+        "title": "三星、SK 集團啟動大投資 李在明今宣布三大超級計畫 拚當高科技霸主",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9594242"
+      },
+      {
+        "title": "晶片布局 李在明端3大超級計畫",
+        "source": "",
+        "url": "https://udn.com/news/story/6809/9594142"
+      }
+    ],
+    "林育申": [
+      {
+        "title": "智慧經營／雙鴻董事長林育申 資源效率決勝 AI 戰場",
+        "source": "",
+        "url": "https://udn.com/news/story/7241/9593996"
+      }
+    ],
+    "美國": [
+      {
+        "title": "美伊又打了考驗停火協議 川普警告若被迫重啟戰爭 伊朗將「不復存在」",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9594153"
+      },
+      {
+        "title": "美伊MOU 一個協議各自表述",
+        "source": "",
+        "url": "https://udn.com/news/story/124061/9594139"
+      },
+      {
+        "title": "美伊再互打 停火協議瀕破裂",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000148-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美元Q3走勢 國銀：短線偏強",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000234-260205?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美國零關稅車今年等不到 國產車、油電車等有望受惠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9594129"
+      }
+    ],
+    "伊朗": [
+      {
+        "title": "美伊又打了考驗停火協議 川普警告若被迫重啟戰爭 伊朗將「不復存在」",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9594153"
+      },
+      {
+        "title": "美伊MOU 一個協議各自表述",
+        "source": "",
+        "url": "https://udn.com/news/story/124061/9594139"
+      },
+      {
+        "title": "美伊再互打 停火協議瀕破裂",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000148-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "日本": [
+      {
+        "title": "日本「數位迴廊」計畫動了 涵蓋台、星、印度及智利等地 加強經濟安全合作",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9594233"
+      },
+      {
+        "title": "榮星攜日商 攻陶瓷基板",
+        "source": "",
+        "url": "https://udn.com/news/story/7253/9594035"
+      }
+    ],
+    "南韓": [
+      {
+        "title": "三星、SK 集團啟動大投資 李在明今宣布三大超級計畫 拚當高科技霸主",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9594242"
+      },
+      {
+        "title": "晶片布局 李在明端3大超級計畫",
+        "source": "",
+        "url": "https://udn.com/news/story/6809/9594142"
+      }
+    ],
+    "中國": [
+      {
+        "title": "陸百款新車登場 價格戰升溫",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000222-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "陸人造太陽 核心技術突破",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000227-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "陸、日鋁電龍頭 加入漲價",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000169-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "DeepSeek模型更新 推理速度最高提升85％",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000228-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台灣": [
+      {
+        "title": "台積電加速打造本土 DRAM 鏈 華邦助陣供貨記憶體晶圓",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9594197"
+      },
+      {
+        "title": "日本「數位迴廊」計畫動了 涵蓋台、星、印度及智利等地 加強經濟安全合作",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9594233"
+      },
+      {
+        "title": "產創投資抵減金額創新高 顯示台版晶片法減稅效果逐漸顯現",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9594130"
+      },
+      {
+        "title": "台版晶片法發威 去年產創抵稅額創高",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000195-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "歐洲": [
+      {
+        "title": "歐央論壇登場 聚焦華許表態",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000213-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "泰合血栓藥拚賣向歐美",
+        "source": "",
+        "url": "https://udn.com/news/story/7254/9594050"
+      }
+    ],
+    "AI": [
+      {
+        "title": "BIS：AI 泡沫風險 牽動全球",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9594219"
+      },
+      {
+        "title": "擔心孩子被誤導 科技業者有招數助家長管理孩子使用 AI",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9594360"
+      },
+      {
+        "title": "AI浪潮大幅推升市場對記憶體的需求 外資圈調高類股評價",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9594203"
+      },
+      {
+        "title": "台積2奈米 成AI手機決勝點",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000172-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "算力吃緊 谷歌限制Meta使用AI模型",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000218-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "搶AI商機 Nearfield完成3.8億美元融資",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000373-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "電信三雄 AI創新應用開花",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000246-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI優先 手機電腦出貨雙位數衰退",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000499-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "智慧經營／雙鴻董事長林育申 資源效率決勝 AI 戰場",
+        "source": "",
+        "url": "https://udn.com/news/story/7241/9593996"
+      }
+    ],
+    "記憶體": [
+      {
+        "title": "台積電加速打造本土 DRAM 鏈 華邦助陣供貨記憶體晶圓",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9594197"
+      },
+      {
+        "title": "馬斯克搶記憶體直言價格飆漲程度「前所未見」南亞科、威剛等炙手可熱",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9594208"
+      },
+      {
+        "title": "i18記憶體搭載量可能變多 因應 Apple Intelligence 升級需求",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9594213"
+      },
+      {
+        "title": "記憶體供不應求效應持續顯現 小廠沒貨拿陷存亡危機",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9594215"
+      },
+      {
+        "title": "AI浪潮大幅推升市場對記憶體的需求 外資圈調高類股評價",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9594203"
+      },
+      {
+        "title": "記憶體狂熱 大摩全面調升目標價添柴",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000163-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "馬斯克附和庫克言論 記憶體短缺情況…前所未見",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000166-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "記憶體缺貨危機 中小業者面臨生存考驗",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000168-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "晶片": [
+      {
+        "title": "晶片布局 李在明端3大超級計畫",
+        "source": "",
+        "url": "https://udn.com/news/story/6809/9594142"
+      },
+      {
+        "title": "產創投資抵減金額創新高 顯示台版晶片法減稅效果逐漸顯現",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9594130"
+      },
+      {
+        "title": "台版晶片法發威 去年產創抵稅額創高",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000195-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "智慧眼鏡": [
+      {
+        "title": "H2消費旺季 智慧眼鏡百花齊放",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000174-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "虛擬資產": [
+      {
+        "title": "虛擬資產業 備戰取照",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9594124"
+      }
+    ],
+    "2奈米製程": [
+      {
+        "title": "台積2奈米 成AI手機決勝點",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000172-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "乙太網路交換器": [
+      {
+        "title": "輝達乙太網路交換器 躍升龍頭",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000216-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "陶瓷基板": [
+      {
+        "title": "榮星攜日商 攻陶瓷基板",
+        "source": "",
+        "url": "https://udn.com/news/story/7253/9594035"
+      }
+    ],
+    "瑞銀": [
+      {
+        "title": "瑞銀調查 停滯性通膨 恐五年內出現",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9594210"
+      }
+    ],
+    "BIS": [
+      {
+        "title": "BIS：AI 泡沫風險 牽動全球",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9594219"
+      }
+    ],
+    "歐洲央行": [
+      {
+        "title": "歐央論壇登場 聚焦華許表態",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000213-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "摩根士丹利": [
+      {
+        "title": "記憶體狂熱 大摩全面調升目標價添柴",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000163-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "衛福部": [
+      {
+        "title": "癌症在家化療 衛福部下半年推出",
+        "source": "",
+        "url": "https://udn.com/news/story/7241/9594094"
+      }
+    ],
+    "財政部": [
+      {
+        "title": "兩金融減稅優惠擬再延十年 立委皆提案延長至2036年底 財部：將評估",
+        "source": "",
+        "url": "https://udn.com/news/story/7243/9594165"
+      },
+      {
+        "title": "適用最高稅率共733件 遺產稅去年實徵7,835億",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000199-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "停滯性通膨": [
+      {
+        "title": "瑞銀調查 停滯性通膨 恐五年內出現",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9594210"
+      },
+      {
+        "title": "3C通膨效應擴大！家用遊戲機 3萬元起跳恐成新常態",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9594209"
+      }
+    ],
+    "AI泡沫": [
+      {
+        "title": "BIS：AI 泡沫風險 牽動全球",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9594219"
+      }
+    ],
+    "台版晶片法": [
+      {
+        "title": "產創投資抵減金額創新高 顯示台版晶片法減稅效果逐漸顯現",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9594130"
+      },
+      {
+        "title": "台版晶片法發威 去年產創抵稅額創高",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000195-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "記憶體缺貨": [
+      {
+        "title": "記憶體供不應求效應持續顯現 小廠沒貨拿陷存亡危機",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9594215"
+      },
+      {
+        "title": "記憶體缺貨危機 中小業者面臨生存考驗",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000168-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "馬斯克搶記憶體直言價格飆漲程度「前所未見」南亞科、威剛等炙手可熱",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9594208"
+      },
+      {
+        "title": "馬斯克附和庫克言論 記憶體短缺情況…前所未見",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000166-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "遺產稅": [
+      {
+        "title": "適用最高稅率共733件 遺產稅去年實徵7,835億",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000199-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "遺產稅93％免稅 學者：富豪門路多",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260629000491-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "去年遺產稅最高稅率 平均每件繼承3.65億",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1760635"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "瑞銀調查 停滯性通膨 恐五年內出現 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9594210",
+    "BIS：AI 泡沫風險 牽動全球 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9594219",
+    "美伊又打了考驗停火協議 川普警告若被迫重啟戰爭 伊朗將「不復存在」 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9594153",
+    "兩金融減稅優惠擬再延十年 立委皆提案延長至2036年底 財部：將評估 (聯合_產經_股市)": "https://udn.com/news/story/7243/9594165",
+    "中小企條例翻修 強化攬才 (聯合_產經_股市)": "https://udn.com/news/story/7238/9594134",
+    "美伊MOU 一個協議各自表述 (聯合_產經_股市)": "https://udn.com/news/story/124061/9594139",
+    "美伊再互打 停火協議瀕破裂 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260629000148-260202?utm_source=iii_news&utm_medium=rss",
+    "歐央論壇登場 聚焦華許表態 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260629000213-260203?utm_source=iii_news&utm_medium=rss",
+    "美元Q3走勢 國銀：短線偏強 (工商金融稅務)": "https://www.chinatimes.com/newspapers/20260629000234-260205?utm_source=iii_news&utm_medium=rss",
+    "擔心孩子被誤導 科技業者有招數助家長管理孩子使用 AI (經濟產業熱點)": "https://money.udn.com/money/story/5612/9594360",
+    "虛擬資產業 備戰取照 (經濟金融脈動)": "https://money.udn.com/money/story/5613/9594124",
+    "三星、SK 集團啟動大投資 李在明今宣布三大超級計畫 拚當高科技霸主 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9594242",
+    "日本「數位迴廊」計畫動了 涵蓋台、星、印度及智利等地 加強經濟安全合作 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9594233",
+    "台積電加速打造本土 DRAM 鏈 華邦助陣供貨記憶體晶圓 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9594197",
+    "馬斯克搶記憶體直言價格飆漲程度「前所未見」南亞科、威剛等炙手可熱 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9594208",
+    "i18記憶體搭載量可能變多 因應 Apple Intelligence 升級需求 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9594213",
+    "記憶體供不應求效應持續顯現 小廠沒貨拿陷存亡危機 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9594215",
+    "iPhone遺失！蘋果示警2事勿急著做：小心把手機送詐團 (中時科技新聞)": "https://www.chinatimes.com/realtimenews/20260629000794-260412?utm_source=iii_news&utm_medium=rss",
+    "智慧經營／雙鴻董事長林育申 資源效率決勝 AI 戰場 (聯合_產經_股市)": "https://udn.com/news/story/7241/9593996",
+    "3C通膨效應擴大！家用遊戲機 3萬元起跳恐成新常態 (聯合_產經_股市)": "https://udn.com/news/story/7238/9594209",
+    "小型電子商 陷入存亡危機 (聯合_產經_股市)": "https://udn.com/news/story/7238/9594212",
+    "產創投資抵減金額創新高 顯示台版晶片法減稅效果逐漸顯現 (聯合_產經_股市)": "https://udn.com/news/story/7238/9594130",
+    "國碩強攻三大商機 (聯合_產經_股市)": "https://udn.com/news/story/7253/9593952",
+    "榮星攜日商 攻陶瓷基板 (聯合_產經_股市)": "https://udn.com/news/story/7253/9594035",
+    "晶片布局 李在明端3大超級計畫 (聯合_產經_股市)": "https://udn.com/news/story/6809/9594142",
+    "AI浪潮大幅推升市場對記憶體的需求 外資圈調高類股評價 (聯合_產經_股市)": "https://udn.com/news/story/7240/9594203",
+    "測試介面廠 下半年俏 (聯合_產經_股市)": "https://udn.com/news/story/7251/9593925",
+    "7／16法說 台積Q2毛利率挑戰7成 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260629000145-260202?utm_source=iii_news&utm_medium=rss",
+    "記憶體狂熱 大摩全面調升目標價添柴 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260629000163-260202?utm_source=iii_news&utm_medium=rss",
+    "馬斯克附和庫克言論 記憶體短缺情況…前所未見 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260629000166-260202?utm_source=iii_news&utm_medium=rss",
+    "記憶體缺貨危機 中小業者面臨生存考驗 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260629000168-260202?utm_source=iii_news&utm_medium=rss",
+    "台積2奈米 成AI手機決勝點 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260629000172-260202?utm_source=iii_news&utm_medium=rss",
+    "H2消費旺季 智慧眼鏡百花齊放 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260629000174-260202?utm_source=iii_news&utm_medium=rss",
+    "台版晶片法發威 去年產創抵稅額創高 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260629000195-260202?utm_source=iii_news&utm_medium=rss",
+    "電信三雄 AI創新應用開花 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260629000246-260202?utm_source=iii_news&utm_medium=rss",
+    "輝達乙太網路交換器 躍升龍頭 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260629000216-260203?utm_source=iii_news&utm_medium=rss",
+    "算力吃緊 谷歌限制Meta使用AI模型 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260629000218-260203?utm_source=iii_news&utm_medium=rss",
+    "DeepSeek模型更新 推理速度最高提升85％ (工商全球財經)": "https://www.chinatimes.com/newspapers/20260629000228-260203?utm_source=iii_news&utm_medium=rss",
+    "搶AI商機 Nearfield完成3.8億美元融資 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260629000373-260204?utm_source=iii_news&utm_medium=rss",
+    "Mac、iPad跳漲 逼補差價掀波 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260629000489-260110?utm_source=iii_news&utm_medium=rss",
+    "台積7／16法說 牽動台股後市 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260629000497-260110?utm_source=iii_news&utm_medium=rss",
+    "AI優先 手機電腦出貨雙位數衰退 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260629000499-260110?utm_source=iii_news&utm_medium=rss",
+    "泰合血栓藥拚賣向歐美 (聯合_產經_股市)": "https://udn.com/news/story/7254/9594050",
+    "長聖新藥推進臨床二期 (聯合_產經_股市)": "https://udn.com/news/story/7254/9594051",
+    "癌症在家化療 衛福部下半年推出 (聯合_產經_股市)": "https://udn.com/news/story/7241/9594094",
+    "生技業迎收割期！藥證加持 12悍將全面出擊 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260629000192-260202?utm_source=iii_news&utm_medium=rss",
+    "生技4尖兵各顯神通 搶攻全球藍海市場 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260629000200-260202?utm_source=iii_news&utm_medium=rss",
+    "中衛、華新醫材 跨足新事業 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260629000252-260202?utm_source=iii_news&utm_medium=rss",
+    "適用最高稅率共733件 遺產稅去年實徵7,835億 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260629000199-260202?utm_source=iii_news&utm_medium=rss",
+    "遺產稅93％免稅 學者：富豪門路多 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260629000491-260110?utm_source=iii_news&utm_medium=rss",
+    "去年遺產稅最高稅率 平均每件繼承3.65億 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1760635",
+    "美國零關稅車今年等不到 國產車、油電車等有望受惠 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9594129",
+    "發動新車攻勢 吸引買氣 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9594133",
+    "陸、日鋁電龍頭 加入漲價 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260629000169-260202?utm_source=iii_news&utm_medium=rss",
+    "鋼市利空出盡 H2審慎偏多 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260629000242-260202?utm_source=iii_news&utm_medium=rss",
+    "2大利基族群 扮鋼市多頭先鋒 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260629000245-260202?utm_source=iii_news&utm_medium=rss",
+    "陸百款新車登場 價格戰升溫 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260629000222-260203?utm_source=iii_news&utm_medium=rss",
+    "陸人造太陽 核心技術突破 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260629000227-260203?utm_source=iii_news&utm_medium=rss"
+  }
+}
