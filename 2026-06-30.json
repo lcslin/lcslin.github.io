@@ -1,0 +1,1479 @@
+{
+  "nodes": [
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 25
+    },
+    {
+      "id": "伊朗",
+      "group": "country",
+      "size": 18
+    },
+    {
+      "id": "中國",
+      "group": "country",
+      "size": 20
+    },
+    {
+      "id": "南韓",
+      "group": "country",
+      "size": 20
+    },
+    {
+      "id": "台灣",
+      "group": "country",
+      "size": 18
+    },
+    {
+      "id": "日本",
+      "group": "country",
+      "size": 14
+    },
+    {
+      "id": "菲律賓",
+      "group": "country",
+      "size": 10
+    },
+    {
+      "id": "卡達",
+      "group": "country",
+      "size": 8
+    },
+    {
+      "id": "台積電",
+      "group": "company",
+      "size": 22
+    },
+    {
+      "id": "鴻海",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "三星",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "SK海力士",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "長榮航",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "SpaceX",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "蘋果",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "夏普",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "軟銀",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "文曄",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "廣達",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "長鑫",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "崑崙芯",
+      "group": "company",
+      "size": 9
+    },
+    {
+      "id": "科嶠",
+      "group": "company",
+      "size": 9
+    },
+    {
+      "id": "Rocket Lab",
+      "group": "company",
+      "size": 8
+    },
+    {
+      "id": "智元機器人",
+      "group": "company",
+      "size": 8
+    },
+    {
+      "id": "康寧",
+      "group": "company",
+      "size": 8
+    },
+    {
+      "id": "川普",
+      "group": "person",
+      "size": 16
+    },
+    {
+      "id": "馬斯克",
+      "group": "person",
+      "size": 12
+    },
+    {
+      "id": "李在明",
+      "group": "person",
+      "size": 10
+    },
+    {
+      "id": "Schnabel",
+      "group": "person",
+      "size": 8
+    },
+    {
+      "id": "聯準會",
+      "group": "org",
+      "size": 18
+    },
+    {
+      "id": "歐洲央行",
+      "group": "org",
+      "size": 12
+    },
+    {
+      "id": "美國最高法院",
+      "group": "org",
+      "size": 12
+    },
+    {
+      "id": "Gartner",
+      "group": "org",
+      "size": 8
+    },
+    {
+      "id": "AI",
+      "group": "tech",
+      "size": 25
+    },
+    {
+      "id": "DRAM",
+      "group": "tech",
+      "size": 18
+    },
+    {
+      "id": "半導體",
+      "group": "tech",
+      "size": 20
+    },
+    {
+      "id": "低軌衛星",
+      "group": "tech",
+      "size": 10
+    },
+    {
+      "id": "太陽能",
+      "group": "tech",
+      "size": 10
+    },
+    {
+      "id": "CPO技術",
+      "group": "tech",
+      "size": 9
+    },
+    {
+      "id": "OLED",
+      "group": "tech",
+      "size": 8
+    },
+    {
+      "id": "油價",
+      "group": "finance",
+      "size": 15
+    },
+    {
+      "id": "通膨",
+      "group": "finance",
+      "size": 15
+    },
+    {
+      "id": "主權基金",
+      "group": "finance",
+      "size": 10
+    },
+    {
+      "id": "出口管制",
+      "group": "finance",
+      "size": 13
+    },
+    {
+      "id": "海運運價",
+      "group": "finance",
+      "size": 10
+    },
+    {
+      "id": "資料中心",
+      "group": "tech",
+      "size": 14
+    }
+  ],
+  "links": [
+    {
+      "source": "美國",
+      "target": "伊朗",
+      "value": 5,
+      "label": "停火協議"
+    },
+    {
+      "source": "伊朗",
+      "target": "油價",
+      "value": 4,
+      "label": "地緣影響"
+    },
+    {
+      "source": "美國",
+      "target": "伊朗",
+      "value": 3,
+      "label": "卡達會談"
+    },
+    {
+      "source": "卡達",
+      "target": "美國",
+      "value": 3,
+      "label": "外交斡旋"
+    },
+    {
+      "source": "卡達",
+      "target": "伊朗",
+      "value": 3,
+      "label": "外交斡旋"
+    },
+    {
+      "source": "Schnabel",
+      "target": "歐洲央行",
+      "value": 4,
+      "label": "政策聲明"
+    },
+    {
+      "source": "歐洲央行",
+      "target": "通膨",
+      "value": 4,
+      "label": "政策影響"
+    },
+    {
+      "source": "美國",
+      "target": "通膨",
+      "value": 4,
+      "label": "資料中心加劇"
+    },
+    {
+      "source": "川普",
+      "target": "聯準會",
+      "value": 5,
+      "label": "政策衝突"
+    },
+    {
+      "source": "美國最高法院",
+      "target": "聯準會",
+      "value": 4,
+      "label": "護獨立性"
+    },
+    {
+      "source": "美國最高法院",
+      "target": "川普",
+      "value": 4,
+      "label": "擴大總統權力"
+    },
+    {
+      "source": "聯準會",
+      "target": "通膨",
+      "value": 3,
+      "label": "貨幣政策"
+    },
+    {
+      "source": "中國",
+      "target": "日本",
+      "value": 4,
+      "label": "出口管制"
+    },
+    {
+      "source": "中國",
+      "target": "出口管制",
+      "value": 5,
+      "label": "制裁升級"
+    },
+    {
+      "source": "出口管制",
+      "target": "日本",
+      "value": 4,
+      "label": "實體清單"
+    },
+    {
+      "source": "南韓",
+      "target": "DRAM",
+      "value": 5,
+      "label": "擴產投資"
+    },
+    {
+      "source": "三星",
+      "target": "DRAM",
+      "value": 5,
+      "label": "擴廠"
+    },
+    {
+      "source": "SK海力士",
+      "target": "DRAM",
+      "value": 5,
+      "label": "擴廠"
+    },
+    {
+      "source": "三星",
+      "target": "SK海力士",
+      "value": 4,
+      "label": "市場競爭"
+    },
+    {
+      "source": "台積電",
+      "target": "南韓",
+      "value": 4,
+      "label": "競爭挑戰"
+    },
+    {
+      "source": "台積電",
+      "target": "半導體",
+      "value": 5,
+      "label": "核心業務"
+    },
+    {
+      "source": "台積電",
+      "target": "AI",
+      "value": 4,
+      "label": "供應鏈"
+    },
+    {
+      "source": "南韓",
+      "target": "半導體",
+      "value": 5,
+      "label": "國家投資"
+    },
+    {
+      "source": "李在明",
+      "target": "南韓",
+      "value": 4,
+      "label": "政策藍圖"
+    },
+    {
+      "source": "李在明",
+      "target": "AI",
+      "value": 3,
+      "label": "國家計畫"
+    },
+    {
+      "source": "李在明",
+      "target": "半導體",
+      "value": 3,
+      "label": "國家計畫"
+    },
+    {
+      "source": "鴻海",
+      "target": "AI",
+      "value": 4,
+      "label": "主權AI商機"
+    },
+    {
+      "source": "鴻海",
+      "target": "夏普",
+      "value": 4,
+      "label": "轉投資"
+    },
+    {
+      "source": "鴻海",
+      "target": "軟銀",
+      "value": 3,
+      "label": "合作專案"
+    },
+    {
+      "source": "鴻海",
+      "target": "日本",
+      "value": 3,
+      "label": "商業佈局"
+    },
+    {
+      "source": "SpaceX",
+      "target": "鴻海",
+      "value": 3,
+      "label": "供應鏈帶動"
+    },
+    {
+      "source": "SpaceX",
+      "target": "廣達",
+      "value": 3,
+      "label": "供應鏈帶動"
+    },
+    {
+      "source": "SpaceX",
+      "target": "低軌衛星",
+      "value": 4,
+      "label": "技術應用"
+    },
+    {
+      "source": "馬斯克",
+      "target": "SpaceX",
+      "value": 5,
+      "label": "領導"
+    },
+    {
+      "source": "馬斯克",
+      "target": "低軌衛星",
+      "value": 3,
+      "label": "光通訊商機"
+    },
+    {
+      "source": "蘋果",
+      "target": "台灣",
+      "value": 4,
+      "label": "供應鏈"
+    },
+    {
+      "source": "蘋果",
+      "target": "OLED",
+      "value": 4,
+      "label": "導入新面板"
+    },
+    {
+      "source": "蘋果",
+      "target": "長鑫",
+      "value": 3,
+      "label": "潛在採購"
+    },
+    {
+      "source": "長鑫",
+      "target": "DRAM",
+      "value": 4,
+      "label": "市場競爭"
+    },
+    {
+      "source": "AI",
+      "target": "資料中心",
+      "value": 5,
+      "label": "基建需求"
+    },
+    {
+      "source": "資料中心",
+      "target": "通膨",
+      "value": 3,
+      "label": "加劇壓力"
+    },
+    {
+      "source": "Gartner",
+      "target": "AI",
+      "value": 3,
+      "label": "示警分析"
+    },
+    {
+      "source": "資料中心",
+      "target": "美國",
+      "value": 3,
+      "label": "狂蓋"
+    },
+    {
+      "source": "長榮航",
+      "target": "AI",
+      "value": 3,
+      "label": "帶動包機潮"
+    },
+    {
+      "source": "長榮航",
+      "target": "印度",
+      "value": 3,
+      "label": "新航線"
+    },
+    {
+      "source": "長榮航",
+      "target": "海運運價",
+      "value": 3,
+      "label": "競爭"
+    },
+    {
+      "source": "川普",
+      "target": "海運運價",
+      "value": 3,
+      "label": "新關稅影響"
+    },
+    {
+      "source": "美國",
+      "target": "海運運價",
+      "value": 3,
+      "label": "貿易關稅"
+    },
+    {
+      "source": "崑崙芯",
+      "target": "中國",
+      "value": 4,
+      "label": "赴港IPO"
+    },
+    {
+      "source": "崑崙芯",
+      "target": "AI",
+      "value": 3,
+      "label": "AI晶片"
+    },
+    {
+      "source": "中國",
+      "target": "AI",
+      "value": 4,
+      "label": "國產AI佈局"
+    },
+    {
+      "source": "智元機器人",
+      "target": "中國",
+      "value": 3,
+      "label": "量產"
+    },
+    {
+      "source": "菲律賓",
+      "target": "太陽能",
+      "value": 4,
+      "label": "大量採購"
+    },
+    {
+      "source": "太陽能",
+      "target": "通膨",
+      "value": 2,
+      "label": "電費高漲驅動"
+    },
+    {
+      "source": "主權基金",
+      "target": "美國",
+      "value": 3,
+      "label": "曝險集中"
+    },
+    {
+      "source": "文曄",
+      "target": "台灣",
+      "value": 3,
+      "label": "聯貸擴張"
+    },
+    {
+      "source": "科嶠",
+      "target": "半導體",
+      "value": 3,
+      "label": "技術授權"
+    },
+    {
+      "source": "CPO技術",
+      "target": "AI",
+      "value": 3,
+      "label": "光通訊支援"
+    },
+    {
+      "source": "CPO技術",
+      "target": "台灣",
+      "value": 3,
+      "label": "台廠卡位"
+    },
+    {
+      "source": "Rocket Lab",
+      "target": "低軌衛星",
+      "value": 3,
+      "label": "收購通訊商"
+    },
+    {
+      "source": "康寧",
+      "target": "OLED",
+      "value": 3,
+      "label": "玻璃技術"
+    },
+    {
+      "source": "三星",
+      "target": "AI",
+      "value": 3,
+      "label": "市值飆升"
+    },
+    {
+      "source": "台積電",
+      "target": "台灣",
+      "value": 5,
+      "label": "核心產業"
+    },
+    {
+      "source": "半導體",
+      "target": "AI",
+      "value": 5,
+      "label": "底層支援"
+    },
+    {
+      "source": "中國",
+      "target": "半導體",
+      "value": 4,
+      "label": "功率半導體跟進"
+    }
+  ],
+  "newsDatabase": {
+    "美國": [
+      {
+        "title": "美最高法院雙裁定　擴大總統權力但護聯準會獨立",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9596551"
+      },
+      {
+        "title": "美伊停止互打 油價漲勢收斂 美媒：兩國預定30日在卡達會談",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9596356"
+      },
+      {
+        "title": "美伊和戰反覆 卡達會談受矚",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000202-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美狂蓋資料中心 加劇通膨",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9596346"
+      },
+      {
+        "title": "國銀對美曝險第1季增1,300億 美連43季居金額最大國家",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9596298"
+      },
+      {
+        "title": "美國消費者不滿記憶體價格飆漲 三巨頭陷反壟斷訴訟",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9596446"
+      },
+      {
+        "title": "新關稅掀提前拉貨潮…海運貨櫃運價飆高",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000208-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "伊朗": [
+      {
+        "title": "美伊停止互打 油價漲勢收斂 美媒：兩國預定30日在卡達會談",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9596356"
+      },
+      {
+        "title": "各自放話…美伊停火 續談時地現歧見",
+        "source": "",
+        "url": "https://udn.com/news/story/124061/9596314"
+      },
+      {
+        "title": "美伊和戰反覆 卡達會談受矚",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000202-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美伊停火局勢脆弱　國際油價微漲",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9596602"
+      },
+      {
+        "title": "歐洲央行執委 Schnabel：儘管美伊達成和平協議 通膨仍面臨上行風險",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9595217"
+      }
+    ],
+    "中國": [
+      {
+        "title": "制裁升級 陸擴大對日出口管制 增40實體",
+        "source": "",
+        "url": "https://udn.com/news/story/6809/9596395"
+      },
+      {
+        "title": "陸擴大出口管制 增列20家日企",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000227-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "陸加碼寬鬆 隔夜逆回購亮相",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000220-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "陸金融機構調查信用債持倉",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000223-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "陸三大電信商 布局低軌衛星",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000229-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "功率半導體狂漲 陸企跟進",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000156-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "崑崙芯傳赴港IPO 估值料500億美元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000224-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "智元機器人量產 破1.5萬台",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000231-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "南韓": [
+      {
+        "title": "南韓大投資 目標 DRAM 產能五年翻倍 全球記憶體業壓力測試",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9596409"
+      },
+      {
+        "title": "仿效台灣！南韓砸1800兆韓元 拚AI超級計畫",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9596422"
+      },
+      {
+        "title": "南韓兩大廠擴廠搶市 台積電面臨兩挑戰",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9596425"
+      },
+      {
+        "title": "韓砸2千兆韓元 推半導體、AI大投資",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000135-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "半導體、AI、機器人三大產業分布 李在明擘劃五極三特藍圖",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000138-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台、韓AI巨頭市值飆 股市半邊天",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000214-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台灣": [
+      {
+        "title": "仿效台灣！南韓砸1800兆韓元 拚AI超級計畫",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9596422"
+      },
+      {
+        "title": "藍喊加碼無人機採購 台廠搶商機 營運將高飛",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9596420"
+      },
+      {
+        "title": "蘋果市占率估創高 台鏈沾光",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000161-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台、韓AI巨頭市值飆 股市半邊天",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000214-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "CPO技術分兩路 台廠全卡位",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000155-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "熱錢匯出趨緩 台幣力守31元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000120-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "日本": [
+      {
+        "title": "制裁升級 陸擴大對日出口管制 增40實體",
+        "source": "",
+        "url": "https://udn.com/news/story/6809/9596395"
+      },
+      {
+        "title": "陸擴大出口管制 增列20家日企",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000227-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "鴻海搶日本國產 AI 商機 轉投資夏普傳參與軟銀相關專案",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9596449"
+      }
+    ],
+    "菲律賓": [
+      {
+        "title": "菲國安裝屋頂太陽能板熱 三個月進口額衝上4億美元",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9596347"
+      },
+      {
+        "title": "電費暴漲 菲國躍太陽能板最大買家",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000206-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "卡達": [
+      {
+        "title": "美伊停止互打 油價漲勢收斂 美媒：兩國預定30日在卡達會談",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9596356"
+      },
+      {
+        "title": "美伊和戰反覆 卡達會談受矚",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000202-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台積電": [
+      {
+        "title": "南韓兩大廠擴廠搶市 台積電面臨兩挑戰",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9596425"
+      },
+      {
+        "title": "台積法說前夕 外資連升目標價",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000143-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台、韓AI巨頭市值飆 股市半邊天",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000214-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "鴻海": [
+      {
+        "title": "鴻海搶日本國產 AI 商機 轉投資夏普傳參與軟銀相關專案",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9596449"
+      },
+      {
+        "title": "鴻海集團積極衝刺國家主權 AI 商機 打造新日不落帝國",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9596451"
+      },
+      {
+        "title": "SpaceX 攻商用模型 算力需求可望擴大 帶旺鴻海、廣達等台鏈",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9596419"
+      }
+    ],
+    "三星": [
+      {
+        "title": "三星、SK海力士大擴產 台灣記憶體廠抗韓流...以守代攻",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9596442"
+      },
+      {
+        "title": "三星、SK 海力士大擴產 產業鏈下游業者盯庫存...怕黃金變毒藥",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9596445"
+      },
+      {
+        "title": "三星、海力士 急搶高純度CO2",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000216-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "記憶體三巨頭 遭控聯手抬價",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000130-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美國消費者不滿記憶體價格飆漲 三巨頭陷反壟斷訴訟",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9596446"
+      }
+    ],
+    "SK海力士": [
+      {
+        "title": "三星、SK海力士大擴產 台灣記憶體廠抗韓流...以守代攻",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9596442"
+      },
+      {
+        "title": "三星、SK 海力士大擴產 產業鏈下游業者盯庫存...怕黃金變毒藥",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9596445"
+      },
+      {
+        "title": "三星、海力士 急搶高純度CO2",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000216-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "記憶體三巨頭 遭控聯手抬價",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000130-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美國消費者不滿記憶體價格飆漲 三巨頭陷反壟斷訴訟",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9596446"
+      }
+    ],
+    "長榮航": [
+      {
+        "title": "長榮航：AI 熱引爆包機潮 運價「沒有最高、只有更高」",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9596416"
+      },
+      {
+        "title": "長榮航印度新航線 瞄準轉機客",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9596426"
+      },
+      {
+        "title": "北美線大亂鬥 長榮航喊不怕",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000497-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "長榮航拚年底開闢印度新航點",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1760821"
+      }
+    ],
+    "SpaceX": [
+      {
+        "title": "SpaceX 攻商用模型 算力需求可望擴大 帶旺鴻海、廣達等台鏈",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9596419"
+      },
+      {
+        "title": "光通訊商機 馬斯克搶進",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9596429"
+      }
+    ],
+    "蘋果": [
+      {
+        "title": "蘋果市占率估創高 台鏈沾光",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000161-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "Apple導入新面板 重塑OLED格局",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000249-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "長鑫若獲蘋果採購 花旗：升級全球DRAM四哥",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000133-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "夏普": [
+      {
+        "title": "鴻海搶日本國產 AI 商機 轉投資夏普傳參與軟銀相關專案",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9596449"
+      }
+    ],
+    "軟銀": [
+      {
+        "title": "鴻海搶日本國產 AI 商機 轉投資夏普傳參與軟銀相關專案",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9596449"
+      }
+    ],
+    "文曄": [
+      {
+        "title": "文曄430億聯貸 擴張全球業務",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9596435"
+      }
+    ],
+    "廣達": [
+      {
+        "title": "SpaceX 攻商用模型 算力需求可望擴大 帶旺鴻海、廣達等台鏈",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9596419"
+      }
+    ],
+    "長鑫": [
+      {
+        "title": "長鑫若獲蘋果採購 花旗：升級全球DRAM四哥",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000133-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "崑崙芯": [
+      {
+        "title": "崑崙芯傳赴港IPO 估值料500億美元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000224-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "科嶠": [
+      {
+        "title": "科嶠技術授權 權利金進補",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9596273"
+      },
+      {
+        "title": "科嶠與Brooks合作 簽15年技術授權",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000251-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Rocket Lab": [
+      {
+        "title": "Rocket Lab 收購衛星通訊商",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9596348"
+      }
+    ],
+    "智元機器人": [
+      {
+        "title": "智元機器人量產 破1.5萬台",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000231-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "康寧": [
+      {
+        "title": "康寧玻璃黑科技 震撼市場",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000152-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "川普": [
+      {
+        "title": "川普撤 Fed 理事吃癟！美最高法院裁定 庫克訴訟期間可暫時續任",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9596606"
+      },
+      {
+        "title": "預購至今未出貨 川普手機 開賣即陷爭議",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000218-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "新關稅掀提前拉貨潮…海運貨櫃運價飆高",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000208-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "馬斯克": [
+      {
+        "title": "光通訊商機 馬斯克搶進",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9596429"
+      },
+      {
+        "title": "SpaceX 攻商用模型 算力需求可望擴大 帶旺鴻海、廣達等台鏈",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9596419"
+      }
+    ],
+    "李在明": [
+      {
+        "title": "半導體、AI、機器人三大產業分布 李在明擘劃五極三特藍圖",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000138-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "仿效台灣！南韓砸1800兆韓元 拚AI超級計畫",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9596422"
+      }
+    ],
+    "Schnabel": [
+      {
+        "title": "歐洲央行執委 Schnabel：儘管美伊達成和平協議 通膨仍面臨上行風險",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9595217"
+      }
+    ],
+    "聯準會": [
+      {
+        "title": "美最高法院雙裁定　擴大總統權力但護聯準會獨立",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9596551"
+      },
+      {
+        "title": "川普撤 Fed 理事吃癟！美最高法院裁定 庫克訴訟期間可暫時續任",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9596606"
+      },
+      {
+        "title": "Fed鷹聲起 美元王者歸來",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000211-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "歐洲央行": [
+      {
+        "title": "歐洲央行執委 Schnabel：儘管美伊達成和平協議 通膨仍面臨上行風險",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9595217"
+      }
+    ],
+    "美國最高法院": [
+      {
+        "title": "美最高法院雙裁定　擴大總統權力但護聯準會獨立",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9596551"
+      },
+      {
+        "title": "川普撤 Fed 理事吃癟！美最高法院裁定 庫克訴訟期間可暫時續任",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9596606"
+      }
+    ],
+    "Gartner": [
+      {
+        "title": "Gartner 示警 AI 基建狂蓋 供電恐跟不上",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9596434"
+      }
+    ],
+    "AI": [
+      {
+        "title": "Gartner 示警 AI 基建狂蓋 供電恐跟不上",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9596434"
+      },
+      {
+        "title": "鴻海搶日本國產 AI 商機 轉投資夏普傳參與軟銀相關專案",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9596449"
+      },
+      {
+        "title": "鴻海集團積極衝刺國家主權 AI 商機 打造新日不落帝國",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9596451"
+      },
+      {
+        "title": "仿效台灣！南韓砸1800兆韓元 拚AI超級計畫",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9596422"
+      },
+      {
+        "title": "韓砸2千兆韓元 推半導體、AI大投資",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000135-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "半導體、AI、機器人三大產業分布 李在明擘劃五極三特藍圖",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000138-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "全球AI優先企業 2030占比估逾1成",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000252-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台、韓AI巨頭市值飆 股市半邊天",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000214-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "長榮航：AI 熱引爆包機潮 運價「沒有最高、只有更高」",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9596416"
+      },
+      {
+        "title": "AI浪潮 聚齊能源強化綠電供應",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000271-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "SpaceX 攻商用模型 算力需求可望擴大 帶旺鴻海、廣達等台鏈",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9596419"
+      }
+    ],
+    "DRAM": [
+      {
+        "title": "南韓大投資 目標 DRAM 產能五年翻倍 全球記憶體業壓力測試",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9596409"
+      },
+      {
+        "title": "三星、SK海力士大擴產 台灣記憶體廠抗韓流...以守代攻",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9596442"
+      },
+      {
+        "title": "三星、SK 海力士大擴產 產業鏈下游業者盯庫存...怕黃金變毒藥",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9596445"
+      },
+      {
+        "title": "長鑫若獲蘋果採購 花旗：升級全球DRAM四哥",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000133-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "記憶體三巨頭 遭控聯手抬價",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000130-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美國消費者不滿記憶體價格飆漲 三巨頭陷反壟斷訴訟",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9596446"
+      }
+    ],
+    "半導體": [
+      {
+        "title": "台積電面臨兩挑戰",
+        "source": "",
+        "url": ""
+      },
+      {
+        "title": "韓砸2千兆韓元 推半導體、AI大投資",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000135-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "半導體、AI、機器人三大產業分布 李在明擘劃五極三特藍圖",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000138-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "功率半導體狂漲 陸企跟進",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000156-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "成熟製程漲價 IP矽智財吃補",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000160-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "低軌衛星": [
+      {
+        "title": "陸三大電信商 布局低軌衛星",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000229-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "Rocket Lab 收購衛星通訊商",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9596348"
+      },
+      {
+        "title": "光通訊商機 馬斯克搶進",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9596429"
+      }
+    ],
+    "太陽能": [
+      {
+        "title": "菲國安裝屋頂太陽能板熱 三個月進口額衝上4億美元",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9596347"
+      },
+      {
+        "title": "電費暴漲 菲國躍太陽能板最大買家",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000206-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI浪潮 聚齊能源強化綠電供應",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000271-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "CPO技術": [
+      {
+        "title": "CPO技術分兩路 台廠全卡位",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000155-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "OLED": [
+      {
+        "title": "Apple導入新面板 重塑OLED格局",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000249-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "康寧玻璃黑科技 震撼市場",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000152-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "油價": [
+      {
+        "title": "美伊停止互打 油價漲勢收斂 美媒：兩國預定30日在卡達會談",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9596356"
+      },
+      {
+        "title": "美伊停火局勢脆弱　國際油價微漲",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9596602"
+      },
+      {
+        "title": "荷莫茲海峽通行量回落 上周船舶遇襲事件引發新疑慮",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9595333"
+      }
+    ],
+    "通膨": [
+      {
+        "title": "歐洲央行執委 Schnabel：儘管美伊達成和平協議 通膨仍面臨上行風險",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9595217"
+      },
+      {
+        "title": "美狂蓋資料中心 加劇通膨",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9596346"
+      },
+      {
+        "title": "Fed鷹聲起 美元王者歸來",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000211-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "主權基金": [
+      {
+        "title": "29兆美元主權基金 搬風",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9596344"
+      },
+      {
+        "title": "國銀對美曝險第1季增1,300億 美連43季居金額最大國家",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9596298"
+      }
+    ],
+    "出口管制": [
+      {
+        "title": "制裁升級 陸擴大對日出口管制 增40實體",
+        "source": "",
+        "url": "https://udn.com/news/story/6809/9596395"
+      },
+      {
+        "title": "陸擴大出口管制 增列20家日企",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000227-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "海運運價": [
+      {
+        "title": "新關稅掀提前拉貨潮…海運貨櫃運價飆高",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000208-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "北美線大亂鬥 長榮航喊不怕",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260630000497-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "資料中心": [
+      {
+        "title": "Gartner 示警 AI 基建狂蓋 供電恐跟不上",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9596434"
+      },
+      {
+        "title": "美狂蓋資料中心 加劇通膨",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9596346"
+      },
+      {
+        "title": "旭隼吞資料中心商機",
+        "source": "",
+        "url": "https://udn.com/news/story/7253/9596081"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "荷莫茲海峽通行量回落 上周船舶遇襲事件引發新疑慮 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9595333",
+    "歐洲央行執委 Schnabel：儘管美伊達成和平協議 通膨仍面臨上行風險 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9595217",
+    "美伊停止互打 油價漲勢收斂 美媒：兩國預定30日在卡達會談 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9596356",
+    "美最高法院雙裁定　擴大總統權力但護聯準會獨立 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9596551",
+    "國銀對美曝險第1季增1,300億 美連43季居金額最大國家 (經濟金融脈動)": "https://money.udn.com/money/story/5613/9596298",
+    "29兆美元主權基金 搬風 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9596344",
+    "制裁升級 陸擴大對日出口管制 增40實體 (聯合_產經_股市)": "https://udn.com/news/story/6809/9596395",
+    "各自放話…美伊停火 續談時地現歧見 (聯合_產經_股市)": "https://udn.com/news/story/124061/9596314",
+    "熱錢匯出趨緩 台幣力守31元 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260630000120-260202?utm_source=iii_news&utm_medium=rss",
+    "股市信心帶飛 6月CCI走揚 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260630000164-260202?utm_source=iii_news&utm_medium=rss",
+    "國銀海外曝險 美連43季居首 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260630000174-260202?utm_source=iii_news&utm_medium=rss",
+    "創投加速創新創業計畫 二次徵案投資效益估逾百億 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260630000176-260202?utm_source=iii_news&utm_medium=rss",
+    "Fed鷹聲起 美元王者歸來 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260630000211-260203?utm_source=iii_news&utm_medium=rss",
+    "陸加碼寬鬆 隔夜逆回購亮相 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260630000220-260203?utm_source=iii_news&utm_medium=rss",
+    "陸金融機構調查信用債持倉 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260630000223-260203?utm_source=iii_news&utm_medium=rss",
+    "陸擴大出口管制 增列20家日企 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260630000227-260203?utm_source=iii_news&utm_medium=rss",
+    "6月CCI上升 民眾仍怕投資風險 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260630000503-260110?utm_source=iii_news&utm_medium=rss",
+    "川普撤 Fed 理事吃癟！美最高法院裁定 庫克訴訟期間可暫時續任 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9596606",
+    "Gartner 示警 AI 基建狂蓋 供電恐跟不上 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9596434",
+    "文曄430億聯貸 擴張全球業務 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9596435",
+    "鴻海搶日本國產 AI 商機 轉投資夏普傳參與軟銀相關專案 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9596449",
+    "鴻海集團積極衝刺國家主權 AI 商機 打造新日不落帝國 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9596451",
+    "南韓大投資 目標 DRAM 產能五年翻倍 全球記憶體業壓力測試 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9596409",
+    "三星、SK海力士大擴產 台灣記憶體廠抗韓流...以守代攻 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9596442",
+    "三星、SK 海力士大擴產 產業鏈下游業者盯庫存...怕黃金變毒藥 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9596445",
+    "美國消費者不滿記憶體價格飆漲 三巨頭陷反壟斷訴訟 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9596446",
+    "藍喊加碼無人機採購 台廠搶商機 營運將高飛 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9596420",
+    "科嶠技術授權 權利金進補 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9596273",
+    "Rocket Lab 收購衛星通訊商 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9596348",
+    "美狂蓋資料中心 加劇通膨 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9596346",
+    "仿效台灣！南韓砸1800兆韓元 拚AI超級計畫 (聯合_產經_股市)": "https://udn.com/news/story/7238/9596422",
+    "南韓兩大廠擴廠搶市 台積電面臨兩挑戰 (聯合_產經_股市)": "https://udn.com/news/story/7238/9596425",
+    "記憶體三巨頭 遭控聯手抬價 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260630000130-260202?utm_source=iii_news&utm_medium=rss",
+    "長鑫若獲蘋果採購 花旗：升級全球DRAM四哥 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260630000133-260202?utm_source=iii_news&utm_medium=rss",
+    "韓砸2千兆韓元 推半導體、AI大投資 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260630000135-260202?utm_source=iii_news&utm_medium=rss",
+    "半導體、AI、機器人三大產業分布 李在明擘劃五極三特藍圖 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260630000138-260202?utm_source=iii_news&utm_medium=rss",
+    "ASIC撐腰 麥格理喊發哥上萬金 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260630000140-260202?utm_source=iii_news&utm_medium=rss",
+    "台積法說前夕 外資連升目標價 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260630000143-260202?utm_source=iii_news&utm_medium=rss",
+    "虛擬資產服務法 30日拚三讀 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260630000149-260202?utm_source=iii_news&utm_medium=rss",
+    "康寧玻璃黑科技 震撼市場 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260630000152-260202?utm_source=iii_news&utm_medium=rss",
+    "CPO技術分兩路 台廠全卡位 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260630000155-260202?utm_source=iii_news&utm_medium=rss",
+    "功率半導體狂漲 陸企跟進 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260630000156-260202?utm_source=iii_news&utm_medium=rss",
+    "成熟製程漲價 IP矽智財吃補 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260630000160-260202?utm_source=iii_news&utm_medium=rss",
+    "蘋果市占率估創高 台鏈沾光 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260630000161-260202?utm_source=iii_news&utm_medium=rss",
+    "台、韓AI巨頭市值飆 股市半邊天 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260630000214-260203?utm_source=iii_news&utm_medium=rss",
+    "三星、海力士 急搶高純度CO2 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260630000216-260203?utm_source=iii_news&utm_medium=rss",
+    "預購至今未出貨 川普手機 開賣即陷爭議 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260630000218-260203?utm_source=iii_news&utm_medium=rss",
+    "崑崙芯傳赴港IPO 估值料500億美元 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260630000224-260203?utm_source=iii_news&utm_medium=rss",
+    "陸三大電信商 布局低軌衛星 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260630000229-260203?utm_source=iii_news&utm_medium=rss",
+    "智元機器人量產 破1.5萬台 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260630000231-260203?utm_source=iii_news&utm_medium=rss",
+    "電信三雄 重金研發先進技術 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260630000243-260204?utm_source=iii_news&utm_medium=rss",
+    "台灣大轉投資利益貢獻增 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260630000246-260204?utm_source=iii_news&utm_medium=rss",
+    "憂旺季不旺 PC促銷提前開打 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260630000247-260204?utm_source=iii_news&utm_medium=rss",
+    "Apple導入新面板 重塑OLED格局 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260630000249-260204?utm_source=iii_news&utm_medium=rss",
+    "科嶠與Brooks合作 簽15年技術授權 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260630000251-260204?utm_source=iii_news&utm_medium=rss",
+    "全球AI優先企業 2030占比估逾1成 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260630000252-260204?utm_source=iii_news&utm_medium=rss",
+    "第2梯新創補助 大帶小將引資百億 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260630000505-260110?utm_source=iii_news&utm_medium=rss",
+    "SpaceX 攻商用模型 算力需求可望擴大 帶旺鴻海、廣達等台鏈 (聯合_產經_股市)": "https://udn.com/news/story/7240/9596419",
+    "光通訊商機 馬斯克搶進 (聯合_產經_股市)": "https://udn.com/news/story/7240/9596429",
+    "旭隼吞資料中心商機 (聯合_產經_股市)": "https://udn.com/news/story/7253/9596081",
+    "陽明交大攜禾榮科 打造BNCT醫療研發平台 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260630000253-260204?utm_source=iii_news&utm_medium=rss",
+    "2類外籍族群 將納愛滋公費治療 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260630000493-260114?utm_source=iii_news&utm_medium=rss",
+    "長榮航：AI 熱引爆包機潮 運價「沒有最高、只有更高」 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9596416",
+    "長榮航印度新航線 瞄準轉機客 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9596426",
+    "航空業面臨碳權漲價 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9596349",
+    "新關稅掀提前拉貨潮…海運貨櫃運價飆高 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260630000208-260203?utm_source=iii_news&utm_medium=rss",
+    "北美線大亂鬥 長榮航喊不怕 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260630000497-260110?utm_source=iii_news&utm_medium=rss",
+    "長榮航拚年底開闢印度新航點 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1760821",
+    "豪雨災損 九稅目可獲減免 (聯合_產經_股市)": "https://udn.com/news/story/7243/9596124",
+    "原物料走跌、大陸鋼價下調效應 鋼市接單放緩 廠商度小月 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9596268",
+    "鎳價下修 燁聯、唐榮承壓 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9596270",
+    "菲國安裝屋頂太陽能板熱 三個月進口額衝上4億美元 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9596347",
+    "美伊和戰反覆 卡達會談受矚 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260630000202-260203?utm_source=iii_news&utm_medium=rss",
+    "電費暴漲 菲國躍太陽能板最大買家 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260630000206-260203?utm_source=iii_news&utm_medium=rss",
+    "AI浪潮 聚齊能源強化綠電供應 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260630000271-260204?utm_source=iii_news&utm_medium=rss",
+    "美伊停火局勢脆弱　國際油價微漲 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9596602",
+    "電動機車電池資費調漲 消基會促擬定型化契約 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260630000491-260114?utm_source=iii_news&utm_medium=rss"
+  }
+}
