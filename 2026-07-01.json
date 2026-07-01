@@ -1,0 +1,1288 @@
+{
+  "nodes": [
+    {
+      "id": "日圓",
+      "group": "finance",
+      "size": 18
+    },
+    {
+      "id": "美聯儲",
+      "group": "org",
+      "size": 18
+    },
+    {
+      "id": "川普",
+      "group": "person",
+      "size": 16
+    },
+    {
+      "id": "華許",
+      "group": "person",
+      "size": 12
+    },
+    {
+      "id": "去美元化",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "國際油價",
+      "group": "finance",
+      "size": 10
+    },
+    {
+      "id": "荷莫茲海峽",
+      "group": "finance",
+      "size": 8
+    },
+    {
+      "id": "AI Agent",
+      "group": "tech",
+      "size": 20
+    },
+    {
+      "id": "微軟",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "台積電",
+      "group": "company",
+      "size": 20
+    },
+    {
+      "id": "三星",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "高通",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "聯發科",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "國巨",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "旺宏",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "華邦",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "南亞科",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "兆易創新",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "NOR晶片",
+      "group": "tech",
+      "size": 13
+    },
+    {
+      "id": "HBM",
+      "group": "tech",
+      "size": 12
+    },
+    {
+      "id": "記憶體",
+      "group": "tech",
+      "size": 15
+    },
+    {
+      "id": "5G",
+      "group": "tech",
+      "size": 12
+    },
+    {
+      "id": "蘋果",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "塔塔電子",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "PChome",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "Pi錢包",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "虛擬資產服務法",
+      "group": "finance",
+      "size": 16
+    },
+    {
+      "id": "金管會",
+      "group": "org",
+      "size": 12
+    },
+    {
+      "id": "VASP公會",
+      "group": "org",
+      "size": 10
+    },
+    {
+      "id": "比特幣",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "Strategy",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "小米",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "京東方",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "寒武紀",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "英業達",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "瑞昱",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "中華電",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "馬士基",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "高盛",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "台幣",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "歐盟",
+      "group": "country",
+      "size": 12
+    },
+    {
+      "id": "台灣鋼鐵",
+      "group": "finance",
+      "size": 10
+    },
+    {
+      "id": "被動元件",
+      "group": "tech",
+      "size": 13
+    },
+    {
+      "id": "伺服器",
+      "group": "tech",
+      "size": 12
+    },
+    {
+      "id": "台塑",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "銅價",
+      "group": "finance",
+      "size": 10
+    },
+    {
+      "id": "製造業PMI",
+      "group": "finance",
+      "size": 10
+    },
+    {
+      "id": "中國",
+      "group": "country",
+      "size": 14
+    },
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 14
+    },
+    {
+      "id": "台灣",
+      "group": "country",
+      "size": 16
+    }
+  ],
+  "links": [
+    {
+      "source": "川普",
+      "target": "美聯儲",
+      "value": 5,
+      "label": "政治干預"
+    },
+    {
+      "source": "川普",
+      "target": "華許",
+      "value": 4,
+      "label": "人事爭議"
+    },
+    {
+      "source": "美聯儲",
+      "target": "去美元化",
+      "value": 3,
+      "label": "政策影響"
+    },
+    {
+      "source": "美聯儲",
+      "target": "日圓",
+      "value": 3,
+      "label": "匯率關聯"
+    },
+    {
+      "source": "日圓",
+      "target": "台幣",
+      "value": 3,
+      "label": "匯率連動"
+    },
+    {
+      "source": "荷莫茲海峽",
+      "target": "國際油價",
+      "value": 4,
+      "label": "供應影響"
+    },
+    {
+      "source": "中國",
+      "target": "製造業PMI",
+      "value": 4,
+      "label": "經濟指標"
+    },
+    {
+      "source": "AI Agent",
+      "target": "微軟",
+      "value": 5,
+      "label": "技術推動"
+    },
+    {
+      "source": "AI Agent",
+      "target": "台灣",
+      "value": 4,
+      "label": "產業應用"
+    },
+    {
+      "source": "微軟",
+      "target": "台灣",
+      "value": 4,
+      "label": "市場佈局"
+    },
+    {
+      "source": "台積電",
+      "target": "三星",
+      "value": 5,
+      "label": "製程競爭"
+    },
+    {
+      "source": "台積電",
+      "target": "台灣",
+      "value": 5,
+      "label": "產業代表"
+    },
+    {
+      "source": "台積電",
+      "target": "記憶體",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "三星",
+      "target": "HBM",
+      "value": 5,
+      "label": "產品研發"
+    },
+    {
+      "source": "三星",
+      "target": "京東方",
+      "value": 3,
+      "label": "供應替換"
+    },
+    {
+      "source": "高通",
+      "target": "聯發科",
+      "value": 5,
+      "label": "市場競爭"
+    },
+    {
+      "source": "高通",
+      "target": "5G",
+      "value": 4,
+      "label": "技術研發"
+    },
+    {
+      "source": "聯發科",
+      "target": "5G",
+      "value": 4,
+      "label": "技術研發"
+    },
+    {
+      "source": "聯發科",
+      "target": "瑞昱",
+      "value": 3,
+      "label": "市場競爭"
+    },
+    {
+      "source": "聯發科",
+      "target": "台灣",
+      "value": 4,
+      "label": "本土企業"
+    },
+    {
+      "source": "國巨",
+      "target": "被動元件",
+      "value": 5,
+      "label": "產品漲價"
+    },
+    {
+      "source": "被動元件",
+      "target": "台灣",
+      "value": 3,
+      "label": "產業發展"
+    },
+    {
+      "source": "兆易創新",
+      "target": "NOR晶片",
+      "value": 5,
+      "label": "產品示警"
+    },
+    {
+      "source": "NOR晶片",
+      "target": "旺宏",
+      "value": 4,
+      "label": "市場影響"
+    },
+    {
+      "source": "NOR晶片",
+      "target": "華邦",
+      "value": 4,
+      "label": "市場影響"
+    },
+    {
+      "source": "NOR晶片",
+      "target": "南亞科",
+      "value": 3,
+      "label": "市場影響"
+    },
+    {
+      "source": "兆易創新",
+      "target": "中國",
+      "value": 3,
+      "label": "本土企業"
+    },
+    {
+      "source": "記憶體",
+      "target": "旺宏",
+      "value": 3,
+      "label": "產業關聯"
+    },
+    {
+      "source": "記憶體",
+      "target": "華邦",
+      "value": 3,
+      "label": "產業關聯"
+    },
+    {
+      "source": "記憶體",
+      "target": "南亞科",
+      "value": 3,
+      "label": "產業關聯"
+    },
+    {
+      "source": "高盛",
+      "target": "三星",
+      "value": 3,
+      "label": "市場預測"
+    },
+    {
+      "source": "高盛",
+      "target": "HBM",
+      "value": 3,
+      "label": "市場預測"
+    },
+    {
+      "source": "蘋果",
+      "target": "塔塔電子",
+      "value": 5,
+      "label": "供應鏈"
+    },
+    {
+      "source": "蘋果",
+      "target": "台灣",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "塔塔電子",
+      "target": "蘋果",
+      "value": 4,
+      "label": "資安事件"
+    },
+    {
+      "source": "PChome",
+      "target": "Pi錢包",
+      "value": 5,
+      "label": "旗下業務"
+    },
+    {
+      "source": "Pi錢包",
+      "target": "虛擬資產服務法",
+      "value": 3,
+      "label": "資安事件"
+    },
+    {
+      "source": "虛擬資產服務法",
+      "target": "金管會",
+      "value": 5,
+      "label": "監管主導"
+    },
+    {
+      "source": "虛擬資產服務法",
+      "target": "VASP公會",
+      "value": 4,
+      "label": "公會響應"
+    },
+    {
+      "source": "虛擬資產服務法",
+      "target": "比特幣",
+      "value": 3,
+      "label": "政策規範"
+    },
+    {
+      "source": "比特幣",
+      "target": "Strategy",
+      "value": 4,
+      "label": "投資策略"
+    },
+    {
+      "source": "小米",
+      "target": "中國",
+      "value": 3,
+      "label": "本土企業"
+    },
+    {
+      "source": "小米",
+      "target": "5G",
+      "value": 3,
+      "label": "產品關聯"
+    },
+    {
+      "source": "寒武紀",
+      "target": "中國",
+      "value": 3,
+      "label": "本土企業"
+    },
+    {
+      "source": "寒武紀",
+      "target": "AI Agent",
+      "value": 3,
+      "label": "技術關聯"
+    },
+    {
+      "source": "英業達",
+      "target": "伺服器",
+      "value": 4,
+      "label": "產能擴充"
+    },
+    {
+      "source": "英業達",
+      "target": "台灣",
+      "value": 3,
+      "label": "本土企業"
+    },
+    {
+      "source": "伺服器",
+      "target": "AI Agent",
+      "value": 4,
+      "label": "基礎設施"
+    },
+    {
+      "source": "馬士基",
+      "target": "美國",
+      "value": 3,
+      "label": "關稅影響"
+    },
+    {
+      "source": "馬士基",
+      "target": "國際油價",
+      "value": 3,
+      "label": "航運關聯"
+    },
+    {
+      "source": "歐盟",
+      "target": "台灣鋼鐵",
+      "value": 4,
+      "label": "貿易政策"
+    },
+    {
+      "source": "台灣鋼鐵",
+      "target": "台灣",
+      "value": 4,
+      "label": "產業保護"
+    },
+    {
+      "source": "台塑",
+      "target": "台灣",
+      "value": 3,
+      "label": "本土企業"
+    },
+    {
+      "source": "銅價",
+      "target": "製造業PMI",
+      "value": 2,
+      "label": "原料成本"
+    },
+    {
+      "source": "川普",
+      "target": "美國",
+      "value": 4,
+      "label": "政策主導"
+    },
+    {
+      "source": "美國",
+      "target": "去美元化",
+      "value": 4,
+      "label": "貨幣地位"
+    },
+    {
+      "source": "製造業PMI",
+      "target": "AI Agent",
+      "value": 3,
+      "label": "景氣帶動"
+    },
+    {
+      "source": "中華電",
+      "target": "台灣",
+      "value": 3,
+      "label": "本土企業"
+    },
+    {
+      "source": "瑞昱",
+      "target": "台灣",
+      "value": 3,
+      "label": "本土企業"
+    },
+    {
+      "source": "台積電",
+      "target": "被動元件",
+      "value": 2,
+      "label": "供應鏈"
+    },
+    {
+      "source": "中國",
+      "target": "記憶體",
+      "value": 3,
+      "label": "競爭威脅"
+    },
+    {
+      "source": "台灣",
+      "target": "伺服器",
+      "value": 3,
+      "label": "產業優勢"
+    }
+  ],
+  "newsDatabase": {
+    "日圓": [
+      {
+        "title": "日圓貶破162 40年首見",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9598865"
+      },
+      {
+        "title": "日圓貶破162、創40年新低 干預警鈴響",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000179-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "美聯儲": [
+      {
+        "title": "美最高法院裁定 Fed 理事川普不能隨意撤換",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9598810"
+      },
+      {
+        "title": "最高法院力保Fed獨立性 主席華許成最大贏家",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000269-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "川普": [
+      {
+        "title": "美最高法院裁定 Fed 理事川普不能隨意撤換",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9598810"
+      },
+      {
+        "title": "最高法院力保Fed獨立性 主席華許成最大贏家",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000269-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "華許": [
+      {
+        "title": "最高法院力保Fed獨立性 主席華許成最大贏家",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000269-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "去美元化": [
+      {
+        "title": "倫敦智庫調查 全球央行驚現「去美元化」",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9598806"
+      }
+    ],
+    "國際油價": [
+      {
+        "title": "荷莫茲海峽船舶運量回升　國際油價收黑",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9599053"
+      }
+    ],
+    "荷莫茲海峽": [
+      {
+        "title": "荷莫茲海峽船舶運量回升　國際油價收黑",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9599053"
+      }
+    ],
+    "AI Agent": [
+      {
+        "title": "微軟：台灣製造、醫療業 AI Agent 導入領先全球 金融業相對落後",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9599000"
+      },
+      {
+        "title": "微軟2026工作趨勢指數報告：AI Agent活躍數量較去年成長15倍",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9598813"
+      },
+      {
+        "title": "微軟：台灣製造、醫療業AI Agent 導入領先全球 金融業相對落後",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9599000"
+      },
+      {
+        "title": "兩產業導入AI比重 領先全球",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000314-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "微軟": [
+      {
+        "title": "微軟：台灣製造、醫療業 AI Agent 導入領先全球 金融業相對落後",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9599000"
+      },
+      {
+        "title": "微軟2026工作趨勢指數報告：AI Agent活躍數量較去年成長15倍",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9598813"
+      },
+      {
+        "title": "微軟：台灣製造、醫療業AI Agent 導入領先全球 金融業相對落後",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9599000"
+      }
+    ],
+    "台積電": [
+      {
+        "title": "三星衝1.4奈米製程 力拚台積",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000213-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "成熟製程報價 看漲到明年 台積減產加劇供應吃緊",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9598787"
+      }
+    ],
+    "三星": [
+      {
+        "title": "高盛：三星HBM明年看漲44％",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000271-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "三星衝1.4奈米製程 力拚台積",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000213-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "三星旗艦機 傳不用京東方面板",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000283-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "高通": [
+      {
+        "title": "高通5G旗艦晶片 尬聯發科 兩強再掀新一波戰火",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9598807"
+      },
+      {
+        "title": "高通與聯發科拚場…競爭範圍擴大",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9598801"
+      }
+    ],
+    "聯發科": [
+      {
+        "title": "高通5G旗艦晶片 尬聯發科 兩強再掀新一波戰火",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9598807"
+      },
+      {
+        "title": "高通與聯發科拚場…競爭範圍擴大",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9598801"
+      },
+      {
+        "title": "智慧座艙夯 瑞昱、聯發科加速搶市",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000312-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "國巨": [
+      {
+        "title": "國巨被動元件漲價 又一波 推升營收、獲利",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9598784"
+      },
+      {
+        "title": "國巨 調漲全系列電容價格",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000219-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "旺宏": [
+      {
+        "title": "陸記憶體大咖示警 牽動台廠 旺宏、華邦、南亞科等警戒",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9598796"
+      },
+      {
+        "title": "陸NOR晶片龍頭兆易創新示警報價恐回落 這些台廠要當心了…",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9598850"
+      }
+    ],
+    "華邦": [
+      {
+        "title": "陸記憶體大咖示警 牽動台廠 旺宏、華邦、南亞科等警戒",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9598796"
+      },
+      {
+        "title": "陸NOR晶片龍頭兆易創新示警報價恐回落 這些台廠要當心了…",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9598850"
+      }
+    ],
+    "南亞科": [
+      {
+        "title": "陸記憶體大咖示警 牽動台廠 旺宏、華邦、南亞科等警戒",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9598796"
+      },
+      {
+        "title": "陸NOR晶片龍頭兆易創新示警報價恐回落 這些台廠要當心了…",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9598850"
+      }
+    ],
+    "兆易創新": [
+      {
+        "title": "陸NOR晶片龍頭兆易創新示警報價恐回落 這些台廠要當心了…",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9598850"
+      },
+      {
+        "title": "陸記憶體大咖示警 牽動台廠 旺宏、華邦、南亞科等警戒",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9598796"
+      }
+    ],
+    "NOR晶片": [
+      {
+        "title": "NOR晶片價格看跌 科技通膨仍無解",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9598797"
+      },
+      {
+        "title": "陸NOR晶片龍頭兆易創新示警報價恐回落 這些台廠要當心了…",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9598850"
+      }
+    ],
+    "HBM": [
+      {
+        "title": "高盛：三星HBM明年看漲44％",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000271-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "記憶體": [
+      {
+        "title": "陸記憶體大咖示警 牽動台廠 旺宏、華邦、南亞科等警戒",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9598796"
+      },
+      {
+        "title": "法人看記憶體擴產 當心供過於求",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9598799"
+      },
+      {
+        "title": "記憶體仍吃緊 台廠續享紅利",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000316-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "5G": [
+      {
+        "title": "高通5G旗艦晶片 尬聯發科 兩強再掀新一波戰火",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9598807"
+      }
+    ],
+    "蘋果": [
+      {
+        "title": "蘋果印度供應商遭駭 iPhone 18 Pro資料外洩",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9598885"
+      },
+      {
+        "title": "供應商塔塔電子遭駭 蘋果i18 Pro機密資料外洩",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000184-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "塔塔電子": [
+      {
+        "title": "蘋果印度供應商遭駭 iPhone 18 Pro資料外洩",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9598885"
+      },
+      {
+        "title": "供應商塔塔電子遭駭 蘋果i18 Pro機密資料外洩",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000184-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "PChome": [
+      {
+        "title": "PChome Pi錢包被駭 350萬用戶個資外洩",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9598944"
+      },
+      {
+        "title": "入侵Pi錢包 專家：企業提防長期潛伏式攻擊",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9598893"
+      }
+    ],
+    "Pi錢包": [
+      {
+        "title": "PChome Pi錢包被駭 350萬用戶個資外洩",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9598944"
+      },
+      {
+        "title": "入侵Pi錢包 專家：企業提防長期潛伏式攻擊",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9598893"
+      },
+      {
+        "title": "Pi拍錢包遭駭 專家促速換密碼",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000556-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "虛擬資產服務法": [
+      {
+        "title": "虛擬資產服務法三讀 規範穩定幣",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9598895"
+      },
+      {
+        "title": "三讀通過 虛擬資產服務法來了",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000189-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "虛擬資產服務法來了 金管會：既有業者須二年內取執照",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000192-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "虛擬資產跨專法治理新時代 VASP公會：聚焦三大核心任務",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000194-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "虛擬資產專法 操縱市場最高罰2億",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000548-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "虛擬資產服務法三讀 詐欺最重罰2億、關10年",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1760853"
+      }
+    ],
+    "金管會": [
+      {
+        "title": "虛擬資產服務法來了 金管會：既有業者須二年內取執照",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000192-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "VASP公會": [
+      {
+        "title": "虛擬資產跨專法治理新時代 VASP公會：聚焦三大核心任務",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000194-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "比特幣": [
+      {
+        "title": "只買不賣策略轉彎 Strategy授權出售12.5億美元比特幣",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000276-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Strategy": [
+      {
+        "title": "只買不賣策略轉彎 Strategy授權出售12.5億美元比特幣",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000276-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "小米": [
+      {
+        "title": "成本飆 小米手機全年出貨再砍3成",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000280-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "京東方": [
+      {
+        "title": "三星旗艦機 傳不用京東方面板",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000283-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "寒武紀": [
+      {
+        "title": "科創板首家 寒武紀市值突破人民幣1兆元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000284-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "英業達": [
+      {
+        "title": "英業達砸逾41億 拚台、墨擴廠",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000308-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "瑞昱": [
+      {
+        "title": "智慧座艙夯 瑞昱、聯發科加速搶市",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000312-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中華電": [
+      {
+        "title": "中華電三金雞 高層新氣象",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000317-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "馬士基": [
+      {
+        "title": "美新關稅帶動航運需求 馬士基上調全年財測",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000278-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "高盛": [
+      {
+        "title": "高盛：三星HBM明年看漲44％",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000271-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台幣": [
+      {
+        "title": "台幣上半年重貶近4角 本季有壓 預估在31元至32.5元區間整理",
+        "source": "",
+        "url": "https://udn.com/news/story/7239/9598851"
+      }
+    ],
+    "歐盟": [
+      {
+        "title": "台灣鋼鐵免稅配額提高四成 助攻業者因應歐盟新關稅",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9598812"
+      },
+      {
+        "title": "歐盟保護鋼鐵業 拉高關稅",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9598808"
+      }
+    ],
+    "台灣鋼鐵": [
+      {
+        "title": "台灣鋼鐵免稅配額提高四成 助攻業者因應歐盟新關稅",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9598812"
+      },
+      {
+        "title": "歐盟保護鋼鐵業 拉高關稅",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9598808"
+      }
+    ],
+    "被動元件": [
+      {
+        "title": "國巨被動元件漲價 又一波 推升營收、獲利",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9598784"
+      },
+      {
+        "title": "國巨 調漲全系列電容價格",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000219-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "被動元件產業漲價潮 勤凱、雷科有望受惠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9598789"
+      }
+    ],
+    "伺服器": [
+      {
+        "title": "全球伺服器出貨量 今年有望創高",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000311-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "英業達砸逾41億 拚台、墨擴廠",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000308-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台塑": [
+      {
+        "title": "「化學鑰匙」缺貨 價格水漲船高 台塑應援",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9598788"
+      }
+    ],
+    "銅價": [
+      {
+        "title": "銅價驚漲 法拉利、寶馬改用鋁",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000274-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "製造業PMI": [
+      {
+        "title": "AI熱潮帶旺 陸6月製造業PMI升至50.3優預期",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000182-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台經院製造業景氣 連三月綠燈",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000232-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中國": [
+      {
+        "title": "AI熱潮帶旺 陸6月製造業PMI升至50.3優預期",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000182-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "陸記憶體大咖示警 牽動台廠 旺宏、華邦、南亞科等警戒",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9598796"
+      },
+      {
+        "title": "陸NOR晶片龍頭兆易創新示警報價恐回落 這些台廠要當心了…",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9598850"
+      },
+      {
+        "title": "科創板首家 寒武紀市值突破人民幣1兆元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000284-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "美國": [
+      {
+        "title": "美最高法院裁定 Fed 理事川普不能隨意撤換",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9598810"
+      },
+      {
+        "title": "最高法院力保Fed獨立性 主席華許成最大贏家",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000269-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美新關稅帶動航運需求 馬士基上調全年財測",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000278-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台灣": [
+      {
+        "title": "微軟：台灣製造、醫療業 AI Agent 導入領先全球 金融業相對落後",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9599000"
+      },
+      {
+        "title": "台幣上半年重貶近4角 本季有壓 預估在31元至32.5元區間整理",
+        "source": "",
+        "url": "https://udn.com/news/story/7239/9598851"
+      },
+      {
+        "title": "台灣鋼鐵免稅配額提高四成 助攻業者因應歐盟新關稅",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9598812"
+      },
+      {
+        "title": "南韓想太多 台廠︰台供鏈優勢難複製",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1760895"
+      },
+      {
+        "title": "記憶體仍吃緊 台廠續享紅利",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000316-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "兩產業導入AI比重 領先全球",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260701000314-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "日圓貶破162 40年首見 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9598865",
+    "美最高法院裁定 Fed 理事川普不能隨意撤換 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9598810",
+    "倫敦智庫調查 全球央行驚現「去美元化」 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9598806",
+    "荷莫茲海峽船舶運量回升　國際油價收黑 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9599053",
+    "日圓貶破162、創40年新低 干預警鈴響 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260701000179-260202?utm_source=iii_news&utm_medium=rss",
+    "AI熱潮帶旺 陸6月製造業PMI升至50.3優預期 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260701000182-260202?utm_source=iii_news&utm_medium=rss",
+    "台經院製造業景氣 連三月綠燈 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260701000232-260202?utm_source=iii_news&utm_medium=rss",
+    "最高法院力保Fed獨立性 主席華許成最大贏家 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260701000269-260203?utm_source=iii_news&utm_medium=rss",
+    "台幣上半年重貶近4角 本季有壓 預估在31元至32.5元區間整理 (聯合_產經_股市)": "https://udn.com/news/story/7239/9598851",
+    "國巨被動元件漲價 又一波 推升營收、獲利 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9598784",
+    "微軟：台灣製造、醫療業 AI Agent 導入領先全球 金融業相對落後 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9599000",
+    "陸記憶體大咖示警 牽動台廠 旺宏、華邦、南亞科等警戒 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9598796",
+    "NOR晶片價格看跌 科技通膨仍無解 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9598797",
+    "法人看記憶體擴產 當心供過於求 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9598799",
+    "高通5G旗艦晶片 尬聯發科 兩強再掀新一波戰火 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9598807",
+    "高通與聯發科拚場…競爭範圍擴大 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9598801",
+    "微軟2026工作趨勢指數報告：AI Agent活躍數量較去年成長15倍 (聯合_產經_股市)": "https://udn.com/news/story/7240/9598813",
+    "陸NOR晶片龍頭兆易創新示警報價恐回落 這些台廠要當心了… (聯合_產經_股市)": "https://udn.com/news/story/7240/9598850",
+    "微軟：台灣製造、醫療業AI Agent 導入領先全球 金融業相對落後 (聯合_產經_股市)": "https://udn.com/news/story/7240/9599000",
+    "入侵Pi錢包 專家：企業提防長期潛伏式攻擊 (聯合_產經_股市)": "https://udn.com/news/story/7238/9598893",
+    "虛擬資產服務法三讀 規範穩定幣 (聯合_產經_股市)": "https://udn.com/news/story/7238/9598895",
+    "蘋果印度供應商遭駭 iPhone 18 Pro資料外洩 (聯合_產經_股市)": "https://udn.com/news/story/7238/9598885",
+    "PChome Pi錢包被駭 350萬用戶個資外洩 (聯合_產經_股市)": "https://udn.com/news/story/7238/9598944",
+    "供應商塔塔電子遭駭 蘋果i18 Pro機密資料外洩 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260701000184-260202?utm_source=iii_news&utm_medium=rss",
+    "三讀通過 虛擬資產服務法來了 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260701000189-260202?utm_source=iii_news&utm_medium=rss",
+    "虛擬資產服務法來了 金管會：既有業者須二年內取執照 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260701000192-260202?utm_source=iii_news&utm_medium=rss",
+    "虛擬資產跨專法治理新時代 VASP公會：聚焦三大核心任務 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260701000194-260202?utm_source=iii_news&utm_medium=rss",
+    "三星衝1.4奈米製程 力拚台積 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260701000213-260202?utm_source=iii_news&utm_medium=rss",
+    "SEMICON Taiwan 列15大議題 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260701000216-260202?utm_source=iii_news&utm_medium=rss",
+    "國巨 調漲全系列電容價格 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260701000219-260202?utm_source=iii_news&utm_medium=rss",
+    "RTX 3060回歸 板卡市場加溫 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260701000223-260202?utm_source=iii_news&utm_medium=rss",
+    "RTX Spark問世 需求雜音升高 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260701000225-260202?utm_source=iii_news&utm_medium=rss",
+    "無人艇百億採購捲土重來 船商搶單 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260701000230-260202?utm_source=iii_news&utm_medium=rss",
+    "巴巴事業 鼎力支持高雄大學足球隊 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260701000483-260202?utm_source=iii_news&utm_medium=rss",
+    "高盛：三星HBM明年看漲44％ (工商全球財經)": "https://www.chinatimes.com/newspapers/20260701000271-260203?utm_source=iii_news&utm_medium=rss",
+    "只買不賣策略轉彎 Strategy授權出售12.5億美元比特幣 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260701000276-260203?utm_source=iii_news&utm_medium=rss",
+    "成本飆 小米手機全年出貨再砍3成 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260701000280-260203?utm_source=iii_news&utm_medium=rss",
+    "三星旗艦機 傳不用京東方面板 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260701000283-260203?utm_source=iii_news&utm_medium=rss",
+    "科創板首家 寒武紀市值突破人民幣1兆元 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260701000284-260203?utm_source=iii_news&utm_medium=rss",
+    "本土電商突圍 聚焦兩大關鍵 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260701000305-260204?utm_source=iii_news&utm_medium=rss",
+    "英業達砸逾41億 拚台、墨擴廠 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260701000308-260204?utm_source=iii_news&utm_medium=rss",
+    "全球伺服器出貨量 今年有望創高 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260701000311-260204?utm_source=iii_news&utm_medium=rss",
+    "智慧座艙夯 瑞昱、聯發科加速搶市 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260701000312-260204?utm_source=iii_news&utm_medium=rss",
+    "兩產業導入AI比重 領先全球 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260701000314-260204?utm_source=iii_news&utm_medium=rss",
+    "記憶體仍吃緊 台廠續享紅利 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260701000316-260204?utm_source=iii_news&utm_medium=rss",
+    "中華電三金雞 高層新氣象 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260701000317-260204?utm_source=iii_news&utm_medium=rss",
+    "虛擬資產專法 操縱市場最高罰2億 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260701000548-260110?utm_source=iii_news&utm_medium=rss",
+    "Pi拍錢包遭駭 專家促速換密碼 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260701000556-260110?utm_source=iii_news&utm_medium=rss",
+    "南韓想太多 台廠︰台供鏈優勢難複製 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1760895",
+    "虛擬資產服務法三讀 詐欺最重罰2億、關10年 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1760853",
+    "成熟製程報價 看漲到明年 台積減產加劇供應吃緊 (聯合_產經_股市)": "https://udn.com/news/story/7240/9598787",
+    "博太生醫新藥 早期失智臨床研究有成 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260701000333-260204?utm_source=iii_news&utm_medium=rss",
+    "居家化療將上路 近8成癌友反彈 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260701000544-260114?utm_source=iii_news&utm_medium=rss",
+    "富喬玻纖布價格上調 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9598790",
+    "「化學鑰匙」缺貨 價格水漲船高 台塑應援 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9598788",
+    "化工鏈扮科技業最強後盾 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9598794",
+    "富喬E-glass玻纖布漲30％、FLD2漲15％ (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260701000222-260202?utm_source=iii_news&utm_medium=rss",
+    "美新關稅帶動航運需求 馬士基上調全年財測 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260701000278-260203?utm_source=iii_news&utm_medium=rss",
+    "環長談碳定價 自稱「市場派」 (聯合_產經_股市)": "https://udn.com/news/story/7238/9598871",
+    "被動元件產業漲價潮 勤凱、雷科有望受惠 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9598789",
+    "台灣鋼鐵免稅配額提高四成 助攻業者因應歐盟新關稅 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9598812",
+    "歐盟保護鋼鐵業 拉高關稅 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9598808",
+    "經濟部擬補助微電車 電動機車業者批「拉低及格標準」 (聯合_產經_股市)": "https://udn.com/news/story/7238/9598903",
+    "政策拉鋸 經濟部擬補助微電車…惹議 (聯合_產經_股市)": "https://udn.com/news/story/7238/9598902",
+    "銅價驚漲 法拉利、寶馬改用鋁 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260701000274-260203?utm_source=iii_news&utm_medium=rss",
+    "電業燃氣降 10月電價仍待觀察 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260701000560-260110?utm_source=iii_news&utm_medium=rss"
+  }
+}
