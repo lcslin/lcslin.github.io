@@ -1,0 +1,1393 @@
+{
+  "nodes": [
+    {
+      "id": "川普",
+      "group": "person",
+      "size": 20
+    },
+    {
+      "id": "台積電",
+      "group": "company",
+      "size": 25
+    },
+    {
+      "id": "鴻海",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "大立光",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "OpenAI",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "三星",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "英特爾",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "NEC",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "ADI",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "通寶半導體",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "研華",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "南亞",
+      "group": "company",
+      "size": 9
+    },
+    {
+      "id": "AMPIC",
+      "group": "company",
+      "size": 8
+    },
+    {
+      "id": "友訊",
+      "group": "company",
+      "size": 8
+    },
+    {
+      "id": "合勤控",
+      "group": "company",
+      "size": 7
+    },
+    {
+      "id": "台塑四寶",
+      "group": "company",
+      "size": 9
+    },
+    {
+      "id": "鑽石投資公司",
+      "group": "company",
+      "size": 8
+    },
+    {
+      "id": "Arm",
+      "group": "company",
+      "size": 9
+    },
+    {
+      "id": "AI",
+      "group": "tech",
+      "size": 25
+    },
+    {
+      "id": "半導體",
+      "group": "tech",
+      "size": 20
+    },
+    {
+      "id": "先進製程",
+      "group": "tech",
+      "size": 16
+    },
+    {
+      "id": "ASIC",
+      "group": "tech",
+      "size": 12
+    },
+    {
+      "id": "記憶體",
+      "group": "tech",
+      "size": 11
+    },
+    {
+      "id": "電動車電池",
+      "group": "tech",
+      "size": 9
+    },
+    {
+      "id": "折疊手機",
+      "group": "tech",
+      "size": 8
+    },
+    {
+      "id": "AI伺服器",
+      "group": "tech",
+      "size": 13
+    },
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 18
+    },
+    {
+      "id": "南韓",
+      "group": "country",
+      "size": 16
+    },
+    {
+      "id": "中國",
+      "group": "country",
+      "size": 14
+    },
+    {
+      "id": "台灣",
+      "group": "country",
+      "size": 15
+    },
+    {
+      "id": "日本",
+      "group": "country",
+      "size": 9
+    },
+    {
+      "id": "歐洲",
+      "group": "country",
+      "size": 9
+    },
+    {
+      "id": "美元",
+      "group": "finance",
+      "size": 16
+    },
+    {
+      "id": "新台幣",
+      "group": "finance",
+      "size": 14
+    },
+    {
+      "id": "韓元",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "OPEC+",
+      "group": "org",
+      "size": 14
+    },
+    {
+      "id": "北約",
+      "group": "org",
+      "size": 10
+    },
+    {
+      "id": "李在明",
+      "group": "person",
+      "size": 11
+    },
+    {
+      "id": "劉克振",
+      "group": "person",
+      "size": 9
+    },
+    {
+      "id": "沈軾榮",
+      "group": "person",
+      "size": 10
+    },
+    {
+      "id": "吳嘉昭",
+      "group": "person",
+      "size": 8
+    },
+    {
+      "id": "馬克宏",
+      "group": "person",
+      "size": 10
+    },
+    {
+      "id": "莫迪",
+      "group": "person",
+      "size": 10
+    },
+    {
+      "id": "綠電",
+      "group": "finance",
+      "size": 11
+    },
+    {
+      "id": "石油",
+      "group": "finance",
+      "size": 13
+    },
+    {
+      "id": "生技創投",
+      "group": "finance",
+      "size": 10
+    },
+    {
+      "id": "科技通膨",
+      "group": "finance",
+      "size": 9
+    },
+    {
+      "id": "紅海",
+      "group": "org",
+      "size": 9
+    }
+  ],
+  "links": [
+    {
+      "source": "川普",
+      "target": "美國",
+      "value": 5,
+      "label": "政策主導"
+    },
+    {
+      "source": "川普",
+      "target": "AI",
+      "value": 3,
+      "label": "政策影響"
+    },
+    {
+      "source": "川普",
+      "target": "台積電",
+      "value": 3,
+      "label": "政策影響"
+    },
+    {
+      "source": "台積電",
+      "target": "AI",
+      "value": 5,
+      "label": "需求驅動"
+    },
+    {
+      "source": "台積電",
+      "target": "先進製程",
+      "value": 5,
+      "label": "核心技術"
+    },
+    {
+      "source": "台積電",
+      "target": "半導體",
+      "value": 5,
+      "label": "產業領導"
+    },
+    {
+      "source": "台積電",
+      "target": "鴻海",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "台積電",
+      "target": "三星",
+      "value": 4,
+      "label": "競爭關係"
+    },
+    {
+      "source": "台積電",
+      "target": "ASIC",
+      "value": 3,
+      "label": "製程平台"
+    },
+    {
+      "source": "台積電",
+      "target": "通寶半導體",
+      "value": 3,
+      "label": "製程合作"
+    },
+    {
+      "source": "鴻海",
+      "target": "AI",
+      "value": 4,
+      "label": "需求驅動"
+    },
+    {
+      "source": "鴻海",
+      "target": "AI伺服器",
+      "value": 4,
+      "label": "產品出貨"
+    },
+    {
+      "source": "大立光",
+      "target": "折疊手機",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "大立光",
+      "target": "新台幣",
+      "value": 3,
+      "label": "匯率影響"
+    },
+    {
+      "source": "OpenAI",
+      "target": "AI",
+      "value": 5,
+      "label": "技術發展"
+    },
+    {
+      "source": "OpenAI",
+      "target": "AMPIC",
+      "value": 3,
+      "label": "商業合作"
+    },
+    {
+      "source": "三星",
+      "target": "半導體",
+      "value": 4,
+      "label": "產業競爭"
+    },
+    {
+      "source": "三星",
+      "target": "先進製程",
+      "value": 4,
+      "label": "技術追趕"
+    },
+    {
+      "source": "英特爾",
+      "target": "台積電",
+      "value": 3,
+      "label": "競爭關係"
+    },
+    {
+      "source": "英特爾",
+      "target": "半導體",
+      "value": 3,
+      "label": "產業競爭"
+    },
+    {
+      "source": "通寶半導體",
+      "target": "ASIC",
+      "value": 4,
+      "label": "核心業務"
+    },
+    {
+      "source": "通寶半導體",
+      "target": "AI",
+      "value": 3,
+      "label": "技術應用"
+    },
+    {
+      "source": "通寶半導體",
+      "target": "Arm",
+      "value": 3,
+      "label": "技術合作"
+    },
+    {
+      "source": "沈軾榮",
+      "target": "通寶半導體",
+      "value": 5,
+      "label": "企業領導"
+    },
+    {
+      "source": "劉克振",
+      "target": "研華",
+      "value": 5,
+      "label": "企業領導"
+    },
+    {
+      "source": "吳嘉昭",
+      "target": "南亞",
+      "value": 5,
+      "label": "企業領導"
+    },
+    {
+      "source": "李在明",
+      "target": "南韓",
+      "value": 4,
+      "label": "政策主導"
+    },
+    {
+      "source": "李在明",
+      "target": "AI",
+      "value": 3,
+      "label": "政策投資"
+    },
+    {
+      "source": "南韓",
+      "target": "韓元",
+      "value": 4,
+      "label": "貨幣政策"
+    },
+    {
+      "source": "南韓",
+      "target": "半導體",
+      "value": 4,
+      "label": "產業政策"
+    },
+    {
+      "source": "南韓",
+      "target": "AI",
+      "value": 3,
+      "label": "政策投資"
+    },
+    {
+      "source": "美元",
+      "target": "新台幣",
+      "value": 4,
+      "label": "匯率關聯"
+    },
+    {
+      "source": "美元",
+      "target": "韓元",
+      "value": 3,
+      "label": "匯率關聯"
+    },
+    {
+      "source": "美元",
+      "target": "美國",
+      "value": 4,
+      "label": "貨幣政策"
+    },
+    {
+      "source": "新台幣",
+      "target": "台灣",
+      "value": 4,
+      "label": "匯率政策"
+    },
+    {
+      "source": "新台幣",
+      "target": "台積電",
+      "value": 3,
+      "label": "匯率影響"
+    },
+    {
+      "source": "OPEC+",
+      "target": "石油",
+      "value": 5,
+      "label": "產量調控"
+    },
+    {
+      "source": "OPEC+",
+      "target": "中東",
+      "value": 4,
+      "label": "區域影響"
+    },
+    {
+      "source": "石油",
+      "target": "中國",
+      "value": 3,
+      "label": "貿易關係"
+    },
+    {
+      "source": "紅海",
+      "target": "中東",
+      "value": 4,
+      "label": "航運安全"
+    },
+    {
+      "source": "紅海",
+      "target": "石油",
+      "value": 3,
+      "label": "供應風險"
+    },
+    {
+      "source": "AI",
+      "target": "綠電",
+      "value": 4,
+      "label": "能源需求"
+    },
+    {
+      "source": "AI",
+      "target": "科技通膨",
+      "value": 3,
+      "label": "價格壓力"
+    },
+    {
+      "source": "AI",
+      "target": "AI伺服器",
+      "value": 5,
+      "label": "需求驅動"
+    },
+    {
+      "source": "AI",
+      "target": "記憶體",
+      "value": 4,
+      "label": "需求驅動"
+    },
+    {
+      "source": "AI伺服器",
+      "target": "記憶體",
+      "value": 4,
+      "label": "供應鏈"
+    },
+    {
+      "source": "半導體",
+      "target": "台灣",
+      "value": 4,
+      "label": "產業核心"
+    },
+    {
+      "source": "半導體",
+      "target": "中國",
+      "value": 3,
+      "label": "市場競爭"
+    },
+    {
+      "source": "先進製程",
+      "target": "ASIC",
+      "value": 3,
+      "label": "技術關聯"
+    },
+    {
+      "source": "馬克宏",
+      "target": "AI",
+      "value": 3,
+      "label": "投資招商"
+    },
+    {
+      "source": "莫迪",
+      "target": "AI",
+      "value": 3,
+      "label": "投資招商"
+    },
+    {
+      "source": "馬克宏",
+      "target": "歐洲",
+      "value": 3,
+      "label": "政策主導"
+    },
+    {
+      "source": "莫迪",
+      "target": "日本",
+      "value": 2,
+      "label": "外交關係"
+    },
+    {
+      "source": "北約",
+      "target": "美國",
+      "value": 3,
+      "label": "軍事同盟"
+    },
+    {
+      "source": "北約",
+      "target": "川普",
+      "value": 3,
+      "label": "政策影響"
+    },
+    {
+      "source": "NEC",
+      "target": "科技通膨",
+      "value": 3,
+      "label": "價格上漲"
+    },
+    {
+      "source": "NEC",
+      "target": "友訊",
+      "value": 2,
+      "label": "市場跟進"
+    },
+    {
+      "source": "NEC",
+      "target": "合勤控",
+      "value": 2,
+      "label": "市場跟進"
+    },
+    {
+      "source": "ADI",
+      "target": "半導體",
+      "value": 3,
+      "label": "類比IC"
+    },
+    {
+      "source": "ADI",
+      "target": "台灣",
+      "value": 3,
+      "label": "轉單機會"
+    },
+    {
+      "source": "綠電",
+      "target": "台灣",
+      "value": 3,
+      "label": "能源政策"
+    },
+    {
+      "source": "生技創投",
+      "target": "台灣",
+      "value": 3,
+      "label": "投資環境"
+    },
+    {
+      "source": "鑽石投資公司",
+      "target": "生技創投",
+      "value": 4,
+      "label": "投資管理"
+    },
+    {
+      "source": "電動車電池",
+      "target": "中國",
+      "value": 3,
+      "label": "產業發展"
+    },
+    {
+      "source": "歐洲",
+      "target": "電動車電池",
+      "value": 3,
+      "label": "市場需求"
+    },
+    {
+      "source": "中國",
+      "target": "半導體",
+      "value": 4,
+      "label": "產業政策"
+    },
+    {
+      "source": "台塑四寶",
+      "target": "台灣",
+      "value": 3,
+      "label": "企業獲利"
+    },
+    {
+      "source": "研華",
+      "target": "AI",
+      "value": 3,
+      "label": "技術應用"
+    },
+    {
+      "source": "折疊手機",
+      "target": "AI",
+      "value": 3,
+      "label": "技術整合"
+    },
+    {
+      "source": "中東",
+      "target": "石油",
+      "value": 4,
+      "label": "供應來源"
+    }
+  ],
+  "newsDatabase": {
+    "川普": [
+      {
+        "title": "川普國慶演說：美國是贏家國度",
+        "source": "",
+        "url": "https://udn.com/news/story/6813/9608662"
+      },
+      {
+        "title": "川普國慶演說：迎黃金時代",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000276-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美最新民調 半數不相信「美國夢」",
+        "source": "",
+        "url": "https://udn.com/news/story/6813/9608667"
+      }
+    ],
+    "台積電": [
+      {
+        "title": "台積電全年展望拚二度上修 美元營收挑戰增四成",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9608691"
+      },
+      {
+        "title": "台積單季毛利率挑戰68% 先進製程價量齊揚 法人估營益率同步超越高標",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9608666"
+      },
+      {
+        "title": "獲利結構升級！台積守長期毛利率 小金雞受惠",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000224-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI泡沫論四起 台積法說釋風向",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000677-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "雙王法說 外資備妥必考題",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000201-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "通寶董座沈軾榮專訪》先進製程貴參參…ASIC走向分工、台積平台扮要角",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000241-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "鴻海": [
+      {
+        "title": "鴻海6月營收報喜寫三驚奇 看好 AI 機櫃、資通訊產品出貨成長 本季可望續強",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9608664"
+      },
+      {
+        "title": "AI需求強 鴻海營收締最強6月",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000227-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "大立光": [
+      {
+        "title": "大立光6月營收月減19% 智慧機旺季來臨、i18將於9月亮相 下半年不看淡",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9608665"
+      },
+      {
+        "title": "台幣貶值 大立光本季獲利有撐",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9608670"
+      },
+      {
+        "title": "業績失色 大立光拚7月營運回溫",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000232-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "OpenAI": [
+      {
+        "title": "OpenAI 推新模型 夥伴受惠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9608668"
+      }
+    ],
+    "三星": [
+      {
+        "title": "三星製程藍圖 追晶圓一哥",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9608674"
+      }
+    ],
+    "英特爾": [
+      {
+        "title": "英特爾搶單 iPhone 18e添變數",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000679-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "NEC": [
+      {
+        "title": "網通業罕見漲價 NEC 消費性產品增幅上看65% 友訊、合勤控等有望跟進",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9608714"
+      }
+    ],
+    "ADI": [
+      {
+        "title": "類比IC供需轉緊…ADI交期拉長 台廠迎轉單契機",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000230-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "通寶半導體": [
+      {
+        "title": "通寶立足列印SoC…通寶半導體董事長沈軾榮 三本柱鎖定邊緣AI",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000237-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "通寶董座沈軾榮專訪》先進製程貴參參…ASIC走向分工、台積平台扮要角",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000241-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "通寶董座沈軾榮專訪》Physical AI起飛 通寶把列印控制力搬進機器人",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000243-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "通寶董座沈軾榮專訪》一句話打動Arm 通寶補齊ASIC拼圖",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000246-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "研華": [
+      {
+        "title": "研華董事長劉克振：參考默克、愛馬仕成立家族辦公室 傳承關鍵在股權規劃",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9608858"
+      }
+    ],
+    "南亞": [
+      {
+        "title": "吳嘉昭︰南亞下半年獲利會更好",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000217-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "AMPIC": [
+      {
+        "title": "企業 AI 燒 Token 太快？AMPIC 執行長吳柏翰提3對策",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9608859"
+      }
+    ],
+    "友訊": [
+      {
+        "title": "網通業罕見漲價 NEC 消費性產品增幅上看65% 友訊、合勤控等有望跟進",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9608714"
+      }
+    ],
+    "合勤控": [
+      {
+        "title": "網通業罕見漲價 NEC 消費性產品增幅上看65% 友訊、合勤控等有望跟進",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9608714"
+      }
+    ],
+    "台塑四寶": [
+      {
+        "title": "台塑四寶獲利 H1拚破千億",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000214-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "鑽石投資公司": [
+      {
+        "title": "國內最大的永續型生技創投鑽石投資公司 路孔明親掌總座",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9608713"
+      }
+    ],
+    "Arm": [
+      {
+        "title": "通寶董座沈軾榮專訪》一句話打動Arm 通寶補齊ASIC拼圖",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000246-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "AI": [
+      {
+        "title": "AI 應用大展 月底重磅登場",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9608721"
+      },
+      {
+        "title": "科技巨頭釋算力 ODM 廠進補",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9608669"
+      },
+      {
+        "title": "AI投資競賽 馬克宏、莫迪親招商",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000273-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI衝擊 2027平價手機恐消失",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000270-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI泡沫論四起 台積法說釋風向",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000677-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI需求強 鴻海營收締最強6月",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000227-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "企業 AI 燒 Token 太快？AMPIC 執行長吳柏翰提3對策",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9608859"
+      },
+      {
+        "title": "學者：科技廠提撥盈餘 助傳產接軌AI",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9608699"
+      },
+      {
+        "title": "南韓總統李在明擬設未來基金 資助 AI、先進製造 並支持年輕世代就業",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9608592"
+      },
+      {
+        "title": "共享AI紅利 韓擬設未來基金",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000275-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "SEMICON展聚焦AI智造",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000321-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "機械業 搶食AI、機器人大餅",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000298-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "經部預估…AI吃電 夜尖峰供電壓力大",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9608703"
+      }
+    ],
+    "半導體": [
+      {
+        "title": "半導體磁吸 14萬境外生來台",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000652-260114?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "陸62家半導體企業 排隊上市A股",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000284-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "解決失衡 南韓擬用晶片稅成立基金",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9608687"
+      },
+      {
+        "title": "SEMICON展聚焦AI智造",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000321-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "先進製程": [
+      {
+        "title": "台積單季毛利率挑戰68% 先進製程價量齊揚 法人估營益率同步超越高標",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9608666"
+      },
+      {
+        "title": "通寶董座沈軾榮專訪》先進製程貴參參…ASIC走向分工、台積平台扮要角",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000241-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "南韓總統李在明擬設未來基金 資助 AI、先進製造 並支持年輕世代就業",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9608592"
+      }
+    ],
+    "ASIC": [
+      {
+        "title": "通寶董座沈軾榮專訪》先進製程貴參參…ASIC走向分工、台積平台扮要角",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000241-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "通寶董座沈軾榮專訪》一句話打動Arm 通寶補齊ASIC拼圖",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000246-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "記憶體": [
+      {
+        "title": "記憶體瘋漲 陸SSD一日三市",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000235-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI伺服器搶料 華強北高容MLCC續喊漲",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000236-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "電動車電池": [
+      {
+        "title": "電動車電池續航力變強了 行駛五年後平均能量仍保持95%",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9608640"
+      },
+      {
+        "title": "陸鋰電掀擴產潮 大廠備銀彈",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000279-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "折疊手機": [
+      {
+        "title": "折疊手機今年ASP 估年增18％",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000308-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI衝擊 2027平價手機恐消失",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000270-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "AI伺服器": [
+      {
+        "title": "AI伺服器搶料 華強北高容MLCC續喊漲",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000236-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "鴻海6月營收報喜寫三驚奇 看好 AI 機櫃、資通訊產品出貨成長 本季可望續強",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9608664"
+      }
+    ],
+    "美國": [
+      {
+        "title": "川普國慶演說：美國是贏家國度",
+        "source": "",
+        "url": "https://udn.com/news/story/6813/9608662"
+      },
+      {
+        "title": "美最新民調 半數不相信「美國夢」",
+        "source": "",
+        "url": "https://udn.com/news/story/6813/9608667"
+      },
+      {
+        "title": "川普國慶演說：迎黃金時代",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000276-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "南韓": [
+      {
+        "title": "韓元新規 24小時交易上路 惟匯價貶至17年低點 當局嚴陣以待",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9608591"
+      },
+      {
+        "title": "南韓總統李在明擬設未來基金 資助 AI、先進製造 並支持年輕世代就業",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9608592"
+      },
+      {
+        "title": "解決失衡 南韓擬用晶片稅成立基金",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9608687"
+      },
+      {
+        "title": "共享AI紅利 韓擬設未來基金",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000275-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中國": [
+      {
+        "title": "陸62家半導體企業 排隊上市A股",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000284-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "記憶體瘋漲 陸SSD一日三市",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000235-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "陸鋰電掀擴產潮 大廠備銀彈",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000279-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "歐洲車市5月銷量 陸車企首度超越日本",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000285-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "中東石油恢復出口 OPEC＋爭市占8月再增產",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000207-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台灣": [
+      {
+        "title": "半導體磁吸 14萬境外生來台",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000652-260114?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "亞洲生技大會 展現台灣創新成果",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000317-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "類比IC供需轉緊…ADI交期拉長 台廠迎轉單契機",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000230-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "學者：科技廠提撥盈餘 助傳產接軌AI",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9608699"
+      }
+    ],
+    "日本": [
+      {
+        "title": "歐洲車市5月銷量 陸車企首度超越日本",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000285-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "生技創投募資掀百億大潮 日本大和投資完成籌資40億 規模刷新紀錄",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9608711"
+      }
+    ],
+    "歐洲": [
+      {
+        "title": "歐洲車市5月銷量 陸車企首度超越日本",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000285-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "美元": [
+      {
+        "title": "美元高檔震盪 新台幣陷32元關卡攻防戰",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000210-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "新台幣": [
+      {
+        "title": "美元高檔震盪 新台幣陷32元關卡攻防戰",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000210-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "新台幣暴力升值後… 企業觀望匯率避險",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000254-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台幣貶值 大立光本季獲利有撐",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9608670"
+      }
+    ],
+    "韓元": [
+      {
+        "title": "韓元新規 24小時交易上路 惟匯價貶至17年低點 當局嚴陣以待",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9608591"
+      }
+    ],
+    "OPEC+": [
+      {
+        "title": "OPEC+ 將增產油價有壓 華爾街警告 油市恐重返供給過剩",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9608697"
+      },
+      {
+        "title": "OPEC+允8月增產 恐供給過剩",
+        "source": "",
+        "url": "https://udn.com/news/story/6809/9608770"
+      },
+      {
+        "title": "中東石油恢復出口 OPEC＋爭市占8月再增產",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000207-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "北約": [
+      {
+        "title": "雙普熱線 北約峰會前夕商討俄烏局勢",
+        "source": "",
+        "url": "https://udn.com/news/story/6809/9608774"
+      }
+    ],
+    "李在明": [
+      {
+        "title": "南韓總統李在明擬設未來基金 資助 AI、先進製造 並支持年輕世代就業",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9608592"
+      }
+    ],
+    "劉克振": [
+      {
+        "title": "研華董事長劉克振：參考默克、愛馬仕成立家族辦公室 傳承關鍵在股權規劃",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9608858"
+      }
+    ],
+    "沈軾榮": [
+      {
+        "title": "通寶立足列印SoC…通寶半導體董事長沈軾榮 三本柱鎖定邊緣AI",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000237-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "通寶董座沈軾榮專訪》先進製程貴參參…ASIC走向分工、台積平台扮要角",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000241-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "通寶董座沈軾榮專訪》Physical AI起飛 通寶把列印控制力搬進機器人",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000243-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "通寶董座沈軾榮專訪》一句話打動Arm 通寶補齊ASIC拼圖",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000246-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "吳嘉昭": [
+      {
+        "title": "吳嘉昭︰南亞下半年獲利會更好",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000217-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "馬克宏": [
+      {
+        "title": "AI投資競賽 馬克宏、莫迪親招商",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000273-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "莫迪": [
+      {
+        "title": "AI投資競賽 馬克宏、莫迪親招商",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000273-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "綠電": [
+      {
+        "title": "綠電飆漲 科技巨頭承壓",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9608641"
+      },
+      {
+        "title": "經部預估…AI吃電 夜尖峰供電壓力大",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9608703"
+      }
+    ],
+    "石油": [
+      {
+        "title": "OPEC+ 將增產油價有壓 華爾街警告 油市恐重返供給過剩",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9608697"
+      },
+      {
+        "title": "中東石油恢復出口 OPEC＋爭市占8月再增產",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000207-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "投資原油期貨更容易了 芝交所下月推出每口10桶合約 金額約700美元",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9608593"
+      }
+    ],
+    "生技創投": [
+      {
+        "title": "生技創投募資掀百億大潮 日本大和投資完成籌資40億 規模刷新紀錄",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9608711"
+      },
+      {
+        "title": "國內生技投資動起來 市場青睞多檔獲超額認購",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9608712"
+      },
+      {
+        "title": "國內最大的永續型生技創投鑽石投資公司 路孔明親掌總座",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9608713"
+      },
+      {
+        "title": "亞洲生技大會 展現台灣創新成果",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000317-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "科技通膨": [
+      {
+        "title": "「科技通膨」效應延燒 萬物皆漲...苦的是消費者",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9608715"
+      },
+      {
+        "title": "網通業罕見漲價 NEC 消費性產品增幅上看65% 友訊、合勤控等有望跟進",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9608714"
+      }
+    ],
+    "紅海": [
+      {
+        "title": "紅海驚傳貨輪遇襲 中東航行安全添變數",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9608698"
+      }
+    ],
+    "中東": [
+      {
+        "title": "紅海驚傳貨輪遇襲 中東航行安全添變數",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9608698"
+      },
+      {
+        "title": "中東石油恢復出口 OPEC＋爭市占8月再增產",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260706000207-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "韓元新規 24小時交易上路 惟匯價貶至17年低點 當局嚴陣以待 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9608591",
+    "紅海驚傳貨輪遇襲 中東航行安全添變數 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9608698",
+    "雙普熱線 北約峰會前夕商討俄烏局勢 (聯合_產經_股市)": "https://udn.com/news/story/6809/9608774",
+    "美最新民調 半數不相信「美國夢」 (聯合_產經_股市)": "https://udn.com/news/story/6813/9608667",
+    "川普國慶演說：美國是贏家國度 (聯合_產經_股市)": "https://udn.com/news/story/6813/9608662",
+    "美元高檔震盪 新台幣陷32元關卡攻防戰 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260706000210-260202?utm_source=iii_news&utm_medium=rss",
+    "新台幣暴力升值後… 企業觀望匯率避險 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260706000254-260202?utm_source=iii_news&utm_medium=rss",
+    "川普國慶演說：迎黃金時代 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260706000276-260203?utm_source=iii_news&utm_medium=rss",
+    "AI 應用大展 月底重磅登場 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9608721",
+    "南韓總統李在明擬設未來基金 資助 AI、先進製造 並支持年輕世代就業 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9608592",
+    "網通業罕見漲價 NEC 消費性產品增幅上看65% 友訊、合勤控等有望跟進 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9608714",
+    "「科技通膨」效應延燒 萬物皆漲...苦的是消費者 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9608715",
+    "三星製程藍圖 追晶圓一哥 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9608674",
+    "台積電全年展望拚二度上修 美元營收挑戰增四成 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9608691",
+    "鴻海6月營收報喜寫三驚奇 看好 AI 機櫃、資通訊產品出貨成長 本季可望續強 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9608664",
+    "OpenAI 推新模型 夥伴受惠 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9608668",
+    "科技巨頭釋算力 ODM 廠進補 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9608669",
+    "大立光6月營收月減19% 智慧機旺季來臨、i18將於9月亮相 下半年不看淡 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9608665",
+    "台幣貶值 大立光本季獲利有撐 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9608670",
+    "台積單季毛利率挑戰68% 先進製程價量齊揚 法人估營益率同步超越高標 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9608666",
+    "研華董事長劉克振：參考默克、愛馬仕成立家族辦公室 傳承關鍵在股權規劃 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9608858",
+    "手機壽命決定在這裝置！專家：「這款iPhone」別再用 (中時科技新聞)": "https://www.chinatimes.com/realtimenews/20260706000970-260412?utm_source=iii_news&utm_medium=rss",
+    "企業 AI 燒 Token 太快？AMPIC 執行長吳柏翰提3對策 (聯合_產經_股市)": "https://udn.com/news/story/7240/9608859",
+    "解決失衡 南韓擬用晶片稅成立基金 (聯合_產經_股市)": "https://udn.com/news/story/7238/9608687",
+    "學者：科技廠提撥盈餘 助傳產接軌AI (聯合_產經_股市)": "https://udn.com/news/story/7238/9608699",
+    "雙王法說 外資備妥必考題 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260706000201-260202?utm_source=iii_news&utm_medium=rss",
+    "吳嘉昭︰南亞下半年獲利會更好 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260706000217-260202?utm_source=iii_news&utm_medium=rss",
+    "獲利結構升級！台積守長期毛利率 小金雞受惠 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260706000224-260202?utm_source=iii_news&utm_medium=rss",
+    "AI需求強 鴻海營收締最強6月 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260706000227-260202?utm_source=iii_news&utm_medium=rss",
+    "類比IC供需轉緊…ADI交期拉長 台廠迎轉單契機 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260706000230-260202?utm_source=iii_news&utm_medium=rss",
+    "業績失色 大立光拚7月營運回溫 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260706000232-260202?utm_source=iii_news&utm_medium=rss",
+    "記憶體瘋漲 陸SSD一日三市 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260706000235-260202?utm_source=iii_news&utm_medium=rss",
+    "AI伺服器搶料 華強北高容MLCC續喊漲 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260706000236-260202?utm_source=iii_news&utm_medium=rss",
+    "通寶立足列印SoC…通寶半導體董事長沈軾榮 三本柱鎖定邊緣AI (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260706000237-260202?utm_source=iii_news&utm_medium=rss",
+    "通寶董座沈軾榮專訪》先進製程貴參參…ASIC走向分工、台積平台扮要角 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260706000241-260202?utm_source=iii_news&utm_medium=rss",
+    "通寶董座沈軾榮專訪》Physical AI起飛 通寶把列印控制力搬進機器人 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260706000243-260202?utm_source=iii_news&utm_medium=rss",
+    "通寶董座沈軾榮專訪》一句話打動Arm 通寶補齊ASIC拼圖 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260706000246-260202?utm_source=iii_news&utm_medium=rss",
+    "機械業 搶食AI、機器人大餅 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260706000298-260202?utm_source=iii_news&utm_medium=rss",
+    "折疊手機今年ASP 估年增18％ (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260706000308-260202?utm_source=iii_news&utm_medium=rss",
+    "AI衝擊 2027平價手機恐消失 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260706000270-260203?utm_source=iii_news&utm_medium=rss",
+    "AI投資競賽 馬克宏、莫迪親招商 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260706000273-260203?utm_source=iii_news&utm_medium=rss",
+    "共享AI紅利 韓擬設未來基金 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260706000275-260203?utm_source=iii_news&utm_medium=rss",
+    "陸62家半導體企業 排隊上市A股 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260706000284-260203?utm_source=iii_news&utm_medium=rss",
+    "SEMICON展聚焦AI智造 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260706000321-260204?utm_source=iii_news&utm_medium=rss",
+    "AI泡沫論四起 台積法說釋風向 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260706000677-260110?utm_source=iii_news&utm_medium=rss",
+    "英特爾搶單 iPhone 18e添變數 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260706000679-260110?utm_source=iii_news&utm_medium=rss",
+    "半導體磁吸 14萬境外生來台 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260706000652-260114?utm_source=iii_news&utm_medium=rss",
+    "生技創投募資掀百億大潮 日本大和投資完成籌資40億 規模刷新紀錄 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9608711",
+    "國內生技投資動起來 市場青睞多檔獲超額認購 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9608712",
+    "國內最大的永續型生技創投鑽石投資公司 路孔明親掌總座 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9608713",
+    "亞洲生技大會 展現台灣創新成果 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260706000317-260204?utm_source=iii_news&utm_medium=rss",
+    "事後藥擬採雙軌制 最快年底拍板 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260706000655-260114?utm_source=iii_news&utm_medium=rss",
+    "台塑四寶獲利 H1拚破千億 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260706000214-260202?utm_source=iii_news&utm_medium=rss",
+    "3K產業招工難 回收業盼取消移工年限 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260706000657-260114?utm_source=iii_news&utm_medium=rss",
+    "環亞百貨都更案 總銷1103億創紀錄 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1761510",
+    "投資原油期貨更容易了 芝交所下月推出每口10桶合約 金額約700美元 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9608593",
+    "電動車電池續航力變強了 行駛五年後平均能量仍保持95% (經濟國際焦點)": "https://money.udn.com/money/story/5599/9608640",
+    "綠電飆漲 科技巨頭承壓 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9608641",
+    "OPEC+ 將增產油價有壓 華爾街警告 油市恐重返供給過剩 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9608697",
+    "經部預估…AI吃電 夜尖峰供電壓力大 (聯合_產經_股市)": "https://udn.com/news/story/7238/9608703",
+    "OPEC+允8月增產 恐供給過剩 (聯合_產經_股市)": "https://udn.com/news/story/6809/9608770",
+    "中東石油恢復出口 OPEC＋爭市占8月再增產 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260706000207-260202?utm_source=iii_news&utm_medium=rss",
+    "解燃「煤」之急 散裝航運漲聲起 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260706000219-260202?utm_source=iii_news&utm_medium=rss",
+    "陸鋰電掀擴產潮 大廠備銀彈 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260706000279-260203?utm_source=iii_news&utm_medium=rss",
+    "歐洲車市5月銷量 陸車企首度超越日本 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260706000285-260203?utm_source=iii_news&utm_medium=rss"
+  }
+}
