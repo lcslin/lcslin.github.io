@@ -1,0 +1,1298 @@
+{
+  "nodes": [
+    {
+      "id": "台幣",
+      "group": "finance",
+      "size": 18
+    },
+    {
+      "id": "央行",
+      "group": "org",
+      "size": 20
+    },
+    {
+      "id": "美元",
+      "group": "finance",
+      "size": 16
+    },
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 18
+    },
+    {
+      "id": "關稅",
+      "group": "finance",
+      "size": 14
+    },
+    {
+      "id": "輝達",
+      "group": "company",
+      "size": 22
+    },
+    {
+      "id": "蘋果",
+      "group": "company",
+      "size": 20
+    },
+    {
+      "id": "台積電",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "三星",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "SK海力士",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "長榮海運",
+      "group": "company",
+      "size": 20
+    },
+    {
+      "id": "張國華",
+      "group": "person",
+      "size": 18
+    },
+    {
+      "id": "張國政",
+      "group": "person",
+      "size": 12
+    },
+    {
+      "id": "工研院",
+      "group": "org",
+      "size": 16
+    },
+    {
+      "id": "中研院",
+      "group": "org",
+      "size": 16
+    },
+    {
+      "id": "AI",
+      "group": "tech",
+      "size": 25
+    },
+    {
+      "id": "記憶體",
+      "group": "tech",
+      "size": 18
+    },
+    {
+      "id": "PCB",
+      "group": "tech",
+      "size": 14
+    },
+    {
+      "id": "折疊iPhone",
+      "group": "tech",
+      "size": 16
+    },
+    {
+      "id": "博通",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "欣興",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "聯電",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "英特爾",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "美光",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "福特",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "Anthropic",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "花旗",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "高盛",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "日圓",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "人民幣",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "外匯存底",
+      "group": "finance",
+      "size": 13
+    },
+    {
+      "id": "油價",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "沙烏地阿拉伯",
+      "group": "country",
+      "size": 12
+    },
+    {
+      "id": "中國",
+      "group": "country",
+      "size": 14
+    },
+    {
+      "id": "澳洲",
+      "group": "country",
+      "size": 9
+    },
+    {
+      "id": "韓國",
+      "group": "country",
+      "size": 11
+    },
+    {
+      "id": "MLCC",
+      "group": "tech",
+      "size": 11
+    },
+    {
+      "id": "CCL",
+      "group": "tech",
+      "size": 10
+    },
+    {
+      "id": "氮化鎵",
+      "group": "tech",
+      "size": 10
+    },
+    {
+      "id": "低軌衛星",
+      "group": "tech",
+      "size": 10
+    },
+    {
+      "id": "ASIC",
+      "group": "tech",
+      "size": 11
+    },
+    {
+      "id": "成熟製程",
+      "group": "tech",
+      "size": 11
+    },
+    {
+      "id": "賴清德",
+      "group": "person",
+      "size": 12
+    },
+    {
+      "id": "卓榮泰",
+      "group": "person",
+      "size": 11
+    },
+    {
+      "id": "李在明",
+      "group": "person",
+      "size": 10
+    },
+    {
+      "id": "馬士基",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "中鋼",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "內線交易",
+      "group": "finance",
+      "size": 16
+    }
+  ],
+  "links": [
+    {
+      "source": "央行",
+      "target": "台幣",
+      "value": 5,
+      "label": "干預匯率"
+    },
+    {
+      "source": "央行",
+      "target": "外匯存底",
+      "value": 4,
+      "label": "外匯管理"
+    },
+    {
+      "source": "央行",
+      "target": "美元",
+      "value": 4,
+      "label": "淨賣匯"
+    },
+    {
+      "source": "台幣",
+      "target": "美元",
+      "value": 5,
+      "label": "匯率關係"
+    },
+    {
+      "source": "美國",
+      "target": "關稅",
+      "value": 5,
+      "label": "301條款"
+    },
+    {
+      "source": "美國",
+      "target": "中國",
+      "value": 4,
+      "label": "貿易關係"
+    },
+    {
+      "source": "關稅",
+      "target": "中國",
+      "value": 4,
+      "label": "政策影響"
+    },
+    {
+      "source": "高盛",
+      "target": "日圓",
+      "value": 4,
+      "label": "目標價調整"
+    },
+    {
+      "source": "美元",
+      "target": "日圓",
+      "value": 3,
+      "label": "匯率關係"
+    },
+    {
+      "source": "卓榮泰",
+      "target": "台幣",
+      "value": 3,
+      "label": "金融政策"
+    },
+    {
+      "source": "輝達",
+      "target": "PCB",
+      "value": 5,
+      "label": "供應鏈"
+    },
+    {
+      "source": "輝達",
+      "target": "AI",
+      "value": 5,
+      "label": "技術推動"
+    },
+    {
+      "source": "輝達",
+      "target": "欣興",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "蘋果",
+      "target": "折疊iPhone",
+      "value": 5,
+      "label": "產品開發"
+    },
+    {
+      "source": "蘋果",
+      "target": "博通",
+      "value": 4,
+      "label": "商業合作"
+    },
+    {
+      "source": "蘋果",
+      "target": "ASIC",
+      "value": 3,
+      "label": "技術合作"
+    },
+    {
+      "source": "三星",
+      "target": "記憶體",
+      "value": 5,
+      "label": "產品關聯"
+    },
+    {
+      "source": "三星",
+      "target": "折疊iPhone",
+      "value": 3,
+      "label": "市場競爭"
+    },
+    {
+      "source": "三星",
+      "target": "韓國",
+      "value": 3,
+      "label": "企業國籍"
+    },
+    {
+      "source": "SK海力士",
+      "target": "記憶體",
+      "value": 4,
+      "label": "產品關聯"
+    },
+    {
+      "source": "SK海力士",
+      "target": "AI",
+      "value": 4,
+      "label": "AI資金"
+    },
+    {
+      "source": "SK海力士",
+      "target": "美國",
+      "value": 4,
+      "label": "赴美上市"
+    },
+    {
+      "source": "SK海力士",
+      "target": "韓國",
+      "value": 3,
+      "label": "企業國籍"
+    },
+    {
+      "source": "美光",
+      "target": "記憶體",
+      "value": 4,
+      "label": "產品關聯"
+    },
+    {
+      "source": "美光",
+      "target": "福特",
+      "value": 3,
+      "label": "供貨關係"
+    },
+    {
+      "source": "長榮海運",
+      "target": "內線交易",
+      "value": 5,
+      "label": "涉案"
+    },
+    {
+      "source": "張國華",
+      "target": "內線交易",
+      "value": 5,
+      "label": "涉案"
+    },
+    {
+      "source": "張國華",
+      "target": "長榮海運",
+      "value": 5,
+      "label": "家族關係"
+    },
+    {
+      "source": "張國政",
+      "target": "內線交易",
+      "value": 4,
+      "label": "涉案"
+    },
+    {
+      "source": "張國政",
+      "target": "長榮海運",
+      "value": 4,
+      "label": "家族關係"
+    },
+    {
+      "source": "張國政",
+      "target": "張國華",
+      "value": 4,
+      "label": "家族糾紛"
+    },
+    {
+      "source": "工研院",
+      "target": "AI",
+      "value": 4,
+      "label": "技術布局"
+    },
+    {
+      "source": "中研院",
+      "target": "賴清德",
+      "value": 4,
+      "label": "政策支持"
+    },
+    {
+      "source": "賴清德",
+      "target": "工研院",
+      "value": 3,
+      "label": "政策支持"
+    },
+    {
+      "source": "李在明",
+      "target": "韓國",
+      "value": 3,
+      "label": "政治關聯"
+    },
+    {
+      "source": "李在明",
+      "target": "AI",
+      "value": 3,
+      "label": "科技霸權"
+    },
+    {
+      "source": "Anthropic",
+      "target": "AI",
+      "value": 4,
+      "label": "技術發展"
+    },
+    {
+      "source": "Anthropic",
+      "target": "澳洲",
+      "value": 3,
+      "label": "算力採購"
+    },
+    {
+      "source": "花旗",
+      "target": "人民幣",
+      "value": 3,
+      "label": "加密託管"
+    },
+    {
+      "source": "人民幣",
+      "target": "中國",
+      "value": 4,
+      "label": "貨幣關聯"
+    },
+    {
+      "source": "沙烏地阿拉伯",
+      "target": "油價",
+      "value": 5,
+      "label": "供應決策"
+    },
+    {
+      "source": "馬士基",
+      "target": "長榮海運",
+      "value": 3,
+      "label": "航運競爭"
+    },
+    {
+      "source": "馬士基",
+      "target": "紅海",
+      "value": 4,
+      "label": "航線恢復"
+    },
+    {
+      "source": "MLCC",
+      "target": "AI",
+      "value": 3,
+      "label": "需求拉動"
+    },
+    {
+      "source": "CCL",
+      "target": "PCB",
+      "value": 4,
+      "label": "原材料"
+    },
+    {
+      "source": "氮化鎵",
+      "target": "中國",
+      "value": 4,
+      "label": "國產化"
+    },
+    {
+      "source": "低軌衛星",
+      "target": "中國",
+      "value": 3,
+      "label": "擴大布局"
+    },
+    {
+      "source": "成熟製程",
+      "target": "聯電",
+      "value": 5,
+      "label": "業務核心"
+    },
+    {
+      "source": "台積電",
+      "target": "AI",
+      "value": 4,
+      "label": "AI需求"
+    },
+    {
+      "source": "台積電",
+      "target": "美國",
+      "value": 3,
+      "label": "外資關注"
+    },
+    {
+      "source": "英特爾",
+      "target": "美國",
+      "value": 3,
+      "label": "企業國籍"
+    },
+    {
+      "source": "英特爾",
+      "target": "AI",
+      "value": 3,
+      "label": "市場競爭"
+    },
+    {
+      "source": "中鋼",
+      "target": "中國",
+      "value": 3,
+      "label": "價格壓力"
+    },
+    {
+      "source": "欣興",
+      "target": "PCB",
+      "value": 4,
+      "label": "產品關聯"
+    },
+    {
+      "source": "欣興",
+      "target": "AI",
+      "value": 3,
+      "label": "AI需求"
+    },
+    {
+      "source": "關稅",
+      "target": "美元",
+      "value": 3,
+      "label": "匯率影響"
+    },
+    {
+      "source": "卓榮泰",
+      "target": "AI",
+      "value": 3,
+      "label": "金融樞紐"
+    },
+    {
+      "source": "折疊iPhone",
+      "target": "記憶體",
+      "value": 3,
+      "label": "零組件需求"
+    },
+    {
+      "source": "博通",
+      "target": "ASIC",
+      "value": 4,
+      "label": "技術開發"
+    }
+  ],
+  "newsDatabase": {
+    "台幣": [
+      {
+        "title": "貶！台幣又見32價位",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000197-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "外資猛提款 台幣貶破32元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000573-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "央行放手 台幣貶破32元…探三個月低價",
+        "source": "",
+        "url": "https://udn.com/news/story/7239/9611054"
+      }
+    ],
+    "央行": [
+      {
+        "title": "央行Q1淨賣匯125億美元",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9611081"
+      },
+      {
+        "title": "美元走強、央行進場阻貶…6月外匯存底 跌破6千億美元大關",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000212-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "央行放手 台幣貶破32元…探三個月低價",
+        "source": "",
+        "url": "https://udn.com/news/story/7239/9611054"
+      }
+    ],
+    "美元": [
+      {
+        "title": "美元走強、央行進場阻貶…6月外匯存底 跌破6千億美元大關",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000212-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "貶！台幣又見32價位",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000197-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "外資猛提款 台幣貶破32元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000573-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "美國": [
+      {
+        "title": "美301大刀瞄準60經濟體 擬祭出10%至12.5%關稅",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9610973"
+      },
+      {
+        "title": "搭AI資金狂潮 SK海力士 啟動赴美上市",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000227-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "SK海力士赴美上市 募280億美元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000583-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "關稅": [
+      {
+        "title": "美301大刀瞄準60經濟體 擬祭出10%至12.5%關稅",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9610973"
+      },
+      {
+        "title": "規避高關稅 美零售商搶進中國貨",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000291-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "輝達": [
+      {
+        "title": "輝達新機櫃傳卡關 SemiAnalysis 點名 PCB 設計不佳 波及台鏈",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9611058"
+      },
+      {
+        "title": "輝達新機櫃卡關元凶？PCB 台系供應鏈喊冤",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9611102"
+      },
+      {
+        "title": "輝達新機櫃卡關元凶？ PCB台系供應鏈喊冤",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9611102"
+      },
+      {
+        "title": "載板鏈 輝黃時刻失色",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000194-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "蘋果": [
+      {
+        "title": "蘋果折疊機「遲到」年底開賣 分析師：預期明年Q1供貨有解",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9611083"
+      },
+      {
+        "title": "蘋果首款折疊 iPhone 推出加持下 市場可望呈現價量齊揚",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9611087"
+      },
+      {
+        "title": "蘋果牽緊博通 衝 ASIC 合作",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9611086"
+      },
+      {
+        "title": "初期產能受限 折疊iPhone恐延至Q4開賣",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000300-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "蘋果折疊機遲到 年底開賣…分析師：預期明年Q1供貨有解",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9611083"
+      }
+    ],
+    "台積電": [
+      {
+        "title": "台積新天價 外資喊3,800元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000240-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "三星": [
+      {
+        "title": "三星財報7月7日亮牌 美股風向球",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9611067"
+      },
+      {
+        "title": "1分鐘看世界／記憶體短缺效應 三星新折疊機估漲價13%",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9610933"
+      },
+      {
+        "title": "三星電子Q2財報 AI行情關鍵",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000293-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "SK海力士": [
+      {
+        "title": "搭AI資金狂潮 SK海力士 啟動赴美上市",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000227-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "SK海力士赴美上市 募280億美元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000583-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "長榮海運": [
+      {
+        "title": "長榮集團遭檢調搜索 股東告發 九人涉內線交易",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9611029"
+      },
+      {
+        "title": "長榮集團家族紛爭 再度浮上檯面",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9611035"
+      },
+      {
+        "title": "長榮海運內線交易 張榮發長子張國華大撈150億 1.2億天價交保",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9611228"
+      },
+      {
+        "title": "長榮海運爆內線交易獲利150億 張國政1千萬交保、限制出境",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9611194"
+      },
+      {
+        "title": "遺產爭議延燒 長榮總部遭搜",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000575-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "涉內線交易 獲利逾21億 長榮海運張國華等9人遭搜索約談",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1761625"
+      }
+    ],
+    "張國華": [
+      {
+        "title": "長榮海運內線交易 張榮發長子張國華大撈150億 1.2億天價交保",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9611228"
+      },
+      {
+        "title": "長榮張國華內線交易1.2億交保 半小時神速辦保離去…創近年司法紀錄",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9611249"
+      },
+      {
+        "title": "遭控違反證交法，檢調搜索　張國華：未涉及內線交易",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000253-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "涉內線交易 獲利逾21億 長榮海運張國華等9人遭搜索約談",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1761625"
+      }
+    ],
+    "張國政": [
+      {
+        "title": "長榮海運爆內線交易獲利150億 張國政1千萬交保、限制出境",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9611194"
+      },
+      {
+        "title": "長榮集團家族紛爭 再度浮上檯面",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9611035"
+      }
+    ],
+    "工研院": [
+      {
+        "title": "工研院三布局 跨域前行",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9611031"
+      },
+      {
+        "title": "工研院15項技術成果 上秀",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9611036"
+      },
+      {
+        "title": "工研院院慶 擘劃三戰略",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000236-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中研院": [
+      {
+        "title": "中研院百年發展 賴總統力挺",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000229-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "中研院喊組生醫國家隊 總統：大力支持經費需求",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9610999"
+      },
+      {
+        "title": "中研院迎百年 評估設宜蘭院區",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000561-260114?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "AI": [
+      {
+        "title": "7月迎三道壓力測試 法人：震盪撿AI鑽石",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000245-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "看好 AI 熱潮 欣興發 GDR 籌資448億 將用於支應海外購料",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9611101"
+      },
+      {
+        "title": "搭AI資金狂潮 SK海力士 啟動赴美上市",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000227-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "三星電子Q2財報 AI行情關鍵",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000293-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "CSP攻AI代理 台系資服業嗨",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000326-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "正航資訊ERP結合AI 建構智慧企業",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000352-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI輔助大腸鏡 腺瘤偵測率增8％",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000565-260114?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "爭科技霸權 李在明催油門",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000284-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "記憶體": [
+      {
+        "title": "記憶體模組廠 6月營收高歌",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000221-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "PC品牌廠降成本 陸系記憶體受青睞",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000224-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "1分鐘看世界／記憶體短缺效應 三星新折疊機估漲價13%",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9610933"
+      },
+      {
+        "title": "美光記憶體 強化供貨福特",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9610977"
+      }
+    ],
+    "PCB": [
+      {
+        "title": "輝達新機櫃傳卡關 SemiAnalysis 點名 PCB 設計不佳 波及台鏈",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9611058"
+      },
+      {
+        "title": "輝達新機櫃卡關元凶？PCB 台系供應鏈喊冤",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9611102"
+      },
+      {
+        "title": "輝達新機櫃卡關元凶？ PCB台系供應鏈喊冤",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9611102"
+      }
+    ],
+    "折疊iPhone": [
+      {
+        "title": "蘋果折疊機「遲到」年底開賣 分析師：預期明年Q1供貨有解",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9611083"
+      },
+      {
+        "title": "蘋果首款折疊 iPhone 推出加持下 市場可望呈現價量齊揚",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9611087"
+      },
+      {
+        "title": "初期產能受限 折疊iPhone恐延至Q4開賣",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000300-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "蘋果折疊機遲到 年底開賣…分析師：預期明年Q1供貨有解",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9611083"
+      }
+    ],
+    "博通": [
+      {
+        "title": "蘋果牽緊博通 衝 ASIC 合作",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9611086"
+      }
+    ],
+    "欣興": [
+      {
+        "title": "看好 AI 熱潮 欣興發 GDR 籌資448億 將用於支應海外購料",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9611101"
+      }
+    ],
+    "聯電": [
+      {
+        "title": "成熟製程景氣回溫 聯電Q2營收 15季新高",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000225-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "英特爾": [
+      {
+        "title": "反轉下跌趨勢 英特爾上調CPU零售價",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000296-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "美光": [
+      {
+        "title": "美光記憶體 強化供貨福特",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9610977"
+      }
+    ],
+    "福特": [
+      {
+        "title": "美光記憶體 強化供貨福特",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9610977"
+      }
+    ],
+    "Anthropic": [
+      {
+        "title": "Anthropic 擬向澳洲買算力",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9611057"
+      }
+    ],
+    "花旗": [
+      {
+        "title": "花旗 推出代幣化、加密貨幣託管服務",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000324-260205?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "高盛": [
+      {
+        "title": "日圓疲軟 高盛目標價砍至165",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000209-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "日圓": [
+      {
+        "title": "日圓疲軟 高盛目標價砍至165",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000209-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "人民幣": [
+      {
+        "title": "87％機構投資者布局人民幣",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000305-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "花旗 推出代幣化、加密貨幣託管服務",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000324-260205?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "外匯存底": [
+      {
+        "title": "美元走強、央行進場阻貶…6月外匯存底 跌破6千億美元大關",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000212-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "油價": [
+      {
+        "title": "沙烏地釋供應過剩訊號　國際油價跌至5個月新低",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9611276"
+      }
+    ],
+    "沙烏地阿拉伯": [
+      {
+        "title": "沙烏地釋供應過剩訊號　國際油價跌至5個月新低",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9611276"
+      }
+    ],
+    "中國": [
+      {
+        "title": "規避高關稅 美零售商搶進中國貨",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000291-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "PC品牌廠降成本 陸系記憶體受青睞",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000224-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "氮化鎵專利戰 加速陸國產化",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000302-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "陸擴大低軌通訊網 再添衛星入軌",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000310-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "澳洲": [
+      {
+        "title": "Anthropic 擬向澳洲買算力",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9611057"
+      }
+    ],
+    "韓國": [
+      {
+        "title": "爭科技霸權 李在明催油門",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000284-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "搭AI資金狂潮 SK海力士 啟動赴美上市",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000227-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "MLCC": [
+      {
+        "title": "MLCC供需趨緊 台廠迎外溢訂單",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000219-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "CCL": [
+      {
+        "title": "建滔再調價 CCL漲勢延續",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000216-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "氮化鎵": [
+      {
+        "title": "氮化鎵專利戰 加速陸國產化",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000302-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "低軌衛星": [
+      {
+        "title": "陸擴大低軌通訊網 再添衛星入軌",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000310-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "ASIC": [
+      {
+        "title": "蘋果牽緊博通 衝 ASIC 合作",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9611086"
+      }
+    ],
+    "成熟製程": [
+      {
+        "title": "成熟製程景氣回溫 聯電Q2營收 15季新高",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000225-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "賴清德": [
+      {
+        "title": "中研院百年發展 賴總統力挺",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000229-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "中研院喊組生醫國家隊 總統：大力支持經費需求",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9610999"
+      }
+    ],
+    "卓榮泰": [
+      {
+        "title": "壯大資產 基業傳承》卓揆：要將台灣打造成國際金融樞紐",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000238-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "李在明": [
+      {
+        "title": "爭科技霸權 李在明催油門",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000284-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "馬士基": [
+      {
+        "title": "馬士基恢復部分紅海航運 分析師：為年底前全面重返航線鋪路",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9611065"
+      }
+    ],
+    "中鋼": [
+      {
+        "title": "亞洲鋼廠降價 中鋼8月盤價承壓",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000251-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "內線交易": [
+      {
+        "title": "長榮集團遭檢調搜索 股東告發 九人涉內線交易",
+        "source": "",
+        "url": "https://money.udn.com/money/story/10871/9611029"
+      },
+      {
+        "title": "長榮海運內線交易 張榮發長子張國華大撈150億 1.2億天價交保",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9611228"
+      },
+      {
+        "title": "長榮海運爆內線交易獲利150億 張國政1千萬交保、限制出境",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9611194"
+      },
+      {
+        "title": "長榮張國華內線交易1.2億交保 半小時神速辦保離去…創近年司法紀錄",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9611249"
+      },
+      {
+        "title": "遭控違反證交法，檢調搜索　張國華：未涉及內線交易",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260707000253-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "涉內線交易 獲利逾21億 長榮海運張國華等9人遭搜索約談",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1761625"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "央行Q1淨賣匯125億美元 (經濟金融脈動)": "https://money.udn.com/money/story/5613/9611081",
+    "美301大刀瞄準60經濟體 擬祭出10%至12.5%關稅 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9610973",
+    "貶！台幣又見32價位 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260707000197-260202?utm_source=iii_news&utm_medium=rss",
+    "日圓疲軟 高盛目標價砍至165 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260707000209-260202?utm_source=iii_news&utm_medium=rss",
+    "美元走強、央行進場阻貶…6月外匯存底 跌破6千億美元大關 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260707000212-260202?utm_source=iii_news&utm_medium=rss",
+    "壯大資產 基業傳承》卓揆：要將台灣打造成國際金融樞紐 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260707000238-260202?utm_source=iii_news&utm_medium=rss",
+    "7月迎三道壓力測試 法人：震盪撿AI鑽石 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260707000245-260202?utm_source=iii_news&utm_medium=rss",
+    "87％機構投資者布局人民幣 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260707000305-260203?utm_source=iii_news&utm_medium=rss",
+    "外資猛提款 台幣貶破32元 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260707000573-260110?utm_source=iii_news&utm_medium=rss",
+    "央行放手 台幣貶破32元…探三個月低價 (聯合_產經_股市)": "https://udn.com/news/story/7239/9611054",
+    "沙烏地釋供應過剩訊號　國際油價跌至5個月新低 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9611276",
+    "輝達新機櫃傳卡關 SemiAnalysis 點名 PCB 設計不佳 波及台鏈 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9611058",
+    "看好 AI 熱潮 欣興發 GDR 籌資448億 將用於支應海外購料 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9611101",
+    "輝達新機櫃卡關元凶？PCB 台系供應鏈喊冤 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9611102",
+    "工研院三布局 跨域前行 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9611031",
+    "蘋果折疊機「遲到」年底開賣 分析師：預期明年Q1供貨有解 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9611083",
+    "蘋果首款折疊 iPhone 推出加持下 市場可望呈現價量齊揚 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9611087",
+    "蘋果牽緊博通 衝 ASIC 合作 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9611086",
+    "工研院15項技術成果 上秀 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9611036",
+    "電視面板跌價 2026年首見 監視器價格持平 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9611026",
+    "美光記憶體 強化供貨福特 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9610977",
+    "三星財報7月7日亮牌 美股風向球 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9611067",
+    "Anthropic 擬向澳洲買算力 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9611057",
+    "1分鐘看世界／記憶體短缺效應 三星新折疊機估漲價13% (經濟國際焦點)": "https://money.udn.com/money/story/5599/9610933",
+    "載板鏈 輝黃時刻失色 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260707000194-260202?utm_source=iii_news&utm_medium=rss",
+    "建滔再調價 CCL漲勢延續 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260707000216-260202?utm_source=iii_news&utm_medium=rss",
+    "MLCC供需趨緊 台廠迎外溢訂單 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260707000219-260202?utm_source=iii_news&utm_medium=rss",
+    "記憶體模組廠 6月營收高歌 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260707000221-260202?utm_source=iii_news&utm_medium=rss",
+    "PC品牌廠降成本 陸系記憶體受青睞 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260707000224-260202?utm_source=iii_news&utm_medium=rss",
+    "成熟製程景氣回溫 聯電Q2營收 15季新高 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260707000225-260202?utm_source=iii_news&utm_medium=rss",
+    "搭AI資金狂潮 SK海力士 啟動赴美上市 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260707000227-260202?utm_source=iii_news&utm_medium=rss",
+    "中研院百年發展 賴總統力挺 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260707000229-260202?utm_source=iii_news&utm_medium=rss",
+    "工研院院慶 擘劃三戰略 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260707000236-260202?utm_source=iii_news&utm_medium=rss",
+    "台積新天價 外資喊3,800元 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260707000240-260202?utm_source=iii_news&utm_medium=rss",
+    "儒鴻Q2營收重返百億 H2十分樂觀 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260707000248-260202?utm_source=iii_news&utm_medium=rss",
+    "爭科技霸權 李在明催油門 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260707000284-260203?utm_source=iii_news&utm_medium=rss",
+    "規避高關稅 美零售商搶進中國貨 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260707000291-260203?utm_source=iii_news&utm_medium=rss",
+    "三星電子Q2財報 AI行情關鍵 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260707000293-260203?utm_source=iii_news&utm_medium=rss",
+    "反轉下跌趨勢 英特爾上調CPU零售價 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260707000296-260203?utm_source=iii_news&utm_medium=rss",
+    "現代汽車Atlas機器人 現身世足賽 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260707000298-260203?utm_source=iii_news&utm_medium=rss",
+    "初期產能受限 折疊iPhone恐延至Q4開賣 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260707000300-260203?utm_source=iii_news&utm_medium=rss",
+    "氮化鎵專利戰 加速陸國產化 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260707000302-260203?utm_source=iii_news&utm_medium=rss",
+    "陸擴大低軌通訊網 再添衛星入軌 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260707000310-260203?utm_source=iii_news&utm_medium=rss",
+    "花旗 推出代幣化、加密貨幣託管服務 (工商金融稅務)": "https://www.chinatimes.com/newspapers/20260707000324-260205?utm_source=iii_news&utm_medium=rss",
+    "CSP攻AI代理 台系資服業嗨 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260707000326-260204?utm_source=iii_news&utm_medium=rss",
+    "聯詠、義隆 6月營收報喜 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260707000329-260204?utm_source=iii_news&utm_medium=rss",
+    "系統電三引擎助攻 6月績優 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260707000331-260204?utm_source=iii_news&utm_medium=rss",
+    "是方：H2營收、獲利 再加溫 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260707000332-260204?utm_source=iii_news&utm_medium=rss",
+    "茂訊Q2業績 創單季新高 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260707000334-260204?utm_source=iii_news&utm_medium=rss",
+    "正航資訊ERP結合AI 建構智慧企業 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260707000352-260204?utm_source=iii_news&utm_medium=rss",
+    "SK海力士赴美上市 募280億美元 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260707000583-260110?utm_source=iii_news&utm_medium=rss",
+    "輝達新機櫃卡關元凶？ PCB台系供應鏈喊冤 (聯合_產經_股市)": "https://udn.com/news/story/7240/9611102",
+    "蘋果折疊機遲到 年底開賣…分析師：預期明年Q1供貨有解 (聯合_產經_股市)": "https://udn.com/news/story/7240/9611083",
+    "中研院喊組生醫國家隊 總統：大力支持經費需求 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9610999",
+    "中研院迎百年 評估設宜蘭院區 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260707000561-260114?utm_source=iii_news&utm_medium=rss",
+    "AI輔助大腸鏡 腺瘤偵測率增8％ (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260707000565-260114?utm_source=iii_news&utm_medium=rss",
+    "長榮集團遭檢調搜索 股東告發 九人涉內線交易 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9611029",
+    "長榮集團家族紛爭 再度浮上檯面 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9611035",
+    "長榮海運內線交易 張榮發長子張國華大撈150億 1.2億天價交保 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9611228",
+    "長榮海運爆內線交易獲利150億 張國政1千萬交保、限制出境 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9611194",
+    "馬士基恢復部分紅海航運 分析師：為年底前全面重返航線鋪路 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9611065",
+    "長榮張國華內線交易1.2億交保 半小時神速辦保離去…創近年司法紀錄 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9611249",
+    "遭控違反證交法，檢調搜索　張國華：未涉及內線交易 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260707000253-260202?utm_source=iii_news&utm_medium=rss",
+    "遺產爭議延燒 長榮總部遭搜 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260707000575-260110?utm_source=iii_news&utm_medium=rss",
+    "涉內線交易 獲利逾21億 長榮海運張國華等9人遭搜索約談 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1761625",
+    "亞洲鋼廠降價 中鋼8月盤價承壓 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260707000251-260202?utm_source=iii_news&utm_medium=rss",
+    "進鋒精機 深耕仿削加工機 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260707000356-260204?utm_source=iii_news&utm_medium=rss",
+    "屋頂光電新規8／1上路 年增66萬瓩 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260707000569-260114?utm_source=iii_news&utm_medium=rss"
+  }
+}
