@@ -1,0 +1,1306 @@
+{
+  "nodes": [
+    {
+      "id": "川普",
+      "group": "person",
+      "size": 20
+    },
+    {
+      "id": "伊朗",
+      "group": "country",
+      "size": 22
+    },
+    {
+      "id": "荷莫茲海峽",
+      "group": "finance",
+      "size": 18
+    },
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 25
+    },
+    {
+      "id": "台積電",
+      "group": "company",
+      "size": 25
+    },
+    {
+      "id": "英特爾",
+      "group": "company",
+      "size": 20
+    },
+    {
+      "id": "艾司摩爾",
+      "group": "company",
+      "size": 20
+    },
+    {
+      "id": "輝達",
+      "group": "company",
+      "size": 22
+    },
+    {
+      "id": "蘋果",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "阿聯",
+      "group": "country",
+      "size": 16
+    },
+    {
+      "id": "AI",
+      "group": "tech",
+      "size": 25
+    },
+    {
+      "id": "半導體",
+      "group": "tech",
+      "size": 20
+    },
+    {
+      "id": "Fed",
+      "group": "org",
+      "size": 16
+    },
+    {
+      "id": "PPI",
+      "group": "finance",
+      "size": 14
+    },
+    {
+      "id": "台幣",
+      "group": "finance",
+      "size": 14
+    },
+    {
+      "id": "油價",
+      "group": "finance",
+      "size": 14
+    },
+    {
+      "id": "AWS",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "IBM",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "SpaceX",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "OpenAI",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "亞馬遜",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "鴻海",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "台塑",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "SEMI",
+      "group": "org",
+      "size": 14
+    },
+    {
+      "id": "印度",
+      "group": "country",
+      "size": 12
+    },
+    {
+      "id": "中國",
+      "group": "country",
+      "size": 14
+    },
+    {
+      "id": "日本",
+      "group": "country",
+      "size": 12
+    },
+    {
+      "id": "SK海力士",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "CoreWeave",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "華為",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "資料中心",
+      "group": "tech",
+      "size": 16
+    },
+    {
+      "id": "機器人",
+      "group": "tech",
+      "size": 12
+    },
+    {
+      "id": "低軌衛星",
+      "group": "tech",
+      "size": 12
+    },
+    {
+      "id": "穩定幣",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "施振榮",
+      "group": "person",
+      "size": 10
+    },
+    {
+      "id": "童子賢",
+      "group": "person",
+      "size": 10
+    },
+    {
+      "id": "國科會",
+      "group": "org",
+      "size": 10
+    },
+    {
+      "id": "BIS",
+      "group": "org",
+      "size": 10
+    },
+    {
+      "id": "台達電",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "緯穎",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "昇達科",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "家登",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "紅海",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "GDP",
+      "group": "finance",
+      "size": 10
+    },
+    {
+      "id": "MGX",
+      "group": "company",
+      "size": 10
+    }
+  ],
+  "links": [
+    {
+      "source": "川普",
+      "target": "荷莫茲海峽",
+      "value": 4,
+      "label": "政策影響"
+    },
+    {
+      "source": "川普",
+      "target": "伊朗",
+      "value": 5,
+      "label": "軍事衝突"
+    },
+    {
+      "source": "美國",
+      "target": "伊朗",
+      "value": 5,
+      "label": "軍事衝突"
+    },
+    {
+      "source": "伊朗",
+      "target": "荷莫茲海峽",
+      "value": 5,
+      "label": "封鎖威脅"
+    },
+    {
+      "source": "伊朗",
+      "target": "油價",
+      "value": 4,
+      "label": "地緣衝突"
+    },
+    {
+      "source": "荷莫茲海峽",
+      "target": "油價",
+      "value": 4,
+      "label": "供應鏈風險"
+    },
+    {
+      "source": "荷莫茲海峽",
+      "target": "紅海",
+      "value": 3,
+      "label": "航運威脅"
+    },
+    {
+      "source": "美國",
+      "target": "阿聯",
+      "value": 4,
+      "label": "軍事合作"
+    },
+    {
+      "source": "阿聯",
+      "target": "AI",
+      "value": 3,
+      "label": "晶片採購"
+    },
+    {
+      "source": "阿聯",
+      "target": "輝達",
+      "value": 3,
+      "label": "晶片採購"
+    },
+    {
+      "source": "阿聯",
+      "target": "MGX",
+      "value": 3,
+      "label": "投資"
+    },
+    {
+      "source": "Fed",
+      "target": "PPI",
+      "value": 4,
+      "label": "貨幣政策"
+    },
+    {
+      "source": "Fed",
+      "target": "AI",
+      "value": 3,
+      "label": "經濟影響"
+    },
+    {
+      "source": "PPI",
+      "target": "美國",
+      "value": 3,
+      "label": "通膨指標"
+    },
+    {
+      "source": "台幣",
+      "target": "美國",
+      "value": 3,
+      "label": "匯率影響"
+    },
+    {
+      "source": "台積電",
+      "target": "英特爾",
+      "value": 4,
+      "label": "供應鏈"
+    },
+    {
+      "source": "台積電",
+      "target": "AI",
+      "value": 5,
+      "label": "晶片製造"
+    },
+    {
+      "source": "台積電",
+      "target": "半導體",
+      "value": 5,
+      "label": "核心業務"
+    },
+    {
+      "source": "艾司摩爾",
+      "target": "台積電",
+      "value": 4,
+      "label": "設備供應"
+    },
+    {
+      "source": "艾司摩爾",
+      "target": "半導體",
+      "value": 4,
+      "label": "設備供應"
+    },
+    {
+      "source": "艾司摩爾",
+      "target": "家登",
+      "value": 3,
+      "label": "供應鏈受惠"
+    },
+    {
+      "source": "SEMI",
+      "target": "半導體",
+      "value": 4,
+      "label": "產業統計"
+    },
+    {
+      "source": "英特爾",
+      "target": "AI",
+      "value": 3,
+      "label": "晶片研發"
+    },
+    {
+      "source": "英特爾",
+      "target": "半導體",
+      "value": 4,
+      "label": "核心業務"
+    },
+    {
+      "source": "輝達",
+      "target": "AI",
+      "value": 5,
+      "label": "核心業務"
+    },
+    {
+      "source": "輝達",
+      "target": "台積電",
+      "value": 4,
+      "label": "供應鏈"
+    },
+    {
+      "source": "輝達",
+      "target": "資料中心",
+      "value": 4,
+      "label": "產品應用"
+    },
+    {
+      "source": "AWS",
+      "target": "AI",
+      "value": 4,
+      "label": "雲端服務"
+    },
+    {
+      "source": "AWS",
+      "target": "亞馬遜",
+      "value": 5,
+      "label": "子公司"
+    },
+    {
+      "source": "AWS",
+      "target": "台積電",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "蘋果",
+      "target": "AI",
+      "value": 4,
+      "label": "技術整合"
+    },
+    {
+      "source": "蘋果",
+      "target": "半導體",
+      "value": 3,
+      "label": "晶片採購"
+    },
+    {
+      "source": "蘋果",
+      "target": "中國",
+      "value": 3,
+      "label": "市場布局"
+    },
+    {
+      "source": "OpenAI",
+      "target": "AI",
+      "value": 5,
+      "label": "核心業務"
+    },
+    {
+      "source": "OpenAI",
+      "target": "蘋果",
+      "value": 3,
+      "label": "商業合作"
+    },
+    {
+      "source": "IBM",
+      "target": "AI",
+      "value": 3,
+      "label": "技術影響"
+    },
+    {
+      "source": "SpaceX",
+      "target": "低軌衛星",
+      "value": 3,
+      "label": "商業應用"
+    },
+    {
+      "source": "印度",
+      "target": "半導體",
+      "value": 3,
+      "label": "產業投資"
+    },
+    {
+      "source": "中國",
+      "target": "輝達",
+      "value": 3,
+      "label": "晶片採購"
+    },
+    {
+      "source": "中國",
+      "target": "GDP",
+      "value": 3,
+      "label": "經濟數據"
+    },
+    {
+      "source": "日本",
+      "target": "機器人",
+      "value": 3,
+      "label": "產業發展"
+    },
+    {
+      "source": "日本",
+      "target": "AI",
+      "value": 3,
+      "label": "技術合作"
+    },
+    {
+      "source": "SK海力士",
+      "target": "AI",
+      "value": 3,
+      "label": "記憶體供應"
+    },
+    {
+      "source": "CoreWeave",
+      "target": "AI",
+      "value": 3,
+      "label": "雲端服務"
+    },
+    {
+      "source": "CoreWeave",
+      "target": "SK海力士",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "華為",
+      "target": "中國",
+      "value": 4,
+      "label": "本土企業"
+    },
+    {
+      "source": "華為",
+      "target": "AI",
+      "value": 3,
+      "label": "技術布局"
+    },
+    {
+      "source": "資料中心",
+      "target": "AI",
+      "value": 5,
+      "label": "基礎設施"
+    },
+    {
+      "source": "資料中心",
+      "target": "台灣",
+      "value": 3,
+      "label": "政策解禁"
+    },
+    {
+      "source": "機器人",
+      "target": "AI",
+      "value": 4,
+      "label": "技術融合"
+    },
+    {
+      "source": "鴻海",
+      "target": "機器人",
+      "value": 3,
+      "label": "投資布局"
+    },
+    {
+      "source": "台塑",
+      "target": "AI",
+      "value": 3,
+      "label": "原料需求"
+    },
+    {
+      "source": "台達電",
+      "target": "資料中心",
+      "value": 3,
+      "label": "能源服務"
+    },
+    {
+      "source": "緯穎",
+      "target": "AI",
+      "value": 3,
+      "label": "伺服器製造"
+    },
+    {
+      "source": "昇達科",
+      "target": "低軌衛星",
+      "value": 4,
+      "label": "核心業務"
+    },
+    {
+      "source": "穩定幣",
+      "target": "美國",
+      "value": 3,
+      "label": "監管進展"
+    },
+    {
+      "source": "童子賢",
+      "target": "國科會",
+      "value": 3,
+      "label": "政策建議"
+    },
+    {
+      "source": "BIS",
+      "target": "AI",
+      "value": 3,
+      "label": "金融風險警示"
+    },
+    {
+      "source": "低軌衛星",
+      "target": "日本",
+      "value": 3,
+      "label": "供應鏈"
+    }
+  ],
+  "newsDatabase": {
+    "川普": [
+      {
+        "title": "川普保護破功？荷莫茲日益凶險 傳部分商船拒絕美軍引導",
+        "source": "",
+        "url": "https://www.chinatimes.com/realtimenews/20260716000081-260408?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "荷莫茲海峽收費？波灣盟友砲轟 川普髮夾彎改口喊卡",
+        "source": "",
+        "url": "https://udn.com/news/story/124061/9630453"
+      },
+      {
+        "title": "助打伊朗有功 阿聯獲准增購美 AI 晶片",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9630452"
+      }
+    ],
+    "伊朗": [
+      {
+        "title": "美加大施壓 逼伊朗重啟談判",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9630423"
+      },
+      {
+        "title": "美國空襲伊朗　國際油價小幅走高",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9630637"
+      },
+      {
+        "title": "中東戰火沒完沒了...專家：美伊已陷入強制性消耗戰",
+        "source": "",
+        "url": "https://udn.com/news/story/124061/9630447"
+      },
+      {
+        "title": "不只封鎖荷莫茲海峽 伊朗暗示「下一個是紅海曼德海峽」",
+        "source": "",
+        "url": "https://udn.com/news/story/124061/9630456"
+      },
+      {
+        "title": "美伊又開戰 國際運價蠢動",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000650-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "荷莫茲海峽": [
+      {
+        "title": "川普保護破功？荷莫茲日益凶險 傳部分商船拒絕美軍引導",
+        "source": "",
+        "url": "https://www.chinatimes.com/realtimenews/20260716000081-260408?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "荷莫茲海峽收費？波灣盟友砲轟 川普髮夾彎改口喊卡",
+        "source": "",
+        "url": "https://udn.com/news/story/124061/9630453"
+      },
+      {
+        "title": "不只封鎖荷莫茲海峽 伊朗暗示「下一個是紅海曼德海峽」",
+        "source": "",
+        "url": "https://udn.com/news/story/124061/9630456"
+      }
+    ],
+    "美國": [
+      {
+        "title": "美 PPI 增速放緩 6月下滑0.3%",
+        "source": "",
+        "url": ""
+      },
+      {
+        "title": "美加大施壓 逼伊朗重啟談判",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9630423"
+      },
+      {
+        "title": "美國空襲伊朗　國際油價小幅走高",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9630637"
+      },
+      {
+        "title": "美英穩定幣監管有進展 加速發行與跨國轉帳",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9630401"
+      },
+      {
+        "title": "全美首禁 紐約州停建超大資料中心",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000290-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台積電": [
+      {
+        "title": "英特爾傳大砍台積電2奈米訂單 業界解讀先進製程良率躍進",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9630424"
+      },
+      {
+        "title": "艾司摩爾報喜三度調高展望、未來兩年將大擴產 家登、帆宣、翔名受惠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9630427"
+      },
+      {
+        "title": "艾司摩爾三度上修展望 台積法說前釋 AI 需求強勁訊息",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9630418"
+      },
+      {
+        "title": "權王台積電目標價 美銀喊3100元",
+        "source": "",
+        "url": "https://udn.com/news/story/7252/9630419"
+      },
+      {
+        "title": "Intel新處理器9成改自製 台積代工比重被砍剩10％",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000227-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台積法說 法人估連5季獲利破紀錄",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000640-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "英特爾": [
+      {
+        "title": "英特爾傳大砍台積電2奈米訂單 業界解讀先進製程良率躍進",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9630424"
+      },
+      {
+        "title": "英特爾先進封裝也要急起直追",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9630434"
+      },
+      {
+        "title": "Intel新處理器9成改自製 台積代工比重被砍剩10％",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000227-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "艾司摩爾": [
+      {
+        "title": "艾司摩爾報喜三度調高展望、未來兩年將大擴產 家登、帆宣、翔名受惠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9630427"
+      },
+      {
+        "title": "艾司摩爾三度上修展望 台積法說前釋 AI 需求強勁訊息",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9630418"
+      },
+      {
+        "title": "ASML上季營收優預期 家登不斷電",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000231-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "輝達": [
+      {
+        "title": "川崎重工傳攜手輝達　在日本打造配備機器人AI造船廠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9630630"
+      },
+      {
+        "title": "助打伊朗有功 阿聯獲准增購美AI晶片",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9630452"
+      },
+      {
+        "title": "輝達Groq 3機櫃H2出貨 台光電、金居等台鏈受惠",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000230-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "3中企買輝達H200晶片 傳美放行",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000311-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "輝達CPO出貨 帶旺FAU商機",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000330-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "蘋果": [
+      {
+        "title": "傳蘋果尋求收購晶片公司 強化AI伺服器實力",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9630582"
+      },
+      {
+        "title": "提高運算效力 iPhone擬導入AI模型",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000300-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "蘋果AI獲陸官方備案 阿里「千問」力挺",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000312-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "阿聯": [
+      {
+        "title": "助打伊朗有功 阿聯獲准增購美 AI 晶片",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9630452"
+      },
+      {
+        "title": "助打伊朗有功 阿聯獲准增購美AI晶片",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9630452"
+      },
+      {
+        "title": "阿聯最強AI基金MGX 募集490億美元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000292-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "AI": [
+      {
+        "title": "Fed 主席華許：美面臨 AI 供應震撼 會審視對就業與生產力影響",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9630422"
+      },
+      {
+        "title": "AI 帶動需求爆發、中東衝突推升原料成本 台塑兩大電子化學品喊漲",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9630421"
+      },
+      {
+        "title": "艾司摩爾三度上修展望 台積法說前釋 AI 需求強勁訊息",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9630418"
+      },
+      {
+        "title": "BIS示警 AI槓桿恐演科技泡沫",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000288-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AWS王定愷定調 2026年為代理式AI元年",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000226-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "默克導入AI 提高研發效率",
+        "source": "",
+        "url": "https://udn.com/news/story/7241/9630483"
+      },
+      {
+        "title": "亞洲生技大會：AI加速新藥研發 台灣拚當樞紐",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000239-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "半導體": [
+      {
+        "title": "SEMI 按讚半導體設備 銷售額估連五年成長",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9630436"
+      },
+      {
+        "title": "印度衝半導體 加碼133億美元",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9630454"
+      },
+      {
+        "title": "SEMI：半導體設備支出 2028年上看2,295億美元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000232-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Fed": [
+      {
+        "title": "Fed 主席華許：美面臨 AI 供應震撼 會審視對就業與生產力影響",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9630422"
+      },
+      {
+        "title": "可因應Fed政策不明局勢！非投等債 投資人新歡",
+        "source": "",
+        "url": "https://udn.com/news/story/10103/9630235"
+      }
+    ],
+    "PPI": [
+      {
+        "title": "美 PPI 增速放緩 6月下滑0.3%",
+        "source": "",
+        "url": ""
+      },
+      {
+        "title": "美6月PPI月減0.3％ 十個月來首見下滑",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000209-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美通膨壓力降溫 PPI下跌",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000646-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台幣": [
+      {
+        "title": "台幣連二貶 探15個月新低",
+        "source": "",
+        "url": "https://udn.com/news/story/7239/9630330"
+      },
+      {
+        "title": "漲千點難救台幣 央行力守32.2元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000648-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "油價": [
+      {
+        "title": "美國空襲伊朗　國際油價小幅走高",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9630637"
+      },
+      {
+        "title": "美伊又開戰 國際運價蠢動",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000650-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "AWS": [
+      {
+        "title": "AWS秀自研晶片三平台 台廠熱舞",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000223-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AWS王定愷定調 2026年為代理式AI元年",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000226-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "亞馬遜攜台廠 強攻AI",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9630103"
+      }
+    ],
+    "IBM": [
+      {
+        "title": "IBM獲利預警 股價重挫25% 逾50年最大單日跌幅",
+        "source": "",
+        "url": "https://udn.com/news/story/6811/9630449"
+      }
+    ],
+    "SpaceX": [
+      {
+        "title": "投資人狂熱消退　SpaceX跌破135美元IPO發行價",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9630600"
+      }
+    ],
+    "OpenAI": [
+      {
+        "title": "OpenAI首款硬體 催生智慧音箱",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000299-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "亞馬遜": [
+      {
+        "title": "亞馬遜攜台廠 強攻AI",
+        "source": "",
+        "url": "https://udn.com/news/story/7240/9630103"
+      },
+      {
+        "title": "AWS秀自研晶片三平台 台廠熱舞",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000223-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "鴻海": [
+      {
+        "title": "鴻海加碼投資機器人新創",
+        "source": "",
+        "url": "https://udn.com/news/story/7252/9630105"
+      }
+    ],
+    "台塑": [
+      {
+        "title": "AI 帶動需求爆發、中東衝突推升原料成本 台塑兩大電子化學品喊漲",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9630421"
+      },
+      {
+        "title": "台塑集團高值化轉型邁向收成",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9630429"
+      },
+      {
+        "title": "台塑麥寮基層月薪7.5萬 傳產最強",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000251-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "SEMI": [
+      {
+        "title": "SEMI 按讚半導體設備 銷售額估連五年成長",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9630436"
+      },
+      {
+        "title": "SEMI：半導體設備支出 2028年上看2,295億美元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000232-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "印度": [
+      {
+        "title": "印度衝半導體 加碼133億美元",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9630454"
+      }
+    ],
+    "中國": [
+      {
+        "title": "陸Q2 GDP年增4.3％ 遜預期",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000303-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "3中企買輝達H200晶片 傳美放行",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000311-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "蘋果AI獲陸官方備案 阿里「千問」力挺",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000312-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "華為今年手機出貨 拚增20％",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000315-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "日本": [
+      {
+        "title": "川崎重工傳攜手輝達　在日本打造配備機器人AI造船廠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9630630"
+      },
+      {
+        "title": "日本台灣形象展 規模創高",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9630403"
+      },
+      {
+        "title": "ACSL：供應鏈必須去紅 日本空拍無人機 擴大對台採購",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1762783"
+      }
+    ],
+    "SK海力士": [
+      {
+        "title": "投行力挺 SK海力士股價飆",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000294-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "CoreWeave出招解DRAM長約風險",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000297-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "CoreWeave": [
+      {
+        "title": "CoreWeave出招解DRAM長約風險",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000297-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "華為": [
+      {
+        "title": "華為今年手機出貨 拚增20％",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000315-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "資料中心": [
+      {
+        "title": "北部資料中心供電有望解禁 桃、基可在電廠附近規劃AI專區",
+        "source": "",
+        "url": "https://udn.com/news/story/7241/9630433"
+      },
+      {
+        "title": "全美首禁 紐約州停建超大資料中心",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000290-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "5MW資料中心 基桃有條件解禁",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000638-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "北部資料中心供電可望解禁 桃、基可在電廠附近規劃 AI 專區",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9630433"
+      }
+    ],
+    "機器人": [
+      {
+        "title": "川崎重工傳攜手輝達　在日本打造配備機器人AI造船廠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9630630"
+      },
+      {
+        "title": "陪伴經濟夯 人形機器人產值衝",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000333-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "鴻海加碼投資機器人新創",
+        "source": "",
+        "url": "https://udn.com/news/story/7252/9630105"
+      }
+    ],
+    "低軌衛星": [
+      {
+        "title": "昇達科併購巨頻 深化低軌衛星、毫米波通訊布局",
+        "source": "",
+        "url": "https://udn.com/news/story/7252/9630051"
+      },
+      {
+        "title": "昇達科斥資17億 拚低軌衛星市場",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1762817"
+      },
+      {
+        "title": "台灣大揪夥 布局海事衛星",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000341-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "穩定幣": [
+      {
+        "title": "電子業、貿易商 穩定幣服務二大客群",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5613/9630329"
+      },
+      {
+        "title": "美英穩定幣監管有進展 加速發行與跨國轉帳",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5599/9630401"
+      }
+    ],
+    "施振榮": [
+      {
+        "title": "宏碁創辦人施振榮奪東方領袖人物獎",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9630393"
+      }
+    ],
+    "童子賢": [
+      {
+        "title": "國科會引資擬設太空基金 和碩董座童子賢籲增加預算、動作要快",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9630398"
+      }
+    ],
+    "國科會": [
+      {
+        "title": "國科會引資擬設太空基金 和碩董座童子賢籲增加預算、動作要快",
+        "source": "",
+        "url": "https://udn.com/news/story/7238/9630398"
+      }
+    ],
+    "BIS": [
+      {
+        "title": "BIS示警 AI槓桿恐演科技泡沫",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000288-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台達電": [
+      {
+        "title": "台達電攜X LABS 攻AIDC能源服務",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000335-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "緯穎": [
+      {
+        "title": "緯穎砸6.7億 大馬廠增產",
+        "source": "",
+        "url": "https://udn.com/news/story/7252/9630109"
+      }
+    ],
+    "昇達科": [
+      {
+        "title": "昇達科併購巨頻 深化低軌衛星、毫米波通訊布局",
+        "source": "",
+        "url": "https://udn.com/news/story/7252/9630051"
+      },
+      {
+        "title": "昇達科斥資17億 拚低軌衛星市場",
+        "source": "",
+        "url": "https://ec.ltn.com.tw/article/paper/1762817"
+      }
+    ],
+    "家登": [
+      {
+        "title": "艾司摩爾報喜三度調高展望、未來兩年將大擴產 家登、帆宣、翔名受惠",
+        "source": "",
+        "url": "https://money.udn.com/money/story/5612/9630427"
+      },
+      {
+        "title": "ASML上季營收優預期 家登不斷電",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000231-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "紅海": [
+      {
+        "title": "不只封鎖荷莫茲海峽 伊朗暗示「下一個是紅海曼德海峽」",
+        "source": "",
+        "url": "https://udn.com/news/story/124061/9630456"
+      }
+    ],
+    "GDP": [
+      {
+        "title": "陸Q2 GDP年增4.3％ 遜預期",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000303-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "MGX": [
+      {
+        "title": "阿聯最強AI基金MGX 募集490億美元",
+        "source": "",
+        "url": "https://www.chinatimes.com/newspapers/20260716000292-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "川普保護破功？荷莫茲日益凶險 傳部分商船拒絕美軍引導 (中時國際新聞)": "https://www.chinatimes.com/realtimenews/20260716000081-260408?utm_source=iii_news&utm_medium=rss",
+    "美 PPI 增速放緩 6月下滑0.3% 「鷹」浪變小 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9630397",
+    "Fed 主席華許：美面臨 AI 供應震撼 會審視對就業與生產力影響 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9630422",
+    "美加大施壓 逼伊朗重啟談判 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9630423",
+    "美國空襲伊朗　國際油價小幅走高 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9630637",
+    "可因應Fed政策不明局勢！非投等債 投資人新歡 (聯合_產經_股市)": "https://udn.com/news/story/10103/9630235",
+    "中東戰火沒完沒了...專家：美伊已陷入強制性消耗戰 (聯合_產經_股市)": "https://udn.com/news/story/124061/9630447",
+    "荷莫茲海峽收費？波灣盟友砲轟 川普髮夾彎改口喊卡 (聯合_產經_股市)": "https://udn.com/news/story/124061/9630453",
+    "不只封鎖荷莫茲海峽 伊朗暗示「下一個是紅海曼德海峽」 (聯合_產經_股市)": "https://udn.com/news/story/124061/9630456",
+    "台幣連二貶 探15個月新低 (聯合_產經_股市)": "https://udn.com/news/story/7239/9630330",
+    "美6月PPI月減0.3％ 十個月來首見下滑 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260716000209-260202?utm_source=iii_news&utm_medium=rss",
+    "陸Q2 GDP年增4.3％ 遜預期 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260716000303-260203?utm_source=iii_news&utm_medium=rss",
+    "國銀6月人民幣存款餘額 回升 (工商金融稅務)": "https://www.chinatimes.com/newspapers/20260716000328-260205?utm_source=iii_news&utm_medium=rss",
+    "美通膨壓力降溫 PPI下跌 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260716000646-260110?utm_source=iii_news&utm_medium=rss",
+    "漲千點難救台幣 央行力守32.2元 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260716000648-260110?utm_source=iii_news&utm_medium=rss",
+    "美伊又開戰 國際運價蠢動 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260716000650-260110?utm_source=iii_news&utm_medium=rss",
+    "日本台灣形象展 規模創高 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9630403",
+    "宏碁創辦人施振榮奪東方領袖人物獎 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9630393",
+    "傳蘋果尋求收購晶片公司 強化AI伺服器實力 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9630582",
+    "紐約憂水電負擔 祭暫停興建令 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9630428",
+    "電子業、貿易商 穩定幣服務二大客群 (經濟金融脈動)": "https://money.udn.com/money/story/5613/9630329",
+    "AI 帶動需求爆發、中東衝突推升原料成本 台塑兩大電子化學品喊漲 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9630421",
+    "英特爾傳大砍台積電2奈米訂單 業界解讀先進製程良率躍進 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9630424",
+    "英特爾先進封裝也要急起直追 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9630434",
+    "艾司摩爾報喜三度調高展望、未來兩年將大擴產 家登、帆宣、翔名受惠 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9630427",
+    "SEMI 按讚半導體設備 銷售額估連五年成長 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9630436",
+    "美英穩定幣監管有進展 加速發行與跨國轉帳 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9630401",
+    "印度衝半導體 加碼133億美元 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9630454",
+    "助打伊朗有功 阿聯獲准增購美 AI 晶片 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9630452",
+    "投資人狂熱消退　SpaceX跌破135美元IPO發行價 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9630600",
+    "艾司摩爾三度上修展望 台積法說前釋 AI 需求強勁訊息 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9630418",
+    "川崎重工傳攜手輝達　在日本打造配備機器人AI造船廠 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9630630",
+    "YouTube廣告終結者？這款免費瀏覽器一開就能擋 (中時科技新聞)": "https://www.chinatimes.com/realtimenews/20260716001009-260412?utm_source=iii_news&utm_medium=rss",
+    "策略經營／Astera Labs 執行長站在 AI 風口 做客戶需要的產品 (聯合_產經_股市)": "https://udn.com/news/story/7241/9630331",
+    "國科會引資擬設太空基金 和碩董座童子賢籲增加預算、動作要快 (聯合_產經_股市)": "https://udn.com/news/story/7238/9630398",
+    "權王台積電目標價 美銀喊3100元 (聯合_產經_股市)": "https://udn.com/news/story/7252/9630419",
+    "助打伊朗有功 阿聯獲准增購美AI晶片 (聯合_產經_股市)": "https://udn.com/news/story/6811/9630452",
+    "IBM獲利預警 股價重挫25% 逾50年最大單日跌幅 (聯合_產經_股市)": "https://udn.com/news/story/6811/9630449",
+    "亞馬遜攜台廠 強攻AI (聯合_產經_股市)": "https://udn.com/news/story/7240/9630103",
+    "明年科技預算估1,768億元 創高 (聯合_產經_股市)": "https://udn.com/news/story/7240/9630420",
+    "艾司摩爾報喜三度調高展望、未來兩年大擴產 家登、帆宣、翔名受惠 (聯合_產經_股市)": "https://udn.com/news/story/7240/9630427",
+    "北部資料中心供電有望解禁 桃、基可在電廠附近規劃AI專區 (聯合_產經_股市)": "https://udn.com/news/story/7241/9630433",
+    "默克導入AI 提高研發效率 (聯合_產經_股市)": "https://udn.com/news/story/7241/9630483",
+    "華立深化先進材料布局 (聯合_產經_股市)": "https://udn.com/news/story/7252/9630142",
+    "昇達科併購巨頻 深化低軌衛星、毫米波通訊布局 (聯合_產經_股市)": "https://udn.com/news/story/7252/9630051",
+    "金控翻倍賺 締最強H1 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260716000218-260202?utm_source=iii_news&utm_medium=rss",
+    "AWS秀自研晶片三平台 台廠熱舞 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260716000223-260202?utm_source=iii_news&utm_medium=rss",
+    "AWS王定愷定調 2026年為代理式AI元年 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260716000226-260202?utm_source=iii_news&utm_medium=rss",
+    "Intel新處理器9成改自製 台積代工比重被砍剩10％ (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260716000227-260202?utm_source=iii_news&utm_medium=rss",
+    "輝達Groq 3機櫃H2出貨 台光電、金居等台鏈受惠 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260716000230-260202?utm_source=iii_news&utm_medium=rss",
+    "ASML上季營收優預期 家登不斷電 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260716000231-260202?utm_source=iii_news&utm_medium=rss",
+    "SEMI：半導體設備支出 2028年上看2,295億美元 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260716000232-260202?utm_source=iii_news&utm_medium=rss",
+    "InfoComm Asia 2026 達輝國際智慧顯示技術亮相 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260716000459-260202?utm_source=iii_news&utm_medium=rss",
+    "BIS示警 AI槓桿恐演科技泡沫 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260716000288-260203?utm_source=iii_news&utm_medium=rss",
+    "全美首禁 紐約州停建超大資料中心 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260716000290-260203?utm_source=iii_news&utm_medium=rss",
+    "阿聯最強AI基金MGX 募集490億美元 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260716000292-260203?utm_source=iii_news&utm_medium=rss",
+    "投行力挺 SK海力士股價飆 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260716000294-260203?utm_source=iii_news&utm_medium=rss",
+    "CoreWeave出招解DRAM長約風險 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260716000297-260203?utm_source=iii_news&utm_medium=rss",
+    "OpenAI首款硬體 催生智慧音箱 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260716000299-260203?utm_source=iii_news&utm_medium=rss",
+    "提高運算效力 iPhone擬導入AI模型 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260716000300-260203?utm_source=iii_news&utm_medium=rss",
+    "3中企買輝達H200晶片 傳美放行 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260716000311-260203?utm_source=iii_news&utm_medium=rss",
+    "蘋果AI獲陸官方備案 阿里「千問」力挺 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260716000312-260203?utm_source=iii_news&utm_medium=rss",
+    "華為今年手機出貨 拚增20％ (工商全球財經)": "https://www.chinatimes.com/newspapers/20260716000315-260203?utm_source=iii_news&utm_medium=rss",
+    "輝達CPO出貨 帶旺FAU商機 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260716000330-260204?utm_source=iii_news&utm_medium=rss",
+    "陪伴經濟夯 人形機器人產值衝 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260716000333-260204?utm_source=iii_news&utm_medium=rss",
+    "台達電攜X LABS 攻AIDC能源服務 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260716000335-260204?utm_source=iii_news&utm_medium=rss",
+    "酷澎搶暑假商機 STEM教具買氣旺 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260716000337-260204?utm_source=iii_news&utm_medium=rss",
+    "欣新網營收創高 旺季更猛 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260716000340-260204?utm_source=iii_news&utm_medium=rss",
+    "台灣大揪夥 布局海事衛星 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260716000341-260204?utm_source=iii_news&utm_medium=rss",
+    "鴻海加碼投資機器人新創 (聯合_產經_股市)": "https://udn.com/news/story/7252/9630105",
+    "緯穎砸6.7億 大馬廠增產 (聯合_產經_股市)": "https://udn.com/news/story/7252/9630109",
+    "台積法說 法人估連5季獲利破紀錄 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260716000640-260110?utm_source=iii_news&utm_medium=rss",
+    "昇達科斥資17億 拚低軌衛星市場 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1762817",
+    "ACSL：供應鏈必須去紅 日本空拍無人機 擴大對台採購 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1762783",
+    "保瑞揪伴 強攻 AI 藥物研發 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9630407",
+    "亞洲生技大會：AI加速新藥研發 台灣拚當樞紐 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260716000239-260202?utm_source=iii_news&utm_medium=rss",
+    "高端開發新疫苗 有斬獲 (聯合_產經_股市)": "https://udn.com/news/story/7252/9630009",
+    "台塑集團高值化轉型邁向收成 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9630429",
+    "台塑麥寮基層月薪7.5萬 傳產最強 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260716000251-260202?utm_source=iii_news&utm_medium=rss",
+    "北部資料中心供電可望解禁 桃、基可在電廠附近規劃 AI 專區 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9630433",
+    "聯合再生泰國光能案場H2開工 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260716000339-260204?utm_source=iii_news&utm_medium=rss",
+    "5MW資料中心 基桃有條件解禁 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260716000638-260110?utm_source=iii_news&utm_medium=rss"
+  }
+}
