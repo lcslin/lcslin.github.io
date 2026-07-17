@@ -1,0 +1,1520 @@
+{
+  "nodes": [
+    {
+      "id": "台積電",
+      "group": "company",
+      "size": 25
+    },
+    {
+      "id": "魏哲家",
+      "group": "person",
+      "size": 22
+    },
+    {
+      "id": "輝達",
+      "group": "company",
+      "size": 20
+    },
+    {
+      "id": "黃仁勳",
+      "group": "person",
+      "size": 18
+    },
+    {
+      "id": "力成",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "博通",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "AI",
+      "group": "tech",
+      "size": 22
+    },
+    {
+      "id": "半導體",
+      "group": "tech",
+      "size": 18
+    },
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 20
+    },
+    {
+      "id": "台灣",
+      "group": "country",
+      "size": 18
+    },
+    {
+      "id": "伊朗",
+      "group": "country",
+      "size": 14
+    },
+    {
+      "id": "韓國",
+      "group": "country",
+      "size": 13
+    },
+    {
+      "id": "日本",
+      "group": "country",
+      "size": 12
+    },
+    {
+      "id": "中國",
+      "group": "country",
+      "size": 12
+    },
+    {
+      "id": "Fed",
+      "group": "org",
+      "size": 13
+    },
+    {
+      "id": "韓央行",
+      "group": "org",
+      "size": 12
+    },
+    {
+      "id": "華為",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "蘋果",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "三星",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "聯發科",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "微星",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "華碩",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "百度",
+      "group": "company",
+      "size": 9
+    },
+    {
+      "id": "Anthropic",
+      "group": "company",
+      "size": 9
+    },
+    {
+      "id": "廣達",
+      "group": "company",
+      "size": 8
+    },
+    {
+      "id": "達明",
+      "group": "company",
+      "size": 8
+    },
+    {
+      "id": "資策會",
+      "group": "org",
+      "size": 8
+    },
+    {
+      "id": "FOPLP封裝",
+      "group": "tech",
+      "size": 10
+    },
+    {
+      "id": "AI-RAN",
+      "group": "tech",
+      "size": 9
+    },
+    {
+      "id": "機器人",
+      "group": "tech",
+      "size": 10
+    },
+    {
+      "id": "5G",
+      "group": "tech",
+      "size": 9
+    },
+    {
+      "id": "油價",
+      "group": "finance",
+      "size": 10
+    },
+    {
+      "id": "升息",
+      "group": "finance",
+      "size": 11
+    },
+    {
+      "id": "通膨",
+      "group": "finance",
+      "size": 10
+    },
+    {
+      "id": "韓元",
+      "group": "finance",
+      "size": 8
+    },
+    {
+      "id": "台幣",
+      "group": "finance",
+      "size": 8
+    },
+    {
+      "id": "關稅",
+      "group": "finance",
+      "size": 10
+    },
+    {
+      "id": "歐盟",
+      "group": "org",
+      "size": 9
+    },
+    {
+      "id": "生技產業",
+      "group": "tech",
+      "size": 10
+    },
+    {
+      "id": "亞洲生技大會",
+      "group": "org",
+      "size": 9
+    },
+    {
+      "id": "卓榮泰",
+      "group": "person",
+      "size": 9
+    },
+    {
+      "id": "麥格理",
+      "group": "company",
+      "size": 8
+    },
+    {
+      "id": "諾基亞",
+      "group": "company",
+      "size": 8
+    },
+    {
+      "id": "台塑生醫",
+      "group": "company",
+      "size": 7
+    },
+    {
+      "id": "正崴",
+      "group": "company",
+      "size": 7
+    }
+  ],
+  "links": [
+    {
+      "source": "台積電",
+      "target": "魏哲家",
+      "value": 5,
+      "label": "領導人"
+    },
+    {
+      "source": "台積電",
+      "target": "AI",
+      "value": 5,
+      "label": "需求驅動"
+    },
+    {
+      "source": "台積電",
+      "target": "美國",
+      "value": 5,
+      "label": "擴產投資"
+    },
+    {
+      "source": "台積電",
+      "target": "台灣",
+      "value": 5,
+      "label": "持續投資"
+    },
+    {
+      "source": "台積電",
+      "target": "半導體",
+      "value": 5,
+      "label": "核心業務"
+    },
+    {
+      "source": "魏哲家",
+      "target": "AI",
+      "value": 5,
+      "label": "需求預測"
+    },
+    {
+      "source": "魏哲家",
+      "target": "美國",
+      "value": 4,
+      "label": "投資承諾"
+    },
+    {
+      "source": "台積電",
+      "target": "麥格理",
+      "value": 3,
+      "label": "目標價評估"
+    },
+    {
+      "source": "輝達",
+      "target": "黃仁勳",
+      "value": 5,
+      "label": "領導人"
+    },
+    {
+      "source": "輝達",
+      "target": "AI",
+      "value": 5,
+      "label": "核心業務"
+    },
+    {
+      "source": "輝達",
+      "target": "日本",
+      "value": 4,
+      "label": "戰略布局"
+    },
+    {
+      "source": "輝達",
+      "target": "機器人",
+      "value": 4,
+      "label": "技術合作"
+    },
+    {
+      "source": "輝達",
+      "target": "達明",
+      "value": 3,
+      "label": "合作夥伴"
+    },
+    {
+      "source": "輝達",
+      "target": "諾基亞",
+      "value": 3,
+      "label": "轉投資合作"
+    },
+    {
+      "source": "輝達",
+      "target": "AI-RAN",
+      "value": 4,
+      "label": "技術推動"
+    },
+    {
+      "source": "黃仁勳",
+      "target": "日本",
+      "value": 4,
+      "label": "訪問布局"
+    },
+    {
+      "source": "力成",
+      "target": "博通",
+      "value": 5,
+      "label": "合資合作"
+    },
+    {
+      "source": "力成",
+      "target": "FOPLP封裝",
+      "value": 5,
+      "label": "技術擴展"
+    },
+    {
+      "source": "博通",
+      "target": "FOPLP封裝",
+      "value": 4,
+      "label": "技術投資"
+    },
+    {
+      "source": "力成",
+      "target": "台灣",
+      "value": 3,
+      "label": "本地擴產"
+    },
+    {
+      "source": "伊朗",
+      "target": "美國",
+      "value": 5,
+      "label": "外交談判"
+    },
+    {
+      "source": "伊朗",
+      "target": "油價",
+      "value": 4,
+      "label": "地緣影響"
+    },
+    {
+      "source": "美國",
+      "target": "油價",
+      "value": 3,
+      "label": "地緣政策"
+    },
+    {
+      "source": "Fed",
+      "target": "通膨",
+      "value": 4,
+      "label": "政策應對"
+    },
+    {
+      "source": "Fed",
+      "target": "升息",
+      "value": 4,
+      "label": "貨幣政策"
+    },
+    {
+      "source": "Fed",
+      "target": "美國",
+      "value": 4,
+      "label": "經濟監控"
+    },
+    {
+      "source": "韓央行",
+      "target": "升息",
+      "value": 5,
+      "label": "貨幣政策"
+    },
+    {
+      "source": "韓央行",
+      "target": "韓國",
+      "value": 5,
+      "label": "隸屬機構"
+    },
+    {
+      "source": "韓央行",
+      "target": "通膨",
+      "value": 4,
+      "label": "抗通膨"
+    },
+    {
+      "source": "升息",
+      "target": "韓元",
+      "value": 4,
+      "label": "匯率影響"
+    },
+    {
+      "source": "韓元",
+      "target": "台幣",
+      "value": 3,
+      "label": "匯率連動"
+    },
+    {
+      "source": "升息",
+      "target": "台幣",
+      "value": 3,
+      "label": "間接影響"
+    },
+    {
+      "source": "三星",
+      "target": "韓國",
+      "value": 4,
+      "label": "本國企業"
+    },
+    {
+      "source": "三星",
+      "target": "半導體",
+      "value": 4,
+      "label": "核心業務"
+    },
+    {
+      "source": "華為",
+      "target": "5G",
+      "value": 5,
+      "label": "技術突破"
+    },
+    {
+      "source": "華為",
+      "target": "中國",
+      "value": 4,
+      "label": "本國企業"
+    },
+    {
+      "source": "美國",
+      "target": "中國",
+      "value": 4,
+      "label": "科技競爭"
+    },
+    {
+      "source": "蘋果",
+      "target": "AI",
+      "value": 4,
+      "label": "技術併購"
+    },
+    {
+      "source": "蘋果",
+      "target": "半導體",
+      "value": 4,
+      "label": "晶片布局"
+    },
+    {
+      "source": "聯發科",
+      "target": "AI-RAN",
+      "value": 4,
+      "label": "市場收成"
+    },
+    {
+      "source": "微星",
+      "target": "AI",
+      "value": 3,
+      "label": "產品布局"
+    },
+    {
+      "source": "微星",
+      "target": "資策會",
+      "value": 3,
+      "label": "生態系合作"
+    },
+    {
+      "source": "華碩",
+      "target": "AI",
+      "value": 3,
+      "label": "商用布局"
+    },
+    {
+      "source": "百度",
+      "target": "中國",
+      "value": 4,
+      "label": "本國企業"
+    },
+    {
+      "source": "百度",
+      "target": "AI",
+      "value": 4,
+      "label": "核心業務"
+    },
+    {
+      "source": "Anthropic",
+      "target": "AI",
+      "value": 4,
+      "label": "AI企業"
+    },
+    {
+      "source": "關稅",
+      "target": "歐盟",
+      "value": 4,
+      "label": "貿易政策"
+    },
+    {
+      "source": "關稅",
+      "target": "台灣",
+      "value": 3,
+      "label": "出口影響"
+    },
+    {
+      "source": "歐盟",
+      "target": "台灣",
+      "value": 3,
+      "label": "鋼鐵貿易"
+    },
+    {
+      "source": "關稅",
+      "target": "美國",
+      "value": 4,
+      "label": "對等關稅"
+    },
+    {
+      "source": "亞洲生技大會",
+      "target": "生技產業",
+      "value": 5,
+      "label": "產業推動"
+    },
+    {
+      "source": "卓榮泰",
+      "target": "生技產業",
+      "value": 4,
+      "label": "政策支持"
+    },
+    {
+      "source": "卓榮泰",
+      "target": "亞洲生技大會",
+      "value": 4,
+      "label": "主導出席"
+    },
+    {
+      "source": "生技產業",
+      "target": "台灣",
+      "value": 4,
+      "label": "護國產業"
+    },
+    {
+      "source": "台塑生醫",
+      "target": "生技產業",
+      "value": 3,
+      "label": "產業布局"
+    },
+    {
+      "source": "廣達",
+      "target": "AI",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "達明",
+      "target": "機器人",
+      "value": 4,
+      "label": "核心業務"
+    },
+    {
+      "source": "正崴",
+      "target": "美國",
+      "value": 3,
+      "label": "赴美設廠"
+    },
+    {
+      "source": "台積電",
+      "target": "關稅",
+      "value": 3,
+      "label": "政策應對"
+    },
+    {
+      "source": "AI",
+      "target": "半導體",
+      "value": 5,
+      "label": "需求驅動"
+    },
+    {
+      "source": "AI-RAN",
+      "target": "5G",
+      "value": 4,
+      "label": "技術融合"
+    },
+    {
+      "source": "輝達",
+      "target": "台灣",
+      "value": 4,
+      "label": "合作布局"
+    }
+  ],
+  "newsDatabase": {
+    "台積電": [
+      {
+        "title": "台積電談競爭 客戶不是去超商買牛奶",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9632995"
+      },
+      {
+        "title": "台積電再次上調全年資本支出 強調配息會穩定增長",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9632978"
+      },
+      {
+        "title": "台積電重金擴產 協力廠看俏",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9632992"
+      },
+      {
+        "title": "台積電上季財報驚艷 寫五個新高 「雙率」同步飛越財測高標",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9632979"
+      },
+      {
+        "title": "台積電談漲價 不能讓客戶無法承受",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9632993"
+      },
+      {
+        "title": "台積加碼美國千億美元 同步承諾繼續在台投資",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9632973"
+      },
+      {
+        "title": "台積二度上修全年展望 董座魏哲家喊AI需求極度強勁",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9633014"
+      },
+      {
+        "title": "台積電目標價 麥格理喊4,200元天價",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9632998"
+      },
+      {
+        "title": "台積電二度上修全年展望 董座魏哲家喊AI需求極度強勁",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9633014"
+      },
+      {
+        "title": "加碼千億美元…台積電赴美總布局達2650億美元 魏哲家承諾持續在台投資",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9633084"
+      },
+      {
+        "title": "新聞分析／台積布局 助台灣更有話語權",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9633038"
+      },
+      {
+        "title": "AI需求 魏哲家：強勁至2029年",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9633039"
+      },
+      {
+        "title": "先進製程與美時間差至少2年 專家：確保利益須根留台灣",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9633043"
+      },
+      {
+        "title": "「選夥伴不是去7-11買牛奶」！台積三優勢 客戶不會輕易更換",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9633044"
+      },
+      {
+        "title": "台積電加碼美國千億美元 同步承諾繼續在台投資",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9632973"
+      },
+      {
+        "title": "台積電上季財報寫五個新高 「雙率」同步飛越財測高標",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9632979"
+      },
+      {
+        "title": "魏哲家：AI旺到2030年",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260717000243-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台積電A14、COUPE 雙龍搶鏡",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260717000267-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台積電 要在台灣興建13座先進晶圓廠",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260717000271-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台積電再加碼美國千億美元投資",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260717000273-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台積電加碼赴美 政府確保三個優先",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260717000276-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台積魏哲家：不會因供需吃緊而暴力漲價",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260717000277-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "魏哲家回應轉單疑慮 選先進製程 不是去超商買牛奶",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260717000280-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI需求強勁 Q2財報亮眼 台積電再上調美元營收預估",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1763008"
+      },
+      {
+        "title": "台積加碼3.2兆 美國再建4座晶圓廠",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1763009"
+      },
+      {
+        "title": "無懼競爭 魏哲家妙喻 選製程非超商買奶",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260717000632-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "魏哲家": [
+      {
+        "title": "台積二度上修全年展望 董座魏哲家喊AI需求極度強勁",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9633014"
+      },
+      {
+        "title": "AI需求 魏哲家：強勁至2029年",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9633039"
+      },
+      {
+        "title": "加碼千億美元…台積電赴美總布局達2650億美元 魏哲家承諾持續在台投資",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9633084"
+      },
+      {
+        "title": "魏哲家：AI旺到2030年",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260717000243-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台積魏哲家：不會因供需吃緊而暴力漲價",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260717000277-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "魏哲家回應轉單疑慮 選先進製程 不是去超商買牛奶",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260717000280-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "無懼競爭 魏哲家妙喻 選製程非超商買奶",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260717000632-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "輝達": [
+      {
+        "title": "黃仁勳駁斥 AI 泡沫論 輝達結盟豐田、富士通等日企",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9632936"
+      },
+      {
+        "title": "達明衝機器人！牽緊輝達 入列Jetson Thor新模組合作夥伴",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9632627"
+      },
+      {
+        "title": "AI-RAN時代來了！台廠迎商機 輝達轉投資諾基亞將推商用平台",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9632965"
+      },
+      {
+        "title": "Noetra攜輝達 搶機器人市占",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260717000347-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "力拚明年Q1上市 輝達推平價版Jetson Thor平台",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260717000395-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "黃仁勳訪日 拓展AI戰略布局",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260717000383-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "黃仁勳": [
+      {
+        "title": "黃仁勳駁斥 AI 泡沫論 輝達結盟豐田、富士通等日企",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9632936"
+      },
+      {
+        "title": "黃仁勳訪日 拓展AI戰略布局",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260717000383-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "力成": [
+      {
+        "title": "力成攜博通 衝面板級封裝 斥資128億設星國合資公司",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9632960"
+      },
+      {
+        "title": "力成三大優勢 吸引博通合作關鍵",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9632963"
+      },
+      {
+        "title": "力成與博通合資成立新公司 擴大FOPLP版圖",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9633201"
+      }
+    ],
+    "博通": [
+      {
+        "title": "力成攜博通 衝面板級封裝 斥資128億設星國合資公司",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9632960"
+      },
+      {
+        "title": "力成三大優勢 吸引博通合作關鍵",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9632963"
+      },
+      {
+        "title": "力成與博通合資成立新公司 擴大FOPLP版圖",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9633201"
+      }
+    ],
+    "AI": [
+      {
+        "title": "黃仁勳駁斥 AI 泡沫論 輝達結盟豐田、富士通等日企",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9632936"
+      },
+      {
+        "title": "台積二度上修全年展望 董座魏哲家喊AI需求極度強勁",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9633014"
+      },
+      {
+        "title": "AI需求 魏哲家：強勁至2029年",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9633039"
+      },
+      {
+        "title": "迎接AI-RAN時代 聯發科、和碩邁入收成期",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9632969"
+      },
+      {
+        "title": "AI-RAN時代來了！台廠迎商機 輝達轉投資諾基亞將推商用平台",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9632965"
+      },
+      {
+        "title": "魏哲家：AI旺到2030年",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260717000243-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI需求強勁 Q2財報亮眼 台積電再上調美元營收預估",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1763008"
+      },
+      {
+        "title": "蘋果衝AI 擬併晶片新創",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9632951"
+      },
+      {
+        "title": "陸多家對沖基金 減碼AI類股",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260717000366-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "世界AI大會登場 300項展品首亮相",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260717000363-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "資策會攜微星 打造Edge AI生態系",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260717000387-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AI用電需求續攀升…SOFC商機飄香 台廠三路進攻",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260717000386-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "半導體": [
+      {
+        "title": "創浦強化台灣半導體合作",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9632954"
+      },
+      {
+        "title": "先進製程與美時間差至少2年 專家：確保利益須根留台灣",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9633043"
+      },
+      {
+        "title": "美議員致信美國商務部 籲禁止開放中國記憶體晶片",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9633261"
+      },
+      {
+        "title": "雷科半導體設備 接單熱",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7252/9632637"
+      }
+    ],
+    "美國": [
+      {
+        "title": "台積加碼美國千億美元 同步承諾繼續在台投資",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9632973"
+      },
+      {
+        "title": "台積電再加碼美國千億美元投資",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260717000273-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台積電加碼赴美 政府確保三個優先",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260717000276-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "加碼千億美元…台積電赴美總布局達2650億美元",
+        "source": "聯合_產經_股市",
+        "url": ""
+      },
+      {
+        "title": "美對等關稅後最低 訂單回穩 無薪假人數減至2,897人",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260717000308-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美議員致信美國商務部 籲禁止開放中國記憶體晶片",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9633261"
+      },
+      {
+        "title": "正崴德州廠啟用",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7241/9632639"
+      }
+    ],
+    "台灣": [
+      {
+        "title": "台積電 要在台灣興建13座先進晶圓廠",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260717000271-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "新聞分析／台積布局 助台灣更有話語權",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9633038"
+      },
+      {
+        "title": "先進製程與美時間差至少2年 專家：確保利益須根留台灣",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9633043"
+      },
+      {
+        "title": "創浦強化台灣半導體合作",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9632954"
+      },
+      {
+        "title": "亞洲生技大會 打造新護國神山人才庫",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9632768"
+      }
+    ],
+    "伊朗": [
+      {
+        "title": "「談判不等於妥協」 伊朗首席談判代表為美伊和談辯護 反駁國內強硬派",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9632542"
+      },
+      {
+        "title": "白宮：美伊仍在談 伊朗想達成協議",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9633154"
+      },
+      {
+        "title": "美伊衝突再升溫　油價漲至近1個月高點後小幅收低",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9633199"
+      },
+      {
+        "title": "美伊暗示 和談有望",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260717000345-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "韓國": [
+      {
+        "title": "韓央行升息1碼 三年來首度採取動作 暗示還有續集",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9632958"
+      },
+      {
+        "title": "韓央行升息，帶動韓元強升 台幣貶值壓力可望緩解",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260717000293-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "韓升息抗通膨 股跌匯升",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260717000338-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "韓日股市遭血洗 三星重挫8.77％",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260717000634-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "日本": [
+      {
+        "title": "黃仁勳駁斥 AI 泡沫論 輝達結盟豐田、富士通等日企",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9632936"
+      },
+      {
+        "title": "黃仁勳訪日 拓展AI戰略布局",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260717000383-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "韓日股市遭血洗 三星重挫8.77％",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260717000634-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中國": [
+      {
+        "title": "突破封鎖 華為5G手機 恢復海外上市",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6809/9633068"
+      },
+      {
+        "title": "陸多家對沖基金 減碼AI類股",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260717000366-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "陸21 PCB企業 前進資本市場",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260717000368-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美議員致信美國商務部 籲禁止開放中國記憶體晶片",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9633261"
+      },
+      {
+        "title": "百度 美港同步主要上市",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260717000367-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Fed": [
+      {
+        "title": "Fed 褐皮書：美經濟溫和成長 6月零售銷售月增0.2%",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9632956"
+      },
+      {
+        "title": "通膨率遲未達標　達拉斯聯準銀行總裁支持升息",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9633220"
+      },
+      {
+        "title": "承諾穩物價 華許面臨考驗",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260717000341-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "韓央行": [
+      {
+        "title": "韓央行升息1碼 三年來首度採取動作 暗示還有續集",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9632958"
+      },
+      {
+        "title": "韓央行升息，帶動韓元強升 台幣貶值壓力可望緩解",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260717000293-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "韓升息抗通膨 股跌匯升",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260717000338-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "華為": [
+      {
+        "title": "突破封鎖 華為5G手機 恢復海外上市",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6809/9633068"
+      }
+    ],
+    "蘋果": [
+      {
+        "title": "蘋果衝AI 擬併晶片新創",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9632951"
+      }
+    ],
+    "三星": [
+      {
+        "title": "韓日股市遭血洗 三星重挫8.77％",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260717000634-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "聯發科": [
+      {
+        "title": "迎接AI-RAN時代 聯發科、和碩邁入收成期",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9632969"
+      }
+    ],
+    "微星": [
+      {
+        "title": "微星攻AI PC傳捷報",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7252/9632740"
+      },
+      {
+        "title": "資策會攜微星 打造Edge AI生態系",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260717000387-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "華碩": [
+      {
+        "title": "華碩拓展商用版圖",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9632741"
+      },
+      {
+        "title": "華碩開任意門 做SMB轉型陪跑者",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260717000390-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "百度": [
+      {
+        "title": "百度 美港同步主要上市",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260717000367-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Anthropic": [
+      {
+        "title": "Anthropic衝刺IPO 最快10月掛牌",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260717000353-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "廣達": [
+      {
+        "title": "光明砸1億元買廣達股",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7252/9632642"
+      }
+    ],
+    "達明": [
+      {
+        "title": "達明衝機器人！牽緊輝達 入列Jetson Thor新模組合作夥伴",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9632627"
+      }
+    ],
+    "資策會": [
+      {
+        "title": "資策會攜微星 打造Edge AI生態系",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260717000387-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "FOPLP封裝": [
+      {
+        "title": "力成攜博通 衝面板級封裝 斥資128億設星國合資公司",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9632960"
+      },
+      {
+        "title": "力成與博通合資成立新公司 擴大FOPLP版圖",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9633201"
+      }
+    ],
+    "AI-RAN": [
+      {
+        "title": "迎接AI-RAN時代 聯發科、和碩邁入收成期",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9632969"
+      },
+      {
+        "title": "AI-RAN時代來了！台廠迎商機 輝達轉投資諾基亞將推商用平台",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9632965"
+      }
+    ],
+    "機器人": [
+      {
+        "title": "達明衝機器人！牽緊輝達 入列Jetson Thor新模組合作夥伴",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9632627"
+      },
+      {
+        "title": "Noetra攜輝達 搶機器人市占",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260717000347-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "5G": [
+      {
+        "title": "突破封鎖 華為5G手機 恢復海外上市",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6809/9633068"
+      },
+      {
+        "title": "AI-RAN時代來了！台廠迎商機 輝達轉投資諾基亞將推商用平台",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9632965"
+      }
+    ],
+    "油價": [
+      {
+        "title": "美伊衝突再升溫　油價漲至近1個月高點後小幅收低",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9633199"
+      }
+    ],
+    "升息": [
+      {
+        "title": "韓央行升息1碼 三年來首度採取動作 暗示還有續集",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9632958"
+      },
+      {
+        "title": "韓升息抗通膨 股跌匯升",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260717000338-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "通膨率遲未達標　達拉斯聯準銀行總裁支持升息",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9633220"
+      }
+    ],
+    "通膨": [
+      {
+        "title": "韓升息抗通膨 股跌匯升",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260717000338-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "通膨率遲未達標　達拉斯聯準銀行總裁支持升息",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9633220"
+      },
+      {
+        "title": "承諾穩物價 華許面臨考驗",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260717000341-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "韓元": [
+      {
+        "title": "韓央行升息，帶動韓元強升 台幣貶值壓力可望緩解",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260717000293-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "韓升息抗通膨 股跌匯升",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260717000338-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台幣": [
+      {
+        "title": "韓央行升息，帶動韓元強升 台幣貶值壓力可望緩解",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260717000293-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "關稅": [
+      {
+        "title": "美對等關稅後最低 訂單回穩 無薪假人數減至2,897人",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260717000308-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "配合歐盟鋼鐵關稅配額新制 我九類鋼鐵產品出口列管",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260717000307-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "因應歐盟關稅新制 經濟部：九類鋼品輸歐納管",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9632989"
+      }
+    ],
+    "歐盟": [
+      {
+        "title": "配合歐盟鋼鐵關稅配額新制 我九類鋼鐵產品出口列管",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260717000307-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "因應歐盟關稅新制 經濟部：九類鋼品輸歐納管",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9632989"
+      }
+    ],
+    "生技產業": [
+      {
+        "title": "亞洲生技大會 打造新護國神山人才庫",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9632768"
+      },
+      {
+        "title": "亞洲生技大會 卓揆喊話 生技投資增千億",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9632764"
+      },
+      {
+        "title": "亞洲生技大會 卓揆喊話：生技投資增千億元",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9632764"
+      },
+      {
+        "title": "訊聯基因打造生物世界模型",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7241/9632641"
+      },
+      {
+        "title": "海昌上櫃 攻高階醫材",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7252/9632732"
+      },
+      {
+        "title": "永笙、艾萬霖簽CDMO協議",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7252/9632640"
+      }
+    ],
+    "亞洲生技大會": [
+      {
+        "title": "亞洲生技大會 打造新護國神山人才庫",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9632768"
+      },
+      {
+        "title": "亞洲生技大會 卓揆喊話 生技投資增千億",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9632764"
+      },
+      {
+        "title": "亞洲生技大會 卓揆喊話：生技投資增千億元",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9632764"
+      }
+    ],
+    "卓榮泰": [
+      {
+        "title": "亞洲生技大會 卓揆喊話 生技投資增千億",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9632764"
+      },
+      {
+        "title": "亞洲生技大會 卓揆喊話：生技投資增千億元",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9632764"
+      }
+    ],
+    "麥格理": [
+      {
+        "title": "台積電目標價 麥格理喊4,200元天價",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9632998"
+      }
+    ],
+    "諾基亞": [
+      {
+        "title": "AI-RAN時代來了！台廠迎商機 輝達轉投資諾基亞將推商用平台",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9632965"
+      }
+    ],
+    "台塑生醫": [
+      {
+        "title": "台塑生醫攻永續航空燃油 打造一體化供應鏈",
+        "source": "經濟電商新鮮事",
+        "url": "https://money.udn.com/money/story/10871/9632982"
+      }
+    ],
+    "正崴": [
+      {
+        "title": "正崴德州廠啟用",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7241/9632639"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "「談判不等於妥協」 伊朗首席談判代表為美伊和談辯護 反駁國內強硬派 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9632542",
+    "白宮：美伊仍在談 伊朗想達成協議 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9633154",
+    "Fed 褐皮書：美經濟溫和成長 6月零售銷售月增0.2% (經濟國際焦點)": "https://money.udn.com/money/story/5599/9632956",
+    "韓央行升息1碼 三年來首度採取動作 暗示還有續集 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9632958",
+    "美伊衝突再升溫　油價漲至近1個月高點後小幅收低 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9633199",
+    "韓央行升息，帶動韓元強升 台幣貶值壓力可望緩解 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260717000293-260202?utm_source=iii_news&utm_medium=rss",
+    "美對等關稅後最低 訂單回穩 無薪假人數減至2,897人 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260717000308-260202?utm_source=iii_news&utm_medium=rss",
+    "韓升息抗通膨 股跌匯升 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260717000338-260203?utm_source=iii_news&utm_medium=rss",
+    "承諾穩物價 華許面臨考驗 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260717000341-260203?utm_source=iii_news&utm_medium=rss",
+    "美伊暗示 和談有望 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260717000345-260203?utm_source=iii_news&utm_medium=rss",
+    "通膨率遲未達標　達拉斯聯準銀行總裁支持升息 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9633220",
+    "力成攜博通 衝面板級封裝 斥資128億設星國合資公司 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9632960",
+    "力成三大優勢 吸引博通合作關鍵 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9632963",
+    "台積電談競爭 客戶不是去超商買牛奶 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9632995",
+    "台積電再次上調全年資本支出 強調配息會穩定增長 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9632978",
+    "台積電重金擴產 協力廠看俏 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9632992",
+    "台積電上季財報驚艷 寫五個新高 「雙率」同步飛越財測高標 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9632979",
+    "台積電談漲價 不能讓客戶無法承受 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9632993",
+    "台積加碼美國千億美元 同步承諾繼續在台投資 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9632973",
+    "台積二度上修全年展望 董座魏哲家喊AI需求極度強勁 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9633014",
+    "創浦強化台灣半導體合作 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9632954",
+    "電支業搶千億移工匯款商機 歐付寶獲准經營國外小額匯兌 (經濟金融脈動)": "https://money.udn.com/money/story/5613/9632894",
+    "黃仁勳駁斥 AI 泡沫論 輝達結盟豐田、富士通等日企 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9632936",
+    "力成與博通合資成立新公司 擴大FOPLP版圖 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9633201",
+    "台積電目標價 麥格理喊4,200元天價 (聯合_產經_股市)": "https://udn.com/news/story/7240/9632998",
+    "達明衝機器人！牽緊輝達 入列Jetson Thor新模組合作夥伴 (聯合_產經_股市)": "https://udn.com/news/story/7240/9632627",
+    "華碩拓展商用版圖 (聯合_產經_股市)": "https://udn.com/news/story/7240/9632741",
+    "台積電二度上修全年展望 董座魏哲家喊AI需求極度強勁 (聯合_產經_股市)": "https://udn.com/news/story/7240/9633014",
+    "加碼千億美元…台積電赴美總布局達2650億美元 魏哲家承諾持續在台投資 (聯合_產經_股市)": "https://udn.com/news/story/7238/9633084",
+    "新聞分析／台積布局 助台灣更有話語權 (聯合_產經_股市)": "https://udn.com/news/story/7238/9633038",
+    "AI需求 魏哲家：強勁至2029年 (聯合_產經_股市)": "https://udn.com/news/story/7238/9633039",
+    "雷科半導體設備 接單熱 (聯合_產經_股市)": "https://udn.com/news/story/7252/9632637",
+    "微星攻AI PC傳捷報 (聯合_產經_股市)": "https://udn.com/news/story/7252/9632740",
+    "突破封鎖 華為5G手機 恢復海外上市 (聯合_產經_股市)": "https://udn.com/news/story/6809/9633068",
+    "蘋果衝AI 擬併晶片新創 (聯合_產經_股市)": "https://udn.com/news/story/6811/9632951",
+    "台積電加碼美國千億美元 同步承諾繼續在台投資 (聯合_產經_股市)": "https://udn.com/news/story/7240/9632973",
+    "台積電上季財報寫五個新高 「雙率」同步飛越財測高標 (聯合_產經_股市)": "https://udn.com/news/story/7240/9632979",
+    "先進製程與美時間差至少2年 專家：確保利益須根留台灣 (聯合_產經_股市)": "https://udn.com/news/story/7238/9633043",
+    "迎接AI-RAN時代 聯發科、和碩邁入收成期 (聯合_產經_股市)": "https://udn.com/news/story/7238/9632969",
+    "AI-RAN時代來了！台廠迎商機 輝達轉投資諾基亞將推商用平台 (聯合_產經_股市)": "https://udn.com/news/story/7238/9632965",
+    "光聚晶電2026年全年拚轉盈 (聯合_產經_股市)": "https://udn.com/news/story/7252/9632742",
+    "宇瞻強攻高階工業 (聯合_產經_股市)": "https://udn.com/news/story/7252/9632746",
+    "魏哲家：AI旺到2030年 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260717000243-260202?utm_source=iii_news&utm_medium=rss",
+    "台積電A14、COUPE 雙龍搶鏡 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260717000267-260202?utm_source=iii_news&utm_medium=rss",
+    "台積電 要在台灣興建13座先進晶圓廠 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260717000271-260202?utm_source=iii_news&utm_medium=rss",
+    "台積電再加碼美國千億美元投資 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260717000273-260202?utm_source=iii_news&utm_medium=rss",
+    "台積電加碼赴美 政府確保三個優先 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260717000276-260202?utm_source=iii_news&utm_medium=rss",
+    "台積魏哲家：不會因供需吃緊而暴力漲價 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260717000277-260202?utm_source=iii_news&utm_medium=rss",
+    "魏哲家回應轉單疑慮 選先進製程 不是去超商買牛奶 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260717000280-260202?utm_source=iii_news&utm_medium=rss",
+    "Noetra攜輝達 搶機器人市占 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260717000347-260203?utm_source=iii_news&utm_medium=rss",
+    "專利戰火升溫7科技巨頭遭調查 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260717000350-260203?utm_source=iii_news&utm_medium=rss",
+    "Anthropic衝刺IPO 最快10月掛牌 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260717000353-260203?utm_source=iii_news&utm_medium=rss",
+    "世界AI大會登場 300項展品首亮相 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260717000363-260203?utm_source=iii_news&utm_medium=rss",
+    "陸多家對沖基金 減碼AI類股 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260717000366-260203?utm_source=iii_news&utm_medium=rss",
+    "百度 美港同步主要上市 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260717000367-260203?utm_source=iii_news&utm_medium=rss",
+    "陸21 PCB企業 前進資本市場 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260717000368-260203?utm_source=iii_news&utm_medium=rss",
+    "黃仁勳訪日 拓展AI戰略布局 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260717000383-260204?utm_source=iii_news&utm_medium=rss",
+    "AI用電需求續攀升…SOFC商機飄香 台廠三路進攻 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260717000386-260204?utm_source=iii_news&utm_medium=rss",
+    "資策會攜微星 打造Edge AI生態系 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260717000387-260204?utm_source=iii_news&utm_medium=rss",
+    "華碩開任意門 做SMB轉型陪跑者 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260717000390-260204?utm_source=iii_news&utm_medium=rss",
+    "力拚明年Q1上市 輝達推平價版Jetson Thor平台 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260717000395-260204?utm_source=iii_news&utm_medium=rss",
+    "「選夥伴不是去7-11買牛奶」！台積三優勢 客戶不會輕易更換 (聯合_產經_股市)": "https://udn.com/news/story/7238/9633044",
+    "矽科宏晟衝刺美國製造 (聯合_產經_股市)": "https://udn.com/news/story/7241/9632638",
+    "正崴德州廠啟用 (聯合_產經_股市)": "https://udn.com/news/story/7241/9632639",
+    "無懼競爭 魏哲家妙喻 選製程非超商買奶 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260717000632-260110?utm_source=iii_news&utm_medium=rss",
+    "韓日股市遭血洗 三星重挫8.77％ (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260717000634-260110?utm_source=iii_news&utm_medium=rss",
+    "AI需求強勁 Q2財報亮眼 台積電再上調美元營收預估 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1763008",
+    "台積加碼3.2兆 美國再建4座晶圓廠 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1763009",
+    "光明砸1億元買廣達股 (聯合_產經_股市)": "https://udn.com/news/story/7252/9632642",
+    "美議員致信美國商務部 籲禁止開放中國記憶體晶片 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9633261",
+    "亞洲生技大會 打造新護國神山人才庫 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9632768",
+    "亞洲生技大會 卓揆喊話 生技投資增千億 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9632764",
+    "亞洲生技大會 卓揆喊話：生技投資增千億元 (聯合_產經_股市)": "https://udn.com/news/story/7238/9632764",
+    "訊聯基因打造生物世界模型 (聯合_產經_股市)": "https://udn.com/news/story/7241/9632641",
+    "海昌上櫃 攻高階醫材 (聯合_產經_股市)": "https://udn.com/news/story/7252/9632732",
+    "4癌死亡率不減反增 遠輸日韓美 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260717000622-260114?utm_source=iii_news&utm_medium=rss",
+    "永笙、艾萬霖簽CDMO協議 (聯合_產經_股市)": "https://udn.com/news/story/7252/9632640",
+    "台塑生醫攻永續航空燃油 打造一體化供應鏈 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9632982",
+    "明年公建預算創十年新高 交通建設占比過半 (聯合_產經_股市)": "https://udn.com/news/story/7238/9633022",
+    "116年重大公建經費 創近10年新高 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260717000298-260202?utm_source=iii_news&utm_medium=rss",
+    "配合歐盟鋼鐵關稅配額新制 我九類鋼鐵產品出口列管 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260717000307-260202?utm_source=iii_news&utm_medium=rss",
+    "因應歐盟關稅新制 經濟部：九類鋼品輸歐納管 (聯合_產經_股市)": "https://udn.com/news/story/7238/9632989",
+    "東鋼H型鋼報價持平 (聯合_產經_股市)": "https://udn.com/news/story/7252/9632677"
+  }
+}
