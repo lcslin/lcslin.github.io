@@ -1,0 +1,1380 @@
+{
+  "nodes": [
+    {
+      "id": "台積電",
+      "group": "company",
+      "size": 25
+    },
+    {
+      "id": "輝達",
+      "group": "company",
+      "size": 20
+    },
+    {
+      "id": "三星",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "超微",
+      "group": "company",
+      "size": 17
+    },
+    {
+      "id": "微軟",
+      "group": "company",
+      "size": 15
+    },
+    {
+      "id": "陽明海運",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "ASML",
+      "group": "company",
+      "size": 13
+    },
+    {
+      "id": "國泰金",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "友達",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "群創",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "SK集團",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "南亞科",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "華邦電",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "OpenAI",
+      "group": "company",
+      "size": 11
+    },
+    {
+      "id": "高盛",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "渣打銀行",
+      "group": "company",
+      "size": 9
+    },
+    {
+      "id": "DCI Partners",
+      "group": "company",
+      "size": 9
+    },
+    {
+      "id": "CuspAI",
+      "group": "company",
+      "size": 8
+    },
+    {
+      "id": "Kimi K3",
+      "group": "tech",
+      "size": 14
+    },
+    {
+      "id": "AI",
+      "group": "tech",
+      "size": 25
+    },
+    {
+      "id": "記憶體",
+      "group": "tech",
+      "size": 16
+    },
+    {
+      "id": "2奈米",
+      "group": "tech",
+      "size": 12
+    },
+    {
+      "id": "PCB載板",
+      "group": "tech",
+      "size": 10
+    },
+    {
+      "id": "矽光子",
+      "group": "tech",
+      "size": 10
+    },
+    {
+      "id": "TV面板",
+      "group": "tech",
+      "size": 13
+    },
+    {
+      "id": "PMIC",
+      "group": "tech",
+      "size": 9
+    },
+    {
+      "id": "次世代通訊",
+      "group": "tech",
+      "size": 8
+    },
+    {
+      "id": "六氟化鎢",
+      "group": "tech",
+      "size": 8
+    },
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 22
+    },
+    {
+      "id": "中國",
+      "group": "country",
+      "size": 18
+    },
+    {
+      "id": "台灣",
+      "group": "country",
+      "size": 20
+    },
+    {
+      "id": "加拿大",
+      "group": "country",
+      "size": 10
+    },
+    {
+      "id": "伊朗",
+      "group": "country",
+      "size": 11
+    },
+    {
+      "id": "日本",
+      "group": "country",
+      "size": 9
+    },
+    {
+      "id": "Fed",
+      "group": "org",
+      "size": 16
+    },
+    {
+      "id": "歐洲議會",
+      "group": "org",
+      "size": 10
+    },
+    {
+      "id": "中研院",
+      "group": "org",
+      "size": 9
+    },
+    {
+      "id": "TPCA",
+      "group": "org",
+      "size": 8
+    },
+    {
+      "id": "TrendForce",
+      "group": "org",
+      "size": 9
+    },
+    {
+      "id": "川普",
+      "group": "person",
+      "size": 16
+    },
+    {
+      "id": "盧比歐",
+      "group": "person",
+      "size": 10
+    },
+    {
+      "id": "黃仁昭",
+      "group": "person",
+      "size": 10
+    },
+    {
+      "id": "陳建仁",
+      "group": "person",
+      "size": 9
+    },
+    {
+      "id": "吳仁銘",
+      "group": "person",
+      "size": 8
+    },
+    {
+      "id": "關稅政策",
+      "group": "finance",
+      "size": 18
+    },
+    {
+      "id": "油價",
+      "group": "finance",
+      "size": 13
+    },
+    {
+      "id": "通膨",
+      "group": "finance",
+      "size": 14
+    },
+    {
+      "id": "新台幣",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "外幣存款",
+      "group": "finance",
+      "size": 10
+    },
+    {
+      "id": "升息",
+      "group": "finance",
+      "size": 12
+    }
+  ],
+  "links": [
+    {
+      "source": "Fed",
+      "target": "升息",
+      "value": 5,
+      "label": "貨幣政策"
+    },
+    {
+      "source": "Fed",
+      "target": "通膨",
+      "value": 4,
+      "label": "政策影響"
+    },
+    {
+      "source": "高盛",
+      "target": "Fed",
+      "value": 3,
+      "label": "預測分析"
+    },
+    {
+      "source": "升息",
+      "target": "新台幣",
+      "value": 3,
+      "label": "匯率影響"
+    },
+    {
+      "source": "升息",
+      "target": "外幣存款",
+      "value": 3,
+      "label": "資金流動"
+    },
+    {
+      "source": "通膨",
+      "target": "新台幣",
+      "value": 2,
+      "label": "經濟壓力"
+    },
+    {
+      "source": "國泰金",
+      "target": "通膨",
+      "value": 3,
+      "label": "民調分析"
+    },
+    {
+      "source": "川普",
+      "target": "關稅政策",
+      "value": 5,
+      "label": "政策制定"
+    },
+    {
+      "source": "關稅政策",
+      "target": "美國",
+      "value": 5,
+      "label": "貿易政策"
+    },
+    {
+      "source": "關稅政策",
+      "target": "加拿大",
+      "value": 4,
+      "label": "貿易制裁"
+    },
+    {
+      "source": "關稅政策",
+      "target": "陽明海運",
+      "value": 3,
+      "label": "運價影響"
+    },
+    {
+      "source": "關稅政策",
+      "target": "台積電",
+      "value": 4,
+      "label": "政策壓力"
+    },
+    {
+      "source": "盧比歐",
+      "target": "美國",
+      "value": 3,
+      "label": "外交磋商"
+    },
+    {
+      "source": "盧比歐",
+      "target": "中國",
+      "value": 3,
+      "label": "中美會談"
+    },
+    {
+      "source": "台積電",
+      "target": "美國",
+      "value": 5,
+      "label": "擴產投資"
+    },
+    {
+      "source": "台積電",
+      "target": "2奈米",
+      "value": 5,
+      "label": "技術研發"
+    },
+    {
+      "source": "台積電",
+      "target": "AI",
+      "value": 4,
+      "label": "需求驅動"
+    },
+    {
+      "source": "台積電",
+      "target": "PMIC",
+      "value": 3,
+      "label": "產品需求"
+    },
+    {
+      "source": "台積電",
+      "target": "六氟化鎢",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "台積電",
+      "target": "黃仁昭",
+      "value": 4,
+      "label": "公司高管"
+    },
+    {
+      "source": "AI",
+      "target": "輝達",
+      "value": 5,
+      "label": "核心技術"
+    },
+    {
+      "source": "AI",
+      "target": "記憶體",
+      "value": 4,
+      "label": "需求驅動"
+    },
+    {
+      "source": "AI",
+      "target": "Kimi K3",
+      "value": 4,
+      "label": "技術產品"
+    },
+    {
+      "source": "AI",
+      "target": "微軟",
+      "value": 4,
+      "label": "應用部署"
+    },
+    {
+      "source": "AI",
+      "target": "中國",
+      "value": 4,
+      "label": "技術競爭"
+    },
+    {
+      "source": "AI",
+      "target": "歐洲議會",
+      "value": 3,
+      "label": "監管政策"
+    },
+    {
+      "source": "AI",
+      "target": "陳建仁",
+      "value": 3,
+      "label": "政策白皮書"
+    },
+    {
+      "source": "AI",
+      "target": "渣打銀行",
+      "value": 2,
+      "label": "市場分析"
+    },
+    {
+      "source": "美國",
+      "target": "中國",
+      "value": 5,
+      "label": "貿易摩擦"
+    },
+    {
+      "source": "美國",
+      "target": "中國",
+      "value": 4,
+      "label": "AI禁令"
+    },
+    {
+      "source": "輝達",
+      "target": "三星",
+      "value": 4,
+      "label": "商業合作"
+    },
+    {
+      "source": "輝達",
+      "target": "CuspAI",
+      "value": 3,
+      "label": "技術合作"
+    },
+    {
+      "source": "輝達",
+      "target": "記憶體",
+      "value": 4,
+      "label": "供應鏈"
+    },
+    {
+      "source": "超微",
+      "target": "微軟",
+      "value": 4,
+      "label": "商業合作"
+    },
+    {
+      "source": "超微",
+      "target": "AI",
+      "value": 4,
+      "label": "AI晶片"
+    },
+    {
+      "source": "三星",
+      "target": "記憶體",
+      "value": 5,
+      "label": "產品製造"
+    },
+    {
+      "source": "SK集團",
+      "target": "記憶體",
+      "value": 4,
+      "label": "市場預測"
+    },
+    {
+      "source": "SK集團",
+      "target": "南亞科",
+      "value": 3,
+      "label": "市場利多"
+    },
+    {
+      "source": "SK集團",
+      "target": "華邦電",
+      "value": 3,
+      "label": "市場利多"
+    },
+    {
+      "source": "Kimi K3",
+      "target": "台灣",
+      "value": 3,
+      "label": "供應鏈商機"
+    },
+    {
+      "source": "Kimi K3",
+      "target": "OpenAI",
+      "value": 2,
+      "label": "競爭關係"
+    },
+    {
+      "source": "TV面板",
+      "target": "友達",
+      "value": 4,
+      "label": "報價影響"
+    },
+    {
+      "source": "TV面板",
+      "target": "群創",
+      "value": 4,
+      "label": "報價影響"
+    },
+    {
+      "source": "TV面板",
+      "target": "TrendForce",
+      "value": 3,
+      "label": "價格預測"
+    },
+    {
+      "source": "伊朗",
+      "target": "油價",
+      "value": 5,
+      "label": "地緣政治"
+    },
+    {
+      "source": "油價",
+      "target": "中東局勢",
+      "value": 4,
+      "label": "市場影響"
+    },
+    {
+      "source": "陽明海運",
+      "target": "中東局勢",
+      "value": 3,
+      "label": "航線調整"
+    },
+    {
+      "source": "陽明海運",
+      "target": "關稅政策",
+      "value": 3,
+      "label": "運價影響"
+    },
+    {
+      "source": "PCB載板",
+      "target": "TPCA",
+      "value": 3,
+      "label": "產業聚落"
+    },
+    {
+      "source": "矽光子",
+      "target": "AI",
+      "value": 3,
+      "label": "技術應用"
+    },
+    {
+      "source": "矽光子",
+      "target": "台灣",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "ASML",
+      "target": "台積電",
+      "value": 3,
+      "label": "設備供應"
+    },
+    {
+      "source": "DCI Partners",
+      "target": "台灣",
+      "value": 3,
+      "label": "投資合作"
+    },
+    {
+      "source": "DCI Partners",
+      "target": "日本",
+      "value": 3,
+      "label": "母國機構"
+    },
+    {
+      "source": "次世代通訊",
+      "target": "吳仁銘",
+      "value": 3,
+      "label": "論壇發言"
+    },
+    {
+      "source": "台灣",
+      "target": "美國",
+      "value": 5,
+      "label": "貿易科技"
+    },
+    {
+      "source": "台灣",
+      "target": "中國",
+      "value": 4,
+      "label": "地緣競爭"
+    },
+    {
+      "source": "新台幣",
+      "target": "外幣存款",
+      "value": 3,
+      "label": "匯率連動"
+    },
+    {
+      "source": "中研院",
+      "target": "陳建仁",
+      "value": 4,
+      "label": "機構首長"
+    },
+    {
+      "source": "OpenAI",
+      "target": "AI",
+      "value": 4,
+      "label": "核心產品"
+    }
+  ],
+  "newsDatabase": {
+    "台積電": [
+      {
+        "title": "意圖外流關鍵技術 涉違反國安法 台積前副理遭求處七年徒刑",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9640072"
+      },
+      {
+        "title": "回應日商停產高純度六氟化鎢 台積電：特殊氣體供應多元不受影響",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9640075"
+      },
+      {
+        "title": "加碼美國千億美元 台積電：不把生意拱手讓人",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9640138"
+      },
+      {
+        "title": "台積電財務長黃仁昭：2奈米成營收新引擎",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000139-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台積點名 AI帶旺PMIC、感測器",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000159-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美廠成本高5倍 台積AZ擴產搶客",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000491-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台積電為何赴美加碼？需求強勁「不想把生意拱手讓人」",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9640177"
+      },
+      {
+        "title": "燧原CoPoS樣品亮相 搶先台積",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260721000238-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "輝達": [
+      {
+        "title": "三星、輝達強化 NAND 合作",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9640164"
+      },
+      {
+        "title": "CuspAI聯手輝達 開發晶片新材料",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260721000227-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "記憶體飆漲 輝達新款顯卡難產",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000497-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "超微AI大會將登場 台廠進補",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000495-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "三星": [
+      {
+        "title": "三星、輝達強化 NAND 合作",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9640164"
+      },
+      {
+        "title": "Galaxy Unpacked 2026 三星將推首款智慧眼鏡",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260721000229-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "超微": [
+      {
+        "title": "微軟資料中心採用超微機櫃",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9640113"
+      },
+      {
+        "title": "微軟資料中心 採用超微機櫃",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9640113"
+      },
+      {
+        "title": "超微AI大會將登場 台廠進補",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000495-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "微軟": [
+      {
+        "title": "微軟資料中心採用超微機櫃",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9640113"
+      },
+      {
+        "title": "微軟資料中心 採用超微機櫃",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9640113"
+      }
+    ],
+    "陽明海運": [
+      {
+        "title": "短期難重返荷莫茲 陽明轉南美",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000501-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "陽明：貨運量維持滿艙",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7252/9639883"
+      },
+      {
+        "title": "美新關稅敲定後 陽明：運價後市將明朗",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1763446"
+      }
+    ],
+    "ASML": [
+      {
+        "title": "歐企首家 ASML市值問鼎兆美元",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260721000225-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "國泰金": [
+      {
+        "title": "國泰金民調：台股H2上5萬點 近6成民眾樂觀",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000165-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "國泰金民調：近七成民眾憂心通膨逾2％",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000169-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "友達": [
+      {
+        "title": "TV 面板報價走跌 友達、群創面臨短期價格修正挑戰",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9640071"
+      }
+    ],
+    "群創": [
+      {
+        "title": "TV 面板報價走跌 友達、群創面臨短期價格修正挑戰",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9640071"
+      }
+    ],
+    "SK集團": [
+      {
+        "title": "SK 集團：記憶體搶貨混亂 明年價格漲勢不會趨緩 南亞科、華邦等利多",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9640156"
+      }
+    ],
+    "南亞科": [
+      {
+        "title": "SK 集團：記憶體搶貨混亂 明年價格漲勢不會趨緩 南亞科、華邦等利多",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9640156"
+      }
+    ],
+    "華邦電": [
+      {
+        "title": "SK 集團：記憶體搶貨混亂 明年價格漲勢不會趨緩 南亞科、華邦等利多",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9640156"
+      }
+    ],
+    "OpenAI": [
+      {
+        "title": "博弘加入 OpenAI 陣營",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7252/9639853"
+      }
+    ],
+    "高盛": [
+      {
+        "title": "通膨壓力暫緩 高盛押Fed本月不升息",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000187-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "渣打銀行": [
+      {
+        "title": "渣打：AI 現階段沒泡沫",
+        "source": "經濟金融脈動",
+        "url": "https://money.udn.com/money/story/5613/9640168"
+      }
+    ],
+    "DCI Partners": [
+      {
+        "title": "日創投 DCI Partners：看好台灣生技三領域 將力促產業合作",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9640059"
+      },
+      {
+        "title": "DCI Partners 社長三個建言 籲簡化投資程序",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9640044"
+      },
+      {
+        "title": "日創投DCI Partners：看好台灣生技三領域 將力促合作",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7241/9640059"
+      }
+    ],
+    "CuspAI": [
+      {
+        "title": "CuspAI聯手輝達 開發晶片新材料",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260721000227-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Kimi K3": [
+      {
+        "title": "Kimi K3 橫空問世 花旗：AI 硬體需求更強勁",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9640167"
+      },
+      {
+        "title": "Kimi K3崛起 台鏈迎新商機",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000152-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "Kimi K3展AI Agent潛力 IP廠受惠",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000155-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "AI": [
+      {
+        "title": "渣打：AI 現階段沒泡沫",
+        "source": "經濟金融脈動",
+        "url": "https://money.udn.com/money/story/5613/9640168"
+      },
+      {
+        "title": "歐洲議會靠 AI 對付「AI 氾濫」",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9640120"
+      },
+      {
+        "title": "美考慮禁用大陸 AI 大模型",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9640122"
+      },
+      {
+        "title": "中研院長陳建仁：AI 政策白皮書 年底提出",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9640154"
+      },
+      {
+        "title": "Kimi K3 橫空問世 花旗：AI 硬體需求更強勁",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9640167"
+      },
+      {
+        "title": "美擬禁陸AI模型",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9640180"
+      },
+      {
+        "title": "美考慮禁用大陸AI大模型",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9640122"
+      },
+      {
+        "title": "歐洲議會靠AI對付「AI 氾濫」",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9640120"
+      },
+      {
+        "title": "台積點名 AI帶旺PMIC、感測器",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000159-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "超微AI大會將登場 台廠進補",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000495-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "矽光子獨角獸攻AI互連 台鏈嗨",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260721000258-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "記憶體": [
+      {
+        "title": "SK 集團：記憶體搶貨混亂 明年價格漲勢不會趨緩 南亞科、華邦等利多",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9640156"
+      },
+      {
+        "title": "記憶體這波擴產潮 多空論戰",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9640166"
+      },
+      {
+        "title": "三星、輝達強化 NAND 合作",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9640164"
+      },
+      {
+        "title": "記憶體飆漲 輝達新款顯卡難產",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000497-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "2奈米": [
+      {
+        "title": "台積電財務長黃仁昭：2奈米成營收新引擎",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000139-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "PCB載板": [
+      {
+        "title": "TPCA：泰越馬邁向高階PCB、載板聚落",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000161-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "高階CCL 恐缺至2028",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260721000255-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "矽光子": [
+      {
+        "title": "矽光子獨角獸攻AI互連 台鏈嗨",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260721000258-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "TV面板": [
+      {
+        "title": "TV 面板報價走跌 友達、群創面臨短期價格修正挑戰",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9640071"
+      },
+      {
+        "title": "TV 面板報價走跌 監視器、筆電產品有撐",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9640074"
+      },
+      {
+        "title": "需求疲弱 7月電視面板價估小跌",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260721000260-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "TrendForce：電視面板7月報價 跌1～3美元",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1763448"
+      }
+    ],
+    "PMIC": [
+      {
+        "title": "台積點名 AI帶旺PMIC、感測器",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000159-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "次世代通訊": [
+      {
+        "title": "2026前瞻次世代通訊論壇》太空資料中心 吳仁銘：核心挑戰在建置成本",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000163-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "六氟化鎢": [
+      {
+        "title": "回應日商停產高純度六氟化鎢 台積電：特殊氣體供應多元不受影響",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9640075"
+      }
+    ],
+    "美國": [
+      {
+        "title": "美國將對部分加拿大商品加徵50%關稅　30天後生效",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9640360"
+      },
+      {
+        "title": "美考慮禁用大陸 AI 大模型",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9640122"
+      },
+      {
+        "title": "加碼美國千億美元 台積電：不把生意拱手讓人",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9640138"
+      },
+      {
+        "title": "美廠成本高5倍 台積AZ擴產搶客",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000491-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美車關稅未解 Jeep 自行吸收",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9640046"
+      }
+    ],
+    "中國": [
+      {
+        "title": "美考慮禁用大陸 AI 大模型",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9640122"
+      },
+      {
+        "title": "美擬禁陸AI模型",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9640180"
+      },
+      {
+        "title": "盧比歐：中美持續磋商元首會面",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260721000239-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台灣": [
+      {
+        "title": "Kimi K3崛起 台鏈迎新商機",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000152-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "矽光子獨角獸攻AI互連 台鏈嗨",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260721000258-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "日創投 DCI Partners：看好台灣生技三領域 將力促產業合作",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9640059"
+      },
+      {
+        "title": "歷年最大台灣館 前進印度AMTEX",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260721000280-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "台雲端服務業 深化原廠結盟",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260721000264-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "加拿大": [
+      {
+        "title": "美國將對部分加拿大商品加徵50%關稅　30天後生效",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9640360"
+      }
+    ],
+    "伊朗": [
+      {
+        "title": "伊朗願意和談 油價高點回落",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260721000216-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美伊又說要和談 油價走跌 雙方外交官員表示願透過談判解決爭端",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9640145"
+      }
+    ],
+    "日本": [
+      {
+        "title": "回應日商停產高純度六氟化鎢 台積電：特殊氣體供應多元不受影響",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9640075"
+      },
+      {
+        "title": "日創投 DCI Partners：看好台灣生技三領域 將力促產業合作",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9640059"
+      }
+    ],
+    "Fed": [
+      {
+        "title": "Fed 年底前升息 幾成定局",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9640126"
+      },
+      {
+        "title": "通膨壓力暫緩 高盛押Fed本月不升息",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000187-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "公股銀估：華許縮表換降息",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000184-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "歐洲議會": [
+      {
+        "title": "歐洲議會靠 AI 對付「AI 氾濫」",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9640120"
+      },
+      {
+        "title": "歐洲議會靠AI對付「AI 氾濫」",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9640120"
+      }
+    ],
+    "中研院": [
+      {
+        "title": "中研院長陳建仁：AI 政策白皮書 年底提出",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9640154"
+      }
+    ],
+    "TPCA": [
+      {
+        "title": "TPCA：泰越馬邁向高階PCB、載板聚落",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000161-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "TrendForce": [
+      {
+        "title": "TrendForce：電視面板7月報價 跌1～3美元",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1763448"
+      },
+      {
+        "title": "需求疲弱 7月電視面板價估小跌",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260721000260-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "川普": [
+      {
+        "title": "川普122條款關稅將到期 301料接棒",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260721000218-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "盧比歐": [
+      {
+        "title": "盧比歐：中美持續磋商元首會面",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260721000239-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "黃仁昭": [
+      {
+        "title": "台積電財務長黃仁昭：2奈米成營收新引擎",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000139-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "陳建仁": [
+      {
+        "title": "中研院長陳建仁：AI 政策白皮書 年底提出",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9640154"
+      }
+    ],
+    "吳仁銘": [
+      {
+        "title": "2026前瞻次世代通訊論壇》太空資料中心 吳仁銘：核心挑戰在建置成本",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000163-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "關稅政策": [
+      {
+        "title": "川普122條款關稅將到期 301料接棒",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260721000218-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美國將對部分加拿大商品加徵50%關稅　30天後生效",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9640360"
+      },
+      {
+        "title": "美車關稅未解 Jeep 自行吸收",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9640046"
+      },
+      {
+        "title": "美新關稅敲定後 陽明：運價後市將明朗",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1763446"
+      }
+    ],
+    "油價": [
+      {
+        "title": "伊朗願意和談 油價高點回落",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260721000216-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "市場衡量中東緊張局勢　國際油價小漲",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9640322"
+      },
+      {
+        "title": "美伊又說要和談 油價走跌 雙方外交官員表示願透過談判解決爭端",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9640145"
+      }
+    ],
+    "通膨": [
+      {
+        "title": "國泰金民調：近七成民眾憂心通膨逾2％",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000169-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "通膨壓力暫緩 高盛押Fed本月不升息",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000187-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "Fed 年底前升息 幾成定局",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9640126"
+      }
+    ],
+    "新台幣": [
+      {
+        "title": "股匯震盪 新台幣盤中貶破32.4元",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000180-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "Q3外資龐大股利匯出…新台幣短線貶值壓力仍大",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000183-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "外幣存款": [
+      {
+        "title": "國銀外幣存款衝破16兆元 5月新增3,142億元 全年有望挑戰新高",
+        "source": "經濟金融脈動",
+        "url": "https://money.udn.com/money/story/5613/9640070"
+      }
+    ],
+    "升息": [
+      {
+        "title": "Fed 年底前升息 幾成定局",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9640126"
+      },
+      {
+        "title": "通膨壓力暫緩 高盛押Fed本月不升息",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000187-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "公股銀估：華許縮表換降息",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000184-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中東局勢": [
+      {
+        "title": "市場衡量中東緊張局勢　國際油價小漲",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9640322"
+      },
+      {
+        "title": "短期難重返荷莫茲 陽明轉南美",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260721000501-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "伊朗願意和談 油價高點回落",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260721000216-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "國銀外幣存款衝破16兆元 5月新增3,142億元 全年有望挑戰新高 (經濟金融脈動)": "https://money.udn.com/money/story/5613/9640070",
+    "Fed 年底前升息 幾成定局 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9640126",
+    "國泰金民調：台股H2上5萬點 近6成民眾樂觀 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260721000165-260202?utm_source=iii_news&utm_medium=rss",
+    "國泰金民調：近七成民眾憂心通膨逾2％ (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260721000169-260202?utm_source=iii_news&utm_medium=rss",
+    "股匯震盪 新台幣盤中貶破32.4元 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260721000180-260202?utm_source=iii_news&utm_medium=rss",
+    "Q3外資龐大股利匯出…新台幣短線貶值壓力仍大 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260721000183-260202?utm_source=iii_news&utm_medium=rss",
+    "公股銀估：華許縮表換降息 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260721000184-260202?utm_source=iii_news&utm_medium=rss",
+    "通膨壓力暫緩 高盛押Fed本月不升息 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260721000187-260202?utm_source=iii_news&utm_medium=rss",
+    "伊朗願意和談 油價高點回落 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260721000216-260203?utm_source=iii_news&utm_medium=rss",
+    "川普122條款關稅將到期 301料接棒 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260721000218-260203?utm_source=iii_news&utm_medium=rss",
+    "極端氣候 衝擊全球商品市場 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260721000222-260203?utm_source=iii_news&utm_medium=rss",
+    "盧比歐：中美持續磋商元首會面 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260721000239-260203?utm_source=iii_news&utm_medium=rss",
+    "短期難重返荷莫茲 陽明轉南美 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260721000501-260110?utm_source=iii_news&utm_medium=rss",
+    "陽明：貨運量維持滿艙 (聯合_產經_股市)": "https://udn.com/news/story/7252/9639883",
+    "市場衡量中東緊張局勢　國際油價小漲 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9640322",
+    "美國將對部分加拿大商品加徵50%關稅　30天後生效 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9640360",
+    "意圖外流關鍵技術 涉違反國安法 台積前副理遭求處七年徒刑 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9640072",
+    "回應日商停產高純度六氟化鎢 台積電：特殊氣體供應多元不受影響 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9640075",
+    "渣打：AI 現階段沒泡沫 (經濟金融脈動)": "https://money.udn.com/money/story/5613/9640168",
+    "加碼美國千億美元 台積電：不把生意拱手讓人 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9640138",
+    "SK 集團：記憶體搶貨混亂 明年價格漲勢不會趨緩 南亞科、華邦等利多 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9640156",
+    "記憶體這波擴產潮 多空論戰 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9640166",
+    "三星、輝達強化 NAND 合作 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9640164",
+    "美伊又說要和談 油價走跌 雙方外交官員表示願透過談判解決爭端 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9640145",
+    "微軟資料中心採用超微機櫃 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9640113",
+    "歐洲議會靠 AI 對付「AI 氾濫」 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9640120",
+    "美考慮禁用大陸 AI 大模型 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9640122",
+    "中研院長陳建仁：AI 政策白皮書 年底提出 (聯合_產經_股市)": "https://udn.com/news/story/7240/9640154",
+    "Kimi K3 橫空問世 花旗：AI 硬體需求更強勁 (聯合_產經_股市)": "https://udn.com/news/story/7240/9640167",
+    "美擬禁陸AI模型 (聯合_產經_股市)": "https://udn.com/news/story/7240/9640180",
+    "TV 面板報價走跌 友達、群創面臨短期價格修正挑戰 (聯合_產經_股市)": "https://udn.com/news/story/7240/9640071",
+    "台積電為何赴美加碼？需求強勁「不想把生意拱手讓人」 (聯合_產經_股市)": "https://udn.com/news/story/7238/9640177",
+    "美考慮禁用大陸AI大模型 (聯合_產經_股市)": "https://udn.com/news/story/6811/9640122",
+    "TV 面板報價走跌 監視器、筆電產品有撐 (聯合_產經_股市)": "https://udn.com/news/story/7240/9640074",
+    "微軟資料中心 採用超微機櫃 (聯合_產經_股市)": "https://udn.com/news/story/7240/9640113",
+    "歐洲議會靠AI對付「AI 氾濫」 (聯合_產經_股市)": "https://udn.com/news/story/6811/9640120",
+    "台積電財務長黃仁昭：2奈米成營收新引擎 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260721000139-260202?utm_source=iii_news&utm_medium=rss",
+    "Kimi K3崛起 台鏈迎新商機 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260721000152-260202?utm_source=iii_news&utm_medium=rss",
+    "Kimi K3展AI Agent潛力 IP廠受惠 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260721000155-260202?utm_source=iii_news&utm_medium=rss",
+    "被動元件重挫 董座身家大縮水 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260721000157-260202?utm_source=iii_news&utm_medium=rss",
+    "台積點名 AI帶旺PMIC、感測器 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260721000159-260202?utm_source=iii_news&utm_medium=rss",
+    "TPCA：泰越馬邁向高階PCB、載板聚落 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260721000161-260202?utm_source=iii_news&utm_medium=rss",
+    "2026前瞻次世代通訊論壇》太空資料中心 吳仁銘：核心挑戰在建置成本 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260721000163-260202?utm_source=iii_news&utm_medium=rss",
+    "歐企首家 ASML市值問鼎兆美元 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260721000225-260203?utm_source=iii_news&utm_medium=rss",
+    "CuspAI聯手輝達 開發晶片新材料 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260721000227-260203?utm_source=iii_news&utm_medium=rss",
+    "Galaxy Unpacked 2026 三星將推首款智慧眼鏡 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260721000229-260203?utm_source=iii_news&utm_medium=rss",
+    "燧原CoPoS樣品亮相 搶先台積 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260721000238-260203?utm_source=iii_news&utm_medium=rss",
+    "高階CCL 恐缺至2028 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260721000255-260204?utm_source=iii_news&utm_medium=rss",
+    "矽光子獨角獸攻AI互連 台鏈嗨 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260721000258-260204?utm_source=iii_news&utm_medium=rss",
+    "需求疲弱 7月電視面板價估小跌 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260721000260-260204?utm_source=iii_news&utm_medium=rss",
+    "價量脫節 Q2全球PC總銷量下滑 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260721000262-260204?utm_source=iii_news&utm_medium=rss",
+    "新型雲端服務供應商 崛起 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260721000263-260204?utm_source=iii_news&utm_medium=rss",
+    "台雲端服務業 深化原廠結盟 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260721000264-260204?utm_source=iii_news&utm_medium=rss",
+    "美廠成本高5倍 台積AZ擴產搶客 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260721000491-260110?utm_source=iii_news&utm_medium=rss",
+    "超微AI大會將登場 台廠進補 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260721000495-260110?utm_source=iii_news&utm_medium=rss",
+    "記憶體飆漲 輝達新款顯卡難產 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260721000497-260110?utm_source=iii_news&utm_medium=rss",
+    "TrendForce：電視面板7月報價 跌1～3美元 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1763448",
+    "艾訊揪伴攻機器人應用 (聯合_產經_股市)": "https://udn.com/news/story/7252/9639835",
+    "被動元件族 6月獲利升溫 (聯合_產經_股市)": "https://udn.com/news/story/7252/9639843",
+    "茂達拚第3季業績成長 (聯合_產經_股市)": "https://udn.com/news/story/7252/9639844",
+    "敦吉2026年挑戰連六年賺半股本 (聯合_產經_股市)": "https://udn.com/news/story/7252/9639846",
+    "博弘加入 OpenAI 陣營 (聯合_產經_股市)": "https://udn.com/news/story/7252/9639853",
+    "泰碩拿下 AI 水冷訂單 (聯合_產經_股市)": "https://udn.com/news/story/7252/9639824",
+    "樺漢2026年 EPS 拚26.34元 法人看好毛利率同步看增 (聯合_產經_股市)": "https://udn.com/news/story/7252/9639832",
+    "日創投 DCI Partners：看好台灣生技三領域 將力促產業合作 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9640059",
+    "DCI Partners 社長三個建言 籲簡化投資程序 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9640044",
+    "日創投DCI Partners：看好台灣生技三領域 將力促合作 (聯合_產經_股市)": "https://udn.com/news/story/7241/9640059",
+    "雙特異性抗體 有望阻登革熱重症 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260721000488-260114?utm_source=iii_news&utm_medium=rss",
+    "美新關稅敲定後 陽明：運價後市將明朗 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1763446",
+    "美車關稅未解 Jeep 自行吸收 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9640046",
+    "中鋼、燁輝搶澳洲奧運基建商機 台鏈有望迎訂單大潮 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9640060",
+    "環部鬆手 老碳權有新出路 (聯合_產經_股市)": "https://udn.com/news/story/7238/9640157",
+    "歷年最大台灣館 前進印度AMTEX (工商產業科技)": "https://www.chinatimes.com/newspapers/20260721000280-260204?utm_source=iii_news&utm_medium=rss"
+  }
+}
