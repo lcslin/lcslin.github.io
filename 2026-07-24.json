@@ -1,0 +1,1576 @@
+{
+  "nodes": [
+    {
+      "id": "紅海局勢",
+      "group": "finance",
+      "size": 20
+    },
+    {
+      "id": "國際油價",
+      "group": "finance",
+      "size": 22
+    },
+    {
+      "id": "布倫特原油",
+      "group": "finance",
+      "size": 18
+    },
+    {
+      "id": "青年運動",
+      "group": "org",
+      "size": 16
+    },
+    {
+      "id": "美債殖利率",
+      "group": "finance",
+      "size": 18
+    },
+    {
+      "id": "ECB",
+      "group": "org",
+      "size": 14
+    },
+    {
+      "id": "拉加德",
+      "group": "person",
+      "size": 12
+    },
+    {
+      "id": "通膨",
+      "group": "finance",
+      "size": 16
+    },
+    {
+      "id": "川普",
+      "group": "person",
+      "size": 22
+    },
+    {
+      "id": "習近平",
+      "group": "person",
+      "size": 18
+    },
+    {
+      "id": "美國",
+      "group": "country",
+      "size": 22
+    },
+    {
+      "id": "中國",
+      "group": "country",
+      "size": 20
+    },
+    {
+      "id": "台灣",
+      "group": "country",
+      "size": 18
+    },
+    {
+      "id": "韓國",
+      "group": "country",
+      "size": 14
+    },
+    {
+      "id": "歐盟",
+      "group": "country",
+      "size": 14
+    },
+    {
+      "id": "301關稅",
+      "group": "finance",
+      "size": 16
+    },
+    {
+      "id": "台積電",
+      "group": "company",
+      "size": 25
+    },
+    {
+      "id": "超微(AMD)",
+      "group": "company",
+      "size": 20
+    },
+    {
+      "id": "緯創",
+      "group": "company",
+      "size": 20
+    },
+    {
+      "id": "林憲銘",
+      "group": "person",
+      "size": 14
+    },
+    {
+      "id": "Google",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "聯發科",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "鴻海",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "特斯拉",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "馬斯克",
+      "group": "person",
+      "size": 16
+    },
+    {
+      "id": "OpenAI",
+      "group": "company",
+      "size": 16
+    },
+    {
+      "id": "DeepSeek",
+      "group": "company",
+      "size": 14
+    },
+    {
+      "id": "梁文鋒",
+      "group": "person",
+      "size": 12
+    },
+    {
+      "id": "輝達(NVIDIA)",
+      "group": "company",
+      "size": 18
+    },
+    {
+      "id": "黃仁勳",
+      "group": "person",
+      "size": 14
+    },
+    {
+      "id": "Anthropic",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "IBM",
+      "group": "company",
+      "size": 10
+    },
+    {
+      "id": "英特爾",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "AI",
+      "group": "tech",
+      "size": 25
+    },
+    {
+      "id": "2奈米製程",
+      "group": "tech",
+      "size": 16
+    },
+    {
+      "id": "半導體",
+      "group": "tech",
+      "size": 18
+    },
+    {
+      "id": "離岸風電",
+      "group": "tech",
+      "size": 18
+    },
+    {
+      "id": "東方風能",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "賴清德",
+      "group": "person",
+      "size": 12
+    },
+    {
+      "id": "台幣",
+      "group": "finance",
+      "size": 12
+    },
+    {
+      "id": "DRAM",
+      "group": "tech",
+      "size": 12
+    },
+    {
+      "id": "PC市場",
+      "group": "tech",
+      "size": 10
+    },
+    {
+      "id": "海運",
+      "group": "finance",
+      "size": 10
+    },
+    {
+      "id": "華為",
+      "group": "company",
+      "size": 12
+    },
+    {
+      "id": "美FCC",
+      "group": "org",
+      "size": 10
+    },
+    {
+      "id": "沙烏地阿拉伯",
+      "group": "country",
+      "size": 12
+    },
+    {
+      "id": "勞退改革",
+      "group": "finance",
+      "size": 10
+    }
+  ],
+  "links": [
+    {
+      "source": "青年運動",
+      "target": "紅海局勢",
+      "value": 5,
+      "label": "攻擊行動"
+    },
+    {
+      "source": "紅海局勢",
+      "target": "國際油價",
+      "value": 5,
+      "label": "供應衝擊"
+    },
+    {
+      "source": "紅海局勢",
+      "target": "海運",
+      "value": 4,
+      "label": "航運影響"
+    },
+    {
+      "source": "布倫特原油",
+      "target": "國際油價",
+      "value": 5,
+      "label": "價格指標"
+    },
+    {
+      "source": "青年運動",
+      "target": "沙烏地阿拉伯",
+      "value": 4,
+      "label": "攻擊目標"
+    },
+    {
+      "source": "國際油價",
+      "target": "通膨",
+      "value": 4,
+      "label": "推升通膨"
+    },
+    {
+      "source": "通膨",
+      "target": "美債殖利率",
+      "value": 4,
+      "label": "利率壓力"
+    },
+    {
+      "source": "通膨",
+      "target": "ECB",
+      "value": 4,
+      "label": "升息壓力"
+    },
+    {
+      "source": "ECB",
+      "target": "拉加德",
+      "value": 4,
+      "label": "政策主導"
+    },
+    {
+      "source": "ECB",
+      "target": "歐盟",
+      "value": 4,
+      "label": "貨幣政策"
+    },
+    {
+      "source": "美債殖利率",
+      "target": "美國",
+      "value": 4,
+      "label": "市場信號"
+    },
+    {
+      "source": "川普",
+      "target": "301關稅",
+      "value": 5,
+      "label": "政策推動"
+    },
+    {
+      "source": "301關稅",
+      "target": "台灣",
+      "value": 4,
+      "label": "關稅影響"
+    },
+    {
+      "source": "301關稅",
+      "target": "歐盟",
+      "value": 3,
+      "label": "關稅影響"
+    },
+    {
+      "source": "301關稅",
+      "target": "韓國",
+      "value": 3,
+      "label": "關稅影響"
+    },
+    {
+      "source": "川普",
+      "target": "習近平",
+      "value": 5,
+      "label": "峰會籌備"
+    },
+    {
+      "source": "習近平",
+      "target": "美國",
+      "value": 4,
+      "label": "外交訪問"
+    },
+    {
+      "source": "川普",
+      "target": "AI",
+      "value": 3,
+      "label": "議題討論"
+    },
+    {
+      "source": "中國",
+      "target": "AI",
+      "value": 4,
+      "label": "技術競爭"
+    },
+    {
+      "source": "美國",
+      "target": "中國",
+      "value": 5,
+      "label": "貿易與科技競爭"
+    },
+    {
+      "source": "台積電",
+      "target": "超微(AMD)",
+      "value": 5,
+      "label": "製程代工"
+    },
+    {
+      "source": "台積電",
+      "target": "2奈米製程",
+      "value": 5,
+      "label": "技術研發"
+    },
+    {
+      "source": "超微(AMD)",
+      "target": "2奈米製程",
+      "value": 5,
+      "label": "採用製程"
+    },
+    {
+      "source": "超微(AMD)",
+      "target": "AI",
+      "value": 5,
+      "label": "AI晶片"
+    },
+    {
+      "source": "超微(AMD)",
+      "target": "Anthropic",
+      "value": 4,
+      "label": "商業合作"
+    },
+    {
+      "source": "超微(AMD)",
+      "target": "輝達(NVIDIA)",
+      "value": 4,
+      "label": "市場競爭"
+    },
+    {
+      "source": "超微(AMD)",
+      "target": "英特爾",
+      "value": 3,
+      "label": "市場競爭"
+    },
+    {
+      "source": "英特爾",
+      "target": "中國",
+      "value": 3,
+      "label": "長約客戶"
+    },
+    {
+      "source": "緯創",
+      "target": "AI",
+      "value": 5,
+      "label": "AI訂單"
+    },
+    {
+      "source": "緯創",
+      "target": "林憲銘",
+      "value": 4,
+      "label": "企業領導"
+    },
+    {
+      "source": "緯創",
+      "target": "美國",
+      "value": 4,
+      "label": "供應鏈移轉"
+    },
+    {
+      "source": "Google",
+      "target": "AI",
+      "value": 5,
+      "label": "AI投資"
+    },
+    {
+      "source": "Google",
+      "target": "聯發科",
+      "value": 4,
+      "label": "供應鏈"
+    },
+    {
+      "source": "Google",
+      "target": "鴻海",
+      "value": 4,
+      "label": "供應鏈"
+    },
+    {
+      "source": "特斯拉",
+      "target": "馬斯克",
+      "value": 5,
+      "label": "企業領導"
+    },
+    {
+      "source": "特斯拉",
+      "target": "AI",
+      "value": 4,
+      "label": "自駕AI"
+    },
+    {
+      "source": "特斯拉",
+      "target": "台灣",
+      "value": 3,
+      "label": "供應鏈"
+    },
+    {
+      "source": "馬斯克",
+      "target": "AI",
+      "value": 4,
+      "label": "機器人投資"
+    },
+    {
+      "source": "OpenAI",
+      "target": "AI",
+      "value": 5,
+      "label": "AI開發"
+    },
+    {
+      "source": "OpenAI",
+      "target": "Anthropic",
+      "value": 3,
+      "label": "市場競爭"
+    },
+    {
+      "source": "DeepSeek",
+      "target": "AI",
+      "value": 4,
+      "label": "AI模型"
+    },
+    {
+      "source": "DeepSeek",
+      "target": "梁文鋒",
+      "value": 4,
+      "label": "企業領導"
+    },
+    {
+      "source": "DeepSeek",
+      "target": "輝達(NVIDIA)",
+      "value": 4,
+      "label": "晶片依賴"
+    },
+    {
+      "source": "黃仁勳",
+      "target": "輝達(NVIDIA)",
+      "value": 5,
+      "label": "企業領導"
+    },
+    {
+      "source": "黃仁勳",
+      "target": "AI",
+      "value": 4,
+      "label": "開放倡議"
+    },
+    {
+      "source": "輝達(NVIDIA)",
+      "target": "AI",
+      "value": 5,
+      "label": "AI算力"
+    },
+    {
+      "source": "輝達(NVIDIA)",
+      "target": "台積電",
+      "value": 4,
+      "label": "晶片代工"
+    },
+    {
+      "source": "IBM",
+      "target": "AI",
+      "value": 3,
+      "label": "軟體排擠"
+    },
+    {
+      "source": "華為",
+      "target": "美FCC",
+      "value": 4,
+      "label": "禁令對象"
+    },
+    {
+      "source": "華為",
+      "target": "中國",
+      "value": 4,
+      "label": "中國企業"
+    },
+    {
+      "source": "美FCC",
+      "target": "美國",
+      "value": 4,
+      "label": "監管機構"
+    },
+    {
+      "source": "半導體",
+      "target": "韓國",
+      "value": 4,
+      "label": "產業助攻"
+    },
+    {
+      "source": "半導體",
+      "target": "台積電",
+      "value": 5,
+      "label": "核心產業"
+    },
+    {
+      "source": "半導體",
+      "target": "DRAM",
+      "value": 4,
+      "label": "市場關聯"
+    },
+    {
+      "source": "DRAM",
+      "target": "PC市場",
+      "value": 3,
+      "label": "價格影響"
+    },
+    {
+      "source": "離岸風電",
+      "target": "台灣",
+      "value": 5,
+      "label": "能源政策"
+    },
+    {
+      "source": "離岸風電",
+      "target": "賴清德",
+      "value": 4,
+      "label": "政策推動"
+    },
+    {
+      "source": "離岸風電",
+      "target": "東方風能",
+      "value": 4,
+      "label": "產業參與"
+    },
+    {
+      "source": "台幣",
+      "target": "台灣",
+      "value": 4,
+      "label": "匯率波動"
+    },
+    {
+      "source": "301關稅",
+      "target": "中國",
+      "value": 4,
+      "label": "貿易制裁"
+    },
+    {
+      "source": "沙烏地阿拉伯",
+      "target": "美國",
+      "value": 3,
+      "label": "核能協議"
+    },
+    {
+      "source": "中國",
+      "target": "半導體",
+      "value": 4,
+      "label": "晶片搶購"
+    },
+    {
+      "source": "PC市場",
+      "target": "台灣",
+      "value": 3,
+      "label": "出貨影響"
+    },
+    {
+      "source": "勞退改革",
+      "target": "台灣",
+      "value": 3,
+      "label": "勞工政策"
+    }
+  ],
+  "newsDatabase": {
+    "紅海局勢": [
+      {
+        "title": "紅海局勢升溫　國際油價飆破100美元、歐股收黑",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9647603"
+      },
+      {
+        "title": "紅海攻擊案加劇油市供應疑慮　布倫特原油飆漲8%",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9647636"
+      },
+      {
+        "title": "恐慌升級！青年運動炸紅海商船",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260724000174-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "地緣政治衝突升高　油價與美債殖利率雙漲",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9647658"
+      }
+    ],
+    "國際油價": [
+      {
+        "title": "紅海局勢升溫　國際油價飆破100美元、歐股收黑",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9647603"
+      },
+      {
+        "title": "布蘭特油價站上100美元",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9647443"
+      },
+      {
+        "title": "青年運動襲沙國油輪　國際油價急漲破百美元",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9647657"
+      },
+      {
+        "title": "葉門「青年運動」封鎖紅海轟沙國油輪 油價破100美元",
+        "source": "聯合_產經_股市",
+        "url": ""
+      },
+      {
+        "title": "美伊衝突升溫推高油價 美30年期債殖利率逾5％",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260724000228-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "布倫特原油": [
+      {
+        "title": "布蘭特油價站上100美元",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9647443"
+      },
+      {
+        "title": "紅海攻擊案加劇油市供應疑慮　布倫特原油飆漲8%",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9647636"
+      }
+    ],
+    "青年運動": [
+      {
+        "title": "青年運動襲沙國油輪　國際油價急漲破百美元",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9647657"
+      },
+      {
+        "title": "葉門「青年運動」封鎖紅海轟沙國油輪 油價破100美元",
+        "source": "聯合_產經_股市",
+        "url": ""
+      },
+      {
+        "title": "恐慌升級！青年運動炸紅海商船",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260724000174-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "紅海攻擊案加劇油市供應疑慮　布倫特原油飆漲8%",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9647636"
+      }
+    ],
+    "美債殖利率": [
+      {
+        "title": "「債券義勇軍」恐再掀波瀾 美30年債殖利率連12天高於5% 引發市場憂慮",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9647438"
+      },
+      {
+        "title": "20年債爆冷 投標倍數探低 僅1.04倍 買氣近十年最冷",
+        "source": "經濟金融脈動",
+        "url": "https://money.udn.com/money/story/5613/9647419"
+      },
+      {
+        "title": "地緣政治衝突升高　油價與美債殖利率雙漲",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9647658"
+      },
+      {
+        "title": "美伊衝突升溫推高油價 美30年期債殖利率逾5％",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260724000228-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "戰火未歇通膨疑慮增 20年公債利率衝上2.2％",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260724000226-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "ECB": [
+      {
+        "title": "ECB 利率不動 9月可能升息 拉加德：能源震撼正逐漸轉為物價上揚",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9647404"
+      },
+      {
+        "title": "通膨壓力加劇 歐央9月升息呼聲高",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260724000256-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "拉加德": [
+      {
+        "title": "ECB 利率不動 9月可能升息 拉加德：能源震撼正逐漸轉為物價上揚",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9647404"
+      }
+    ],
+    "通膨": [
+      {
+        "title": "ECB 利率不動 9月可能升息 拉加德：能源震撼正逐漸轉為物價上揚",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9647404"
+      },
+      {
+        "title": "通膨壓力加劇 歐央9月升息呼聲高",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260724000256-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "戰火未歇通膨疑慮增 20年公債利率衝上2.2％",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260724000226-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "川普": [
+      {
+        "title": "美301關稅鎖定60國 台歐英估課10%",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9647489"
+      },
+      {
+        "title": "川普再出招…「Plan C」將出爐 部分國家關稅稅率恐升至12.5%",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9647503"
+      },
+      {
+        "title": "川普：習近平9/24訪美　將與他討論AI議題",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9647649"
+      },
+      {
+        "title": "籌備9月習川會 中美探討互降稅300億美元",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260724000278-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "習近平": [
+      {
+        "title": "川普：習近平9/24訪美　將與他討論AI議題",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9647649"
+      },
+      {
+        "title": "籌備9月習川會 中美探討互降稅300億美元",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260724000278-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "美國": [
+      {
+        "title": "美301關稅鎖定60國 台歐英估課10%",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9647489"
+      },
+      {
+        "title": "美匯率報告未列操控國　台灣等10國續留觀察名單",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9647683"
+      },
+      {
+        "title": "美強迫勞動301關稅出爐 台灣同日、韓、歐盟關稅10%或12.5%",
+        "source": "經濟電商新鮮事",
+        "url": "https://money.udn.com/money/story/10871/9647739"
+      },
+      {
+        "title": "中國疑竊取AI模型　白宮：追蹤掌握、確保美主導地位",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9647609"
+      },
+      {
+        "title": "美沙簽核能協議 恐掀中東核武競賽",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260724000255-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美FCC禁令升級 封殺華為等零件",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260724000280-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "中國": [
+      {
+        "title": "中國疑竊取AI模型　白宮：追蹤掌握、確保美主導地位",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9647609"
+      },
+      {
+        "title": "處理器缺貨 陸企搶簽長約",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9647473"
+      },
+      {
+        "title": "陸國產AI晶片落後美兩年 DeepSeek梁文鋒：卡在產能不夠",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9647545"
+      },
+      {
+        "title": "陸鼓勵外商 投資先進製造業",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260724000281-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "籌備9月習川會 中美探討互降稅300億美元",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260724000278-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "英特爾、超微 與陸客戶簽長約",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260724000270-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台灣": [
+      {
+        "title": "美301關稅鎖定60國 台歐英估課10%",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9647489"
+      },
+      {
+        "title": "美匯率報告未列操控國　台灣等10國續留觀察名單",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9647683"
+      },
+      {
+        "title": "特斯拉超大投資 CEO馬斯克喊衝刺機器人、自駕車 台鏈沾光",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9647467"
+      },
+      {
+        "title": "緯創總經理：供應鏈赴美 趨勢不可逆",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9647485"
+      },
+      {
+        "title": "賴總統：完善風電鏈與人才培育",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260724000182-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "韓國": [
+      {
+        "title": "韓第2季 GDP 成長優於預期 央行升息預期增溫",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9647401"
+      },
+      {
+        "title": "半導體助攻 韓Q2經濟成長超預期",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260724000258-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "南韓加密幣失寵 交易大萎縮",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9647405"
+      },
+      {
+        "title": "美強迫勞動301關稅出爐 台灣同日、韓、歐盟關稅10%或12.5%",
+        "source": "經濟電商新鮮事",
+        "url": "https://money.udn.com/money/story/10871/9647739"
+      }
+    ],
+    "歐盟": [
+      {
+        "title": "美301關稅鎖定60國 台歐英估課10%",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9647489"
+      },
+      {
+        "title": "美強迫勞動301關稅出爐 台灣同日、韓、歐盟關稅10%或12.5%",
+        "source": "經濟電商新鮮事",
+        "url": "https://money.udn.com/money/story/10871/9647739"
+      },
+      {
+        "title": "通膨壓力加劇 歐央9月升息呼聲高",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260724000256-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "301關稅": [
+      {
+        "title": "美301關稅鎖定60國 台歐英估課10%",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9647489"
+      },
+      {
+        "title": "川普再出招…「Plan C」將出爐 部分國家關稅稅率恐升至12.5%",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9647503"
+      },
+      {
+        "title": "美強迫勞動301關稅出爐 台灣同日、韓、歐盟關稅10%或12.5%",
+        "source": "經濟電商新鮮事",
+        "url": "https://money.udn.com/money/story/10871/9647739"
+      }
+    ],
+    "台積電": [
+      {
+        "title": "超微AI晶片進擊 最新GPU與CPU產品採2奈米製程 台積助攻",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9647463"
+      },
+      {
+        "title": "超微AI晶片進擊！最新GPU與CPU產品採2奈米製程 台積助攻",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9647463"
+      },
+      {
+        "title": "台積N3製程 添雙成長引擎",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260724000189-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AMD端新品 台積2奈米扮要角",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260724000192-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "股王目標價 大摩：發發發",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260724000200-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "超微(AMD)": [
+      {
+        "title": "超微AI晶片進擊 最新GPU與CPU產品採2奈米製程 台積助攻",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9647463"
+      },
+      {
+        "title": "超微拓展商機 瞄準下一代基建",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9647471"
+      },
+      {
+        "title": "超微AI晶片進擊！最新GPU與CPU產品採2奈米製程 台積助攻",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9647463"
+      },
+      {
+        "title": "AMD端新品 台積2奈米扮要角",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260724000192-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "AMD攜Anthropic 挑戰輝達AI霸權",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260724000532-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "英特爾、超微 與陸客戶簽長約",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260724000270-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "緯創": [
+      {
+        "title": "緯創唱旺AI 數年接單無虞 董座林憲銘強調需求只會愈來愈多",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9647482"
+      },
+      {
+        "title": "緯創總經理：供應鏈赴美 趨勢不可逆",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9647485"
+      },
+      {
+        "title": "緯創唱旺AI！數年接單無虞 董座林憲銘強調需求只會愈來愈多",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9647482"
+      },
+      {
+        "title": "緯創 明年資本支出再加碼",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260724000294-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "緯創董事長林憲銘：AI是百年不變 具貢獻的基業",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260724000298-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "緯創明年資本支出、營收同步成長",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1763878"
+      }
+    ],
+    "林憲銘": [
+      {
+        "title": "緯創唱旺AI 數年接單無虞 董座林憲銘強調需求只會愈來愈多",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9647482"
+      },
+      {
+        "title": "緯創董事長林憲銘：AI是百年不變 具貢獻的基業",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260724000298-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "Google": [
+      {
+        "title": "Google增資本支出 協力廠樂 聯發科、鴻海等營運跟著衝",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9647470"
+      },
+      {
+        "title": "Google增資本支出 協力廠樂！聯發科、鴻海等營運跟著衝",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9647470"
+      },
+      {
+        "title": "Alphabet概念商品 吸睛",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/10103/9647256"
+      },
+      {
+        "title": "AI投資拖累 Google現金流破天荒轉負",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9647452"
+      }
+    ],
+    "聯發科": [
+      {
+        "title": "Google增資本支出 協力廠樂 聯發科、鴻海等營運跟著衝",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9647470"
+      },
+      {
+        "title": "Google增資本支出 協力廠樂！聯發科、鴻海等營運跟著衝",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9647470"
+      }
+    ],
+    "鴻海": [
+      {
+        "title": "Google增資本支出 協力廠樂 聯發科、鴻海等營運跟著衝",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9647470"
+      },
+      {
+        "title": "Google增資本支出 協力廠樂！聯發科、鴻海等營運跟著衝",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9647470"
+      }
+    ],
+    "特斯拉": [
+      {
+        "title": "特斯拉超大投資 CEO馬斯克喊衝刺機器人、自駕車 台鏈沾光",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9647467"
+      },
+      {
+        "title": "特斯拉Q2營收、獲利不同調",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260724000193-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "馬斯克曝Optimus量產難關",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260724000196-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "馬斯克": [
+      {
+        "title": "特斯拉超大投資 CEO馬斯克喊衝刺機器人、自駕車 台鏈沾光",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9647467"
+      },
+      {
+        "title": "馬斯克曝Optimus量產難關",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260724000196-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "特斯拉Q2營收、獲利不同調",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260724000193-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "OpenAI": [
+      {
+        "title": "OpenAI總裁：美陸模型差距四個月",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9647549"
+      },
+      {
+        "title": "OpenAI算力支出增至7,500億",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260724000261-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "DeepSeek": [
+      {
+        "title": "陸國產AI晶片落後美兩年 DeepSeek梁文鋒：卡在產能不夠",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9647545"
+      },
+      {
+        "title": "DeepSeek梁文鋒：輝達護城河正快速瓦解",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260724000274-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "梁文鋒": [
+      {
+        "title": "陸國產AI晶片落後美兩年 DeepSeek梁文鋒：卡在產能不夠",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9647545"
+      },
+      {
+        "title": "DeepSeek梁文鋒：輝達護城河正快速瓦解",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260724000274-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "輝達(NVIDIA)": [
+      {
+        "title": "AMD攜Anthropic 挑戰輝達AI霸權",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260724000532-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "DeepSeek梁文鋒：輝達護城河正快速瓦解",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260724000274-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "黃仁勳喊話開放 美沒理由怕中國開源AI",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9647468"
+      }
+    ],
+    "黃仁勳": [
+      {
+        "title": "黃仁勳喊話開放 美沒理由怕中國開源AI",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9647468"
+      }
+    ],
+    "Anthropic": [
+      {
+        "title": "AMD攜Anthropic 挑戰輝達AI霸權",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260724000532-260110?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "美點名「月之暗面」竊取技術 指控「蒸餾」Anthropic資料",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9647547"
+      }
+    ],
+    "IBM": [
+      {
+        "title": "企業支出轉向AI 軟體遭排擠 IBM大砍年度營收預測",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260724000267-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "英特爾": [
+      {
+        "title": "英特爾、超微 與陸客戶簽長約",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260724000270-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "AI": [
+      {
+        "title": "緯創唱旺AI 數年接單無虞 董座林憲銘強調需求只會愈來愈多",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9647482"
+      },
+      {
+        "title": "特斯拉超大投資 CEO馬斯克喊衝刺機器人、自駕車 台鏈沾光",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9647467"
+      },
+      {
+        "title": "Google增資本支出 協力廠樂 聯發科、鴻海等營運跟著衝",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9647470"
+      },
+      {
+        "title": "中國疑竊取AI模型　白宮：追蹤掌握、確保美主導地位",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9647609"
+      },
+      {
+        "title": "川普：習近平9/24訪美　將與他討論AI議題",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9647649"
+      },
+      {
+        "title": "超微AI晶片進擊 最新GPU與CPU產品採2奈米製程 台積助攻",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9647463"
+      },
+      {
+        "title": "OpenAI總裁：美陸模型差距四個月",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9647549"
+      },
+      {
+        "title": "AI投資拖累 Google現金流破天荒轉負",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9647452"
+      },
+      {
+        "title": "瘋AI 美股七雄手頭緊",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260724000168-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "企業支出轉向AI 軟體遭排擠 IBM大砍年度營收預測",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260724000267-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "OpenAI算力支出增至7,500億",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260724000261-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "緯創董事長林憲銘：AI是百年不變 具貢獻的基業",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260724000298-260204?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "91APP搶AI代理商機",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7252/9647149"
+      },
+      {
+        "title": "橘子推出AI 遊戲夥伴",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7252/9647155"
+      }
+    ],
+    "2奈米製程": [
+      {
+        "title": "超微AI晶片進擊 最新GPU與CPU產品採2奈米製程 台積助攻",
+        "source": "經濟產業熱點",
+        "url": "https://money.udn.com/money/story/5612/9647463"
+      },
+      {
+        "title": "超微AI晶片進擊！最新GPU與CPU產品採2奈米製程 台積助攻",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7240/9647463"
+      },
+      {
+        "title": "AMD端新品 台積2奈米扮要角",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260724000192-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "半導體": [
+      {
+        "title": "半導體助攻 韓Q2經濟成長超預期",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260724000258-260203?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "處理器缺貨 陸企搶簽長約",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9647473"
+      },
+      {
+        "title": "陸國產AI晶片落後美兩年 DeepSeek梁文鋒：卡在產能不夠",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/6811/9647545"
+      },
+      {
+        "title": "台積N3製程 添雙成長引擎",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260724000189-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "離岸風電": [
+      {
+        "title": "離岸風電開發3-3招標 納保底收購價",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7241/9647412"
+      },
+      {
+        "title": "東方風能全球拓版圖",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7252/9647164"
+      },
+      {
+        "title": "經部：四大支柱挺離岸風電",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260724000179-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "賴總統：完善風電鏈與人才培育",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260724000182-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "風電第三期行政契約範本出爐！業者擴風場 適用獎勵機制",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260724000184-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "解禁航道 離岸風電2039年拚28GW",
+        "source": "中時財經新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260724000530-260110?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "東方風能": [
+      {
+        "title": "東方風能全球拓版圖",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7252/9647164"
+      },
+      {
+        "title": "東方風能今年可賺1個股本",
+        "source": "自由時報財經新聞",
+        "url": "https://ec.ltn.com.tw/article/paper/1763883"
+      }
+    ],
+    "賴清德": [
+      {
+        "title": "賴總統：完善風電鏈與人才培育",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260724000182-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "台幣": [
+      {
+        "title": "台幣升1.09角 終止連二黑",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7239/9647440"
+      },
+      {
+        "title": "月底湧拋匯 台幣強升逾1角",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260724000202-260202?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "出口商滿手美元 考驗央行接招、企業避險",
+        "source": "工商財經要聞",
+        "url": "https://www.chinatimes.com/newspapers/20260724000205-260202?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "DRAM": [
+      {
+        "title": "DRAM飆升 新車準備漲價了",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9647395"
+      }
+    ],
+    "PC市場": [
+      {
+        "title": "上季全球PC出貨量下滑",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9647486"
+      },
+      {
+        "title": "止步連五紅 PC出貨量Q2轉跌",
+        "source": "工商產業科技",
+        "url": "https://www.chinatimes.com/newspapers/20260724000300-260204?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "海運": [
+      {
+        "title": "海運看旺季運價 漲勢溫和 第3季價格有望維持相對高檔",
+        "source": "經濟電商新鮮事",
+        "url": "https://money.udn.com/money/story/10871/9647455"
+      }
+    ],
+    "華為": [
+      {
+        "title": "美FCC禁令升級 封殺華為等零件",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260724000280-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "美FCC": [
+      {
+        "title": "美FCC禁令升級 封殺華為等零件",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260724000280-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "沙烏地阿拉伯": [
+      {
+        "title": "青年運動襲沙國油輪　國際油價急漲破百美元",
+        "source": "經濟國際焦點",
+        "url": "https://money.udn.com/money/story/5599/9647657"
+      },
+      {
+        "title": "葉門「青年運動」封鎖紅海轟沙國油輪 油價破100美元",
+        "source": "聯合_產經_股市",
+        "url": ""
+      },
+      {
+        "title": "美沙簽核能協議 恐掀中東核武競賽",
+        "source": "工商全球財經",
+        "url": "https://www.chinatimes.com/newspapers/20260724000255-260203?utm_source=iii_news&utm_medium=rss"
+      }
+    ],
+    "勞退改革": [
+      {
+        "title": "勞退改革 勞團：立院速排審 別以口號騙勞工",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9647518"
+      },
+      {
+        "title": "勞退新制雇主提繳6%多年未調 勞團籲修法提高",
+        "source": "聯合_產經_股市",
+        "url": "https://udn.com/news/story/7238/9647446"
+      },
+      {
+        "title": "月領不到2萬 立委擬拉高勞退個人提繳上限",
+        "source": "中時樂活新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260724000540-260114?utm_source=iii_news&utm_medium=rss"
+      },
+      {
+        "title": "勞退20年未調 勞團怒批別再拖",
+        "source": "中時樂活新聞",
+        "url": "https://www.chinatimes.com/newspapers/20260724000542-260114?utm_source=iii_news&utm_medium=rss"
+      }
+    ]
+  },
+  "titleToUrl": {
+    "紅海局勢升溫　國際油價飆破100美元、歐股收黑 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9647603",
+    "「債券義勇軍」恐再掀波瀾 美30年債殖利率連12天高於5% 引發市場憂慮 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9647438",
+    "布蘭特油價站上100美元 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9647443",
+    "海運看旺季運價 漲勢溫和 第3季價格有望維持相對高檔 (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9647455",
+    "20年債爆冷 投標倍數探低 僅1.04倍 買氣近十年最冷 (經濟金融脈動)": "https://money.udn.com/money/story/5613/9647419",
+    "紅海攻擊案加劇油市供應疑慮　布倫特原油飆漲8% (經濟國際焦點)": "https://money.udn.com/money/story/5599/9647636",
+    "ECB 利率不動 9月可能升息 拉加德：能源震撼正逐漸轉為物價上揚 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9647404",
+    "英國外相與美中外長會晤　中東烏克蘭為共同關切 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9647633",
+    "韓第2季 GDP 成長優於預期 央行升息預期增溫 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9647401",
+    "地緣政治衝突升高　油價與美債殖利率雙漲 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9647658",
+    "青年運動襲沙國油輪　國際油價急漲破百美元 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9647657",
+    "台幣升1.09角 終止連二黑 (聯合_產經_股市)": "https://udn.com/news/story/7239/9647440",
+    "葉門「青年運動」封鎖紅海轟沙國油輪 油價破100美元 (聯合_產經_股市)": "https://udn.com/news/story/124061/9647542",
+    "美301關稅鎖定60國 台歐英估課10% (聯合_產經_股市)": "https://udn.com/news/story/6811/9647489",
+    "川普再出招…「Plan C」將出爐 部分國家關稅稅率恐升至12.5% (聯合_產經_股市)": "https://udn.com/news/story/6811/9647503",
+    "恐慌升級！青年運動炸紅海商船 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260724000174-260202?utm_source=iii_news&utm_medium=rss",
+    "月底湧拋匯 台幣強升逾1角 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260724000202-260202?utm_source=iii_news&utm_medium=rss",
+    "出口商滿手美元 考驗央行接招、企業避險 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260724000205-260202?utm_source=iii_news&utm_medium=rss",
+    "戰火未歇通膨疑慮增 20年公債利率衝上2.2％ (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260724000226-260202?utm_source=iii_news&utm_medium=rss",
+    "美伊衝突升溫推高油價 美30年期債殖利率逾5％ (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260724000228-260202?utm_source=iii_news&utm_medium=rss",
+    "通膨壓力加劇 歐央9月升息呼聲高 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260724000256-260203?utm_source=iii_news&utm_medium=rss",
+    "半導體助攻 韓Q2經濟成長超預期 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260724000258-260203?utm_source=iii_news&utm_medium=rss",
+    "籌備9月習川會 中美探討互降稅300億美元 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260724000278-260203?utm_source=iii_news&utm_medium=rss",
+    "美匯率報告未列操控國　台灣等10國續留觀察名單 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9647683",
+    "美強迫勞動301關稅出爐 台灣同日、韓、歐盟關稅10%或12.5% (經濟電商新鮮事)": "https://money.udn.com/money/story/10871/9647739",
+    "李長榮三大策略 迎接產業浪潮 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9647479",
+    "緯創唱旺AI 數年接單無虞 董座林憲銘強調需求只會愈來愈多 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9647482",
+    "緯創總經理：供應鏈赴美 趨勢不可逆 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9647485",
+    "上季全球PC出貨量下滑 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9647486",
+    "特斯拉超大投資 CEO馬斯克喊衝刺機器人、自駕車 台鏈沾光 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9647467",
+    "Google增資本支出 協力廠樂 聯發科、鴻海等營運跟著衝 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9647470",
+    "中國疑竊取AI模型　白宮：追蹤掌握、確保美主導地位 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9647609",
+    "處理器缺貨 陸企搶簽長約 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9647473",
+    "超微AI晶片進擊 最新GPU與CPU產品採2奈米製程 台積助攻 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9647463",
+    "超微拓展商機 瞄準下一代基建 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9647471",
+    "網路降速演練 北部、中部8月實施 四類交易警戒 (經濟金融脈動)": "https://money.udn.com/money/story/5613/9647414",
+    "南韓加密幣失寵 交易大萎縮 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9647405",
+    "DRAM飆升 新車準備漲價了 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9647395",
+    "川普：習近平9/24訪美　將與他討論AI議題 (經濟國際焦點)": "https://money.udn.com/money/story/5599/9647649",
+    "小宅、串流、耳機帶動Hi-Fi轉型 音響市場吹迷你、整合式新風潮 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9647596",
+    "緯創唱旺AI！數年接單無虞 董座林憲銘強調需求只會愈來愈多 (聯合_產經_股市)": "https://udn.com/news/story/7240/9647482",
+    "超微AI晶片進擊！最新GPU與CPU產品採2奈米製程 台積助攻 (聯合_產經_股市)": "https://udn.com/news/story/7240/9647463",
+    "黃仁勳喊話開放 美沒理由怕中國開源AI (聯合_產經_股市)": "https://udn.com/news/story/7238/9647468",
+    "創見上半年大賺200億EPS 46.63元 寫新猷 (聯合_產經_股市)": "https://udn.com/news/story/7252/9647128",
+    "晶瑞光營收 拚下半年較上半年成長三成 (聯合_產經_股市)": "https://udn.com/news/story/7252/9647136",
+    "陸國產AI晶片落後美兩年 DeepSeek梁文鋒：卡在產能不夠 (聯合_產經_股市)": "https://udn.com/news/story/6811/9647545",
+    "Google增資本支出 協力廠樂！聯發科、鴻海等營運跟著衝 (聯合_產經_股市)": "https://udn.com/news/story/7240/9647470",
+    "Alphabet概念商品 吸睛 (聯合_產經_股市)": "https://udn.com/news/story/10103/9647256",
+    "91APP搶AI代理商機 (聯合_產經_股市)": "https://udn.com/news/story/7252/9647149",
+    "橘子推出AI 遊戲夥伴 (聯合_產經_股市)": "https://udn.com/news/story/7252/9647155",
+    "帝寶AI車燈 迎收成期 (聯合_產經_股市)": "https://udn.com/news/story/7252/9647163",
+    "美點名「月之暗面」竊取技術 指控「蒸餾」Anthropic資料 (聯合_產經_股市)": "https://udn.com/news/story/6811/9647547",
+    "OpenAI總裁：美陸模型差距四個月 (聯合_產經_股市)": "https://udn.com/news/story/6811/9647549",
+    "AI投資拖累 Google現金流破天荒轉負 (聯合_產經_股市)": "https://udn.com/news/story/6811/9647452",
+    "瘋AI 美股七雄手頭緊 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260724000168-260202?utm_source=iii_news&utm_medium=rss",
+    "6月電力景氣燈號連15紅 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260724000186-260202?utm_source=iii_news&utm_medium=rss",
+    "台積N3製程 添雙成長引擎 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260724000189-260202?utm_source=iii_news&utm_medium=rss",
+    "AMD端新品 台積2奈米扮要角 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260724000192-260202?utm_source=iii_news&utm_medium=rss",
+    "特斯拉Q2營收、獲利不同調 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260724000193-260202?utm_source=iii_news&utm_medium=rss",
+    "馬斯克曝Optimus量產難關 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260724000196-260202?utm_source=iii_news&utm_medium=rss",
+    "股王目標價 大摩：發發發 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260724000200-260202?utm_source=iii_news&utm_medium=rss",
+    "OpenAI算力支出增至7,500億 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260724000261-260203?utm_source=iii_news&utm_medium=rss",
+    "需求回溫 德儀財測報喜 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260724000264-260203?utm_source=iii_news&utm_medium=rss",
+    "企業支出轉向AI 軟體遭排擠 IBM大砍年度營收預測 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260724000267-260203?utm_source=iii_news&utm_medium=rss",
+    "英特爾、超微 與陸客戶簽長約 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260724000270-260203?utm_source=iii_news&utm_medium=rss",
+    "DeepSeek梁文鋒：輝達護城河正快速瓦解 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260724000274-260203?utm_source=iii_news&utm_medium=rss",
+    "美FCC禁令升級 封殺華為等零件 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260724000280-260203?utm_source=iii_news&utm_medium=rss",
+    "陸鼓勵外商 投資先進製造業 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260724000281-260203?utm_source=iii_news&utm_medium=rss",
+    "緯創 明年資本支出再加碼 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260724000294-260204?utm_source=iii_news&utm_medium=rss",
+    "緯創董事長林憲銘：AI是百年不變 具貢獻的基業 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260724000298-260204?utm_source=iii_news&utm_medium=rss",
+    "止步連五紅 PC出貨量Q2轉跌 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260724000300-260204?utm_source=iii_news&utm_medium=rss",
+    "雙引擎帶動 晶瑞光營運春天到 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260724000302-260204?utm_source=iii_news&utm_medium=rss",
+    "電玩展、漫博展啟動 遊戲公司攻暑假玩家商機 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260724000304-260204?utm_source=iii_news&utm_medium=rss",
+    "7成企業OT環境一年遭多次入侵 Fortinet：資安威脅持續升高 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260724000305-260204?utm_source=iii_news&utm_medium=rss",
+    "緯創明年資本支出、營收同步成長 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1763878",
+    "欣銓上半年每股賺4.39元 (聯合_產經_股市)": "https://udn.com/news/story/7252/9647140",
+    "AMD攜Anthropic 挑戰輝達AI霸權 (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260724000532-260110?utm_source=iii_news&utm_medium=rss",
+    "攻智慧醫療 宇瞻AI視覺辨識落地 (工商產業科技)": "https://www.chinatimes.com/newspapers/20260724000303-260204?utm_source=iii_news&utm_medium=rss",
+    "保瑞協助創新藥攻美國 (聯合_產經_股市)": "https://udn.com/news/story/7252/9647132",
+    "工紙三雄迎庫存回補潮 下半年營運估逐步回暖 (經濟產業熱點)": "https://money.udn.com/money/story/5612/9647465",
+    "工總：傳產嚴峻 盼雇主提繳率不動 (聯合_產經_股市)": "https://udn.com/news/story/7238/9647522",
+    "勞退改革 勞團：立院速排審 別以口號騙勞工 (聯合_產經_股市)": "https://udn.com/news/story/7238/9647518",
+    "勞退新制雇主提繳6%多年未調 勞團籲修法提高 (聯合_產經_股市)": "https://udn.com/news/story/7238/9647446",
+    "月領不到2萬 立委擬拉高勞退個人提繳上限 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260724000540-260114?utm_source=iii_news&utm_medium=rss",
+    "勞退20年未調 勞團怒批別再拖 (中時樂活新聞)": "https://www.chinatimes.com/newspapers/20260724000542-260114?utm_source=iii_news&utm_medium=rss",
+    "離岸風電開發3-3招標 納保底收購價 (聯合_產經_股市)": "https://udn.com/news/story/7241/9647412",
+    "東方風能全球拓版圖 (聯合_產經_股市)": "https://udn.com/news/story/7252/9647164",
+    "經部：四大支柱挺離岸風電 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260724000179-260202?utm_source=iii_news&utm_medium=rss",
+    "賴總統：完善風電鏈與人才培育 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260724000182-260202?utm_source=iii_news&utm_medium=rss",
+    "風電第三期行政契約範本出爐！業者擴風場 適用獎勵機制 (工商財經要聞)": "https://www.chinatimes.com/newspapers/20260724000184-260202?utm_source=iii_news&utm_medium=rss",
+    "美沙簽核能協議 恐掀中東核武競賽 (工商全球財經)": "https://www.chinatimes.com/newspapers/20260724000255-260203?utm_source=iii_news&utm_medium=rss",
+    "東方風能今年可賺1個股本 (自由時報財經新聞)": "https://ec.ltn.com.tw/article/paper/1763883",
+    "解禁航道 離岸風電2039年拚28GW (中時財經新聞)": "https://www.chinatimes.com/newspapers/20260724000530-260110?utm_source=iii_news&utm_medium=rss"
+  }
+}
